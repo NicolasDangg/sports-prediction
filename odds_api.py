@@ -57,7 +57,7 @@ def consensus_prices(event: dict) -> tuple[dict[str, float], int]:
             n_books += 1
             for o in market["outcomes"]:
                 prices.setdefault(o["name"], []).append(float(o["price"]))
-    return {name: statistics.median(p) for name, p in prices.items()}, n_books
+    return {name: round(statistics.median(p), 3) for name, p in prices.items()}, n_books
 
 
 def winner_from_scores(event: dict) -> str | None:
