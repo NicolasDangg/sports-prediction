@@ -39,6 +39,7 @@ The LLM agent only orchestrates; all maths is in Python, so every number is repr
 | `accounts.py` | Wallet money: opening balances, deposits, refills (`list` / `deposit` / `refill`) |
 | `ratings_history.py` | Elo after every match + recent form → `state/*_elo_history.csv`, `*_form.csv`, `*_matches.csv` (per-match ratings before/after + model probabilities), `name_map.csv` (bookmaker → history names). Feeds the dashboard Ratings page and the per-team/player pages `/ratings/epl/<slug>`, `/ratings/atp/<slug>` |
 | `experiments/e003_decision_tree.py` | Decision tree exploration (see experiments/LOG.md E003) → `results/e003_decision_tree.json` |
+| `fpl.py` | Daily squads, player stats (goals, assists, xG, xA, xGI, minutes, FPL points/price/ownership/expected points), injuries + news, next fixtures with difficulty (Fantasy Premier League API), and head coaches (Wikidata) → `state/fpl_players.csv`, `fpl_fixtures.csv`, `coaches.csv`. Failures keep yesterday's files and never stop the betting run. Shown in the Squad section of each team page |
 | `tests/smoke_daily.py` | End-to-end test of the daily job against a fake API on a temp copy (no credits, real state untouched) |
 | `state/` | Live, committed record. **Never rewrite history here by hand.** |
 | `results/` | Backtest outputs: `summary.json`, `*_bets.csv`, `*_ratings.csv` |

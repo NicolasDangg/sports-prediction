@@ -17,6 +17,7 @@ Steps
        outcomes.csv, closing.csv   results and closing prices for evaluation
        atp_recent.csv         tennis results collected from The Odds API
        *_elo_history.csv, *_form.csv   ratings after every match + recent form (dashboard)
+       fpl_players.csv, fpl_fixtures.csv, coaches.csv   squads / stats / injuries (fpl.py)
        bet_flags.csv          manual annotations on bets (e.g. identity errors); ledger stays untouched
 
 The LLM agent that runs this each morning only orchestrates and reports. All maths
@@ -34,6 +35,7 @@ import pandas as pd
 import requests
 
 import accounts
+import fpl
 import backtest as bt
 import fetch_data
 import ratings_history
@@ -394,6 +396,7 @@ def main(api: OddsAPI | None = None, now: pd.Timestamp | None = None, download: 
     print(" ", records.clv_summary(ledger).replace("\n", "\n  "))
 
     ratings_history.write_all(bt.load_epl(), EPL_PARAMS, bt.load_atp(ATP_RECENT), ATP_PARAMS)  # dashboard charts
+    print(" ", fpl.refresh())  # squads, player stats, injuries, coaches (never fails the run)
     save_state(ledger, wallets, deposits, preds, now)
     print("\n== Wallets")
     print(pd.read_csv(HISTORY).query("date == @now.date().isoformat()").to_string(index=False))

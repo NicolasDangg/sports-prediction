@@ -25,6 +25,7 @@ import daily  # noqa: E402
 import records  # noqa: E402
 
 assert Path(daily.__file__).parent == TMP, "must run against the temp copy"
+daily.fpl.refresh = lambda: "FPL refresh skipped in smoke test"  # no network in tests
 daily.STRATEGIES["test_v1"] = {"prob": lambda r: r["elo_p"], "min_edge": 0.05, "start_bankroll": 5000}
 
 

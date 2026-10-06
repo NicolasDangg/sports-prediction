@@ -2,6 +2,8 @@ import { notFound } from "next/navigation";
 import EntityChart from "@/components/EntityChart";
 import { Breadcrumb, ExpectedVsActual, Tile, UpcomingAndBets } from "@/components/EntityBlocks";
 import MatchLog from "@/components/MatchLog";
+import SquadView from "@/components/SquadView";
+import { loadSquad } from "@/lib/squad";
 import Reveal from "@/components/Reveal";
 import { Card, CardHeader } from "@/components/ui";
 import { loadTeam, teamSlugs } from "@/lib/entities";
@@ -22,6 +24,7 @@ export default async function TeamPage({ params }: { params: Promise<{ slug: str
   if (!t) notFound();
   const e = t.entity;
   const s = t.season;
+  const squad = loadSquad(t.name);
 
   return (
     <>
@@ -66,14 +69,23 @@ export default async function TeamPage({ params }: { params: Promise<{ slug: str
           </Card>
         </Reveal>
 
-        <Reveal i={4} className="sm:col-span-2 lg:col-span-12">
+        {squad && (
+          <Reveal i={4} className="sm:col-span-2 lg:col-span-12">
+            <Card>
+              <CardHeader title="Squad" hint="Click any player for their stats, expected goals and FPL numbers. Updated every morning." />
+              <SquadView squad={squad} teamName={t.name} />
+            </Card>
+          </Reveal>
+        )}
+
+        <Reveal i={5} className="sm:col-span-2 lg:col-span-12">
           <Card>
             <CardHeader title="Upcoming and bets" />
             <UpcomingAndBets upcoming={t.upcoming} bets={t.bets} apiNames={t.apiNames} />
           </Card>
         </Reveal>
 
-        <Reveal i={5} className="sm:col-span-2 lg:col-span-12">
+        <Reveal i={6} className="sm:col-span-2 lg:col-span-12">
           <section className="overflow-hidden rounded-[1.75rem] border border-line/80 bg-surface shadow-diffuse">
             <div className="px-6 pb-2 pt-6 md:px-7">
               <h2 className="text-[15px] font-semibold tracking-tight text-ink">Match log</h2>
