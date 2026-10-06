@@ -9,6 +9,7 @@ The owner writes a report: what they noticed on the dashboard and what they want
 
 ## Before anything
 
+0. Work from the project root: `/Users/nicolasdangg/studies/self/machine-learning/sports-prediction`. `cd` there first; all paths below are relative to it. This skill can be invoked from any folder.
 1. Read `docs/REFERENCE.md` in full. It defines the system, the rules and the evaluation protocol.
 2. Read `experiments/LOG.md`: the past experiments, the **test-set looks used** counter, and the live strategies.
 3. Find the report:
