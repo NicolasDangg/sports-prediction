@@ -177,6 +177,9 @@ def predict_epl(api: OddsAPI, now: pd.Timestamp) -> list[dict]:
     diffs, elo = bt.epl_elo_diffs(df, **EPL_PARAMS)
     train = df.season.isin(bt.EPL_TRAIN).to_numpy()
     model = bt.fit_outcome_model(diffs[train], df.result[train].to_numpy())
+    STATE.mkdir(exist_ok=True)
+    (pd.Series({t: elo.ratings[t] for t in elo.season_teams}, name="elo").rename_axis("team")
+     .sort_values(ascending=False).round(1).to_csv(STATE / "epl_ratings.csv"))
 
     rows = []
     for e in api.odds("soccer_epl"):
@@ -205,6 +208,12 @@ def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[lis
         df = bt.load_atp(ATP_RECENT)
         known = set(df.Player_1) | set(df.Player_2)
     _, elo = bt.tennis_probs(df, **ATP_PARAMS)
+    active = recent[recent.date >= df.date.max() - pd.Timedelta(days=365)]
+    players = sorted(set(active.Player_1) | set(active.Player_2))
+    (pd.DataFrame({"player": players, "elo": [elo.overall[x] for x in players],
+                   **{f"elo_{srf.lower()}": [elo.surface[(x, srf)] for x in players]
+                      for srf in ["Hard", "Clay", "Grass"]}})
+     .sort_values("elo", ascending=False).head(200).round(1).to_csv(STATE / "atp_ratings.csv", index=False))
 
     rows = []
     for s in sports:
