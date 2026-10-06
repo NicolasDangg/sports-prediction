@@ -1,6 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
+import { CaretRight } from "@phosphor-icons/react";
+import { slugify } from "@/lib/format";
 import EloHistoryChart from "./EloHistoryChart";
 import Segmented from "./Segmented";
 import type { Entity, RatingsData } from "@/lib/ratings";
@@ -28,7 +31,7 @@ export default function RatingsView({ data, surfaces }: { data: RatingsData; sur
         <Segmented label="Sport" value={tab} onChange={setTab}
           options={[{ value: "epl", label: "Premier League", count: data.epl.entities.length }, { value: "atp", label: "ATP top 40", count: data.atp.entities.length }]} />
         <p className="max-w-[62ch] text-[12px] text-ink-3">
-          {tab === "epl"
+          Click a name for its full page. {tab === "epl"
             ? "Ratings keep 90% of last season and move slowly, so a bad start (or a great one) takes several games to show."
             : "Overall rating. New players move fast, veterans slowly. Predictions also blend in a rating per surface."}
         </p>
@@ -67,7 +70,13 @@ export default function RatingsView({ data, surfaces }: { data: RatingsData; sur
                 return (
                   <tr key={`${tab}-${e.name}`} className="border-b border-line-soft last:border-0 hover:bg-sunken/50">
                     <td className="py-3 pl-6 text-ink-3 tabular">{i + 1}</td>
-                    <td className="px-3 py-3 font-medium text-ink">{e.name}</td>
+                    <td className="px-3 py-3 font-medium text-ink">
+                      <Link href={`/ratings/${tab}/${slugify(e.name)}`}
+                            className="group inline-flex min-h-8 items-center gap-1 underline-offset-4 hover:underline">
+                        {e.name}
+                        <CaretRight size={12} weight="bold" className="text-ink-3 opacity-0 transition-opacity group-hover:opacity-100" aria-hidden />
+                      </Link>
+                    </td>
                     {tab === "epl" && (
                       <td className="px-3 py-3 text-right text-ink-2 tabular" title={`${e.pts} pts from ${e.played} games`}>
                         {e.pos}<span className="text-ink-3">{ordinal(e.pos ?? 0)}</span>

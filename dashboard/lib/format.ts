@@ -25,3 +25,7 @@ export const SPORT_LABEL: Record<Sport, string> = { epl: "Premier League", atp: 
 export const SPORT_SHORT: Record<Sport, string> = { epl: "EPL", atp: "ATP" };
 export const SPORT_COLOR: Record<Sport, string> = { epl: "var(--color-epl)", atp: "var(--color-atp)" };
 export const strategyOf = (wallet: string) => wallet.split(":")[1] ?? wallet;
+
+/** URL slug for a team/player page: "Man United" -> "man-united", "Sinner J." -> "sinner-j" */
+export const slugify = (name: string) =>
+  name.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

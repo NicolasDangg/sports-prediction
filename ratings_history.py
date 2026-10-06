@@ -6,6 +6,8 @@ Replays the same Elo models the live job uses and records every rating after eve
     state/atp_elo_history.csv   date, player, elo, surface_elo   (top active players, 2025 onward)
     state/epl_form.csv          team, pos, played, pts, last5, last10, pts10
     state/atp_form.csv          player, last10, wins10, matches_365
+    state/epl_matches.csv       every EPL match since 2024/25: ratings before/after, model H/D/A probabilities
+    state/atp_matches.csv       every 2025+ match of a top player: ratings before/after, model win probability, odds
 
 Ratings are stored at match granularity (one row per team/player per match), so the chart
 shows every jump. Called from daily.py; can also be run on its own.
@@ -17,7 +19,7 @@ import numpy as np
 import pandas as pd
 
 import backtest as bt
-from elo import FootballElo, TennisElo
+from elo import FootballElo, TennisElo, expected_score
 
 STATE = Path(__file__).parent / "state"
 EPL_SINCE = "2024-07-01"
@@ -86,6 +88,53 @@ def atp_history(df: pd.DataFrame, params: dict) -> tuple[pd.DataFrame, pd.DataFr
     return hist, pd.DataFrame(form)
 
 
+def epl_matches(df: pd.DataFrame, params: dict) -> pd.DataFrame:
+    """Every match since EPL_SINCE with both teams' ratings before/after and the model's
+    pre-match H/D/A probabilities (same outcome model the live job fits on the train seasons)."""
+    elo = FootballElo(**params)
+    rows, diffs = [], np.empty(len(df))
+    for season, games in df.groupby("season", sort=True):
+        elo.start_season(season, set(games.HomeTeam) | set(games.AwayTeam))
+        for i, g in games.iterrows():
+            h, a = g.HomeTeam, g.AwayTeam
+            diffs[i] = elo.diff(h, a)
+            before = (elo.ratings[h], elo.ratings[a])
+            elo.update(h, a, int(g.FTHG), int(g.FTAG))
+            rows.append({"i": i, "season": season, "date": g.date.date(), "home": h, "away": a,
+                         "hg": int(g.FTHG), "ag": int(g.FTAG), "result": g.result,
+                         "home_before": round(before[0], 1), "away_before": round(before[1], 1),
+                         "home_after": round(elo.ratings[h], 1), "away_after": round(elo.ratings[a], 1)})
+    train = df.season.isin(bt.EPL_TRAIN).to_numpy()
+    model = bt.fit_outcome_model(diffs[train], df.result[train].to_numpy())
+    out = pd.DataFrame(rows)
+    out = out[pd.to_datetime(out.date) >= pd.Timestamp(EPL_SINCE)]
+    probs = bt.outcome_probs(model, diffs[out.i.to_numpy()]).round(4)
+    return out.drop(columns="i").assign(p_home=probs.H.to_numpy(), p_draw=probs.D.to_numpy(), p_away=probs.A.to_numpy())
+
+
+def atp_matches(df: pd.DataFrame, params: dict, players: set[str]) -> pd.DataFrame:
+    """Every match since ATP_SINCE involving one of `players`, with ratings before/after,
+    the model's pre-match probability for Player 1 (overall/surface blend) and the odds."""
+    elo = TennisElo(**params)
+    since = pd.Timestamp(ATP_SINCE)
+    rows = []
+    for r in df.itertuples():
+        a, b, srf = r.Player_1, r.Player_2, r.Surface
+        keep = r.date >= since and (a in players or b in players)
+        if keep:
+            before = (elo.overall[a], elo.overall[b])
+            p1 = elo.prob(a, b, srf)
+        w, l = (a, b) if r.p1_won else (b, a)
+        elo.update(w, l, srf)
+        if keep:
+            rows.append({"date": r.date.date(), "tournament": r.Tournament, "series": r.Series, "round": r.Round,
+                         "surface": srf, "p1": a, "p2": b, "winner": r.Winner,
+                         "score": r.Score, "p1_before": round(before[0], 1), "p2_before": round(before[1], 1),
+                         "p1_after": round(elo.overall[a], 1), "p2_after": round(elo.overall[b], 1),
+                         "p1_prob": round(p1, 4), "odd_1": r.Odd_1, "odd_2": r.Odd_2})
+    return pd.DataFrame(rows)
+
+
 def write_all(epl_df: pd.DataFrame, epl_params: dict, atp_df: pd.DataFrame, atp_params: dict) -> None:
     STATE.mkdir(exist_ok=True)
     eh, ef = epl_history(epl_df, epl_params)
@@ -95,11 +144,34 @@ def write_all(epl_df: pd.DataFrame, epl_params: dict, atp_df: pd.DataFrame, atp_
     ah.assign(date=ah.date.dt.date, elo=ah.elo.round(1), surface_elo=ah.surface_elo.round(1)).to_csv(
         STATE / "atp_elo_history.csv", index=False)
     af.to_csv(STATE / "atp_form.csv", index=False)
+    epl_matches(epl_df, epl_params).to_csv(STATE / "epl_matches.csv", index=False)
+    atp_matches(atp_df, atp_params, set(af.player)).to_csv(STATE / "atp_matches.csv", index=False)
+    name_map(epl_df, atp_df).to_csv(STATE / "name_map.csv", index=False)
+
+
+def name_map(epl_df: pd.DataFrame, atp_df: pd.DataFrame) -> pd.DataFrame:
+    """Bookmaker spelling -> history name for every team/player in the ledger and today's
+    forecasts, so the dashboard can attach bets and upcoming matches to a team/player page."""
+    from names import epl_team, player_profiles, tennis_player
+
+    teams = set(epl_df.HomeTeam) | set(epl_df.AwayTeam)
+    profiles, since = player_profiles(atp_df), atp_df.date.max() - pd.Timedelta(days=365)
+    seen: set[tuple[str, str]] = set()
+    for f in ("ledger.csv", "predictions.csv"):
+        if (STATE / f).exists():
+            d = pd.read_csv(STATE / f, usecols=["sport", "match"])
+            seen |= {(sp, n) for sp, m in zip(d.sport, d.match) for n in str(m).split(" v ")}
+    rows = []
+    for sport, api in sorted(seen):
+        name = epl_team(api, teams) if sport == "epl" else tennis_player(api, profiles, since).name
+        if name:
+            rows.append({"sport": sport, "api_name": api, "name": name})
+    return pd.DataFrame(rows, columns=["sport", "api_name", "name"])
 
 
 if __name__ == "__main__":
     import daily
 
     write_all(bt.load_epl(), daily.EPL_PARAMS, bt.load_atp(daily.ATP_RECENT), daily.ATP_PARAMS)
-    for f in ["epl_elo_history", "epl_form", "atp_elo_history", "atp_form"]:
+    for f in ["epl_elo_history", "epl_form", "atp_elo_history", "atp_form", "epl_matches", "atp_matches", "name_map"]:
         print(f, len(pd.read_csv(STATE / f"{f}.csv")), "rows")
