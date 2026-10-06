@@ -28,7 +28,7 @@ export type WalletDay = {
 };
 export type Bet = {
   bet_id: string; wallet: string; sport: string; strategy: string; placed_at: string;
-  commence_time: string; competition: string; match: string; pick: string; model_p: number;
+  commence_time: string; event_id: string; competition: string; match: string; pick: string; model_p: number;
   market_p: number; odds: number; stake: number; status: "open" | "won" | "lost" | "void";
   result: string | null; pnl: number; settled_at: string | null;
 };
@@ -38,12 +38,14 @@ export type Prediction = {
 };
 export type BacktestBet = { date: string; bankroll: number };
 export type BacktestSummary = Record<"epl" | "atp", {
-  test_period: string; matches: number; baseline_label: string;
+  test_period: string; matches: number; baseline_label: string; params: Record<string, number>;
   log_loss: { baseline: number; elo: number; bookmaker: number };
   wallet: { bets: number; win_rate: number; roi: number; final_bankroll: number; max_drawdown: number; min_edge: number };
 }>;
 
 export type Point = { x: string; y: number };
+
+export type Dashboard = ReturnType<typeof loadDashboard>;
 
 export function loadDashboard() {
   const history = readCsv<WalletDay>("state/bankroll_history.csv");
@@ -81,20 +83,31 @@ export function loadDashboard() {
     list.push(p);
     matches.set(p.event_id, list);
   }
-  const betEvents = new Set(ledger.map((b) => b.bet_id.split(":")[0]));
+  const pickByEvent = new Map(ledger.map((b) => [b.event_id, b.pick]));
   const upcoming = [...matches.values()]
-    .map((outcomes) => ({ ...outcomes[0], outcomes, hasBet: betEvents.has(outcomes[0].event_id) }))
+    .map((outcomes) => ({
+      ...outcomes[0],
+      outcomes,
+      hasBet: pickByEvent.has(outcomes[0].event_id),
+      pick: pickByEvent.get(outcomes[0].event_id) ?? null,
+    }))
     .sort((a, b) => a.commence_time.localeCompare(b.commence_time));
+
+  // Total bankroll across wallets, per day (hero sparkline).
+  const totals = new Map<string, number>();
+  for (const r of history) totals.set(String(r.date), (totals.get(String(r.date)) ?? 0) + r.bankroll);
 
   return {
     latestDate,
+    totalCurve: [...totals].map(([x, y]) => ({ x, y })),
+    bets: [...ledger].reverse(),
     latest,
     liveCurves,
     openBets: ledger.filter((b) => b.status === "open").sort((a, b) => a.commence_time.localeCompare(b.commence_time)),
     settledBets: ledger.filter((b) => b.status !== "open").reverse().slice(0, 50),
     upcoming,
-    eplRatings: eplRatings.slice(0, 20),
-    atpRatings: atpRatings.slice(0, 20),
+    eplRatings,
+    atpRatings: atpRatings.slice(0, 60),
     backtest,
     backtestCurves: {
       epl: backtestCurve("results/epl_bets.csv"),
