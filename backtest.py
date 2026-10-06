@@ -144,9 +144,16 @@ TENNIS_TUNE = ("2010-01-01", "2019-12-31")
 TENNIS_TEST_START = "2023-01-01"
 
 
-def load_atp() -> pd.DataFrame:
+def load_atp(recent: Path | None = None) -> pd.DataFrame:
+    """ATP history. `recent` = extra results collected live by daily.py; only rows newer
+    than the main dataset are added, so nothing is counted twice."""
     df = pd.read_csv(DATA / "tennis" / "atp_tennis.csv", low_memory=False)
+    if recent is not None and recent.exists():
+        extra = pd.read_csv(recent)
+        df = pd.concat([df, extra[extra.Date > df.Date.max()].drop(columns="event_id")], ignore_index=True)
     df[["Odd_1", "Odd_2"]] = df[["Odd_1", "Odd_2"]].apply(pd.to_numeric, errors="coerce")
+    for col in ["Player_1", "Player_2", "Winner"]:
+        df[col] = df[col].str.strip()  # some names have stray trailing spaces
     df["date"] = pd.to_datetime(df.Date)
     df["p1_won"] = df.Winner == df.Player_1
     return df.sort_values("date", kind="stable").reset_index(drop=True)
