@@ -35,7 +35,12 @@ export default function SquadView({ squad, teamName }: { squad: Squad; teamName:
       p && {
         name: p.name,
         onClick: () => openAt(p),
-        style: p.status === "d" ? { borderColor: "#eda100", color: "#fff7e0" } : undefined,
+        // The library has no photo prop, but `color` becomes the circle's CSS background,
+        // so the photo goes in as a background layer (sizing lives in globals.css: .squad-pitch).
+        style: {
+          color: `url("${p.photo || initialsSvg(p.name)}") no-repeat, ${p.status === "d" ? "#fff7e0" : "#eef2ef"}`,
+          ...(p.status === "d" ? { borderColor: "#eda100" } : {}),
+        },
       };
     return {
       squad: {
@@ -68,7 +73,7 @@ export default function SquadView({ squad, teamName }: { squad: Squad; teamName:
             <p className="text-[13px] font-semibold text-ink">Probable XI <span className="font-normal text-ink-3">· {squad.xi.formation}</span></p>
             <p className="text-[11px] text-ink-3">Most starts among fit players · tap a player</p>
           </div>
-          <div className="mx-auto max-w-[460px] overflow-hidden rounded-2xl" onPointerDownCapture={trackPointer}>
+          <div className="squad-pitch mx-auto max-w-[460px] overflow-hidden rounded-2xl" onPointerDownCapture={trackPointer}>
             <SoccerLineUp size="responsive" orientation="vertical" color="#4f8a64" pattern="lines" homeTeam={team} />
           </div>
           <p className="mt-2 flex items-center gap-1.5 text-[11px] text-ink-3">
@@ -259,10 +264,18 @@ function StatusChip({ p, compact = false }: { p: FplPlayer; compact?: boolean })
   return <span className={`inline-flex shrink-0 items-center rounded-full font-semibold ${compact ? "px-1.5 py-0 text-[10px]" : "px-2 py-0.5 text-[11px]"} ${cls}`}>{label}</span>;
 }
 
+const initialsOf = (name: string) => name.split(/[\s.]+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join("").toUpperCase();
+
+/** Initials drawn as an SVG, used as the pitch circle's background when a player has no photo. */
+const initialsSvg = (name: string) =>
+  `data:image/svg+xml,${encodeURIComponent(
+    `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="66" text-anchor="middle" ` +
+    `font-family="system-ui,sans-serif" font-size="34" font-weight="600" fill="#5b6470">${initialsOf(name)}</text></svg>`)}`;
+
 /** Photo with an initials fallback (new signings sometimes have no photo yet). */
 function Avatar({ src, name, size, rounded = "full" }: { src: string; name: string; size: number; rounded?: "full" | "xl" }) {
   const [failed, setFailed] = useState(!src);
-  const initials = name.split(/[\s.]+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join("").toUpperCase();
+  const initials = initialsOf(name);
   return failed ? (
     <span className={`grid shrink-0 place-items-center bg-sunken font-semibold text-ink-3 ring-1 ring-line ${rounded === "full" ? "rounded-full" : "rounded-xl"}`}
           style={{ width: size, height: size, fontSize: size * 0.34 }}>{initials}</span>

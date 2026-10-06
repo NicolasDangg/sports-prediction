@@ -71,3 +71,10 @@ body {
   .reveal { animation: none; }
   *, *::before, *::after { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
 }
+
+/* Squad pitch (react-soccer-lineup 1.0.0-beta.12, pinned): fit player photos inside the circles.
+   .c1ae8d3x is the library's player-circle class; the photo arrives via the player's `color`. */
+.squad-pitch .c1ae8d3x {
+  background-size: 118% auto, auto;
+  background-position: center 18%, center;
+}

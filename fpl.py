@@ -15,6 +15,7 @@ Writes:
 """
 
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import pandas as pd
@@ -22,7 +23,9 @@ import requests
 
 STATE = Path(__file__).parent / "state"
 FPL = "https://fantasy.premierleague.com/api"
-PHOTO = "https://resources.premierleague.com/premierleague/photos/players/110x140/p{code}.png"
+# Player photos: this season's set first (current kits, includes new signings), then the older set.
+PHOTOS = ("https://resources.premierleague.com/premierleague25/photos/players/110x140/{code}.png",
+          "https://resources.premierleague.com/premierleague/photos/players/110x140/p{code}.png")
 HEADERS = {"User-Agent": "Mozilla/5.0 (personal research; sports-prediction)"}
 
 # FPL short names -> the names our match history uses (football-data.co.uk)
@@ -63,7 +66,7 @@ def players_and_fixtures() -> tuple[pd.DataFrame, pd.DataFrame]:
         rows.append({
             "id": e["id"], "team": teams[e["team"]], "name": e["web_name"], "first_name": e["first_name"],
             "second_name": e["second_name"], "position": POSITIONS.get(e["element_type"], "?"),
-            "number": e.get("squad_number"), "photo": PHOTO.format(code=str(e["photo"]).split(".")[0]),
+            "number": e.get("squad_number"), "photo_code": str(e["photo"]).split(".")[0],
             "status": e["status"], "chance_next": e.get("chance_of_playing_next_round"), "news": e.get("news") or "",
             "news_added": e.get("news_added") or "", "price": e["now_cost"] / 10, "selected_pct": num(e["selected_by_percent"]),
             "form": num(e["form"]), "total_points": e["total_points"], "ppg": num(e["points_per_game"]), "ep_next": num(e.get("ep_next")),
@@ -82,6 +85,8 @@ def players_and_fixtures() -> tuple[pd.DataFrame, pd.DataFrame]:
             "birth_date": e.get("birth_date") or "",
         })
     players = pd.DataFrame(rows)
+    players.insert(players.columns.get_loc("photo_code"), "photo", best_photos(players.photo_code, players.status))
+    players = players.drop(columns="photo_code")
 
     fx = _get(f"{FPL}/fixtures/", params={"future": 1})
     frows = []
@@ -95,6 +100,28 @@ def players_and_fixtures() -> tuple[pd.DataFrame, pd.DataFrame]:
     fixtures = (pd.DataFrame(frows).sort_values(["team", "gw", "kickoff"]).groupby("team").head(6)
                 if frows else pd.DataFrame(columns=["team", "gw", "opponent", "home", "difficulty", "kickoff"]))
     return players, fixtures
+
+
+def best_photos(codes: pd.Series, status: pd.Series) -> list[str]:
+    """First photo URL that exists for each player ("" = none; the dashboard shows initials).
+    Players who left the club ("u") aren't shown, so they skip the check."""
+    session = requests.Session()
+    session.headers.update(HEADERS)
+
+    def pick(code: str, st: str) -> str:
+        if st == "u":
+            return PHOTOS[0].format(code=code)
+        for template in PHOTOS:
+            url = template.format(code=code)
+            try:
+                if session.head(url, timeout=15).status_code == 200:
+                    return url
+            except requests.RequestException:
+                return PHOTOS[0].format(code=code)  # network trouble: don't blank the photo
+        return ""
+
+    with ThreadPoolExecutor(8) as ex:
+        return list(ex.map(pick, codes, status))
 
 
 def coaches() -> pd.DataFrame:
