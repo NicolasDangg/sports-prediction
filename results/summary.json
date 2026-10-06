@@ -1,0 +1,51 @@
+{
+  "epl": {
+    "params": {
+      "k": 15,
+      "home_adv": 40,
+      "carryover": 0.9
+    },
+    "test_period": "2223-2627",
+    "matches": 1570,
+    "log_loss": {
+      "baseline": 1.068678730113262,
+      "elo": 0.9845949685657555,
+      "bookmaker": 0.9635049635741926
+    },
+    "baseline_label": "Average H/D/A rates",
+    "wallet": {
+      "bets": 1255,
+      "win_rate": 0.2948207171314741,
+      "staked": 8041.34,
+      "profit": -966.92,
+      "roi": -0.12024364098520877,
+      "final_bankroll": 33.06,
+      "max_drawdown": 0.973722614666989,
+      "min_edge": 0.03
+    }
+  },
+  "atp": {
+    "params": {
+      "k_scale": 200,
+      "surface_weight": 0.5
+    },
+    "test_period": "2023-2026-09-29",
+    "matches": 9844,
+    "log_loss": {
+      "baseline": 0.6931471805599453,
+      "elo": 0.6297574347249039,
+      "bookmaker": 0.5888325615983884
+    },
+    "baseline_label": "Coin flip",
+    "wallet": {
+      "bets": 6692,
+      "win_rate": 0.399581589958159,
+      "staked": 3577.78,
+      "profit": -999.95,
+      "roi": -0.27948895683915115,
+      "final_bankroll": 0.1,
+      "max_drawdown": 0.9999032460935611,
+      "min_edge": 0.03
+    }
+  }
+}

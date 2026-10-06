@@ -13,6 +13,8 @@ Outputs go to results/: bet logs for each sport plus current ratings.
 
 from pathlib import Path
 
+import json
+
 import numpy as np
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
@@ -89,7 +91,7 @@ def prob_of_actual(probs: pd.DataFrame | np.ndarray, result: pd.Series) -> list[
     return list(arr[np.arange(len(arr)), idx])
 
 
-def run_epl() -> None:
+def run_epl() -> dict:
     print("=" * 70, "\nEPL\n" + "=" * 70)
     df = load_epl()
     train = df.season.isin(EPL_TRAIN).to_numpy()
@@ -117,9 +119,12 @@ def run_epl() -> None:
     base = df.result[train].value_counts(normalize=True)[["H", "D", "A"]].to_numpy()
 
     print(f"\nTest period: {EPL_TEST[0]}-{EPL_TEST[-1]}, {len(t)} matches. Log loss (lower = better):")
-    print(f"  Know-nothing (always predict the average H/D/A rates): {log_loss(prob_of_actual(np.tile(base, (len(t), 1)), t.result)):.4f}")
-    print(f"  Elo                                                   : {log_loss(prob_of_actual(elo_p, t.result)):.4f}")
-    print(f"  Bookmaker closing odds                                : {log_loss(prob_of_actual(book_p, t.result)):.4f}")
+    scores = {"baseline": log_loss(prob_of_actual(np.tile(base, (len(t), 1)), t.result)),
+              "elo": log_loss(prob_of_actual(elo_p, t.result)),
+              "bookmaker": log_loss(prob_of_actual(book_p, t.result))}
+    print(f"  Know-nothing (always predict the average H/D/A rates): {scores['baseline']:.4f}")
+    print(f"  Elo                                                   : {scores['elo']:.4f}")
+    print(f"  Bookmaker closing odds                                : {scores['bookmaker']:.4f}")
 
     # 3. Virtual wallet: bet wherever Elo disagrees enough with the odds.
     w = Wallet()
@@ -131,11 +136,13 @@ def run_epl() -> None:
             info = {"date": g.date.date(), "season": g.season, "match": f"{g.HomeTeam} v {g.AwayTeam}",
                     "score": f"{int(g.FTHG)}-{int(g.FTAG)}"}
             w.place_and_settle(info, label, p, odds, stake, won=(g.result == label))
-    report_wallet(w, "epl")
+    wallet = report_wallet(w, "epl")
 
     ratings = pd.Series({t_: elo.ratings[t_] for t_ in elo.season_teams}).sort_values(ascending=False)
     ratings.rename("elo").rename_axis("team").round(1).to_csv(RESULTS / "epl_ratings.csv")
     print("\nCurrent top 5 EPL Elo:\n" + ratings.head().round(0).to_string())
+    return {"params": params, "test_period": f"{EPL_TEST[0]}-{EPL_TEST[-1]}", "matches": len(t),
+            "log_loss": scores, "baseline_label": "Average H/D/A rates", "wallet": wallet}
 
 
 # ======================================================================== Tennis
@@ -171,7 +178,7 @@ def tennis_probs(df: pd.DataFrame, **params) -> tuple[np.ndarray, TennisElo]:
     return probs, elo
 
 
-def run_tennis() -> None:
+def run_tennis() -> dict:
     print("\n" + "=" * 70, "\nATP TENNIS\n" + "=" * 70)
     df = load_atp()
     tune = df.date.between(*TENNIS_TUNE).to_numpy()
@@ -194,9 +201,12 @@ def run_tennis() -> None:
     book_p = implied_probs(t[["Odd_1", "Odd_2"]].to_numpy())[:, 0]
 
     print(f"\nTest period: {TENNIS_TEST_START[:4]}-{t.date.max().date()}, {len(t)} matches. Log loss (lower = better):")
-    print(f"  Coin flip (50/50)      : {log_loss([0.5] * len(t)):.4f}")
-    print(f"  Elo                    : {log_loss(list(actual(elo_p, t.p1_won))):.4f}")
-    print(f"  Bookmaker odds         : {log_loss(list(actual(book_p, t.p1_won))):.4f}")
+    scores = {"baseline": log_loss([0.5] * len(t)),
+              "elo": log_loss(list(actual(elo_p, t.p1_won))),
+              "bookmaker": log_loss(list(actual(book_p, t.p1_won)))}
+    print(f"  Coin flip (50/50)      : {scores['baseline']:.4f}")
+    print(f"  Elo                    : {scores['elo']:.4f}")
+    print(f"  Bookmaker odds         : {scores['bookmaker']:.4f}")
 
     w = Wallet()
     for i, g in t.iterrows():
@@ -206,7 +216,7 @@ def run_tennis() -> None:
             info = {"date": g.date.date(), "tournament": g.Tournament, "surface": g.Surface,
                     "match": f"{g.Player_1} v {g.Player_2}", "score": g.Score}
             w.place_and_settle(info, label, prob, odds, stake, won=(g.Winner == label))
-    report_wallet(w, "tennis")
+    wallet = report_wallet(w, "tennis")
 
     active = df[df.date >= df.date.max() - pd.Timedelta(days=365)]
     players = set(active.Player_1) | set(active.Player_2)
@@ -217,18 +227,21 @@ def run_tennis() -> None:
     }).sort_values("elo", ascending=False).round(1)
     ratings.to_csv(RESULTS / "tennis_ratings.csv", index=False)
     print("\nCurrent top 5 ATP Elo:\n" + ratings.head().to_string(index=False))
+    return {"params": params, "test_period": f"{TENNIS_TEST_START[:4]}-{t.date.max().date()}",
+            "matches": len(t), "log_loss": scores, "baseline_label": "Coin flip", "wallet": wallet}
 
 
-def report_wallet(w: Wallet, name: str) -> None:
+def report_wallet(w: Wallet, name: str) -> dict:
     s = w.summary()
     print(f"\nVirtual wallet ($1,000 start, quarter-Kelly, bet only if edge >= {w.min_edge:.0%}):")
     print(f"  {s['bets']} bets, won {s['win_rate']:.1%}, staked ${s['staked']:,.0f}, "
           f"profit ${s['profit']:,.0f}, ROI {s['roi']:+.1%}")
     print(f"  Final bankroll ${s['final_bankroll']:,.0f}, worst drawdown {s['max_drawdown']:.0%}")
     pd.DataFrame(w.bets).to_csv(RESULTS / f"{name}_bets.csv", index=False)
+    return {**s, "min_edge": w.min_edge}
 
 
 if __name__ == "__main__":
     RESULTS.mkdir(exist_ok=True)
-    run_epl()
-    run_tennis()
+    summary = {"epl": run_epl(), "atp": run_tennis()}
+    (RESULTS / "summary.json").write_text(json.dumps(summary, indent=2, default=float))
