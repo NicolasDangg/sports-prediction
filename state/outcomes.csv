@@ -1,0 +1,14 @@
+event_id,sport_key,home,away,commence_time,winner,source,recorded_at
+69ec18acddec63da011d8f44d376b90c,tennis_atp_china_open,Hubert Hurkacz,Karen Khachanov,2026-10-04T05:08:25Z,Hubert Hurkacz,odds_api,2026-10-06T23:02:46+00:00
+e9d8fec90ecda0bc0721e481e8cdaa69,tennis_atp_china_open,Alex de Minaur,Andrey Rublev,2026-10-04T07:03:50Z,Alex de Minaur,odds_api,2026-10-06T23:02:46+00:00
+503668639586796c463e08dc29b69bfb,tennis_atp_china_open,Daniil Medvedev,Francisco Cerundolo,2026-10-04T08:35:26Z,Daniil Medvedev,odds_api,2026-10-06T23:02:46+00:00
+305b3ecd1828799e8cf4ddc17a43e582,tennis_atp_china_open,Alexander Zverev,Novak Djokovic,2026-10-04T11:06:06Z,Novak Djokovic,odds_api,2026-10-06T23:02:46+00:00
+d5f176ea16c34ec6c13647efacd2bb99,tennis_atp_china_open,Alex de Minaur,Hubert Hurkacz,2026-10-05T09:24:22Z,Alex de Minaur,odds_api,2026-10-06T23:02:46+00:00
+d77588347c84136dd9fe6fb7a54b40b4,tennis_atp_china_open,Novak Djokovic,Alex de Minaur,2026-10-06T11:08:00Z,Novak Djokovic,odds_api,2026-10-06T23:02:46+00:00
+5357c574f469ea94b1ae1dd036711f7f,tennis_atp_japan_open,Jaume Munar,Kyrian Jacquet,2026-10-04T02:07:45Z,Jaume Munar,odds_api,2026-10-06T23:02:46+00:00
+d29e017ede49b7615b809bfefcffea6c,tennis_atp_japan_open,Carlos Alcaraz,Denis Shapovalov,2026-10-04T04:05:40Z,Carlos Alcaraz,odds_api,2026-10-06T23:02:46+00:00
+2ef03d744d19f6f72feffe902dd58fb3,tennis_atp_japan_open,Valentin Vacherot,Arthur Fils,2026-10-04T07:04:00Z,Valentin Vacherot,odds_api,2026-10-06T23:02:46+00:00
+8df898f639928a81d8b621732f0c3d95,tennis_atp_japan_open,Jiri Lehecka,Adolfo Daniel Vallejo,2026-10-04T09:46:28Z,Jiri Lehecka,odds_api,2026-10-06T23:02:46+00:00
+c927d344ac31cc74267be66b1129b3c4,tennis_atp_japan_open,Carlos Alcaraz,Jaume Munar,2026-10-05T07:21:30Z,Carlos Alcaraz,odds_api,2026-10-06T23:02:46+00:00
+4bfb84fc62ffc5b65c9d7213ee0caf6f,tennis_atp_japan_open,Jiri Lehecka,Valentin Vacherot,2026-10-05T10:14:00Z,Jiri Lehecka,odds_api,2026-10-06T23:02:46+00:00
+c1bfe7c3313fc6b8cd0f91167146ab48,tennis_atp_japan_open,Carlos Alcaraz,Jiri Lehecka,2026-10-06T09:09:27Z,Carlos Alcaraz,odds_api,2026-10-06T23:02:46+00:00
