@@ -2,9 +2,9 @@ sport,sport_key,competition,event_id,commence_time,match,outcome,elo_p,market_p,
 epl,soccer_epl,Premier League,b870dcfba5e5920d3f1551a3aa1ea435,2026-10-10T11:30:00Z,Arsenal v Leeds United,Arsenal,0.7379,0.6899,1.38,23,0.0183
 epl,soccer_epl,Premier League,b870dcfba5e5920d3f1551a3aa1ea435,2026-10-10T11:30:00Z,Arsenal v Leeds United,Draw,0.1765,0.1904,5.0,23,-0.1176
 epl,soccer_epl,Premier League,b870dcfba5e5920d3f1551a3aa1ea435,2026-10-10T11:30:00Z,Arsenal v Leeds United,Leeds United,0.0856,0.1197,7.95,23,-0.3191
-epl,soccer_epl,Premier League,02e6c0ccb11bb7ce78989ce49d67110b,2026-10-10T14:00:00Z,Aston Villa v Brentford,Aston Villa,0.4477,0.3595,2.65,23,0.1864
-epl,soccer_epl,Premier League,02e6c0ccb11bb7ce78989ce49d67110b,2026-10-10T14:00:00Z,Aston Villa v Brentford,Draw,0.2618,0.2684,3.55,23,-0.0704
-epl,soccer_epl,Premier League,02e6c0ccb11bb7ce78989ce49d67110b,2026-10-10T14:00:00Z,Aston Villa v Brentford,Brentford,0.2904,0.3721,2.56,23,-0.2565
+epl,soccer_epl,Premier League,02e6c0ccb11bb7ce78989ce49d67110b,2026-10-10T14:00:00Z,Aston Villa v Brentford,Aston Villa,0.4477,0.359,2.65,23,0.1864
+epl,soccer_epl,Premier League,02e6c0ccb11bb7ce78989ce49d67110b,2026-10-10T14:00:00Z,Aston Villa v Brentford,Draw,0.2618,0.268,3.55,23,-0.0704
+epl,soccer_epl,Premier League,02e6c0ccb11bb7ce78989ce49d67110b,2026-10-10T14:00:00Z,Aston Villa v Brentford,Brentford,0.2904,0.3731,2.55,23,-0.2594
 epl,soccer_epl,Premier League,45d4a466e32cd2b4ea535207923ceaf5,2026-10-10T14:00:00Z,Chelsea v Bournemouth,Chelsea,0.4278,0.5564,1.73,23,-0.26
 epl,soccer_epl,Premier League,45d4a466e32cd2b4ea535207923ceaf5,2026-10-10T14:00:00Z,Chelsea v Bournemouth,Draw,0.2642,0.2297,4.19,23,0.1068
 epl,soccer_epl,Premier League,45d4a466e32cd2b4ea535207923ceaf5,2026-10-10T14:00:00Z,Chelsea v Bournemouth,Bournemouth,0.3081,0.2139,4.5,23,0.3864
@@ -29,9 +29,9 @@ epl,soccer_epl,Premier League,6dbab232dd8d2aed0cb1d6f7978fb7b1,2026-10-11T15:30:
 epl,soccer_epl,Premier League,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City v Newcastle United,Coventry City,0.2435,0.2915,3.25,22,-0.2085
 epl,soccer_epl,Premier League,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City v Newcastle United,Draw,0.2586,0.2628,3.605,22,-0.0677
 epl,soccer_epl,Premier League,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City v Newcastle United,Newcastle United,0.4979,0.4458,2.125,22,0.0579
-epl,soccer_epl,Premier League,764e6513cb3f348881503df70ccb90e0,2026-10-17T11:30:00Z,Everton v Chelsea,Everton,0.4181,0.3342,2.81,16,0.175
-epl,soccer_epl,Premier League,764e6513cb3f348881503df70ccb90e0,2026-10-17T11:30:00Z,Everton v Chelsea,Draw,0.2651,0.2538,3.7,16,-0.0192
-epl,soccer_epl,Premier League,764e6513cb3f348881503df70ccb90e0,2026-10-17T11:30:00Z,Everton v Chelsea,Chelsea,0.3168,0.4119,2.28,16,-0.2778
+epl,soccer_epl,Premier League,764e6513cb3f348881503df70ccb90e0,2026-10-17T11:30:00Z,Everton v Chelsea,Everton,0.4181,0.3296,2.85,16,0.1917
+epl,soccer_epl,Premier League,764e6513cb3f348881503df70ccb90e0,2026-10-17T11:30:00Z,Everton v Chelsea,Draw,0.2651,0.2539,3.7,16,-0.0192
+epl,soccer_epl,Premier League,764e6513cb3f348881503df70ccb90e0,2026-10-17T11:30:00Z,Everton v Chelsea,Chelsea,0.3168,0.4165,2.255,16,-0.2857
 epl,soccer_epl,Premier League,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Brentford v Liverpool,Brentford,0.3424,0.343,2.735,16,-0.0634
 epl,soccer_epl,Premier League,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Brentford v Liverpool,Draw,0.2681,0.2588,3.625,16,-0.0281
 epl,soccer_epl,Premier League,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Brentford v Liverpool,Liverpool,0.3894,0.3983,2.355,16,-0.0829
@@ -56,9 +56,9 @@ epl,soccer_epl,Premier League,676b3b0b609e9cf565da450786618d26,2026-10-18T13:00:
 epl,soccer_epl,Premier League,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Nottingham Forest v Arsenal,Nottingham Forest,0.1925,0.1598,5.875,16,0.1308
 epl,soccer_epl,Premier League,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Nottingham Forest v Arsenal,Draw,0.2459,0.2439,3.85,16,-0.0533
 epl,soccer_epl,Premier League,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Nottingham Forest v Arsenal,Arsenal,0.5616,0.5962,1.575,16,-0.1154
-epl,soccer_epl,Premier League,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur v Coventry City,Tottenham Hotspur,0.5305,0.6322,1.5,16,-0.2042
-epl,soccer_epl,Premier League,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur v Coventry City,Draw,0.2472,0.2098,4.52,16,0.1174
-epl,soccer_epl,Premier League,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur v Coventry City,Coventry City,0.2222,0.158,6.0,16,0.3335
+epl,soccer_epl,Premier League,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur v Coventry City,Tottenham Hotspur,0.5305,0.6307,1.5,16,-0.2042
+epl,soccer_epl,Premier League,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur v Coventry City,Draw,0.2472,0.2093,4.52,16,0.1174
+epl,soccer_epl,Premier League,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur v Coventry City,Coventry City,0.2222,0.1601,5.91,16,0.3135
 atp,tennis_atp_china_open,ATP China Open (Hard),d77588347c84136dd9fe6fb7a54b40b4,2026-10-06T11:00:00Z,Novak Djokovic v Alex de Minaur,Novak Djokovic,0.7954,0.63,1.515,20,0.205
 atp,tennis_atp_china_open,ATP China Open (Hard),d77588347c84136dd9fe6fb7a54b40b4,2026-10-06T11:00:00Z,Novak Djokovic v Alex de Minaur,Alex de Minaur,0.2046,0.37,2.58,20,-0.4721
 atp,tennis_atp_japan_open,ATP Japan Open (Hard),c1bfe7c3313fc6b8cd0f91167146ab48,2026-10-06T09:00:00Z,Carlos Alcaraz v Jiri Lehecka,Carlos Alcaraz,0.8535,0.7565,1.26,18,0.0754
@@ -75,18 +75,18 @@ atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),790f5e853b0ee965cff9
 atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),790f5e853b0ee965cff9ae0f2521a4a4,2026-10-07T04:00:00Z,Botic van de Zandschulp v Daniel Merida Aguilar,Daniel Merida Aguilar,0.5718,0.5159,1.83,11,0.0464
 atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),e239b6153731e9f0b84f346eb587f9f7,2026-10-07T04:00:00Z,Luca Van Assche v Bu Yunchaokete,Luca Van Assche,0.6205,0.3695,2.56,11,0.5885
 atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),e239b6153731e9f0b84f346eb587f9f7,2026-10-07T04:00:00Z,Luca Van Assche v Bu Yunchaokete,Bu Yunchaokete,0.3795,0.6305,1.5,11,-0.4307
-atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),4955d590a659f419a3c243ac01adcba5,2026-10-07T04:00:00Z,Cameron Norrie v Denis Shapovalov,Cameron Norrie,0.4829,0.5053,1.87,9,-0.0971
-atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),4955d590a659f419a3c243ac01adcba5,2026-10-07T04:00:00Z,Cameron Norrie v Denis Shapovalov,Denis Shapovalov,0.5171,0.4947,1.91,9,-0.0123
+atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),4955d590a659f419a3c243ac01adcba5,2026-10-07T04:00:00Z,Cameron Norrie v Denis Shapovalov,Cameron Norrie,0.4829,0.5,1.91,11,-0.0777
+atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),4955d590a659f419a3c243ac01adcba5,2026-10-07T04:00:00Z,Cameron Norrie v Denis Shapovalov,Denis Shapovalov,0.5171,0.5,1.91,11,-0.0123
 atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),ff12f67489673ffd2bc90d9a6f686b15,2026-10-07T04:00:00Z,Holger Rune v Daniel Altmaier,Holger Rune,0.8302,0.6782,1.4,9,0.1623
 atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),ff12f67489673ffd2bc90d9a6f686b15,2026-10-07T04:00:00Z,Holger Rune v Daniel Altmaier,Daniel Altmaier,0.1698,0.3218,2.95,9,-0.4991
 atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),6330b92e3c299cc0b3db77e4e0a4b83c,2026-10-07T04:00:00Z,Fabian Marozsan v Zachary Svajda,Fabian Marozsan,0.6663,0.5126,1.835,8,0.2227
 atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),6330b92e3c299cc0b3db77e4e0a4b83c,2026-10-07T04:00:00Z,Fabian Marozsan v Zachary Svajda,Zachary Svajda,0.3337,0.4874,1.93,8,-0.356
-atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),333980ed121c08c335b86c91a1de3a48,2026-10-07T04:00:00Z,Nuno Borges v Facundo Diaz Acosta,Nuno Borges,0.7432,0.7573,1.25,9,-0.071
-atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),333980ed121c08c335b86c91a1de3a48,2026-10-07T04:00:00Z,Nuno Borges v Facundo Diaz Acosta,Facundo Diaz Acosta,0.2568,0.2427,3.9,9,0.0017
+atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),333980ed121c08c335b86c91a1de3a48,2026-10-07T04:00:00Z,Nuno Borges v Facundo Diaz Acosta,Nuno Borges,0.7432,0.7573,1.25,11,-0.071
+atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),333980ed121c08c335b86c91a1de3a48,2026-10-07T04:00:00Z,Nuno Borges v Facundo Diaz Acosta,Facundo Diaz Acosta,0.2568,0.2427,3.9,11,0.0017
 atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),fd28d05a1e60816704c0dc6a7eb12b72,2026-10-07T04:00:00Z,Thiago Agustin Tirante v Hamad Medjedovic,Thiago Agustin Tirante,0.7294,0.5596,1.7,10,0.24
 atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),fd28d05a1e60816704c0dc6a7eb12b72,2026-10-07T04:00:00Z,Thiago Agustin Tirante v Hamad Medjedovic,Hamad Medjedovic,0.2706,0.4404,2.16,10,-0.4156
-atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),2ba2d49f6e9fb8fc7d0417ca0b590f77,2026-10-07T04:00:00Z,Hubert Hurkacz v James Duckworth,Hubert Hurkacz,0.746,0.7055,1.34,10,-0.0004
-atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),2ba2d49f6e9fb8fc7d0417ca0b590f77,2026-10-07T04:00:00Z,Hubert Hurkacz v James Duckworth,James Duckworth,0.254,0.2945,3.21,10,-0.1845
+atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),2ba2d49f6e9fb8fc7d0417ca0b590f77,2026-10-07T04:00:00Z,Hubert Hurkacz v James Duckworth,Hubert Hurkacz,0.746,0.7048,1.34,10,-0.0004
+atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),2ba2d49f6e9fb8fc7d0417ca0b590f77,2026-10-07T04:00:00Z,Hubert Hurkacz v James Duckworth,James Duckworth,0.254,0.2952,3.2,10,-0.1871
 atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),4ed151cdcdb29939aae76add155bbc56,2026-10-07T04:00:00Z,Martin Landaluce v Jan-Lennard Struff,Martin Landaluce,0.3821,0.5192,1.82,10,-0.3045
 atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),4ed151cdcdb29939aae76add155bbc56,2026-10-07T04:00:00Z,Martin Landaluce v Jan-Lennard Struff,Jan-Lennard Struff,0.6179,0.4808,1.965,10,0.2141
 atp,tennis_atp_shanghai_masters,ATP Shanghai Masters (Hard),e891a02e881883be43d898107660ddcf,2026-10-07T04:00:00Z,Jaume Munar v Jenson Brooksby,Jaume Munar,0.5761,0.5964,1.59,11,-0.084
