@@ -26,6 +26,15 @@
   --color-atp: #eb6834;
   --color-atp-soft: #fdeee6;
 
+  /* shadcn/ui token names, mapped onto this palette (used by components/ui/*) */
+  --color-background: var(--color-surface);
+  --color-foreground: var(--color-ink);
+  --color-card: var(--color-surface);
+  --color-card-foreground: var(--color-ink);
+  --color-muted: var(--color-sunken);
+  --color-muted-foreground: var(--color-ink-3);
+  --color-border: var(--color-line);
+
   --shadow-diffuse: 0 24px 48px -28px rgb(17 20 26 / 0.14), 0 2px 6px -2px rgb(17 20 26 / 0.04);
   --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }

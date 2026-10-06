@@ -9,6 +9,15 @@ If the counter climbs fast, results on the test years stop being trustworthy (se
 
 ---
 
+## E003 · 2026-10-06 · Decision tree on ATP pre-match features (exploration, not shipped)
+- **Report:** owner request ("find the variable that best splits the data… split, split, split").
+- **Script:** `experiments/e003_decision_tree.py` → `results/e003_decision_tree.json` (shown on the dashboard Model page).
+- **Features (all pre-match, P1 − P2):** Elo gap, surface Elo gap, log ranking ratio, log points ratio, last-10 win rate, log career matches, days since last match, best-of-5, surface. Training rows mirrored (players swapped) so listing order can't be learned; P1 win rate is 50.0%.
+- **Best single split (Gini gain, train 2010–19):** Elo gap 0.064 > surface Elo 0.061 > ranking 0.054 > points 0.054 > form 0.030 > experience 0.030 > rest ≈ 0.
+- **Depth chosen on validation 2020–22:** 6 (10 depths tried, min 300 matches per leaf). Elo gap carries 86% of the tree's importance.
+- **Validation log loss (6,167 matches):** tree 0.6209 · calibrated Elo 0.6211 · raw Elo 0.6239 · bookmaker 0.5841.
+- **Conclusion:** a tree on the same information only matches calibrated Elo. Rankings and form add almost nothing once Elo is known. **Not shipped. No test-set look.** Points toward experiment A (calibration + format) as the cheap gain, and toward new information sources for anything more.
+
 ## I001 · 2026-10-06 · Step 0: data and execution integrity (infrastructure, not a strategy change)
 - **Why:** the review found problems that invalidate experiments: misresolved player identities (phantom 1500-rated players → fake edges, 3 live bets affected), no log of forecasts we passed on, synthetic median execution prices, and silent 7-day voids.
 - **Changes:** tennis name resolver with an identity gate (unknown/ambiguous/stale → not bettable; untrusted results not stored); `aliases.csv`; append-only `forecasts.csv` / `outcomes.csv` / `closing.csv`; bets execute at a real bookmaker quote ≤ median, with bookmaker and quote time recorded; settlement falls back to history files and marks `unresolved` instead of `void`; `deposits.csv` + `accounts.py`; wallets raised to $5,000 (deposit, not profit); `tests/smoke_daily.py`.

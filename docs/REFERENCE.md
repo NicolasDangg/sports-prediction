@@ -37,6 +37,8 @@ The LLM agent only orchestrates; all maths is in Python, so every number is repr
 | `aliases.csv` | Manual name fixes (`sport,api_name,history_name`) for anything the resolver can't match |
 | `records.py` | Append-only research records: forecasts, outcomes, closing prices, CLV; history-file lookups |
 | `accounts.py` | Wallet money: opening balances, deposits, refills (`list` / `deposit` / `refill`) |
+| `ratings_history.py` | Elo after every match + recent form → `state/*_elo_history.csv`, `*_form.csv` (dashboard Ratings charts) |
+| `experiments/e003_decision_tree.py` | Decision tree exploration (see experiments/LOG.md E003) → `results/e003_decision_tree.json` |
 | `tests/smoke_daily.py` | End-to-end test of the daily job against a fake API on a temp copy (no credits, real state untouched) |
 | `state/` | Live, committed record. **Never rewrite history here by hand.** |
 | `results/` | Backtest outputs: `summary.json`, `*_bets.csv`, `*_ratings.csv` |

@@ -1,0 +1,1408 @@
+date,team,elo,kind
+2024-08-15,Brentford,1463.3,reset
+2024-08-15,Nott'm Forest,1404.6,reset
+2024-08-15,Arsenal,1693.1,reset
+2024-08-15,Chelsea,1552.5,reset
+2024-08-15,Newcastle,1556.9,reset
+2024-08-15,Ipswich,1334.8,reset
+2024-08-15,Bournemouth,1441.2,reset
+2024-08-15,Liverpool,1669.8,reset
+2024-08-15,Aston Villa,1551.9,reset
+2024-08-15,Everton,1458.5,reset
+2024-08-15,Man City,1760.6,reset
+2024-08-15,Brighton,1481.1,reset
+2024-08-15,Tottenham,1545.4,reset
+2024-08-15,Man United,1546.4,reset
+2024-08-15,Fulham,1463.9,reset
+2024-08-15,Crystal Palace,1504.2,reset
+2024-08-16,Man United,1551.3,match
+2024-08-16,Fulham,1459.0,match
+2024-08-17,Ipswich,1331.4,match
+2024-08-17,Liverpool,1673.3,match
+2024-08-17,Arsenal,1696.5,match
+2024-08-17,Everton,1444.7,match
+2024-08-17,Brighton,1494.9,match
+2024-08-17,Newcastle,1559.6,match
+2024-08-17,Nott'm Forest,1404.6,match
+2024-08-17,Bournemouth,1441.3,match
+2024-08-17,Aston Villa,1558.4,match
+2024-08-18,Brentford,1470.8,match
+2024-08-18,Crystal Palace,1496.7,match
+2024-08-18,Chelsea,1546.3,match
+2024-08-18,Man City,1766.8,match
+2024-08-19,Tottenham,1542.0,match
+2024-08-24,Brighton,1502.8,match
+2024-08-24,Man United,1543.5,match
+2024-08-24,Crystal Palace,1483.0,match
+2024-08-24,Fulham,1463.2,match
+2024-08-24,Man City,1768.4,match
+2024-08-24,Ipswich,1329.8,match
+2024-08-24,Nott'm Forest,1411.4,match
+2024-08-24,Tottenham,1550.8,match
+2024-08-24,Everton,1436.0,match
+2024-08-24,Aston Villa,1550.3,match
+2024-08-24,Arsenal,1704.7,match
+2024-08-25,Bournemouth,1442.9,match
+2024-08-25,Newcastle,1557.9,match
+2024-08-25,Chelsea,1557.4,match
+2024-08-25,Liverpool,1677.8,match
+2024-08-25,Brentford,1466.3,match
+2024-08-31,Arsenal,1700.2,match
+2024-08-31,Brighton,1507.3,match
+2024-08-31,Brentford,1472.2,match
+2024-08-31,Everton,1427.7,match
+2024-08-31,Bournemouth,1451.1,match
+2024-08-31,Ipswich,1331.7,match
+2024-08-31,Fulham,1461.3,match
+2024-08-31,Aston Villa,1554.3,match
+2024-08-31,Nott'm Forest,1410.7,match
+2024-08-31,Man City,1772.6,match
+2024-09-01,Chelsea,1555.0,match
+2024-09-01,Crystal Palace,1485.4,match
+2024-09-01,Newcastle,1564.4,match
+2024-09-01,Tottenham,1544.3,match
+2024-09-01,Man United,1533.8,match
+2024-09-01,Liverpool,1687.4,match
+2024-09-14,Man United,1540.9,match
+2024-09-14,Brighton,1503.2,match
+2024-09-14,Ipswich,1335.9,match
+2024-09-14,Crystal Palace,1481.6,match
+2024-09-14,Fulham,1460.6,match
+2024-09-14,Liverpool,1674.5,match
+2024-09-14,Nott'm Forest,1423.6,match
+2024-09-14,Man City,1774.5,match
+2024-09-14,Brentford,1470.3,match
+2024-09-14,Aston Villa,1558.4,match
+2024-09-14,Everton,1423.6,match
+2024-09-14,Bournemouth,1445.0,match
+2024-09-14,Chelsea,1561.2,match
+2024-09-15,Tottenham,1539.2,match
+2024-09-15,Arsenal,1705.2,match
+2024-09-15,Newcastle,1569.7,match
+2024-09-21,Chelsea,1572.4,match
+2024-09-21,Aston Villa,1564.3,match
+2024-09-21,Fulham,1474.0,match
+2024-09-21,Newcastle,1556.3,match
+2024-09-21,Everton,1422.5,match
+2024-09-21,Liverpool,1679.1,match
+2024-09-21,Bournemouth,1440.4,match
+2024-09-21,Ipswich,1336.2,match
+2024-09-21,Tottenham,1547.0,match
+2024-09-21,Brentford,1462.5,match
+2024-09-21,Crystal Palace,1482.0,match
+2024-09-21,Man United,1540.5,match
+2024-09-22,Brighton,1500.7,match
+2024-09-22,Nott'm Forest,1426.1,match
+2024-09-22,Man City,1772.2,match
+2024-09-22,Arsenal,1707.5,match
+2024-09-28,Newcastle,1559.8,match
+2024-09-28,Man City,1768.7,match
+2024-09-28,Arsenal,1709.4,match
+2024-09-28,Brentford,1461.6,match
+2024-09-28,Chelsea,1580.1,match
+2024-09-28,Brighton,1492.9,match
+2024-09-28,Everton,1430.4,match
+2024-09-28,Crystal Palace,1474.1,match
+2024-09-28,Nott'm Forest,1418.8,match
+2024-09-28,Fulham,1481.4,match
+2024-09-28,Liverpool,1682.3,match
+2024-09-29,Ipswich,1339.9,match
+2024-09-29,Aston Villa,1560.6,match
+2024-09-29,Man United,1526.1,match
+2024-09-29,Tottenham,1561.4,match
+2024-09-30,Bournemouth,1446.6,match
+2024-10-05,Crystal Palace,1470.0,match
+2024-10-05,Liverpool,1686.4,match
+2024-10-05,Arsenal,1711.1,match
+2024-10-05,Brentford,1469.8,match
+2024-10-05,Bournemouth,1437.5,match
+2024-10-05,Man City,1770.7,match
+2024-10-05,Fulham,1479.4,match
+2024-10-05,Ipswich,1332.5,match
+2024-10-05,Everton,1432.3,match
+2024-10-05,Newcastle,1557.9,match
+2024-10-06,Aston Villa,1559.0,match
+2024-10-06,Man United,1527.7,match
+2024-10-06,Chelsea,1576.2,match
+2024-10-06,Nott'm Forest,1422.7,match
+2024-10-06,Brighton,1501.0,match
+2024-10-06,Tottenham,1553.3,match
+2024-10-19,Tottenham,1561.9,match
+2024-10-19,Fulham,1469.4,match
+2024-10-19,Aston Villa,1569.0,match
+2024-10-19,Ipswich,1323.1,match
+2024-10-19,Everton,1441.7,match
+2024-10-19,Man United,1533.1,match
+2024-10-19,Brentford,1464.4,match
+2024-10-19,Newcastle,1548.4,match
+2024-10-19,Brighton,1510.6,match
+2024-10-19,Bournemouth,1455.4,match
+2024-10-19,Arsenal,1693.2,match
+2024-10-20,Man City,1772.6,match
+2024-10-20,Liverpool,1690.8,match
+2024-10-20,Chelsea,1571.8,match
+2024-10-21,Nott'm Forest,1430.4,match
+2024-10-21,Crystal Palace,1462.3,match
+2024-10-25,Nott'm Forest,1440.3,match
+2024-10-26,Aston Villa,1565.8,match
+2024-10-26,Bournemouth,1458.5,match
+2024-10-26,Brentford,1468.3,match
+2024-10-26,Ipswich,1319.2,match
+2024-10-26,Brighton,1507.5,match
+2024-10-26,Man City,1773.4,match
+2024-10-26,Everton,1441.4,match
+2024-10-26,Fulham,1469.7,match
+2024-10-27,Chelsea,1577.9,match
+2024-10-27,Newcastle,1542.2,match
+2024-10-27,Crystal Palace,1471.1,match
+2024-10-27,Tottenham,1553.1,match
+2024-10-27,Man United,1524.9,match
+2024-10-27,Arsenal,1692.3,match
+2024-10-27,Liverpool,1691.8,match
+2024-11-02,Newcastle,1552.0,match
+2024-11-02,Arsenal,1682.5,match
+2024-11-02,Bournemouth,1470.9,match
+2024-11-02,Man City,1760.9,match
+2024-11-02,Ipswich,1318.8,match
+2024-11-02,Liverpool,1695.0,match
+2024-11-02,Brighton,1504.2,match
+2024-11-02,Nott'm Forest,1452.9,match
+2024-11-02,Everton,1431.7,match
+2024-11-02,Crystal Palace,1470.4,match
+2024-11-03,Tottenham,1565.2,match
+2024-11-03,Aston Villa,1553.7,match
+2024-11-03,Man United,1525.1,match
+2024-11-03,Chelsea,1577.6,match
+2024-11-04,Fulham,1476.3,match
+2024-11-04,Brentford,1461.7,match
+2024-11-09,Brentford,1468.5,match
+2024-11-09,Bournemouth,1464.1,match
+2024-11-09,Crystal Palace,1458.1,match
+2024-11-09,Fulham,1488.6,match
+2024-11-09,Everton,1433.0,match
+2024-11-09,Brighton,1515.9,match
+2024-11-09,Man City,1749.3,match
+2024-11-09,Liverpool,1700.9,match
+2024-11-09,Aston Villa,1547.9,match
+2024-11-10,Man United,1530.8,match
+2024-11-10,Nott'm Forest,1443.6,match
+2024-11-10,Newcastle,1561.4,match
+2024-11-10,Tottenham,1552.6,match
+2024-11-10,Ipswich,1331.4,match
+2024-11-10,Chelsea,1579.0,match
+2024-11-10,Arsenal,1681.1,match
+2024-11-23,Chelsea,1582.5,match
+2024-11-23,Arsenal,1685.5,match
+2024-11-23,Nott'm Forest,1439.1,match
+2024-11-23,Aston Villa,1545.2,match
+2024-11-23,Crystal Palace,1460.7,match
+2024-11-23,Bournemouth,1456.9,match
+2024-11-23,Brighton,1523.1,match
+2024-11-23,Everton,1432.9,match
+2024-11-23,Brentford,1468.6,match
+2024-11-23,Fulham,1471.1,match
+2024-11-23,Man City,1726.9,match
+2024-11-23,Tottenham,1575.0,match
+2024-11-24,Liverpool,1702.5,match
+2024-11-24,Ipswich,1334.6,match
+2024-11-24,Man United,1527.6,match
+2024-11-25,Newcastle,1545.6,match
+2024-11-29,Brighton,1518.3,match
+2024-11-30,Brentford,1475.6,match
+2024-11-30,Crystal Palace,1461.7,match
+2024-11-30,Newcastle,1544.6,match
+2024-11-30,Nott'm Forest,1443.7,match
+2024-11-30,Ipswich,1330.1,match
+2024-11-30,Bournemouth,1468.4,match
+2024-11-30,Arsenal,1692.5,match
+2024-12-01,Chelsea,1592.8,match
+2024-12-01,Aston Villa,1535.0,match
+2024-12-01,Man United,1536.4,match
+2024-12-01,Everton,1424.1,match
+2024-12-01,Tottenham,1572.1,match
+2024-12-01,Fulham,1474.1,match
+2024-12-01,Liverpool,1713.3,match
+2024-12-01,Man City,1716.1,match
+2024-12-03,Ipswich,1324.5,match
+2024-12-03,Crystal Palace,1467.3,match
+2024-12-04,Everton,1436.1,match
+2024-12-04,Man City,1719.9,match
+2024-12-04,Nott'm Forest,1440.0,match
+2024-12-04,Newcastle,1547.3,match
+2024-12-04,Liverpool,1710.6,match
+2024-12-04,Chelsea,1598.2,match
+2024-12-04,Arsenal,1698.0,match
+2024-12-04,Man United,1530.9,match
+2024-12-04,Aston Villa,1543.1,match
+2024-12-04,Brentford,1467.4,match
+2024-12-05,Fulham,1485.4,match
+2024-12-05,Brighton,1506.9,match
+2024-12-05,Bournemouth,1477.2,match
+2024-12-05,Tottenham,1563.2,match
+2024-12-07,Aston Villa,1545.5,match
+2024-12-07,Brentford,1480.0,match
+2024-12-07,Newcastle,1534.7,match
+2024-12-07,Crystal Palace,1471.3,match
+2024-12-07,Man City,1715.8,match
+2024-12-07,Man United,1520.7,match
+2024-12-07,Nott'm Forest,1450.2,match
+2024-12-08,Fulham,1488.9,match
+2024-12-08,Arsenal,1694.6,match
+2024-12-08,Ipswich,1319.3,match
+2024-12-08,Bournemouth,1482.4,match
+2024-12-08,Brighton,1504.2,match
+2024-12-08,Tottenham,1555.6,match
+2024-12-08,Chelsea,1605.8,match
+2024-12-14,Arsenal,1689.3,match
+2024-12-14,Everton,1441.3,match
+2024-12-14,Liverpool,1705.8,match
+2024-12-14,Fulham,1493.7,match
+2024-12-14,Newcastle,1540.6,match
+2024-12-14,Ipswich,1329.3,match
+2024-12-14,Nott'm Forest,1458.8,match
+2024-12-14,Aston Villa,1536.8,match
+2024-12-15,Brighton,1490.7,match
+2024-12-15,Crystal Palace,1484.9,match
+2024-12-15,Man City,1703.8,match
+2024-12-15,Man United,1532.7,match
+2024-12-15,Chelsea,1609.9,match
+2024-12-15,Brentford,1475.8,match
+2024-12-15,Tottenham,1562.1,match
+2024-12-16,Bournemouth,1480.9,match
+2024-12-21,Aston Villa,1546.9,match
+2024-12-21,Man City,1693.7,match
+2024-12-21,Brentford,1462.7,match
+2024-12-21,Nott'm Forest,1471.9,match
+2024-12-21,Ipswich,1321.6,match
+2024-12-21,Newcastle,1548.2,match
+2024-12-21,Brighton,1490.8,match
+2024-12-21,Crystal Palace,1477.1,match
+2024-12-21,Arsenal,1697.2,match
+2024-12-22,Everton,1444.0,match
+2024-12-22,Chelsea,1607.3,match
+2024-12-22,Fulham,1489.1,match
+2024-12-22,Man United,1516.1,match
+2024-12-22,Bournemouth,1497.4,match
+2024-12-22,Tottenham,1552.8,match
+2024-12-22,Liverpool,1715.1,match
+2024-12-26,Man City,1688.6,match
+2024-12-26,Everton,1449.1,match
+2024-12-26,Bournemouth,1496.1,match
+2024-12-26,Crystal Palace,1478.4,match
+2024-12-26,Chelsea,1596.6,match
+2024-12-26,Fulham,1499.8,match
+2024-12-26,Newcastle,1559.8,match
+2024-12-26,Aston Villa,1535.4,match
+2024-12-26,Nott'm Forest,1480.3,match
+2024-12-26,Tottenham,1544.4,match
+2024-12-26,Man United,1502.4,match
+2024-12-26,Liverpool,1716.9,match
+2024-12-27,Brighton,1489.3,match
+2024-12-27,Brentford,1464.2,match
+2024-12-27,Arsenal,1698.5,match
+2024-12-27,Ipswich,1320.4,match
+2024-12-29,Man City,1691.6,match
+2024-12-29,Crystal Palace,1481.5,match
+2024-12-29,Everton,1437.6,match
+2024-12-29,Nott'm Forest,1491.8,match
+2024-12-29,Fulham,1498.9,match
+2024-12-29,Bournemouth,1497.1,match
+2024-12-29,Tottenham,1541.0,match
+2024-12-29,Liverpool,1723.5,match
+2024-12-30,Aston Villa,1533.5,match
+2024-12-30,Brighton,1491.1,match
+2024-12-30,Ipswich,1338.3,match
+2024-12-30,Chelsea,1578.7,match
+2024-12-30,Man United,1491.7,match
+2024-12-30,Newcastle,1570.5,match
+2025-01-01,Brentford,1458.6,match
+2025-01-01,Arsenal,1704.0,match
+2025-01-04,Tottenham,1533.3,match
+2025-01-04,Newcastle,1578.2,match
+2025-01-04,Aston Villa,1536.3,match
+2025-01-04,Bournemouth,1502.5,match
+2025-01-04,Everton,1432.2,match
+2025-01-04,Crystal Palace,1482.7,match
+2025-01-04,Chelsea,1577.5,match
+2025-01-04,Man City,1696.0,match
+2025-01-04,Brentford,1468.1,match
+2025-01-04,Brighton,1494.6,match
+2025-01-04,Arsenal,1700.6,match
+2025-01-05,Fulham,1494.9,match
+2025-01-05,Ipswich,1342.2,match
+2025-01-05,Liverpool,1718.6,match
+2025-01-05,Man United,1496.6,match
+2025-01-06,Nott'm Forest,1503.6,match
+2025-01-14,Brentford,1471.8,match
+2025-01-14,Man City,1692.3,match
+2025-01-14,Chelsea,1575.1,match
+2025-01-14,Bournemouth,1504.9,match
+2025-01-14,Fulham,1487.3,match
+2025-01-14,Nott'm Forest,1507.1,match
+2025-01-14,Liverpool,1715.1,match
+2025-01-15,Everton,1426.0,match
+2025-01-15,Aston Villa,1542.5,match
+2025-01-15,Crystal Palace,1490.0,match
+2025-01-15,Newcastle,1584.1,match
+2025-01-15,Arsenal,1704.0,match
+2025-01-15,Tottenham,1529.8,match
+2025-01-16,Ipswich,1334.4,match
+2025-01-16,Brighton,1502.3,match
+2025-01-16,Man United,1500.7,match
+2025-01-18,Newcastle,1566.7,match
+2025-01-18,Bournemouth,1522.3,match
+2025-01-18,Brentford,1466.5,match
+2025-01-18,Liverpool,1720.5,match
+2025-01-18,Fulham,1494.3,match
+2025-01-18,Crystal Palace,1501.5,match
+2025-01-18,Arsenal,1700.1,match
+2025-01-18,Aston Villa,1546.4,match
+2025-01-19,Everton,1434.9,match
+2025-01-19,Tottenham,1520.9,match
+2025-01-19,Man United,1488.2,match
+2025-01-19,Brighton,1514.8,match
+2025-01-19,Nott'm Forest,1509.6,match
+2025-01-19,Ipswich,1330.0,match
+2025-01-19,Man City,1696.7,match
+2025-01-20,Chelsea,1580.1,match
+2025-01-25,Bournemouth,1535.1,match
+2025-01-25,Nott'm Forest,1496.9,match
+2025-01-25,Brighton,1504.8,match
+2025-01-25,Everton,1444.9,match
+2025-01-25,Liverpool,1722.5,match
+2025-01-25,Ipswich,1328.0,match
+2025-01-25,Newcastle,1570.8,match
+2025-01-25,Arsenal,1702.8,match
+2025-01-25,Man City,1703.2,match
+2025-01-25,Chelsea,1573.6,match
+2025-01-26,Crystal Palace,1492.4,match
+2025-01-26,Brentford,1475.6,match
+2025-01-26,Tottenham,1508.7,match
+2025-01-26,Aston Villa,1543.5,match
+2025-01-26,Fulham,1485.8,match
+2025-01-26,Man United,1496.7,match
+2025-02-01,Nott'm Forest,1512.2,match
+2025-02-01,Brighton,1489.5,match
+2025-02-01,Bournemouth,1528.3,match
+2025-02-01,Liverpool,1729.2,match
+2025-02-01,Everton,1452.5,match
+2025-02-01,Ipswich,1318.3,match
+2025-02-01,Newcastle,1560.7,match
+2025-02-01,Fulham,1495.9,match
+2025-02-01,Aston Villa,1528.7,match
+2025-02-02,Brentford,1464.1,match
+2025-02-02,Tottenham,1520.1,match
+2025-02-02,Man United,1484.0,match
+2025-02-02,Crystal Palace,1505.0,match
+2025-02-02,Arsenal,1715.3,match
+2025-02-02,Man City,1690.7,match
+2025-02-03,Chelsea,1577.8,match
+2025-02-12,Everton,1456.9,match
+2025-02-12,Liverpool,1724.8,match
+2025-02-14,Brighton,1504.4,match
+2025-02-14,Chelsea,1562.8,match
+2025-02-15,Arsenal,1717.6,match
+2025-02-15,Aston Villa,1524.1,match
+2025-02-15,Ipswich,1322.9,match
+2025-02-15,Fulham,1502.9,match
+2025-02-15,Nott'm Forest,1505.2,match
+2025-02-15,Man City,1698.4,match
+2025-02-15,Newcastle,1553.0,match
+2025-02-15,Bournemouth,1533.4,match
+2025-02-15,Brentford,1472.0,match
+2025-02-15,Crystal Palace,1495.7,match
+2025-02-15,Everton,1466.3,match
+2025-02-16,Liverpool,1726.5,match
+2025-02-16,Tottenham,1526.0,match
+2025-02-16,Man United,1478.2,match
+2025-02-19,Aston Villa,1527.3,match
+2025-02-19,Liverpool,1723.2,match
+2025-02-21,Brentford,1481.1,match
+2025-02-22,Everton,1465.7,match
+2025-02-22,Man United,1478.8,match
+2025-02-22,Arsenal,1704.7,match
+2025-02-22,Bournemouth,1522.5,match
+2025-02-22,Fulham,1490.1,match
+2025-02-22,Crystal Palace,1508.4,match
+2025-02-22,Ipswich,1315.6,match
+2025-02-22,Tottenham,1533.4,match
+2025-02-22,Brighton,1511.3,match
+2025-02-22,Aston Villa,1534.7,match
+2025-02-22,Chelsea,1555.4,match
+2025-02-23,Newcastle,1558.7,match
+2025-02-23,Nott'm Forest,1499.6,match
+2025-02-23,Man City,1686.6,match
+2025-02-23,Liverpool,1735.0,match
+2025-02-25,Brighton,1518.2,match
+2025-02-25,Bournemouth,1515.6,match
+2025-02-25,Crystal Palace,1521.1,match
+2025-02-25,Aston Villa,1522.1,match
+2025-02-25,Fulham,1496.8,match
+2025-02-25,Chelsea,1559.0,match
+2025-02-26,Brentford,1479.9,match
+2025-02-26,Everton,1466.9,match
+2025-02-26,Man United,1482.3,match
+2025-02-26,Ipswich,1312.0,match
+2025-02-26,Nott'm Forest,1502.9,match
+2025-02-26,Arsenal,1701.4,match
+2025-02-26,Tottenham,1528.3,match
+2025-02-26,Man City,1691.8,match
+2025-02-26,Liverpool,1740.0,match
+2025-02-26,Newcastle,1553.6,match
+2025-03-08,Nott'm Forest,1513.4,match
+2025-03-08,Man City,1681.2,match
+2025-03-08,Brighton,1524.4,match
+2025-03-08,Fulham,1490.6,match
+2025-03-08,Crystal Palace,1523.9,match
+2025-03-08,Ipswich,1309.1,match
+2025-03-08,Liverpool,1741.0,match
+2025-03-08,Brentford,1472.4,match
+2025-03-08,Aston Villa,1529.6,match
+2025-03-08,Everton,1466.5,match
+2025-03-09,Chelsea,1561.2,match
+2025-03-09,Tottenham,1527.1,match
+2025-03-09,Bournemouth,1516.8,match
+2025-03-09,Man United,1485.9,match
+2025-03-09,Arsenal,1697.8,match
+2025-03-10,Newcastle,1559.9,match
+2025-03-15,Everton,1465.2,match
+2025-03-15,Ipswich,1302.8,match
+2025-03-15,Nott'm Forest,1519.7,match
+2025-03-15,Man City,1677.4,match
+2025-03-15,Brighton,1528.2,match
+2025-03-15,Bournemouth,1507.5,match
+2025-03-15,Brentford,1481.7,match
+2025-03-16,Arsenal,1701.8,match
+2025-03-16,Chelsea,1557.2,match
+2025-03-16,Fulham,1501.8,match
+2025-03-16,Tottenham,1516.0,match
+2025-03-16,Man United,1493.4,match
+2025-04-01,Arsenal,1704.8,match
+2025-04-01,Fulham,1498.8,match
+2025-04-01,Nott'm Forest,1525.8,match
+2025-04-01,Man United,1487.3,match
+2025-04-02,Bournemouth,1495.4,match
+2025-04-02,Ipswich,1314.9,match
+2025-04-02,Brighton,1513.6,match
+2025-04-02,Aston Villa,1544.2,match
+2025-04-02,Man City,1679.1,match
+2025-04-02,Newcastle,1564.9,match
+2025-04-02,Brentford,1476.7,match
+2025-04-02,Crystal Palace,1519.6,match
+2025-04-02,Liverpool,1743.1,match
+2025-04-02,Everton,1463.1,match
+2025-04-03,Chelsea,1562.9,match
+2025-04-03,Tottenham,1510.2,match
+2025-04-05,Everton,1467.0,match
+2025-04-05,Arsenal,1700.9,match
+2025-04-05,Crystal Palace,1526.1,match
+2025-04-05,Brighton,1507.1,match
+2025-04-05,Ipswich,1308.8,match
+2025-04-05,Bournemouth,1495.1,match
+2025-04-05,Aston Villa,1550.4,match
+2025-04-05,Nott'm Forest,1519.6,match
+2025-04-06,Brentford,1477.7,match
+2025-04-06,Chelsea,1562.0,match
+2025-04-06,Fulham,1510.2,match
+2025-04-06,Liverpool,1731.7,match
+2025-04-06,Tottenham,1513.7,match
+2025-04-06,Man United,1490.4,match
+2025-04-06,Man City,1676.0,match
+2025-04-07,Newcastle,1570.0,match
+2025-04-12,Man City,1682.6,match
+2025-04-12,Crystal Palace,1519.5,match
+2025-04-12,Brighton,1502.2,match
+2025-04-12,Nott'm Forest,1510.1,match
+2025-04-12,Everton,1476.5,match
+2025-04-12,Aston Villa,1555.3,match
+2025-04-12,Arsenal,1696.1,match
+2025-04-12,Brentford,1482.5,match
+2025-04-13,Chelsea,1556.8,match
+2025-04-13,Ipswich,1314.0,match
+2025-04-13,Liverpool,1733.6,match
+2025-04-13,Tottenham,1501.0,match
+2025-04-13,Newcastle,1578.8,match
+2025-04-13,Man United,1481.6,match
+2025-04-14,Bournemouth,1502.1,match
+2025-04-14,Fulham,1503.3,match
+2025-04-16,Newcastle,1589.6,match
+2025-04-16,Crystal Palace,1508.7,match
+2025-04-19,Brentford,1493.1,match
+2025-04-19,Brighton,1491.6,match
+2025-04-19,Crystal Palace,1507.7,match
+2025-04-19,Bournemouth,1503.1,match
+2025-04-19,Everton,1470.2,match
+2025-04-19,Man City,1688.8,match
+2025-04-19,Aston Villa,1568.2,match
+2025-04-19,Newcastle,1576.7,match
+2025-04-20,Fulham,1496.1,match
+2025-04-20,Chelsea,1564.0,match
+2025-04-20,Ipswich,1310.5,match
+2025-04-20,Arsenal,1699.5,match
+2025-04-20,Man United,1472.3,match
+2025-04-20,Liverpool,1734.9,match
+2025-04-21,Tottenham,1492.8,match
+2025-04-21,Nott'm Forest,1518.3,match
+2025-04-22,Man City,1693.1,match
+2025-04-22,Aston Villa,1563.9,match
+2025-04-23,Arsenal,1695.1,match
+2025-04-23,Crystal Palace,1512.0,match
+2025-04-26,Chelsea,1568.8,match
+2025-04-26,Everton,1465.5,match
+2025-04-26,Brighton,1497.1,match
+2025-04-26,Newcastle,1580.5,match
+2025-04-26,Ipswich,1306.7,match
+2025-04-26,Fulham,1499.6,match
+2025-04-27,Bournemouth,1501.6,match
+2025-04-27,Man United,1473.9,match
+2025-04-27,Liverpool,1739.5,match
+2025-04-27,Tottenham,1488.2,match
+2025-05-01,Nott'm Forest,1504.9,match
+2025-05-01,Brentford,1506.4,match
+2025-05-02,Man City,1695.6,match
+2025-05-03,Aston Villa,1569.2,match
+2025-05-03,Fulham,1494.3,match
+2025-05-03,Everton,1461.6,match
+2025-05-03,Ipswich,1310.5,match
+2025-05-03,Arsenal,1683.2,match
+2025-05-03,Bournemouth,1513.5,match
+2025-05-04,Brentford,1512.4,match
+2025-05-04,Man United,1467.9,match
+2025-05-04,Brighton,1498.0,match
+2025-05-04,Newcastle,1579.6,match
+2025-05-04,Tottenham,1487.8,match
+2025-05-04,Chelsea,1584.0,match
+2025-05-04,Liverpool,1724.2,match
+2025-05-05,Crystal Palace,1511.0,match
+2025-05-05,Nott'm Forest,1505.9,match
+2025-05-10,Fulham,1480.7,match
+2025-05-10,Everton,1475.2,match
+2025-05-10,Ipswich,1306.3,match
+2025-05-10,Brentford,1516.6,match
+2025-05-10,Man City,1689.3,match
+2025-05-10,Brighton,1509.1,match
+2025-05-10,Bournemouth,1506.3,match
+2025-05-10,Aston Villa,1576.4,match
+2025-05-11,Newcastle,1589.7,match
+2025-05-11,Chelsea,1573.9,match
+2025-05-11,Man United,1454.2,match
+2025-05-11,Nott'm Forest,1501.1,match
+2025-05-11,Tottenham,1476.0,match
+2025-05-11,Crystal Palace,1522.8,match
+2025-05-11,Liverpool,1722.5,match
+2025-05-11,Arsenal,1685.0,match
+2025-05-16,Aston Villa,1583.3,match
+2025-05-16,Tottenham,1469.0,match
+2025-05-16,Chelsea,1578.2,match
+2025-05-16,Man United,1449.9,match
+2025-05-18,Everton,1479.1,match
+2025-05-18,Nott'm Forest,1508.2,match
+2025-05-18,Brentford,1507.5,match
+2025-05-18,Fulham,1489.8,match
+2025-05-18,Ipswich,1295.6,match
+2025-05-18,Arsenal,1689.7,match
+2025-05-18,Newcastle,1585.0,match
+2025-05-19,Brighton,1520.0,match
+2025-05-19,Liverpool,1711.5,match
+2025-05-20,Crystal Palace,1530.3,match
+2025-05-20,Man City,1694.2,match
+2025-05-20,Bournemouth,1501.4,match
+2025-05-25,Bournemouth,1505.8,match
+2025-05-25,Fulham,1483.5,match
+2025-05-25,Man City,1700.5,match
+2025-05-25,Ipswich,1287.6,match
+2025-05-25,Liverpool,1707.3,match
+2025-05-25,Crystal Palace,1534.5,match
+2025-05-25,Man United,1464.1,match
+2025-05-25,Aston Villa,1569.1,match
+2025-05-25,Newcastle,1574.5,match
+2025-05-25,Everton,1489.6,match
+2025-05-25,Nott'm Forest,1501.4,match
+2025-05-25,Chelsea,1585.1,match
+2025-05-25,Arsenal,1691.0,match
+2025-05-25,Tottenham,1456.3,match
+2025-05-25,Brighton,1532.7,match
+2025-05-25,Brentford,1506.8,match
+2025-08-14,Brentford,1506.1,reset
+2025-08-14,Nott'm Forest,1501.2,reset
+2025-08-14,Arsenal,1671.9,reset
+2025-08-14,Chelsea,1576.6,reset
+2025-08-14,Newcastle,1567.1,reset
+2025-08-14,Sunderland,1295.4,reset
+2025-08-14,Bournemouth,1505.2,reset
+2025-08-14,Leeds,1295.4,reset
+2025-08-14,Liverpool,1686.6,reset
+2025-08-14,Everton,1490.6,reset
+2025-08-14,Aston Villa,1562.2,reset
+2025-08-14,Man City,1680.5,reset
+2025-08-14,Brighton,1529.5,reset
+2025-08-14,Tottenham,1460.7,reset
+2025-08-14,Man United,1467.7,reset
+2025-08-14,Fulham,1485.2,reset
+2025-08-14,Crystal Palace,1531.1,reset
+2025-08-15,Liverpool,1691.5,match
+2025-08-15,Bournemouth,1500.3,match
+2025-08-16,Aston Villa,1561.5,match
+2025-08-16,Newcastle,1567.8,match
+2025-08-16,Brighton,1527.7,match
+2025-08-16,Fulham,1487.0,match
+2025-08-16,Sunderland,1312.7,match
+2025-08-16,Tottenham,1466.9,match
+2025-08-16,Man City,1687.2,match
+2025-08-17,Chelsea,1574.8,match
+2025-08-17,Crystal Palace,1532.9,match
+2025-08-17,Nott'm Forest,1511.4,match
+2025-08-17,Brentford,1496.0,match
+2025-08-17,Man United,1463.5,match
+2025-08-17,Arsenal,1676.1,match
+2025-08-18,Leeds,1306.0,match
+2025-08-18,Everton,1480.0,match
+2025-08-22,Chelsea,1584.8,match
+2025-08-23,Man City,1668.9,match
+2025-08-23,Tottenham,1485.3,match
+2025-08-23,Bournemouth,1505.6,match
+2025-08-23,Brentford,1504.0,match
+2025-08-23,Aston Villa,1553.4,match
+2025-08-23,Sunderland,1302.0,match
+2025-08-23,Arsenal,1678.7,match
+2025-08-23,Leeds,1303.4,match
+2025-08-24,Crystal Palace,1531.5,match
+2025-08-24,Nott'm Forest,1512.7,match
+2025-08-24,Everton,1491.5,match
+2025-08-24,Brighton,1516.2,match
+2025-08-24,Fulham,1485.6,match
+2025-08-24,Man United,1464.9,match
+2025-08-25,Newcastle,1562.1,match
+2025-08-25,Liverpool,1697.2,match
+2025-08-30,Chelsea,1591.8,match
+2025-08-30,Fulham,1478.6,match
+2025-08-30,Man United,1468.4,match
+2025-08-30,Sunderland,1312.8,match
+2025-08-30,Brentford,1493.3,match
+2025-08-30,Tottenham,1477.3,match
+2025-08-30,Bournemouth,1513.5,match
+2025-08-30,Everton,1498.5,match
+2025-08-30,Leeds,1307.6,match
+2025-08-30,Newcastle,1557.9,match
+2025-08-31,Brighton,1526.0,match
+2025-08-31,Man City,1659.0,match
+2025-08-31,Nott'm Forest,1494.9,match
+2025-08-31,Liverpool,1703.5,match
+2025-08-31,Arsenal,1672.4,match
+2025-08-31,Aston Villa,1538.0,match
+2025-08-31,Crystal Palace,1547.0,match
+2025-09-13,Arsenal,1678.3,match
+2025-09-13,Nott'm Forest,1489.0,match
+2025-09-13,Bournemouth,1520.4,match
+2025-09-13,Brighton,1519.1,match
+2025-09-13,Crystal Palace,1542.1,match
+2025-09-13,Sunderland,1317.7,match
+2025-09-13,Everton,1498.5,match
+2025-09-13,Aston Villa,1538.0,match
+2025-09-13,Fulham,1482.1,match
+2025-09-13,Leeds,1304.2,match
+2025-09-13,Newcastle,1561.9,match
+2025-09-13,Tottenham,1490.6,match
+2025-09-13,Brentford,1494.5,match
+2025-09-13,Chelsea,1590.5,match
+2025-09-14,Liverpool,1705.1,match
+2025-09-14,Man City,1664.5,match
+2025-09-14,Man United,1462.9,match
+2025-09-20,Liverpool,1708.0,match
+2025-09-20,Everton,1495.6,match
+2025-09-20,Brighton,1517.7,match
+2025-09-20,Tottenham,1492.1,match
+2025-09-20,Nott'm Forest,1485.9,match
+2025-09-20,Crystal Palace,1548.0,match
+2025-09-20,Leeds,1320.1,match
+2025-09-20,Man United,1472.2,match
+2025-09-20,Chelsea,1581.2,match
+2025-09-20,Fulham,1492.4,match
+2025-09-20,Brentford,1484.1,match
+2025-09-21,Bournemouth,1520.5,match
+2025-09-21,Newcastle,1561.9,match
+2025-09-21,Sunderland,1321.3,match
+2025-09-21,Aston Villa,1534.4,match
+2025-09-21,Arsenal,1677.1,match
+2025-09-21,Man City,1665.7,match
+2025-09-27,Brentford,1493.7,match
+2025-09-27,Man United,1462.7,match
+2025-09-27,Chelsea,1566.7,match
+2025-09-27,Brighton,1532.2,match
+2025-09-27,Crystal Palace,1558.0,match
+2025-09-27,Liverpool,1698.0,match
+2025-09-27,Leeds,1323.4,match
+2025-09-27,Bournemouth,1517.2,match
+2025-09-27,Man City,1668.1,match
+2025-09-27,Nott'm Forest,1474.4,match
+2025-09-27,Sunderland,1332.7,match
+2025-09-27,Tottenham,1489.4,match
+2025-09-28,Aston Villa,1543.1,match
+2025-09-28,Fulham,1483.8,match
+2025-09-28,Newcastle,1556.0,match
+2025-09-28,Arsenal,1683.0,match
+2025-09-29,Everton,1493.2,match
+2025-10-03,Bournemouth,1526.1,match
+2025-10-03,Fulham,1474.9,match
+2025-10-04,Leeds,1318.5,match
+2025-10-04,Tottenham,1494.3,match
+2025-10-04,Arsenal,1686.4,match
+2025-10-04,Man United,1468.8,match
+2025-10-04,Sunderland,1326.6,match
+2025-10-04,Chelsea,1576.1,match
+2025-10-04,Liverpool,1688.6,match
+2025-10-05,Aston Villa,1545.5,match
+2025-10-05,Everton,1501.2,match
+2025-10-05,Crystal Palace,1549.9,match
+2025-10-05,Newcastle,1563.4,match
+2025-10-05,Nott'm Forest,1467.0,match
+2025-10-05,Brighton,1530.3,match
+2025-10-05,Brentford,1489.0,match
+2025-10-05,Man City,1672.8,match
+2025-10-18,Nott'm Forest,1456.4,match
+2025-10-18,Chelsea,1586.7,match
+2025-10-18,Brighton,1537.7,match
+2025-10-18,Newcastle,1556.1,match
+2025-10-18,Leeds,1307.7,match
+2025-10-18,Crystal Palace,1548.6,match
+2025-10-18,Bournemouth,1527.5,match
+2025-10-18,Man City,1678.0,match
+2025-10-18,Everton,1496.1,match
+2025-10-18,Sunderland,1339.1,match
+2025-10-18,Fulham,1470.8,match
+2025-10-18,Arsenal,1690.5,match
+2025-10-19,Tottenham,1487.0,match
+2025-10-19,Aston Villa,1552.7,match
+2025-10-19,Liverpool,1676.3,match
+2025-10-19,Man United,1481.1,match
+2025-10-20,Brentford,1499.3,match
+2025-10-24,Leeds,1316.5,match
+2025-10-25,Chelsea,1574.1,match
+2025-10-25,Sunderland,1351.7,match
+2025-10-25,Newcastle,1561.0,match
+2025-10-25,Fulham,1465.9,match
+2025-10-25,Man United,1492.8,match
+2025-10-25,Brighton,1525.9,match
+2025-10-25,Brentford,1509.6,match
+2025-10-25,Liverpool,1666.0,match
+2025-10-26,Arsenal,1694.4,match
+2025-10-26,Crystal Palace,1544.7,match
+2025-10-26,Aston Villa,1562.0,match
+2025-10-26,Man City,1668.7,match
+2025-10-26,Bournemouth,1535.3,match
+2025-10-26,Nott'm Forest,1448.7,match
+2025-10-26,Everton,1481.1,match
+2025-10-26,Tottenham,1502.0,match
+2025-11-01,Brighton,1530.9,match
+2025-11-01,Leeds,1311.5,match
+2025-11-01,Arsenal,1697.2,match
+2025-11-01,Crystal Palace,1553.5,match
+2025-11-01,Brentford,1500.8,match
+2025-11-01,Fulham,1474.6,match
+2025-11-01,Nott'm Forest,1448.7,match
+2025-11-01,Man United,1492.8,match
+2025-11-01,Tottenham,1495.2,match
+2025-11-01,Chelsea,1580.9,match
+2025-11-01,Liverpool,1672.9,match
+2025-11-01,Aston Villa,1555.2,match
+2025-11-02,Newcastle,1546.0,match
+2025-11-02,Man City,1674.7,match
+2025-11-02,Bournemouth,1529.2,match
+2025-11-03,Sunderland,1353.6,match
+2025-11-03,Everton,1479.2,match
+2025-11-08,Tottenham,1494.3,match
+2025-11-08,Man United,1493.7,match
+2025-11-08,Everton,1489.1,match
+2025-11-08,Fulham,1464.8,match
+2025-11-08,Sunderland,1358.9,match
+2025-11-08,Arsenal,1691.9,match
+2025-11-08,Chelsea,1586.0,match
+2025-11-09,Aston Villa,1566.6,match
+2025-11-09,Bournemouth,1517.8,match
+2025-11-09,Brentford,1512.2,match
+2025-11-09,Newcastle,1534.6,match
+2025-11-09,Crystal Palace,1552.2,match
+2025-11-09,Brighton,1532.3,match
+2025-11-09,Nott'm Forest,1454.7,match
+2025-11-09,Leeds,1305.5,match
+2025-11-09,Man City,1686.3,match
+2025-11-09,Liverpool,1661.3,match
+2025-11-22,Chelsea,1590.5,match
+2025-11-22,Bournemouth,1515.0,match
+2025-11-22,Brighton,1538.5,match
+2025-11-22,Brentford,1506.0,match
+2025-11-22,Fulham,1469.3,match
+2025-11-22,Sunderland,1354.4,match
+2025-11-22,Liverpool,1640.2,match
+2025-11-22,Nott'm Forest,1475.8,match
+2025-11-22,Crystal Palace,1559.1,match
+2025-11-22,Newcastle,1544.4,match
+2025-11-22,Man City,1676.5,match
+2025-11-23,Leeds,1302.2,match
+2025-11-23,Aston Villa,1569.9,match
+2025-11-23,Arsenal,1697.2,match
+2025-11-23,Tottenham,1488.9,match
+2025-11-24,Man United,1485.2,match
+2025-11-24,Everton,1497.5,match
+2025-11-29,Brentford,1510.4,match
+2025-11-29,Man City,1677.7,match
+2025-11-29,Leeds,1301.0,match
+2025-11-29,Sunderland,1364.4,match
+2025-11-29,Bournemouth,1505.0,match
+2025-11-29,Everton,1484.7,match
+2025-11-29,Newcastle,1557.3,match
+2025-11-29,Tottenham,1480.2,match
+2025-11-29,Fulham,1478.1,match
+2025-11-30,Crystal Palace,1549.2,match
+2025-11-30,Man United,1495.1,match
+2025-11-30,Aston Villa,1572.8,match
+2025-11-30,Nott'm Forest,1465.3,match
+2025-11-30,Brighton,1549.0,match
+2025-11-30,Liverpool,1646.2,match
+2025-11-30,Chelsea,1592.0,match
+2025-11-30,Arsenal,1695.8,match
+2025-12-02,Bournemouth,1496.2,match
+2025-12-02,Everton,1493.4,match
+2025-12-02,Fulham,1473.8,match
+2025-12-02,Man City,1682.0,match
+2025-12-02,Newcastle,1554.9,match
+2025-12-02,Tottenham,1482.6,match
+2025-12-03,Arsenal,1700.6,match
+2025-12-03,Brentford,1505.6,match
+2025-12-03,Brighton,1541.2,match
+2025-12-03,Aston Villa,1580.7,match
+2025-12-03,Crystal Palace,1552.6,match
+2025-12-03,Nott'm Forest,1471.4,match
+2025-12-03,Leeds,1319.2,match
+2025-12-03,Chelsea,1573.8,match
+2025-12-03,Liverpool,1640.7,match
+2025-12-03,Sunderland,1369.8,match
+2025-12-04,Man United,1492.6,match
+2025-12-06,Aston Villa,1589.9,match
+2025-12-06,Arsenal,1691.4,match
+2025-12-06,Bournemouth,1497.0,match
+2025-12-06,Chelsea,1572.9,match
+2025-12-06,Everton,1504.2,match
+2025-12-06,Nott'm Forest,1460.6,match
+2025-12-06,Man City,1685.1,match
+2025-12-06,Sunderland,1366.8,match
+2025-12-06,Newcastle,1557.1,match
+2025-12-06,Tottenham,1493.3,match
+2025-12-06,Brentford,1494.9,match
+2025-12-06,Leeds,1324.2,match
+2025-12-06,Liverpool,1635.7,match
+2025-12-07,Brighton,1537.9,match
+2025-12-07,Fulham,1467.1,match
+2025-12-07,Crystal Palace,1559.3,match
+2025-12-08,Man United,1502.1,match
+2025-12-13,Chelsea,1580.8,match
+2025-12-13,Everton,1496.4,match
+2025-12-13,Liverpool,1642.7,match
+2025-12-13,Brighton,1530.9,match
+2025-12-13,Fulham,1471.9,match
+2025-12-13,Arsenal,1692.9,match
+2025-12-14,Crystal Palace,1549.3,match
+2025-12-14,Man City,1695.0,match
+2025-12-14,Nott'm Forest,1473.5,match
+2025-12-14,Tottenham,1480.4,match
+2025-12-14,Sunderland,1377.3,match
+2025-12-14,Newcastle,1546.6,match
+2025-12-14,Aston Villa,1594.7,match
+2025-12-14,Brentford,1490.8,match
+2025-12-14,Leeds,1328.3,match
+2025-12-15,Man United,1501.2,match
+2025-12-15,Bournemouth,1498.0,match
+2025-12-20,Newcastle,1546.4,match
+2025-12-20,Chelsea,1580.9,match
+2025-12-20,Bournemouth,1493.3,match
+2025-12-20,Brighton,1527.1,match
+2025-12-20,Sunderland,1381.1,match
+2025-12-20,Man City,1698.7,match
+2025-12-20,Brentford,1498.7,match
+2025-12-20,Tottenham,1475.5,match
+2025-12-20,Liverpool,1647.7,match
+2025-12-20,Everton,1492.1,match
+2025-12-20,Arsenal,1697.2,match
+2025-12-20,Leeds,1347.7,match
+2025-12-20,Crystal Palace,1529.9,match
+2025-12-21,Aston Villa,1599.5,match
+2025-12-21,Man United,1496.4,match
+2025-12-22,Fulham,1478.5,match
+2025-12-22,Nott'm Forest,1466.8,match
+2025-12-26,Man United,1504.1,match
+2025-12-26,Newcastle,1538.7,match
+2025-12-27,Nott'm Forest,1463.1,match
+2025-12-27,Man City,1702.4,match
+2025-12-27,Arsenal,1700.7,match
+2025-12-27,Brighton,1523.7,match
+2025-12-27,Brentford,1510.1,match
+2025-12-27,Bournemouth,1481.9,match
+2025-12-27,Everton,1488.8,match
+2025-12-27,Liverpool,1649.4,match
+2025-12-27,Fulham,1485.5,match
+2025-12-27,Chelsea,1573.0,match
+2025-12-27,Aston Villa,1607.5,match
+2025-12-28,Sunderland,1379.6,match
+2025-12-28,Leeds,1349.2,match
+2025-12-28,Crystal Palace,1520.5,match
+2025-12-28,Tottenham,1485.0,match
+2025-12-30,Newcastle,1544.0,match
+2025-12-30,Chelsea,1570.2,match
+2025-12-30,Bournemouth,1484.6,match
+2025-12-30,Nott'm Forest,1451.4,match
+2025-12-30,Everton,1500.6,match
+2025-12-30,Brighton,1522.1,match
+2025-12-30,Arsenal,1709.0,match
+2025-12-30,Aston Villa,1599.1,match
+2025-12-30,Man United,1500.1,match
+2026-01-01,Crystal Palace,1518.9,match
+2026-01-01,Fulham,1487.1,match
+2026-01-01,Liverpool,1643.8,match
+2026-01-01,Leeds,1354.9,match
+2026-01-01,Brentford,1508.7,match
+2026-01-01,Tottenham,1486.4,match
+2026-01-01,Sunderland,1384.6,match
+2026-01-01,Man City,1697.4,match
+2026-01-03,Aston Villa,1604.8,match
+2026-01-03,Nott'm Forest,1445.7,match
+2026-01-03,Brighton,1525.9,match
+2026-01-03,Bournemouth,1480.8,match
+2026-01-03,Arsenal,1712.9,match
+2026-01-04,Leeds,1357.1,match
+2026-01-04,Man United,1497.9,match
+2026-01-04,Everton,1488.3,match
+2026-01-04,Brentford,1521.0,match
+2026-01-04,Newcastle,1553.2,match
+2026-01-04,Crystal Palace,1509.7,match
+2026-01-04,Tottenham,1483.5,match
+2026-01-04,Sunderland,1387.5,match
+2026-01-04,Fulham,1489.6,match
+2026-01-04,Liverpool,1641.3,match
+2026-01-04,Man City,1694.0,match
+2026-01-04,Chelsea,1573.6,match
+2026-01-06,Nott'm Forest,1452.9,match
+2026-01-07,Bournemouth,1487.4,match
+2026-01-07,Tottenham,1476.8,match
+2026-01-07,Brentford,1528.1,match
+2026-01-07,Sunderland,1380.4,match
+2026-01-07,Crystal Palace,1510.9,match
+2026-01-07,Aston Villa,1603.7,match
+2026-01-07,Everton,1484.8,match
+2026-01-07,Fulham,1498.0,match
+2026-01-07,Chelsea,1565.2,match
+2026-01-07,Man City,1690.0,match
+2026-01-07,Brighton,1530.0,match
+2026-01-07,Man United,1494.4,match
+2026-01-07,Newcastle,1556.3,match
+2026-01-07,Leeds,1354.0,match
+2026-01-08,Arsenal,1710.5,match
+2026-01-08,Liverpool,1643.7,match
+2026-01-17,Man United,1510.4,match
+2026-01-17,Man City,1674.0,match
+2026-01-17,Chelsea,1574.0,match
+2026-01-17,Brentford,1519.3,match
+2026-01-17,Leeds,1363.7,match
+2026-01-17,Fulham,1488.3,match
+2026-01-17,Liverpool,1637.6,match
+2026-01-17,Sunderland,1389.9,match
+2026-01-17,Crystal Palace,1501.5,match
+2026-01-17,Tottenham,1466.6,match
+2026-01-17,Nott'm Forest,1457.1,match
+2026-01-17,Arsenal,1706.4,match
+2026-01-18,Newcastle,1553.0,match
+2026-01-18,Aston Villa,1592.9,match
+2026-01-18,Everton,1495.5,match
+2026-01-19,Brighton,1528.2,match
+2026-01-19,Bournemouth,1489.2,match
+2026-01-24,Sunderland,1380.2,match
+2026-01-24,Tottenham,1463.9,match
+2026-01-24,Fulham,1495.8,match
+2026-01-24,Brighton,1520.7,match
+2026-01-24,Man City,1676.6,match
+2026-01-24,Bournemouth,1499.0,match
+2026-01-24,Liverpool,1627.8,match
+2026-01-25,Brentford,1504.8,match
+2026-01-25,Nott'm Forest,1471.6,match
+2026-01-25,Crystal Palace,1491.3,match
+2026-01-25,Chelsea,1584.2,match
+2026-01-25,Newcastle,1541.8,match
+2026-01-25,Aston Villa,1604.2,match
+2026-01-25,Arsenal,1694.4,match
+2026-01-25,Man United,1522.3,match
+2026-01-26,Everton,1492.0,match
+2026-01-26,Leeds,1367.1,match
+2026-01-31,Brighton,1519.3,match
+2026-01-31,Everton,1493.5,match
+2026-01-31,Leeds,1362.6,match
+2026-01-31,Arsenal,1699.0,match
+2026-01-31,Bournemouth,1507.0,match
+2026-01-31,Chelsea,1587.5,match
+2026-01-31,Liverpool,1636.4,match
+2026-01-31,Newcastle,1533.2,match
+2026-02-01,Aston Villa,1593.8,match
+2026-02-01,Brentford,1515.2,match
+2026-02-01,Man United,1528.4,match
+2026-02-01,Fulham,1489.7,match
+2026-02-01,Nott'm Forest,1471.1,match
+2026-02-01,Crystal Palace,1491.7,match
+2026-02-01,Tottenham,1467.4,match
+2026-02-01,Man City,1673.1,match
+2026-02-02,Sunderland,1388.9,match
+2026-02-06,Leeds,1376.1,match
+2026-02-06,Nott'm Forest,1457.7,match
+2026-02-07,Man United,1536.5,match
+2026-02-07,Tottenham,1459.3,match
+2026-02-07,Arsenal,1702.0,match
+2026-02-07,Sunderland,1385.8,match
+2026-02-07,Bournemouth,1508.0,match
+2026-02-07,Aston Villa,1592.8,match
+2026-02-07,Fulham,1481.5,match
+2026-02-07,Everton,1501.8,match
+2026-02-07,Chelsea,1592.9,match
+2026-02-07,Newcastle,1524.5,match
+2026-02-07,Brentford,1523.9,match
+2026-02-08,Brighton,1510.3,match
+2026-02-08,Crystal Palace,1500.6,match
+2026-02-08,Liverpool,1628.8,match
+2026-02-08,Man City,1680.7,match
+2026-02-10,Chelsea,1588.2,match
+2026-02-10,Leeds,1380.8,match
+2026-02-10,Everton,1493.6,match
+2026-02-10,Bournemouth,1516.2,match
+2026-02-10,Tottenham,1452.3,match
+2026-02-10,Newcastle,1531.4,match
+2026-02-10,Man United,1534.7,match
+2026-02-11,Aston Villa,1597.8,match
+2026-02-11,Brighton,1505.4,match
+2026-02-11,Crystal Palace,1488.4,match
+2026-02-11,Man City,1686.0,match
+2026-02-11,Fulham,1476.2,match
+2026-02-11,Nott'm Forest,1454.6,match
+2026-02-11,Sunderland,1382.2,match
+2026-02-11,Liverpool,1632.3,match
+2026-02-12,Brentford,1526.8,match
+2026-02-12,Arsenal,1699.2,match
+2026-02-18,Arsenal,1693.8,match
+2026-02-21,Aston Villa,1593.1,match
+2026-02-21,Leeds,1385.5,match
+2026-02-21,Brentford,1513.5,match
+2026-02-21,Brighton,1518.6,match
+2026-02-21,Chelsea,1582.6,match
+2026-02-21,Bournemouth,1514.9,match
+2026-02-21,Man City,1689.7,match
+2026-02-21,Newcastle,1527.7,match
+2026-02-22,Crystal Palace,1492.4,match
+2026-02-22,Nott'm Forest,1449.9,match
+2026-02-22,Liverpool,1637.0,match
+2026-02-22,Sunderland,1372.7,match
+2026-02-22,Fulham,1485.7,match
+2026-02-22,Tottenham,1446.1,match
+2026-02-22,Arsenal,1700.1,match
+2026-02-23,Everton,1486.1,match
+2026-02-23,Man United,1542.2,match
+2026-02-27,Aston Villa,1575.8,match
+2026-02-28,Bournemouth,1511.3,match
+2026-02-28,Sunderland,1376.3,match
+2026-02-28,Brentford,1517.5,match
+2026-02-28,Liverpool,1641.8,match
+2026-02-28,Newcastle,1518.5,match
+2026-02-28,Everton,1495.3,match
+2026-02-28,Leeds,1382.8,match
+2026-02-28,Man City,1692.4,match
+2026-03-01,Brighton,1523.8,match
+2026-03-01,Nott'm Forest,1444.7,match
+2026-03-01,Fulham,1491.5,match
+2026-03-01,Tottenham,1440.3,match
+2026-03-01,Man United,1547.8,match
+2026-03-01,Crystal Palace,1486.8,match
+2026-03-01,Arsenal,1704.4,match
+2026-03-01,Chelsea,1578.3,match
+2026-03-03,Bournemouth,1510.6,match
+2026-03-03,Brentford,1518.3,match
+2026-03-03,Everton,1499.8,match
+2026-03-03,Leeds,1374.3,match
+2026-03-03,Sunderland,1384.8,match
+2026-03-03,Liverpool,1629.9,match
+2026-03-04,Aston Villa,1561.3,match
+2026-03-04,Chelsea,1592.8,match
+2026-03-04,Brighton,1519.2,match
+2026-03-04,Arsenal,1709.0,match
+2026-03-04,Fulham,1481.5,match
+2026-03-04,Man City,1687.3,match
+2026-03-04,Nott'm Forest,1449.7,match
+2026-03-04,Newcastle,1525.8,match
+2026-03-04,Man United,1540.5,match
+2026-03-05,Tottenham,1429.2,match
+2026-03-05,Crystal Palace,1497.8,match
+2026-03-14,Bournemouth,1507.0,match
+2026-03-14,Sunderland,1379.3,match
+2026-03-14,Brighton,1524.7,match
+2026-03-14,Arsenal,1713.4,match
+2026-03-14,Everton,1495.5,match
+2026-03-14,Chelsea,1583.1,match
+2026-03-14,Newcastle,1535.5,match
+2026-03-14,Man City,1683.0,match
+2026-03-15,Crystal Palace,1494.5,match
+2026-03-15,Leeds,1377.6,match
+2026-03-15,Man United,1551.2,match
+2026-03-15,Aston Villa,1550.7,match
+2026-03-15,Nott'm Forest,1449.6,match
+2026-03-15,Fulham,1481.7,match
+2026-03-15,Liverpool,1625.4,match
+2026-03-15,Tottenham,1433.7,match
+2026-03-16,Brentford,1514.7,match
+2026-03-20,Bournemouth,1507.1,match
+2026-03-20,Man United,1551.1,match
+2026-03-21,Brighton,1533.5,match
+2026-03-21,Liverpool,1616.6,match
+2026-03-21,Fulham,1486.5,match
+2026-03-21,Everton,1510.4,match
+2026-03-21,Chelsea,1568.2,match
+2026-03-21,Leeds,1379.6,match
+2026-03-21,Brentford,1512.6,match
+2026-03-22,Newcastle,1524.2,match
+2026-03-22,Sunderland,1390.6,match
+2026-03-22,Aston Villa,1557.0,match
+2026-03-22,Tottenham,1419.7,match
+2026-03-22,Nott'm Forest,1463.6,match
+2026-04-11,Arsenal,1701.3,match
+2026-04-11,Bournemouth,1519.2,match
+2026-04-11,Brentford,1511.7,match
+2026-04-11,Everton,1511.3,match
+2026-04-11,Brighton,1538.8,match
+2026-04-11,Liverpool,1622.7,match
+2026-04-11,Fulham,1480.3,match
+2026-04-12,Crystal Palace,1501.8,match
+2026-04-12,Newcastle,1516.9,match
+2026-04-12,Nott'm Forest,1464.8,match
+2026-04-12,Aston Villa,1555.8,match
+2026-04-12,Sunderland,1397.9,match
+2026-04-12,Tottenham,1412.4,match
+2026-04-12,Chelsea,1557.8,match
+2026-04-12,Man City,1693.3,match
+2026-04-13,Man United,1539.5,match
+2026-04-13,Leeds,1391.2,match
+2026-04-18,Brentford,1510.2,match
+2026-04-18,Fulham,1481.8,match
+2026-04-18,Leeds,1402.0,match
+2026-04-18,Newcastle,1508.6,match
+2026-04-18,Bournemouth,1527.5,match
+2026-04-18,Tottenham,1414.2,match
+2026-04-18,Brighton,1537.0,match
+2026-04-18,Chelsea,1549.1,match
+2026-04-18,Man United,1548.3,match
+2026-04-19,Aston Villa,1559.5,match
+2026-04-19,Sunderland,1394.3,match
+2026-04-19,Everton,1505.3,match
+2026-04-19,Liverpool,1628.7,match
+2026-04-19,Nott'm Forest,1470.5,match
+2026-04-19,Man City,1700.1,match
+2026-04-19,Arsenal,1694.5,match
+2026-04-20,Crystal Palace,1499.5,match
+2026-04-21,Brighton,1549.0,match
+2026-04-21,Chelsea,1537.0,match
+2026-04-22,Bournemouth,1524.1,match
+2026-04-22,Leeds,1405.3,match
+2026-04-22,Man City,1701.6,match
+2026-04-24,Sunderland,1380.8,match
+2026-04-24,Nott'm Forest,1483.9,match
+2026-04-25,Fulham,1490.1,match
+2026-04-25,Aston Villa,1551.1,match
+2026-04-25,Liverpool,1634.8,match
+2026-04-25,Crystal Palace,1493.3,match
+2026-04-25,Everton,1497.1,match
+2026-04-25,Tottenham,1421.4,match
+2026-04-25,Arsenal,1697.7,match
+2026-04-25,Newcastle,1505.4,match
+2026-04-27,Man United,1554.1,match
+2026-04-27,Brentford,1504.4,match
+2026-05-01,Leeds,1411.5,match
+2026-05-02,Brentford,1513.7,match
+2026-05-02,Newcastle,1516.7,match
+2026-05-02,Brighton,1537.7,match
+2026-05-02,Sunderland,1381.0,match
+2026-05-02,Arsenal,1702.8,match
+2026-05-02,Fulham,1485.1,match
+2026-05-03,Bournemouth,1534.6,match
+2026-05-03,Crystal Palace,1482.8,match
+2026-05-03,Man United,1562.5,match
+2026-05-03,Liverpool,1626.5,match
+2026-05-03,Aston Villa,1540.2,match
+2026-05-03,Tottenham,1432.3,match
+2026-05-04,Chelsea,1522.8,match
+2026-05-04,Nott'm Forest,1498.1,match
+2026-05-04,Everton,1500.4,match
+2026-05-04,Man City,1698.3,match
+2026-05-09,Liverpool,1623.5,match
+2026-05-09,Chelsea,1525.8,match
+2026-05-09,Brighton,1543.3,match
+2026-05-09,Fulham,1477.8,match
+2026-05-09,Bournemouth,1541.9,match
+2026-05-09,Sunderland,1383.9,match
+2026-05-09,Man United,1559.6,match
+2026-05-09,Man City,1704.0,match
+2026-05-09,Brentford,1508.0,match
+2026-05-10,Aston Villa,1535.9,match
+2026-05-10,Crystal Palace,1482.3,match
+2026-05-10,Everton,1500.9,match
+2026-05-10,Nott'm Forest,1497.7,match
+2026-05-10,Newcastle,1517.2,match
+2026-05-10,Arsenal,1705.9,match
+2026-05-11,Tottenham,1431.0,match
+2026-05-11,Leeds,1412.8,match
+2026-05-13,Man City,1708.7,match
+2026-05-13,Crystal Palace,1477.6,match
+2026-05-15,Aston Villa,1548.7,match
+2026-05-15,Liverpool,1610.8,match
+2026-05-17,Man United,1564.9,match
+2026-05-17,Nott'm Forest,1492.3,match
+2026-05-17,Brentford,1506.5,match
+2026-05-17,Crystal Palace,1479.1,match
+2026-05-17,Everton,1484.9,match
+2026-05-17,Sunderland,1399.9,match
+2026-05-17,Leeds,1422.2,match
+2026-05-17,Brighton,1533.9,match
+2026-05-17,Fulham,1475.8,match
+2026-05-17,Newcastle,1524.5,match
+2026-05-18,Arsenal,1706.8,match
+2026-05-19,Bournemouth,1544.5,match
+2026-05-19,Man City,1706.1,match
+2026-05-19,Chelsea,1530.5,match
+2026-05-19,Tottenham,1426.3,match
+2026-05-24,Brighton,1520.4,match
+2026-05-24,Man United,1578.4,match
+2026-05-24,Crystal Palace,1475.3,match
+2026-05-24,Arsenal,1710.6,match
+2026-05-24,Fulham,1487.3,match
+2026-05-24,Newcastle,1512.9,match
+2026-05-24,Liverpool,1607.8,match
+2026-05-24,Brentford,1509.5,match
+2026-05-24,Man City,1694.8,match
+2026-05-24,Aston Villa,1560.0,match
+2026-05-24,Nott'm Forest,1492.6,match
+2026-05-24,Bournemouth,1544.3,match
+2026-05-24,Sunderland,1409.4,match
+2026-05-24,Chelsea,1521.1,match
+2026-05-24,Tottenham,1434.2,match
+2026-05-24,Everton,1477.0,match
+2026-05-24,Leeds,1410.6,match
+2026-08-20,Brentford,1508.5,reset
+2026-08-20,Nott'm Forest,1493.3,reset
+2026-08-20,Arsenal,1689.6,reset
+2026-08-20,Chelsea,1519.0,reset
+2026-08-20,Newcastle,1511.7,reset
+2026-08-20,Sunderland,1418.4,reset
+2026-08-20,Hull,1366.2,reset
+2026-08-20,Ipswich,1366.2,reset
+2026-08-20,Bournemouth,1539.9,reset
+2026-08-20,Leeds,1419.5,reset
+2026-08-20,Liverpool,1597.0,reset
+2026-08-20,Everton,1479.3,reset
+2026-08-20,Aston Villa,1554.0,reset
+2026-08-20,Man City,1675.3,reset
+2026-08-20,Coventry,1366.2,reset
+2026-08-20,Brighton,1518.4,reset
+2026-08-20,Tottenham,1440.8,reset
+2026-08-20,Man United,1570.6,reset
+2026-08-20,Fulham,1488.6,reset
+2026-08-20,Crystal Palace,1477.7,reset
+2026-08-21,Arsenal,1692.5,match
+2026-08-21,Coventry,1363.3,match
+2026-08-22,Hull,1382.4,match
+2026-08-22,Man United,1554.4,match
+2026-08-22,Everton,1489.2,match
+2026-08-22,Crystal Palace,1467.8,match
+2026-08-22,Ipswich,1373.9,match
+2026-08-22,Sunderland,1410.7,match
+2026-08-22,Nott'm Forest,1483.4,match
+2026-08-22,Leeds,1429.4,match
+2026-08-22,Brentford,1517.7,match
+2026-08-22,Tottenham,1431.6,match
+2026-08-23,Brighton,1532.2,match
+2026-08-23,Aston Villa,1540.1,match
+2026-08-23,Man City,1679.3,match
+2026-08-23,Bournemouth,1535.8,match
+2026-08-23,Newcastle,1512.6,match
+2026-08-23,Liverpool,1596.1,match
+2026-08-24,Fulham,1480.9,match
+2026-08-24,Chelsea,1526.7,match
+2026-08-28,Crystal Palace,1460.7,match
+2026-08-28,Man City,1686.4,match
+2026-08-29,Liverpool,1593.0,match
+2026-08-29,Nott'm Forest,1486.5,match
+2026-08-29,Bournemouth,1534.0,match
+2026-08-29,Everton,1491.0,match
+2026-08-29,Coventry,1355.3,match
+2026-08-29,Hull,1390.3,match
+2026-08-29,Tottenham,1421.6,match
+2026-08-29,Newcastle,1522.6,match
+2026-08-30,Chelsea,1533.4,match
+2026-08-30,Brighton,1525.5,match
+2026-08-30,Leeds,1430.4,match
+2026-08-30,Brentford,1516.7,match
+2026-08-30,Sunderland,1418.8,match
+2026-08-30,Fulham,1472.7,match
+2026-08-30,Man United,1560.1,match
+2026-08-30,Ipswich,1368.2,match
+2026-08-31,Aston Villa,1535.0,match
+2026-08-31,Arsenal,1697.6,match
+2026-09-04,Ipswich,1362.4,match
+2026-09-04,Liverpool,1598.7,match
+2026-09-05,Newcastle,1521.9,match
+2026-09-05,Bournemouth,1534.6,match
+2026-09-05,Brentford,1513.9,match
+2026-09-05,Sunderland,1421.6,match
+2026-09-05,Brighton,1522.7,match
+2026-09-05,Leeds,1433.2,match
+2026-09-05,Fulham,1464.1,match
+2026-09-05,Crystal Palace,1469.3,match
+2026-09-05,Man City,1688.0,match
+2026-09-05,Coventry,1353.7,match
+2026-09-05,Nott'm Forest,1484.3,match
+2026-09-05,Tottenham,1423.8,match
+2026-09-05,Hull,1392.5,match
+2026-09-05,Aston Villa,1532.8,match
+2026-09-06,Everton,1491.7,match
+2026-09-06,Man United,1559.5,match
+2026-09-06,Arsenal,1701.2,match
+2026-09-06,Chelsea,1529.9,match
+2026-09-12,Aston Villa,1523.4,match
+2026-09-12,Nott'm Forest,1493.7,match
+2026-09-12,Bournemouth,1533.3,match
+2026-09-12,Brentford,1515.2,match
+2026-09-12,Chelsea,1526.4,match
+2026-09-12,Hull,1396.0,match
+2026-09-12,Crystal Palace,1458.8,match
+2026-09-12,Ipswich,1372.9,match
+2026-09-12,Liverpool,1595.2,match
+2026-09-12,Fulham,1467.6,match
+2026-09-12,Tottenham,1424.4,match
+2026-09-12,Everton,1491.1,match
+2026-09-12,Sunderland,1417.1,match
+2026-09-12,Arsenal,1705.7,match
+2026-09-13,Coventry,1344.1,match
+2026-09-13,Brighton,1532.4,match
+2026-09-13,Man United,1553.9,match
+2026-09-13,Man City,1693.6,match
+2026-09-14,Leeds,1448.1,match
+2026-09-14,Newcastle,1507.0,match
+2026-09-18,Brentford,1527.2,match
+2026-09-18,Chelsea,1514.3,match
+2026-09-19,Tottenham,1418.2,match
+2026-09-19,Aston Villa,1529.7,match
+2026-09-19,Brighton,1550.3,match
+2026-09-19,Arsenal,1687.8,match
+2026-09-19,Everton,1495.4,match
+2026-09-19,Ipswich,1368.6,match
+2026-09-19,Newcastle,1511.4,match
+2026-09-19,Hull,1391.6,match
+2026-09-19,Nott'm Forest,1482.5,match
+2026-09-19,Coventry,1355.3,match
+2026-09-20,Bournemouth,1526.3,match
+2026-09-20,Liverpool,1602.3,match
+2026-09-20,Leeds,1447.5,match
+2026-09-20,Crystal Palace,1459.5,match
+2026-09-20,Man City,1696.8,match
+2026-09-20,Sunderland,1414.0,match
+2026-09-20,Fulham,1468.6,match
+2026-09-20,Man United,1552.9,match

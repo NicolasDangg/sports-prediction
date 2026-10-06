@@ -1,8 +1,10 @@
 import { ShieldWarning } from "@phosphor-icons/react/ssr";
 import BankrollChart from "@/components/BankrollChart";
+import DecisionTree from "@/components/DecisionTree";
+import { DepthChart, SplitRankingChart } from "@/components/TreeCharts";
 import Reveal from "@/components/Reveal";
 import { Card, CardHeader, PageHeader, SportTag } from "@/components/ui";
-import { loadDashboard } from "@/lib/data";
+import { loadDashboard, loadTreeExperiment } from "@/lib/data";
 import { money, pct } from "@/lib/format";
 
 const STEPS = [
@@ -27,6 +29,7 @@ const STEPS = [
 export default function ModelPage() {
   const d = loadDashboard();
   const b = d.backtest;
+  const tree = loadTreeExperiment();
 
   return (
     <>
@@ -161,6 +164,77 @@ export default function ModelPage() {
           </Card>
         </Reveal>
       </div>
+
+      {tree && (
+        <section className="mt-10">
+          <div className="mb-5 flex flex-col gap-1">
+            <p className="text-xs font-medium uppercase tracking-[0.14em] text-ink-3">Experiment {tree.experiment} · ATP · not shipped</p>
+            <h2 className="text-[22px] font-semibold tracking-tighter text-ink">Decision tree: split, split, split</h2>
+            <p className="max-w-[72ch] text-[13px] leading-relaxed text-ink-3">
+              A tree asks one yes/no question at a time, always the one that leaves the two groups most <em>pure</em>{" "}
+              (Gini impurity: 0 = everyone in the group won, 0.5 = coin flip). Trained on {tree.train[0].slice(0, 4)}–{tree.train[1].slice(0, 4)} ({tree.n_train.toLocaleString()} matches,
+              each also mirrored with the players swapped), depth chosen on {tree.validation[0].slice(0, 4)}–{tree.validation[1].slice(0, 4)}. Test years untouched.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-12 lg:gap-5">
+            <Reveal i={5} className="lg:col-span-5">
+              <Card className="h-full">
+                <CardHeader title="Which variable splits best?" hint="Each variable's single best yes/no question, ranked by how much purer it makes the groups. This picks the root of the tree." />
+                <SplitRankingChart ranking={tree.split_ranking} />
+              </Card>
+            </Reveal>
+            <Reveal i={6} className="lg:col-span-7">
+              <Card className="h-full">
+                <CardHeader title="Does the tree beat Elo?" hint={`Validation log loss on ${tree.n_validation.toLocaleString()} matches. Lower is better.`} />
+                <ul className="flex flex-col gap-2.5">
+                  {(() => {
+                    const vals = tree.comparison.map((c) => c.val_log_loss);
+                    const best = Math.min(...vals), worst = Math.max(...vals);
+                    return tree.comparison.map((c) => (
+                      <li key={c.model}>
+                        <div className="flex justify-between text-[12px]">
+                          <span className={c.val_log_loss === best ? "font-semibold text-ink" : "text-ink-2"}>{c.model}</span>
+                          <span className="font-mono text-ink-2 tabular">{c.val_log_loss.toFixed(4)}</span>
+                        </div>
+                        <span className="mt-1 block h-1.5 overflow-hidden rounded-full bg-sunken">
+                          <span className={`block h-full rounded-full ${c.model.startsWith("Decision") ? "bg-epl" : c.val_log_loss === best ? "bg-ink" : "bg-[#b9bfc9]"}`}
+                                style={{ width: `${8 + ((worst - c.val_log_loss) / (worst - best || 1)) * 92}%` }} />
+                        </span>
+                      </li>
+                    ));
+                  })()}
+                </ul>
+                <div className="mt-6 border-t border-line-soft pt-5">
+                  <p className="mb-2 text-[13px] font-medium text-ink">How deep should it grow?</p>
+                  <DepthChart rows={tree.depth_search} chosen={tree.chosen_depth} />
+                </div>
+              </Card>
+            </Reveal>
+
+            <Reveal i={7} className="lg:col-span-12">
+              <Card>
+                <CardHeader
+                  title="The tree, first three levels"
+                  hint="Read from the top: answer each question, follow yes (left) or no (right). Leaves show how often Player 1 won in that group. The bar under each box is that win share."
+                />
+                <DecisionTree tree={tree.tree} />
+              </Card>
+            </Reveal>
+
+            <Reveal i={8} className="lg:col-span-12">
+              <Card className="border-[#d6e5f8] bg-[#f6f9fe]">
+                <h3 className="text-[15px] font-semibold tracking-tight text-ink">What this tells us</h3>
+                <ul className="mt-2 flex max-w-[80ch] list-disc flex-col gap-1.5 pl-5 text-[13px] leading-relaxed text-ink-2">
+                  <li><b>The Elo gap is the strongest single predictor.</b> It wins the root split and carries {Math.round((tree.importance[0]?.importance ?? 0) * 100)}% of the tree&apos;s total purity gain. Rankings come next but add little once Elo is known.</li>
+                  <li><b>Recent form (last 10) adds almost nothing</b> beyond Elo, which already summarises results. The same lesson as the Man United case.</li>
+                  <li><b>The tree only matches a calibrated Elo.</b> It isn&apos;t better, and the bookmaker is still far ahead. More splits on the same information won&apos;t close that gap; it needs information Elo doesn&apos;t have.</li>
+                </ul>
+              </Card>
+            </Reveal>
+          </div>
+        </section>
+      )}
     </>
   );
 }

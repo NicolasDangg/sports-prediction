@@ -124,3 +124,18 @@ export function loadDashboard() {
     },
   };
 }
+
+export type TreeExperiment = {
+  experiment: string; train: [string, string]; validation: [string, string]; n_train: number; n_validation: number;
+  split_ranking: { feature: string; label: string; gain: number; threshold: number | null }[];
+  depth_search: { depth: number; leaves: number; val_log_loss: number }[];
+  chosen_depth: number;
+  importance: { feature: string; label: string; importance: number }[];
+  comparison: { model: string; val_log_loss: number }[];
+  tree: import("@/components/DecisionTree").TreeNode;
+};
+
+export function loadTreeExperiment(): TreeExperiment | null {
+  const file = path.join(REPO_ROOT, "results/e003_decision_tree.json");
+  return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, "utf8")) : null;
+}

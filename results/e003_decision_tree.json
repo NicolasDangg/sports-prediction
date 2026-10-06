@@ -1,0 +1,336 @@
+{
+  "experiment": "E003",
+  "sport": "atp",
+  "train": [
+    "2010-01-01",
+    "2019-12-31"
+  ],
+  "validation": [
+    "2020-01-01",
+    "2022-12-31"
+  ],
+  "test_years_touched": false,
+  "n_train": 25252,
+  "n_validation": 6178,
+  "min_samples_leaf": 300,
+  "split_ranking": [
+    {
+      "feature": "elo_diff",
+      "label": "Elo gap (P1 \u2212 P2)",
+      "threshold": -8.805424690246582,
+      "gain": 0.06368259392922199,
+      "left_p1_win": 0.3155134980131908,
+      "right_p1_win": 0.6725941823477561
+    },
+    {
+      "feature": "surface_elo_diff",
+      "label": "Surface Elo gap",
+      "threshold": -9.792257308959961,
+      "gain": 0.061474754141514765,
+      "left_p1_win": 0.3178824304297711,
+      "right_p1_win": 0.6687776590874409
+    },
+    {
+      "feature": "rank_ratio",
+      "label": "Ranking ratio, log(rank P2 / rank P1)",
+      "threshold": 0.19043602049350739,
+      "gain": 0.05377757598918842,
+      "left_p1_win": 0.35272232954138943,
+      "right_p1_win": 0.6825720620842572
+    },
+    {
+      "feature": "points_ratio",
+      "label": "Ranking points ratio, log",
+      "threshold": -0.12348384782671928,
+      "gain": 0.05349150999608804,
+      "left_p1_win": 0.319849235219354,
+      "right_p1_win": 0.6484631776646079
+    },
+    {
+      "feature": "form10_diff",
+      "label": "Win rate, last 10 (P1 \u2212 P2)",
+      "threshold": -0.05277777835726738,
+      "gain": 0.03030164188343043,
+      "left_p1_win": 0.3545708999478154,
+      "right_p1_win": 0.604180118946474
+    },
+    {
+      "feature": "experience_diff",
+      "label": "Career matches, log (P1 \u2212 P2)",
+      "threshold": -0.061440009623765945,
+      "gain": 0.030005965372395693,
+      "left_p1_win": 0.3735944719303267,
+      "right_p1_win": 0.6186892924329097
+    },
+    {
+      "feature": "rust_diff",
+      "label": "Days since last match (P1 \u2212 P2)",
+      "threshold": -76.5,
+      "gain": 0.002743503041704509,
+      "left_p1_win": 0.6913377192982456,
+      "right_p1_win": 0.49283073130649135
+    },
+    {
+      "feature": "best_of_5",
+      "label": "Best of 5 sets",
+      "threshold": 0.5,
+      "gain": 0.0,
+      "left_p1_win": 0.5,
+      "right_p1_win": 0.5
+    },
+    {
+      "feature": "surface_clay",
+      "label": "Surface is clay",
+      "threshold": 0.5,
+      "gain": 0.0,
+      "left_p1_win": 0.5,
+      "right_p1_win": 0.5
+    },
+    {
+      "feature": "surface_grass",
+      "label": "Surface is grass",
+      "threshold": 0.5,
+      "gain": 0.0,
+      "left_p1_win": 0.5,
+      "right_p1_win": 0.5
+    }
+  ],
+  "depth_search": [
+    {
+      "depth": 1,
+      "leaves": 2,
+      "val_log_loss": 0.6581180215027633
+    },
+    {
+      "depth": 2,
+      "leaves": 4,
+      "val_log_loss": 0.6334075601717538
+    },
+    {
+      "depth": 3,
+      "leaves": 8,
+      "val_log_loss": 0.6266435542922714
+    },
+    {
+      "depth": 4,
+      "leaves": 16,
+      "val_log_loss": 0.6231162787008699
+    },
+    {
+      "depth": 5,
+      "leaves": 31,
+      "val_log_loss": 0.6218068433150016
+    },
+    {
+      "depth": 6,
+      "leaves": 51,
+      "val_log_loss": 0.6202469573518612
+    },
+    {
+      "depth": 7,
+      "leaves": 69,
+      "val_log_loss": 0.6207553303117765
+    },
+    {
+      "depth": 8,
+      "leaves": 90,
+      "val_log_loss": 0.6219849707604433
+    },
+    {
+      "depth": 9,
+      "leaves": 103,
+      "val_log_loss": 0.6219141310979192
+    },
+    {
+      "depth": 10,
+      "leaves": 112,
+      "val_log_loss": 0.6219511604212447
+    }
+  ],
+  "chosen_depth": 6,
+  "importance": [
+    {
+      "feature": "elo_diff",
+      "label": "Elo gap (P1 \u2212 P2)",
+      "importance": 0.8612946628113403
+    },
+    {
+      "feature": "surface_elo_diff",
+      "label": "Surface Elo gap",
+      "importance": 0.0762819993910854
+    },
+    {
+      "feature": "points_ratio",
+      "label": "Ranking points ratio, log",
+      "importance": 0.034053310634476246
+    },
+    {
+      "feature": "rank_ratio",
+      "label": "Ranking ratio, log(rank P2 / rank P1)",
+      "importance": 0.012893769048251789
+    },
+    {
+      "feature": "rust_diff",
+      "label": "Days since last match (P1 \u2212 P2)",
+      "importance": 0.007924057330900422
+    },
+    {
+      "feature": "best_of_5",
+      "label": "Best of 5 sets",
+      "importance": 0.00457559023788628
+    },
+    {
+      "feature": "experience_diff",
+      "label": "Career matches, log (P1 \u2212 P2)",
+      "importance": 0.0029766105460596074
+    },
+    {
+      "feature": "form10_diff",
+      "label": "Win rate, last 10 (P1 \u2212 P2)",
+      "importance": 0.0
+    },
+    {
+      "feature": "surface_clay",
+      "label": "Surface is clay",
+      "importance": 0.0
+    },
+    {
+      "feature": "surface_grass",
+      "label": "Surface is grass",
+      "importance": 0.0
+    }
+  ],
+  "comparison": [
+    {
+      "model": "Coin flip",
+      "val_log_loss": 0.6931471805599453
+    },
+    {
+      "model": "Decision tree (depth 6)",
+      "val_log_loss": 0.6209372200316435
+    },
+    {
+      "model": "Elo (elo_v0)",
+      "val_log_loss": 0.623878844336685
+    },
+    {
+      "model": "Elo, calibrated",
+      "val_log_loss": 0.6211104072919145
+    },
+    {
+      "model": "Bookmaker",
+      "val_log_loss": 0.5841421120750298
+    }
+  ],
+  "tree": {
+    "samples": 50504,
+    "p1_win": 0.5,
+    "gini": 0.5,
+    "leaf": false,
+    "feature": "elo_diff",
+    "label": "Elo gap (P1 \u2212 P2)",
+    "threshold": -8.805,
+    "left": {
+      "samples": 24411,
+      "p1_win": 0.3155,
+      "gini": 0.4319,
+      "leaf": false,
+      "feature": "elo_diff",
+      "label": "Elo gap (P1 \u2212 P2)",
+      "threshold": -152.036,
+      "left": {
+        "samples": 12009,
+        "p1_win": 0.2182,
+        "gini": 0.3411,
+        "leaf": false,
+        "feature": "surface_elo_diff",
+        "label": "Surface Elo gap",
+        "threshold": -245.014,
+        "left": {
+          "samples": 5665,
+          "p1_win": 0.1529,
+          "gini": 0.259,
+          "leaf": true
+        },
+        "right": {
+          "samples": 6344,
+          "p1_win": 0.2765,
+          "gini": 0.4001,
+          "leaf": true
+        }
+      },
+      "right": {
+        "samples": 12402,
+        "p1_win": 0.4098,
+        "gini": 0.4837,
+        "leaf": false,
+        "feature": "surface_elo_diff",
+        "label": "Surface Elo gap",
+        "threshold": -25.874,
+        "left": {
+          "samples": 8612,
+          "p1_win": 0.3765,
+          "gini": 0.4695,
+          "leaf": true
+        },
+        "right": {
+          "samples": 3790,
+          "p1_win": 0.4855,
+          "gini": 0.4996,
+          "leaf": true
+        }
+      }
+    },
+    "right": {
+      "samples": 26093,
+      "p1_win": 0.6726,
+      "gini": 0.4404,
+      "leaf": false,
+      "feature": "elo_diff",
+      "label": "Elo gap (P1 \u2212 P2)",
+      "threshold": 152.036,
+      "left": {
+        "samples": 14084,
+        "p1_win": 0.5795,
+        "gini": 0.4874,
+        "leaf": false,
+        "feature": "surface_elo_diff",
+        "label": "Surface Elo gap",
+        "threshold": 26.65,
+        "left": {
+          "samples": 4916,
+          "p1_win": 0.5071,
+          "gini": 0.4999,
+          "leaf": true
+        },
+        "right": {
+          "samples": 9168,
+          "p1_win": 0.6182,
+          "gini": 0.472,
+          "leaf": true
+        }
+      },
+      "right": {
+        "samples": 12009,
+        "p1_win": 0.7818,
+        "gini": 0.3411,
+        "leaf": false,
+        "feature": "surface_elo_diff",
+        "label": "Surface Elo gap",
+        "threshold": 245.014,
+        "left": {
+          "samples": 6344,
+          "p1_win": 0.7235,
+          "gini": 0.4001,
+          "leaf": true
+        },
+        "right": {
+          "samples": 5665,
+          "p1_win": 0.8471,
+          "gini": 0.259,
+          "leaf": true
+        }
+      }
+    }
+  }
+}
