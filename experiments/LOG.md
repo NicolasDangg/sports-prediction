@@ -6,6 +6,7 @@ If the counter climbs fast, results on the test years stop being trustworthy (se
 
 **Test-set looks used: 4** (2 experiments + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
 **Live strategies:** `elo_v0` (control, since 2026-10-06)
+**Next up:** experiment A (format-aware tennis calibration), ready to run: `/refine-strategy reports/2026-10-06-experiment-a-format-calibration.md`
 
 ---
 
