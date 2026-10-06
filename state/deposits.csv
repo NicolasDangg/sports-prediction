@@ -1,0 +1,5 @@
+at,wallet,amount,kind,reason
+2026-10-06T05:44:00+00:00,epl:elo_v0,1000.0,open,opening balance (created before deposits were tracked)
+2026-10-06T05:44:00+00:00,atp:elo_v0,1000.0,open,opening balance (created before deposits were tracked)
+2026-10-06T09:56:48+00:00,epl:elo_v0,4000.0,deposit,"owner raised wallets to $5,000 (2026-10-06)"
+2026-10-06T09:56:48+00:00,atp:elo_v0,4000.0,deposit,"owner raised wallets to $5,000 (2026-10-06)"

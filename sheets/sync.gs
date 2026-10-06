@@ -16,6 +16,7 @@ const TABS = {
   'Today': 'state/predictions.csv',
   'EPL Elo': 'state/epl_ratings.csv',
   'ATP Elo': 'state/atp_ratings.csv',
+  'Deposits': 'state/deposits.csv',
 };
 
 function install() {

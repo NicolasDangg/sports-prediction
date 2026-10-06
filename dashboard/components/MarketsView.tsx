@@ -79,8 +79,14 @@ export default function MarketsView({ matches }: { matches: Match[] }) {
                     </span>
                   )}
                 </header>
+                {m.outcomes.some((o) => typeof o.elo_p !== "number" || Number.isNaN(o.elo_p)) && (
+                  <p className="mb-2 rounded-lg bg-sunken px-3 py-2 text-[12px] text-ink-2">
+                    Not bettable: a player could not be matched to their history ({m.identity ?? "unresolved"}). Market prices only.
+                  </p>
+                )}
                 <ul className="divide-y divide-line-soft">
                   {m.outcomes.map((o) => {
+                    const hasElo = typeof o.elo_p === "number" && !Number.isNaN(o.elo_p);
                     const picked = m.pick === o.outcome;
                     return (
                       <li key={o.outcome} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-x-4 gap-y-1.5 py-3">
@@ -88,11 +94,11 @@ export default function MarketsView({ matches }: { matches: Match[] }) {
                           {o.outcome}
                           <span className="ml-2 font-mono text-[12px] font-normal text-ink-3">{o.odds.toFixed(2)}</span>
                         </p>
-                        <span className={`row-span-2 rounded-lg px-2 py-1 text-right text-[12px] font-semibold tabular ${o.edge >= MIN_EDGE ? "bg-up-soft text-up" : "text-ink-3"}`}>
-                          {pct(o.edge, true)}
+                        <span className={`row-span-2 rounded-lg px-2 py-1 text-right text-[12px] font-semibold tabular ${hasElo && (o.edge ?? 0) >= MIN_EDGE ? "bg-up-soft text-up" : "text-ink-3"}`}>
+                          {hasElo && o.edge !== null ? pct(o.edge, true) : "—"}
                         </span>
                         <div className="grid gap-1">
-                          <Bar value={o.elo_p} label="Elo" strong />
+                          {hasElo && <Bar value={o.elo_p as number} label="Elo" strong />}
                           <Bar value={o.market_p} label="Mkt" />
                         </div>
                       </li>

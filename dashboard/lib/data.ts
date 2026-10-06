@@ -9,6 +9,7 @@ const REPO_ROOT = path.join(process.cwd(), "..");
 const NUMERIC = new Set([
   "cash", "open_stakes", "bankroll", "bets_settled", "bets_open", "profit", "roi", "model_p", "market_p",
   "odds", "n_books", "stake", "pnl", "elo_p", "edge", "elo", "elo_hard", "elo_clay", "elo_grass",
+  "deposits", "net", "median_odds", "pinnacle_odds", "amount",
 ]);
 
 function readCsv<T>(rel: string): T[] {
@@ -23,18 +24,20 @@ function readCsv<T>(rel: string): T[] {
 }
 
 export type WalletDay = {
-  date: string; wallet: string; cash: number; open_stakes: number; bankroll: number;
+  date: string; wallet: string; cash: number; open_stakes: number; bankroll: number; deposits: number; net: number;
   bets_settled: number; bets_open: number; profit: number; roi: number;
 };
 export type Bet = {
   bet_id: string; wallet: string; sport: string; strategy: string; placed_at: string;
   commence_time: string; event_id: string; competition: string; match: string; pick: string; model_p: number;
-  market_p: number; odds: number; stake: number; status: "open" | "won" | "lost" | "void";
-  result: string | null; pnl: number; settled_at: string | null;
+  market_p: number; odds: number; stake: number; status: "open" | "won" | "lost" | "void" | "unresolved";
+  result: string | null; pnl: number; settled_at: string | null; exec_book?: string | null;
+  flag?: { flag: string; note: string } | null;
 };
 export type Prediction = {
   sport: string; competition: string; event_id: string; commence_time: string; match: string;
-  outcome: string; elo_p: number; market_p: number; odds: number; n_books: number; edge: number;
+  outcome: string; elo_p: number | null; market_p: number; odds: number; n_books: number; edge: number | null;
+  exec_book?: string; median_odds?: number; eligible?: string | boolean; identity?: string;
 };
 export type BacktestBet = { date: string; bankroll: number };
 export type BacktestSummary = Record<"epl" | "atp", {
@@ -49,7 +52,11 @@ export type Dashboard = ReturnType<typeof loadDashboard>;
 
 export function loadDashboard() {
   const history = readCsv<WalletDay>("state/bankroll_history.csv");
-  const ledger = readCsv<Bet>("state/ledger.csv");
+  const flags = new Map(
+    readCsv<{ bet_id: string; flag: string; note: string }>("state/bet_flags.csv").map((f) => [f.bet_id, f]),
+  );
+  const ledger = readCsv<Bet>("state/ledger.csv").map((b) => ({ ...b, flag: flags.get(b.bet_id) ?? null }));
+  const deposits = readCsv<{ at: string; wallet: string; amount: number; kind: string; reason: string }>("state/deposits.csv");
   const predictions = readCsv<Prediction>("state/predictions.csv");
   const eplRatings = readCsv<{ team: string; elo: number }>("state/epl_ratings.csv");
   const atpRatings = readCsv<{ player: string; elo: number; elo_hard: number; elo_clay: number; elo_grass: number }>(
@@ -73,7 +80,8 @@ export function loadDashboard() {
   const wallets = [...new Set(history.map((r) => r.wallet))];
   const liveCurves = wallets.map((w) => ({
     wallet: w,
-    points: history.filter((r) => r.wallet === w).map((r) => ({ x: String(r.date), y: r.bankroll })),
+    // Net profit (bankroll - money deposited): refills don't show up as gains.
+    points: history.filter((r) => r.wallet === w).map((r) => ({ x: String(r.date), y: r.net ?? r.bankroll - 1000 })),
   }));
 
   // Group today's predictions by match (one row per outcome in the CSV).
@@ -95,12 +103,13 @@ export function loadDashboard() {
 
   // Total bankroll across wallets, per day (hero sparkline).
   const totals = new Map<string, number>();
-  for (const r of history) totals.set(String(r.date), (totals.get(String(r.date)) ?? 0) + r.bankroll);
+  for (const r of history) totals.set(String(r.date), (totals.get(String(r.date)) ?? 0) + (r.net ?? r.bankroll - 1000));
 
   return {
     latestDate,
     totalCurve: [...totals].map(([x, y]) => ({ x, y })),
     bets: [...ledger].reverse(),
+    deposits: [...deposits].reverse(),
     latest,
     liveCurves,
     openBets: ledger.filter((b) => b.status === "open").sort((a, b) => a.commence_time.localeCompare(b.commence_time)),

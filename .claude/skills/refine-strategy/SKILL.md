@@ -26,6 +26,7 @@ The owner writes a report: what they noticed on the dashboard and what they want
 - **Don't spend Odds API credits.** Don't run `daily.py` for real. Never use the historical-odds endpoint (10× cost).
 - Change **one idea per experiment**. If the report has several ideas, rank them, do the most promising, and list the rest as follow-ups.
 - Keep `backtest.py`'s v0 behaviour and outputs unchanged. New experiments go in their own script.
+- **Live evaluation uses `state/forecasts.csv`** (every forecast, passes included) joined to `state/outcomes.csv`, not just the bets. Measure probability quality (log loss vs `market_p`) on *all* eligible forecasts made after the strategy shipped. Measure betting with CLV (`state/closing.csv`) and P&L. Exclude bets listed in `state/bet_flags.csv`.
 
 ## Workflow
 
@@ -70,8 +71,14 @@ Run the single final variant on the test years, again side by side with `elo_v0`
 ### 6. Ship it (with the owner's OK)
 1. Show the owner a summary: the rule, the train and test numbers, and the evidence strength.
 2. Ask before changing the live system.
-3. Once approved:
-   - Add the strategy to `STRATEGIES` in `daily.py` under its new name. Each sport gets a new $1,000 wallet automatically on the next run.
+3. **Ask the owner about money**, as one question with these options (they can pick more than one):
+   - **New wallet only** (default): the new strategy opens fresh $5,000 wallets per sport. Old wallets carry on untouched as the control group.
+   - **Refill the old wallets** back to $5,000, so the control keeps a full bankroll: `uv run python accounts.py refill <sport>:<old_strategy> --reason "<new strategy> shipped (E00N)"`. Explain that the refill is logged in `state/deposits.csv` and **doesn't count as profit**. Charts show profit as bankroll − deposits.
+   - **Custom starting amount** for the new strategy: set `"start_bankroll": <amount>` in its `STRATEGIES` entry.
+   Never refill or deposit without the owner choosing it. Never withdraw money or rewrite past deposits.
+4. Once approved:
+   - Add the strategy to `STRATEGIES` in `daily.py` under its new name. Each sport gets a new wallet automatically on the next run, with the opening amount recorded in `deposits.csv`.
+   - Apply the refill choice with `accounts.py` (it updates `state/wallets.json` and `state/deposits.csv`), then show `uv run python accounts.py list`.
    - Dry-run what it would bet today **without touching real state**. Everything stays in memory:
      ```python
      import pandas as pd, daily
@@ -82,7 +89,8 @@ Run the single final variant on the test years, again side by side with `elo_v0`
      _, log = daily.place_bets(preds, ledger.iloc[0:0].copy(), wallets, now)
      print("\n".join(log))
      ```
-     Confirm that `elo_v0`'s lines match its real bets in `state/ledger.csv` for that morning, and that the new strategy's bets follow the rule.
+     Confirm that `elo_v0`'s lines match its real bets in `state/ledger.csv` for that morning, and that the new strategy's bets follow the rule. Only rows with `eligible == True` are ever bet on.
+   - Run `uv run python -W ignore tests/smoke_daily.py`. It must end with "all smoke checks passed". If the change added a new interface key, add a check for it there.
    - If this is the second strategy in a sport, make the dashboard tell them apart: the colour is per sport today, so add a line style or shade per strategy. Then run `pnpm build` in `dashboard/` and check it passes.
 
 ### 7. Record and commit

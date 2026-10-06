@@ -4,10 +4,16 @@ Every strategy experiment goes here, **including the ones that failed**. Newest 
 The test years are a limited budget: each experiment that looks at them adds to the counter.
 If the counter climbs fast, results on the test years stop being trustworthy (see docs/REFERENCE.md §7).
 
-**Test-set looks used: 2**
+**Test-set looks used: 4** (2 experiments + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
 **Live strategies:** `elo_v0` (control, since 2026-10-06)
 
 ---
+
+## I001 · 2026-10-06 · Step 0: data and execution integrity (infrastructure, not a strategy change)
+- **Why:** the review found problems that invalidate experiments: misresolved player identities (phantom 1500-rated players → fake edges, 3 live bets affected), no log of forecasts we passed on, synthetic median execution prices, and silent 7-day voids.
+- **Changes:** tennis name resolver with an identity gate (unknown/ambiguous/stale → not bettable; untrusted results not stored); `aliases.csv`; append-only `forecasts.csv` / `outcomes.csv` / `closing.csv`; bets execute at a real bookmaker quote ≤ median, with bookmaker and quote time recorded; settlement falls back to history files and marks `unresolved` instead of `void`; `deposits.csv` + `accounts.py`; wallets raised to $5,000 (deposit, not profit); `tests/smoke_daily.py`.
+- **Effect on elo_v0:** same probabilities and rules. Execution price is now a real quote at or below the median (slightly worse or equal), and untrusted-identity matches are skipped. Its live record from 2026-10-07 reflects this. The 3 bets placed on 2026-10-06 against misresolved players are flagged `identity_error` in `bet_flags.csv`; exclude them from evaluation.
+- **No test-set look.**
 
 ## E002 · 2026-10-06 · Blend Elo into the market probability (negative result)
 - **Report:** none (exploration during setup)

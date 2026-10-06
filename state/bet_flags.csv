@@ -1,0 +1,4 @@
+bet_id,flag,note,flagged_at
+791964bea0ff62114832d025fcec6b9d:elo_v0,identity_error,resolved to phantom 'Daniel Vallejo A.' (new 1500 rating) instead of 'Vallejo D.' (22 matches),2026-10-06
+e239b6153731e9f0b84f346eb587f9f7:elo_v0,identity_error,resolved to phantom 'Yunchaokete B.' (new 1500 rating) instead of 'Bu Y.' (59 matches),2026-10-06
+02f6a0ddcd015fe9b206546eb4298936:elo_v0,identity_error,resolved to stale namesake 'Zhang Z.' (last match 2015) instead of 'Zhang Zh.' (128 matches),2026-10-06

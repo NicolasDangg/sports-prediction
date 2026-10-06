@@ -44,20 +44,37 @@ class OddsAPI:
         return self._get(f"/sports/{sport_key}/scores", daysFrom=days_from)
 
 
-def consensus_prices(event: dict) -> tuple[dict[str, float], int]:
-    """Collapse all bookmakers' head-to-head prices for one event into one price per
-    outcome: the median, i.e. a typical price you could actually get (not the best one,
-    which would flatter our results). Returns ({outcome name: price}, number of books)."""
-    prices: dict[str, list[float]] = {}
-    n_books = 0
+def quotes(event: dict) -> dict[str, list[dict]]:
+    """Every bookmaker's head-to-head price for one event: {outcome: [{book, price, at}, ...]}."""
+    out: dict[str, list[dict]] = {}
     for book in event.get("bookmakers", []):
         for market in book.get("markets", []):
             if market["key"] != "h2h":
                 continue
-            n_books += 1
+            at = market.get("last_update") or book.get("last_update", "")
             for o in market["outcomes"]:
-                prices.setdefault(o["name"], []).append(float(o["price"]))
-    return {name: round(statistics.median(p), 3) for name, p in prices.items()}, n_books
+                out.setdefault(o["name"], []).append({"book": book.get("key", "?"), "price": float(o["price"]), "at": at})
+    return out
+
+
+def price_summary(event: dict) -> tuple[dict[str, dict], int]:
+    """Per outcome:
+      median   consensus price across books: the benchmark for "what the market thinks"
+      exec     a REAL quote to paper-bet at: the highest actual price that is <= the median,
+               i.e. a typical, conservative price someone was really offering (never the best)
+      pinnacle Pinnacle's price if it was quoted (the sharpest book), for reference
+    Returns ({outcome: summary}, number of books)."""
+    q = quotes(event)
+    n_books = max((len(v) for v in q.values()), default=0)
+    summary = {}
+    for name, qs in q.items():
+        med = statistics.median(x["price"] for x in qs)
+        below = [x for x in qs if x["price"] <= med] or qs
+        ex = max(below, key=lambda x: x["price"])
+        pin = next((x["price"] for x in qs if x["book"] == "pinnacle"), None)
+        summary[name] = {"median": round(med, 3), "exec": ex["price"], "exec_book": ex["book"],
+                         "exec_at": ex["at"], "pinnacle": pin}
+    return summary, n_books
 
 
 def winner_from_scores(event: dict) -> str | None:

@@ -3,8 +3,9 @@ export default function Sparkline({ points, start = 1000, width = 220, height = 
   points: { x: string; y: number }[]; start?: number; width?: number; height?: number;
 }) {
   const ys = points.map((p) => p.y);
-  const lo = Math.min(start, ...ys) * 0.98;
-  const hi = Math.max(start, ...ys) * 1.02;
+  const span = Math.max(Math.max(start, ...ys) - Math.min(start, ...ys), 50);
+  const lo = Math.min(start, ...ys) - span * 0.1;
+  const hi = Math.max(start, ...ys) + span * 0.1;
   const px = (i: number) => (points.length === 1 ? width - 6 : 4 + (i / (points.length - 1)) * (width - 10));
   const py = (v: number) => height - 4 - ((v - lo) / (hi - lo || 1)) * (height - 8);
   const last = points.at(-1);

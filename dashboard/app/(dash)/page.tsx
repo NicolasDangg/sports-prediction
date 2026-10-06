@@ -10,13 +10,15 @@ import { SPORT_COLOR, SPORT_LABEL, money, pct, sportOf, strategyOf, when } from 
 export default function Overview() {
   const d = loadDashboard();
   const total = d.latest.reduce((s, r) => s + r.bankroll, 0);
-  const start = d.latest.length * 1000;
+  // Profit is always measured against money put in, so refills never look like wins.
+  const deposited = d.latest.reduce((s, r) => s + (r.deposits ?? 1000), 0);
+  const net = total - deposited;
   const openStakes = d.latest.reduce((s, r) => s + r.open_stakes, 0);
   const settled = d.bets.filter((b) => b.status === "won" || b.status === "lost");
   const winRate = settled.length ? settled.filter((b) => b.status === "won").length / settled.length : null;
 
   const placedToday = d.bets.filter((b) => b.placed_at.slice(0, 10) === d.latestDate);
-  const biggestEdge = [...d.openBets].sort((a, b) => b.model_p * b.odds - a.model_p * a.odds)[0];
+  const biggestEdge = d.openBets.filter((b) => !b.flag).sort((a, b) => b.model_p * b.odds - a.model_p * a.odds)[0];
   const nextKickoff = d.openBets[0];
 
   const eplFirst = (a: { wallet: string }, b: { wallet: string }) =>
@@ -38,11 +40,11 @@ export default function Overview() {
               <div>
                 <p className="text-[13px] font-medium text-ink-3">Total virtual bankroll</p>
                 <p className="mt-2 text-5xl font-semibold leading-none tracking-tighter text-ink tabular md:text-6xl">{money(total)}</p>
-                <Delta value={total - start} className="mt-3 text-[13px]">
-                  {money(total - start, { sign: true })} ({pct((total - start) / (start || 1), true)}) since start
+                <Delta value={net} className="mt-3 text-[13px]">
+                  {money(net, { sign: true })} ({pct(net / (deposited || 1), true)}) on {money(deposited, { cents: false })} deposited
                 </Delta>
               </div>
-              <Sparkline points={d.totalCurve} start={start} />
+              <Sparkline points={d.totalCurve} start={0} />
             </div>
             <div className="mt-auto grid grid-cols-3 gap-4 border-t border-line-soft pt-5">
               <Stat label="In open bets" value={money(openStakes, { cents: false })} sub={`${d.openBets.length} bets`} />
@@ -65,7 +67,7 @@ export default function Overview() {
                   </div>
                   <p className="mt-4 text-[28px] font-semibold leading-none tracking-tight text-ink tabular">{money(w.bankroll)}</p>
                   <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] text-ink-3">
-                    <Delta value={w.bankroll - 1000}>{money(w.bankroll - 1000, { sign: true })}</Delta>
+                    <Delta value={w.net ?? w.bankroll - 1000}>{money(w.net ?? w.bankroll - 1000, { sign: true })}</Delta>
                     <span>{w.bets_settled} settled</span>
                     <span>{w.bets_open} open</span>
                     {w.bets_settled > 0 && <span>ROI {pct(w.roi, true)}</span>}
@@ -80,8 +82,8 @@ export default function Overview() {
         {/* Live chart */}
         <Reveal i={3} className="lg:col-span-8">
           <Card className="h-full">
-            <CardHeader title="Live bankroll" hint="One point per morning run. Bets use odds from before each match, so this line cannot be tuned after the fact." />
-            <BankrollChart series={series} height={260} />
+            <CardHeader title="Live profit" hint="Bankroll minus money deposited, one point per morning run. Bets use real quotes from before each match, so this line cannot be tuned after the fact." />
+            <BankrollChart series={series} height={260} start={0} startLabel="Break-even" signed />
           </Card>
         </Reveal>
 
@@ -156,6 +158,32 @@ export default function Overview() {
             </Link>
           </Card>
         </Reveal>
+        {/* Money in */}
+        <Reveal i={7} className="lg:col-span-12">
+          <Card>
+            <CardHeader
+              title="Deposits and refills"
+              hint="Every dollar put into a wallet. Refill a wallet when a new algorithm version ships: uv run python accounts.py refill <wallet> --reason ..."
+            />
+            {d.deposits.length ? (
+              <ul className="divide-y divide-line-soft">
+                {d.deposits.slice(0, 8).map((x, i) => (
+                  <li key={i} className="grid grid-cols-[minmax(0,1fr)_auto] items-center gap-4 py-3 first:pt-0 last:pb-0 md:grid-cols-[180px_100px_minmax(0,1fr)_auto]">
+                    <span className="flex items-center gap-2 text-[13px] font-medium text-ink">
+                      <SportTag sport={sportOf(x.wallet)} />
+                      <span className="font-mono text-[12px] text-ink-3">{strategyOf(x.wallet)}</span>
+                    </span>
+                    <span className="hidden text-[12px] capitalize text-ink-3 md:block">{x.kind}</span>
+                    <span className="hidden truncate text-[12px] text-ink-3 md:block">{x.reason}</span>
+                    <span className="text-right text-[13px] font-semibold text-ink tabular">+{money(x.amount, { cents: false })}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="text-[13px] text-ink-3">No deposits recorded yet.</p>
+            )}
+          </Card>
+        </Reveal>
       </div>
     </>
   );
@@ -180,6 +208,7 @@ function ActivityRow({ bet }: { bet: Bet }) {
     won: { icon: <CheckCircle size={16} weight="fill" aria-hidden />, text: money(bet.pnl, { sign: true }), tone: "text-up" },
     lost: { icon: <XCircle size={16} weight="fill" aria-hidden />, text: money(bet.pnl, { sign: true }), tone: "text-down" },
     void: { icon: <Clock size={16} aria-hidden />, text: "Void", tone: "text-ink-3" },
+    unresolved: { icon: <Clock size={16} aria-hidden />, text: "Unresolved", tone: "text-ink-3" },
   }[bet.status];
   return (
     <li className="flex items-center gap-3 py-3 first:pt-0 last:pb-0">

@@ -7,11 +7,15 @@ export type Series = { name: string; color: string; points: { x: string; y: numb
 const W = 760;
 const PAD = { top: 18, right: 70, bottom: 30, left: 58 };
 
-const money = (v: number) => `$${Math.round(v).toLocaleString("en-US")}`;
+const money = (v: number, sign = false) =>
+  `${v < 0 ? "−" : sign && v > 0 ? "+" : ""}$${Math.abs(Math.round(v)).toLocaleString("en-US")}`;
 const day = (t: number) => new Date(t).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" });
 
-/** Bankroll over time: 2px lines, hairline grid, $1,000 start line, crosshair + tooltip on hover/touch. */
-export default function BankrollChart({ series, start = 1000, height = 280 }: { series: Series[]; start?: number; height?: number }) {
+/** Money over time: 2px lines, hairline grid, a labelled reference line (starting bankroll, or
+ *  break-even for profit charts), crosshair + tooltip on hover/touch. Handles negative values. */
+export default function BankrollChart({ series, start = 1000, startLabel = "$1,000 start", signed = false, height = 280 }: {
+  series: Series[]; start?: number; startLabel?: string; signed?: boolean; height?: number;
+}) {
   const H = height;
   const svgRef = useRef<SVGSVGElement>(null);
   const [hoverT, setHoverT] = useState<number | null>(null);
@@ -28,10 +32,17 @@ export default function BankrollChart({ series, start = 1000, height = 280 }: { 
   let t0 = Math.min(...all.map((p) => p.t));
   let t1 = Math.max(...all.map((p) => p.t));
   if (t0 === t1) { t0 -= 86400000 * 3; t1 += 86400000 * 3; }
-  const yMax = niceCeil(Math.max(start * 1.15, ...all.map((p) => p.y)));
-  const yTicks = ticks(yMax);
+  const ys = all.map((p) => p.y);
+  const rawLo = Math.min(0, start, ...ys);
+  const rawHi = Math.max(start, ...ys);
+  const pad = Math.max((rawHi - rawLo) * 0.15, Math.abs(start) * 0.15, 100);
+  const step = niceStep((rawHi - rawLo + 2 * pad) / 4);
+  const yMin = rawLo < 0 ? Math.floor((rawLo - pad) / step) * step : 0;
+  const yMax = Math.ceil((rawHi + pad) / step) * step;
+  const yTicks: number[] = [];
+  for (let v = yMin; v <= yMax + 1e-9; v += step) yTicks.push(v);
   const x = (t: number) => PAD.left + ((t - t0) / (t1 - t0)) * (W - PAD.left - PAD.right);
-  const y = (v: number) => PAD.top + (1 - v / yMax) * (H - PAD.top - PAD.bottom);
+  const y = (v: number) => PAD.top + (1 - (v - yMin) / (yMax - yMin)) * (H - PAD.top - PAD.bottom);
 
   const nearest = (pts: { t: number; y: number }[], t: number) =>
     pts.reduce((best, p) => (Math.abs(p.t - t) < Math.abs(best.t - t) ? p : best), pts[0]);
@@ -70,7 +81,7 @@ export default function BankrollChart({ series, start = 1000, height = 280 }: { 
           viewBox={`0 0 ${W} ${H}`}
           className="block h-auto w-full touch-none select-none overflow-visible"
           role="img"
-          aria-label={`Bankroll over time. ${series.map((s) => `${s.name}: ${money(s.points.at(-1)?.y ?? start)}`).join(", ")}`}
+          aria-label={`Over time. ${series.map((s) => `${s.name}: ${money(s.points.at(-1)?.y ?? start, signed)}`).join(", ")}`}
           onPointerMove={onMove}
           onPointerDown={onMove}
           onPointerLeave={() => setHoverT(null)}
@@ -78,11 +89,11 @@ export default function BankrollChart({ series, start = 1000, height = 280 }: { 
           {yTicks.map((v) => (
             <g key={v}>
               <line x1={PAD.left} x2={W - PAD.right} y1={y(v)} y2={y(v)} stroke="var(--color-line-soft)" />
-              <text x={PAD.left - 10} y={y(v)} textAnchor="end" dominantBaseline="middle" className="fill-ink-3 text-[11px] tabular">{money(v)}</text>
+              <text x={PAD.left - 10} y={y(v)} textAnchor="end" dominantBaseline="middle" className="fill-ink-3 text-[11px] tabular">{money(v, signed)}</text>
             </g>
           ))}
           <line x1={PAD.left} x2={W - PAD.right} y1={y(start)} y2={y(start)} stroke="#c7ccd4" />
-          <text x={W - PAD.right} y={y(start) - 7} textAnchor="end" className="fill-ink-3 text-[11px]">$1,000 start</text>
+          <text x={W - PAD.right} y={y(start) - 7} textAnchor="end" className="fill-ink-3 text-[11px]">{startLabel}</text>
           <text x={PAD.left} y={H - 8} className="fill-ink-3 text-[11px]">{day(t0)}</text>
           <text x={W - PAD.right} y={H - 8} textAnchor="end" className="fill-ink-3 text-[11px]">{day(t1)}</text>
 
@@ -93,7 +104,7 @@ export default function BankrollChart({ series, start = 1000, height = 280 }: { 
           {ends.map(({ s, last }, i) => (
             <g key={s.name}>
               <circle cx={x(last.t)} cy={y(last.y)} r={4} fill={s.color} stroke="var(--color-surface)" strokeWidth={2} />
-              <text x={x(last.t) + 9} y={labelY[i]} dominantBaseline="middle" className="fill-ink text-[12px] font-semibold tabular">{money(last.y)}</text>
+              <text x={x(last.t) + 9} y={labelY[i]} dominantBaseline="middle" className="fill-ink text-[12px] font-semibold tabular">{money(last.y, signed)}</text>
             </g>
           ))}
 
@@ -117,7 +128,7 @@ export default function BankrollChart({ series, start = 1000, height = 280 }: { 
               <div key={s.name} className="flex items-center gap-2">
                 <i className="size-2 rounded-full" style={{ background: s.color }} />
                 <span className="text-ink-2">{s.name}</span>
-                <b className="ml-auto pl-4 font-semibold text-ink tabular">{money(p.y)}</b>
+                <b className="ml-auto pl-4 font-semibold text-ink tabular">{money(p.y, signed)}</b>
               </div>
             ))}
           </div>
@@ -127,14 +138,7 @@ export default function BankrollChart({ series, start = 1000, height = 280 }: { 
   );
 }
 
-function niceCeil(v: number) {
-  const step = 10 ** Math.floor(Math.log10(v)) / 2;
-  return Math.ceil(v / step) * step;
-}
-
-function ticks(hi: number) {
-  const step = niceCeil(hi / 4);
-  const out = [];
-  for (let v = 0; v <= hi + 1e-9; v += step) out.push(v);
-  return out;
+function niceStep(raw: number) {
+  const mag = 10 ** Math.floor(Math.log10(raw));
+  return ([1, 2, 2.5, 5, 10].find((m) => m * mag >= raw) ?? 10) * mag;
 }

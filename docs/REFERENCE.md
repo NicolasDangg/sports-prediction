@@ -33,7 +33,11 @@ The LLM agent only orchestrates; all maths is in Python, so every number is repr
 | `backtest.py` | Replays history, tunes Elo on train years, scores the test years, writes `results/` |
 | `daily.py` | The live morning job. **`STRATEGIES` dict lives here.** |
 | `odds_api.py` | The Odds API client: odds (1 credit), scores (2 credits), median consensus price |
-| `names.py` | Maps API names to history names ("Manchester City"→"Man City", "Jan-Lennard Struff"→"Struff J.L.") |
+| `names.py` | Maps API names to history names ("Manchester City"→"Man City", "Bu Yunchaokete"→"Bu Y."). Tennis resolver refuses to guess: unknown / ambiguous / stale → not bettable |
+| `aliases.csv` | Manual name fixes (`sport,api_name,history_name`) for anything the resolver can't match |
+| `records.py` | Append-only research records: forecasts, outcomes, closing prices, CLV; history-file lookups |
+| `accounts.py` | Wallet money: opening balances, deposits, refills (`list` / `deposit` / `refill`) |
+| `tests/smoke_daily.py` | End-to-end test of the daily job against a fake API on a temp copy (no credits, real state untouched) |
 | `state/` | Live, committed record. **Never rewrite history here by hand.** |
 | `results/` | Backtest outputs: `summary.json`, `*_bets.csv`, `*_ratings.csv` |
 | `experiments/LOG.md` | Every strategy experiment, including failures, and the test-set budget |
@@ -67,11 +71,14 @@ The LLM agent only orchestrates; all maths is in Python, so every number is repr
 
 ## 5. Betting rules
 
-- **Market probability:** the median price across bookmakers. Implied probabilities are normalised to remove the vig.
-- **Edge:** `model_p × decimal_odds − 1`. At most one bet per match per strategy, on the outcome with the best edge.
+- **Market probability (benchmark):** the median price across bookmakers. Implied probabilities are normalised to remove the vig.
+- **Execution price:** bets are placed at a **real quote**, the highest actual bookmaker price that is at or below the median. The bookmaker and quote time are recorded. It's never the best price, which would flatter results. Pinnacle's price is logged when quoted.
+- **Edge:** `model_p × execution_odds − 1`. At most one bet per match per strategy, on the outcome with the best edge.
+- **Identity gate:** a tennis match is only bettable if both players resolve to exactly one recently active history player. Otherwise it's logged as a forecast with `eligible=False` and skipped. Results with untrusted names are not stored, so phantom players can't appear.
 - **Stake:** `bankroll × min(¼ × Kelly, 5%)`, where Kelly = `edge / (odds − 1)`. No daily exposure cap yet (v0 once put 49% of a wallet in play in one day).
 - **Thresholds:** live `elo_v0` requires +5% edge. The backtest wallet uses +3%.
-- **Timing:** only bets on matches starting within 30 hours of the run. A bet with no result after 7 days is voided and the stake refunded.
+- **Timing:** only bets on matches starting within 30 hours of the run.
+- **Settlement:** from The Odds API scores. If there's no API result 24h after kickoff, the job looks in the history files (football-data / Kaggle). After 14 days with no result anywhere, the bet becomes `unresolved` and the stake is refunded. Check those manually; they are not genuine voids. `result_source` records where each result came from.
 
 ## 6. Strategies and versioning
 
@@ -81,7 +88,9 @@ STRATEGIES = {
     "elo_v0": {"prob": lambda row: row["elo_p"], "min_edge": 0.05},
 }
 ```
-- Each strategy gets one wallet per sport (`epl:<name>`, `atp:<name>`), starting at $1,000, and is created automatically on the next run.
+- Each strategy gets one wallet per sport (`epl:<name>`, `atp:<name>`), opened with **$5,000** (or the strategy's `start_bankroll`) and created automatically on the next run. The opening amount is recorded in `deposits.csv`.
+- **Money in is tracked separately from betting.** Profit = bankroll − total deposited, so a refill never looks like a win. Stakes are a percentage of the bankroll, so a bigger wallet doesn't change percentage results; it just stays above the $1 minimum stake longer.
+- **Refills:** `uv run python accounts.py refill <wallet> [--to 5000] --reason "..."` tops the bankroll (cash + open bets) back up. `deposit` adds a fixed amount. When a new version ships, the owner chooses whether to refill the older wallets (see the `refine-strategy` skill).
 - `prob(row)` receives a prediction row with `elo_p`, `market_p`, `odds`, `edge`, `outcome`, `sport`, `n_books`, and so on, and returns the probability the strategy believes.
 - **Never edit or delete an existing strategy.** Its live record would stop meaning anything. Add `elo_v1`, `elo_v2`, and so on.
 - If a new idea needs more than `prob` + `min_edge` (for example a daily cap or a different stake rule), extend the interface **backward-compatibly**: old strategies must behave exactly as before.
@@ -100,8 +109,13 @@ STRATEGIES = {
 |---|---|
 | `ledger.csv` | `bet_id` (`event_id:strategy`), `wallet`, `sport`, `strategy`, `placed_at`, `commence_time`, `sport_key`, `event_id`, `competition`, `match`, `pick`, `model_p`, `market_p`, `odds`, `n_books`, `stake`, `status` (open/won/lost/void), `result`, `pnl`, `settled_at` |
 | `wallets.json` | `{wallet: {cash}}`. Bankroll = cash + open stakes |
-| `bankroll_history.csv` | One row per wallet per day: `cash`, `open_stakes`, `bankroll`, `bets_settled`, `bets_open`, `profit`, `roi` |
-| `predictions.csv` | Today's priced matches, one row per outcome: `elo_p`, `market_p`, `odds`, `n_books`, `edge` |
+| `deposits.csv` | Every money movement: `at`, `wallet`, `amount`, `kind` (open/deposit/refill), `reason` |
+| `bankroll_history.csv` | One row per wallet per day: `cash`, `open_stakes`, `bankroll`, `deposits`, `net` (bankroll − deposits), `bets_settled`, `bets_open`, `profit` (settled P&L), `roi` |
+| `predictions.csv` | Latest run's forecasts (dashboard snapshot, overwritten each run) |
+| `forecasts.csv` | **Append-only**: every forecast on every run, passes included. `run_at`, `elo_p`, `market_p`, `odds` (execution quote), `exec_book`, `quote_at`, `median_odds`, `pinnacle_odds`, `n_books`, `edge`, `eligible`, `identity`, `resolved_as`, `surface`, `best_of` |
+| `outcomes.csv` | Final result per event: `winner`, `source` |
+| `closing.csv` | Closing prices per event outcome. EPL: football-data `pinnacle_close` / `avg_close`. ATP: `kaggle_odds` (one bookmaker, unclear timing; approximate) |
+| `bet_flags.csv` | Annotations on bets without touching the ledger, e.g. `identity_error` for the three 2026-10-06 bets placed against misresolved players |
 | `epl_ratings.csv`, `atp_ratings.csv` | Current ratings (ATP: overall, hard, clay, grass) |
 | `atp_recent.csv` | Live-collected ATP results in history format |
 
@@ -123,13 +137,16 @@ STRATEGIES = {
 | Routine | claude.ai/code/routines/trig_01J7sKStghiTiFzGNCzMXmuX (Sonnet 5.5, no connectors, pushes `state/` to main) |
 | Cloud secrets | `ODDS_API_KEY`, `KAGGLE_API_TOKEN` in the Default environment |
 | Local run | `uv run --env-file .env python daily.py` (writes real state; don't run it when the routine is about to) |
+| Smoke test | `uv run python -W ignore tests/smoke_daily.py`: run after any change to `daily.py`, `names.py`, `records.py`, `accounts.py`, `wallet.py` |
+| Wallets | `uv run python accounts.py list` |
 | Backtest | `uv run python -W ignore backtest.py` (~40s) |
 | Dashboard | `dashboard/`, password in `DASHBOARD_PASSWORD` on Vercel (production and preview); local copy in `dashboard/.env.local` |
 | Sheet | "Sports Prediction - Paper Trading" in Google Drive. Apps Script `sync` runs daily at 09:00 |
 
 ## 11. Known gaps and idea backlog
 
-- **Closing line value (CLV):** record the closing price for each bet (EPL `AvgC*` after the match; ATP from Kaggle odds) and report whether our bet beat it. Shows skill much faster than P&L.
+- **Closing line value (CLV):** closing prices are now recorded (`closing.csv`) and the daily output prints CLV per wallet. Still to do: show it on the dashboard. ATP closing comes from Kaggle odds of unclear timing, so treat ATP CLV as approximate.
+- `best_of` is now recorded per forecast but **not used by the model yet** (see experiment A in the review: Elo is overconfident in best-of-3).
 - Daily exposure cap per wallet.
 - The dashboard colours wallets by sport, so two strategies in the same sport share a colour. Give each strategy its own line style or shade when a second one ships.
 - News and injury signals extracted by an LLM (v3 roadmap). Fine-tuning a small open model (v4).
