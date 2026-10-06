@@ -158,8 +158,11 @@ def name_map(epl_df: pd.DataFrame, atp_df: pd.DataFrame) -> pd.DataFrame:
     profiles, since = player_profiles(atp_df), atp_df.date.max() - pd.Timedelta(days=365)
     seen: set[tuple[str, str]] = set()
     for f in ("ledger.csv", "predictions.csv"):
-        if (STATE / f).exists():
-            d = pd.read_csv(STATE / f, usecols=["sport", "match"])
+        path = STATE / f
+        if path.exists() and path.stat().st_size > 1:  # empty on mornings with nothing priced
+            d = pd.read_csv(path)
+            if not {"sport", "match"} <= set(d.columns):
+                continue
             seen |= {(sp, n) for sp, m in zip(d.sport, d.match) for n in str(m).split(" v ")}
     rows = []
     for sport, api in sorted(seen):
