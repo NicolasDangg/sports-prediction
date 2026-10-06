@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { AnimatePresence, motion } from "motion/react";
-import { CheckCircle, Target } from "@phosphor-icons/react";
+import { ArrowRight, CheckCircle, Target } from "@phosphor-icons/react";
 import Segmented from "./Segmented";
 import type { Dashboard } from "@/lib/data";
 import { SPORT_COLOR, SPORT_SHORT, pct, when, type Sport } from "@/lib/format";
@@ -13,7 +14,9 @@ type BetFilter = "bets" | "all";
 
 const MIN_EDGE = 0.05;
 
-export default function MarketsView({ matches }: { matches: Match[] }) {
+/** pages: event ids that have a match page (today's quoted ATP matches). */
+export default function MarketsView({ matches, pages = [] }: { matches: Match[]; pages?: string[] }) {
+  const hasPage = new Set(pages);
   const [sport, setSport] = useState<SportFilter>("all");
   const [bets, setBets] = useState<BetFilter>("bets");
 
@@ -72,6 +75,11 @@ export default function MarketsView({ matches }: { matches: Match[] }) {
                       <span className="truncate">{m.competition}</span>
                     </p>
                     <p className="mt-0.5 text-[12px] text-ink-3 tabular">{when(m.commence_time)}</p>
+                    {hasPage.has(m.event_id) && (
+                      <Link href={`/match/${m.event_id}`} className="mt-1 inline-flex min-h-8 items-center gap-1 text-[12px] font-medium text-ink-2 underline-offset-4 hover:text-ink hover:underline">
+                        Odds board, H2H, form <ArrowRight size={12} aria-hidden />
+                      </Link>
+                    )}
                   </div>
                   {m.hasBet && (
                     <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-ink px-2.5 py-1 text-[11px] font-semibold text-surface">

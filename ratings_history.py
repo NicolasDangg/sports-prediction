@@ -150,8 +150,9 @@ def write_all(epl_df: pd.DataFrame, epl_params: dict, atp_df: pd.DataFrame, atp_
 
 
 def name_map(epl_df: pd.DataFrame, atp_df: pd.DataFrame) -> pd.DataFrame:
-    """Bookmaker spelling -> history name for every team/player in the ledger and today's
-    forecasts, so the dashboard can attach bets and upcoming matches to a team/player page."""
+    """Bookmaker spelling -> history name for every team/player in the ledger, today's forecasts
+    and today's quoted ATP matches, so the dashboard can attach bets and upcoming matches to a
+    team/player page."""
     from names import epl_team, player_profiles, tennis_player
 
     teams = set(epl_df.HomeTeam) | set(epl_df.AwayTeam)
@@ -164,6 +165,10 @@ def name_map(epl_df: pd.DataFrame, atp_df: pd.DataFrame) -> pd.DataFrame:
             if not {"sport", "match"} <= set(d.columns):
                 continue
             seen |= {(sp, n) for sp, m in zip(d.sport, d.match) for n in str(m).split(" v ")}
+    quotes = STATE / "atp_quotes.csv"  # match pages: every priced ATP match, bettable or not
+    if quotes.exists() and quotes.stat().st_size > 1:
+        d = pd.read_csv(quotes)
+        seen |= {("atp", n) for n in set(d.home) | set(d.away)}
     rows = []
     for sport, api in sorted(seen):
         name = epl_team(api, teams) if sport == "epl" else tennis_player(api, profiles, since).name

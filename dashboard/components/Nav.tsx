@@ -1,10 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
-import { Flask, House, Ranking, Receipt, SignOut, Target } from "@phosphor-icons/react";
+import { Flask, House, MagnifyingGlass, Ranking, Receipt, SignOut, Target, X } from "@phosphor-icons/react";
+import type { SearchItem } from "@/lib/match";
 import AgentStatus from "./AgentStatus";
+import SearchBox from "./SearchBox";
 
 const ITEMS = [
   { href: "/", label: "Overview", icon: House },
@@ -47,14 +50,16 @@ function SignOutButton({ compact = false }: { compact?: boolean }) {
   );
 }
 
-export default function Nav({ updated }: { updated: string }) {
+export default function Nav({ updated, searchIndex }: { updated: string; searchIndex: SearchItem[] }) {
   const path = usePathname();
+  const [searching, setSearching] = useState(false);
   return (
     <>
       {/* Desktop sidebar */}
-      <aside className="fixed inset-y-0 left-0 hidden w-[248px] flex-col border-r border-line/80 bg-surface/70 px-4 py-6 backdrop-blur-xl lg:flex">
+      <aside className="fixed inset-y-0 left-0 z-30 hidden w-[248px] flex-col border-r border-line/80 bg-surface/70 px-4 py-6 backdrop-blur-xl lg:flex">
         <div className="px-2"><Logo /></div>
-        <nav aria-label="Main" className="mt-9 flex flex-col gap-1">
+        <div className="mt-7"><SearchBox index={searchIndex} /></div>
+        <nav aria-label="Main" className="mt-5 flex flex-col gap-1">
           {ITEMS.map(({ href, label, icon: Icon }) => {
             const active = isActive(path, href);
             return (
@@ -84,9 +89,23 @@ export default function Nav({ updated }: { updated: string }) {
       </aside>
 
       {/* Mobile top bar */}
-      <header className="sticky top-0 z-20 flex items-center justify-between border-b border-line/70 bg-canvas/85 px-4 py-3 backdrop-blur-xl lg:hidden">
-        <Logo />
-        <SignOutButton compact />
+      <header className="sticky top-0 z-20 border-b border-line/70 bg-canvas/85 px-4 py-3 backdrop-blur-xl lg:hidden">
+        <div className="flex items-center justify-between">
+          <Logo />
+          <div className="flex items-center">
+            <button
+              type="button"
+              aria-label={searching ? "Close search" : "Search matches and players"}
+              aria-expanded={searching}
+              onClick={() => setSearching((s) => !s)}
+              className="grid min-h-11 min-w-11 cursor-pointer place-items-center rounded-xl text-ink-3 transition-colors hover:bg-sunken hover:text-ink"
+            >
+              {searching ? <X size={19} aria-hidden /> : <MagnifyingGlass size={19} aria-hidden />}
+            </button>
+            <SignOutButton compact />
+          </div>
+        </div>
+        {searching && <div className="mt-3"><SearchBox index={searchIndex} autoFocus onDone={() => setSearching(false)} /></div>}
       </header>
 
       {/* Mobile bottom tab bar */}

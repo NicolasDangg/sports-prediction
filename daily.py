@@ -13,6 +13,7 @@ Steps
        wallets.json           cash per wallet;  deposits.csv  money put in (see accounts.py)
        bankroll_history.csv   one snapshot per wallet per day (for the chart)
        predictions.csv        today's forecasts (latest snapshot, for the dashboard)
+       atp_quotes.csv         every bookmaker's price for today's ATP matches (dashboard match pages)
        forecasts.csv          EVERY forecast ever made, passes included (append-only)
        outcomes.csv, closing.csv   results and closing prices for evaluation
        atp_recent.csv         tennis results collected from The Odds API
@@ -41,7 +42,7 @@ import fetch_data
 import ratings_history
 import records
 from names import epl_team, load_aliases, player_profiles, tennis_player
-from odds_api import OddsAPI, price_summary, winner_from_scores
+from odds_api import OddsAPI, price_summary, quotes, winner_from_scores
 from wallet import Wallet
 
 ROOT = Path(__file__).parent
@@ -265,10 +266,11 @@ def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[lis
                       for srf in ["Hard", "Clay", "Grass"]}})
      .sort_values("elo", ascending=False).head(200).round(1).to_csv(STATE / "atp_ratings.csv", index=False))
 
-    rows, unresolved = [], []
+    rows, unresolved, book_rows = [], [], []
     for s in sports:
         best_of = 5 if any(g in s["title"] for g in GRAND_SLAMS) else 3
         for e in api.odds(s["key"]):
+            book_rows += quote_rows(s, e, guess_surface(s["title"], pd.Timestamp(e["commence_time"]), surfaces))
             when = pd.Timestamp(e["commence_time"])
             surface = guess_surface(s["title"], when, surfaces)
             a, b = (tennis_player(x, profiles, since, aliases) for x in (e["home_team"], e["away_team"]))
@@ -281,9 +283,22 @@ def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[lis
                    "surface": surface, "best_of": best_of}
             rows += event_rows("atp", s["key"], f"{s['title']} ({surface})", e,
                                {e["home_team"]: p, e["away_team"]: 1 - p} if ok else None, ctx)
+    # Every book's price, not just the summary: the dashboard's match pages show the full board.
+    pd.DataFrame(book_rows, columns=QUOTE_COLS).to_csv(STATE / "atp_quotes.csv", index=False)
     if skipped:
         unresolved += [f"result not stored: {x}" for x in skipped]
     return rows, added, unresolved
+
+
+QUOTE_COLS = ["event_id", "sport_key", "competition", "surface", "commence_time", "home", "away", "outcome", "book", "price", "at"]
+
+
+def quote_rows(sport: dict, e: dict, surface: str) -> list[dict]:
+    """One row per bookmaker per outcome, with enough context to stand alone."""
+    ctx = {"event_id": e["id"], "sport_key": sport["key"], "competition": sport["title"], "surface": surface,
+           "commence_time": e["commence_time"], "home": e["home_team"], "away": e["away_team"]}
+    return [{**ctx, "outcome": name, "book": q["book"], "price": q["price"], "at": q["at"]}
+            for name, qs in quotes(e).items() for q in qs]
 
 
 def event_rows(sport: str, sport_key: str, competition: str, e: dict, elo_p: dict | None, ctx: dict) -> list[dict]:
