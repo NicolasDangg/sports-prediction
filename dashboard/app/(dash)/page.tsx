@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle, Clock, Lightning, XCircle } from "@phosphor-icons/react/ssr";
 import BankrollChart from "@/components/BankrollChart";
 import Reveal from "@/components/Reveal";
-import Sparkline from "@/components/Sparkline";
+import ProfitTrend from "@/components/ProfitTrend";
 import { Card, CardHeader, Delta, EmptyState, PageHeader, SportTag, Stat } from "@/components/ui";
 import { loadDashboard, type Bet } from "@/lib/data";
 import { SPORT_COLOR, SPORT_LABEL, money, pct, sportOf, strategyOf, when } from "@/lib/format";
@@ -36,17 +36,15 @@ export default function Overview() {
         {/* Hero: total bankroll */}
         <Reveal i={0} className="lg:col-span-7">
           <Card className="flex h-full flex-col">
-            <div className="mb-7 flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
-              <div>
+            <div>
                 <p className="text-[13px] font-medium text-ink-3">Total virtual bankroll</p>
                 <p className="mt-2 text-5xl font-semibold leading-none tracking-tighter text-ink tabular md:text-6xl">{money(total)}</p>
                 <Delta value={net} className="mt-3 text-[13px]">
                   {money(net, { sign: true })} ({pct(net / (deposited || 1), true)}) on {money(deposited, { cents: false })} deposited
                 </Delta>
-              </div>
-              <Sparkline points={d.totalCurve} start={0} />
             </div>
-            <div className="mt-auto grid grid-cols-3 gap-4 border-t border-line-soft pt-5">
+            <div className="my-6 flex-1"><ProfitTrend points={d.totalCurve} /></div>
+            <div className="grid grid-cols-3 gap-4 border-t border-line-soft pt-5">
               <Stat label="In open bets" value={money(openStakes, { cents: false })} sub={`${d.openBets.length} bets`} />
               <Stat label="Settled" value={settled.length} sub={settled.length ? `${money(settled.reduce((s, b) => s + b.pnl, 0), { sign: true })} P&L` : "none yet"} />
               <Stat label="Win rate" value={winRate === null ? "—" : pct(winRate, false, 0)} sub="settled bets" />
