@@ -5,7 +5,7 @@ import Reveal from "@/components/Reveal";
 import ProfitTrend from "@/components/ProfitTrend";
 import { Card, CardHeader, Delta, EmptyState, PageHeader, SportTag, Stat } from "@/components/ui";
 import { loadDashboard, type Bet } from "@/lib/data";
-import { SPORT_COLOR, SPORT_LABEL, money, pct, sportOf, strategyOf, when } from "@/lib/format";
+import { SPORT_COLOR, SPORT_LABEL, money, pct, sportOf, strategyDash, strategyOf, when } from "@/lib/format";
 
 export default function Overview() {
   const d = loadDashboard();
@@ -27,7 +27,7 @@ export default function Overview() {
   const series = [...d.liveCurves]
     .sort(eplFirst)
     .map((c) => ({ name: `${SPORT_LABEL[sportOf(c.wallet)]} · ${strategyOf(c.wallet)}`, color: SPORT_COLOR[sportOf(c.wallet)],
-                    dashed: strategyOf(c.wallet) !== "elo_v0", points: c.points }));
+                    dash: strategyDash(strategyOf(c.wallet)), points: c.points }));
 
   return (
     <>

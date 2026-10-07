@@ -35,3 +35,24 @@ def news_veto(row) -> bool:
     except (TypeError, ValueError):
         conf = 0.0
     return row.get("news_status") in NEWS_VETO and conf >= NEWS_MIN_CONFIDENCE
+
+
+def sharp_prob(row) -> float:
+    """E012: Pinnacle's no-vig probability (0 when Pinnacle didn't price every outcome, so no bet).
+    Example: Pinnacle 1.80 / 2.10 -> 0.556 + 0.476 = 1.032 -> fair 0.539 / 0.461."""
+    try:
+        p = float(row.get("pin_fair_p"))
+    except (TypeError, ValueError):
+        return 0.0
+    return p if np.isfinite(p) else 0.0
+
+
+def best_price(row) -> tuple[float, str, str]:
+    """E012: bet at the highest real bookmaker quote (exchanges excluded), not the typical one."""
+    try:
+        odds = float(row.get("best_odds"))
+    except (TypeError, ValueError):
+        odds = float("nan")
+    if not np.isfinite(odds):
+        return float(row["odds"]), row.get("exec_book", ""), row.get("quote_at", "")
+    return odds, row.get("best_book", ""), row.get("best_at", "")

@@ -5,10 +5,19 @@ The test years are a limited budget: each experiment that looks at them adds to 
 If the counter climbs fast, results on the test years stop being trustworthy (see docs/REFERENCE.md §7).
 
 **Test-set looks used: 5** (3 experiments: E001, E002, E011 + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
-**Live strategies:** `elo_v0` (control, since 2026-10-06) · `news_v1` (ATP only, from the 2026-10-08 run, E007)
+**Live strategies:** `elo_v0` (control, since 2026-10-06) · `news_v1` (ATP only, from the 2026-10-08 run, E007) · `sharp_v1` (EPL + ATP, from the 2026-10-08 run, E012)
 **Next up:** E010 favourite–longshot bias in qualifying/challenger markets (E009 ratings now cover those players); E007/E008 collecting live data
 
 ---
+
+## E012 · 2026-10-07 · `sharp_v1`: best bookmaker price vs Pinnacle's fair price, live · PRE-REGISTERED, shipped as a live experiment
+- **Report:** owner go-ahead after E011 (positive CLV, too few bets to judge profit).
+- **Rule:** p = Pinnacle's price with the margin divided out (`strategies.sharp_prob`; no bet when Pinnacle didn't price every outcome). Bet the outcome with the biggest `p × best price − 1` if ≥ 2%, at the highest real bookmaker quote (`strategies.best_price`; Betfair/Matchbook/Smarkets exchanges excluded because their prices are before commission). Quarter-Kelly, 5% cap, fresh $5,000 wallets `epl:sharp_v1` and `atp:sharp_v1`. `needs_model: False`: also bets matches our Elo can't price (unknown or stale players).
+- **Why 2% and not E011's 5%:** this test is judged on CLV, which needs sample size; on E011's train years the 2% variant also beat the close (+5.0%, CI [+4.3, +5.7]) with 2.5× the bets. Today's quotes would give ~1–3 bets a day.
+- **Interface (backward compatible):** new optional `STRATEGIES` keys `price` (row → odds, book, time; default = the typical quote) and `needs_model` (default True). Forecast rows gain `pin_fair_p`, `best_odds`, `best_book`, `best_at`. A dry run with the old and new code on the 2026-10-06 predictions gives identical `elo_v0`/`news_v1` bets; smoke test checks added.
+- **Judge:** `experiments/e012_sharp_live.py`: CLV = our odds × Pinnacle's no-vig closing probability − 1 (ATP: last snapshot ≤ 3h before the start; EPL: football-data Pinnacle close). Also on the Strategies page as "Beat Pinnacle's close", for every wallet.
+- **Decision rule (written before any data):** after **150 settled bets with a Pinnacle close**: keep (and consider it the main strategy) if mean CLV > 0 with a 95% CI above 0; stop if the CI is entirely below 0; otherwise extend once to 300 bets and decide on the point estimate. Profit is reported but is not the judge (mostly noise for months).
+- **Caveat for real money:** bookmakers limit accounts that consistently beat Pinnacle's line. On paper that doesn't apply.
 
 ## E011 · 2026-10-07 · Sharp vs soft: Pinnacle's no-vig price as truth, bet soft books that pay more · FAILED R3/R4 (positive CLV), not shipped
 - **Report:** owner question "how do we beat the bookmaker for pure ROI". No model: the edge comes from bookmakers disagreeing.

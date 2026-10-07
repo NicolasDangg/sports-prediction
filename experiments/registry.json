@@ -9,6 +9,45 @@
   },
   "experiments": [
     {
+      "id": "E012",
+      "date": "2026-10-07",
+      "title": "sharp_v1 live: best bookmaker price vs Pinnacle's fair price",
+      "status": "live",
+      "kind": "strategy",
+      "sport": "both",
+      "strategy": "sharp_v1",
+      "hypothesis": "E011 found a real price edge in EPL history (beat Pinnacle's close on train and test) but too few bets to judge profit. Our morning odds cover ~19 bookmakers per match for tennis and football, so the same rule can be tested live on many more matches.",
+      "change": "sharp_v1: probability = Pinnacle's price with the margin removed; bet the best real bookmaker quote (exchanges excluded) when it pays ≥ 2% more than fair. Quarter-Kelly, 5% cap, fresh $5,000 wallet per sport. Needs no model, so it also bets matches our Elo can't price.",
+      "protocol": "Live only (no test-year look). Judge = CLV against Pinnacle's no-vig CLOSING price (ATP: our snapshots ≤ 3h before the start; EPL: football-data's Pinnacle close). min_edge 2% instead of E011's 5%: the 2% variant also beat the close on train (+5.0%) and roughly doubles the sample.",
+      "script": "experiments/e012_sharp_live.py",
+      "test_look": false,
+      "progress": {
+        "metric": "settled bets with a Pinnacle close",
+        "target": 150,
+        "source": "bets"
+      },
+      "rules": [
+        {
+          "text": "After 150 settled bets: keep if mean CLV vs Pinnacle's fair close > 0 with a 95% CI above 0",
+          "passed": null
+        },
+        {
+          "text": "Stop if the CI is entirely below 0",
+          "passed": null
+        },
+        {
+          "text": "Otherwise extend once to 300 bets and decide on the point estimate",
+          "passed": null
+        }
+      ],
+      "depends_on": [
+        "E011"
+      ],
+      "followups": [
+        "Tennis backtest on tennis-data.co.uk files (owner download)"
+      ]
+    },
+    {
       "id": "E011",
       "date": "2026-10-07",
       "title": "Sharp vs soft: bet mainstream books that beat Pinnacle's fair price",

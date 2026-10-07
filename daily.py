@@ -67,12 +67,18 @@ GRAND_SLAMS = ("Australian Open", "French Open", "Roland Garros", "Wimbledon", "
 # Each strategy gets its own wallet per sport, so versions can be compared side by side.
 # A strategy turns a forecast row into the probability it believes for that outcome.
 # Add new versions here; never edit an old one, or its history stops meaning anything.
-# Optional keys: "start_bankroll" (default START_BANKROLL), "sports" (default both: only these get a wallet and bets).
+# Optional keys: "start_bankroll" (default START_BANKROLL), "sports" (default both: only these get a wallet and bets),
+#   "price" (row -> (odds, book, quote time); default the typical quote: row odds / exec_book / quote_at),
+#   "needs_model" (default True: only bet rows our model can price, i.e. eligible == True).
 STRATEGIES = {
     "elo_v0": {"prob": lambda row: row["elo_p"], "min_edge": 0.05},
     # E007: elo_v0, but never back an ATP player with fresh injury / illness / withdrawal news.
     "news_v1": {"prob": lambda row: 0.0 if strategies.news_veto(row) else row["elo_p"], "min_edge": 0.05,
                 "sports": ("atp",)},
+    # E012: no model. Pinnacle's price with its margin removed is the truth; bet the best real
+    # bookmaker price when it pays more than that. Live paper test, judged on closing line value.
+    "sharp_v1": {"prob": strategies.sharp_prob, "min_edge": 0.02, "price": strategies.best_price,
+                 "needs_model": False},
 }
 SPORTS = ("epl", "atp")
 
@@ -339,6 +345,9 @@ def event_rows(sport: str, sport_key: str, competition: str, e: dict, elo_p: dic
         return []
     implied = {k: 1 / v["median"] for k, v in prices.items()}
     total = sum(implied.values())  # > 1 because of the bookmaker's cut; divide it out
+    pin = {k: v["pinnacle"] for k, v in prices.items()}
+    pin_fair = ({k: (1 / o) / sum(1 / x for x in pin.values()) for k, o in pin.items()}  # E012: Pinnacle, margin removed
+                if all(o and o > 1 for o in pin.values()) else {})
     rows = []
     for name in names:
         q, p = prices[name], (float(elo_p[name]) if elo_p else np.nan)
@@ -347,11 +356,18 @@ def event_rows(sport: str, sport_key: str, competition: str, e: dict, elo_p: dic
                      "outcome": name, "elo_p": round(p, 4), "market_p": round(implied[name] / total, 4),
                      "odds": q["exec"], "exec_book": q["exec_book"], "quote_at": q["exec_at"],
                      "median_odds": q["median"], "pinnacle_odds": q["pinnacle"], "n_books": n_books,
+                     "pin_fair_p": round(pin_fair[name], 4) if pin_fair else np.nan,
+                     "best_odds": q["best"], "best_book": q["best_book"], "best_at": q["best_at"],
                      "edge": round(p * q["exec"] - 1, 4), "eligible": elo_p is not None and not ctx.get("rating_note"), **ctx})
     return rows
 
 
 # ------------------------------------------------------------------- betting
+
+
+def default_price(row) -> tuple[float, str, str]:
+    """The typical quote every model strategy bets at (see odds_api.price_summary)."""
+    return float(row["odds"]), row.get("exec_book", ""), row.get("quote_at", "")
 
 
 def place_bets(preds: pd.DataFrame, ledger: pd.DataFrame, wallets: dict, now: pd.Timestamp) -> tuple[pd.DataFrame, list[str]]:
@@ -360,8 +376,7 @@ def place_bets(preds: pd.DataFrame, ledger: pd.DataFrame, wallets: dict, now: pd
         return ledger, log
     start = pd.to_datetime(preds.commence_time)
     window = preds[(start > now) & (start <= now + timedelta(hours=LOOKAHEAD_HOURS))]
-    if "eligible" in window.columns:  # identity not trusted -> never bet
-        window = window[window.eligible.astype(str) == "True"]
+    trusted = (window.eligible.astype(str) == "True") if "eligible" in window.columns else pd.Series(True, window.index)
     existing = set(ledger.bet_id)
     for (sport, event_id), outcomes in window.groupby(["sport", "event_id"], sort=False):
         for name, strat in STRATEGIES.items():
@@ -370,13 +385,19 @@ def place_bets(preds: pd.DataFrame, ledger: pd.DataFrame, wallets: dict, now: pd
                 continue
             if bet_id in existing:
                 continue  # already bet on this match
+            if strat.get("needs_model", True) and not trusted[outcomes.index].all():
+                continue  # identity not trusted or rating stale -> a model strategy never bets
+            price = strat.get("price", default_price)
+            quoted = {r["outcome"]: price(r) for _, r in outcomes.iterrows()}
             w = Wallet(bankroll=wallets[wallet_name]["cash"], min_edge=strat["min_edge"])
-            options = [(r["outcome"], float(strat["prob"](r)), float(r["odds"])) for _, r in outcomes.iterrows()]
+            options = [(r["outcome"], float(strat["prob"](r)), float(quoted[r["outcome"]][0]))
+                       for _, r in outcomes.iterrows()]
             bet = w.consider(options)
             if not bet or bet[3] < 1:
                 continue
             pick, p, odds, stake = bet
             r = outcomes[outcomes.outcome == pick].iloc[0]
+            _, exec_book, quote_at = quoted[pick]
             wallets[wallet_name]["cash"] -= stake
             new.append({"bet_id": bet_id, "wallet": wallet_name, "sport": sport, "strategy": name,
                         "placed_at": now.isoformat(), "commence_time": r.commence_time,
@@ -384,9 +405,9 @@ def place_bets(preds: pd.DataFrame, ledger: pd.DataFrame, wallets: dict, now: pd
                         "match": r.match, "pick": pick, "model_p": round(p, 4), "market_p": r.market_p,
                         "odds": odds, "n_books": r.n_books, "stake": stake, "status": "open",
                         "result": "", "pnl": 0.0, "settled_at": "",
-                        "exec_book": r.get("exec_book", ""), "quote_at": r.get("quote_at", ""),
+                        "exec_book": exec_book, "quote_at": quote_at,
                         "median_odds": r.get("median_odds", np.nan), "result_source": ""})
-            log.append(f"BET  {wallet_name} {r.match}: {pick} @ {odds} ({r.get('exec_book', '?')}) "
+            log.append(f"BET  {wallet_name} {r.match}: {pick} @ {odds} ({exec_book or '?'}) "
                        f"stake ${stake:.2f} (model {p:.0%} vs market {r.market_p:.0%})")
     if new:
         ledger = pd.concat([ledger, pd.DataFrame(new)], ignore_index=True)

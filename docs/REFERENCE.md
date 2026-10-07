@@ -92,12 +92,13 @@ feeds decisions, the news label, is made by a fixed prompt in `news.py` and logg
 ## 5. Betting rules
 
 - **Market probability (benchmark):** the median price across bookmakers. Implied probabilities are normalised to remove the vig.
-- **Execution price:** bets are placed at a **real quote**, the highest actual bookmaker price that is at or below the median. The bookmaker and quote time are recorded. It's never the best price, which would flatter results. Pinnacle's price is logged when quoted.
+- **Execution price:** bets are placed at a **real quote**, the highest actual bookmaker price that is at or below the median. The bookmaker and quote time are recorded. It's never the best price, which would flatter results. Pinnacle's price is logged when quoted. Exception: `sharp_v1` (E012) bets at the **best** real bookmaker quote (exchanges excluded), because finding that price *is* its strategy; forecast rows log `best_odds`/`best_book`/`best_at` and `pin_fair_p` (Pinnacle, margin removed).
 - **Edge:** `model_p × execution_odds − 1`. At most one bet per match per strategy, on the outcome with the best edge.
 - **Identity gate:** a tennis match is only bettable if both players resolve to exactly one recently active history player. Otherwise it's logged as a forecast with `eligible=False` and skipped. Results with untrusted names are not stored, so phantom players can't appear.
 - **Stake:** `bankroll × min(¼ × Kelly, 5%)`, where Kelly = `edge / (odds − 1)`. No daily exposure cap yet (v0 once put 49% of a wallet in play in one day).
 - **Thresholds:** live `elo_v0` requires +5% edge. The backtest wallet uses +3%.
 - **Timing:** only bets on matches starting within 30 hours of the run.
+- **Sharp vs soft (`sharp_v1` only):** no model. p = Pinnacle with the margin removed; bet when the best bookmaker price × p − 1 ≥ 2%. Judged on CLV vs Pinnacle's fair closing price (`experiments/e012_sharp_live.py`, Strategies page "Beat Pinnacle's close").
 - **News veto (`news_v1` only):** never back an ATP player whose news label is `injured`, `ill`, `withdrawn` or `doubt` with confidence ≥ 0.6 (`strategies.news_veto`). The opponent can still be backed on its own edge.
 - **Settlement:** from The Odds API scores. If there's no API result 24h after kickoff, the job looks in the history files (football-data / Kaggle). After 14 days with no result anywhere, the bet becomes `unresolved` and the stake is refunded. Check those manually; they are not genuine voids. `result_source` records where each result came from.
 
@@ -109,9 +110,12 @@ STRATEGIES = {
     "elo_v0": {"prob": lambda row: row["elo_p"], "min_edge": 0.05},
     "news_v1": {"prob": lambda row: 0.0 if strategies.news_veto(row) else row["elo_p"], "min_edge": 0.05,
                 "sports": ("atp",)},
+    "sharp_v1": {"prob": strategies.sharp_prob, "min_edge": 0.02, "price": strategies.best_price,
+                 "needs_model": False},
 }
 ```
 - Optional `"sports"`: only those sports get a wallet and bets (default both). `news_v1` is ATP only.
+- Optional `"price"`: `row -> (odds, book, quote time)` to bet at (default: the typical quote `odds`/`exec_book`/`quote_at`). Optional `"needs_model"` (default True): when False the strategy may bet rows with `eligible=False` (unknown or stale players), e.g. `sharp_v1`, which doesn't use our ratings.
 - Each strategy gets one wallet per sport (`epl:<name>`, `atp:<name>`), opened with **$5,000** (or the strategy's `start_bankroll`) and created automatically on the next run. The opening amount is recorded in `deposits.csv`.
 - **Money in is tracked separately from betting.** Profit = bankroll − total deposited, so a refill never looks like a win. Stakes are a percentage of the bankroll, so a bigger wallet doesn't change percentage results; it just stays above the $1 minimum stake longer.
 - **Refills:** `uv run python accounts.py refill <wallet> [--to 5000] --reason "..."` tops the bankroll (cash + open bets) back up. `deposit` adds a fixed amount. When a new version ships, the owner chooses whether to refill the older wallets (see the `refine-strategy` skill).

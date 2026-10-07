@@ -67,7 +67,10 @@ ODDS = {
     "tennis_atp_shanghai_masters": [
         ev("t1", T, "Bu Yunchaokete", "Luca Van Assche", [book("pinnacle", {"Bu Yunchaokete": 1.9, "Luca Van Assche": 1.95}),
                                                            book("bet365", {"Bu Yunchaokete": 1.85, "Luca Van Assche": 2.0})]),
-        ev("t2", T, "Wang Imaginaryplayer", "Jannik Sinner", [book("bet365", {"Wang Imaginaryplayer": 9.0, "Jannik Sinner": 1.05})]),
+        ev("t2", T, "Wang Imaginaryplayer", "Jannik Sinner", [book("bet365", {"Wang Imaginaryplayer": 9.0, "Jannik Sinner": 1.05}),
+                                                               book("pinnacle", {"Wang Imaginaryplayer": 12.0, "Jannik Sinner": 1.06}),
+                                                               book("unibet", {"Wang Imaginaryplayer": 13.5, "Jannik Sinner": 1.04}),
+                                                               book("betfair_ex_eu", {"Wang Imaginaryplayer": 30.0, "Jannik Sinner": 1.10})]),
         ev("t3", T, "Zhizhen Zhang", "Tomas Machac", [book("bet365", {"Zhizhen Zhang": 2.4, "Tomas Machac": 1.6}),
                                                        book("unibet", {"Zhizhen Zhang": 2.5, "Tomas Machac": 1.55})]),
     ],
@@ -114,7 +117,19 @@ print("\nDAY 1 checks")
 check(set(f.event_id) >= {"e1", "t1", "t2", "t3"}, "every priced event logged in forecasts.csv (passes included)")
 t2 = f[f.event_id == "t2"]
 check((t2.eligible.astype(str) == "False").all() and t2.elo_p.isna().all(), "unknown player -> forecast logged, not bettable")
-check(not led.event_id.isin(["t2"]).any(), "no bet on the unknown-player match")
+check(not led[led.strategy != "sharp_v1"].event_id.isin(["t2"]).any(), "no model bet on the unknown-player match")
+sh = led[(led.strategy == "sharp_v1") & led.event_id.isin(["e1", "t1", "t2", "t3"])].set_index("event_id")
+check(sh.loc["e1", "pick"] == "Hull City" and sh.loc["e1", "odds"] == 14 and sh.loc["e1", "exec_book"] == "unibet",
+      "sharp_v1 bets the soft price above Pinnacle's fair price (Hull 14 at unibet vs fair 13.4)")
+check(abs(sh.loc["e1", "model_p"] - 0.0746) < 1e-3, "sharp_v1 probability = Pinnacle with the margin removed")
+check("t1" not in sh.index, "sharp_v1 passes when no book beats Pinnacle's fair price")
+check("t3" not in sh.index, "sharp_v1 never bets without a Pinnacle price")
+check(sh.loc["t2", "odds"] == 13.5 and sh.loc["t2", "exec_book"] == "unibet",
+      "sharp_v1 needs no model (bets an unknown player) and ignores exchange prices (30.0 on betfair_ex)")
+e1 = f[f.event_id == "e1"].set_index("outcome")
+check(e1.loc["Hull City", "best_odds"] == 14 and abs(e1.pin_fair_p.sum() - 1) < 1e-3, "forecast rows carry best price and Pinnacle fair p")
+check(((dep.wallet == "epl:sharp_v1") & (dep.kind == "open")).any() and ((dep.wallet == "atp:sharp_v1") & (dep.kind == "open")).any(),
+      "sharp_v1 opens a wallet per sport")
 t1 = f[f.event_id == "t1"]
 check(set(t1.resolved_as) == {"Bu Y. | Van Assche L."}, "Bu Yunchaokete resolves to 'Bu Y.'")
 check(set(f[f.event_id == "t3"].resolved_as) == {"Zhang Zh. | Machac T."}, "Zhizhen Zhang resolves to 'Zhang Zh.'")

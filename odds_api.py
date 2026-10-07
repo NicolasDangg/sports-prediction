@@ -14,6 +14,9 @@ import requests
 
 BASE = "https://api.the-odds-api.com/v4"
 REGION = "eu"  # European bookmakers, incl. Pinnacle (the sharpest book)
+# Betting exchanges quote prices before their commission (~2-5%), so a "best price" there isn't
+# what you'd actually be paid. Excluded from the best bookmaker price (E012).
+EXCHANGES = {"betfair_ex_eu", "betfair_ex_uk", "betfair_ex_au", "matchbook", "smarkets"}
 
 
 class OddsAPI:
@@ -63,6 +66,7 @@ def price_summary(event: dict) -> tuple[dict[str, dict], int]:
       exec     a REAL quote to paper-bet at: the highest actual price that is <= the median,
                i.e. a typical, conservative price someone was really offering (never the best)
       pinnacle Pinnacle's price if it was quoted (the sharpest book), for reference
+      best     the highest real bookmaker price (exchanges excluded), with its book and time (E012)
     Returns ({outcome: summary}, number of books)."""
     q = quotes(event)
     n_books = max((len(v) for v in q.values()), default=0)
@@ -72,8 +76,11 @@ def price_summary(event: dict) -> tuple[dict[str, dict], int]:
         below = [x for x in qs if x["price"] <= med] or qs
         ex = max(below, key=lambda x: x["price"])
         pin = next((x["price"] for x in qs if x["book"] == "pinnacle"), None)
+        books = [x for x in qs if x["book"] not in EXCHANGES] or qs
+        top = max(books, key=lambda x: x["price"])
         summary[name] = {"median": round(med, 3), "exec": ex["price"], "exec_book": ex["book"],
-                         "exec_at": ex["at"], "pinnacle": pin}
+                         "exec_at": ex["at"], "pinnacle": pin,
+                         "best": top["price"], "best_book": top["book"], "best_at": top["at"]}
     return summary, n_books
 
 

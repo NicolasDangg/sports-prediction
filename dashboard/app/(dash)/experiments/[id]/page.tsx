@@ -6,7 +6,7 @@ import { LogLossBars, MetricTable, ProgressBar, RuleList, StatusBadge } from "@/
 import Reveal from "@/components/Reveal";
 import { Card, CardHeader, SportTag, Stat } from "@/components/ui";
 import { experimentIds, loadExperiment } from "@/lib/experiments";
-import { SPORT_COLOR, money, pct } from "@/lib/format";
+import { SPORT_COLOR, strategyDash, money, pct } from "@/lib/format";
 
 export const dynamicParams = false;
 export const generateStaticParams = experimentIds;
@@ -115,7 +115,7 @@ export default async function ExperimentPage({ params }: { params: Promise<{ id:
                       sub={e.wallets[0].clv.n ? `${e.wallets[0].clv.n} bets with a closing price` : "no closing prices yet"} />
               </div>
               <div className="mt-6">
-                <BankrollChart series={e.wallets.map((w) => ({ name: w.wallet, color: SPORT_COLOR[w.sport], dashed: w.strategy !== "elo_v0", points: w.curve }))}
+                <BankrollChart series={e.wallets.map((w) => ({ name: w.wallet, color: SPORT_COLOR[w.sport], dash: strategyDash(w.strategy), points: w.curve }))}
                                height={200} start={0} startLabel="Break-even" signed />
               </div>
             </Card>

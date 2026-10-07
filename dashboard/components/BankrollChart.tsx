@@ -2,8 +2,8 @@
 
 import { useMemo, useRef, useState } from "react";
 
-// `dashed` tells apart two strategies in the same sport (same colour): the control is solid.
-export type Series = { name: string; color: string; dashed?: boolean; points: { x: string; y: number }[] };
+// `dash` (an SVG dash pattern) tells apart strategies in the same sport (same colour): the control is solid.
+export type Series = { name: string; color: string; dash?: string; points: { x: string; y: number }[] };
 
 const W = 760;
 const PAD = { top: 18, right: 70, bottom: 30, left: 58 };
@@ -70,9 +70,9 @@ export default function BankrollChart({ series, start = 1000, startLabel = "$1,0
         <div className="mb-3 flex flex-wrap gap-4 text-[12px] text-ink-2">
           {series.map((s) => (
             <span key={s.name} className="inline-flex items-center gap-2">
-              <i className="h-0.5 w-3.5 rounded-full"
-                 style={s.dashed ? { backgroundImage: `repeating-linear-gradient(90deg, ${s.color} 0 4px, transparent 4px 7px)` }
-                                 : { background: s.color }} />
+              <svg width="22" height="6" aria-hidden className="overflow-visible">
+                <line x1="2" x2="20" y1="3" y2="3" stroke={s.color} strokeWidth={2} strokeLinecap="round" strokeDasharray={s.dash} />
+              </svg>
               {s.name}
             </span>
           ))}
@@ -102,7 +102,7 @@ export default function BankrollChart({ series, start = 1000, startLabel = "$1,0
 
           {parsed.map((s) => s.pts.length > 1 && (
             <polyline key={s.name} fill="none" stroke={s.color} strokeWidth={2} strokeLinejoin="round" strokeLinecap="round"
-                      strokeDasharray={s.dashed ? "6 5" : undefined}
+                      strokeDasharray={s.dash}
                       points={s.pts.map((p) => `${x(p.t)},${y(p.y)}`).join(" ")} />
           ))}
           {ends.map(({ s, last }, i) => (

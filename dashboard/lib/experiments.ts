@@ -53,6 +53,11 @@ function progressOf(e: Experiment): { value: number; target: number; label: stri
       (r) => r.n.size >= 2 && (Date.parse(r.start) - Date.parse(r.last)) / 60000 <= 180).length;
     return { value: usable, target: e.progress.target, label: "matches with an early and a closing price" };
   }
+  if (e.progress.source === "bets" && e.strategy) {
+    const n = readState<{ strategy: string; status: string }>("ledger.csv")
+      .filter((b) => b.strategy === e.strategy && (b.status === "won" || b.status === "lost")).length;
+    return { value: n, target: e.progress.target, label: `settled ${e.strategy} bets` };
+  }
   return null;
 }
 

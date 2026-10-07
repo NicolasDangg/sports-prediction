@@ -26,6 +26,18 @@ export const SPORT_SHORT: Record<Sport, string> = { epl: "EPL", atp: "ATP" };
 export const SPORT_COLOR: Record<Sport, string> = { epl: "var(--color-epl)", atp: "var(--color-atp)" };
 export const strategyOf = (wallet: string) => wallet.split(":")[1] ?? wallet;
 
+/** Line pattern per strategy (wallets in one sport share a colour): the control is solid. */
+const DASHES: Record<string, string | undefined> = { elo_v0: undefined, news_v1: "7 5", sharp_v1: "1 5" };
+export const strategyDash = (strategy: string) =>
+  strategy in DASHES ? DASHES[strategy] : "12 4 2 4";
+
+/** One line on what each live strategy does, in plain words. */
+export const STRATEGY_BLURB: Record<string, string> = {
+  elo_v0: "Elo model vs the typical bookmaker price. The control.",
+  news_v1: "elo_v0, but never backs a player with injury or illness news.",
+  sharp_v1: "No model: Pinnacle's fair price vs the best bookmaker price.",
+};
+
 /** URL slug for a team/player page: "Man United" -> "man-united", "Sinner J." -> "sinner-j" */
 export const slugify = (name: string) =>
   name.toLowerCase().normalize("NFKD").replace(/[\u0300-\u036f']/g, "").replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");

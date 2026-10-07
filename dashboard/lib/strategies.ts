@@ -8,17 +8,52 @@ export type WalletStats = {
   placed: number; open: number; settled: number; won: number; lost: number; winRate: number | null;
   staked: number; pnl: number; roi: number | null; avgOdds: number | null; avgClaimedEdge: number | null;
   expectedWins: number; maxDrawdown: number; clv: { n: number; mean: number | null; beat: number | null };
+  /** E012's judge: our odds × Pinnacle's no-vig closing probability − 1. */
+  clvFair: { n: number; mean: number | null; beat: number | null };
   firstDay: string | null; days: number; curve: { x: string; y: number }[];
 };
 
 const mean = (xs: number[]) => (xs.length ? xs.reduce((s, x) => s + x, 0) / xs.length : null);
+const MAX_CLOSE_MINUTES = 180;
+
+/** (event|outcome) -> Pinnacle's closing probability with the margin removed.
+ *  ATP: our last odds snapshot <= 3h before the start; EPL: football-data's Pinnacle closing odds. */
+function pinnacleFairClose(closing: { event_id: string; outcome: string; closing_odds: number; source?: string }[]) {
+  const out = new Map<string, number>();
+  const put = (rows: { event_id: string; outcome: string; odds: number }[]) => {
+    if (rows.some((r) => !(r.odds > 1))) return;
+    const total = rows.reduce((s, r) => s + 1 / r.odds, 0);
+    for (const r of rows) out.set(`${r.event_id}|${r.outcome}`, 1 / r.odds / total);
+  };
+  const group = <T,>(xs: T[], key: (x: T) => string) => {
+    const m = new Map<string, T[]>();
+    for (const x of xs) m.set(key(x), [...(m.get(key(x)) ?? []), x]);
+    return m;
+  };
+  for (const rows of group(closing.filter((c) => c.source === "pinnacle_close"), (c) => c.event_id).values())
+    put(rows.map((r) => ({ event_id: r.event_id, outcome: r.outcome, odds: Number(r.closing_odds) })));
+  const snaps = readState<{ at: string; sport: string; event_id: string; commence_time: string; outcome: string; pinnacle_odds: number }>(
+    "odds_snapshots.csv").filter((s) => {
+      const mins = (Date.parse(s.commence_time) - Date.parse(s.at)) / 60000;
+      return s.sport === "atp" && mins >= 0 && mins <= MAX_CLOSE_MINUTES;
+    });
+  for (const rows of group(snaps, (s) => s.event_id).values()) {
+    const last = rows.reduce((m, r) => (r.at > m ? r.at : m), "");
+    const at = rows.filter((r) => r.at === last);
+    if (at.length === 2) put(at.map((r) => ({ event_id: r.event_id, outcome: r.outcome, odds: Number(r.pinnacle_odds) })));
+  }
+  return out;
+}
+
+const clvStats = (xs: number[]) => ({ n: xs.length, mean: mean(xs), beat: xs.length ? xs.filter((x) => x > 0).length / xs.length : null });
 
 export function loadStrategies() {
   const d = loadDashboard();
   const history = readState<{ date: string; wallet: string; bankroll: number; deposits: number; net: number; cash: number; open_stakes: number }>(
     "bankroll_history.csv");
-  const closing = readState<{ event_id: string; outcome: string; closing_odds: number }>("closing.csv");
+  const closing = readState<{ event_id: string; outcome: string; closing_odds: number; source?: string }>("closing.csv");
   const close = new Map(closing.map((c) => [`${c.event_id}|${c.outcome}`, Number(c.closing_odds)]));
+  const fairClose = pinnacleFairClose(closing);
   const bets: Bet[] = [...d.bets].reverse(); // oldest first
   const wallets = [...new Set([...history.map((r) => r.wallet), ...bets.map((b) => b.wallet)])];
 
@@ -37,6 +72,8 @@ export function loadStrategies() {
     }
     const clvs = mine.map((b) => close.get(`${b.event_id}|${b.pick}`)).map((c, i) => (c ? mine[i].odds / c - 1 : null))
       .filter((x): x is number => x !== null);
+    const fair = mine.map((b) => fairClose.get(`${b.event_id}|${b.pick}`)).map((p, i) => (p ? mine[i].odds * p - 1 : null))
+      .filter((x): x is number => x !== null);
     return {
       wallet: w, sport: sportOf(w), strategy: strategyOf(w),
       bankroll: last?.bankroll ?? 0, deposits: last?.deposits ?? 0, net: last?.net ?? 0,
@@ -49,7 +86,7 @@ export function loadStrategies() {
       avgClaimedEdge: mean(mine.map((b) => b.model_p * b.odds - 1)),
       expectedWins: settled.reduce((s, b) => s + b.model_p, 0),
       maxDrawdown: maxDd,
-      clv: { n: clvs.length, mean: mean(clvs), beat: clvs.length ? clvs.filter((x) => x > 0).length / clvs.length : null },
+      clv: clvStats(clvs), clvFair: clvStats(fair),
       firstDay: rows[0]?.date ?? null, days: rows.length,
       curve: rows.map((r) => ({ x: String(r.date), y: r.net })),
     };
