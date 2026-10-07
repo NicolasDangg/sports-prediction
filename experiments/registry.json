@@ -1,13 +1,71 @@
 {
   "_about": "Structured index of every experiment, read by the dashboard (/experiments). experiments/LOG.md is the written record; keep both in step. status: planned | running | collecting | live | shipped | not_shipped | done. Metrics are on validation years unless a key says test.",
-  "test_looks_used": 4,
-  "test_looks_note": "2 experiments (E001, E002) + 2 diagnostic calibration checks during the 2026-10-06 review",
+  "test_looks_used": 5,
+  "test_looks_note": "E001, E002, E011 + 2 diagnostic calibration checks during the 2026-10-06 review",
   "benchmark": {
     "label": "ATP validation 2020–2022, log loss (lower is better)",
     "bookmaker": 0.5841,
     "raw_elo": 0.6232
   },
   "experiments": [
+    {
+      "id": "E011",
+      "date": "2026-10-07",
+      "title": "Sharp vs soft: bet mainstream books that beat Pinnacle's fair price",
+      "status": "not_shipped",
+      "kind": "strategy",
+      "sport": "epl",
+      "hypothesis": "Pinnacle (the sharpest bookmaker) with its margin removed is close to the true probability. Mainstream books are slower and sometimes pay more than that fair price: no model needed, the edge is the disagreement between bookmakers.",
+      "change": "Fair p = Pinnacle opening price / margin. Bet the outcome with the largest fair p × best mainstream price − 1 if ≥ 5% (chosen on train), quarter-Kelly, 5% cap. EPL only (tennis needs tennis-data.co.uk files).",
+      "protocol": "Train 2012/13–2021/22 (8 variants: soft/max price × min edge 1/2/3/5%), one look at 2022/23–now. CLV = bet odds × Pinnacle no-vig closing p − 1.",
+      "script": "experiments/e011_sharp_vs_soft.py",
+      "results_file": "results/e011_sharp_vs_soft.json",
+      "test_look": true,
+      "rules": [
+        {
+          "text": "Train: CLV > 0, 95% CI excludes 0 (+7.45% [+6.2, +8.8])",
+          "passed": true
+        },
+        {
+          "text": "Test: CLV > 0, 95% CI excludes 0 (+3.51% [+0.6, +6.6])",
+          "passed": true
+        },
+        {
+          "text": "Test: flat ROI > 0 and wallet ends above $1,000 (−28.7%, $957)",
+          "passed": false
+        },
+        {
+          "text": "Test: ≥ 100 bets (90)",
+          "passed": false
+        }
+      ],
+      "metrics_note": "EPL, not the ATP benchmark",
+      "metrics": [
+        {
+          "model": "soft@5% train (437 bets)",
+          "roi": 0.0786
+        },
+        {
+          "model": "soft@5% test (90 bets)",
+          "roi": -0.2872,
+          "highlight": true
+        },
+        {
+          "model": "max price@5% test (235 bets)",
+          "roi": -0.2703
+        },
+        {
+          "model": "elo_v0 test (832 bets)",
+          "roi": -0.053
+        }
+      ],
+      "verdict": "Real price edge (positive CLV on train and test, unlike every model so far: elo_v0 −5.5%), but the bets are longshots (mean odds ~13) so 90 test bets prove nothing about profit (9.6 wins expected, 7 happened), and opportunities shrank (3 in 2025/26 so far). Failed R3/R4, not shipped; candidate for a live paper forward test judged on CLV.",
+      "depends_on": [],
+      "followups": [
+        "Live paper forward test (sharp_v1) on our own quotes, judged on CLV",
+        "Tennis version on tennis-data.co.uk files (owner download)"
+      ]
+    },
     {
       "id": "E010",
       "date": "",

@@ -4,11 +4,35 @@ Every strategy experiment goes here, **including the ones that failed**. Newest 
 The test years are a limited budget: each experiment that looks at them adds to the counter.
 If the counter climbs fast, results on the test years stop being trustworthy (see docs/REFERENCE.md §7).
 
-**Test-set looks used: 4** (2 experiments + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
+**Test-set looks used: 5** (3 experiments: E001, E002, E011 + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
 **Live strategies:** `elo_v0` (control, since 2026-10-06) · `news_v1` (ATP only, from the 2026-10-08 run, E007)
 **Next up:** E010 favourite–longshot bias in qualifying/challenger markets (E009 ratings now cover those players); E007/E008 collecting live data
 
 ---
+
+## E011 · 2026-10-07 · Sharp vs soft: Pinnacle's no-vig price as truth, bet soft books that pay more · FAILED R3/R4 (positive CLV), not shipped
+- **Report:** owner question "how do we beat the bookmaker for pure ROI". No model: the edge comes from bookmakers disagreeing.
+- **Rule:** fair p = Pinnacle opening price with the margin divided out; bet the outcome with the biggest `fair p × soft price − 1` if ≥ min_edge, at the best price among mainstream books (Bet365, BW, IW, LB, WH, VC, 1xBet, Betfair sportsbook…). Quarter-Kelly, 5% cap.
+- **Data:** football-data EPL 2012/13–now (PSH/PSD/PSA collected at the same time as the other books' prices; PSC* = Pinnacle closing). Tennis needs tennis-data.co.uk files (robots.txt blocks AI agents → owner download).
+- **Tuning (train 2012/13–2021/22 only):** price soft / max × min_edge 0.01, 0.02, 0.03, 0.05 = 8 variants. Choice fixed in advance: soft price, highest lower bound of train CLV among variants with ≥ 100 bets.
+- **Pass rules (written before the first run):** R1 train CLV > 0 with 95% CI excluding 0 · R2 test CLV CI excludes 0 · R3 test flat ROI > 0 and Kelly wallet ends above $1,000 · R4 ≥ 100 test bets. CLV = bet odds × Pinnacle no-vig closing p − 1.
+- **If it passes:** live paper strategy `sharp_v1` betting at the best real quote among the books we log (exchanges excluded), owner's OK first.
+- **Train (3,800 matches):**
+
+  | Variant | Bets | CLV [95% CI] | Flat ROI [95% CI] | Wallet $1,000 → |
+  |---|---:|---|---|---:|
+  | soft @1% | 1,543 | +3.8% [+3.3, +4.4] | +8.0% [−3.9, +20.2] | 1,823 |
+  | soft @2% | 1,082 | +5.0% [+4.3, +5.7] | +9.2% [−6.0, +24.7] | 1,656 |
+  | soft @3% | 782 | +6.1% [+5.2, +7.0] | +9.2% [−9.7, +29.8] | 1,449 |
+  | **soft @5%** (chosen) | 437 | +7.5% [+6.2, +8.8] | +7.9% [−18.4, +37.2] | 1,335 |
+  | max @1–5% | 733–2,713 | +4.0% to +9.2% | +4.7% to +12.9% | 1,764–2,327 |
+  | elo_v0 (avg price) | 2,514 | −6.4% [−6.7, −6.0] | −10.1% [−16.7, −3.1] | 3 |
+
+  Checks before the test look: edges come from Bet365 / VC / Interwetten / William Hill; 34 of ~80k book prices imply > 20% edge (likely typos), too few to matter.
+- **Test 2022/23–now (one look, counter → 5):** soft @5%: 90 bets, CLV +3.5% [+0.6, +6.6], flat ROI −28.7% [−76.9, +29.1], wallet $957 (max drawdown 7%). Max price @5%: 235 bets, CLV +8.4%, ROI −27.0%. elo_v0: 832 bets, CLV −5.5%, ROI −5.3%, wallet $141.
+- **Rules:** R1 ✅ R2 ✅ R3 ❌ R4 ❌ → **FAIL, not shipped.**
+- **Reading it:** the price edge is real: positive CLV on both periods, the first strategy here to beat the closing line (every model so far is about −5%). But the edges sit on longshots (mean odds ~13; e.g. the away side at a top club), so profit over 90 bets is noise: 9.6 wins expected, 7 happened. Opportunities shrank: ~30 a season, 77–81 in 2016–18, only 3 in 2025/26 so far; mainstream books copy the sharp line faster now. EPL is the most-watched league, the hardest place for this.
+- **Next:** a live paper forward test (`sharp_v1`) on the quotes we already log (ATP + EPL, ~19 books per match), judged on CLV, would be a new pre-registered experiment; tennis backtest needs tennis-data.co.uk files (their robots.txt blocks AI agents: owner download).
 
 ## E009 · 2026-10-07 · Tennis on TennisMyLife data: better Elo (a) + daily forecaster (b) · (a) FAILED wallet rule; (b) SHIPPED as a dashboard forecast (no betting)
 - **Report:** owner request; leads from I002 and E006.
