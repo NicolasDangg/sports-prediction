@@ -12,7 +12,10 @@ Read this before changing anything. For changes to the betting algorithm, use th
 06:00 Saigon (23:00 UTC)  Cloud routine "Sports prediction - morning paper trading"
         │                 runs: uv run python daily.py
         ▼
-   daily.py ── downloads results ── settles open bets ── rebuilds Elo ── fetches odds ── places bets
+   daily.py ── downloads results ── settles open bets ── rebuilds Elo ── fetches odds (saved as snapshots)
+        │          ── news check (ATP) ── places bets
+        │
+06:00 + 12:00 UTC  snapshot routine runs: uv run python snapshots.py  (ATP prices nearer the start, for CLV)
         │
         ▼
    state/*.csv  ── committed to main by the routine
@@ -21,7 +24,8 @@ Read this before changing anything. For changes to the betting algorithm, use th
         └──► Google Sheet pulls the CSVs at 09:00 via Apps Script (sheets/sync.gs)
 ```
 
-The LLM agent only orchestrates; all maths is in Python, so every number is reproducible. The routine's prompt forbids it from editing code. Code changes happen in interactive sessions.
+The LLM agent only orchestrates; all maths is in Python, so every number is reproducible. The one LLM judgment that
+feeds decisions, the news label, is made by a fixed prompt in `news.py` and logged verbatim in `state/news.csv`. The routine's prompt forbids it from editing code. Code changes happen in interactive sessions.
 
 ## 2. Files
 
@@ -39,6 +43,9 @@ The LLM agent only orchestrates; all maths is in Python, so every number is repr
 | `accounts.py` | Wallet money: opening balances, deposits, refills (`list` / `deposit` / `refill`) |
 | `ratings_history.py` | Elo after every match + recent form → `state/*_elo_history.csv`, `*_form.csv`, `*_matches.csv` (per-match ratings before/after + model probabilities), `name_map.csv` (bookmaker → history names). Feeds the dashboard Ratings page and the per-team/player pages `/ratings/epl/<slug>`, `/ratings/atp/<slug>` |
 | `strategies.py` | Pure probability rules shared by experiments and `daily.py` (e.g. `format_calibrated`, E004) |
+| `snapshots.py` | Odds snapshots over time → `state/odds_snapshots.csv`; opening / closing price per outcome; standalone run with a credit guard |
+| `news.py` | News signal: Google News headlines per ATP player → LLM label (OpenRouter) → `state/news.csv` and `news_*` columns on forecasts |
+| `experiments/e008_timing.py` | Timing / CLV study on our own snapshots (E008); says when there's enough data |
 | `experiments/e004_format_calibration.py`, `e005_xgboost.py`, `e006_serve_stats.py` | Per-format calibration (E004), XGBoost (E005), XGBoost + Sackmann serve/return stats (E006) experiments. XGBoost is in the optional `experiments` dependency group: `uv run --group experiments ...` (macOS: `brew install libomp` once) |
 | `experiments/e003_decision_tree.py` | Decision tree exploration (see experiments/LOG.md E003) → `results/e003_decision_tree.json` |
 | `fpl.py` | Daily squads, player stats (goals, assists, xG, xA, xGI, minutes, FPL points/price/ownership/expected points), injuries + news, next fixtures with difficulty (Fantasy Premier League API), and head coaches (Wikidata) → `state/fpl_players.csv`, `fpl_fixtures.csv`, `coaches.csv`. Failures keep yesterday's files and never stop the betting run. Shown in the Squad section of each team page |
@@ -58,6 +65,10 @@ The LLM agent only orchestrates; all maths is in Python, so every number is repr
 | Kaggle `dissfya/atp-tennis-2000-2023daily-pull` | ATP results + one set of odds, 2000 onward, updated daily | Needs `KAGGLE_API_TOKEN`. Fallback mirror ends April 2026. Some names have trailing spaces (stripped) |
 | The Odds API (`regions=eu`, `markets=h2h`) | Live odds and scores | Free plan, 500 credits/month, about 10 per run. One sport key per ATP tournament |
 | `state/atp_recent.csv` | ATP results collected live | Only rows newer than the Kaggle data are used |
+| TennisMyLife `stats.tennismylife.org/data/` | Same match format as Sackmann with serve/return stats, 1968–today incl. tournaments in progress; main tour, challengers, qualifying | Official CSV downloads (robots.txt allows `/data/`). Opt-in for now: `uv run python fetch_data.py tml` → `data/tml/`. Matches Sackmann on 94% of joined 2019 matches. The way to run an E006-style model live |
+| Google News RSS | Recent headlines per player (`news.py`) | Free, no key. Untrusted text: only ever labelled by the LLM into a fixed set |
+| OpenRouter | LLM that labels the headlines | `OPENROUTER_API_KEY`; default model `anthropic/claude-haiku-4.5` (`OPENROUTER_MODEL`) |
+| tennisabstract.com, tennisdata.app | — | Not used: tennisabstract's robots.txt disallows its match-data paths; tennisdata.app is behind a bot challenge |
 | Jeff Sackmann `tennis_atp` (public mirror, pinned commit) | Point-level serve/return stats, 2008–2024, main tour + qualifying/challenger | Experiments only, opt-in: `uv run python fetch_data.py sackmann` → `data/sackmann/`. Original repo taken down in 2026; ends 2024, so not usable live |
 
 ## 4. The models
@@ -84,6 +95,7 @@ The LLM agent only orchestrates; all maths is in Python, so every number is repr
 - **Stake:** `bankroll × min(¼ × Kelly, 5%)`, where Kelly = `edge / (odds − 1)`. No daily exposure cap yet (v0 once put 49% of a wallet in play in one day).
 - **Thresholds:** live `elo_v0` requires +5% edge. The backtest wallet uses +3%.
 - **Timing:** only bets on matches starting within 30 hours of the run.
+- **News veto (`news_v1` only):** never back an ATP player whose news label is `injured`, `ill`, `withdrawn` or `doubt` with confidence ≥ 0.6 (`strategies.news_veto`). The opponent can still be backed on its own edge.
 - **Settlement:** from The Odds API scores. If there's no API result 24h after kickoff, the job looks in the history files (football-data / Kaggle). After 14 days with no result anywhere, the bet becomes `unresolved` and the stake is refunded. Check those manually; they are not genuine voids. `result_source` records where each result came from.
 
 ## 6. Strategies and versioning
@@ -92,8 +104,11 @@ The LLM agent only orchestrates; all maths is in Python, so every number is repr
 ```python
 STRATEGIES = {
     "elo_v0": {"prob": lambda row: row["elo_p"], "min_edge": 0.05},
+    "news_v1": {"prob": lambda row: 0.0 if strategies.news_veto(row) else row["elo_p"], "min_edge": 0.05,
+                "sports": ("atp",)},
 }
 ```
+- Optional `"sports"`: only those sports get a wallet and bets (default both). `news_v1` is ATP only.
 - Each strategy gets one wallet per sport (`epl:<name>`, `atp:<name>`), opened with **$5,000** (or the strategy's `start_bankroll`) and created automatically on the next run. The opening amount is recorded in `deposits.csv`.
 - **Money in is tracked separately from betting.** Profit = bankroll − total deposited, so a refill never looks like a win. Stakes are a percentage of the bankroll, so a bigger wallet doesn't change percentage results; it just stays above the $1 minimum stake longer.
 - **Refills:** `uv run python accounts.py refill <wallet> [--to 5000] --reason "..."` tops the bankroll (cash + open bets) back up. `deposit` adds a fixed amount. When a new version ships, the owner chooses whether to refill the older wallets (see the `refine-strategy` skill).
@@ -118,9 +133,11 @@ STRATEGIES = {
 | `deposits.csv` | Every money movement: `at`, `wallet`, `amount`, `kind` (open/deposit/refill), `reason` |
 | `bankroll_history.csv` | One row per wallet per day: `cash`, `open_stakes`, `bankroll`, `deposits`, `net` (bankroll − deposits), `bets_settled`, `bets_open`, `profit` (settled P&L), `roi` |
 | `predictions.csv` | Latest run's forecasts (dashboard snapshot, overwritten each run) |
-| `forecasts.csv` | **Append-only**: every forecast on every run, passes included. `run_at`, `elo_p`, `market_p`, `odds` (execution quote), `exec_book`, `quote_at`, `median_odds`, `pinnacle_odds`, `n_books`, `edge`, `eligible`, `identity`, `resolved_as`, `surface`, `best_of` |
+| `forecasts.csv` | **Append-only**: every forecast on every run, passes included. `run_at`, `elo_p`, `market_p`, `odds` (execution quote), `exec_book`, `quote_at`, `median_odds`, `pinnacle_odds`, `n_books`, `edge`, `eligible`, `identity`, `resolved_as`, `surface`, `best_of`, `news_status`, `news_confidence`, `news_summary` (ATP rows in the betting window, from 2026-10-08) |
+| `odds_snapshots.csv` | **Append-only**: every odds response, one row per outcome: `at`, `source` (daily/snapshot), `sport`, `sport_key`, `event_id`, `commence_time`, `outcome`, `median_odds`, `pinnacle_odds`, `best_odds`, `n_books` |
+| `news.csv` | **Append-only**: every news verdict: `run_at`, `player`, `event_id`, `match`, `commence_time`, `n_headlines`, `status`, `confidence`, `summary`, `evidence` (cited headlines), `model` |
 | `outcomes.csv` | Final result per event: `winner`, `source` |
-| `closing.csv` | Closing prices per event outcome. EPL: football-data `pinnacle_close` / `avg_close`. ATP: `kaggle_odds` (one bookmaker, unclear timing; approximate) |
+| `closing.csv` | Closing prices per event outcome. EPL: football-data `pinnacle_close` / `avg_close`. ATP: `snapshot_median` (our last snapshot before the start, `minutes_before` says how close), else `kaggle_odds` (one bookmaker, unclear timing; approximate) |
 | `bet_flags.csv` | Annotations on bets without touching the ledger, e.g. `identity_error` for the three 2026-10-06 bets placed against misresolved players |
 | `epl_ratings.csv`, `atp_ratings.csv` | Current ratings (ATP: overall, hard, clay, grass) |
 | `atp_recent.csv` | Live-collected ATP results in history format |
@@ -143,9 +160,11 @@ STRATEGIES = {
 | Thing | Where |
 |---|---|
 | Routine | claude.ai/code/routines/trig_01J7sKStghiTiFzGNCzMXmuX (Sonnet 5.5, no connectors, pushes `state/` to main) |
-| Cloud secrets | `ODDS_API_KEY`, `KAGGLE_API_TOKEN` in the Default environment |
+| Snapshot routine | Runs `uv run python snapshots.py` at 06:00 and 12:00 UTC and pushes `state/odds_snapshots.csv`. 1 credit per ATP tournament with a match in the next 8h; never spends the credits reserved for the rest of the month's daily runs (12/day) |
+| Cloud secrets | `ODDS_API_KEY`, `KAGGLE_API_TOKEN`, `OPENROUTER_API_KEY` in the Default environment |
 | Local run | `uv run --env-file .env python daily.py` (writes real state; don't run it when the routine is about to) |
-| Smoke test | `uv run python -W ignore tests/smoke_daily.py`: run after any change to `daily.py`, `names.py`, `records.py`, `accounts.py`, `wallet.py` |
+| Smoke test | `uv run python -W ignore tests/smoke_daily.py`: run after any change to `daily.py`, `names.py`, `records.py`, `accounts.py`, `wallet.py`, `news.py`, `snapshots.py`, `strategies.py` |
+| Timing study | `uv run python -W ignore experiments/e008_timing.py` (any time; reports when there's enough data) |
 | Wallets | `uv run python accounts.py list` |
 | Backtest | `uv run python -W ignore backtest.py` (~40s) |
 | Dashboard | `dashboard/`, password in `DASHBOARD_PASSWORD` on Vercel (production and preview); local copy in `dashboard/.env.local` |
@@ -153,11 +172,12 @@ STRATEGIES = {
 
 ## 11. Known gaps and idea backlog
 
-- **Closing line value (CLV):** closing prices are now recorded (`closing.csv`) and the daily output prints CLV per wallet. Still to do: show it on the dashboard. ATP closing comes from Kaggle odds of unclear timing, so treat ATP CLV as approximate.
+- **Closing line value (CLV):** ATP closing prices now come from our own snapshots (E008). Still to do: show CLV on the dashboard.
+- **Run an E006-style model live** on TennisMyLife stats (needs the daily download + a new strategy experiment; E006 showed it adds nothing on top of closing odds, so only worth it if E008 finds early prices are soft).
 - `best_of` is recorded per forecast but **not used by the model yet**. E004 showed a per-format calibration improves log loss (0.6243 → 0.6192 on 2017–22) but missed its pre-registered best-of-3 calibration bar and didn't help the wallet; Elo's best-of-3 overconfidence grows each year, so a recency-weighted calibration is the next variant to try.
 - Daily exposure cap per wallet.
-- The dashboard colours wallets by sport, so two strategies in the same sport share a colour. Give each strategy its own line style or shade when a second one ships.
-- News and injury signals extracted by an LLM (v3 roadmap). Fine-tuning a small open model (v4).
+- Dashboard: strategies other than `elo_v0` are drawn dashed in their sport's colour.
+- News signal v1 is a veto only. Once ~200 flagged forecasts have settled, fit a real probability adjustment per label (E007 follow-up). Fine-tuning a small open model (v4).
 - EPL bets are only placed within 30 hours of kickoff, so weekend fixtures get bet on Friday or Saturday morning only.
 
 ## 12. Glossary

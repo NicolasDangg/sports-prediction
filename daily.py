@@ -40,7 +40,10 @@ import fpl
 import backtest as bt
 import fetch_data
 import ratings_history
+import news
 import records
+import snapshots
+import strategies
 from names import epl_team, load_aliases, player_profiles, stale_ratings, tennis_player
 from odds_api import OddsAPI, price_summary, quotes, winner_from_scores
 from wallet import Wallet
@@ -63,10 +66,14 @@ GRAND_SLAMS = ("Australian Open", "French Open", "Roland Garros", "Wimbledon", "
 # Each strategy gets its own wallet per sport, so versions can be compared side by side.
 # A strategy turns a forecast row into the probability it believes for that outcome.
 # Add new versions here; never edit an old one, or its history stops meaning anything.
-# Optional keys: "start_bankroll" (default START_BANKROLL).
+# Optional keys: "start_bankroll" (default START_BANKROLL), "sports" (default both: only these get a wallet and bets).
 STRATEGIES = {
     "elo_v0": {"prob": lambda row: row["elo_p"], "min_edge": 0.05},
+    # E007: elo_v0, but never back an ATP player with fresh injury / illness / withdrawal news.
+    "news_v1": {"prob": lambda row: 0.0 if strategies.news_veto(row) else row["elo_p"], "min_edge": 0.05,
+                "sports": ("atp",)},
 }
+SPORTS = ("epl", "atp")
 
 LEDGER_COLS = ["bet_id", "wallet", "sport", "strategy", "placed_at", "commence_time", "sport_key",
                "event_id", "competition", "match", "pick", "model_p", "market_p", "odds", "n_books",
@@ -93,9 +100,11 @@ def load_state(now: pd.Timestamp) -> tuple[pd.DataFrame, dict, pd.DataFrame]:
         deposits = pd.concat([deposits, pd.DataFrame([{"at": at, "wallet": name, "amount": LEGACY_START,
                               "kind": "open", "reason": "opening balance (created before deposits were tracked)"}])],
                              ignore_index=True)
-    for sport in ["epl", "atp"]:
+    for sport in SPORTS:
         for name, strat in STRATEGIES.items():
             w = f"{sport}:{name}"
+            if sport not in strat.get("sports", SPORTS):
+                continue
             if w not in wallets:
                 deposits = accounts.record(deposits, wallets, w, strat.get("start_bankroll", START_BANKROLL),
                                            "open", f"new wallet for strategy {name}", at)
@@ -230,7 +239,9 @@ def predict_epl(api: OddsAPI, now: pd.Timestamp) -> list[dict]:
      .sort_values(ascending=False).round(1).to_csv(STATE / "epl_ratings.csv"))
 
     rows = []
-    for e in api.odds("soccer_epl"):
+    events = api.odds("soccer_epl")
+    snapshots.record(snapshots.rows(events, "epl", "soccer_epl", now, "daily"))  # free: same response
+    for e in events:
         home, away = epl_team(e["home_team"], elo.season_teams), epl_team(e["away_team"], elo.season_teams)
         ctx = {"resolved_as": f"{home} | {away}", "identity": "matched" if home and away else "unknown",
                "surface": "", "best_of": ""}
@@ -270,7 +281,9 @@ def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[lis
     rows, unresolved, book_rows = [], [], []
     for s in sports:
         best_of = 5 if any(g in s["title"] for g in GRAND_SLAMS) else 3
-        for e in api.odds(s["key"]):
+        events = api.odds(s["key"])
+        snapshots.record(snapshots.rows(events, "atp", s["key"], now, "daily"))  # free: same response
+        for e in events:
             book_rows += quote_rows(s, e, guess_surface(s["title"], pd.Timestamp(e["commence_time"]), surfaces))
             when = pd.Timestamp(e["commence_time"])
             surface = guess_surface(s["title"], when, surfaces)
@@ -341,6 +354,8 @@ def place_bets(preds: pd.DataFrame, ledger: pd.DataFrame, wallets: dict, now: pd
     for (sport, event_id), outcomes in window.groupby(["sport", "event_id"], sort=False):
         for name, strat in STRATEGIES.items():
             wallet_name, bet_id = f"{sport}:{name}", f"{event_id}:{name}"
+            if sport not in strat.get("sports", SPORTS):
+                continue
             if bet_id in existing:
                 continue  # already bet on this match
             w = Wallet(bankroll=wallets[wallet_name]["cash"], min_edge=strat["min_edge"])
@@ -406,6 +421,9 @@ def main(api: OddsAPI | None = None, now: pd.Timestamp | None = None, download: 
     notes = preds.rating_note.dropna() if "rating_note" in preds.columns else pd.Series(dtype=str)
     for n in dict.fromkeys(x for x in notes if x):
         print(f"  STALE {n}  -> forecast only, no bet until the rating catches up (nothing to fix)")
+
+    preds, news_log = news.annotate(preds, now)
+    print("\n".join(f"  {x}" for x in news_log) or "  news: no ATP matches in the betting window")
 
     print("\n== Betting")
     ledger, placed = place_bets(preds, ledger, wallets, now)

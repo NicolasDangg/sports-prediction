@@ -5,10 +5,26 @@ The test years are a limited budget: each experiment that looks at them adds to 
 If the counter climbs fast, results on the test years stop being trustworthy (see docs/REFERENCE.md §7).
 
 **Test-set looks used: 4** (2 experiments + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
-**Live strategies:** `elo_v0` (control, since 2026-10-06)
-**Next up:** information or timing the market lacks (opening-price timing/CLV, news & injuries, softer markets); model-side ideas (E004 recency calibration) can't beat the market on their own (see E006 diagnostic)
+**Live strategies:** `elo_v0` (control, since 2026-10-06) · `news_v1` (ATP only, from the 2026-10-08 run, E007)
+**Next up:** collect data for E007 (news veto) and E008 (timing/CLV); judge at the pre-registered sample sizes
 
 ---
+
+## E008 · 2026-10-07 · Timing and closing line value from our own odds snapshots · PRE-REGISTERED, collecting data
+- **Why:** E004–E006 showed better models from public data don't beat the odds. If an edge exists it's in timing: early prices may be softer than closing ones.
+- **Setup:** every odds response is saved (`snapshots.py` → `state/odds_snapshots.csv`); extra ATP snapshots at 06:00 and 12:00 UTC on the free plan with a credit guard. Closing = last snapshot ≤ 180 min before the start.
+- **Questions:** (1) does the close beat our first price on log loss? (2) do prices move toward Elo between first sighting and close? (3) per-wallet CLV = our odds / closing median − 1.
+- **Decision rules (written before any data):** judge after **150 usable events and 150 ATP bets** (`experiments/e008_timing.py` says when). If prices move toward Elo in > 55% of moves (binomial p < 0.05) **and** `elo_v0`'s mean CLV CI excludes 0 on the positive side, pursue earlier betting (bet at first sighting, more snapshots). Otherwise the market is efficient at the times we can see and timing is dropped. No test-set years involved.
+
+## E007 · 2026-10-07 · News veto (`news_v1`), live only · PRE-REGISTERED, shipped as a live experiment
+- **Report:** owner request: feed injuries and news into the prediction.
+- **Rule:** `news_v1` = `elo_v0`, except it never backs an ATP player whose news label (Google News headlines, last 7 days, labelled by `anthropic/claude-haiku-4.5` via OpenRouter into a fixed set) is injured / ill / withdrawn / doubt with confidence ≥ 0.6 (`strategies.news_veto`). ATP only, fresh $5,000 wallet. The LLM never sets a probability.
+- **Why a veto and not an adjustment:** there's no history of past news, so nothing to fit an adjustment on. Every forecast now logs its news label, so the size of the effect can be learned later.
+- **No train/test years:** there's no historical news. Evaluation is live only:
+  1. Every vetoed pick that `elo_v0` bet: compare its result with what `elo_v0` expected (win rate vs mean model probability, P&L). The veto helps if vetoed picks lose more than Elo expected.
+  2. Log loss of `elo_p` vs `market_p` on forecasts with and without a flag: does the market already price the news (then the veto can't add value)?
+- **Decision rule (written before any data):** after **≥ 50 vetoed `elo_v0` bets**: keep `news_v1` if vetoed picks' P&L is negative with a 90% CI below 0; then fit a probability adjustment per label as E00N. Otherwise drop the veto but keep logging labels.
+- **Smoke-tested:** veto blocks the injured player, opponent still bettable, ATP-only wallet, no key → "unknown" and identical to `elo_v0`.
 
 ## E006 · 2026-10-07 · XGBoost + serve/return stats (Sackmann) · FAILED pre-registered rule 3 (wallet), not shipped
 - **Report:** owner request (follow-up to E005; the video's model used Sackmann's serve stats).

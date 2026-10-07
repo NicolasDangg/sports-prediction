@@ -26,7 +26,8 @@ export default function Overview() {
   const wallets = [...d.latest].sort(eplFirst);
   const series = [...d.liveCurves]
     .sort(eplFirst)
-    .map((c) => ({ name: `${SPORT_LABEL[sportOf(c.wallet)]} · ${strategyOf(c.wallet)}`, color: SPORT_COLOR[sportOf(c.wallet)], points: c.points }));
+    .map((c) => ({ name: `${SPORT_LABEL[sportOf(c.wallet)]} · ${strategyOf(c.wallet)}`, color: SPORT_COLOR[sportOf(c.wallet)],
+                    dashed: strategyOf(c.wallet) !== "elo_v0", points: c.points }));
 
   return (
     <>

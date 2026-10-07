@@ -9,6 +9,10 @@ Sackmann (experiments only, opt-in: `uv run python fetch_data.py sackmann`):
         Jeff Sackmann's tennis_atp match files with serve/return stats, 2008-2024, main tour plus
         qualifying/challenger. The original repo was taken down in 2026; this is a public mirror
         pinned to one commit so every run gets the same files. Not downloaded by the daily job.
+TennisMyLife (opt-in: `uv run python fetch_data.py tml`): the same match format with serve/return
+        stats, kept up to date (incl. tournaments in progress), main tour + challengers + qualifying.
+        Published as CSV downloads by the site (stats.tennismylife.org/tennis-match-database); its
+        robots.txt allows /data/. Stats from 2008, so it can replace Sackmann for training AND live.
 """
 
 import io
@@ -31,6 +35,9 @@ ATP_URL = "https://raw.githubusercontent.com/Mustafak50/atp-tennis-model-validat
 SACKMANN_URL = ("https://media.githubusercontent.com/media/ivanposinovec/ATP/"  # Git LFS host
                 "8e5415cc74a6d6db6cce6db4dcf9a4b9e46f906e/tennis_atp-master/{name}")
 SACKMANN_YEARS = range(2008, 2025)
+TML_URL = "https://stats.tennismylife.org/data/{name}"
+TML_FIRST_YEAR = 2008
+TML_QUALI_FIRST_YEAR = 2017  # qualifying files start here
 
 
 def download(url: str, dest: Path) -> None:
@@ -79,5 +86,20 @@ def fetch_sackmann() -> None:
             download(SACKMANN_URL.format(name=name), dest / name)
 
 
+def fetch_tml(last_year: int | None = None) -> None:
+    import datetime
+    last_year = last_year or datetime.date.today().year
+    dest = DATA / "tml"
+    dest.mkdir(parents=True, exist_ok=True)
+    names = ["ongoing_tourneys.csv", "challenger_ongoing_tourneys.csv"]
+    for year in range(TML_FIRST_YEAR, last_year + 1):
+        names += [f"{year}.csv", f"{year}_challenger.csv"]
+        if year >= TML_QUALI_FIRST_YEAR:
+            names.append(f"atp_quali/{year}_atp_quali.csv")
+    print("TennisMyLife:")
+    for name in names:
+        download(TML_URL.format(name=name), dest / name.split("/")[-1])
+
+
 if __name__ == "__main__":
-    fetch_sackmann() if sys.argv[1:] == ["sackmann"] else main()
+    {"sackmann": fetch_sackmann, "tml": fetch_tml}.get(sys.argv[1] if sys.argv[1:] else "", main)()

@@ -22,11 +22,26 @@ sys.path.insert(0, str(TMP))
 
 import accounts  # noqa: E402  (imported from the temp copy)
 import daily  # noqa: E402
+import news  # noqa: E402
 import records  # noqa: E402
+import snapshots  # noqa: E402
+import strategies  # noqa: E402
 
 assert Path(daily.__file__).parent == TMP, "must run against the temp copy"
 daily.fpl.refresh = lambda: "FPL refresh skipped in smoke test"  # no network in tests
 daily.STRATEGIES["test_v1"] = {"prob": lambda r: r["elo_p"], "min_edge": 0.05, "start_bankroll": 5000}
+# News without network or LLM: Tomas Machac is "injured", everyone else fine.
+import os  # noqa: E402
+os.environ["OPENROUTER_API_KEY"] = "smoke-test"
+INJURED = "Tomas Machac"
+news.fetch_headlines = lambda player, now: [{"title": f"{player} news", "source": "test", "published": now}]
+news.assess = lambda player, *a: {"status": "injured" if player == INJURED else "none", "confidence": 0.9,
+                                  "summary": "smoke test", "evidence": ""}
+# Make the injured player the one Elo would back: news_v1 must refuse while elo_v0 still bets.
+daily.STRATEGIES["veto_probe"] = {"prob": lambda r: 0.0 if strategies.news_veto(r) else (0.9 if r["outcome"] == INJURED else 0.1),
+                                  "min_edge": 0.05, "sports": ("atp",)}
+daily.STRATEGIES["back_probe"] = {"prob": lambda r: 0.9 if r["outcome"] == INJURED else 0.1, "min_edge": 0.05,
+                                  "sports": ("atp",)}
 
 
 def book(key, prices, at="2026-10-07T00:00:00Z"):
@@ -107,6 +122,16 @@ check(((f.odds <= f.median_odds + 1e-9) | f.median_odds.isna()).all(), "executio
 check(f.exec_book.notna().all(), "execution bookmaker recorded")
 check(((dep.wallet == "atp:test_v1") & (dep.kind == "open") & (dep.amount == 5000)).any(), "new strategy opens its own $5,000 wallet")
 new_bets = led[~led.bet_id.isin(real_open) & (led.status == "open") & led.placed_at.str.startswith("2026-10-07")]
+check("epl:news_v1" not in dep.wallet.values and "atp:news_v1" in dep.wallet.values, "'sports' key: news_v1 gets an ATP wallet only")
+nw = pd.read_csv(TMP / "state/news.csv")
+check({"Zhizhen Zhang", "Tomas Machac"} <= set(nw.player), "news verdicts logged for players in the betting window")
+check(set(f.loc[f.outcome == INJURED, "news_status"].dropna()) == {"injured"}, "news status attached to the forecast rows")
+check(((new_bets.strategy == "back_probe") & (new_bets.pick == INJURED)).any(), "probe without the veto backs the injured player")
+check(not ((new_bets.strategy == "veto_probe") & (new_bets.pick == INJURED)).any(), "veto: never back a player with injury news")
+check(not new_bets.strategy.str.startswith("news_v1").any() or not (new_bets[new_bets.strategy == "news_v1"].pick == INJURED).any(),
+      "news_v1 never backs the injured player")
+snap = pd.read_csv(TMP / "state/odds_snapshots.csv")
+check(set(snap[snap["at"].str.startswith("2026-10-07T01")].event_id) >= {"e1", "t1", "t3"}, "daily run's prices saved as snapshots (no extra credit)")
 check(len(new_bets) > 0 and new_bets.exec_book.notna().all(), f"{len(new_bets)} new bets placed at real recorded quotes")
 
 # ---- day 2: settle from API, record outcomes + results
@@ -162,6 +187,37 @@ check("Active A." not in st and "Opp O." not in st, "regular players are fresh")
 check(st.get("Gone G.", "").startswith("last match"), "no match for over 180 days -> stale")
 check("2 match(es) since" in st.get("Back B.", ""), "back from a long break with < 5 matches -> stale")
 check("Back C." not in st, "back with 5 matches -> trusted again")
+
+print("\nSNAPSHOT / CLOSING checks")
+
+
+class SnapAPI(FakeAPI):
+    def __init__(self, remaining):
+        super().__init__(1)
+        self.remaining, self.calls = str(remaining), 0
+
+    def odds(self, key):
+        self.calls += 1
+        self.remaining = str(int(self.remaining) - 1)
+        return [ev("t3", T, "Zhizhen Zhang", "Tomas Machac", [book("bet365", {"Zhizhen Zhang": 2.2, "Tomas Machac": 1.7}),
+                                                               book("unibet", {"Zhizhen Zhang": 2.3, "Tomas Machac": 1.65})])]
+
+
+at = pd.Timestamp("2026-10-07T06:00:00Z")
+poor = SnapAPI(snapshots.credits_reserved(at))  # exactly the reserve: must not spend
+snapshots.run(poor, at)
+check(poor.calls == 0, "snapshot run never spends credits reserved for the daily runs")
+rich = SnapAPI(400)
+snapshots.run(rich, at)
+check(rich.calls == 1, "snapshot run fetches the tournament with a match starting soon")
+cp = snapshots.closing_prices().set_index(["event_id", "outcome"])
+row = cp.loc[("t3", "Tomas Machac")]
+check(row.close_odds == 1.675 and row.minutes_before == 240 and row.open_odds != row.close_odds,
+      "closing = last pre-start snapshot (4h before), opening = first seen")
+cl = pd.read_csv(TMP / "state/closing.csv")  # recorded by the day-2 run, from the daily run's own snapshot
+t3c = cl[cl.event_id == "t3"]
+check(len(t3c) == 2 and (t3c.source == "snapshot_median").all() and (t3c.minutes_before == 540).all(),
+      "ATP closing comes from our snapshots, with minutes before the start")
 
 shutil.rmtree(TMP)
 print("\nall smoke checks passed")

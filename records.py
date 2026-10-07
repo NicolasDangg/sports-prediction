@@ -16,6 +16,7 @@ import numpy as np
 import pandas as pd
 
 import backtest as bt
+import snapshots
 from names import epl_team, player_profiles, tennis_player
 from odds_api import winner_from_scores
 
@@ -110,7 +111,8 @@ class History:
 def record_closing(history: History, now: pd.Timestamp) -> int:
     """For forecast events that started 12h-21d ago and have no closing price yet, look one up.
     EPL: football-data closing odds (Pinnacle if present, else market average).
-    ATP: Kaggle's odds column (a single bookmaker price of unclear timing: treat as approximate)."""
+    ATP: our own last odds snapshot before the start (median across books; `minutes_before` says how
+         close to the start it was), else Kaggle's odds column (one bookmaker, unclear timing: approximate)."""
     if not FORECASTS.exists():
         return 0
     f = pd.read_csv(FORECASTS, dtype=str)
@@ -118,8 +120,15 @@ def record_closing(history: History, now: pd.Timestamp) -> int:
     done = set(pd.read_csv(CLOSING, dtype=str).event_id) if CLOSING.exists() else set()
     todo = (f[(f.start < now - timedelta(hours=12)) & (f.start > now - timedelta(days=21)) & ~f.event_id.isin(done)]
             .drop_duplicates("event_id"))
+    snap = snapshots.closing_prices().set_index("event_id")
     rows = []
     for e in todo.itertuples():
+        if e.sport == "atp" and e.event_id in snap.index:
+            rows += [{"event_id": e.event_id, "outcome": r.outcome, "closing_odds": r.close_odds,
+                      "source": "snapshot_median", "minutes_before": r.minutes_before,
+                      "recorded_at": now.isoformat(timespec="seconds")}
+                     for r in snap.loc[[e.event_id]].itertuples()]
+            continue
         found = history.lookup(e.sport, e.match, e.commence_time)
         if found and found["close"]:
             rows += [{"event_id": e.event_id, "outcome": o, "closing_odds": round(float(p), 3),
