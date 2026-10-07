@@ -3,3 +3,12 @@ at,wallet,amount,kind,reason
 2026-10-06T05:44:00+00:00,atp:elo_v0,1000.0,open,opening balance (created before deposits were tracked)
 2026-10-06T09:56:48+00:00,epl:elo_v0,4000.0,deposit,"owner raised wallets to $5,000 (2026-10-06)"
 2026-10-06T09:56:48+00:00,atp:elo_v0,4000.0,deposit,"owner raised wallets to $5,000 (2026-10-06)"
+2026-10-07T23:04:57+00:00,epl:sharp_v1,5000.0,open,new wallet for strategy sharp_v1
+2026-10-07T23:04:57+00:00,epl:casual_big_v1,5000.0,open,new wallet for strategy casual_big_v1
+2026-10-07T23:04:57+00:00,epl:casual_many_v1,5000.0,open,new wallet for strategy casual_many_v1
+2026-10-07T23:04:57+00:00,epl:smart_casual_v1,5000.0,open,new wallet for strategy smart_casual_v1
+2026-10-07T23:04:57+00:00,atp:news_v1,5000.0,open,new wallet for strategy news_v1
+2026-10-07T23:04:57+00:00,atp:sharp_v1,5000.0,open,new wallet for strategy sharp_v1
+2026-10-07T23:04:57+00:00,atp:casual_big_v1,5000.0,open,new wallet for strategy casual_big_v1
+2026-10-07T23:04:57+00:00,atp:casual_many_v1,5000.0,open,new wallet for strategy casual_many_v1
+2026-10-07T23:04:57+00:00,atp:smart_casual_v1,5000.0,open,new wallet for strategy smart_casual_v1

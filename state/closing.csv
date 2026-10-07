@@ -1,0 +1,17 @@
+event_id,outcome,closing_odds,source,minutes_before,recorded_at
+f8c8d214822b7274556c6080c45b21b3,Kamil Majchrzak,1.56,snapshot_median,11.0,2026-10-07T23:04:57+00:00
+f8c8d214822b7274556c6080c45b21b3,Yannick Hanfmann,2.43,snapshot_median,11.0,2026-10-07T23:04:57+00:00
+02f6a0ddcd015fe9b206546eb4298936,Tomas Machac,1.42,snapshot_median,11.0,2026-10-07T23:04:57+00:00
+02f6a0ddcd015fe9b206546eb4298936,Zhizhen Zhang,2.95,snapshot_median,11.0,2026-10-07T23:04:57+00:00
+c59f211898a59a8fec6d1feb7a4e6d1b,Marco Trungelliti,2.8,snapshot_median,31.0,2026-10-07T23:04:57+00:00
+c59f211898a59a8fec6d1feb7a4e6d1b,Rei Sakamoto,1.45,snapshot_median,31.0,2026-10-07T23:04:57+00:00
+9af7d82bea534ce15e7c15b8867672e0,Mattia Bellucci,1.255,snapshot_median,81.0,2026-10-07T23:04:57+00:00
+9af7d82bea534ce15e7c15b8867672e0,Yi Zhou,3.98,snapshot_median,81.0,2026-10-07T23:04:57+00:00
+031b22614da140f4b89c1f323b3454c5,Rinky Hijikata,3.35,snapshot_median,61.0,2026-10-07T23:04:57+00:00
+031b22614da140f4b89c1f323b3454c5,Roman Safiullin,1.34,snapshot_median,61.0,2026-10-07T23:04:57+00:00
+dd1e20c942328c79a159efcf2c81a089,Chak Lam Coleman Wong,2.095,snapshot_median,101.0,2026-10-07T23:04:57+00:00
+dd1e20c942328c79a159efcf2c81a089,Quentin Halys,1.74,snapshot_median,101.0,2026-10-07T23:04:57+00:00
+ff12f67489673ffd2bc90d9a6f686b15,Daniel Altmaier,2.75,snapshot_median,151.0,2026-10-07T23:04:57+00:00
+ff12f67489673ffd2bc90d9a6f686b15,Holger Rune,1.45,snapshot_median,151.0,2026-10-07T23:04:57+00:00
+3dc431db5cfd1e1235264096d0e92ad1,Michael Zheng,2.09,snapshot_median,231.0,2026-10-07T23:04:57+00:00
+3dc431db5cfd1e1235264096d0e92ad1,Wu Yibing,1.75,snapshot_median,231.0,2026-10-07T23:04:57+00:00

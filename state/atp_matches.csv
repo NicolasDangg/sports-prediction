@@ -4,7 +4,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-01-01,Brisbane International,ATP250,2nd Round,Hard,Vukic A.,Dimitrov G.,Dimitrov G.,2-6 6-7,1752.9,1967.0,1745.7,1970.3,0.2026,4.5,1.2
 2025-01-01,Hong Kong Tennis Open,ATP250,2nd Round,Hard,Bergs Z.,Fils A.,Fils A.,6-7 4-6,1688.9,1858.5,1677.3,1867.4,0.2774,2.75,1.44
 2025-01-01,Hong Kong Tennis Open,ATP250,2nd Round,Hard,Nishikori K.,Khachanov K.,Nishikori K.,4-6 6-3 7-5,1860.1,1871.5,1868.1,1862.5,0.5004,2.2,1.67
-2025-01-01,Hong Kong Tennis Open,ATP250,2nd Round,Hard,Norrie C.,Sonego L.,Norrie C.,6-2 4-6 6-1,1775.9,1706.3,1783.8,1698.0,0.621,1.57,2.38
 2025-01-02,Brisbane International,ATP250,2nd Round,Hard,Djokovic N.,Monfils G.,Djokovic N.,6-3 6-3,2201.8,1860.5,2203.2,1858.8,0.8776,1.06,10.0
 2025-01-02,Brisbane International,ATP250,2nd Round,Hard,Lajovic D.,Mensik J.,Mensik J.,3-6 2-6,1729.7,1866.7,1724.1,1880.5,0.253,4.0,1.25
 2025-01-02,Brisbane International,ATP250,2nd Round,Hard,Tiafoe F.,Mpetshi G.,Mpetshi G.,4-6 6-7,1805.2,1795.9,1795.6,1819.9,0.5342,1.8,2.0
@@ -18,7 +17,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-01-03,Hong Kong Tennis Open,ATP250,Quarterfinals,Hard,Nishikori K.,Norrie C.,Nishikori K.,6-3 3-6 6-2,1868.1,1783.8,1874.0,1776.3,0.6191,1.73,2.1
 2025-01-05,Hong Kong Tennis Open,ATP250,The Final,Hard,Muller A.,Nishikori K.,Muller A.,2-6 6-1 6-3,1719.5,1874.0,1744.7,1863.1,0.2639,3.5,1.3
 2025-01-06,ASB Classic,ATP250,1st Round,Hard,Michelsen A.,Nagal S.,Michelsen A.,6-7 6-4 6-2,1776.0,1461.6,1780.9,1455.3,0.8908,1.17,5.0
-2025-01-06,ASB Classic,ATP250,1st Round,Hard,Norrie C.,Diaz Acosta F.,Diaz Acosta F.,2-6 3-6,1776.3,1623.9,1762.6,1654.7,0.8024,1.2,4.5
 2025-01-06,Adelaide International,ATP250,1st Round,Hard,Davidovich Fokina A.,Bautista Agut R.,Davidovich Fokina A.,7-5 6-2,1703.6,1755.5,1716.9,1745.3,0.4532,1.73,2.1
 2025-01-07,ASB Classic,ATP250,1st Round,Hard,Carreno Busta P.,Mensik J.,Mensik J.,0-6 6-4 5-7,1800.6,1854.9,1792.5,1873.2,0.4129,4.0,1.25
 2025-01-07,Adelaide International,ATP250,1st Round,Hard,Kecmanovic M.,Bublik A.,Kecmanovic M.,6-4 6-2,1693.2,1734.5,1705.0,1722.7,0.4191,1.62,2.3
@@ -40,7 +38,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-01-12,Australian Open,Grand Slam,1st Round,Hard,Fils A.,Virtanen O.,Fils A.,3-6 7-6 6-4 6-4,1843.2,1557.2,1848.4,1546.3,0.8298,1.13,6.0
 2025-01-12,Australian Open,Grand Slam,1st Round,Hard,Lehecka J.,Tu L.,Lehecka J.,6-1 3-6 6-3 7-6,1893.0,1439.7,1895.0,1435.1,0.9194,1.07,9.0
 2025-01-12,Australian Open,Grand Slam,1st Round,Hard,Monteiro T.,Nishikori K.,Nishikori K.,6-4 7-6 5-7 2-6 3-6,1633.0,1863.1,1627.8,1866.3,0.1547,4.5,1.2
-2025-01-12,Australian Open,Grand Slam,1st Round,Hard,Nagal S.,Machac T.,Machac T.,3-6 1-6 5-7,1455.3,1926.0,1452.6,1928.2,0.049,13.0,1.04
 2025-01-12,Australian Open,Grand Slam,1st Round,Hard,Pouille L.,Zverev A.,Zverev A.,4-6 4-6 4-6,1635.1,2044.1,1633.2,2045.4,0.1028,19.0,1.02
 2025-01-12,Australian Open,Grand Slam,1st Round,Hard,Ruud C.,Munar J.,Ruud C.,6-3 1-6 7-5 2-6 6-1,1875.0,1628.2,1878.6,1623.7,0.82,1.17,5.0
 2025-01-13,Australian Open,Grand Slam,1st Round,Hard,Auger-Aliassime F.,Struff J.L.,Auger-Aliassime F.,6-3 6-0 4-6 6-1,1816.9,1816.7,1826.7,1807.8,0.6036,1.44,2.75
@@ -56,6 +53,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-01-14,Australian Open,Grand Slam,1st Round,Hard,Cerundolo F.,Bublik A.,Cerundolo F.,7-6 6-3 6-2,1736.3,1722.7,1748.6,1712.5,0.4827,1.57,2.38
 2025-01-14,Australian Open,Grand Slam,1st Round,Hard,Cobolli F.,Etcheverry T.,Etcheverry T.,7-6 3-6 5-7 1-6,1849.4,1712.5,1825.2,1731.9,0.7154,2.38,1.57
 2025-01-14,Australian Open,Grand Slam,1st Round,Hard,Hurkacz H.,Griekspoor T.,Hurkacz H.,7-5 6-4 6-4,1940.6,1802.6,1946.8,1794.4,0.6688,1.36,3.2
+2025-01-14,Australian Open,Grand Slam,1st Round,Hard,Mannarino A.,Khachanov K.,Khachanov K.,6-7 3-6 3-6,1670.3,1862.5,1666.5,1866.8,0.2626,7.0,1.1
 2025-01-14,Australian Open,Grand Slam,1st Round,Hard,Medvedev D.,Samrej K.,Medvedev D.,6-2 4-6 3-6 6-1 6-2,2041.8,1500.0,2042.5,1495.6,0.9559,1.0,51.0
 2025-01-14,Australian Open,Grand Slam,1st Round,Hard,Musetti L.,Arnaldi M.,Musetti L.,7-6 4-6 7-6 6-3,1817.8,1730.2,1826.6,1717.5,0.5502,1.57,2.38
 2025-01-14,Australian Open,Grand Slam,1st Round,Hard,Nakashima B.,Shelton B.,Shelton B.,6-7 5-7 5-7,1713.6,1837.0,1705.1,1846.6,0.312,2.75,1.44
@@ -69,7 +67,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-01-15,Australian Open,Grand Slam,2nd Round,Hard,Faria J.,Djokovic N.,Djokovic N.,1-6 7-6 3-6 2-6,1478.8,2192.8,1477.4,2193.0,0.0198,23.0,1.01
 2025-01-15,Australian Open,Grand Slam,2nd Round,Hard,Fils A.,Halys Q.,Fils A.,6-2 4-6 7-6 7-5,1848.4,1680.0,1857.2,1671.3,0.7626,1.22,4.33
 2025-01-15,Australian Open,Grand Slam,2nd Round,Hard,Korda S.,Vukic A.,Vukic A.,4-6 6-3 6-2 3-6 5-7,1891.3,1739.2,1874.3,1761.4,0.7274,1.22,4.33
-2025-01-15,Australian Open,Grand Slam,2nd Round,Hard,Machac T.,Opelka R.,Machac T.,3-6 7-6 6-7 7-6 6-4,1928.2,1780.2,1938.8,1772.8,0.6779,1.33,3.4
 2025-01-15,Australian Open,Grand Slam,2nd Round,Hard,Martinez P.,Zverev A.,Zverev A.,1-6 4-6 1-6,1609.7,2045.4,1607.7,2046.6,0.0664,21.0,1.02
 2025-01-15,Australian Open,Grand Slam,2nd Round,Hard,Nishioka Y.,Alcaraz C.,Alcaraz C.,0-6 1-6 4-6,1742.7,2114.4,1740.5,2116.8,0.1266,19.0,1.02
 2025-01-15,Australian Open,Grand Slam,2nd Round,Hard,Paul T.,Nishikori K.,Paul T.,6-7 6-0 6-3 6-1,1908.9,1866.3,1918.0,1859.5,0.5331,1.4,3.0
@@ -79,6 +76,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-01-16,Australian Open,Grand Slam,2nd Round,Hard,De Minaur A.,Boyer T.,De Minaur A.,6-2 6-4 6-3,1972.1,1561.3,1973.8,1552.9,0.9034,1.03,15.0
 2025-01-16,Australian Open,Grand Slam,2nd Round,Hard,Fritz T.,Garin C.,Fritz T.,6-2 6-1 6-0,1957.7,1737.4,1961.6,1732.3,0.8124,1.04,13.0
 2025-01-16,Australian Open,Grand Slam,2nd Round,Hard,Hurkacz H.,Kecmanovic M.,Kecmanovic M.,4-6 4-6 2-6,1946.8,1729.8,1931.3,1746.1,0.7742,1.29,3.75
+2025-01-16,Australian Open,Grand Slam,2nd Round,Hard,Khachanov K.,Diallo G.,Khachanov K.,7-6 4-6 6-3 6-3,1866.8,1663.9,1871.0,1651.2,0.7582,1.33,3.4
 2025-01-16,Australian Open,Grand Slam,2nd Round,Hard,Medvedev D.,Tien L.,Tien L.,3-6 6-7 7-6 6-1 6-7,2042.5,1606.9,2027.0,1671.3,0.9263,1.17,5.0
 2025-01-16,Australian Open,Grand Slam,2nd Round,Hard,Michelsen A.,Mccabe J.,Michelsen A.,7-5 6-3 7-6,1793.3,1438.7,1797.2,1429.6,0.8759,1.11,6.5
 2025-01-16,Australian Open,Grand Slam,2nd Round,Hard,Musetti L.,Shapovalov D.,Musetti L.,7-6 7-6 6-2,1826.6,1791.7,1837.0,1783.0,0.4944,2.1,1.73
@@ -148,9 +146,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-02-06,ABN AMRO World Tennis Tournament,ATP500,2nd Round,Hard,Vavassori A.,Alcaraz C.,Alcaraz C.,2-6 1-6,1627.8,2112.5,1624.6,2113.8,0.0603,9.0,1.07
 2025-02-06,Dallas Open,ATP500,1st Round,Hard,Rinderknech A.,Fritz T.,Fritz T.,4-6 2-6,1647.9,1950.9,1643.9,1953.5,0.1526,8.0,1.08
 2025-02-06,Dallas Open,ATP500,2nd Round,Hard,Arnaldi M.,Davidovich Fokina A.,Arnaldi M.,6-1 6-3,1730.4,1740.2,1747.5,1728.5,0.475,2.2,1.67
-2025-02-06,Dallas Open,ATP500,2nd Round,Hard,Machac T.,Hijikata R.,Machac T.,6-4 7-6,1946.0,1664.3,1951.7,1658.3,0.8279,1.14,5.5
 2025-02-06,Dallas Open,ATP500,2nd Round,Hard,Mmoh M.,Ruud C.,Ruud C.,1-6 4-6,1742.3,1872.2,1730.6,1878.1,0.3628,4.5,1.2
-2025-02-06,Dallas Open,ATP500,2nd Round,Hard,Opelka R.,Norrie C.,Opelka R.,4-6 7-6 6-4,1782.2,1767.5,1794.0,1758.1,0.5424,1.73,2.1
 2025-02-06,Dallas Open,ATP500,2nd Round,Hard,Shelton B.,Munar J.,Munar J.,2-6 6-7,1888.3,1637.1,1865.2,1655.8,0.8536,1.1,7.0
 2025-02-06,Dallas Open,ATP500,2nd Round,Hard,Tiafoe F.,Nishioka Y.,Nishioka Y.,6-3 4-6 3-6,1794.5,1750.1,1784.0,1762.3,0.5536,1.53,2.5
 2025-02-07,ABN AMRO World Tennis Tournament,ATP500,Quarterfinals,Hard,Altmaier D.,De Minaur A.,De Minaur A.,1-6 4-6,1600.5,1989.9,1597.7,1991.8,0.1008,10.0,1.06
@@ -161,13 +157,11 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-02-07,Dallas Open,ATP500,2nd Round,Hard,Shapovalov D.,Fritz T.,Shapovalov D.,2-6 6-3 7-6,1791.4,1953.5,1805.3,1941.0,0.2834,3.75,1.29
 2025-02-08,ABN AMRO World Tennis Tournament,ATP500,Semifinals,Hard,Alcaraz C.,Hurkacz H.,Alcaraz C.,6-4 6-7 6-3,2115.2,1945.2,2121.2,1939.8,0.7132,1.25,4.0
 2025-02-08,ABN AMRO World Tennis Tournament,ATP500,Semifinals,Hard,Bellucci M.,De Minaur A.,De Minaur A.,1-6 2-6,1721.5,1991.8,1711.7,1995.1,0.1957,4.5,1.17
-2025-02-08,Dallas Open,ATP500,Quarterfinals,Hard,Machac T.,Shapovalov D.,Shapovalov D.,6-7 0-6,1951.7,1805.3,1927.6,1818.7,0.71,1.67,2.2
 2025-02-08,Dallas Open,ATP500,Quarterfinals,Hard,Paul T.,Opelka R.,Paul T.,7-6 6-2,1928.5,1794.0,1935.0,1786.2,0.6504,1.53,2.5
 2025-02-08,Dallas Open,ATP500,Semifinals,Hard,Paul T.,Shapovalov D.,Shapovalov D.,5-7 3-6,1935.0,1818.7,1921.4,1831.4,0.6571,1.5,2.63
 2025-02-08,Dallas Open,ATP500,Semifinals,Hard,Ruud C.,Munar J.,Ruud C.,6-2 2-6 7-6,1878.1,1670.3,1882.4,1665.0,0.7717,1.33,3.4
 2025-02-09,ABN AMRO World Tennis Tournament,ATP500,The Final,Hard,De Minaur A.,Alcaraz C.,Alcaraz C.,4-6 6-3 2-6,1995.1,2121.2,1988.9,2128.4,0.3462,3.2,1.36
 2025-02-09,Dallas Open,ATP500,The Final,Hard,Shapovalov D.,Ruud C.,Shapovalov D.,7-6 6-3,1831.4,1882.4,1842.5,1871.8,0.4674,1.62,2.3
-2025-02-10,Delray Beach Open,ATP250,1st Round,Hard,Svajda Z.,Norrie C.,Norrie C.,5-7 4-6,1510.0,1758.1,1499.7,1761.9,0.1956,2.75,1.44
 2025-02-10,Open 13,ATP250,1st Round,Hard,Virtanen O.,Korda S.,Virtanen O.,6-7 7-6 6-4,1546.3,1874.3,1603.6,1853.5,0.1328,3.2,1.36
 2025-02-11,Argentina Open,ATP250,1st Round,Clay,Cerundolo F.,Darderi L.,Cerundolo F.,6-4 6-4,1743.1,1581.8,1750.3,1570.7,0.6829,1.36,3.2
 2025-02-11,Delray Beach Open,ATP250,1st Round,Hard,Davidovich Fokina A.,Daniel T.,Davidovich Fokina A.,6-2 7-6,1728.5,1535.5,1734.1,1529.8,0.7515,1.3,3.5
@@ -178,8 +172,8 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-02-12,Argentina Open,ATP250,2nd Round,Clay,Cerundolo J.M.,Cerundolo F.,Cerundolo F.,2-6 3-6,1604.6,1750.3,1591.2,1758.0,0.2035,5.0,1.17
 2025-02-12,Argentina Open,ATP250,2nd Round,Clay,Lajovic D.,Zverev A.,Zverev A.,4-6 4-6,1723.3,2053.1,1721.0,2055.1,0.1507,6.5,1.11
 2025-02-12,Delray Beach Open,ATP250,1st Round,Hard,Walton A.,Tien L.,Tien L.,4-6 3-6,1382.3,1672.8,1373.1,1683.0,0.1473,3.0,1.4
-2025-02-12,Delray Beach Open,ATP250,2nd Round,Hard,Norrie C.,Rinderknech A.,Norrie C.,7-6 6-2,1761.9,1650.5,1768.6,1641.3,0.6612,1.4,3.0
 2025-02-12,Open 13,ATP250,2nd Round,Hard,Bublik A.,Humbert U.,Humbert U.,6-7 4-6,1709.3,1856.1,1702.9,1862.7,0.2587,3.75,1.29
+2025-02-12,Open 13,ATP250,2nd Round,Hard,Medjedovic H.,Khachanov K.,Medjedovic H.,6-2 6-3,1705.4,1860.5,1738.5,1848.2,0.2931,2.3,1.62
 2025-02-13,Argentina Open,ATP250,2nd Round,Clay,Fonseca J.,Coria F.,Fonseca J.,2-6 6-4 6-2,1636.8,1559.9,1660.4,1548.5,0.5425,1.13,6.0
 2025-02-13,Argentina Open,ATP250,2nd Round,Clay,Moutet C.,Musetti L.,Musetti L.,2-6 3-6,1645.2,1826.2,1638.2,1832.2,0.2764,3.5,1.3
 2025-02-13,Argentina Open,ATP250,2nd Round,Clay,Navone M.,Rune H.,Navone M.,6-1 7-6,1606.0,1925.5,1642.1,1905.4,0.2187,2.38,1.57
@@ -231,6 +225,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-02-21,Rio Open,ATP500,Quarterfinals,Clay,Comesana F.,Zverev A.,Comesana F.,4-6 6-3 6-4,1571.2,2045.3,1626.7,2031.0,0.0583,6.0,1.13
 2025-02-22,Qatar Exxon Mobil Open,ATP500,The Final,Hard,Rublev A.,Draper J.,Rublev A.,7-5 5-7 6-1,1879.1,2043.2,1891.2,2022.2,0.2879,2.0,1.8
 2025-02-22,Rio Open,ATP500,Quarterfinals,Clay,Cerundolo F.,Muller A.,Muller A.,5-7 1-6,1786.1,1744.0,1772.0,1763.4,0.6758,1.5,2.63
+2025-02-24,Dubai Tennis Championships,ATP500,1st Round,Hard,Evans D.,Khachanov K.,Khachanov K.,1-6 3-6,1624.4,1843.2,1619.8,1847.0,0.2438,4.5,1.2
 2025-02-24,Dubai Tennis Championships,ATP500,1st Round,Hard,Sonego L.,Tsitsipas S.,Tsitsipas S.,6-7 3-6,1730.1,1881.3,1724.1,1886.4,0.324,2.5,1.53
 2025-02-25,Abierto Mexicano,ATP500,1st Round,Hard,Machac T.,Mensik J.,Machac T.,6-4 2-6 6-3,1927.6,1860.3,1941.5,1843.9,0.5941,1.67,2.2
 2025-02-25,Abierto Mexicano,ATP500,1st Round,Hard,Norrie C.,Tien L.,Tien L.,6-7 3-6,1759.5,1655.4,1747.0,1695.2,0.6466,1.8,2.0
@@ -255,7 +250,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-02-26,Dubai Tennis Championships,ATP500,2nd Round,Hard,Berrettini M.,O Connell C.,Berrettini M.,7-6 6-2,1905.5,1663.4,1909.7,1657.6,0.7484,1.29,3.75
 2025-02-26,Dubai Tennis Championships,ATP500,2nd Round,Hard,Khachanov K.,Tsitsipas S.,Tsitsipas S.,6-7 6-2 4-6,1847.0,1886.4,1839.4,1893.9,0.47,2.1,1.73
 2025-02-26,Dubai Tennis Championships,ATP500,2nd Round,Hard,Mpetshi G.,Medvedev D.,Medvedev D.,4-6 4-6,1815.8,2016.8,1805.1,2020.7,0.2227,3.0,1.4
-2025-02-27,Abierto Mexicano,ATP500,2nd Round,Hard,Altmaier D.,Machac T.,Machac T.,6-7 1-6,1631.2,1941.5,1627.2,1946.4,0.1427,3.75,1.29
 2025-02-27,Abierto Mexicano,ATP500,2nd Round,Hard,Goffin D.,Shelton B.,Goffin D.,7-6 6-3,1707.7,1876.2,1719.4,1855.6,0.2615,3.5,1.3
 2025-02-27,Abierto Mexicano,ATP500,2nd Round,Hard,Michelsen A.,Shapovalov D.,Shapovalov D.,4-6 3-6,1796.3,1847.4,1782.1,1855.6,0.4332,2.5,1.53
 2025-02-27,Abierto Mexicano,ATP500,2nd Round,Hard,Tiafoe F.,Davidovich Fokina A.,Davidovich Fokina A.,3-6 7-6 3-6,1792.5,1768.0,1782.6,1780.1,0.513,1.91,1.91
@@ -279,7 +273,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-03-06,BNP Paribas Open,Masters 1000,1st Round,Hard,Davidovich Fokina A.,McDonald M.,McDonald M.,6-2 3-6 2-6,1791.2,1562.9,1773.6,1635.3,0.7848,1.44,2.75
 2025-03-06,BNP Paribas Open,Masters 1000,1st Round,Hard,Fonseca J.,Fearnley J.,Fonseca J.,6-2 1-6 6-3,1722.2,1609.5,1741.1,1584.1,0.5553,1.29,3.75
 2025-03-06,BNP Paribas Open,Masters 1000,1st Round,Hard,Mensik J.,Etcheverry T.,Mensik J.,6-4 7-6,1843.9,1712.6,1856.7,1703.7,0.7004,1.5,2.63
-2025-03-06,BNP Paribas Open,Masters 1000,1st Round,Hard,Nardi L.,Norrie C.,Norrie C.,0-6 3-6,1542.8,1747.0,1532.1,1751.5,0.2479,2.5,1.53
 2025-03-06,BNP Paribas Open,Masters 1000,1st Round,Hard,Watanuki Y.,Bublik A.,Watanuki Y.,6-3 3-6 6-3,1659.1,1690.0,1685.1,1678.6,0.4456,2.3,1.62
 2025-03-07,BNP Paribas Open,Masters 1000,1st Round,Hard,Navone M.,Tien L.,Navone M.,7-5 6-4,1625.3,1733.7,1651.3,1695.8,0.2658,3.5,1.3
 2025-03-07,BNP Paribas Open,Masters 1000,2nd Round,Hard,Boyer T.,Paul T.,Paul T.,3-6 1-6,1562.5,1925.0,1553.3,1927.2,0.1144,8.0,1.08
@@ -342,7 +335,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-03-20,Miami Open,Masters 1000,1st Round,Hard,Bautista Agut R.,Mensik J.,Mensik J.,4-6 6-3 1-6,1703.8,1835.8,1698.1,1848.4,0.2969,3.0,1.4
 2025-03-20,Miami Open,Masters 1000,1st Round,Hard,Cobolli F.,Tirante T.A.,Tirante T.A.,1-6 6-3 3-6,1742.9,1606.8,1719.4,1646.7,0.7097,1.62,2.3
 2025-03-20,Miami Open,Masters 1000,1st Round,Hard,Fonseca J.,Tien L.,Fonseca J.,6-7 6-3 6-4,1732.2,1695.8,1756.1,1670.3,0.4813,1.33,3.4
-2025-03-20,Miami Open,Masters 1000,1st Round,Hard,Norrie C.,Bu Y.,Bu Y.,4-6 2-6,1760.2,1663.2,1748.0,1695.0,0.644,1.67,2.2
 2025-03-20,Miami Open,Masters 1000,1st Round,Hard,Struff J.L.,Davidovich Fokina A.,Davidovich Fokina A.,6-7 3-6,1780.9,1773.6,1771.9,1785.0,0.4004,2.5,1.5
 2025-03-21,Miami Open,Masters 1000,2nd Round,Hard,Auger-Aliassime F.,Schoolkate T.,Auger-Aliassime F.,6-4 6-4,1840.9,1521.3,1843.5,1511.8,0.848,1.25,4.0
 2025-03-21,Miami Open,Masters 1000,2nd Round,Hard,Bublik A.,Paul T.,Paul T.,7-5 5-7 4-6,1690.0,1925.0,1685.7,1929.2,0.2013,3.75,1.29
@@ -363,7 +355,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-03-22,Miami Open,Masters 1000,2nd Round,Hard,Davidovich Fokina A.,Tiafoe F.,Tiafoe F.,5-7 6-7,1785.0,1775.3,1773.5,1784.8,0.5347,1.73,2.1
 2025-03-22,Miami Open,Masters 1000,2nd Round,Hard,Draper J.,Mensik J.,Mensik J.,6-7 6-7,2079.0,1848.4,2056.4,1879.6,0.7891,1.25,4.0
 2025-03-22,Miami Open,Masters 1000,2nd Round,Hard,Fonseca J.,Humbert U.,Fonseca J.,6-4 6-3,1756.1,1883.6,1791.8,1868.9,0.2513,2.2,1.67
-2025-03-22,Miami Open,Masters 1000,2nd Round,Hard,Machac T.,Arnaldi M.,Machac T.,6-2 1-6 6-3,1971.3,1764.0,1979.1,1756.5,0.7669,1.44,2.75
 2025-03-22,Miami Open,Masters 1000,2nd Round,Hard,Rublev A.,Bergs Z.,Bergs Z.,5-7 4-6,1866.3,1727.7,1854.8,1753.5,0.6994,1.3,3.5
 2025-03-22,Miami Open,Masters 1000,2nd Round,Hard,Rune H.,Opelka R.,Opelka R.,6-4 3-6 6-7,1952.3,1768.4,1935.2,1786.5,0.7284,1.4,3.0
 2025-03-22,Miami Open,Masters 1000,2nd Round,Hard,Shapovalov D.,Tirante T.A.,Shapovalov D.,6-3 6-7 7-6,1849.3,1646.7,1853.9,1633.2,0.7791,1.2,4.5
@@ -381,7 +372,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-03-24,Miami Open,Masters 1000,3rd Round,Hard,De Minaur A.,Fonseca J.,De Minaur A.,5-7 7-5 6-3,1968.2,1791.8,1973.3,1777.9,0.7451,1.73,2.1
 2025-03-24,Miami Open,Masters 1000,3rd Round,Hard,Fils A.,Tiafoe F.,Fils A.,7-6 5-7 6-2,1846.3,1784.8,1859.2,1777.2,0.5723,1.8,2.0
 2025-03-24,Miami Open,Masters 1000,3rd Round,Hard,Fritz T.,Shapovalov D.,Fritz T.,7-5 6-3,1933.8,1853.9,1940.6,1846.5,0.6055,1.4,3.0
-2025-03-24,Miami Open,Masters 1000,3rd Round,Hard,Opelka R.,Machac T.,Machac T.,6-7 3-6,1786.5,1979.1,1780.4,1987.4,0.2574,2.63,1.5
 2025-03-24,Miami Open,Masters 1000,3rd Round,Hard,Safiullin R.,Mensik J.,Mensik J.,4-6 4-6,1698.7,1879.6,1690.8,1889.8,0.2631,2.63,1.5
 2025-03-24,Miami Open,Masters 1000,3rd Round,Hard,Tabilo A.,Ruud C.,Ruud C.,4-6 6-7,1684.8,1870.3,1676.9,1875.0,0.2847,3.4,1.33
 2025-03-24,Miami Open,Masters 1000,3rd Round,Hard,Thompson J.,Zverev A.,Zverev A.,5-7 4-6,1840.2,2010.3,1834.5,2014.5,0.2759,5.5,1.14
@@ -399,6 +389,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-03-28,Miami Open,Masters 1000,Semifinals,Hard,Djokovic N.,Dimitrov G.,Djokovic N.,6-2 6-3,2184.7,1981.2,2187.4,1977.8,0.7815,1.22,4.33
 2025-03-28,Miami Open,Masters 1000,Semifinals,Hard,Fritz T.,Mensik J.,Mensik J.,6-7 6-4 6-7,1949.7,1908.7,1940.0,1930.3,0.5442,1.33,3.4
 2025-03-31,Miami Open,Masters 1000,The Final,Hard,Mensik J.,Djokovic N.,Mensik J.,7-6 7-6,1930.3,2187.4,1961.6,2178.0,0.1756,4.33,1.22
+2025-04-01,Tiriac Open,ATP250,1st Round,Clay,Vacherot V.,Dzumhur D.,Dzumhur D.,2-6 1-6,1409.5,1586.8,1387.5,1592.7,0.2437,2.3,1.62
 2025-04-01,U.S.Men's Clay Court Championships,ATP250,1st Round,Clay,Michelsen A.,Tien L.,Michelsen A.,6-4 6-2,1767.1,1670.3,1779.0,1649.9,0.5595,2.0,1.8
 2025-04-02,Tiriac Open,ATP250,2nd Round,Clay,Gasquet R.,Cobolli F.,Cobolli F.,4-6 6-4 1-6,1644.2,1719.4,1639.1,1732.8,0.3959,2.75,1.44
 2025-04-02,U.S.Men's Clay Court Championships,ATP250,1st Round,Clay,Krueger M.,Nishikori K.,Nishikori K.,4-6 2-6,1519.5,1837.0,1513.0,1839.1,0.1046,4.0,1.25
@@ -412,6 +403,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-04-05,Tiriac Open,ATP250,Semifinals,Clay,Cobolli F.,Dzumhur D.,Cobolli F.,6-3 6-0,1746.6,1603.1,1756.9,1596.3,0.6624,1.63,2.2
 2025-04-05,U.S.Men's Clay Court Championships,ATP250,Quarterfinals,Clay,Tiafoe F.,Michelsen A.,Tiafoe F.,7-5 6-1,1780.5,1789.9,1790.0,1773.2,0.5793,1.5,2.63
 2025-04-05,U.S.Men's Clay Court Championships,ATP250,Semifinals,Clay,Paul T.,Brooksby J.,Brooksby J.,6-7 6-3 6-7,1924.5,1781.6,1910.3,1804.7,0.6753,1.25,4.0
+2025-04-06,Monte Carlo Masters,Masters 1000,1st Round,Clay,Struff J.L.,Vacherot V.,Vacherot V.,2-6 1-6,1771.9,1387.5,1756.1,1459.3,0.9158,1.44,2.75
 2025-04-06,Tiriac Open,ATP250,The Final,Clay,Baez S.,Cobolli F.,Cobolli F.,4-6 4-6,1730.8,1756.9,1719.2,1772.4,0.5567,1.53,2.5
 2025-04-06,U.S.Men's Clay Court Championships,ATP250,Semifinals,Clay,Tiafoe F.,Nakashima B.,Tiafoe F.,6-4 7-6,1790.0,1771.0,1798.7,1759.3,0.5414,1.73,2.1
 2025-04-06,U.S.Men's Clay Court Championships,ATP250,The Final,Clay,Tiafoe F.,Brooksby J.,Brooksby J.,4-6 2-6,1798.7,1804.7,1789.7,1820.9,0.52,1.44,2.75
@@ -422,7 +414,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-04-07,Monte Carlo Masters,Masters 1000,1st Round,Clay,Lehecka J.,Korda S.,Lehecka J.,6-3 7-6,1891.5,1871.0,1904.8,1859.9,0.5307,1.62,2.3
 2025-04-07,Monte Carlo Masters,Masters 1000,1st Round,Clay,Medvedev D.,Khachanov K.,Medvedev D.,7-5 4-6 6-4,1996.8,1846.2,2001.7,1841.1,0.622,1.87,1.87
 2025-04-07,Monte Carlo Masters,Masters 1000,1st Round,Clay,Shelton B.,Davidovich Fokina A.,Davidovich Fokina A.,7-6 2-6 1-6,1851.0,1773.5,1834.0,1787.1,0.5086,2.3,1.62
-2025-04-08,Monte Carlo Masters,Masters 1000,1st Round,Clay,Baez S.,Machac T.,Machac T.,6-3 3-6 2-6,1719.2,1987.4,1714.8,1993.2,0.3807,2.1,1.73
 2025-04-08,Monte Carlo Masters,Masters 1000,1st Round,Clay,Bautista Agut R.,Nakashima B.,Bautista Agut R.,6-2 6-4,1695.3,1759.3,1705.7,1744.7,0.4898,2.2,1.67
 2025-04-08,Monte Carlo Masters,Masters 1000,1st Round,Clay,Fils A.,Griekspoor T.,Fils A.,6-7 6-4 6-2,1866.1,1870.1,1881.6,1857.5,0.533,1.5,2.63
 2025-04-08,Monte Carlo Masters,Masters 1000,1st Round,Clay,Jarry N.,Dimitrov G.,Dimitrov G.,3-6 4-6,1672.3,1977.8,1668.8,1980.0,0.2224,3.2,1.36
@@ -487,6 +478,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-04-17,Barcelona Open,ATP500,2nd Round,Clay,Davidovich Fokina A.,Rublev A.,Davidovich Fokina A.,7-5 6-4,1827.4,1859.9,1839.5,1850.8,0.4019,2.0,1.8
 2025-04-17,Barcelona Open,ATP500,2nd Round,Clay,De Minaur A.,Fearnley J.,De Minaur A.,6-1 6-2,1982.5,1658.8,1985.0,1650.0,0.8508,1.08,8.0
 2025-04-17,Barcelona Open,ATP500,2nd Round,Clay,Djere L.,Alcaraz C.,Alcaraz C.,2-6 4-6,1742.6,2117.6,1740.5,2119.8,0.1063,8.0,1.08
+2025-04-17,Barcelona Open,ATP500,2nd Round,Clay,Munar J.,Khachanov K.,Khachanov K.,5-7 4-6,1682.3,1847.5,1676.0,1852.3,0.2529,2.3,1.62
 2025-04-18,BMW Open,ATP500,Quarterfinals,Clay,Cerundolo F.,Goffin D.,Cerundolo F.,6-2 6-4,1856.1,1740.5,1864.3,1735.0,0.6882,1.17,5.0
 2025-04-18,BMW Open,ATP500,Quarterfinals,Clay,Darderi L.,Shelton B.,Shelton B.,4-6 3-6,1681.5,1846.0,1671.4,1853.8,0.4823,1.67,2.2
 2025-04-18,BMW Open,ATP500,Quarterfinals,Clay,Zverev A.,Griekspoor T.,Zverev A.,6-7 7-6 6-4,1998.2,1869.8,2003.1,1861.7,0.7613,1.29,3.75
@@ -502,7 +494,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-04-23,Mutua Madrid Open,Masters 1000,1st Round,Clay,Marozsan F.,Cobolli F.,Cobolli F.,6-7 5-7,1770.3,1749.4,1752.6,1766.9,0.4581,1.62,2.3
 2025-04-23,Mutua Madrid Open,Masters 1000,1st Round,Clay,Michelsen A.,Bublik A.,Bublik A.,6-7 6-7,1773.2,1676.9,1752.6,1690.1,0.5384,1.91,1.91
 2025-04-24,Mutua Madrid Open,Masters 1000,1st Round,Clay,Giron M.,Tien L.,Giron M.,6-1 1-6 7-6,1776.9,1637.0,1783.8,1620.2,0.676,1.73,2.1
-2025-04-24,Mutua Madrid Open,Masters 1000,1st Round,Clay,Landaluce M.,Norrie C.,Norrie C.,7-6 5-7 4-6,1395.5,1740.9,1386.6,1743.2,0.1095,3.5,1.3
 2025-04-24,Mutua Madrid Open,Masters 1000,1st Round,Clay,Moller E.,Fonseca J.,Fonseca J.,2-6 3-6,1500.0,1777.9,1482.4,1786.6,0.1938,3.5,1.3
 2025-04-24,Mutua Madrid Open,Masters 1000,1st Round,Clay,Nishikori K.,Vukic A.,Nishikori K.,6-4 3-6 6-3,1839.1,1643.1,1842.9,1635.7,0.8714,1.36,3.2
 2025-04-25,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Bonzi B.,Hurkacz H.,Bonzi B.,6-4 7-5,1658.6,1918.0,1683.3,1901.8,0.1627,2.75,1.44
@@ -523,7 +514,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-04-26,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Dimitrov G.,Jarry N.,Dimitrov G.,6-3 6-4,1976.0,1673.6,1978.1,1670.0,0.7893,1.57,2.38
 2025-04-26,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Fonseca J.,Paul T.,Paul T.,6-7 6-7,1786.6,1910.3,1769.9,1917.0,0.4339,1.53,2.5
 2025-04-26,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Griekspoor T.,Draper J.,Draper J.,3-6 4-6,1864.9,2038.2,1858.2,2045.9,0.4444,2.3,1.62
-2025-04-26,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Machac T.,Fearnley J.,Fearnley J.,6-1 3-6 2-6,1975.2,1682.2,1947.4,1735.3,0.7819,1.44,2.75
+2025-04-26,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Khachanov K.,Opelka R.,Khachanov K.,7-6 7-6,1854.2,1780.3,1860.9,1770.7,0.6731,1.3,3.5
 2025-04-26,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Musetti L.,Etcheverry T.,Musetti L.,7-6 6-2,1898.4,1686.0,1903.5,1679.8,0.762,1.44,2.75
 2025-04-26,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Nishikori K.,Shapovalov D.,Shapovalov D.,1-6 4-6,1842.9,1835.2,1835.0,1844.9,0.6601,2.1,1.73
 2025-04-26,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Norrie C.,Lehecka J.,Norrie C.,2-6 6-4 6-0,1743.2,1888.5,1756.6,1868.9,0.4364,3.0,1.4
@@ -539,7 +530,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-04-29,Mutua Madrid Open,Masters 1000,3rd Round,Clay,De Minaur A.,Shapovalov D.,De Minaur A.,6-3 7-6,1982.3,1844.9,1988.1,1839.0,0.7021,1.22,4.33
 2025-04-29,Mutua Madrid Open,Masters 1000,3rd Round,Clay,Dimitrov G.,Fearnley J.,Dimitrov G.,6-4 7-6,1978.1,1735.3,1980.9,1723.1,0.7676,1.33,3.4
 2025-04-29,Mutua Madrid Open,Masters 1000,3rd Round,Clay,Khachanov K.,Paul T.,Paul T.,3-6 6-3 2-6,1860.9,1917.0,1853.8,1925.5,0.5487,2.2,1.67
-2025-04-29,Mutua Madrid Open,Masters 1000,3rd Round,Clay,Norrie C.,Diallo G.,Diallo G.,6-2 4-6 4-6,1756.6,1714.1,1745.8,1741.2,0.659,1.8,2.0
 2025-04-29,Mutua Madrid Open,Masters 1000,3rd Round,Clay,Tiafoe F.,Muller A.,Tiafoe F.,6-3 6-3,1775.3,1726.3,1783.2,1712.3,0.5105,1.62,2.3
 2025-04-29,Mutua Madrid Open,Masters 1000,3rd Round,Clay,Tsitsipas S.,Musetti L.,Musetti L.,5-7 6-7,1930.2,1903.5,1921.2,1915.7,0.6015,1.8,2.0
 2025-04-29,Mutua Madrid Open,Masters 1000,4th Round,Clay,Fritz T.,Ruud C.,Ruud C.,5-7 4-6,1943.0,1873.6,1932.6,1884.6,0.4761,2.1,1.73
@@ -558,12 +548,12 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-05-02,Mutua Madrid Open,Masters 1000,Semifinals,Clay,Ruud C.,Cerundolo F.,Ruud C.,6-4 7-5,1896.6,1892.8,1905.6,1881.0,0.5501,1.8,2.0
 2025-05-03,Mutua Madrid Open,Masters 1000,The Final,Clay,Ruud C.,Draper J.,Ruud C.,7-5 3-6 6-4,1905.6,2069.5,1918.7,2049.4,0.5385,3.0,1.4
 2025-05-07,Internazionali BNL d'Italia,Masters 1000,1st Round,Clay,Lehecka J.,Muller A.,Muller A.,6-2 3-6 6-7,1868.9,1712.3,1849.1,1735.4,0.6267,1.5,2.63
-2025-05-07,Internazionali BNL d'Italia,Masters 1000,1st Round,Clay,O Connell C.,Norrie C.,Norrie C.,3-6 2-6,1663.3,1745.8,1652.4,1753.2,0.3059,2.5,1.53
 2025-05-08,Internazionali BNL d'Italia,Masters 1000,1st Round,Clay,Bublik A.,Safiullin R.,Bublik A.,6-3 7-6,1713.3,1672.2,1722.5,1658.9,0.6058,1.91,1.91
 2025-05-08,Internazionali BNL d'Italia,Masters 1000,1st Round,Clay,Cobolli F.,Nardi L.,Nardi L.,3-6 4-6,1749.1,1520.0,1723.2,1555.4,0.8098,1.36,3.2
 2025-05-08,Internazionali BNL d'Italia,Masters 1000,1st Round,Clay,Marozsan F.,Fonseca J.,Marozsan F.,6-3 7-6,1752.6,1769.9,1770.0,1743.7,0.4392,3.0,1.4
 2025-05-08,Internazionali BNL d'Italia,Masters 1000,1st Round,Clay,Opelka R.,Tien L.,Tien L.,4-6 6-7,1770.7,1620.2,1753.8,1657.9,0.763,1.91,1.91
 2025-05-09,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Alcaraz C.,Lajovic D.,Alcaraz C.,6-3 6-3,2115.9,1681.6,2117.5,1680.2,0.9242,1.05,11.0
+2025-05-09,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Burruchaga R.,Khachanov K.,Khachanov K.,4-6 7-5 1-6,1498.5,1853.8,1490.0,1855.7,0.1232,3.5,1.3
 2025-05-09,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Comesana F.,Rune H.,Rune H.,6-3 3-6 4-6,1694.1,1978.0,1686.1,1981.7,0.1886,3.2,1.36
 2025-05-09,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Djere L.,Michelsen A.,Djere L.,6-0 6-3,1757.1,1752.6,1767.3,1736.7,0.6951,1.44,2.75
 2025-05-09,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Draper J.,Darderi L.,Draper J.,6-1 6-4,2049.4,1706.1,2052.8,1701.8,0.7136,1.29,3.75
@@ -589,6 +579,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-05-10,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Tiafoe F.,Ofner S.,Ofner S.,2-6 7-6 3-6,1773.9,1639.3,1761.3,1661.8,0.6471,1.62,2.3
 2025-05-10,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Vukic A.,Korda S.,Korda S.,3-6 4-6,1647.4,1850.1,1640.2,1855.7,0.2319,3.4,1.33
 2025-05-11,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Djere L.,Alcaraz C.,Alcaraz C.,6-7 2-6,1767.3,2117.5,1764.9,2120.0,0.1225,8.0,1.08
+2025-05-11,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Khachanov K.,Passaro F.,Khachanov K.,6-3 6-0,1855.7,1573.0,1858.5,1563.8,0.8157,1.4,3.0
 2025-05-11,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Kopriva V.,Draper J.,Draper J.,4-6 3-6,1600.1,2052.8,1596.4,2054.7,0.1465,7.0,1.1
 2025-05-11,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Medvedev D.,Popyrin A.,Medvedev D.,6-4 6-1,1992.5,1768.2,1996.1,1763.1,0.7884,1.33,3.4
 2025-05-11,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Moutet C.,Rune H.,Moutet C.,7-5 5-7 7-6,1625.1,1981.7,1648.2,1961.6,0.1174,4.5,1.2
@@ -620,7 +611,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-05-18,Hamburg Open,ATP500,1st Round,Clay,Cerundolo F.,Martinez P.,Cerundolo F.,6-2 6-3,1889.3,1635.9,1893.8,1631.2,0.7951,1.17,5.0
 2025-05-18,Internazionali BNL d'Italia,Masters 1000,The Final,Clay,Sinner J.,Alcaraz C.,Alcaraz C.,6-7 1-6,2273.4,2138.2,2259.9,2152.7,0.5094,1.62,2.3
 2025-05-19,Geneva Open,ATP250,1st Round,Clay,Nishikori K.,Tien L.,Nishikori K.,4-6 6-4 6-4,1835.0,1649.5,1838.9,1636.2,0.8546,1.8,2.0
-2025-05-19,Geneva Open,ATP250,1st Round,Clay,Stricker D.,Norrie C.,Norrie C.,6-7 3-6,1686.2,1749.3,1668.1,1757.1,0.307,3.4,1.33
 2025-05-19,Hamburg Open,ATP500,1st Round,Clay,Kovacevic A.,Zverev A.,Zverev A.,1-6 6-7,1563.4,2006.5,1560.6,2007.6,0.0497,13.0,1.04
 2025-05-19,Hamburg Open,ATP500,1st Round,Clay,Lehecka J.,Gojo B.,Lehecka J.,6-4 3-6 6-2,1849.1,1537.4,1853.0,1530.4,0.8357,1.44,2.75
 2025-05-19,Hamburg Open,ATP500,1st Round,Clay,Rublev A.,Dzumhur D.,Rublev A.,6-4 6-3,1829.2,1596.3,1832.6,1591.7,0.7646,1.2,4.5
@@ -642,7 +632,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-05-21,Hamburg Open,ATP500,2nd Round,Clay,Zverev A.,Muller A.,Muller A.,3-6 6-4 6-7,2007.6,1734.3,1995.1,1760.9,0.8339,1.1,7.0
 2025-05-22,Geneva Open,ATP250,Quarterfinals,Clay,Djokovic N.,Arnaldi M.,Djokovic N.,6-4 6-4,2157.3,1790.4,2158.5,1787.1,0.8804,1.29,3.75
 2025-05-22,Geneva Open,ATP250,Quarterfinals,Clay,Fritz T.,Hurkacz H.,Hurkacz H.,3-6 6-7,1924.2,1920.6,1915.4,1930.6,0.4912,1.62,2.3
-2025-05-22,Geneva Open,ATP250,Quarterfinals,Clay,Popyrin A.,Norrie C.,Norrie C.,6-7 4-6,1783.2,1757.1,1770.6,1767.4,0.4626,1.73,2.1
+2025-05-22,Geneva Open,ATP250,Quarterfinals,Clay,Ofner S.,Khachanov K.,Ofner S.,4-6 6-4 6-4,1685.2,1855.4,1708.7,1843.0,0.2621,2.63,1.5
 2025-05-22,Hamburg Open,ATP500,Quarterfinals,Clay,Bautista Agut R.,Cobolli F.,Cobolli F.,6-7 0-6,1724.7,1748.4,1716.5,1763.5,0.4665,2.3,1.62
 2025-05-22,Hamburg Open,ATP500,Quarterfinals,Clay,Etcheverry T.,Lehecka J.,Etcheverry T.,7-5 6-3,1696.1,1868.6,1715.7,1848.3,0.3789,2.63,1.5
 2025-05-22,Hamburg Open,ATP500,Quarterfinals,Clay,Muller A.,Auger-Aliassime F.,Auger-Aliassime F.,6-7 7-6 3-6,1760.9,1800.8,1746.7,1809.3,0.4755,2.75,1.44
@@ -670,6 +660,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-05-26,French Open,Grand Slam,1st Round,Clay,Sinner J.,Rinderknech A.,Sinner J.,6-4 6-3 7-5,2259.9,1616.2,2260.4,1615.6,0.9523,1.01,29.0
 2025-05-26,French Open,Grand Slam,1st Round,Clay,Thompson J.,Lehecka J.,Lehecka J.,4-6 2-6 1-6,1824.0,1848.3,1814.5,1861.2,0.3487,5.5,1.14
 2025-05-26,French Open,Grand Slam,1st Round,Clay,Tsitsipas S.,Etcheverry T.,Tsitsipas S.,7-5 6-3 6-4,1916.4,1704.2,1920.2,1698.1,0.8001,1.2,4.5
+2025-05-26,French Open,Grand Slam,1st Round,Clay,Vukic A.,Khachanov K.,Khachanov K.,4-6 4-6 4-6,1640.2,1843.0,1633.0,1847.1,0.1663,7.0,1.1
 2025-05-26,French Open,Grand Slam,1st Round,Clay,Zeppieri G.,Alcaraz C.,Alcaraz C.,3-6 4-6 2-6,1486.5,2152.7,1485.3,2153.2,0.0221,26.0,1.01
 2025-05-27,French Open,Grand Slam,1st Round,Clay,Auger-Aliassime F.,Arnaldi M.,Arnaldi M.,7-5 6-2 3-6 4-6 2-6,1800.6,1787.1,1790.6,1802.9,0.5113,1.8,2.0
 2025-05-27,French Open,Grand Slam,1st Round,Clay,Cobolli F.,Cilic M.,Cobolli F.,6-2 6-1 6-3,1796.7,1813.2,1813.4,1806.2,0.513,1.4,3.0
@@ -687,6 +678,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-05-28,French Open,Grand Slam,2nd Round,Clay,Carreno Busta P.,Tiafoe F.,Tiafoe F.,4-6 3-6 1-6,1750.8,1762.8,1741.6,1771.6,0.562,2.5,1.53
 2025-05-28,French Open,Grand Slam,2nd Round,Clay,Korda S.,Brooksby J.,Korda S.,6-1 6-2 7-6,1846.5,1827.6,1857.5,1812.1,0.4946,1.33,3.4
 2025-05-28,French Open,Grand Slam,2nd Round,Clay,Musetti L.,Galan D.E.,Musetti L.,6-4 6-0 6-4,1961.2,1536.2,1962.9,1533.8,0.9235,1.03,17.0
+2025-05-28,French Open,Grand Slam,2nd Round,Clay,Ofner S.,Khachanov K.,Khachanov K.,5-7 6-3 5-7 6-4 2-6,1719.1,1847.1,1708.7,1852.6,0.3253,2.75,1.44
 2025-05-28,French Open,Grand Slam,2nd Round,Clay,Paul T.,Fucsovics M.,Paul T.,4-6 2-6 6-3 7-5 6-4,1953.6,1734.8,1958.0,1730.2,0.6986,1.17,5.0
 2025-05-28,French Open,Grand Slam,2nd Round,Clay,Rune H.,Nava E.,Rune H.,6-3 7-6 6-3,1966.0,1493.1,1967.4,1489.7,0.9312,1.13,6.0
 2025-05-28,French Open,Grand Slam,2nd Round,Clay,Tsitsipas S.,Gigante M.,Gigante M.,4-6 7-5 2-6 4-6,1920.2,1629.2,1906.1,1689.6,0.8744,1.08,8.0
@@ -695,7 +687,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-05-29,French Open,Grand Slam,2nd Round,Clay,De Minaur A.,Bublik A.,Bublik A.,6-2 6-2 4-6 3-6 2-6,1973.4,1712.6,1958.3,1729.5,0.8103,1.08,8.0
 2025-05-29,French Open,Grand Slam,2nd Round,Clay,Fonseca J.,Herbert P.,Fonseca J.,7-6 7-6 6-4,1780.5,1618.1,1794.2,1595.6,0.7024,1.03,15.0
 2025-05-29,French Open,Grand Slam,2nd Round,Clay,Gasquet R.,Sinner J.,Sinner J.,3-6 0-6 4-6,1644.8,2260.4,1644.4,2260.9,0.0519,34.0,1.01
-2025-05-29,French Open,Grand Slam,2nd Round,Clay,Gomez F.A.,Norrie C.,Norrie C.,6-7 2-6 1-6,1561.6,1780.4,1540.0,1784.6,0.2083,6.0,1.13
 2025-05-29,French Open,Grand Slam,2nd Round,Clay,Lehecka J.,Davidovich Fokina A.,Lehecka J.,6-3 3-6 6-1 6-2,1861.2,1820.1,1873.3,1810.5,0.4945,2.1,1.73
 2025-05-29,French Open,Grand Slam,2nd Round,Clay,Monfils G.,Draper J.,Draper J.,3-6 6-4 3-6 5-7,1890.3,2048.1,1886.4,2056.0,0.2929,6.0,1.13
 2025-05-29,French Open,Grand Slam,2nd Round,Clay,Moutet C.,Djokovic N.,Djokovic N.,3-6 2-6 6-7,1653.7,2162.6,1652.4,2163.2,0.0626,9.0,1.07
@@ -710,7 +701,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-05-30,French Open,Grand Slam,3rd Round,Clay,Tiafoe F.,Korda S.,Tiafoe F.,7-6 6-3 6-4,1771.6,1857.5,1782.9,1843.0,0.4021,2.0,1.8
 2025-05-31,French Open,Grand Slam,3rd Round,Clay,Bublik A.,Rocha H.,Bublik A.,7-5 6-1 6-2,1729.5,1617.0,1736.6,1590.7,0.6102,1.3,3.5
 2025-05-31,French Open,Grand Slam,3rd Round,Clay,Djokovic N.,Misolic F.,Djokovic N.,6-3 6-4 6-2,2163.2,1705.8,2163.9,1702.2,0.9172,1.05,11.0
-2025-05-31,French Open,Grand Slam,3rd Round,Clay,Fearnley J.,Norrie C.,Norrie C.,3-6 6-7 2-6,1754.4,1784.6,1729.2,1793.3,0.4181,2.1,1.73
 2025-05-31,French Open,Grand Slam,3rd Round,Clay,Fonseca J.,Draper J.,Draper J.,2-6 4-6 2-6,1794.2,2056.0,1785.5,2061.0,0.268,2.63,1.5
 2025-05-31,French Open,Grand Slam,3rd Round,Clay,Lehecka J.,Sinner J.,Sinner J.,0-6 1-6 2-6,1873.3,2260.9,1870.7,2262.8,0.1245,9.0,1.07
 2025-05-31,French Open,Grand Slam,3rd Round,Clay,Zverev A.,Cobolli F.,Zverev A.,6-2 7-6 6-1,1999.0,1828.8,2003.1,1820.2,0.7087,1.17,5.0
@@ -732,6 +722,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-06-10,Rosmalen Grass Court Championships,ATP250,1st Round,Grass,Blockx A.,Bergs Z.,Bergs Z.,3-6 6-1 6-7,1425.2,1686.7,1409.4,1693.2,0.3869,2.4,1.57
 2025-06-10,Stuttgart Open,ATP250,1st Round,Grass,Monfils G.,Michelsen A.,Michelsen A.,4-6 6-4 3-6,1886.4,1698.9,1876.4,1722.7,0.6746,2.0,1.75
 2025-06-11,Rosmalen Grass Court Championships,ATP250,1st Round,Grass,Bautista Agut R.,Hurkacz H.,Hurkacz H.,6-7 4-6,1713.0,1916.0,1708.9,1920.7,0.3246,3.4,1.33
+2025-06-11,Rosmalen Grass Court Championships,ATP250,2nd Round,Grass,Khachanov K.,McDonald M.,Khachanov K.,6-3 5-7 7-6,1846.6,1641.4,1850.6,1625.0,0.7082,1.45,2.8
 2025-06-11,Stuttgart Open,ATP250,2nd Round,Grass,Fritz T.,Halys Q.,Fritz T.,6-3 7-6,1900.6,1707.4,1904.9,1700.1,0.7139,1.36,3.1
 2025-06-11,Stuttgart Open,ATP250,2nd Round,Grass,Herbert P.,Shelton B.,Shelton B.,6-7 5-7,1595.6,1846.7,1581.0,1851.9,0.3099,3.4,1.33
 2025-06-11,Stuttgart Open,ATP250,2nd Round,Grass,Struff J.L.,Lehecka J.,Lehecka J.,4-6 5-7,1731.5,1877.0,1726.2,1885.3,0.4017,2.75,1.45
@@ -740,6 +731,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-06-12,Stuttgart Open,ATP250,2nd Round,Grass,Mpetshi G.,Auger-Aliassime F.,Auger-Aliassime F.,4-6 4-6,1707.2,1790.6,1691.8,1797.9,0.3989,2.25,1.67
 2025-06-12,Stuttgart Open,ATP250,2nd Round,Grass,Tien L.,Nakashima B.,Nakashima B.,6-7 3-6,1630.5,1725.6,1611.9,1734.5,0.3722,3.1,1.33
 2025-06-12,Stuttgart Open,ATP250,2nd Round,Grass,Zverev A.,Moutet C.,Zverev A.,6-2 7-6,1998.9,1665.4,2000.8,1662.1,0.8356,1.08,8.0
+2025-06-13,Rosmalen Grass Court Championships,ATP250,Quarterfinals,Grass,Diallo G.,Khachanov K.,Diallo G.,7-6 6-4,1797.6,1850.6,1823.2,1840.8,0.3994,2.3,1.57
 2025-06-13,Rosmalen Grass Court Championships,ATP250,Quarterfinals,Grass,Medvedev D.,Opelka R.,Opelka R.,6-7 6-7,1976.0,1765.6,1963.3,1784.0,0.7852,1.29,3.75
 2025-06-13,Stuttgart Open,ATP250,Quarterfinals,Grass,Auger-Aliassime F.,Engel J.,Auger-Aliassime F.,7-6 6-3,1797.9,1645.1,1803.5,1623.4,0.6473,1.2,4.33
 2025-06-13,Stuttgart Open,ATP250,Quarterfinals,Grass,Fucsovics M.,Fritz T.,Fritz T.,3-6 4-6,1746.1,1904.9,1740.2,1909.8,0.3436,3.0,1.4
@@ -758,7 +750,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-06-17,Halle Open,ATP500,1st Round,Grass,Cerundolo F.,Michelsen A.,Michelsen A.,6-2 5-7 4-6,1864.3,1701.2,1847.4,1723.9,0.5775,1.95,1.8
 2025-06-17,Halle Open,ATP500,1st Round,Grass,Cobolli F.,Fonseca J.,Cobolli F.,5-7 7-6 7-6,1820.2,1785.5,1834.4,1764.0,0.577,2.6,1.5
 2025-06-17,Halle Open,ATP500,1st Round,Grass,Hanfmann Y.,Sinner J.,Sinner J.,5-7 3-6,1659.9,2259.9,1659.1,2260.5,0.0579,13.0,1.01
-2025-06-17,Halle Open,ATP500,1st Round,Grass,Machac T.,De Jong J.,Machac T.,7-5 3-6 6-3,1934.9,1662.0,1940.5,1652.7,0.7126,1.4,3.0
 2025-06-17,Halle Open,ATP500,1st Round,Grass,Ofner S.,Rublev A.,Rublev A.,3-6 4-6,1708.7,1843.8,1698.7,1849.0,0.282,2.6,1.45
 2025-06-17,Queen's Club Championships,ATP500,1st Round,Grass,De Minaur A.,Lehecka J.,Lehecka J.,4-6 2-6,1958.3,1870.4,1946.8,1887.3,0.6501,1.36,3.1
 2025-06-17,Queen's Club Championships,ATP500,1st Round,Grass,Draper J.,Brooksby J.,Draper J.,6-3 6-1,2037.3,1812.1,2043.2,1805.1,0.759,1.06,8.0
@@ -767,6 +758,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-06-17,Queen's Club Championships,ATP500,1st Round,Grass,Shelton B.,Rinderknech A.,Rinderknech A.,6-7 6-7,1858.3,1626.1,1837.0,1646.6,0.7178,1.22,4.33
 2025-06-17,Queen's Club Championships,ATP500,1st Round,Grass,Walton A.,Alcaraz C.,Alcaraz C.,4-6 6-7,1523.8,2178.2,1522.7,2178.7,0.0324,15.0,1.02
 2025-06-18,Halle Open,ATP500,1st Round,Grass,Giron M.,Zverev A.,Zverev A.,2-6 1-6,1772.2,1998.7,1767.5,2001.9,0.2806,5.5,1.12
+2025-06-18,Halle Open,ATP500,1st Round,Grass,Khachanov K.,Bergs Z.,Khachanov K.,7-5 6-3,1840.8,1735.8,1846.8,1723.5,0.6251,1.5,2.6
 2025-06-18,Halle Open,ATP500,2nd Round,Grass,Medvedev D.,Halys Q.,Medvedev D.,6-2 7-5,1965.6,1713.0,1968.7,1707.4,0.7675,1.45,2.8
 2025-06-18,Halle Open,ATP500,2nd Round,Grass,Tsitsipas S.,Michelsen A.,Michelsen A.,6-7 5-7,1909.8,1723.9,1897.3,1747.3,0.6482,2.1,1.73
 2025-06-18,Queen's Club Championships,ATP500,2nd Round,Grass,Bautista Agut R.,Mensik J.,Bautista Agut R.,3-6 6-3 7-5,1718.4,1918.0,1731.7,1890.9,0.5149,2.6,1.5
@@ -775,7 +767,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-06-18,Queen's Club Championships,ATP500,2nd Round,Grass,Popyrin A.,Draper J.,Draper J.,6-3 2-6 6-7,1777.5,2043.2,1773.3,2048.0,0.1727,5.5,1.13
 2025-06-19,Halle Open,ATP500,2nd Round,Grass,Etcheverry T.,Rublev A.,Etcheverry T.,6-3 6-7 7-6,1692.4,1849.0,1711.2,1837.2,0.1966,4.0,1.25
 2025-06-19,Halle Open,ATP500,2nd Round,Grass,Khachanov K.,Auger-Aliassime F.,Khachanov K.,6-3 1-6 6-3,1846.8,1804.9,1854.2,1796.5,0.5038,2.2,1.7
-2025-06-19,Halle Open,ATP500,2nd Round,Grass,Marozsan F.,Machac T.,Machac T.,2-6 3-6,1785.5,1940.5,1776.2,1949.9,0.3725,1.95,1.8
 2025-06-19,Halle Open,ATP500,2nd Round,Grass,Shapovalov D.,Cobolli F.,Cobolli F.,6-7 6-4 6-7,1810.6,1834.4,1801.9,1849.1,0.5201,1.6,2.38
 2025-06-19,Halle Open,ATP500,2nd Round,Grass,Sinner J.,Bublik A.,Bublik A.,6-3 3-6 4-6,2260.5,1763.1,2242.1,1782.5,0.8568,1.14,5.5
 2025-06-19,Halle Open,ATP500,2nd Round,Grass,Zverev A.,Sonego L.,Zverev A.,3-6 6-4 7-6,2001.9,1677.0,2003.9,1674.3,0.807,1.12,6.5
@@ -783,6 +774,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-06-19,Queen's Club Championships,ATP500,2nd Round,Grass,Lehecka J.,Diallo G.,Lehecka J.,6-4 6-2,1887.3,1867.8,1900.1,1847.5,0.4994,1.57,2.4
 2025-06-20,Halle Open,ATP500,Quarterfinals,Grass,Bublik A.,Machac T.,Bublik A.,7-6 6-3,1782.5,1949.9,1797.3,1926.6,0.5487,1.53,2.5
 2025-06-20,Halle Open,ATP500,Quarterfinals,Grass,Cobolli F.,Zverev A.,Zverev A.,4-6 6-7,1849.1,2003.9,1839.9,2008.3,0.2662,6.0,1.13
+2025-06-20,Halle Open,ATP500,Quarterfinals,Grass,Etcheverry T.,Khachanov K.,Khachanov K.,3-6 2-6,1711.2,1854.2,1703.1,1859.4,0.2639,3.2,1.36
 2025-06-20,Halle Open,ATP500,Quarterfinals,Grass,Medvedev D.,Michelsen A.,Medvedev D.,6-4 6-3,1968.7,1747.3,1972.3,1740.5,0.7424,1.4,2.8
 2025-06-20,Queen's Club Championships,ATP500,Quarterfinals,Grass,Alcaraz C.,Rinderknech A.,Alcaraz C.,7-5 6-4,2179.9,1664.2,2180.9,1662.9,0.9432,1.12,6.5
 2025-06-20,Queen's Club Championships,ATP500,Quarterfinals,Grass,Lehecka J.,Fearnley J.,Lehecka J.,7-5 6-2,1900.1,1744.2,1907.9,1729.2,0.724,1.5,2.6
@@ -798,7 +790,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-06-23,Eastbourne International,ATP250,1st Round,Grass,Tseng C.H.,Davidovich Fokina A.,Davidovich Fokina A.,6-7 2-6,1490.2,1810.5,1482.4,1813.4,0.2543,3.4,1.29
 2025-06-23,Mallorca Championships,ATP250,1st Round,Grass,Tien L.,Engel J.,Tien L.,6-4 6-4,1611.9,1623.4,1637.7,1586.3,0.406,1.67,2.2
 2025-06-24,Eastbourne International,ATP250,1st Round,Grass,Fearnley J.,Cobolli F.,Fearnley J.,6-2 6-2,1729.2,1839.9,1762.7,1819.5,0.3878,1.73,2.1
-2025-06-24,Eastbourne International,ATP250,1st Round,Grass,Norrie C.,Harris B.,Harris B.,4-6 4-6,1784.8,1506.6,1769.1,1555.0,0.7641,1.33,3.1
 2025-06-24,Mallorca Championships,ATP250,2nd Round,Grass,Rinderknech A.,Auger-Aliassime F.,Auger-Aliassime F.,5-7 3-6,1674.1,1796.5,1665.6,1802.8,0.3613,3.4,1.33
 2025-06-25,Eastbourne International,ATP250,2nd Round,Grass,Duckworth J.,Davidovich Fokina A.,Davidovich Fokina A.,7-6 3-6 4-6,1561.7,1813.4,1557.0,1817.6,0.3408,2.8,1.44
 2025-06-25,Eastbourne International,ATP250,2nd Round,Grass,Mensik J.,Opelka R.,Mensik J.,7-5 6-3,1890.9,1764.7,1902.5,1757.0,0.5222,1.45,2.6
@@ -817,13 +808,13 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-06-28,Eastbourne International,ATP250,The Final,Grass,Brooksby J.,Fritz T.,Fritz T.,5-7 1-6,1851.7,1930.0,1839.3,1936.6,0.3444,3.6,1.3
 2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Auger-Aliassime F.,Duckworth J.,Auger-Aliassime F.,6-2 3-6 6-7 6-4 6-4,1803.5,1557.0,1807.2,1552.1,0.7621,1.18,4.5
 2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Basavareddy N.,Tien L.,Tien L.,6-7 3-6 2-6,1522.5,1652.2,1501.2,1667.7,0.3115,2.6,1.5
-2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Bautista Agut R.,Norrie C.,Norrie C.,3-6 6-3 4-6 6-7,1748.9,1769.1,1740.7,1778.0,0.5785,1.91,1.83
 2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Bonzi B.,Medvedev D.,Bonzi B.,7-6 3-6 7-6 6-2,1619.0,1969.4,1645.3,1954.9,0.1216,8.5,1.07
 2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Cerundolo F.,Borges N.,Borges N.,6-4 3-6 6-7 0-6,1847.4,1719.1,1831.5,1738.9,0.6766,1.53,2.4
 2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Fearnley J.,Fonseca J.,Fonseca J.,4-6 1-6 6-7,1738.4,1769.7,1715.6,1790.8,0.5382,2.63,1.5
 2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Fognini F.,Alcaraz C.,Alcaraz C.,5-7 7-6 5-7 6-2 1-6,1639.7,2186.4,1639.1,2187.2,0.0494,17.0,1.01
 2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Holt B.,Davidovich Fokina A.,Davidovich Fokina A.,2-6 4-6 5-7,1438.5,1823.0,1432.4,1825.2,0.2221,4.33,1.22
 2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Jarry N.,Rune H.,Jarry N.,4-6 4-6 7-5 6-3 6-4,1664.0,1948.8,1683.5,1930.0,0.2233,3.75,1.29
+2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Khachanov K.,McDonald M.,Khachanov K.,7-5 6-4 6-4,1849.5,1669.0,1853.9,1652.2,0.7074,1.22,4.33
 2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Lehecka J.,Dellien H.,Lehecka J.,4-6 6-2 6-2 7-6,1921.7,1506.2,1923.9,1503.4,0.9087,1.02,15.0
 2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Majchrzak K.,Berrettini M.,Majchrzak K.,4-6 6-2 6-4 5-7 6-3,1637.9,1923.1,1670.7,1905.5,0.1063,6.0,1.13
 2025-06-30,Wimbledon,Grand Slam,1st Round,Grass,Rublev A.,Djere L.,Rublev A.,6-0 7-6 6-7 7-6,1837.2,1734.0,1843.1,1726.7,0.7418,1.22,4.0
@@ -831,7 +822,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-07-01,Wimbledon,Grand Slam,1st Round,Grass,Carballes Baena R.,De Minaur A.,De Minaur A.,2-6 2-6 6-7,1658.0,1946.8,1654.6,1949.7,0.1424,13.0,1.01
 2025-07-01,Wimbledon,Grand Slam,1st Round,Grass,Dimitrov G.,Nishioka Y.,Dimitrov G.,6-2 6-3 6-4,1956.2,1758.7,1959.7,1753.5,0.8052,1.18,5.0
 2025-07-01,Wimbledon,Grand Slam,1st Round,Grass,Djokovic N.,Muller A.,Djokovic N.,6-1 6-7 6-2 6-2,2164.2,1703.6,2165.0,1701.5,0.96,1.02,15.0
-2025-07-01,Wimbledon,Grand Slam,1st Round,Grass,Dzumhur D.,Machac T.,Machac T.,3-6 2-6 4-6,1608.0,1926.6,1605.0,1931.0,0.33,4.5,1.2
 2025-07-01,Wimbledon,Grand Slam,1st Round,Grass,Kecmanovic M.,Michelsen A.,Kecmanovic M.,6-2 3-6 6-3 3-6 7-6,1683.9,1743.5,1695.9,1725.5,0.3589,2.8,1.44
 2025-07-01,Wimbledon,Grand Slam,1st Round,Grass,Mensik J.,Gaston H.,Mensik J.,6-1 4-6 6-2 6-2,1880.5,1573.3,1885.7,1568.8,0.6969,1.07,8.5
 2025-07-01,Wimbledon,Grand Slam,1st Round,Grass,Mpetshi G.,Fritz T.,Fritz T.,7-6 7-6 4-6 6-7 4-6,1674.1,1936.6,1666.9,1939.7,0.1717,5.5,1.15
@@ -846,6 +836,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Brooksby J.,Fonseca J.,Fonseca J.,4-6 7-5 2-6 4-6,1858.3,1790.8,1839.4,1818.0,0.6645,2.8,1.44
 2025-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Diallo G.,Fritz T.,Fritz T.,6-3 3-6 6-7 6-4 3-6,1863.0,1939.7,1846.9,1946.4,0.3463,3.6,1.3
 2025-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Harris L.,Rublev A.,Rublev A.,7-6 4-6 6-7 3-6,1640.8,1843.1,1634.2,1847.0,0.2625,3.75,1.29
+2025-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Khachanov K.,Mochizuki S.,Khachanov K.,1-6 7-6 4-6 6-3 6-4,1853.9,1459.9,1855.5,1454.8,0.8631,1.14,5.5
 2025-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Lehecka J.,Bellucci M.,Bellucci M.,6-7 1-6 5-7,1923.9,1611.5,1901.0,1652.0,0.8513,1.2,4.5
 2025-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Norrie C.,Tiafoe F.,Norrie C.,4-6 6-4 6-3 7-5,1778.0,1774.1,1787.3,1765.1,0.4861,2.5,1.53
 2025-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Tarvet O.,Alcaraz C.,Alcaraz C.,1-6 4-6 4-6,1555.1,2187.2,1552.6,2187.7,0.038,12.0,1.01
@@ -856,7 +847,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-07-03,Wimbledon,Grand Slam,2nd Round,Grass,Draper J.,Cilic M.,Cilic M.,4-6 3-6 6-1 4-6,2033.3,1808.2,2012.2,1818.8,0.5818,1.12,6.5
 2025-07-03,Wimbledon,Grand Slam,2nd Round,Grass,Evans D.,Djokovic N.,Djokovic N.,3-6 2-6 0-6,1660.3,2165.0,1659.2,2165.6,0.0432,9.0,1.06
 2025-07-03,Wimbledon,Grand Slam,2nd Round,Grass,Giron M.,Mensik J.,Mensik J.,4-6 6-3 4-6 6-7,1784.8,1885.7,1777.0,1898.2,0.5204,2.5,1.53
-2025-07-03,Wimbledon,Grand Slam,2nd Round,Grass,Machac T.,Holmgren A.,Holmgren A.,6-7 7-6 7-6 5-7 6-7,1931.0,1559.4,1902.4,1641.6,0.7502,1.15,5.5
 2025-07-03,Wimbledon,Grand Slam,2nd Round,Grass,Ofner S.,Paul T.,Ofner S.,1-6 7-5 6-4 7-5,1698.7,1949.6,1724.4,1933.5,0.189,5.5,1.15
 2025-07-03,Wimbledon,Grand Slam,2nd Round,Grass,Opelka R.,Nakashima B.,Nakashima B.,5-7 2-6 7-6 3-6,1764.1,1752.1,1751.9,1764.4,0.4695,3.0,1.4
 2025-07-03,Wimbledon,Grand Slam,2nd Round,Grass,Pinnington Jones J.,Cobolli F.,Cobolli F.,1-6 6-7 2-6,1552.9,1823.9,1537.0,1829.3,0.2598,3.2,1.36
@@ -865,8 +855,8 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-07-04,Wimbledon,Grand Slam,2nd Round,Grass,Hijikata R.,Shelton B.,Shelton B.,2-6 5-7 4-6,1589.6,1822.5,1582.5,1828.1,0.3009,4.33,1.22
 2025-07-04,Wimbledon,Grand Slam,3rd Round,Grass,Fonseca J.,Jarry N.,Jarry N.,3-6 4-6 6-3 6-7,1818.0,1694.6,1787.7,1710.2,0.5642,1.4,2.9
 2025-07-04,Wimbledon,Grand Slam,3rd Round,Grass,Fritz T.,Davidovich Fokina A.,Fritz T.,6-4 6-3 6-7 6-1,1946.4,1831.1,1952.2,1823.7,0.725,1.25,3.75
+2025-07-04,Wimbledon,Grand Slam,3rd Round,Grass,Khachanov K.,Borges N.,Khachanov K.,7-6 4-6 4-6 6-3 7-6,1855.5,1748.4,1861.4,1738.2,0.7108,1.4,3.0
 2025-07-04,Wimbledon,Grand Slam,3rd Round,Grass,Mannarino A.,Rublev A.,Rublev A.,5-7 2-6 3-6,1669.0,1847.0,1665.0,1851.4,0.3378,3.75,1.25
-2025-07-04,Wimbledon,Grand Slam,3rd Round,Grass,Norrie C.,Bellucci M.,Norrie C.,7-6 6-4 6-3,1787.3,1652.0,1793.3,1637.3,0.6756,1.57,2.3
 2025-07-04,Wimbledon,Grand Slam,3rd Round,Grass,Struff J.L.,Alcaraz C.,Alcaraz C.,1-6 6-3 3-6 4-6,1735.1,2187.7,1733.9,2189.2,0.0833,11.0,1.04
 2025-07-05,Wimbledon,Grand Slam,3rd Round,Grass,Cobolli F.,Mensik J.,Cobolli F.,6-2 6-4 6-2,1829.3,1898.2,1847.7,1877.4,0.4542,2.5,1.53
 2025-07-05,Wimbledon,Grand Slam,3rd Round,Grass,De Minaur A.,Holmgren A.,De Minaur A.,6-4 7-6 6-3,1952.3,1641.6,1955.0,1629.1,0.7927,1.06,8.0
@@ -876,7 +866,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-07-05,Wimbledon,Grand Slam,3rd Round,Grass,Nakashima B.,Sonego L.,Sonego L.,7-6 6-7 6-7 6-3 6-7,1764.4,1695.7,1750.2,1707.7,0.5638,1.5,2.6
 2025-07-05,Wimbledon,Grand Slam,3rd Round,Grass,Shelton B.,Fucsovics M.,Shelton B.,6-3 7-6 6-2,1828.1,1758.9,1838.7,1750.6,0.4376,1.3,3.6
 2025-07-06,Wimbledon,Grand Slam,4th Round,Grass,Alcaraz C.,Rublev A.,Alcaraz C.,6-7 6-3 6-4 6-4,2189.2,1851.4,2191.8,1849.3,0.8676,1.08,7.0
-2025-07-06,Wimbledon,Grand Slam,4th Round,Grass,Jarry N.,Norrie C.,Norrie C.,3-6 6-7 7-6 7-6 3-6,1710.2,1793.3,1701.3,1800.5,0.4037,1.91,1.83
+2025-07-06,Wimbledon,Grand Slam,4th Round,Grass,Khachanov K.,Majchrzak K.,Khachanov K.,6-4 6-2 6-3,1861.4,1706.0,1866.3,1694.9,0.6818,1.36,3.2
 2025-07-07,Wimbledon,Grand Slam,4th Round,Grass,Cilic M.,Cobolli F.,Cobolli F.,4-6 4-6 7-6 6-7,1823.5,1847.7,1817.2,1862.0,0.66,2.0,1.83
 2025-07-07,Wimbledon,Grand Slam,4th Round,Grass,Djokovic N.,De Minaur A.,Djokovic N.,1-6 6-4 6-4 6-4,2166.3,1955.0,2169.0,1950.8,0.8399,1.17,5.0
 2025-07-07,Wimbledon,Grand Slam,4th Round,Grass,Sonego L.,Shelton B.,Shelton B.,6-3 1-6 6-7 5-7,1707.7,1838.7,1701.3,1847.2,0.4467,3.75,1.29
@@ -900,7 +890,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-07-19,Nordea Open,ATP250,Semifinals,Clay,Cerundolo F.,Darderi L.,Darderi L.,2-6 6-3 6-7,1844.7,1714.0,1828.8,1736.6,0.6613,1.57,2.3
 2025-07-19,Suisse Open Gstaad,ATP250,Semifinals,Clay,Bublik A.,Cazaux A.,Bublik A.,6-1 7-5,1821.0,1691.1,1827.5,1677.3,0.7024,1.4,3.0
 2025-07-20,Suisse Open Gstaad,ATP250,The Final,Clay,Cerundolo J.M.,Bublik A.,Bublik A.,4-6 6-4 3-6,1712.3,1827.5,1698.7,1834.4,0.3643,4.0,1.25
-2025-07-21,Citi Open,ATP500,1st Round,Hard,Norrie C.,Harris B.,Norrie C.,6-3 7-6,1798.7,1594.4,1803.1,1581.8,0.811,1.2,4.5
 2025-07-21,Citi Open,ATP500,1st Round,Hard,Tien L.,Nava E.,Tien L.,6-1 6-4,1644.9,1547.5,1662.0,1528.6,0.6357,1.67,2.2
 2025-07-22,Citi Open,ATP500,2nd Round,Hard,Evans D.,Michelsen A.,Evans D.,6-4 6-4,1670.4,1725.5,1682.3,1707.7,0.3947,3.1,1.33
 2025-07-22,Citi Open,ATP500,2nd Round,Hard,McDonald M.,Shelton B.,Shelton B.,3-6 4-6,1676.7,1844.7,1659.8,1852.0,0.2524,3.75,1.29
@@ -937,6 +926,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-07-27,Citi Open,ATP500,The Final,Hard,De Minaur A.,Davidovich Fokina A.,De Minaur A.,5-7 6-1 7-6,1969.5,1848.3,1975.6,1841.2,0.6747,1.4,3.0
 2025-07-28,Canadian Open,Masters 1000,1st Round,Hard,Blockx A.,Svrcina D.,Svrcina D.,4-6 2-6,1409.4,1484.0,1376.6,1514.2,0.3797,1.45,2.7
 2025-07-28,Canadian Open,Masters 1000,1st Round,Hard,Schoolkate T.,Fonseca J.,Schoolkate T.,7-6 6-4,1573.2,1787.7,1620.9,1752.9,0.2818,4.0,1.22
+2025-07-29,Canadian Open,Masters 1000,2nd Round,Hard,Ficovich J.P.,Khachanov K.,Khachanov K.,4-6 2-6,1609.8,1859.9,1596.1,1863.1,0.2169,6.5,1.12
 2025-07-29,Canadian Open,Masters 1000,2nd Round,Hard,Medvedev D.,Svrcina D.,Medvedev D.,7-6 6-4,1949.4,1514.2,1950.7,1508.6,0.9253,1.07,8.5
 2025-07-29,Canadian Open,Masters 1000,2nd Round,Hard,Michelsen A.,Barrios M.,Michelsen A.,7-6 6-3,1707.7,1476.2,1714.1,1464.8,0.7773,1.22,4.33
 2025-07-29,Canadian Open,Masters 1000,2nd Round,Hard,Mpetshi G.,Rune H.,Rune H.,6-7 3-6,1652.6,1930.0,1646.0,1933.8,0.1944,2.38,1.6
@@ -948,8 +938,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-07-30,Canadian Open,Masters 1000,2nd Round,Hard,Lehecka J.,McDonald M.,Lehecka J.,7-6 6-4,1892.5,1693.7,1898.9,1679.4,0.7532,1.3,3.25
 2025-07-30,Canadian Open,Masters 1000,2nd Round,Hard,Mensik J.,Boyer T.,Mensik J.,6-4 6-4,1877.4,1502.0,1881.0,1494.8,0.8945,1.2,4.5
 2025-07-30,Canadian Open,Masters 1000,2nd Round,Hard,Moutet C.,Davidovich Fokina A.,Davidovich Fokina A.,4-6 3-6,1770.2,1841.2,1760.3,1849.7,0.3729,2.3,1.62
-2025-07-30,Canadian Open,Masters 1000,2nd Round,Hard,Norrie C.,Vukic A.,Vukic A.,3-6 7-6 3-6,1805.6,1616.3,1791.6,1638.1,0.7135,1.36,2.9
-2025-07-30,Canadian Open,Masters 1000,2nd Round,Hard,Opelka R.,Machac T.,Opelka R.,7-6 6-7 6-3,1760.2,1902.4,1776.4,1880.4,0.2797,2.3,1.62
 2025-07-30,Canadian Open,Masters 1000,2nd Round,Hard,Quinn E.,Nakashima B.,Nakashima B.,6-7 4-6,1622.5,1765.2,1607.4,1772.4,0.2488,3.0,1.4
 2025-07-30,Canadian Open,Masters 1000,2nd Round,Hard,Shapovalov D.,Tien L.,Tien L.,6-7 5-7,1807.2,1695.2,1795.0,1724.9,0.6799,1.6,2.38
 2025-07-30,Canadian Open,Masters 1000,2nd Round,Hard,Shelton B.,Mannarino A.,Shelton B.,6-2 6-3,1861.0,1664.9,1867.4,1661.2,0.7558,1.18,5.0
@@ -962,6 +950,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-07-31,Canadian Open,Masters 1000,2nd Round,Hard,Tsitsipas S.,O Connell C.,O Connell C.,4-6 6-4 2-6,1897.3,1607.7,1883.2,1631.1,0.8231,1.36,3.0
 2025-07-31,Canadian Open,Masters 1000,3rd Round,Hard,Etcheverry T.,Cerundolo F.,Cerundolo F.,3-6 4-6,1674.1,1817.9,1666.2,1824.9,0.329,2.5,1.53
 2025-07-31,Canadian Open,Masters 1000,3rd Round,Hard,Michelsen A.,Musetti L.,Michelsen A.,3-6 7-6 6-4,1714.1,1950.8,1738.4,1933.3,0.3256,2.5,1.53
+2025-07-31,Canadian Open,Masters 1000,3rd Round,Hard,Nava E.,Khachanov K.,Khachanov K.,7-6 4-6 1-6,1585.2,1863.1,1576.8,1865.9,0.1829,4.0,1.25
 2025-07-31,Canadian Open,Masters 1000,3rd Round,Hard,Opelka R.,Tien L.,Tien L.,6-7 3-6,1776.4,1724.9,1763.0,1750.6,0.5984,2.1,1.73
 2025-07-31,Canadian Open,Masters 1000,3rd Round,Hard,Ruud C.,Borges N.,Ruud C.,7-5 6-4,1906.6,1730.9,1911.4,1723.2,0.6764,1.5,2.5
 2025-08-01,Canadian Open,Masters 1000,3rd Round,Hard,Fils A.,Lehecka J.,Lehecka J.,6-3 3-6 4-6,1923.4,1898.9,1907.8,1913.1,0.5091,2.2,1.7
@@ -994,7 +983,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-08-09,Western & Southern Financial Group Masters,Masters 1000,1st Round,Hard,Riedi L.,Tien L.,Tien L.,3-6 4-6,1479.6,1727.6,1466.2,1736.1,0.2204,3.0,1.4
 2025-08-09,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Cobolli F.,Atmane T.,Atmane T.,4-6 6-3 6-7,1850.9,1528.9,1825.0,1578.2,0.8127,1.3,3.4
 2025-08-09,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Etcheverry T.,Auger-Aliassime F.,Auger-Aliassime F.,2-6 6-7,1683.0,1784.8,1673.8,1791.6,0.3594,2.8,1.4
-2025-08-09,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Mannarino A.,Machac T.,Mannarino A.,6-3 6-3,1672.1,1880.4,1683.7,1856.0,0.1893,2.3,1.57
 2025-08-09,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Marozsan F.,Tsitsipas S.,Tsitsipas S.,6-7 2-6,1761.2,1883.2,1750.9,1888.8,0.3434,1.75,2.0
 2025-08-09,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Michelsen A.,Moutet C.,Michelsen A.,3-6 6-3 6-4,1744.1,1769.9,1760.3,1756.6,0.529,1.8,2.05
 2025-08-09,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Musetti L.,Bonzi B.,Bonzi B.,7-5 4-6 6-7,1933.3,1630.3,1914.7,1655.3,0.7681,1.36,3.2
@@ -1006,8 +994,8 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-08-10,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Boyer T.,Lehecka J.,Lehecka J.,6-4 1-6 4-6,1522.7,1901.6,1516.0,1904.3,0.1392,5.0,1.17
 2025-08-10,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Mensik J.,Quinn E.,Mensik J.,6-4 6-2,1862.2,1637.3,1869.6,1626.9,0.8535,1.53,2.7
 2025-08-10,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Nava E.,Fritz T.,Fritz T.,4-6 4-6,1606.1,1961.1,1600.5,1963.1,0.1288,6.34,1.16
-2025-08-10,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Norrie C.,Bautista Agut R.,Bautista Agut R.,4-6 3-6,1791.6,1735.9,1780.7,1745.9,0.5874,1.67,2.2
 2025-08-10,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Opelka R.,De Minaur A.,Opelka R.,7-6 6-4,1767.1,1971.2,1784.9,1957.3,0.2732,4.33,1.2
+2025-08-10,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Royer V.,Khachanov K.,Khachanov K.,4-6 6-7,1464.6,1884.4,1457.8,1885.8,0.1065,3.75,1.25
 2025-08-10,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Rublev A.,Tien L.,Rublev A.,7-6 6-3,1830.5,1736.1,1836.5,1720.1,0.6178,1.44,2.63
 2025-08-10,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Tiafoe F.,Carballes Baena R.,Tiafoe F.,6-4 6-3,1783.8,1642.9,1789.4,1636.5,0.6969,1.22,4.33
 2025-08-10,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Walton A.,Medvedev D.,Walton A.,6-7 6-4 6-1,1618.9,1938.2,1657.6,1924.1,0.1167,5.0,1.17
@@ -1019,6 +1007,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-08-11,Western & Southern Financial Group Masters,Masters 1000,3rd Round,Hard,Sonego L.,Fritz T.,Fritz T.,6-7 5-7,1702.8,1963.1,1699.2,1966.2,0.2007,5.0,1.18
 2025-08-12,Western & Southern Financial Group Masters,Masters 1000,3rd Round,Hard,Atmane T.,Fonseca J.,Atmane T.,6-3 6-4,1578.2,1764.7,1620.0,1731.9,0.2891,3.6,1.25
 2025-08-12,Western & Southern Financial Group Masters,Masters 1000,3rd Round,Hard,Diallo G.,Sinner J.,Sinner J.,2-6 6-7,1849.5,2261.3,1846.1,2262.9,0.0563,9.0,1.04
+2025-08-12,Western & Southern Financial Group Masters,Masters 1000,3rd Round,Hard,Khachanov K.,Brooksby J.,Khachanov K.,6-3 6-3,1885.8,1824.9,1892.7,1812.1,0.62,1.44,2.8
 2025-08-12,Western & Southern Financial Group Masters,Masters 1000,3rd Round,Hard,Mannarino A.,Paul T.,Mannarino A.,5-7 6-3 6-4,1683.7,1936.3,1696.0,1920.2,0.2077,3.6,1.3
 2025-08-12,Western & Southern Financial Group Masters,Masters 1000,3rd Round,Hard,Medjedovic H.,Alcaraz C.,Alcaraz C.,4-6 4-6,1768.7,2190.1,1765.4,2191.8,0.1412,6.0,1.13
 2025-08-12,Western & Southern Financial Group Masters,Masters 1000,3rd Round,Hard,Rublev A.,Popyrin A.,Rublev A.,6-7 7-6 7-5,1836.5,1777.4,1843.3,1767.9,0.5916,1.5,2.63
@@ -1045,8 +1034,8 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-08-24,US Open,Grand Slam,1st Round,Hard,Davidovich Fokina A.,Shevchenko A.,Davidovich Fokina A.,6-1 6-1 6-2,1861.3,1638.0,1865.9,1631.2,0.7713,1.14,5.5
 2025-08-24,US Open,Grand Slam,1st Round,Hard,Fritz T.,Nava E.,Fritz T.,7-5 6-2 6-3,1951.3,1600.5,1953.3,1594.9,0.8691,1.08,8.0
 2025-08-24,US Open,Grand Slam,1st Round,Hard,Lehecka J.,Coric B.,Lehecka J.,3-6 6-4 7-6 6-1,1897.4,1619.0,1901.8,1615.9,0.8161,1.13,6.0
-2025-08-24,US Open,Grand Slam,1st Round,Hard,Machac T.,Nardi L.,Machac T.,6-3 6-1 6-1,1856.0,1599.5,1861.9,1591.6,0.8392,1.4,3.0
 2025-08-24,US Open,Grand Slam,1st Round,Hard,Mensik J.,Jarry N.,Mensik J.,7-6 6-3 6-4,1869.6,1661.6,1877.5,1656.3,0.8194,1.36,3.2
+2025-08-25,US Open,Grand Slam,1st Round,Hard,Basavareddy N.,Khachanov K.,Khachanov K.,7-6 3-6 5-7 1-6,1554.7,1892.7,1547.4,1894.8,0.1598,4.0,1.25
 2025-08-25,US Open,Grand Slam,1st Round,Hard,Cobolli F.,Passaro F.,Cobolli F.,7-5 4-6 6-4 3-6 6-3,1825.0,1554.5,1830.2,1545.6,0.8093,1.22,4.33
 2025-08-25,US Open,Grand Slam,1st Round,Hard,De Jong J.,Nakashima B.,Nakashima B.,2-6 7-6 6-2 2-6 6-7,1716.3,1761.9,1696.0,1772.1,0.3731,4.0,1.25
 2025-08-25,US Open,Grand Slam,1st Round,Hard,Djokovic N.,Tien L.,Djokovic N.,6-1 7-6 6-2,2166.1,1720.1,2166.9,1717.0,0.9314,1.14,5.5
@@ -1070,7 +1059,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-08-27,US Open,Grand Slam,1st Round,Hard,Paul T.,Moller E.,Paul T.,6-3 6-3 6-1,1920.2,1411.6,1921.2,1407.5,0.9224,1.03,15.0
 2025-08-27,US Open,Grand Slam,1st Round,Hard,Tabilo A.,Zverev A.,Zverev A.,2-6 6-7 4-6,1687.1,1992.7,1682.7,1994.9,0.1266,17.0,1.03
 2025-08-27,US Open,Grand Slam,2nd Round,Hard,Collignon R.,Ruud C.,Collignon R.,6-4 3-6 3-6 6-4 7-5,1468.1,1890.4,1532.1,1873.9,0.1127,5.0,1.17
-2025-08-27,US Open,Grand Slam,2nd Round,Hard,Comesana F.,Norrie C.,Norrie C.,6-7 3-6 7-6 6-7,1690.5,1792.2,1675.5,1798.9,0.3565,2.63,1.5
 2025-08-27,US Open,Grand Slam,2nd Round,Hard,Djokovic N.,Svajda Z.,Djokovic N.,6-7 6-3 6-3 6-1,2166.9,1555.7,2167.3,1554.2,0.9733,1.05,11.0
 2025-08-27,US Open,Grand Slam,2nd Round,Hard,Fonseca J.,Machac T.,Machac T.,6-7 2-6 3-6,1751.1,1861.9,1736.2,1872.7,0.2636,1.8,2.0
 2025-08-27,US Open,Grand Slam,2nd Round,Hard,Fritz T.,Harris L.,Fritz T.,4-6 7-6 6-2 6-4,1953.3,1648.9,1955.8,1644.8,0.837,1.06,10.0
@@ -1084,6 +1072,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-08-28,US Open,Grand Slam,2nd Round,Hard,Cerundolo F.,Riedi L.,Riedi L.,6-3 6-4 4-6 4-6 2-6,1833.4,1514.0,1813.4,1570.9,0.8344,1.44,2.75
 2025-08-28,US Open,Grand Slam,2nd Round,Hard,Cobolli F.,Brooksby J.,Cobolli F.,5-7 6-3 6-4 2-6 7-6,1830.2,1818.8,1844.6,1803.9,0.4637,1.62,2.3
 2025-08-28,US Open,Grand Slam,2nd Round,Hard,Goffin D.,Musetti L.,Musetti L.,4-6 0-6 2-6,1683.0,1919.0,1679.7,1923.4,0.2958,5.5,1.14
+2025-08-28,US Open,Grand Slam,2nd Round,Hard,Khachanov K.,Majchrzak K.,Majchrzak K.,6-2 7-6 4-6 5-7 6-7,1894.8,1693.0,1882.0,1720.8,0.7753,1.2,4.5
 2025-08-28,US Open,Grand Slam,2nd Round,Hard,Popyrin A.,Sinner J.,Sinner J.,3-6 2-6 2-6,1779.1,2265.9,1777.8,2267.0,0.0535,21.0,1.02
 2025-08-28,US Open,Grand Slam,2nd Round,Hard,Rublev A.,Boyer T.,Rublev A.,6-3 6-3 5-7 7-6,1849.3,1555.1,1851.8,1545.3,0.8139,1.05,11.0
 2025-08-28,US Open,Grand Slam,2nd Round,Hard,Rune H.,Struff J.L.,Struff J.L.,6-7 6-2 3-6 6-4 5-7,1919.7,1734.0,1903.3,1746.9,0.7899,1.33,3.4
@@ -1097,7 +1086,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-08-29,US Open,Grand Slam,3rd Round,Hard,Darderi L.,Alcaraz C.,Alcaraz C.,2-6 4-6 0-6,1794.3,2202.3,1791.5,2204.0,0.0578,26.0,1.01
 2025-08-29,US Open,Grand Slam,3rd Round,Hard,Struff J.L.,Tiafoe F.,Struff J.L.,6-4 6-3 7-6,1746.9,1808.2,1757.1,1797.7,0.3535,3.2,1.36
 2025-08-30,US Open,Grand Slam,3rd Round,Hard,Kym J.,Fritz T.,Fritz T.,6-7 7-6 4-6 4-6,1653.8,1955.8,1642.3,1958.3,0.1557,10.0,1.06
-2025-08-30,US Open,Grand Slam,3rd Round,Hard,Machac T.,Blanchet U.,Machac T.,7-5 6-3 6-1,1872.7,1584.8,1877.8,1572.9,0.8564,1.14,5.5
 2025-08-30,US Open,Grand Slam,3rd Round,Hard,Norrie C.,Djokovic N.,Djokovic N.,4-6 7-6 2-6 3-6,1798.9,2167.3,1796.9,2168.5,0.085,8.0,1.08
 2025-08-30,US Open,Grand Slam,3rd Round,Hard,Rublev A.,Wong C.,Rublev A.,2-6 6-4 6-3 4-6 6-3,1851.8,1568.4,1854.5,1558.5,0.8194,1.08,8.0
 2025-08-30,US Open,Grand Slam,3rd Round,Hard,Shapovalov D.,Sinner J.,Sinner J.,7-5 4-6 3-6 3-6,1792.9,2267.0,1791.8,2268.2,0.0649,21.0,1.02
@@ -1118,7 +1106,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-09-05,US Open,Grand Slam,Semifinals,Hard,Djokovic N.,Alcaraz C.,Alcaraz C.,4-6 6-7 2-6,2172.2,2208.6,2167.0,2217.6,0.5615,4.0,1.25
 2025-09-06,US Open,Grand Slam,Semifinals,Hard,Sinner J.,Auger-Aliassime F.,Sinner J.,6-1 3-6 6-3 6-4,2272.4,1843.7,2273.9,1842.3,0.9205,1.03,17.0
 2025-09-07,US Open,Grand Slam,The Final,Hard,Sinner J.,Alcaraz C.,Alcaraz C.,2-6 6-3 1-6 4-6,2273.9,2217.6,2262.9,2229.4,0.6699,1.75,2.15
-2025-09-17,Chengdu Open,ATP250,1st Round,Hard,Norrie C.,Zhou Y.,Zhou Y.,7-6 4-6 6-7,1796.9,1421.4,1780.1,1492.8,0.8807,1.2,4.5
 2025-09-17,Hangzhou Open,ATP250,1st Round,Hard,Tien L.,Navone M.,Tien L.,5-7 6-3 6-4,1717.0,1661.0,1735.0,1646.6,0.6829,1.44,2.75
 2025-09-18,Hangzhou Open,ATP250,1st Round,Hard,Berrettini M.,Svrcina D.,Svrcina D.,3-6 3-6,1905.5,1508.6,1886.5,1573.7,0.8743,1.36,3.2
 2025-09-19,Chengdu Open,ATP250,2nd Round,Hard,Nakashima B.,Shang J.,Nakashima B.,7-5 6-3,1754.8,1737.6,1766.0,1720.1,0.5276,1.57,2.38
@@ -1141,12 +1128,12 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-09-23,Hangzhou Open,ATP250,The Final,Hard,Royer V.,Bublik A.,Bublik A.,6-7 6-7,1697.9,1894.3,1681.8,1899.2,0.3749,4.0,1.25
 2025-09-24,Japan Open Tennis Championships,ATP500,1st Round,Hard,Berrettini M.,Munar J.,Berrettini M.,6-4 6-2,1886.5,1727.2,1892.5,1721.0,0.6937,2.3,1.62
 2025-09-24,Japan Open Tennis Championships,ATP500,1st Round,Hard,Tiafoe F.,Fucsovics M.,Fucsovics M.,6-3 1-6 5-7,1797.7,1775.5,1788.1,1786.3,0.5831,2.0,1.8
+2025-09-25,China Open,ATP500,1st Round,Hard,Muller A.,Khachanov K.,Muller A.,4-6 7-6 6-4,1675.6,1882.0,1698.9,1869.2,0.22,4.5,1.2
 2025-09-25,China Open,ATP500,1st Round,Hard,Sinner J.,Cilic M.,Sinner J.,6-2 6-2,2262.9,1800.3,2264.1,1799.4,0.9417,1.03,17.0
 2025-09-25,China Open,ATP500,1st Round,Hard,Ugo Carabelli C.,Davidovich Fokina A.,Davidovich Fokina A.,1-6 3-6,1630.3,1850.7,1621.2,1855.4,0.2019,6.0,1.13
 2025-09-25,Japan Open Tennis Championships,ATP500,1st Round,Hard,Baez S.,Alcaraz C.,Alcaraz C.,4-6 2-6,1644.7,2229.4,1643.9,2230.1,0.0329,19.0,1.02
 2025-09-25,Japan Open Tennis Championships,ATP500,1st Round,Hard,Fritz T.,Diallo G.,Fritz T.,4-6 6-3 7-6,1960.8,1807.5,1965.8,1796.3,0.7632,1.29,3.75
 2025-09-25,Japan Open Tennis Championships,ATP500,1st Round,Hard,Korda S.,Giron M.,Korda S.,4-6 6-3 7-6,1835.7,1722.6,1843.6,1715.2,0.6811,1.53,2.5
-2025-09-25,Japan Open Tennis Championships,ATP500,1st Round,Hard,Machac T.,Shimabukuro S.,Shimabukuro S.,3-6 6-7,1865.7,1508.0,1838.1,1571.6,0.9088,1.3,3.5
 2025-09-25,Japan Open Tennis Championships,ATP500,1st Round,Hard,Michelsen A.,Quinn E.,Quinn E.,5-7 2-6,1733.2,1581.6,1712.1,1614.5,0.7575,1.62,2.3
 2025-09-25,Japan Open Tennis Championships,ATP500,1st Round,Hard,Nakashima B.,Thompson J.,Nakashima B.,6-7 7-6 6-2,1763.4,1790.7,1776.0,1779.7,0.4499,1.44,2.75
 2025-09-25,Japan Open Tennis Championships,ATP500,1st Round,Hard,Rune H.,Medjedovic H.,Rune H.,7-6 6-1,1903.3,1760.5,1910.0,1748.8,0.6776,1.62,2.3
@@ -1185,13 +1172,13 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-10-01,China Open,ATP500,The Final,Hard,Tien L.,Sinner J.,Sinner J.,2-6 2-6,1767.6,2268.5,1765.4,2269.5,0.0529,15.0,1.03
 2025-10-01,Shanghai Masters,Masters 1000,1st Round,Hard,Berrettini M.,Mannarino A.,Mannarino A.,5-7 6-7,1881.5,1712.2,1866.4,1723.1,0.6726,1.67,2.2
 2025-10-01,Shanghai Masters,Masters 1000,1st Round,Hard,Korda S.,Bergs Z.,Bergs Z.,4-6 5-7,1840.0,1651.0,1822.9,1675.7,0.7424,1.4,3.0
+2025-10-01,Shanghai Masters,Masters 1000,1st Round,Hard,Vacherot V.,Djere L.,Vacherot V.,6-3 6-4,1455.6,1710.0,1515.7,1693.3,0.2424,1.53,2.5
 2025-10-03,Shanghai Masters,Masters 1000,1st Round,Hard,Kecmanovic M.,Tien L.,Tien L.,6-4 3-6 4-6,1675.5,1765.4,1668.0,1780.7,0.3621,1.91,1.91
 2025-10-03,Shanghai Masters,Masters 1000,2nd Round,Hard,Bublik A.,Vacherot V.,Vacherot V.,6-3 3-6 4-6,1884.1,1515.7,1866.3,1579.7,0.8107,1.29,3.75
 2025-10-03,Shanghai Masters,Masters 1000,2nd Round,Hard,Djokovic N.,Cilic M.,Djokovic N.,7-6 6-4,2167.0,1802.9,2168.3,1801.4,0.9061,1.08,8.0
 2025-10-03,Shanghai Masters,Masters 1000,2nd Round,Hard,Fritz T.,Marozsan F.,Fritz T.,2-6 7-6 7-6,1976.8,1762.7,1980.6,1755.9,0.7635,1.25,4.0
 2025-10-03,Shanghai Masters,Masters 1000,2nd Round,Hard,Goffin D.,Shelton B.,Goffin D.,6-2 6-4,1671.6,1948.9,1684.8,1927.8,0.1615,3.75,1.29
 2025-10-03,Shanghai Masters,Masters 1000,2nd Round,Hard,Hanfmann Y.,Tiafoe F.,Hanfmann Y.,6-7 6-2 6-1,1679.9,1788.1,1696.8,1776.5,0.3279,2.5,1.53
-2025-10-03,Shanghai Masters,Masters 1000,2nd Round,Hard,Machac T.,Bellucci M.,Machac T.,6-3 6-4,1838.1,1670.5,1846.7,1658.5,0.7591,1.5,2.63
 2025-10-03,Shanghai Masters,Masters 1000,2nd Round,Hard,Mannarino A.,Cerundolo F.,Cerundolo F.,6-7 6-7,1723.1,1798.6,1717.2,1807.7,0.4093,1.91,1.91
 2025-10-03,Shanghai Masters,Masters 1000,2nd Round,Hard,Munar J.,Cobolli F.,Munar J.,7-5 6-1,1733.5,1839.2,1747.5,1820.1,0.3924,2.1,1.73
 2025-10-03,Shanghai Masters,Masters 1000,2nd Round,Hard,Rune H.,Baez S.,Rune H.,7-5 6-4,1899.9,1656.1,1904.2,1651.3,0.8418,1.17,5.0
@@ -1203,10 +1190,10 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-10-04,Shanghai Masters,Masters 1000,2nd Round,Hard,Moutet C.,Tien L.,Tien L.,6-4 4-6 4-6,1751.3,1780.7,1740.1,1799.2,0.4093,1.91,1.91
 2025-10-04,Shanghai Masters,Masters 1000,2nd Round,Hard,Musetti L.,Comesana F.,Musetti L.,6-4 6-0,1928.9,1690.3,1933.2,1682.0,0.7543,1.25,4.0
 2025-10-04,Shanghai Masters,Masters 1000,2nd Round,Hard,Nakashima B.,Majchrzak K.,Majchrzak K.,4-6 0-6,1786.3,1733.3,1772.9,1754.1,0.5905,1.5,2.63
-2025-10-04,Shanghai Masters,Masters 1000,2nd Round,Hard,Norrie C.,Cazaux A.,Norrie C.,6-3 0-6 7-6,1773.9,1742.3,1782.4,1724.5,0.5456,1.91,1.91
 2025-10-04,Shanghai Masters,Masters 1000,2nd Round,Hard,Rinderknech A.,Michelsen A.,Rinderknech A.,6-3 6-4,1737.3,1712.1,1748.7,1698.3,0.4907,2.0,1.8
 2025-10-04,Shanghai Masters,Masters 1000,2nd Round,Hard,Royer V.,Zverev A.,Zverev A.,4-6 4-6,1710.7,1982.0,1699.8,1984.6,0.1818,4.0,1.25
 2025-10-04,Shanghai Masters,Masters 1000,2nd Round,Hard,Rublev A.,Nishioka Y.,Nishioka Y.,6-2 1-6 4-6,1823.9,1708.1,1813.2,1722.1,0.6617,1.29,3.75
+2025-10-04,Shanghai Masters,Masters 1000,2nd Round,Hard,Shang J.,Khachanov K.,Shang J.,7-6 6-3,1712.2,1869.2,1738.1,1857.4,0.2909,2.38,1.57
 2025-10-04,Shanghai Masters,Masters 1000,2nd Round,Hard,Sinner J.,Altmaier D.,Sinner J.,6-3 6-3,2269.5,1658.6,2270.0,1657.9,0.9735,1.03,17.0
 2025-10-04,Shanghai Masters,Masters 1000,2nd Round,Hard,Svrcina D.,Medvedev D.,Medvedev D.,1-6 1-6,1606.8,1923.8,1597.7,1926.1,0.1312,4.33,1.22
 2025-10-05,Shanghai Masters,Masters 1000,3rd Round,Hard,Bergs Z.,Cerundolo F.,Bergs Z.,7-6 6-3,1675.7,1807.7,1698.0,1792.0,0.3394,2.3,1.62
@@ -1221,6 +1208,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-10-06,Shanghai Masters,Masters 1000,3rd Round,Hard,Tien L.,Norrie C.,Tien L.,7-6 6-3,1799.2,1782.4,1818.4,1773.6,0.569,1.73,2.1
 2025-10-06,Shanghai Masters,Masters 1000,3rd Round,Hard,Zverev A.,Rinderknech A.,Rinderknech A.,6-4 3-6 2-6,1984.6,1748.7,1972.8,1768.2,0.8228,1.3,3.5
 2025-10-07,Shanghai Masters,Masters 1000,4th Round,Hard,Djokovic N.,Munar J.,Djokovic N.,6-3 5-7 6-2,2169.0,1757.5,2170.0,1755.7,0.9292,1.17,5.0
+2025-10-07,Shanghai Masters,Masters 1000,4th Round,Hard,Griekspoor T.,Vacherot V.,Vacherot V.,6-4 6-7 4-6,1791.5,1579.7,1773.1,1633.5,0.7015,1.62,2.3
 2025-10-07,Shanghai Masters,Masters 1000,4th Round,Hard,Mpetshi G.,Rune H.,Rune H.,4-6 7-6 3-6,1699.9,1911.8,1691.7,1916.8,0.2399,2.63,1.5
 2025-10-08,Shanghai Masters,Masters 1000,4th Round,Hard,Auger-Aliassime F.,Musetti L.,Auger-Aliassime F.,6-4 6-2,1856.0,1939.5,1867.6,1926.3,0.4918,1.91,1.91
 2025-10-08,Shanghai Masters,Masters 1000,4th Round,Hard,Borges N.,De Minaur A.,De Minaur A.,5-7 2-6,1738.4,1960.4,1732.3,1964.3,0.2215,6.0,1.13
@@ -1232,6 +1220,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-10-10,Shanghai Masters,Masters 1000,Quarterfinals,Hard,Rinderknech A.,Auger-Aliassime F.,Rinderknech A.,6-3 6-4,1785.6,1867.6,1800.6,1856.1,0.3433,3.5,1.3
 2025-10-11,Shanghai Masters,Masters 1000,Semifinals,Hard,Medvedev D.,Rinderknech A.,Rinderknech A.,6-4 2-6 4-6,1946.7,1800.6,1935.4,1817.7,0.7374,1.36,3.2
 2025-10-11,Shanghai Masters,Masters 1000,Semifinals,Hard,Vacherot V.,Djokovic N.,Vacherot V.,6-3 6-4,1690.1,2170.8,1752.2,2160.0,0.0716,6.5,1.11
+2025-10-12,Shanghai Masters,Masters 1000,The Final,Hard,Vacherot V.,Rinderknech A.,Vacherot V.,4-6 6-3 6-3,1752.2,1817.7,1790.4,1803.2,0.5096,2.3,1.62
 2025-10-13,Nordic Open,ATP250,1st Round,Hard,Popyrin A.,Korda S.,Korda S.,7-6 1-6 3-6,1777.8,1822.9,1767.8,1832.8,0.4337,2.75,1.44
 2025-10-14,Almaty Open,ATP250,1st Round,Hard,Nakashima B.,Medjedovic H.,Nakashima B.,7-6 6-2,1772.9,1748.8,1783.7,1731.1,0.5154,1.8,2.0
 2025-10-14,European Open,ATP250,1st Round,Hard,Van De Zandschulp B.,Fonseca J.,Van De Zandschulp B.,7-5 7-6,1694.2,1736.2,1707.8,1712.1,0.4624,2.75,1.44
@@ -1243,6 +1232,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-10-15,European Open,ATP250,2nd Round,Hard,Giron M.,Davidovich Fokina A.,Davidovich Fokina A.,7-6 1-6 4-6,1714.9,1844.6,1708.0,1851.4,0.3165,2.5,1.53
 2025-10-15,Nordic Open,ATP250,2nd Round,Hard,Cilic M.,Ruud C.,Ruud C.,6-7 4-6,1803.7,1886.1,1798.6,1893.0,0.4288,2.38,1.57
 2025-10-15,Nordic Open,ATP250,2nd Round,Hard,Korda S.,Majchrzak K.,Korda S.,6-4 4-6 7-5,1832.8,1757.5,1841.8,1743.5,0.6256,1.5,2.63
+2025-10-16,Almaty Open,ATP250,2nd Round,Hard,Struff J.L.,Khachanov K.,Struff J.L.,4-6 7-6 6-3,1760.6,1857.4,1771.6,1846.8,0.3287,2.75,1.44
 2025-10-16,Almaty Open,ATP250,2nd Round,Hard,Vukic A.,Michelsen A.,Michelsen A.,3-6 2-6,1618.9,1704.9,1608.2,1716.1,0.3761,2.75,1.44
 2025-10-16,Almaty Open,ATP250,2nd Round,Hard,Walton A.,Medvedev D.,Medvedev D.,5-7 6-7,1623.4,1935.4,1617.4,1937.7,0.1286,5.5,1.14
 2025-10-16,European Open,ATP250,2nd Round,Hard,Auger-Aliassime F.,Dzumhur D.,Auger-Aliassime F.,7-6 4-6 7-6,1856.1,1607.7,1859.7,1603.5,0.8528,1.13,6.0
@@ -1267,6 +1257,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-10-19,Nordic Open,ATP250,The Final,Hard,Humbert U.,Ruud C.,Ruud C.,2-6 3-6,1805.7,1906.7,1798.2,1913.1,0.4538,2.38,1.57
 2025-10-20,Swiss Indoors,ATP500,1st Round,Hard,Bernet H.,Mensik J.,Mensik J.,6-7 7-6 3-6,1500.0,1844.1,1487.3,1848.2,0.1141,5.5,1.14
 2025-10-20,Swiss Indoors,ATP500,1st Round,Hard,Sonego L.,Davidovich Fokina A.,Davidovich Fokina A.,6-7 4-6,1676.1,1834.6,1670.5,1840.7,0.3018,2.5,1.53
+2025-10-20,Vienna Open,ATP500,1st Round,Hard,Griekspoor T.,Khachanov K.,Griekspoor T.,6-3 5-7 6-4,1757.6,1846.8,1772.4,1836.3,0.3632,2.5,1.53
 2025-10-20,Vienna Open,ATP500,1st Round,Hard,Nakashima B.,Darderi L.,Nakashima B.,6-2 7-5,1771.5,1744.3,1782.1,1730.0,0.6835,1.3,3.5
 2025-10-20,Vienna Open,ATP500,1st Round,Hard,Rodionov J.,De Minaur A.,De Minaur A.,4-6 1-6,1582.1,1954.6,1577.1,1956.5,0.1196,10.0,1.06
 2025-10-20,Vienna Open,ATP500,1st Round,Hard,Tabilo A.,Bublik A.,Bublik A.,4-6 4-6,1753.2,1866.3,1743.3,1873.2,0.4202,2.75,1.44
@@ -1306,7 +1297,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-10-25,Vienna Open,ATP500,Semifinals,Hard,Zverev A.,Musetti L.,Zverev A.,6-4 7-5,1977.3,1931.9,1983.8,1922.7,0.6424,1.91,1.91
 2025-10-26,Swiss Indoors,ATP500,The Final,Hard,Davidovich Fokina A.,Fonseca J.,Fonseca J.,3-6 4-6,1851.0,1758.1,1837.8,1784.5,0.6367,2.1,1.73
 2025-10-26,Vienna Open,ATP500,The Final,Hard,Zverev A.,Sinner J.,Sinner J.,6-3 3-6 5-7,1983.8,2276.4,1981.4,2279.3,0.1537,7.0,1.1
-2025-10-27,BNP Paribas Masters,Masters 1000,1st Round,Hard,Baez S.,Norrie C.,Norrie C.,3-6 4-6,1632.3,1776.7,1625.0,1782.3,0.2738,4.5,1.2
 2025-10-27,BNP Paribas Masters,Masters 1000,1st Round,Hard,Bublik A.,Popyrin A.,Bublik A.,6-4 6-3,1879.2,1759.3,1885.8,1751.7,0.585,1.4,3.0
 2025-10-27,BNP Paribas Masters,Masters 1000,1st Round,Hard,Cerundolo F.,Dzumhur D.,Cerundolo F.,6-3 6-3,1791.8,1597.7,1797.4,1592.4,0.7875,1.36,3.2
 2025-10-27,BNP Paribas Masters,Masters 1000,1st Round,Hard,Cobolli F.,Machac T.,Cobolli F.,6-1 6-4,1818.0,1829.4,1833.0,1813.5,0.3805,1.73,2.1
@@ -1314,6 +1304,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-10-27,BNP Paribas Masters,Masters 1000,1st Round,Hard,Fearnley J.,Rublev A.,Rublev A.,1-6 4-6,1653.1,1804.2,1639.7,1809.0,0.26,2.38,1.57
 2025-10-27,BNP Paribas Masters,Masters 1000,1st Round,Hard,Michelsen A.,Bergs Z.,Bergs Z.,3-6 6-2 2-6,1700.2,1692.8,1685.3,1709.3,0.5001,1.8,2.0
 2025-10-27,BNP Paribas Masters,Masters 1000,1st Round,Hard,Nakashima B.,Muller A.,Muller A.,2-6 5-7,1770.3,1646.2,1754.9,1666.3,0.6886,1.33,3.4
+2025-10-27,BNP Paribas Masters,Masters 1000,1st Round,Hard,Quinn E.,Khachanov K.,Khachanov K.,1-6 1-6,1591.8,1836.3,1582.9,1839.6,0.1789,3.0,1.4
 2025-10-27,BNP Paribas Masters,Masters 1000,1st Round,Hard,Sonego L.,Korda S.,Sonego L.,6-2 6-3,1670.5,1819.6,1684.2,1803.7,0.2986,2.75,1.44
 2025-10-27,BNP Paribas Masters,Masters 1000,1st Round,Hard,Tien L.,Borges N.,Tien L.,6-2 7-6,1804.7,1726.1,1820.2,1715.3,0.625,1.53,2.5
 2025-10-28,BNP Paribas Masters,Masters 1000,1st Round,Hard,Comesana F.,Auger-Aliassime F.,Auger-Aliassime F.,7-6 3-6 3-6,1675.2,1892.4,1666.2,1896.5,0.1919,4.5,1.2
@@ -1333,6 +1324,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-10-29,BNP Paribas Masters,Masters 1000,2nd Round,Hard,Khachanov K.,Fonseca J.,Khachanov K.,6-1 3-6 6-3,1839.6,1805.8,1847.1,1787.2,0.5336,1.73,2.1
 2025-10-29,BNP Paribas Masters,Masters 1000,2nd Round,Hard,Muller A.,Auger-Aliassime F.,Auger-Aliassime F.,7-5 6-7 6-7,1666.3,1896.5,1660.0,1900.4,0.1852,4.0,1.29
 2025-10-29,BNP Paribas Masters,Masters 1000,2nd Round,Hard,Musetti L.,Sonego L.,Sonego L.,6-3 3-6 1-6,1922.7,1684.2,1905.7,1699.8,0.7436,1.29,3.75
+2025-10-29,BNP Paribas Masters,Masters 1000,2nd Round,Hard,Rinderknech A.,Vacherot V.,Vacherot V.,7-6 3-6 4-6,1814.3,1813.7,1802.1,1843.9,0.4224,2.3,1.62
 2025-10-29,BNP Paribas Masters,Masters 1000,2nd Round,Hard,Sinner J.,Bergs Z.,Sinner J.,6-4 6-2,2279.3,1709.3,2280.0,1708.1,0.9637,1.03,15.0
 2025-10-29,BNP Paribas Masters,Masters 1000,2nd Round,Hard,Zverev A.,Ugo Carabelli C.,Zverev A.,6-7 6-1 7-5,1981.4,1610.1,1983.0,1605.9,0.9128,1.03,15.0
 2025-10-30,BNP Paribas Masters,Masters 1000,3rd Round,Hard,Auger-Aliassime F.,Altmaier D.,Auger-Aliassime F.,3-6 6-3 6-2,1900.4,1675.0,1904.3,1669.5,0.798,1.4,3.0
@@ -1353,12 +1345,10 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-11-02,Hellenic Championship,ATP250,1st Round,Hard,Korda S.,Popyrin A.,Korda S.,4-6 6-3 6-4,1803.7,1751.7,1813.3,1742.1,0.5806,1.57,2.38
 2025-11-03,Open de Moselle,ATP250,1st Round,Hard,Berrettini M.,Halys Q.,Berrettini M.,6-2 6-4,1863.4,1586.8,1866.9,1582.0,0.8119,1.25,4.0
 2025-11-03,Open de Moselle,ATP250,1st Round,Hard,Blanchet U.,Tien L.,Tien L.,3-6 3-6,1515.5,1799.8,1504.5,1806.2,0.1661,4.33,1.22
-2025-11-03,Open de Moselle,ATP250,1st Round,Hard,Royer V.,Norrie C.,Norrie C.,3-6 7-6 3-6,1679.3,1791.5,1660.0,1797.9,0.3834,2.63,1.5
 2025-11-04,Hellenic Championship,ATP250,2nd Round,Hard,Korda S.,Dzumhur D.,Korda S.,4-6 6-3 6-3,1813.3,1604.5,1818.5,1599.6,0.8097,1.29,3.75
 2025-11-04,Hellenic Championship,ATP250,2nd Round,Hard,Tabilo A.,Djokovic N.,Djokovic N.,6-7 1-6,1752.7,2160.0,1750.2,2161.0,0.0742,4.5,1.2
 2025-11-04,Open de Moselle,ATP250,1st Round,Hard,Passaro F.,Blockx A.,Blockx A.,6-3 3-6 4-6,1545.6,1437.2,1512.6,1485.4,0.5685,2.5,1.53
 2025-11-04,Open de Moselle,ATP250,2nd Round,Hard,Cobolli F.,Sonego L.,Sonego L.,6-2 3-6 5-7,1821.9,1700.5,1802.7,1713.5,0.6126,1.73,2.1
-2025-11-04,Open de Moselle,ATP250,2nd Round,Hard,Norrie C.,Cazaux A.,Norrie C.,6-7 7-6 6-2,1797.9,1721.7,1805.1,1706.9,0.6198,1.8,2.0
 2025-11-05,Hellenic Championship,ATP250,2nd Round,Hard,Musetti L.,Wawrinka S.,Musetti L.,4-6 7-6 6-4,1905.7,1681.9,1910.3,1679.1,0.6912,1.17,5.0
 2025-11-05,Hellenic Championship,ATP250,2nd Round,Hard,Nakashima B.,Giron M.,Giron M.,6-7 1-6,1754.9,1694.4,1741.5,1706.9,0.5952,1.57,2.38
 2025-11-05,Open de Moselle,ATP250,2nd Round,Hard,Echargui M.,Tien L.,Tien L.,6-7 3-6,1500.0,1806.2,1484.6,1811.9,0.1552,8.0,1.08
@@ -1368,11 +1358,9 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2025-11-06,Hellenic Championship,ATP250,Quarterfinals,Hard,Djokovic N.,Borges N.,Djokovic N.,7-6 6-4,2161.0,1733.2,2161.9,1731.1,0.9289,1.17,5.0
 2025-11-06,Hellenic Championship,ATP250,Quarterfinals,Hard,Korda S.,Kecmanovic M.,Korda S.,6-3 6-2,1818.5,1681.9,1825.6,1675.7,0.6882,1.44,2.75
 2025-11-06,Hellenic Championship,ATP250,Quarterfinals,Hard,Muller A.,Musetti L.,Musetti L.,2-6 4-6,1695.7,1910.3,1689.1,1915.1,0.2636,4.5,1.2
-2025-11-06,Open de Moselle,ATP250,Quarterfinals,Hard,Norrie C.,Jacquet K.,Norrie C.,4-6 7-6 6-4,1805.1,1571.8,1808.9,1554.6,0.7473,1.3,3.5
 2025-11-06,Open de Moselle,ATP250,Quarterfinals,Hard,Tien L.,Berrettini M.,Tien L.,5-7 6-2 6-3,1811.9,1871.3,1834.5,1859.3,0.4714,2.2,1.67
 2025-11-07,Hellenic Championship,ATP250,Semifinals,Hard,Djokovic N.,Hanfmann Y.,Djokovic N.,6-3 6-4,2161.9,1729.1,2162.8,1727.1,0.9309,1.2,4.5
 2025-11-07,Hellenic Championship,ATP250,Semifinals,Hard,Korda S.,Musetti L.,Musetti L.,0-6 7-5 5-7,1825.6,1915.1,1817.2,1923.0,0.4374,2.1,1.73
-2025-11-07,Open de Moselle,ATP250,Semifinals,Hard,Norrie C.,Sonego L.,Norrie C.,4-6 6-2 6-4,1808.9,1722.4,1815.9,1715.1,0.5916,2.0,1.8
 2025-11-07,Open de Moselle,ATP250,Semifinals,Hard,Sachko V.,Tien L.,Tien L.,1-6 4-6,1560.5,1834.5,1548.6,1841.0,0.2026,5.0,1.17
 2025-11-08,Hellenic Championship,ATP250,The Final,Hard,Djokovic N.,Musetti L.,Djokovic N.,4-6 6-3 7-5,2162.8,1923.0,2165.1,1918.8,0.8489,1.36,3.2
 2025-11-08,Open de Moselle,ATP250,The Final,Hard,Tien L.,Norrie C.,Tien L.,6-3 3-6 7-6,1841.0,1815.9,1858.7,1807.4,0.5677,1.57,2.38
@@ -1398,7 +1386,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-01-05,Brisbane International,ATP250,1st Round,Hard,Lehecka J.,Machac T.,Lehecka J.,6-4 6-7 6-2,1866.0,1813.5,1876.8,1800.5,0.5271,1.5,2.63
 2026-01-05,Brisbane International,ATP250,1st Round,Hard,Medvedev D.,Fucsovics M.,Medvedev D.,6-2 6-3,1941.3,1766.4,1945.6,1761.0,0.7799,1.29,3.75
 2026-01-06,Brisbane International,ATP250,1st Round,Hard,Carreno Busta P.,Dimitrov G.,Dimitrov G.,3-6 2-6,1740.3,1966.4,1736.3,1969.4,0.2234,2.75,1.44
-2026-01-06,Brisbane International,ATP250,1st Round,Hard,Humbert U.,Norrie C.,Norrie C.,6-1 6-7 5-7,1833.1,1807.4,1821.9,1817.2,0.6032,1.67,2.2
 2026-01-06,Brisbane International,ATP250,1st Round,Hard,Kovacevic A.,Kyrgios N.,Kovacevic A.,6-3 6-4,1483.8,1965.3,1515.2,1945.7,0.0656,1.62,2.3
 2026-01-06,Brisbane International,ATP250,1st Round,Hard,Nakashima B.,Davidovich Fokina A.,Nakashima B.,7-6 6-4,1741.5,1844.3,1756.2,1830.8,0.3559,2.5,1.53
 2026-01-06,Brisbane International,ATP250,1st Round,Hard,Paul T.,Mpetshi G.,Mpetshi G.,6-7 6-3 6-7,1914.0,1681.4,1898.4,1709.2,0.7711,1.44,2.75
@@ -1408,7 +1395,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-01-07,Hong Kong Tennis Open,ATP250,2nd Round,Hard,Wu Y.,Rublev A.,Rublev A.,6-3 2-6 1-6,1792.3,1811.7,1773.3,1819.3,0.4995,2.75,1.44
 2026-01-08,Brisbane International,ATP250,2nd Round,Hard,Collignon R.,Dimitrov G.,Collignon R.,7-6 6-3,1668.7,1969.4,1718.0,1957.3,0.1624,2.75,1.44
 2026-01-08,Brisbane International,ATP250,2nd Round,Hard,Nakashima B.,Halys Q.,Nakashima B.,6-2 6-4,1756.2,1602.2,1762.9,1594.0,0.7127,1.44,2.75
-2026-01-08,Brisbane International,ATP250,2nd Round,Hard,Norrie C.,Kovacevic A.,Kovacevic A.,6-7 6-4 4-6,1817.2,1515.2,1801.6,1543.5,0.8276,1.5,2.63
+2026-01-08,Hong Kong Tennis Open,ATP250,2nd Round,Hard,Mmoh M.,Khachanov K.,Mmoh M.,7-6 7-6,1735.6,1841.6,1758.6,1830.8,0.3814,3.4,1.33
 2026-01-08,Hong Kong Tennis Open,ATP250,2nd Round,Hard,Van De Zandschulp B.,Bublik A.,Bublik A.,3-6 3-6,1701.2,1888.5,1695.1,1893.5,0.3065,2.75,1.44
 2026-01-09,Brisbane International,ATP250,Quarterfinals,Hard,Korda S.,Michelsen A.,Michelsen A.,3-6 6-7,1829.3,1718.3,1814.6,1737.2,0.6506,1.44,2.75
 2026-01-09,Brisbane International,ATP250,Quarterfinals,Hard,Medvedev D.,Majchrzak K.,Medvedev D.,6-7 6-3 6-2,1950.0,1746.0,1953.8,1737.8,0.7859,1.14,5.5
@@ -1422,36 +1409,30 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-01-10,Hong Kong Tennis Open,ATP250,Semifinals,Hard,Rublev A.,Musetti L.,Musetti L.,7-6 5-7 4-6,1825.9,1926.1,1820.1,1933.7,0.411,2.0,1.8
 2026-01-11,Brisbane International,ATP250,The Final,Hard,Nakashima B.,Medvedev D.,Medvedev D.,2-6 6-7,1778.1,1957.4,1772.2,1961.6,0.2427,3.75,1.29
 2026-01-11,Hong Kong Tennis Open,ATP250,The Final,Hard,Musetti L.,Bublik A.,Bublik A.,6-7 3-6,1933.7,1904.6,1922.3,1915.2,0.5592,2.0,1.8
-2026-01-12,ASB Classic,ATP250,1st Round,Hard,Gaston H.,Norrie C.,Norrie C.,3-6 4-6,1529.4,1801.6,1524.3,1804.8,0.1905,2.63,1.5
 2026-01-12,ASB Classic,ATP250,1st Round,Hard,Michelsen A.,Navone M.,Michelsen A.,2-6 6-2 7-5,1730.7,1609.2,1740.3,1598.0,0.7444,1.3,3.5
 2026-01-12,Adelaide International,ATP250,1st Round,Hard,Kokkinakis T.,Korda S.,Kokkinakis T.,3-6 6-3 7-6,1784.3,1814.6,1798.7,1802.4,0.4568,3.5,1.3
+2026-01-12,Adelaide International,ATP250,1st Round,Hard,Vacherot V.,Kecmanovic M.,Vacherot V.,7-6 6-4,1812.9,1666.1,1829.8,1660.2,0.7378,1.73,2.1
 2026-01-13,ASB Classic,ATP250,2nd Round,Hard,Comesana F.,Shelton B.,Shelton B.,5-7 4-6,1668.3,1905.8,1660.3,1910.9,0.1876,4.0,1.25
 2026-01-13,ASB Classic,ATP250,2nd Round,Hard,Giron M.,Michelsen A.,Giron M.,6-4 6-4,1721.3,1740.3,1732.4,1725.2,0.4503,1.91,1.91
-2026-01-13,Adelaide International,ATP250,1st Round,Hard,Duckworth J.,Machac T.,Machac T.,3-6 3-6,1612.4,1800.5,1606.2,1808.2,0.2267,2.3,1.62
 2026-01-13,Adelaide International,ATP250,1st Round,Hard,Tsitsipas S.,Vukic A.,Vukic A.,6-7 6-7,1852.4,1627.9,1839.4,1649.6,0.7714,1.29,3.75
 2026-01-14,ASB Classic,ATP250,2nd Round,Hard,Marozsan F.,Ruud C.,Marozsan F.,6-4 6-4,1762.3,1904.5,1782.7,1892.2,0.347,3.0,1.4
 2026-01-14,ASB Classic,ATP250,2nd Round,Hard,Medjedovic H.,Mensik J.,Mensik J.,1-6 6-3 3-6,1731.9,1848.2,1719.3,1859.4,0.3056,2.2,1.67
-2026-01-14,ASB Classic,ATP250,2nd Round,Hard,Norrie C.,Mpetshi G.,Mpetshi G.,6-4 3-6 6-7,1804.8,1714.6,1793.3,1736.1,0.6024,1.73,2.1
 2026-01-14,Adelaide International,ATP250,2nd Round,Hard,Davidovich Fokina A.,Hijikata R.,Davidovich Fokina A.,6-3 6-2,1830.8,1609.8,1835.4,1602.7,0.7464,1.36,3.2
-2026-01-14,Adelaide International,ATP250,2nd Round,Hard,Machac T.,Halys Q.,Machac T.,6-4 6-2,1808.2,1608.8,1815.5,1602.1,0.7935,1.57,2.38
 2026-01-14,Adelaide International,ATP250,2nd Round,Hard,Munar J.,Cerundolo F.,Munar J.,3-6 7-5 6-4,1765.7,1803.3,1777.5,1790.7,0.4409,1.67,2.2
 2026-01-14,Adelaide International,ATP250,2nd Round,Hard,Opelka R.,Paul T.,Paul T.,4-6 4-6,1727.0,1898.4,1720.9,1903.7,0.3075,2.5,1.53
 2026-01-15,ASB Classic,ATP250,Quarterfinals,Hard,Mpetshi G.,Mensik J.,Mensik J.,4-6 2-6,1736.1,1859.4,1724.9,1870.3,0.2998,2.3,1.62
 2026-01-15,ASB Classic,ATP250,Quarterfinals,Hard,Shelton B.,Baez S.,Baez S.,5-7 3-6,1910.9,1653.8,1890.6,1673.2,0.8442,1.22,4.33
 2026-01-15,Adelaide International,ATP250,Quarterfinals,Hard,Davidovich Fokina A.,Vacherot V.,Davidovich Fokina A.,7-6 6-2,1835.4,1829.8,1845.6,1802.6,0.4545,1.53,2.5
-2026-01-15,Adelaide International,ATP250,Quarterfinals,Hard,Munar J.,Machac T.,Machac T.,4-6 4-6,1777.5,1815.5,1768.0,1829.0,0.4013,2.1,1.73
 2026-01-15,Adelaide International,ATP250,Quarterfinals,Hard,Paul T.,Vukic A.,Paul T.,6-3 6-2,1903.7,1663.8,1907.7,1658.3,0.7809,1.22,4.33
 2026-01-16,ASB Classic,ATP250,Semifinals,Hard,Mensik J.,Marozsan F.,Mensik J.,7-6 4-6 6-1,1870.3,1794.7,1883.3,1783.2,0.6421,1.3,3.5
 2026-01-16,Adelaide International,ATP250,Semifinals,Hard,Humbert U.,Davidovich Fokina A.,Humbert U.,6-3 5-7 7-6,1841.9,1845.6,1852.3,1835.1,0.5443,1.8,2.0
 2026-01-16,Adelaide International,ATP250,Semifinals,Hard,Paul T.,Machac T.,Machac T.,6-2 3-6 3-6,1907.7,1829.0,1895.6,1847.5,0.5588,1.57,2.38
 2026-01-17,ASB Classic,ATP250,The Final,Hard,Mensik J.,Baez S.,Mensik J.,6-3 7-6,1883.3,1687.4,1891.3,1681.6,0.81,1.44,2.75
-2026-01-17,Adelaide International,ATP250,The Final,Hard,Humbert U.,Machac T.,Machac T.,4-6 7-6 2-6,1852.3,1847.5,1841.8,1862.7,0.5178,1.67,2.2
 2026-01-18,Australian Open,Grand Slam,1st Round,Hard,Alcaraz C.,Walton A.,Alcaraz C.,6-3 7-6 6-2,2224.9,1582.4,2225.4,1581.4,0.9698,1.0,41.0
 2026-01-18,Australian Open,Grand Slam,1st Round,Hard,Brooksby J.,Bublik A.,Bublik A.,4-6 4-6 4-6,1801.8,1915.2,1791.7,1921.9,0.3676,3.75,1.29
 2026-01-18,Australian Open,Grand Slam,1st Round,Hard,Faria J.,Blockx A.,Faria J.,6-3 3-6 6-3 6-4,1469.4,1453.3,1498.1,1420.1,0.569,2.38,1.57
 2026-01-18,Australian Open,Grand Slam,1st Round,Hard,Fery A.,Cobolli F.,Fery A.,7-6 6-4 6-1,1489.4,1802.7,1557.8,1778.0,0.176,3.2,1.36
 2026-01-18,Australian Open,Grand Slam,1st Round,Hard,Korda S.,Zheng M.,Zheng M.,4-6 4-6 6-3 7-6 3-6,1802.4,1500.0,1783.4,1589.4,0.8354,1.3,3.5
-2026-01-18,Australian Open,Grand Slam,1st Round,Hard,Norrie C.,Bonzi B.,Norrie C.,6-0 6-7 4-6 6-3 6-4,1793.3,1720.4,1800.6,1709.2,0.5781,1.3,3.5
 2026-01-18,Australian Open,Grand Slam,1st Round,Hard,Tiafoe F.,Kubler J.,Tiafoe F.,7-6 6-3 6-2,1777.0,1570.3,1781.1,1561.1,0.7946,1.29,3.75
 2026-01-18,Australian Open,Grand Slam,1st Round,Hard,Zhang Zh.,Cerundolo F.,Cerundolo F.,3-6 6-7 3-6,1632.4,1790.7,1623.9,1797.2,0.2617,3.0,1.4
 2026-01-18,Australian Open,Grand Slam,1st Round,Hard,Zverev A.,Diallo G.,Zverev A.,6-7 6-1 6-4 6-2,1986.9,1724.2,1989.6,1717.7,0.855,1.13,6.0
@@ -1465,6 +1446,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-01-19,Australian Open,Grand Slam,1st Round,Hard,Ruud C.,Bellucci M.,Ruud C.,6-1 6-2 6-4,1892.2,1639.8,1895.5,1631.6,0.7802,1.17,5.0
 2026-01-19,Australian Open,Grand Slam,1st Round,Hard,Tien L.,Giron M.,Tien L.,7-6 4-6 3-6 7-6 6-2,1838.6,1729.8,1851.6,1722.5,0.6766,1.5,2.63
 2026-01-19,Australian Open,Grand Slam,1st Round,Hard,Tirante T.A.,Vukic A.,Tirante T.A.,7-5 6-2 6-2,1577.6,1658.3,1610.0,1641.5,0.3668,2.75,1.44
+2026-01-19,Australian Open,Grand Slam,1st Round,Hard,Vacherot V.,Damm M.,Vacherot V.,6-4 6-4 6-4,1802.6,1458.2,1809.2,1453.1,0.8801,1.44,2.75
 2026-01-19,Australian Open,Grand Slam,1st Round,Hard,Van De Zandschulp B.,Nakashima B.,Van De Zandschulp B.,6-3 4-6 7-6 7-6,1695.1,1772.2,1709.7,1758.4,0.386,3.2,1.36
 2026-01-20,Australian Open,Grand Slam,1st Round,Hard,Fritz T.,Royer V.,Fritz T.,7-6 5-7 6-1 6-3,1947.0,1610.1,1949.1,1603.4,0.8642,1.11,6.5
 2026-01-20,Australian Open,Grand Slam,1st Round,Hard,Humbert U.,Shelton B.,Shelton B.,3-6 6-7 6-7,1841.8,1890.6,1833.0,1901.3,0.4728,2.38,1.57
@@ -1482,7 +1464,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-01-21,Australian Open,Grand Slam,2nd Round,Hard,Hanfmann Y.,Alcaraz C.,Alcaraz C.,6-7 3-6 2-6,1734.0,2225.4,1732.6,2226.5,0.0705,26.0,1.01
 2026-01-21,Australian Open,Grand Slam,2nd Round,Hard,Medjedovic H.,De Minaur A.,De Minaur A.,7-6 2-6 2-6 1-6,1731.6,1957.9,1723.7,1961.7,0.2254,6.0,1.13
 2026-01-21,Australian Open,Grand Slam,2nd Round,Hard,Medvedev D.,Halys Q.,Medvedev D.,6-7 6-3 6-4 6-2,1964.3,1620.8,1966.2,1617.5,0.8923,1.1,7.0
-2026-01-21,Australian Open,Grand Slam,2nd Round,Hard,Norrie C.,Nava E.,Norrie C.,6-1 7-6 4-6 7-6,1800.6,1595.4,1804.9,1584.5,0.7463,1.44,2.75
 2026-01-21,Australian Open,Grand Slam,2nd Round,Hard,Paul T.,Tirante T.A.,Paul T.,6-3 6-4 6-2,1898.0,1610.0,1901.2,1601.7,0.8312,1.07,9.0
 2026-01-21,Australian Open,Grand Slam,2nd Round,Hard,Shevchenko A.,Tien L.,Tien L.,2-6 7-5 1-6 0-6,1681.1,1851.6,1672.9,1861.8,0.2706,5.0,1.17
 2026-01-21,Australian Open,Grand Slam,2nd Round,Hard,Tiafoe F.,Comesana F.,Tiafoe F.,6-4 6-3 4-6 6-2,1781.1,1669.1,1787.3,1655.7,0.6724,1.4,3.0
@@ -1490,7 +1471,9 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-01-22,Australian Open,Grand Slam,2nd Round,Hard,Djokovic N.,Maestrelli F.,Djokovic N.,6-3 6-2 6-2,2165.4,1540.4,2165.8,1538.0,0.9738,1.01,29.0
 2026-01-22,Australian Open,Grand Slam,2nd Round,Hard,Duckworth J.,Sinner J.,Sinner J.,1-6 4-6 2-6,1618.3,2305.1,1617.9,2305.5,0.0177,51.0,1.0
 2026-01-22,Australian Open,Grand Slam,2nd Round,Hard,Fritz T.,Kopriva V.,Fritz T.,6-1 6-4 7-6,1949.1,1589.7,1951.0,1584.7,0.8889,1.08,8.0
+2026-01-22,Australian Open,Grand Slam,2nd Round,Hard,Hijikata R.,Vacherot V.,Vacherot V.,1-6 3-6 6-4 2-6,1623.0,1809.2,1614.8,1822.9,0.253,2.63,1.5
 2026-01-22,Australian Open,Grand Slam,2nd Round,Hard,Hurkacz H.,Quinn E.,Quinn E.,4-6 6-7 1-6,1925.1,1604.3,1908.3,1642.3,0.8693,1.25,4.0
+2026-01-22,Australian Open,Grand Slam,2nd Round,Hard,Khachanov K.,Basavareddy N.,Khachanov K.,6-1 6-4 6-3,1836.7,1619.3,1840.4,1607.2,0.7262,1.29,3.75
 2026-01-22,Australian Open,Grand Slam,2nd Round,Hard,Machac T.,Tsitsipas S.,Machac T.,6-4 3-6 7-6 7-6,1881.7,1841.8,1894.9,1834.5,0.6071,1.67,2.2
 2026-01-22,Australian Open,Grand Slam,2nd Round,Hard,Mensik J.,Jodar R.,Mensik J.,6-2 6-4 6-4,1900.8,1543.4,1904.4,1532.3,0.8931,1.44,2.75
 2026-01-22,Australian Open,Grand Slam,2nd Round,Hard,Ruud C.,Munar J.,Ruud C.,6-3 7-5 6-4,1895.5,1773.8,1901.4,1766.8,0.6413,1.4,3.0
@@ -1499,6 +1482,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-01-23,Australian Open,Grand Slam,3rd Round,Hard,Borges N.,Tien L.,Tien L.,6-7 4-6 2-6,1755.7,1861.8,1746.2,1874.8,0.3457,3.0,1.4
 2026-01-23,Australian Open,Grand Slam,3rd Round,Hard,Cerundolo F.,Rublev A.,Cerundolo F.,6-3 7-6 6-3,1802.5,1827.4,1814.7,1818.8,0.4468,2.1,1.73
 2026-01-23,Australian Open,Grand Slam,3rd Round,Hard,Etcheverry T.,Bublik A.,Bublik A.,6-7 6-7 4-6,1720.4,1927.4,1714.6,1932.0,0.2855,4.5,1.2
+2026-01-23,Australian Open,Grand Slam,3rd Round,Hard,Khachanov K.,Darderi L.,Darderi L.,6-7 6-3 3-6 4-6,1840.4,1727.5,1829.5,1747.4,0.7398,1.2,4.5
 2026-01-23,Australian Open,Grand Slam,3rd Round,Hard,Medvedev D.,Marozsan F.,Medvedev D.,6-7 4-6 7-5 6-0 6-3,1966.2,1810.3,1970.8,1801.9,0.7199,1.17,5.0
 2026-01-23,Australian Open,Grand Slam,3rd Round,Hard,Moutet C.,Alcaraz C.,Alcaraz C.,2-6 4-6 1-6,1779.6,2226.5,1777.9,2228.0,0.0819,21.0,1.01
 2026-01-23,Australian Open,Grand Slam,3rd Round,Hard,Musetti L.,Machac T.,Musetti L.,5-7 6-4 6-2 5-7 6-2,1927.2,1894.9,1936.7,1881.4,0.467,1.5,2.63
@@ -1531,7 +1515,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-02-06,Open Sud de France,ATP250,Quarterfinals,Hard,Fils A.,Auger-Aliassime F.,Auger-Aliassime F.,4-6 2-6,1915.3,1939.0,1901.8,1947.5,0.4082,2.63,1.5
 2026-02-07,Open Sud de France,ATP250,Semifinals,Hard,Auger-Aliassime F.,Droguet T.,Auger-Aliassime F.,6-4 6-7 6-1,1947.5,1669.3,1950.6,1658.0,0.8452,1.22,4.33
 2026-02-08,Open Sud de France,ATP250,The Final,Hard,Mannarino A.,Auger-Aliassime F.,Auger-Aliassime F.,3-6 6-7,1709.1,1950.6,1706.1,1954.2,0.1913,5.0,1.17
-2026-02-09,ABN AMRO World Tennis Tournament,ATP500,1st Round,Hard,Bautista Agut R.,Norrie C.,Norrie C.,6-7 1-6,1698.6,1800.2,1692.4,1806.7,0.3332,3.75,1.29
 2026-02-09,ABN AMRO World Tennis Tournament,ATP500,1st Round,Hard,Humbert U.,Medvedev D.,Humbert U.,7-6 3-6 6-3,1825.6,1960.7,1839.7,1949.8,0.3275,2.75,1.44
 2026-02-09,Dallas Open,ATP500,1st Round,Hard,Nakashima B.,Bellucci M.,Nakashima B.,6-3 6-4,1758.4,1631.6,1765.7,1617.8,0.6685,1.4,3.0
 2026-02-09,Dallas Open,ATP500,1st Round,Hard,Svajda Z.,Davidovich Fokina A.,Davidovich Fokina A.,4-6 6-7,1540.7,1847.1,1533.5,1850.1,0.1554,2.75,1.44
@@ -1545,8 +1528,8 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-02-10,Dallas Open,ATP500,1st Round,Hard,Zheng M.,Korda S.,Korda S.,3-6 4-6,1589.4,1783.4,1565.3,1788.9,0.2683,3.2,1.36
 2026-02-11,ABN AMRO World Tennis Tournament,ATP500,1st Round,Hard,Auger-Aliassime F.,Popyrin A.,Auger-Aliassime F.,7-5 6-3,1954.2,1701.8,1957.7,1697.5,0.8276,1.22,4.33
 2026-02-11,ABN AMRO World Tennis Tournament,ATP500,1st Round,Hard,Hurkacz H.,Bublik A.,Bublik A.,7-6 6-7 5-7,1890.1,1923.2,1881.4,1932.0,0.4791,2.2,1.67
+2026-02-11,ABN AMRO World Tennis Tournament,ATP500,1st Round,Hard,Khachanov K.,De Jong J.,Khachanov K.,3-6 6-4 7-5,1829.5,1677.3,1834.3,1664.5,0.7344,1.14,5.5
 2026-02-11,ABN AMRO World Tennis Tournament,ATP500,1st Round,Hard,Rinderknech A.,Tsitsipas S.,Tsitsipas S.,5-7 3-6,1773.5,1834.5,1763.6,1841.3,0.418,2.5,1.53
-2026-02-11,ABN AMRO World Tennis Tournament,ATP500,2nd Round,Hard,Norrie C.,O Connell C.,O Connell C.,6-7 4-6,1806.7,1638.4,1793.5,1658.0,0.7013,1.25,4.0
 2026-02-11,Argentina Open,ATP250,2nd Round,Clay,Fonseca J.,Tabilo A.,Tabilo A.,3-6 6-3 5-7,1761.3,1719.0,1738.6,1734.9,0.5623,1.57,2.38
 2026-02-11,Argentina Open,ATP250,2nd Round,Clay,Kopriva V.,Berrettini M.,Kopriva V.,6-4 6-3,1601.6,1862.3,1637.6,1845.4,0.126,3.0,1.4
 2026-02-11,Dallas Open,ATP500,1st Round,Hard,Giron M.,Fritz T.,Fritz T.,4-6 7-5 6-7,1722.5,1945.3,1717.9,1948.9,0.2138,3.0,1.4
@@ -1556,6 +1539,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-02-12,ABN AMRO World Tennis Tournament,ATP500,2nd Round,Hard,Bublik A.,Struff J.L.,Bublik A.,7-6 4-6 6-3,1932.0,1732.2,1936.7,1728.1,0.7554,1.36,3.2
 2026-02-12,ABN AMRO World Tennis Tournament,ATP500,2nd Round,Hard,De Minaur A.,Wawrinka S.,De Minaur A.,6-4 6-2,1978.3,1694.8,1981.2,1692.6,0.8031,1.1,7.0
 2026-02-12,ABN AMRO World Tennis Tournament,ATP500,2nd Round,Hard,Medjedovic H.,Auger-Aliassime F.,Auger-Aliassime F.,4-6 4-6,1685.0,1957.7,1678.7,1960.8,0.1617,4.33,1.22
+2026-02-12,ABN AMRO World Tennis Tournament,ATP500,2nd Round,Hard,Munar J.,Khachanov K.,Munar J.,7-6 3-6 6-3,1770.1,1834.3,1782.7,1824.6,0.4094,2.3,1.62
 2026-02-12,ABN AMRO World Tennis Tournament,ATP500,2nd Round,Hard,Tsitsipas S.,Van De Zandschulp B.,Van De Zandschulp B.,4-6 6-7,1841.3,1718.7,1830.2,1734.5,0.6584,1.4,3.0
 2026-02-12,Argentina Open,ATP250,2nd Round,Clay,Cerundolo F.,Dellien H.,Cerundolo F.,6-0 7-6,1808.8,1503.8,1812.1,1498.9,0.8423,1.13,6.0
 2026-02-12,Dallas Open,ATP500,2nd Round,Hard,Korda S.,Tiafoe F.,Korda S.,7-5 6-1,1788.9,1786.8,1799.9,1778.0,0.5002,1.73,2.1
@@ -1590,6 +1574,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-02-17,Qatar Exxon Mobil Open,ATP500,1st Round,Hard,Alcaraz C.,Rinderknech A.,Alcaraz C.,6-4 7-6,2246.6,1763.6,2247.7,1762.2,0.9337,1.02,19.0
 2026-02-17,Qatar Exxon Mobil Open,ATP500,1st Round,Hard,Brooksby J.,Lehecka J.,Lehecka J.,3-6 3-6,1781.3,1853.4,1769.6,1863.5,0.3711,2.63,1.5
 2026-02-17,Qatar Exxon Mobil Open,ATP500,1st Round,Hard,De Jong J.,Rublev A.,Rublev A.,4-6 3-6,1664.5,1818.8,1651.9,1823.5,0.2505,5.5,1.14
+2026-02-17,Qatar Exxon Mobil Open,ATP500,1st Round,Hard,Khachanov K.,Mochizuki S.,Khachanov K.,6-1 3-6 6-4,1824.6,1528.6,1827.1,1521.1,0.8422,1.13,6.0
 2026-02-17,Qatar Exxon Mobil Open,ATP500,1st Round,Hard,Tsitsipas S.,Echargui M.,Tsitsipas S.,6-4 6-4,1830.2,1484.6,1832.2,1472.9,0.8597,1.1,7.0
 2026-02-17,Rio Open,ATP500,1st Round,Clay,Berrettini M.,Barrios M.,Berrettini M.,7-6 7-5,1845.4,1456.0,1847.4,1450.9,0.936,1.3,3.5
 2026-02-17,Rio Open,ATP500,1st Round,Clay,Cerundolo F.,Navone M.,Cerundolo F.,6-3 6-4,1836.4,1586.6,1840.7,1580.2,0.7648,1.4,3.0
@@ -1599,6 +1584,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-02-18,Delray Beach Open,ATP250,2nd Round,Hard,Korda S.,Michelsen A.,Korda S.,6-3 7-6,1798.1,1745.1,1807.5,1733.1,0.5689,1.62,2.3
 2026-02-18,Delray Beach Open,ATP250,2nd Round,Hard,Nakashima B.,Wong C.,Wong C.,4-6 6-7,1772.9,1637.5,1757.4,1674.7,0.6665,1.36,3.2
 2026-02-18,Qatar Exxon Mobil Open,ATP500,2nd Round,Hard,Halys Q.,Fils A.,Fils A.,1-6 6-7,1634.5,1898.5,1629.6,1903.6,0.1977,3.4,1.33
+2026-02-18,Qatar Exxon Mobil Open,ATP500,2nd Round,Hard,Khachanov K.,Fucsovics M.,Khachanov K.,6-2 4-6 6-4,1827.1,1740.6,1833.3,1733.0,0.6467,1.4,3.0
 2026-02-18,Qatar Exxon Mobil Open,ATP500,2nd Round,Hard,Lehecka J.,Bergs Z.,Lehecka J.,6-2 6-1,1863.5,1731.5,1871.5,1721.5,0.6598,1.44,2.75
 2026-02-18,Qatar Exxon Mobil Open,ATP500,2nd Round,Hard,Medvedev D.,Tsitsipas S.,Tsitsipas S.,3-6 4-6,1953.4,1832.2,1942.8,1843.3,0.6985,1.3,3.5
 2026-02-18,Qatar Exxon Mobil Open,ATP500,2nd Round,Hard,Royer V.,Alcaraz C.,Alcaraz C.,2-6 5-7,1591.7,2247.7,1590.6,2248.2,0.0277,17.0,1.02
@@ -1633,6 +1619,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-02-24,Abierto Mexicano,ATP500,1st Round,Hard,Davidovich Fokina A.,Altmaier D.,Davidovich Fokina A.,7-5 6-3,1844.5,1621.3,1849.0,1615.8,0.7743,1.13,6.0
 2026-02-24,Abierto Mexicano,ATP500,1st Round,Hard,Kypson P.,De Minaur A.,Kypson P.,6-1 6-7 7-6,1389.3,1998.7,1450.4,1981.5,0.0359,10.0,1.06
 2026-02-24,Abierto Mexicano,ATP500,1st Round,Hard,Norrie C.,Jodar R.,Jodar R.,3-6 2-6,1793.5,1563.2,1779.1,1626.1,0.7662,1.67,2.2
+2026-02-24,Abierto Mexicano,ATP500,1st Round,Hard,Wong C.,Vacherot V.,Vacherot V.,6-4 3-6 2-6,1653.2,1771.0,1635.4,1788.3,0.3214,2.75,1.44
 2026-02-24,Abierto Mexicano,ATP500,1st Round,Hard,Ymer E.,Nakashima B.,Nakashima B.,3-6 4-6,1540.9,1757.4,1533.8,1762.4,0.2586,5.0,1.17
 2026-02-24,Chile Open,ATP250,1st Round,Clay,Buse I.,Tirante T.A.,Tirante T.A.,6-2 6-7 6-7,1674.8,1614.4,1637.9,1643.7,0.5877,2.3,1.62
 2026-02-24,Chile Open,ATP250,1st Round,Clay,Nava E.,Berrettini M.,Nava E.,6-3 6-4,1548.4,1836.8,1586.5,1819.6,0.0933,3.5,1.3
@@ -1641,6 +1628,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-02-24,Dubai Tennis Championships,ATP500,1st Round,Hard,Mensik J.,Hurkacz H.,Mensik J.,6-4 7-6,1929.3,1881.4,1943.0,1873.0,0.6343,1.67,2.2
 2026-02-24,Dubai Tennis Championships,ATP500,1st Round,Hard,Nardi L.,Lehecka J.,Lehecka J.,6-4 4-6 2-6,1600.6,1860.1,1593.3,1864.7,0.198,4.5,1.2
 2026-02-24,Dubai Tennis Championships,ATP500,1st Round,Hard,Royer V.,Rublev A.,Rublev A.,3-6 4-6,1590.6,1838.3,1580.9,1841.4,0.1962,4.5,1.2
+2026-02-24,Dubai Tennis Championships,ATP500,1st Round,Hard,Shevchenko A.,Khachanov K.,Khachanov K.,7-6 2-6 3-6,1672.9,1832.0,1664.4,1836.7,0.3014,4.33,1.22
 2026-02-24,Dubai Tennis Championships,ATP500,1st Round,Hard,Struff J.L.,Bublik A.,Bublik A.,3-6 4-6,1728.1,1933.3,1724.1,1937.8,0.2354,3.2,1.36
 2026-02-25,Abierto Mexicano,ATP500,1st Round,Hard,Atmane T.,Dimitrov G.,Atmane T.,6-3 6-3,1571.4,1937.0,1613.0,1924.3,0.1069,3.0,1.4
 2026-02-25,Abierto Mexicano,ATP500,1st Round,Hard,Borges N.,Tiafoe F.,Tiafoe F.,4-6 4-6,1727.4,1780.0,1715.9,1787.6,0.4215,2.5,1.53
@@ -1652,6 +1640,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-02-25,Dubai Tennis Championships,ATP500,2nd Round,Hard,Draper J.,Rinderknech A.,Rinderknech A.,5-7 7-6 4-6,2016.5,1775.6,1995.1,1794.7,0.8264,1.29,3.75
 2026-02-25,Dubai Tennis Championships,ATP500,2nd Round,Hard,Griekspoor T.,Bublik A.,Griekspoor T.,6-3 7-6,1760.2,1937.8,1777.3,1923.6,0.2892,3.4,1.33
 2026-02-25,Dubai Tennis Championships,ATP500,2nd Round,Hard,Humbert U.,Rublev A.,Rublev A.,4-6 7-6 3-6,1841.3,1841.4,1831.1,1849.5,0.5279,2.63,1.5
+2026-02-25,Dubai Tennis Championships,ATP500,2nd Round,Hard,Khachanov K.,Brooksby J.,Brooksby J.,6-7 4-6,1836.7,1782.2,1827.2,1799.2,0.5972,1.53,2.5
 2026-02-25,Dubai Tennis Championships,ATP500,2nd Round,Hard,Medvedev D.,Wawrinka S.,Medvedev D.,6-2 6-3,1946.4,1694.6,1949.4,1692.1,0.7933,1.14,5.5
 2026-02-25,Dubai Tennis Championships,ATP500,2nd Round,Hard,Mensik J.,Popyrin A.,Mensik J.,6-3 6-2,1943.0,1708.9,1949.5,1704.3,0.8217,1.33,3.4
 2026-02-26,Abierto Mexicano,ATP500,2nd Round,Hard,Atmane T.,Jodar R.,Atmane T.,6-2 4-6 6-1,1613.0,1626.1,1637.0,1586.4,0.4687,2.75,1.44
@@ -1659,6 +1648,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-02-26,Abierto Mexicano,ATP500,2nd Round,Hard,Nakashima B.,Kypson P.,Nakashima B.,6-4 6-4,1762.4,1450.4,1765.6,1441.6,0.83,1.44,2.75
 2026-02-26,Abierto Mexicano,ATP500,2nd Round,Hard,Svrcina D.,Cobolli F.,Cobolli F.,4-6 4-6,1614.3,1747.4,1594.8,1756.3,0.3686,2.5,1.53
 2026-02-26,Abierto Mexicano,ATP500,2nd Round,Hard,Tiafoe F.,Kovacevic A.,Tiafoe F.,6-4 3-6 7-6,1787.6,1551.5,1791.2,1545.0,0.783,1.36,3.2
+2026-02-26,Abierto Mexicano,ATP500,2nd Round,Hard,Vacherot V.,Monfils G.,Vacherot V.,6-3 6-3,1788.3,1812.6,1815.4,1805.5,0.4557,1.33,3.4
 2026-02-26,Abierto Mexicano,ATP500,2nd Round,Hard,Zverev A.,Kecmanovic M.,Kecmanovic M.,3-6 7-6 6-7,2004.6,1673.7,1991.8,1690.8,0.8741,1.17,5.0
 2026-02-26,Chile Open,ATP250,2nd Round,Clay,Moller E.,Cerundolo F.,Cerundolo F.,2-6 2-6,1462.2,1840.7,1454.7,1843.0,0.0992,5.5,1.14
 2026-02-26,Dubai Tennis Championships,ATP500,Quarterfinals,Hard,Lehecka J.,Auger-Aliassime F.,Auger-Aliassime F.,3-6 6-7,1872.5,1970.3,1863.4,1976.9,0.3435,2.75,1.44
@@ -1703,11 +1693,11 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-03-07,BNP Paribas Open,Masters 1000,2nd Round,Hard,Mensik J.,Giron M.,Mensik J.,7-5 7-6,1926.6,1724.0,1934.0,1719.0,0.7971,1.33,3.4
 2026-03-07,BNP Paribas Open,Masters 1000,2nd Round,Hard,Shevchenko A.,Ruud C.,Ruud C.,1-6 6-7,1674.6,1880.6,1667.6,1884.8,0.2649,5.0,1.17
 2026-03-07,BNP Paribas Open,Masters 1000,2nd Round,Hard,Svrcina D.,Sinner J.,Sinner J.,1-6 1-6,1625.2,2281.5,1623.8,2281.9,0.0217,26.0,1.01
+2026-03-07,BNP Paribas Open,Masters 1000,2nd Round,Hard,Vacherot V.,Borges N.,Vacherot V.,7-5 7-5,1786.8,1724.8,1807.2,1713.8,0.6144,1.62,2.3
 2026-03-08,BNP Paribas Open,Masters 1000,2nd Round,Hard,Alcaraz C.,Dimitrov G.,Alcaraz C.,6-2 6-3,2254.2,1926.4,2256.8,1924.5,0.8443,1.04,13.0
 2026-03-08,BNP Paribas Open,Masters 1000,2nd Round,Hard,Baez S.,Lehecka J.,Baez S.,6-4 6-1,1694.3,1863.4,1711.2,1845.4,0.2505,2.75,1.44
 2026-03-08,BNP Paribas Open,Masters 1000,2nd Round,Hard,Fearnley J.,Fritz T.,Fritz T.,3-6 7-6 1-6,1598.7,1946.5,1593.6,1948.4,0.1055,4.5,1.2
 2026-03-08,BNP Paribas Open,Masters 1000,2nd Round,Hard,Kopriva V.,Bublik A.,Bublik A.,6-3 6-7 2-6,1679.8,1923.6,1671.6,1927.4,0.19,4.5,1.2
-2026-03-08,BNP Paribas Open,Masters 1000,2nd Round,Hard,McDonald M.,Norrie C.,Norrie C.,2-6 3-6,1587.7,1779.1,1575.6,1783.7,0.2375,2.5,1.53
 2026-03-08,BNP Paribas Open,Masters 1000,2nd Round,Hard,Michelsen A.,Humbert U.,Michelsen A.,7-5 6-7 7-6,1738.9,1831.1,1756.6,1818.2,0.3487,1.91,1.91
 2026-03-08,BNP Paribas Open,Masters 1000,2nd Round,Hard,Tabilo A.,Medvedev D.,Medvedev D.,4-6 2-6,1749.3,1962.6,1743.1,1966.2,0.1825,4.0,1.25
 2026-03-08,BNP Paribas Open,Masters 1000,3rd Round,Hard,Davidovich Fokina A.,Mensik J.,Davidovich Fokina A.,6-2 4-6 6-2,1836.8,1934.0,1849.8,1914.2,0.3324,2.2,1.67
@@ -1732,7 +1722,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-03-11,BNP Paribas Open,Masters 1000,4th Round,Hard,Alcaraz C.,Ruud C.,Alcaraz C.,6-1 7-6,2258.0,1891.6,2260.1,1889.7,0.8874,1.06,10.0
 2026-03-11,BNP Paribas Open,Masters 1000,4th Round,Hard,Fonseca J.,Sinner J.,Sinner J.,6-7 6-7,1792.9,2282.9,1790.7,2284.0,0.0602,9.0,1.07
 2026-03-11,BNP Paribas Open,Masters 1000,4th Round,Hard,Michelsen A.,Medvedev D.,Medvedev D.,2-6 4-6,1777.6,1969.1,1770.6,1973.1,0.244,4.0,1.25
-2026-03-11,BNP Paribas Open,Masters 1000,4th Round,Hard,Norrie C.,Hijikata R.,Norrie C.,6-4 6-2,1797.5,1653.3,1803.1,1643.8,0.664,1.3,3.5
 2026-03-12,BNP Paribas Open,Masters 1000,4th Round,Hard,Djokovic N.,Draper J.,Draper J.,6-4 4-6 6-7,2171.1,2006.9,2162.8,2026.0,0.7193,1.67,2.2
 2026-03-12,BNP Paribas Open,Masters 1000,Quarterfinals,Hard,Tien L.,Sinner J.,Sinner J.,1-6 2-6,1912.0,2284.0,1908.3,2285.9,0.1032,9.0,1.07
 2026-03-12,BNP Paribas Open,Masters 1000,Quarterfinals,Hard,Zverev A.,Fils A.,Zverev A.,6-2 6-3,2002.9,1951.7,2009.1,1939.6,0.6023,1.57,2.38
@@ -1745,11 +1734,11 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-03-19,Miami Open,Masters 1000,1st Round,Hard,Dimitrov G.,Collignon R.,Collignon R.,6-7 6-4 6-7,1924.5,1667.5,1912.9,1712.4,0.8007,1.67,2.2
 2026-03-19,Miami Open,Masters 1000,1st Round,Hard,Hanfmann Y.,Jodar R.,Jodar R.,4-6 6-4 1-6,1753.9,1564.8,1735.2,1618.5,0.7307,2.2,1.67
 2026-03-19,Miami Open,Masters 1000,1st Round,Hard,Marozsan F.,Fonseca J.,Fonseca J.,4-6 6-3 2-6,1769.7,1790.7,1756.3,1808.9,0.4425,3.2,1.36
-2026-03-19,Miami Open,Masters 1000,1st Round,Hard,Nava E.,Machac T.,Machac T.,6-2 4-6 1-6,1579.9,1878.9,1573.3,1883.4,0.1379,2.75,1.44
 2026-03-19,Miami Open,Masters 1000,1st Round,Hard,Quinn E.,Hurkacz H.,Quinn E.,6-2 6-4,1590.2,1856.1,1624.6,1840.2,0.1813,2.1,1.73
 2026-03-19,Miami Open,Masters 1000,1st Round,Hard,Tsitsipas S.,Fery A.,Tsitsipas S.,6-1 7-6,1816.8,1535.5,1819.5,1523.3,0.8183,1.36,3.2
 2026-03-20,Miami Open,Masters 1000,1st Round,Hard,Bellucci M.,Michelsen A.,Michelsen A.,2-6 1-6,1622.8,1770.6,1610.7,1778.9,0.2894,3.2,1.36
 2026-03-20,Miami Open,Masters 1000,1st Round,Hard,Tirante T.A.,Royer V.,Tirante T.A.,7-5 6-7 7-6,1626.2,1564.9,1646.4,1544.8,0.5561,2.0,1.8
+2026-03-20,Miami Open,Masters 1000,2nd Round,Hard,Bautista Agut R.,Khachanov K.,Khachanov K.,3-6 3-6,1706.5,1816.9,1700.5,1822.6,0.3274,3.5,1.3
 2026-03-20,Miami Open,Masters 1000,2nd Round,Hard,Bublik A.,Berrettini M.,Berrettini M.,4-6 4-6,1911.0,1827.1,1899.1,1839.7,0.5826,1.57,2.38
 2026-03-20,Miami Open,Masters 1000,2nd Round,Hard,Fils A.,Blanch Dar.,Fils A.,6-2 6-3,1939.6,1549.0,1942.3,1541.1,0.8912,1.17,5.0
 2026-03-20,Miami Open,Masters 1000,2nd Round,Hard,Fritz T.,Van De Zandschulp B.,Fritz T.,6-3 6-7 6-3,1936.1,1729.6,1939.9,1724.1,0.7582,1.29,3.75
@@ -1764,9 +1753,9 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-03-21,Miami Open,Masters 1000,2nd Round,Hard,Dzumhur D.,Sinner J.,Sinner J.,3-6 3-6,1570.0,2291.9,1569.6,2292.2,0.0124,41.0,1.0
 2026-03-21,Miami Open,Masters 1000,2nd Round,Hard,Halys Q.,Davidovich Fokina A.,Halys Q.,7-6 6-4,1618.5,1841.0,1639.7,1824.9,0.2132,3.0,1.4
 2026-03-21,Miami Open,Masters 1000,2nd Round,Hard,Kouame M.,Lehecka J.,Lehecka J.,2-6 5-7,1520.0,1845.4,1507.8,1848.7,0.1503,7.0,1.1
-2026-03-21,Miami Open,Masters 1000,2nd Round,Hard,Machac T.,Moutet C.,Moutet C.,0-6 6-1 4-6,1883.4,1746.9,1863.2,1763.2,0.7298,1.62,2.3
 2026-03-21,Miami Open,Masters 1000,2nd Round,Hard,Majchrzak K.,Tien L.,Majchrzak K.,6-2 4-6 6-2,1733.6,1908.3,1758.0,1882.8,0.2542,3.75,1.29
 2026-03-21,Miami Open,Masters 1000,2nd Round,Hard,Medvedev D.,Sakamoto R.,Medvedev D.,6-7 6-3 6-1,1992.9,1465.3,1993.6,1461.7,0.9541,1.04,13.0
+2026-03-21,Miami Open,Masters 1000,2nd Round,Hard,Navone M.,Vacherot V.,Vacherot V.,3-6 4-6,1579.4,1788.1,1571.9,1799.3,0.1793,2.75,1.44
 2026-03-21,Miami Open,Masters 1000,2nd Round,Hard,Norrie C.,Michelsen A.,Michelsen A.,5-7 7-6 4-6,1801.8,1778.9,1792.2,1793.7,0.5101,2.3,1.62
 2026-03-21,Miami Open,Masters 1000,2nd Round,Hard,Shevchenko A.,Shelton B.,Shevchenko A.,6-7 7-6 6-3,1682.1,1948.6,1706.4,1928.8,0.1764,6.5,1.11
 2026-03-21,Miami Open,Masters 1000,2nd Round,Hard,Tabilo A.,Rublev A.,Tabilo A.,6-7 6-2 6-4,1751.4,1835.6,1768.3,1825.7,0.3391,3.0,1.4
@@ -1778,6 +1767,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-03-22,Miami Open,Masters 1000,2nd Round,Hard,Damm M.,Zverev A.,Zverev A.,2-6 4-6,1520.1,2006.6,1517.8,2007.5,0.0617,9.0,1.07
 2026-03-22,Miami Open,Masters 1000,3rd Round,Hard,Alcaraz C.,Korda S.,Korda S.,3-6 7-5 4-6,2246.6,1846.3,2228.9,1866.2,0.8942,1.11,6.5
 2026-03-22,Miami Open,Masters 1000,3rd Round,Hard,Etcheverry T.,Jodar R.,Etcheverry T.,7-5 6-4,1776.2,1655.6,1784.2,1633.0,0.6302,2.1,1.73
+2026-03-22,Miami Open,Masters 1000,3rd Round,Hard,Khachanov K.,Landaluce M.,Landaluce M.,3-6 6-7,1822.6,1525.8,1808.7,1579.0,0.7925,1.36,3.2
 2026-03-22,Miami Open,Masters 1000,3rd Round,Hard,Lehecka J.,Quinn E.,Lehecka J.,6-3 7-6,1848.7,1658.7,1854.9,1648.3,0.7566,1.73,2.1
 2026-03-22,Miami Open,Masters 1000,3rd Round,Hard,Opelka R.,Fritz T.,Fritz T.,3-6 4-6,1750.8,1939.9,1745.1,1944.0,0.2752,2.75,1.44
 2026-03-22,Miami Open,Masters 1000,3rd Round,Hard,Paul T.,Collignon R.,Paul T.,6-2 3-6 7-6,1903.5,1745.8,1909.1,1730.4,0.6775,1.4,3.0
@@ -1828,14 +1818,14 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-04-04,U.S.Men's Clay Court Championships,ATP250,Semifinals,Clay,Paul T.,Tiafoe F.,Paul T.,7-5 4-6 7-6,1915.3,1841.8,1922.9,1834.9,0.6582,1.4,3.0
 2026-04-04,U.S.Men's Clay Court Championships,ATP250,Semifinals,Clay,Tirante T.A.,Burruchaga R.,Burruchaga R.,1-6 1-6,1708.9,1651.7,1682.0,1684.4,0.5972,1.91,1.91
 2026-04-05,Grand Prix Hassan II,ATP250,The Final,Clay,Jodar R.,Trungelliti M.,Jodar R.,6-3 6-2,1740.1,1632.7,1761.7,1617.8,0.5939,1.33,3.4
-2026-04-05,Monte Carlo Masters,Masters 1000,1st Round,Clay,Kecmanovic M.,Norrie C.,Norrie C.,2-6 6-4 6-7,1675.7,1792.2,1669.1,1798.3,0.3113,2.2,1.67
 2026-04-05,Tiriac Open,ATP250,The Final,Clay,Navone M.,Merida Aguilar D.,Navone M.,6-2 4-6 7-5,1646.0,1672.7,1663.2,1628.0,0.5426,1.36,3.2
 2026-04-05,U.S.Men's Clay Court Championships,ATP250,The Final,Clay,Burruchaga R.,Paul T.,Paul T.,1-6 6-3 5-7,1684.4,1922.9,1673.2,1926.8,0.2067,2.75,1.44
 2026-04-06,Monte Carlo Masters,Masters 1000,1st Round,Clay,Borges N.,Rublev A.,Rublev A.,4-6 6-1 1-6,1683.0,1825.7,1674.9,1830.6,0.306,4.33,1.22
+2026-04-06,Monte Carlo Masters,Masters 1000,1st Round,Clay,Cerundolo J.M.,Vacherot V.,Vacherot V.,7-5 2-6 1-6,1653.1,1810.5,1642.4,1823.9,0.5064,3.4,1.33
 2026-04-06,Monte Carlo Masters,Masters 1000,1st Round,Clay,Cobolli F.,Comesana F.,Cobolli F.,7-5 2-6 6-3,1776.6,1590.0,1783.6,1580.5,0.7594,1.57,2.38
 2026-04-06,Monte Carlo Masters,Masters 1000,1st Round,Clay,Fonseca J.,Diallo G.,Fonseca J.,6-2 6-3,1806.0,1707.0,1819.7,1694.6,0.5888,1.22,4.33
-2026-04-06,Monte Carlo Masters,Masters 1000,1st Round,Clay,Machac T.,Altmaier D.,Machac T.,6-4 1-6 6-3,1840.9,1618.5,1847.3,1613.1,0.6921,1.5,2.63
 2026-04-06,Monte Carlo Masters,Masters 1000,1st Round,Clay,Nava E.,Lehecka J.,Lehecka J.,6-7 7-6 2-6,1573.3,1888.9,1567.2,1892.3,0.1972,3.75,1.29
+2026-04-06,Monte Carlo Masters,Masters 1000,1st Round,Clay,Rinderknech A.,Khachanov K.,Rinderknech A.,7-5 6-2,1766.5,1808.7,1779.8,1799.5,0.3439,3.0,1.4
 2026-04-06,Monte Carlo Masters,Masters 1000,1st Round,Clay,Shapovalov D.,Blockx A.,Blockx A.,4-6 6-4 3-6,1778.7,1420.1,1762.5,1480.2,0.8192,2.0,1.8
 2026-04-06,Monte Carlo Masters,Masters 1000,1st Round,Clay,Tsitsipas S.,Cerundolo F.,Cerundolo F.,5-7 4-6,1825.5,1859.5,1818.1,1869.5,0.5556,2.1,1.73
 2026-04-07,Monte Carlo Masters,Masters 1000,1st Round,Clay,Dimitrov G.,Etcheverry T.,Etcheverry T.,4-6 6-2 3-6,1912.9,1779.8,1903.2,1796.2,0.6215,2.38,1.57
@@ -1875,14 +1865,13 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-04-13,BMW Open,ATP500,1st Round,Clay,Nagal S.,Cerundolo F.,Cerundolo F.,2-6 2-6,1441.3,1857.7,1437.7,1859.6,0.112,11.0,1.05
 2026-04-13,BMW Open,ATP500,1st Round,Clay,Nava E.,Shelton B.,Shelton B.,6-7 6-3 3-6,1567.2,1912.8,1562.1,1915.7,0.1797,3.4,1.33
 2026-04-13,Barcelona Open,ATP500,1st Round,Clay,Munar J.,Jodar R.,Jodar R.,1-6 2-6,1776.5,1761.7,1765.5,1793.1,0.4408,3.0,1.4
-2026-04-13,Barcelona Open,ATP500,1st Round,Clay,Norrie C.,Wawrinka S.,Norrie C.,6-4 6-7 6-4,1793.2,1685.4,1799.5,1680.8,0.6573,1.29,3.75
 2026-04-14,BMW Open,ATP500,1st Round,Clay,Dedura D.,Cobolli F.,Cobolli F.,4-6 5-7,1475.0,1760.2,1459.1,1764.7,0.1552,4.33,1.22
 2026-04-14,BMW Open,ATP500,1st Round,Clay,Fonseca J.,Tabilo A.,Fonseca J.,7-6 6-3,1844.4,1760.2,1858.5,1750.0,0.5824,1.4,3.0
 2026-04-14,BMW Open,ATP500,1st Round,Clay,Molcan A.,Bublik A.,Molcan A.,6-4 6-2,1709.0,1913.1,1733.9,1898.4,0.3082,3.4,1.33
 2026-04-14,BMW Open,ATP500,1st Round,Clay,Zverev A.,Kecmanovic M.,Zverev A.,6-3 3-6 7-6,2020.6,1669.1,2022.3,1666.8,0.8779,1.14,5.5
 2026-04-14,Barcelona Open,ATP500,1st Round,Clay,De Minaur A.,Ofner S.,De Minaur A.,7-6 6-4,1956.4,1579.5,1958.2,1576.4,0.837,1.17,5.0
 2026-04-14,Barcelona Open,ATP500,1st Round,Clay,Fils A.,Atmane T.,Fils A.,4-6 6-4 7-6,1955.5,1691.3,1960.5,1683.7,0.858,1.17,5.0
-2026-04-14,Barcelona Open,ATP500,1st Round,Clay,Machac T.,Baez S.,Machac T.,2-6 6-4 6-1,1860.7,1700.5,1868.9,1694.0,0.6085,1.57,2.38
+2026-04-14,Barcelona Open,ATP500,1st Round,Clay,Khachanov K.,Ugo Carabelli C.,Ugo Carabelli C.,3-6 4-6,1799.5,1629.3,1787.5,1655.5,0.6932,1.53,2.5
 2026-04-14,Barcelona Open,ATP500,1st Round,Clay,Musetti L.,Landaluce M.,Musetti L.,7-5 6-2,1918.2,1618.6,1921.3,1609.7,0.9284,1.22,4.33
 2026-04-14,Barcelona Open,ATP500,1st Round,Clay,Nakashima B.,Cerundolo J.M.,Nakashima B.,6-3 7-5,1746.2,1642.4,1754.0,1629.4,0.5707,2.0,1.8
 2026-04-14,Barcelona Open,ATP500,1st Round,Clay,Navone M.,Rublev A.,Rublev A.,4-6 5-7,1663.2,1820.5,1654.0,1825.0,0.3538,2.38,1.57
@@ -1892,7 +1881,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-04-15,BMW Open,ATP500,2nd Round,Clay,Rinderknech A.,Fonseca J.,Fonseca J.,3-6 2-6,1781.9,1858.5,1772.7,1873.0,0.3697,3.5,1.3
 2026-04-15,BMW Open,ATP500,2nd Round,Clay,Shelton B.,Blockx A.,Shelton B.,6-4 7-6,1915.7,1580.5,1918.7,1572.7,0.7398,1.73,2.1
 2026-04-15,Barcelona Open,ATP500,2nd Round,Clay,Medjedovic H.,De Minaur A.,Medjedovic H.,6-3 6-4,1676.1,1958.2,1705.9,1943.6,0.1716,3.5,1.3
-2026-04-15,Barcelona Open,ATP500,2nd Round,Clay,Norrie C.,Quinn E.,Norrie C.,6-3 4-6 6-4,1799.5,1657.0,1805.1,1644.7,0.7547,1.5,2.63
 2026-04-15,Barcelona Open,ATP500,2nd Round,Clay,Ugo Carabelli C.,Jodar R.,Jodar R.,3-6 3-6,1655.5,1793.1,1644.3,1811.6,0.362,4.5,1.2
 2026-04-16,BMW Open,ATP500,2nd Round,Clay,Diallo G.,Zverev A.,Zverev A.,1-6 2-6,1704.9,2022.3,1700.2,2024.3,0.1313,9.0,1.07
 2026-04-16,BMW Open,ATP500,2nd Round,Clay,Van De Zandschulp B.,Cerundolo F.,Cerundolo F.,3-6 0-6,1736.3,1859.6,1728.6,1866.8,0.304,3.5,1.3
@@ -1913,7 +1901,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-04-19,Barcelona Open,ATP500,The Final,Clay,Fils A.,Rublev A.,Fils A.,6-2 7-6,1987.6,1844.9,1996.0,1840.0,0.6526,1.4,3.0
 2026-04-22,Mutua Madrid Open,Masters 1000,1st Round,Clay,Bautista Agut R.,Tirante T.A.,Tirante T.A.,2-6 4-6,1690.9,1682.0,1682.1,1705.5,0.4935,2.75,1.44
 2026-04-22,Mutua Madrid Open,Masters 1000,1st Round,Clay,Berrettini M.,Prizmic D.,Prizmic D.,3-6 4-6,1817.2,1581.5,1801.2,1624.7,0.8289,1.53,2.5
-2026-04-22,Mutua Madrid Open,Masters 1000,1st Round,Clay,Comesana F.,Machac T.,Machac T.,6-3 6-7 3-6,1580.5,1852.9,1574.2,1857.8,0.2383,3.0,1.4
 2026-04-22,Mutua Madrid Open,Masters 1000,1st Round,Clay,Faria J.,Hurkacz H.,Hurkacz H.,3-6 3-6,1552.6,1844.5,1543.9,1847.5,0.1668,3.2,1.36
 2026-04-22,Mutua Madrid Open,Masters 1000,1st Round,Clay,Jodar R.,De Jong J.,Jodar R.,2-6 7-5 6-4,1822.4,1635.5,1836.6,1624.7,0.7093,1.17,5.0
 2026-04-23,Mutua Madrid Open,Masters 1000,1st Round,Clay,Blockx A.,Garin C.,Blockx A.,4-6 7-5 7-5,1572.7,1666.3,1610.8,1652.0,0.427,1.67,2.2
@@ -1924,7 +1911,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-04-24,Mutua Madrid Open,Masters 1000,2nd Round,Clay,De Minaur A.,Jodar R.,Jodar R.,3-6 1-6,1943.6,1836.6,1932.2,1872.5,0.5628,1.73,2.1
 2026-04-24,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Fils A.,Buse I.,Fils A.,6-7 7-6 7-5,1996.0,1630.9,1999.0,1624.8,0.8714,1.14,5.5
 2026-04-24,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Hurkacz H.,Musetti L.,Musetti L.,4-6 6-7,1847.5,1918.0,1839.8,1926.3,0.3717,2.5,1.53
-2026-04-24,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Norrie C.,Machac T.,Norrie C.,6-2 6-7 7-6,1796.2,1857.8,1806.8,1841.0,0.4982,2.2,1.67
+2026-04-24,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Nava E.,Vacherot V.,Nava E.,6-7 7-6 6-3,1593.7,1899.4,1629.7,1861.5,0.2249,3.75,1.29
 2026-04-24,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Prizmic D.,Shelton B.,Prizmic D.,6-4 6-7 7-6,1624.7,1943.5,1670.9,1923.0,0.1872,2.75,1.44
 2026-04-24,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Rublev A.,Kopriva V.,Kopriva V.,3-6 4-6,1840.0,1707.8,1829.2,1734.7,0.6701,1.3,3.5
 2026-04-24,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Struff J.L.,Michelsen A.,Michelsen A.,2-6 1-6,1709.7,1779.5,1702.8,1790.5,0.6503,1.73,2.1
@@ -1941,6 +1928,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-04-25,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Tsitsipas S.,Bublik A.,Tsitsipas S.,6-2 7-5,1809.9,1898.4,1820.1,1886.4,0.5277,1.17,5.0
 2026-04-25,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Ugo Carabelli C.,Cobolli F.,Cobolli F.,7-6 1-6 4-6,1669.8,1801.6,1658.5,1810.2,0.3292,2.75,1.44
 2026-04-25,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Vallejo D.,Tien L.,Vallejo D.,6-4 6-3,1590.8,1860.2,1659.3,1831.9,0.3881,1.62,2.3
+2026-04-25,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Walton A.,Khachanov K.,Khachanov K.,2-6 3-6,1600.9,1787.5,1591.3,1791.7,0.2162,4.5,1.2
 2026-04-25,Mutua Madrid Open,Masters 1000,2nd Round,Clay,Zverev A.,Navone M.,Zverev A.,6-1 3-6 6-3,2016.9,1671.6,2018.7,1667.8,0.8323,1.22,4.33
 2026-04-26,Mutua Madrid Open,Masters 1000,3rd Round,Clay,Fonseca J.,Jodar R.,Jodar R.,6-7 6-4 1-6,1857.0,1872.5,1839.6,1898.4,0.4093,2.2,1.67
 2026-04-26,Mutua Madrid Open,Masters 1000,3rd Round,Clay,Michelsen A.,Lehecka J.,Lehecka J.,4-6 2-6,1790.5,1896.1,1780.9,1904.7,0.2625,3.2,1.36
@@ -1989,6 +1977,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-05-08,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Musetti L.,Mpetshi G.,Musetti L.,6-4 6-4,1921.2,1655.9,1924.8,1650.1,0.8584,1.08,8.0
 2026-05-08,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Prizmic D.,Djokovic N.,Prizmic D.,2-6 6-2 6-4,1685.2,2162.8,1733.5,2152.1,0.0766,2.75,1.44
 2026-05-08,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Ruud C.,Svajda Z.,Ruud C.,6-1 6-3,1893.5,1545.0,1895.6,1539.7,0.9051,1.06,10.0
+2026-05-08,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Shevchenko A.,Khachanov K.,Khachanov K.,4-6 4-6,1683.2,1786.1,1672.9,1791.9,0.3223,3.0,1.4
 2026-05-08,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Vukic A.,Paul T.,Paul T.,4-6 2-6,1614.5,1911.8,1610.4,1914.7,0.1161,9.0,1.07
 2026-05-09,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Atmane T.,Cobolli F.,Cobolli F.,6-7 3-6,1745.5,1830.6,1730.0,1840.7,0.2711,3.2,1.36
 2026-05-09,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Auger-Aliassime F.,Navone M.,Navone M.,6-7 6-7,1945.3,1687.4,1930.7,1713.0,0.6542,1.53,2.5
@@ -2003,6 +1992,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-05-09,Internazionali BNL d'Italia,Masters 1000,2nd Round,Clay,Sinner J.,Ofner S.,Sinner J.,6-3 6-4,2323.8,1607.3,2324.1,1606.8,0.9688,1.01,26.0
 2026-05-10,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Cerundolo F.,Musetti L.,Musetti L.,6-7 4-6,1866.5,1924.8,1857.4,1933.4,0.4058,2.0,1.8
 2026-05-10,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Jodar R.,Arnaldi M.,Jodar R.,6-1 4-6 6-3,1920.2,1665.1,1929.8,1659.8,0.7772,1.29,3.75
+2026-05-10,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Khachanov K.,Van De Zandschulp B.,Khachanov K.,5-7 6-4 6-4,1791.9,1744.5,1799.0,1734.5,0.5844,1.67,2.2
 2026-05-10,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Lehecka J.,Ruud C.,Ruud C.,3-6 4-6,1914.6,1895.6,1901.9,1904.8,0.4055,2.63,1.5
 2026-05-10,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Paul T.,Darderi L.,Darderi L.,6-3 3-6 2-6,1914.7,1730.2,1900.5,1751.2,0.6624,1.73,2.1
 2026-05-10,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Tien L.,Bublik A.,Tien L.,4-6 6-3 7-5,1839.0,1891.2,1858.5,1880.2,0.2607,2.75,1.44
@@ -2014,6 +2004,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-05-11,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Sinner J.,Popyrin A.,Sinner J.,6-2 6-0,2324.1,1709.2,2324.6,1708.6,0.9514,1.02,19.0
 2026-05-11,Internazionali BNL d'Italia,Masters 1000,3rd Round,Clay,Tirante T.A.,Cobolli F.,Tirante T.A.,6-3 6-4,1759.3,1840.7,1786.2,1824.3,0.3662,3.2,1.36
 2026-05-12,Internazionali BNL d'Italia,Masters 1000,4th Round,Clay,Darderi L.,Zverev A.,Darderi L.,1-6 7-6 6-0,1751.2,2034.6,1774.8,2022.5,0.2183,4.33,1.22
+2026-05-12,Internazionali BNL d'Italia,Masters 1000,4th Round,Clay,Khachanov K.,Prizmic D.,Khachanov K.,6-1 7-6,1799.0,1764.9,1806.3,1742.4,0.5483,2.63,1.5
 2026-05-12,Internazionali BNL d'Italia,Masters 1000,4th Round,Clay,Medvedev D.,Tirante T.A.,Medvedev D.,6-3 6-2,1967.5,1786.2,1971.6,1774.9,0.6679,1.67,2.2
 2026-05-12,Internazionali BNL d'Italia,Masters 1000,4th Round,Clay,Musetti L.,Ruud C.,Ruud C.,3-6 1-6,1933.4,1904.8,1922.3,1914.2,0.5131,2.63,1.5
 2026-05-12,Internazionali BNL d'Italia,Masters 1000,4th Round,Clay,Pellegrino A.,Sinner J.,Sinner J.,2-6 3-6,1643.0,2324.6,1641.7,2324.9,0.032,41.0,1.0
@@ -2038,14 +2029,15 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-05-19,Geneva Open,ATP250,1st Round,Clay,Brooksby J.,Ruud C.,Ruud C.,3-6 5-7,1710.2,1924.4,1703.7,1928.4,0.1466,6.5,1.11
 2026-05-19,Hamburg Open,ATP500,1st Round,Clay,Auger-Aliassime F.,Kopriva V.,Auger-Aliassime F.,7-5 6-1,1930.7,1729.2,1934.9,1720.0,0.6344,1.44,2.75
 2026-05-19,Hamburg Open,ATP500,1st Round,Clay,Cobolli F.,Buse I.,Buse I.,2-6 5-7,1824.3,1643.7,1804.7,1683.3,0.7542,1.53,2.5
+2026-05-19,Hamburg Open,ATP500,1st Round,Clay,Gaston H.,Khachanov K.,Khachanov K.,6-3 3-6 6-7,1510.5,1800.6,1505.9,1803.2,0.174,4.5,1.2
 2026-05-19,Hamburg Open,ATP500,2nd Round,Clay,Shelton B.,Altmaier D.,Altmaier D.,6-4 6-7 4-6,1907.5,1634.0,1888.0,1654.3,0.774,1.4,3.0
 2026-05-20,Geneva Open,ATP250,2nd Round,Clay,Butvilas E.,Bublik A.,Bublik A.,4-6 3-6,1578.4,1880.2,1563.8,1883.0,0.19,3.2,1.36
 2026-05-20,Geneva Open,ATP250,2nd Round,Clay,Michelsen A.,Wawrinka S.,Michelsen A.,7-6 7-6,1771.1,1683.7,1781.3,1678.7,0.4486,1.57,2.38
-2026-05-20,Geneva Open,ATP250,2nd Round,Clay,Norrie C.,Navone M.,Navone M.,4-6 4-6,1802.1,1708.2,1790.8,1727.8,0.5925,2.1,1.73
 2026-05-20,Geneva Open,ATP250,2nd Round,Clay,Popyrin A.,Fritz T.,Popyrin A.,6-4 6-4,1714.0,1933.8,1731.1,1921.0,0.3084,2.1,1.73
 2026-05-20,Geneva Open,ATP250,2nd Round,Clay,Ruud C.,Collignon R.,Ruud C.,7-6 6-2,1928.4,1750.9,1933.0,1737.2,0.8611,1.33,3.4
 2026-05-20,Geneva Open,ATP250,2nd Round,Clay,Tien L.,Tsitsipas S.,Tien L.,7-6 7-6,1845.0,1816.3,1860.5,1808.8,0.2724,2.63,1.5
 2026-05-20,Hamburg Open,ATP500,2nd Round,Clay,De Minaur A.,Davidovich Fokina A.,De Minaur A.,6-2 4-6 6-4,1924.7,1827.1,1931.0,1819.8,0.6029,1.62,2.3
+2026-05-20,Hamburg Open,ATP500,2nd Round,Clay,Khachanov K.,Humbert U.,Humbert U.,3-6 6-3 6-7,1803.2,1810.6,1795.2,1820.5,0.6709,1.36,3.2
 2026-05-20,Hamburg Open,ATP500,2nd Round,Clay,Kovacevic A.,Auger-Aliassime F.,Kovacevic A.,4-6 7-5 6-4,1563.6,1934.9,1591.1,1918.9,0.1129,7.0,1.1
 2026-05-20,Hamburg Open,ATP500,2nd Round,Clay,Mensik J.,Buse I.,Buse I.,0-6 3-6,1886.8,1683.3,1863.7,1723.5,0.6958,1.57,2.38
 2026-05-20,Hamburg Open,ATP500,2nd Round,Clay,Paul T.,Etcheverry T.,Paul T.,6-7 7-6 7-6,1903.5,1788.2,1910.0,1780.2,0.6429,1.44,2.75
@@ -2061,11 +2053,11 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-05-23,Geneva Open,ATP250,The Final,Clay,Tien L.,Navone M.,Tien L.,3-6 6-3 7-5,1890.9,1767.9,1901.9,1757.8,0.4793,2.38,1.57
 2026-05-23,Hamburg Open,ATP500,The Final,Clay,Paul T.,Buse I.,Buse I.,6-7 6-4 3-6,1923.8,1772.1,1910.3,1807.8,0.7068,1.57,2.38
 2026-05-24,French Open,Grand Slam,1st Round,Clay,Basavareddy N.,Fritz T.,Basavareddy N.,7-6 7-6 6-7 6-1,1595.1,1921.0,1639.6,1906.7,0.1348,4.33,1.22
-2026-05-24,French Open,Grand Slam,1st Round,Clay,Bergs Z.,Machac T.,Machac T.,4-6 4-6 3-6,1709.0,1854.4,1699.9,1863.0,0.257,2.2,1.67
 2026-05-24,French Open,Grand Slam,1st Round,Clay,Blockx A.,Wong C.,Blockx A.,6-3 6-4 6-2,1794.3,1621.2,1808.3,1607.3,0.8515,1.1,7.0
 2026-05-24,French Open,Grand Slam,1st Round,Clay,Djokovic N.,Mpetshi G.,Djokovic N.,5-7 7-5 6-1 6-4,2152.1,1640.9,2152.7,1639.2,0.9476,1.08,8.0
 2026-05-24,French Open,Grand Slam,1st Round,Clay,Droguet T.,Mensik J.,Mensik J.,3-6 2-6 4-6,1694.6,1863.7,1677.7,1872.0,0.3195,3.0,1.4
 2026-05-24,French Open,Grand Slam,1st Round,Clay,Dzumhur D.,Davidovich Fokina A.,Davidovich Fokina A.,7-6 3-6 6-2 5-7 3-6,1594.6,1819.8,1590.2,1824.1,0.2724,6.5,1.11
+2026-05-24,French Open,Grand Slam,1st Round,Clay,Khachanov K.,Gea A.,Khachanov K.,6-3 7-6 6-0,1795.2,1452.7,1797.2,1443.0,0.8774,1.17,5.0
 2026-05-24,French Open,Grand Slam,1st Round,Clay,Pavlovic L.,Fonseca J.,Fonseca J.,6-7 4-6 2-6,1476.2,1815.4,1464.1,1819.9,0.1741,11.0,1.05
 2026-05-24,French Open,Grand Slam,1st Round,Clay,Tirante T.A.,Llamas Ruiz P.,Tirante T.A.,6-3 7-6 6-7 6-0,1753.8,1698.7,1771.7,1673.3,0.6013,1.8,2.0
 2026-05-24,French Open,Grand Slam,1st Round,Clay,Zverev A.,Bonzi B.,Zverev A.,6-3 6-4 6-2,2022.5,1722.6,2024.7,1718.4,0.8822,1.03,15.0
@@ -2088,6 +2080,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-05-26,French Open,Grand Slam,1st Round,Clay,Medvedev D.,Walton A.,Walton A.,2-6 6-1 1-6 6-1 4-6,1972.3,1591.3,1958.2,1625.2,0.8927,1.04,13.0
 2026-05-26,French Open,Grand Slam,1st Round,Clay,Tabur C.,Sinner J.,Sinner J.,1-6 3-6 4-6,1493.7,2329.7,1493.1,2329.8,0.012,67.0,1.0
 2026-05-26,French Open,Grand Slam,1st Round,Clay,Tien L.,Garin C.,Tien L.,6-0 2-6 6-0 6-2,1901.9,1656.3,1908.4,1651.9,0.7062,1.44,2.75
+2026-05-26,French Open,Grand Slam,1st Round,Clay,Vacherot V.,Faurel T.,Vacherot V.,6-3 6-4 3-6 7-6,1861.5,1500.0,1866.4,1488.3,0.804,1.13,6.0
 2026-05-27,French Open,Grand Slam,2nd Round,Clay,Basavareddy N.,Michelsen A.,Michelsen A.,6-7 3-6 6-3 3-6,1639.6,1780.6,1624.1,1788.8,0.3613,2.63,1.5
 2026-05-27,French Open,Grand Slam,2nd Round,Clay,Djokovic N.,Royer V.,Djokovic N.,6-3 6-2 6-7 6-3,2152.7,1523.4,2153.0,1522.1,0.9726,1.1,7.0
 2026-05-27,French Open,Grand Slam,2nd Round,Clay,Duckworth J.,Jodar R.,Jodar R.,1-6 7-6 4-6 5-7,1567.1,1920.4,1564.3,1926.0,0.0774,15.0,1.03
@@ -2096,6 +2089,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-05-27,French Open,Grand Slam,2nd Round,Clay,Mensik J.,Navone M.,Mensik J.,6-3 2-6 6-4 1-6 7-6,1872.0,1770.7,1882.8,1759.8,0.5276,1.8,2.0
 2026-05-27,French Open,Grand Slam,2nd Round,Clay,Sonego L.,Paul T.,Paul T.,3-6 2-6 4-6,1677.5,1913.5,1673.6,1917.4,0.1764,6.0,1.13
 2026-05-27,French Open,Grand Slam,2nd Round,Clay,Tirante T.A.,Davidovich Fokina A.,Tirante T.A.,4-6 7-6 6-1 6-3,1771.7,1824.1,1795.9,1812.5,0.465,1.62,2.3
+2026-05-27,French Open,Grand Slam,2nd Round,Clay,Trungelliti M.,Khachanov K.,Khachanov K.,6-7 7-5 1-6 6-7,1562.0,1797.2,1553.7,1800.6,0.2205,4.0,1.25
 2026-05-27,French Open,Grand Slam,2nd Round,Clay,Ugo Carabelli C.,Rublev A.,Rublev A.,1-6 6-1 3-6 6-7,1681.3,1851.1,1671.9,1855.4,0.2804,4.0,1.25
 2026-05-27,French Open,Grand Slam,2nd Round,Clay,Zverev A.,Machac T.,Zverev A.,6-4 6-2 6-2,2024.7,1863.0,2028.8,1855.0,0.7472,1.11,6.5
 2026-05-28,French Open,Grand Slam,2nd Round,Clay,Berrettini M.,Rinderknech A.,Berrettini M.,6-4 6-4 6-4,1795.8,1795.2,1805.8,1783.5,0.6006,2.0,1.8
@@ -2111,6 +2105,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-05-29,French Open,Grand Slam,3rd Round,Clay,Borges N.,Rublev A.,Rublev A.,5-7 6-7 6-7,1711.8,1855.4,1703.9,1860.2,0.3062,3.4,1.33
 2026-05-29,French Open,Grand Slam,3rd Round,Clay,Carreno Busta P.,Tirante T.A.,Carreno Busta P.,7-6 7-5 3-6 6-4,1730.0,1795.9,1741.0,1771.1,0.4193,3.0,1.4
 2026-05-29,French Open,Grand Slam,3rd Round,Clay,Fonseca J.,Djokovic N.,Fonseca J.,4-6 4-6 6-3 7-5 7-5,1834.5,2153.0,1865.3,2143.1,0.1403,2.75,1.44
+2026-05-29,French Open,Grand Slam,3rd Round,Clay,Khachanov K.,De Jong J.,De Jong J.,5-7 7-5 2-6 7-6 2-6,1800.6,1645.2,1789.0,1674.4,0.6757,1.33,3.4
 2026-05-29,French Open,Grand Slam,3rd Round,Clay,Mensik J.,De Minaur A.,Mensik J.,0-6 6-2 6-2 6-3,1882.8,1928.8,1899.7,1919.0,0.4299,4.33,1.22
 2026-05-29,French Open,Grand Slam,3rd Round,Clay,Michelsen A.,Jodar R.,Jodar R.,6-7 7-6 6-4 3-6 3-6,1788.8,1926.0,1780.5,1941.1,0.212,5.5,1.14
 2026-05-29,French Open,Grand Slam,3rd Round,Clay,Paul T.,Ruud C.,Ruud C.,6-4 7-6 4-6 6-7 5-7,1917.4,1931.6,1908.3,1939.9,0.4128,3.5,1.3
@@ -2166,6 +2161,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-06-16,Halle Open,ATP500,1st Round,Grass,Fonseca J.,Hanfmann Y.,Hanfmann Y.,2-6 2-6,1870.5,1712.7,1845.4,1730.0,0.6387,1.33,3.4
 2026-06-16,Halle Open,ATP500,1st Round,Grass,Hurkacz H.,Rublev A.,Hurkacz H.,6-3 6-2,1812.4,1853.2,1823.1,1844.4,0.5132,1.91,1.91
 2026-06-16,Halle Open,ATP500,1st Round,Grass,Kopriva V.,Zverev A.,Zverev A.,3-6 6-4 2-6,1717.5,2046.3,1712.5,2048.2,0.1433,11.0,1.05
+2026-06-16,Halle Open,ATP500,1st Round,Grass,Quinn E.,Khachanov K.,Quinn E.,1-6 6-4 6-4,1583.5,1789.0,1613.3,1776.6,0.2442,3.0,1.4
 2026-06-16,Queen's Club Championships,ATP500,1st Round,Grass,Cerundolo F.,Kovacevic A.,Cerundolo F.,6-4 6-7 6-2,1841.0,1587.1,1845.1,1581.4,0.7079,1.53,2.5
 2026-06-16,Queen's Club Championships,ATP500,1st Round,Grass,Diallo G.,De Minaur A.,De Minaur A.,6-7 3-6,1680.5,1916.1,1673.6,1919.6,0.2487,4.5,1.2
 2026-06-16,Queen's Club Championships,ATP500,1st Round,Grass,Fucsovics M.,Nakashima B.,Nakashima B.,3-6 3-6,1720.6,1738.7,1711.3,1749.1,0.5303,2.5,1.53
@@ -2225,13 +2221,13 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-06-29,Wimbledon,Grand Slam,1st Round,Grass,Ruud C.,Hurkacz H.,Hurkacz H.,4-6 2-6 6-7,1929.4,1809.1,1917.9,1821.8,0.3675,2.75,1.44
 2026-06-29,Wimbledon,Grand Slam,1st Round,Grass,Svrcina D.,Tien L.,Tien L.,1-6 4-6 7-6 3-6,1597.6,1880.9,1588.3,1886.2,0.2888,7.0,1.1
 2026-06-29,Wimbledon,Grand Slam,1st Round,Grass,Wu Y.,Djokovic N.,Djokovic N.,4-6 7-5 4-6 4-6,1695.1,2143.1,1692.5,2143.9,0.0353,11.0,1.05
-2026-06-29,Wimbledon,Grand Slam,1st Round,Grass,Zheng M.,Norrie C.,Zheng M.,6-7 6-2 6-7 6-3 7-6,1512.2,1782.0,1580.7,1767.2,0.2205,2.38,1.57
 2026-06-30,Wimbledon,Grand Slam,1st Round,Grass,Berrettini M.,Wawrinka S.,Berrettini M.,6-7 7-6 7-6 7-6,1817.5,1670.8,1823.5,1666.9,0.7533,1.22,4.33
 2026-06-30,Wimbledon,Grand Slam,1st Round,Grass,Blockx A.,Zverev A.,Zverev A.,4-6 7-6 6-7 6-7,1808.3,2043.2,1797.8,2046.2,0.1625,7.0,1.1
 2026-06-30,Wimbledon,Grand Slam,1st Round,Grass,Cerundolo F.,Munar J.,Munar J.,1-6 4-6 3-6,1876.4,1715.5,1861.1,1730.4,0.7594,1.29,3.75
 2026-06-30,Wimbledon,Grand Slam,1st Round,Grass,De Minaur A.,Burruchaga R.,De Minaur A.,7-6 6-1 6-0,1911.5,1587.5,1913.9,1580.6,0.867,1.03,15.0
 2026-06-30,Wimbledon,Grand Slam,1st Round,Grass,Fils A.,Collignon R.,Fils A.,7-5 6-1 6-3,2014.4,1755.9,2019.4,1747.2,0.7167,1.67,2.2
 2026-06-30,Wimbledon,Grand Slam,1st Round,Grass,Fritz T.,Lajovic D.,Fritz T.,6-3 6-4 6-3,1928.5,1632.4,1931.0,1629.7,0.9076,1.05,11.0
+2026-06-30,Wimbledon,Grand Slam,1st Round,Grass,Khachanov K.,Harris B.,Khachanov K.,6-3 5-7 6-3 6-3,1776.6,1545.8,1780.0,1535.0,0.7435,1.29,3.75
 2026-06-30,Wimbledon,Grand Slam,1st Round,Grass,Kokkinakis T.,Bublik A.,Bublik A.,6-4 3-6 7-6 3-6 4-6,1808.7,1852.9,1797.2,1861.2,0.3599,3.2,1.36
 2026-06-30,Wimbledon,Grand Slam,1st Round,Grass,Lehecka J.,Popyrin A.,Lehecka J.,6-4 6-2 6-4,1874.5,1681.8,1880.4,1676.4,0.8147,1.25,4.0
 2026-06-30,Wimbledon,Grand Slam,1st Round,Grass,Michelsen A.,Fearnley J.,Fearnley J.,6-3 6-4 2-6 3-6 2-6,1780.5,1556.3,1759.6,1589.4,0.7313,1.62,2.3
@@ -2255,6 +2251,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Carreno Busta P.,Jodar R.,Jodar R.,6-3 3-6 6-1 3-6 4-6,1736.6,1936.8,1732.1,1947.9,0.3394,4.0,1.25
 2026-07-02,Wimbledon,Grand Slam,2nd Round,Grass,De Minaur A.,Mannarino A.,De Minaur A.,6-3 6-2 6-2,1913.9,1667.5,1917.2,1664.6,0.7461,1.13,6.0
 2026-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Duckworth J.,Cobolli F.,Cobolli F.,6-7 6-3 6-7 1-6,1585.8,1850.2,1581.5,1854.9,0.2565,3.0,1.4
+2026-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Khachanov K.,Hanfmann Y.,Khachanov K.,6-3 6-4 6-4,1780.0,1733.2,1787.0,1722.8,0.6344,1.57,2.38
 2026-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Kypson P.,Fritz T.,Fritz T.,2-6 2-6 5-7,1451.1,1931.0,1447.7,1931.9,0.0945,13.0,1.04
 2026-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Mensik J.,Dimitrov G.,Dimitrov G.,6-7 6-4 5-7 3-6,1896.1,1885.6,1880.9,1892.9,0.3807,1.53,2.5
 2026-07-02,Wimbledon,Grand Slam,2nd Round,Grass,Molcan A.,Lehecka J.,Lehecka J.,3-6 2-6 4-6,1750.0,1880.4,1739.8,1888.0,0.267,5.5,1.14
@@ -2299,6 +2296,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-07-15,Croatia Open,ATP250,2nd Round,Clay,Merida Aguilar D.,Etcheverry T.,Merida Aguilar D.,7-5 6-4,1639.2,1731.1,1679.7,1716.4,0.3681,2.63,1.5
 2026-07-15,Croatia Open,ATP250,2nd Round,Clay,Trungelliti M.,Davidovich Fokina A.,Davidovich Fokina A.,4-6 5-7,1535.8,1850.4,1530.3,1853.2,0.2059,3.5,1.3
 2026-07-15,Nordea Open,ATP250,2nd Round,Clay,Borges N.,Dimitrov G.,Borges N.,6-4 6-2,1737.9,1890.3,1755.7,1880.3,0.353,1.5,2.63
+2026-07-15,Suisse Open Gstaad,ATP250,2nd Round,Clay,Hanfmann Y.,Vacherot V.,Vacherot V.,6-4 3-6 4-6,1729.0,1866.4,1721.5,1880.0,0.4433,1.53,2.5
 2026-07-16,Croatia Open,ATP250,Quarterfinals,Clay,Droguet T.,Merida Aguilar D.,Merida Aguilar D.,1-6 3-6,1710.7,1679.7,1679.6,1714.0,0.5322,2.3,1.62
 2026-07-16,Croatia Open,ATP250,Quarterfinals,Clay,Molcan A.,Davidovich Fokina A.,Molcan A.,3-6 6-1 6-2,1746.9,1853.2,1767.3,1840.3,0.4516,2.3,1.62
 2026-07-16,Nordea Open,ATP250,2nd Round,Clay,Basilashvili N.,Tirante T.A.,Tirante T.A.,5-7 6-3 4-6,1612.7,1761.3,1606.8,1773.5,0.2987,3.0,1.4
@@ -2310,6 +2308,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-07-17,Suisse Open Gstaad,ATP250,2nd Round,Clay,Bublik A.,Halys Q.,Halys Q.,7-6 4-6 6-7,1865.5,1661.3,1851.1,1681.3,0.7054,1.36,3.2
 2026-07-17,Suisse Open Gstaad,ATP250,Quarterfinals,Clay,Cerundolo J.M.,Ruud C.,Cerundolo J.M.,3-6 7-5 6-2,1702.1,1920.9,1728.7,1907.5,0.1831,3.5,1.3
 2026-07-17,Suisse Open Gstaad,ATP250,Quarterfinals,Clay,Tsitsipas S.,Rinderknech A.,Tsitsipas S.,6-3 3-6 6-3,1802.5,1769.1,1809.9,1758.6,0.6515,1.62,2.3
+2026-07-17,Suisse Open Gstaad,ATP250,Quarterfinals,Clay,Vacherot V.,Collignon R.,Collignon R.,6-7 6-4 5-7,1880.0,1774.0,1852.0,1803.6,0.6103,2.2,1.67
 2026-07-18,Croatia Open,ATP250,The Final,Clay,Dzumhur D.,Merida Aguilar D.,Merida Aguilar D.,2-6 7-5 2-6,1619.7,1741.4,1612.9,1761.4,0.3709,2.75,1.44
 2026-07-18,Nordea Open,ATP250,Semifinals,Clay,Tabilo A.,Rublev A.,Rublev A.,4-6 6-4 4-6,1725.3,1840.8,1716.4,1846.1,0.3187,2.75,1.44
 2026-07-18,Suisse Open Gstaad,ATP250,Semifinals,Clay,Tsitsipas S.,Shevchenko A.,Tsitsipas S.,6-4 3-6 6-3,1809.9,1700.7,1815.6,1690.9,0.7358,1.25,4.0
@@ -2318,6 +2317,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-07-21,Estoril Open,ATP250,1st Round,Clay,Jacquet K.,Merida Aguilar D.,Jacquet K.,1-6 6-1 7-5,1487.2,1761.4,1543.3,1712.4,0.1415,3.0,1.4
 2026-07-22,Estoril Open,ATP250,2nd Round,Clay,Blockx A.,Jacquet K.,Blockx A.,3-6 6-4 7-6,1762.0,1543.3,1773.1,1528.7,0.8192,1.36,3.2
 2026-07-22,Generali Open,ATP250,2nd Round,Clay,Diaz Acosta F.,Bublik A.,Bublik A.,3-6 5-7,1608.3,1851.1,1600.4,1854.8,0.2605,2.75,1.44
+2026-07-22,Generali Open,ATP250,2nd Round,Clay,Halys Q.,Vacherot V.,Halys Q.,6-3 6-4,1680.4,1852.0,1699.4,1820.7,0.3929,2.5,1.53
 2026-07-23,Estoril Open,ATP250,2nd Round,Clay,Skatov T.,Rublev A.,Rublev A.,1-6 1-6,1502.2,1852.8,1495.2,1854.6,0.1238,10.0,1.06
 2026-07-23,Generali Open,ATP250,Quarterfinals,Clay,Molcan A.,Bublik A.,Bublik A.,3-6 2-6,1767.3,1854.8,1755.6,1861.9,0.4768,2.38,1.57
 2026-07-24,Estoril Open,ATP250,Quarterfinals,Clay,Burruchaga R.,Blockx A.,Blockx A.,4-6 7-5 4-6,1707.2,1773.1,1688.0,1793.2,0.383,1.91,1.91
@@ -2336,7 +2336,6 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-07-28,Citi Open,ATP500,1st Round,Hard,Shelton B.,Damm M.,Shelton B.,6-4 4-6 6-4,1886.3,1556.2,1889.3,1551.3,0.8844,1.33,3.4
 2026-07-28,Citi Open,ATP500,1st Round,Hard,Svajda T.,Mensik J.,Mensik J.,2-6 7-6 3-6,1412.8,1880.9,1407.0,1882.8,0.0586,4.33,1.22
 2026-07-28,Citi Open,ATP500,1st Round,Hard,Tien L.,Mannarino A.,Mannarino A.,5-7 4-6,1862.6,1664.6,1838.3,1675.8,0.7559,1.17,5.0
-2026-07-28,Los Cabos Open,ATP250,1st Round,Hard,Kovacevic A.,Norrie C.,Norrie C.,4-6 1-6,1561.5,1767.2,1554.5,1771.4,0.2506,2.2,1.67
 2026-07-29,Citi Open,ATP500,1st Round,Hard,De Minaur A.,Tsitsipas S.,De Minaur A.,6-4 3-6 6-3,1910.6,1823.8,1917.1,1817.7,0.6572,1.67,2.2
 2026-07-29,Citi Open,ATP500,2nd Round,Hard,Fritz T.,Majchrzak K.,Fritz T.,6-3 6-4,1940.2,1785.3,1944.9,1776.2,0.717,1.29,3.75
 2026-07-29,Citi Open,ATP500,2nd Round,Hard,Vukic A.,Musetti L.,Musetti L.,3-6 7-5 3-6,1597.3,1922.3,1593.7,1925.0,0.1664,3.2,1.36
@@ -2345,16 +2344,14 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-07-30,Citi Open,ATP500,2nd Round,Hard,Mannarino A.,Michelsen A.,Michelsen A.,4-6 6-7,1675.8,1765.9,1670.3,1775.8,0.3567,3.4,1.33
 2026-07-30,Citi Open,ATP500,2nd Round,Hard,Mensik J.,Nakashima B.,Nakashima B.,6-7 6-3 4-6,1882.8,1771.7,1863.7,1785.9,0.689,1.62,2.3
 2026-07-30,Citi Open,ATP500,2nd Round,Hard,Shelton B.,Humbert U.,Shelton B.,6-7 6-3 6-4,1889.3,1818.2,1898.5,1810.3,0.6049,1.4,3.0
-2026-07-30,Los Cabos Open,ATP250,2nd Round,Hard,Norrie C.,Duckworth J.,Norrie C.,6-4 6-4,1771.4,1590.7,1776.0,1584.5,0.7479,1.4,3.0
+2026-07-30,Los Cabos Open,ATP250,2nd Round,Hard,Khachanov K.,Tomic B.,Tomic B.,2-6 4-6,1780.4,1630.6,1769.0,1644.3,0.6768,1.29,3.75
 2026-07-30,Los Cabos Open,ATP250,2nd Round,Hard,Wong C.,Lehecka J.,Wong C.,1-6 6-3 6-4,1627.9,1888.0,1668.7,1868.8,0.203,4.0,1.25
 2026-07-31,Citi Open,ATP500,Quarterfinals,Hard,De Minaur A.,Nakashima B.,Nakashima B.,6-7 4-6,1919.3,1785.9,1907.5,1800.6,0.7056,1.57,2.38
 2026-07-31,Citi Open,ATP500,Quarterfinals,Hard,Fritz T.,Michelsen A.,Fritz T.,6-1 3-6 7-6,1944.9,1775.8,1949.3,1768.5,0.6789,1.4,3.0
 2026-07-31,Citi Open,ATP500,Quarterfinals,Hard,Musetti L.,Jodar R.,Jodar R.,6-1 1-6 4-6,1925.0,1951.5,1915.6,1972.0,0.5823,2.5,1.53
 2026-07-31,Los Cabos Open,ATP250,Quarterfinals,Hard,Cerundolo F.,Gea A.,Gea A.,7-6 4-6 0-6,1861.1,1545.0,1842.7,1606.7,0.8305,1.5,2.63
-2026-07-31,Los Cabos Open,ATP250,Quarterfinals,Hard,Norrie C.,Tomic B.,Norrie C.,6-1 6-0,1776.0,1644.3,1781.7,1638.1,0.6536,1.36,3.2
 2026-08-01,Citi Open,ATP500,Quarterfinals,Hard,Tabilo A.,Shelton B.,Tabilo A.,4-6 7-5 6-4,1723.5,1898.5,1742.5,1881.6,0.252,3.75,1.29
 2026-08-01,Citi Open,ATP500,Semifinals,Hard,Nakashima B.,Fritz T.,Fritz T.,3-6 6-3 3-6,1800.6,1949.3,1794.2,1954.2,0.3102,2.5,1.53
-2026-08-01,Los Cabos Open,ATP250,Semifinals,Hard,Shapovalov D.,Norrie C.,Shapovalov D.,6-3 5-7 6-4,1740.6,1781.7,1750.6,1771.8,0.4909,2.3,1.62
 2026-08-02,Citi Open,ATP500,Semifinals,Hard,Jodar R.,Tabilo A.,Jodar R.,6-7 6-4 6-4,1972.0,1742.5,1981.3,1737.0,0.6666,1.36,3.2
 2026-08-03,Canadian Open,Masters 1000,1st Round,Hard,Navone M.,Berrettini M.,Navone M.,6-3 6-7 6-3,1719.0,1830.2,1738.4,1817.1,0.224,2.75,1.44
 2026-08-03,Citi Open,ATP500,The Final,Hard,Jodar R.,Fritz T.,Fritz T.,6-7 4-6,1981.3,1954.2,1957.8,1962.9,0.4283,2.38,1.57
@@ -2364,11 +2361,9 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-08-04,Canadian Open,Masters 1000,1st Round,Hard,Merida Aguilar D.,Draxl L.,Merida Aguilar D.,3-6 6-4 6-4,1712.4,1397.0,1720.5,1385.4,0.7551,1.57,2.38
 2026-08-04,Canadian Open,Masters 1000,1st Round,Hard,Struff J.L.,Michelsen A.,Michelsen A.,1-6 6-3 1-6,1729.2,1768.5,1721.7,1780.2,0.3395,3.4,1.33
 2026-08-04,Canadian Open,Masters 1000,1st Round,Hard,Tirante T.A.,Chan D.,Tirante T.A.,6-3 1-6 7-6,1773.5,1500.0,1780.4,1482.0,0.7271,1.3,3.5
-2026-08-04,Canadian Open,Masters 1000,1st Round,Hard,Ugo Carabelli C.,Norrie C.,Norrie C.,6-7 4-6,1660.5,1771.8,1648.9,1777.9,0.2753,4.33,1.22
 2026-08-04,Canadian Open,Masters 1000,2nd Round,Hard,Altmaier D.,Nakashima B.,Nakashima B.,2-6 1-6,1692.2,1794.2,1683.7,1801.9,0.3142,3.75,1.29
 2026-08-04,Canadian Open,Masters 1000,2nd Round,Hard,Lehecka J.,Kopriva V.,Lehecka J.,6-4 6-2,1868.8,1672.7,1874.5,1663.9,0.7863,1.2,4.5
 2026-08-04,Canadian Open,Masters 1000,2nd Round,Hard,Rublev A.,Shang J.,Shang J.,5-7 6-4 6-7,1842.4,1719.4,1831.9,1742.4,0.6653,1.25,4.0
-2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Buse I.,Norrie C.,Norrie C.,3-6 3-6,1738.3,1777.9,1718.6,1785.8,0.2673,3.0,1.4
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Cerundolo J.M.,Ruud C.,Ruud C.,1-6 2-6,1708.6,1907.5,1700.5,1911.6,0.2698,3.4,1.33
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Duckworth J.,De Minaur A.,De Minaur A.,2-6 6-7,1597.4,1907.5,1594.0,1910.0,0.1304,7.0,1.1
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Fils A.,Svajda Z.,Fils A.,6-4 3-6 6-1,1982.2,1637.6,1985.4,1632.6,0.884,1.33,3.4
@@ -2377,12 +2372,14 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Hanfmann Y.,Cobolli F.,Hanfmann Y.,7-6 7-6,1741.8,1841.6,1757.0,1825.1,0.4182,2.3,1.62
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Hurkacz H.,Tabilo A.,Hurkacz H.,6-4 7-6,1843.7,1737.0,1850.4,1728.0,0.6097,1.67,2.2
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Jodar R.,Moutet C.,Jodar R.,4-6 6-1 6-3,1957.8,1677.2,1965.0,1673.4,0.7256,1.3,3.5
+2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Khachanov K.,Atmane T.,Atmane T.,4-6 6-7,1769.0,1704.8,1759.5,1727.2,0.5662,1.67,2.2
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Mejia N.,Musetti L.,Musetti L.,6-7 2-6,1474.4,1915.6,1468.8,1917.1,0.0881,7.0,1.1
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Mensik J.,Fearnley J.,Mensik J.,6-3 3-6 6-3,1863.7,1602.7,1869.0,1595.2,0.8489,1.4,3.0
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Merida Aguilar D.,Humbert U.,Merida Aguilar D.,6-3 6-3,1720.5,1810.3,1756.2,1798.0,0.2474,3.0,1.4
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Michelsen A.,Cerundolo F.,Michelsen A.,6-3 6-4,1780.2,1842.7,1795.7,1830.1,0.4639,1.62,2.3
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Shelton B.,Brooksby J.,Shelton B.,6-3 7-5,1881.6,1718.4,1888.1,1710.7,0.7272,1.33,3.4
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Tiafoe F.,Cilic M.,Tiafoe F.,5-7 6-2 6-2,1848.7,1780.6,1855.6,1775.3,0.574,1.44,2.75
+2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Vacherot V.,Navone M.,Navone M.,6-1 3-6 3-6,1820.7,1738.4,1794.5,1756.6,0.7498,1.57,2.38
 2026-08-05,Canadian Open,Masters 1000,2nd Round,Hard,Zverev A.,Griekspoor T.,Griekspoor T.,7-6 2-6 4-6,2057.4,1702.3,2044.8,1722.3,0.8468,1.13,6.0
 2026-08-06,Canadian Open,Masters 1000,2nd Round,Hard,Medvedev D.,Van De Zandschulp B.,Van De Zandschulp B.,3-6 6-7,1939.4,1694.0,1926.9,1712.2,0.8177,1.29,3.75
 2026-08-06,Canadian Open,Masters 1000,2nd Round,Hard,Royer V.,Paul T.,Paul T.,4-6 6-7,1547.2,1898.9,1542.1,1901.1,0.1385,5.0,1.17
@@ -2413,16 +2410,15 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-08-12,Canadian Open,Masters 1000,Semifinals,Hard,Nakashima B.,Jodar R.,Nakashima B.,7-6 6-4,1829.5,2019.8,1845.5,1988.4,0.313,3.0,1.4
 2026-08-13,Canadian Open,Masters 1000,Semifinals,Hard,Tien L.,Shelton B.,Shelton B.,2-6 3-6,1896.5,1916.6,1881.7,1927.4,0.4538,2.75,1.44
 2026-08-13,Western & Southern Financial Group Masters,Masters 1000,1st Round,Hard,Draper J.,Landaluce M.,Landaluce M.,3-6 5-7,1957.9,1549.6,1934.2,1592.6,0.906,1.36,3.2
-2026-08-13,Western & Southern Financial Group Masters,Masters 1000,1st Round,Hard,Norrie C.,Prizmic D.,Norrie C.,3-6 6-1 6-4,1793.4,1758.3,1801.4,1737.3,0.6846,1.44,2.75
 2026-08-13,Western & Southern Financial Group Masters,Masters 1000,1st Round,Hard,Tirante T.A.,Choinski J.,Tirante T.A.,7-6 6-7 7-6,1806.9,1501.4,1812.7,1493.2,0.8432,1.44,2.75
 2026-08-14,Canadian Open,Masters 1000,The Final,Hard,Shelton B.,Nakashima B.,Shelton B.,6-3 7-6,1927.4,1845.5,1936.2,1837.3,0.649,1.4,3.0
-2026-08-14,Western & Southern Financial Group Masters,Masters 1000,1st Round,Hard,Carreno Busta P.,Machac T.,Carreno Busta P.,6-3 6-2,1703.4,1855.0,1716.4,1835.0,0.2845,1.8,2.0
 2026-08-14,Western & Southern Financial Group Masters,Masters 1000,1st Round,Hard,Cilic M.,Merida Aguilar D.,Merida Aguilar D.,6-3 1-6 1-6,1775.3,1789.2,1769.0,1814.9,0.5275,2.2,1.67
 2026-08-14,Western & Southern Financial Group Masters,Masters 1000,1st Round,Hard,Dimitrov G.,Baez S.,Baez S.,6-1 3-6 4-6,1880.3,1692.7,1869.7,1709.4,0.7899,1.62,2.3
 2026-08-14,Western & Southern Financial Group Masters,Masters 1000,1st Round,Hard,Droguet T.,Berrettini M.,Berrettini M.,6-3 1-6 4-6,1700.1,1817.1,1682.5,1823.9,0.3435,2.1,1.73
 2026-08-14,Western & Southern Financial Group Masters,Masters 1000,1st Round,Hard,Hurkacz H.,Shimabukuro S.,Hurkacz H.,6-2 6-4,1837.3,1518.5,1839.9,1511.1,0.8616,1.29,3.75
 2026-08-14,Western & Southern Financial Group Masters,Masters 1000,1st Round,Hard,Michelsen A.,De Jong J.,Michelsen A.,6-4 6-4,1781.1,1641.0,1789.2,1628.9,0.7481,1.17,5.0
 2026-08-14,Western & Southern Financial Group Masters,Masters 1000,1st Round,Hard,Tsitsipas S.,Royer V.,Tsitsipas S.,7-6 7-5,1812.9,1542.1,1815.7,1534.5,0.8028,1.29,3.75
+2026-08-15,Western & Southern Financial Group Masters,Masters 1000,1st Round,Hard,Khachanov K.,Kovacevic A.,Kovacevic A.,7-5 3-6 6-7,1759.5,1546.6,1746.9,1569.6,0.7596,1.36,3.2
 2026-08-15,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Bellucci M.,Mensik J.,Mensik J.,5-7 6-2 6-7,1656.1,1872.8,1647.9,1879.2,0.1802,4.0,1.25
 2026-08-15,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Cobolli F.,Kecmanovic M.,Cobolli F.,6-1 4-6 6-3,1825.1,1660.0,1832.3,1654.7,0.6454,1.73,2.1
 2026-08-15,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Halys Q.,De Minaur A.,De Minaur A.,6-1 3-6 6-7,1755.6,1898.4,1747.8,1903.7,0.235,3.2,1.36
@@ -2430,6 +2426,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-08-15,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Navone M.,Blockx A.,Blockx A.,3-6 4-6,1764.7,1766.6,1750.2,1790.1,0.609,2.2,1.67
 2026-08-15,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Paul T.,Hurkacz H.,Paul T.,6-4 6-7 6-3,1890.4,1839.9,1898.4,1831.8,0.5806,1.8,2.0
 2026-08-15,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Tirante T.A.,Djokovic N.,Tirante T.A.,2-6 6-4 6-4,1812.7,2146.5,1846.9,2136.6,0.0877,4.0,1.25
+2026-08-15,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Vacherot V.,Vallejo D.,Vallejo D.,3-6 3-6,1794.5,1572.4,1761.5,1618.7,0.7833,1.5,2.63
 2026-08-16,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Altmaier D.,Musetti L.,Musetti L.,4-6 2-6,1695.0,1908.3,1689.6,1912.9,0.2276,4.33,1.22
 2026-08-16,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Auger-Aliassime F.,Tsitsipas S.,Auger-Aliassime F.,6-3 7-5,1929.1,1815.7,1935.1,1810.1,0.6919,1.67,2.2
 2026-08-16,Western & Southern Financial Group Masters,Masters 1000,2nd Round,Hard,Bergs Z.,Merida Aguilar D.,Merida Aguilar D.,3-6 2-6,1732.7,1814.9,1721.6,1835.2,0.4043,2.0,1.8
@@ -2476,23 +2473,22 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-08-23,Western & Southern Financial Group Masters,Masters 1000,The Final,Hard,Fils A.,Tiafoe F.,Fils A.,6-3 1-6 6-0,2025.5,1897.8,2034.0,1892.2,0.644,1.44,2.75
 2026-08-24,Winston-Salem Open at Wake Forest University,ATP250,2nd Round,Hard,Tsitsipas S.,Brooksby J.,Tsitsipas S.,6-4 7-6,1810.1,1705.2,1815.9,1695.6,0.6221,1.62,2.3
 2026-08-25,Winston-Salem Open at Wake Forest University,ATP250,2nd Round,Hard,Damm M.,Medvedev D.,Damm M.,7-5 6-3,1559.8,1919.0,1592.6,1905.2,0.0964,4.0,1.25
-2026-08-25,Winston-Salem Open at Wake Forest University,ATP250,2nd Round,Hard,Machac T.,Rottgering M.,Rottgering M.,2-6 6-7,1835.0,1471.8,1809.8,1545.7,0.8913,1.44,2.75
 2026-08-26,Winston-Salem Open at Wake Forest University,ATP250,3rd Round,Hard,Tsitsipas S.,Kovacevic A.,Kovacevic A.,3-6 6-7,1815.9,1594.8,1803.2,1617.7,0.7601,1.4,3.0
 2026-08-30,US Open,Grand Slam,1st Round,Hard,Carreno Busta P.,Lehecka J.,Lehecka J.,1-6 6-7 6-4 2-6,1710.2,1876.6,1705.1,1883.1,0.3039,4.5,1.2
 2026-08-30,US Open,Grand Slam,1st Round,Hard,Gaston H.,Medvedev D.,Medvedev D.,4-6 2-6 4-6,1543.7,1905.2,1540.5,1907.0,0.0943,6.0,1.13
-2026-08-30,US Open,Grand Slam,1st Round,Hard,Machac T.,Samuel T.,Samuel T.,2-6 3-6 2-6,1809.8,1536.2,1786.4,1599.7,0.8404,2.3,1.62
 2026-08-30,US Open,Grand Slam,1st Round,Hard,Merida Aguilar D.,Fucsovics M.,Merida Aguilar D.,6-4 6-4 6-2,1817.8,1707.9,1835.6,1701.1,0.6378,1.2,4.5
-2026-08-30,US Open,Grand Slam,1st Round,Hard,Van Assche L.,Norrie C.,Van Assche L.,6-7 6-2 6-2 6-3,1645.2,1797.8,1670.7,1785.3,0.2258,2.75,1.44
 2026-08-30,US Open,Grand Slam,1st Round,Hard,Wong C.,Paul T.,Paul T.,7-6 1-6 3-6 3-6,1643.8,1903.9,1635.1,1907.3,0.2104,5.5,1.14
 2026-08-31,US Open,Grand Slam,1st Round,Hard,Baez S.,Nakashima B.,Nakashima B.,2-6 1-6 0-6,1709.4,1866.6,1703.0,1872.7,0.2668,6.0,1.13
 2026-08-31,US Open,Grand Slam,1st Round,Hard,Barrios M.,Blockx A.,Blockx A.,3-6 4-6 2-6,1433.6,1769.5,1427.2,1775.4,0.2875,5.0,1.17
 2026-08-31,US Open,Grand Slam,1st Round,Hard,Borges N.,Tien L.,Tien L.,4-6 1-6 2-6,1785.1,1873.2,1775.8,1884.9,0.3506,2.63,1.5
+2026-08-31,US Open,Grand Slam,1st Round,Hard,Burruchaga R.,Khachanov K.,Khachanov K.,3-6 0-6 1-6,1644.6,1746.9,1628.3,1752.7,0.2513,4.0,1.25
 2026-08-31,US Open,Grand Slam,1st Round,Hard,Cina F.,Michelsen A.,Michelsen A.,4-6 1-6 0-6,1440.7,1781.8,1433.0,1785.0,0.14,5.5,1.14
 2026-08-31,US Open,Grand Slam,1st Round,Hard,Dzumhur D.,Hurkacz H.,Hurkacz H.,4-6 6-4 1-6 1-6,1612.9,1831.8,1608.3,1836.0,0.1918,9.0,1.07
 2026-08-31,US Open,Grand Slam,1st Round,Hard,Navone M.,Djokovic N.,Navone M.,7-6 5-7 4-6 6-2 6-1,1729.9,2136.6,1756.5,2126.2,0.0469,5.5,1.14
 2026-08-31,US Open,Grand Slam,1st Round,Hard,Safiullin R.,Alcaraz C.,Alcaraz C.,4-6 4-6 4-6,1662.0,2229.3,1661.0,2230.0,0.0455,5.0,1.17
 2026-08-31,US Open,Grand Slam,1st Round,Hard,Tirante T.A.,Mannarino A.,Mannarino A.,6-4 6-3 3-6 3-6 3-6,1864.1,1648.5,1834.5,1659.9,0.7354,1.36,3.2
 2026-08-31,US Open,Grand Slam,1st Round,Hard,Tsitsipas S.,Fils A.,Tsitsipas S.,4-6 7-6 6-1 6-4,1803.2,2034.0,1816.0,2013.4,0.2301,5.0,1.17
+2026-08-31,US Open,Grand Slam,1st Round,Hard,Vacherot V.,Kovacevic A.,Vacherot V.,6-2 6-3 7-5,1761.5,1610.0,1773.9,1601.4,0.6826,1.8,2.0
 2026-08-31,US Open,Grand Slam,1st Round,Hard,Virtanen O.,Rublev A.,Rublev A.,7-6 7-6 0-6 2-6 6-7,1583.9,1828.1,1573.8,1831.2,0.1808,5.5,1.14
 2026-08-31,US Open,Grand Slam,1st Round,Hard,Wawrinka S.,Berrettini M.,Berrettini M.,6-7 6-7 0-6,1652.7,1815.4,1649.0,1821.0,0.3626,4.33,1.22
 2026-08-31,US Open,Grand Slam,1st Round,Hard,Wolf J.J.,Bublik A.,Bublik A.,4-6 2-6 6-3 1-6,1575.1,1855.0,1569.9,1858.2,0.1792,3.0,1.4
@@ -2526,6 +2522,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-09-03,US Open,Grand Slam,2nd Round,Hard,Sakamoto R.,Tiafoe F.,Tiafoe F.,3-6 6-7 5-7,1513.0,1894.7,1505.6,1896.4,0.1108,4.0,1.25
 2026-09-03,US Open,Grand Slam,2nd Round,Hard,Schoolkate T.,Cobolli F.,Cobolli F.,6-3 3-6 4-6 5-7,1529.8,1873.4,1523.5,1876.5,0.1531,4.5,1.2
 2026-09-03,US Open,Grand Slam,2nd Round,Hard,Struff J.L.,Cerundolo F.,Cerundolo F.,7-5 5-7 6-4 2-6 3-6,1726.6,1822.6,1720.5,1830.4,0.3257,2.38,1.57
+2026-09-03,US Open,Grand Slam,2nd Round,Hard,Vacherot V.,Majchrzak K.,Vacherot V.,6-4 4-6 7-6 6-2,1773.9,1736.1,1792.4,1722.4,0.5725,1.73,2.1
 2026-09-03,US Open,Grand Slam,2nd Round,Hard,Van De Zandschulp B.,De Minaur A.,Van De Zandschulp B.,6-4 7-5 6-2,1737.4,1904.6,1753.5,1892.2,0.2803,3.4,1.33
 2026-09-04,US Open,Grand Slam,2nd Round,Hard,Halys Q.,Zverev A.,Zverev A.,4-6 6-4 6-7 7-6 3-6,1742.5,2041.2,1738.6,2043.4,0.1327,5.5,1.14
 2026-09-04,US Open,Grand Slam,2nd Round,Hard,Monfils G.,Tien L.,Tien L.,3-6 4-6 3-6,1779.4,1884.9,1774.7,1895.8,0.3832,5.0,1.17
@@ -2536,6 +2533,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-09-04,US Open,Grand Slam,3rd Round,Hard,Merida Aguilar D.,Michelsen A.,Michelsen A.,6-7 4-6 3-6,1860.6,1801.2,1831.4,1816.3,0.5454,2.5,1.53
 2026-09-05,US Open,Grand Slam,3rd Round,Hard,Cerundolo F.,Fritz T.,Cerundolo F.,3-6 4-6 6-3 6-4 6-4,1830.4,1956.1,1844.7,1945.2,0.3189,6.5,1.11
 2026-09-05,US Open,Grand Slam,3rd Round,Hard,Cobolli F.,Blockx A.,Blockx A.,7-6 3-6 0-6 3-6,1876.5,1787.5,1860.7,1815.8,0.7282,1.8,2.0
+2026-09-05,US Open,Grand Slam,3rd Round,Hard,Khachanov K.,Bonzi B.,Khachanov K.,6-3 6-2 6-4,1764.6,1785.9,1773.2,1771.6,0.4866,1.4,3.0
 2026-09-05,US Open,Grand Slam,3rd Round,Hard,Shapovalov D.,Shelton B.,Shelton B.,6-7 7-6 3-6 4-6,1756.2,1931.6,1751.4,1937.7,0.282,4.33,1.22
 2026-09-05,US Open,Grand Slam,3rd Round,Hard,Tiafoe F.,Vacherot V.,Tiafoe F.,6-4 6-2 6-4,1896.4,1792.4,1902.4,1777.8,0.6438,1.5,2.63
 2026-09-06,US Open,Grand Slam,3rd Round,Hard,Tabilo A.,Zverev A.,Zverev A.,2-6 6-7 2-6,1760.7,2043.4,1756.5,2045.7,0.1811,5.0,1.17
@@ -2557,6 +2555,7 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-09-25,Hangzhou Open,ATP250,2nd Round,Hard,Hijikata R.,Rublev A.,Rublev A.,3-6 3-6,1681.0,1823.5,1672.1,1828.2,0.3312,3.4,1.33
 2026-09-26,Chengdu Open,ATP250,2nd Round,Hard,Davidovich Fokina A.,Cerundolo J.M.,Davidovich Fokina A.,6-4 6-4,1840.3,1702.6,1846.5,1692.5,0.6928,1.53,2.5
 2026-09-26,Chengdu Open,ATP250,2nd Round,Hard,Hurkacz H.,Damm M.,Hurkacz H.,4-6 6-3 6-4,1834.0,1595.0,1837.8,1587.7,0.7787,1.4,3.0
+2026-09-26,Chengdu Open,ATP250,2nd Round,Hard,Vacherot V.,Harris L.,Harris L.,4-6 6-7,1777.8,1657.4,1750.5,1675.5,0.6468,1.8,2.0
 2026-09-26,Hangzhou Open,ATP250,2nd Round,Hard,Royer V.,Medvedev D.,Medvedev D.,6-7 3-6,1542.6,1905.0,1537.9,1906.7,0.104,4.33,1.22
 2026-09-27,Chengdu Open,ATP250,Quarterfinals,Hard,Harris L.,Hurkacz H.,Hurkacz H.,6-7 4-6,1675.5,1837.8,1667.9,1843.1,0.3156,2.5,1.53
 2026-09-27,Chengdu Open,ATP250,Quarterfinals,Hard,Muller A.,Davidovich Fokina A.,Davidovich Fokina A.,1-6 5-7,1649.2,1846.5,1642.4,1851.3,0.2695,3.5,1.3
@@ -2568,19 +2567,51 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-09-28,Hangzhou Open,ATP250,Semifinals,Hard,Medvedev D.,Safiullin R.,Medvedev D.,7-5 6-4,1910.0,1696.0,1913.5,1689.7,0.7932,1.44,2.75
 2026-09-29,Chengdu Open,ATP250,The Final,Hard,Davidovich Fokina A.,Hurkacz H.,Davidovich Fokina A.,6-4 7-6,1855.7,1850.6,1865.4,1841.3,0.5154,2.2,1.67
 2026-09-29,Hangzhou Open,ATP250,The Final,Hard,Rublev A.,Medvedev D.,Medvedev D.,5-7 4-6,1834.6,1913.5,1828.5,1919.5,0.3413,2.75,1.44
-2026-10-03,ATP China Open,,,Hard,Medvedev D.,Struff J.L.,Medvedev D.,,1919.5,1720.5,1923.2,1716.4,0.8278,,
-2026-10-03,ATP China Open,,,Hard,Zverev A.,Shang J.,Zverev A.,,2058.8,1666.4,2060.2,1663.2,0.9044,,
-2026-10-03,ATP China Open,,,Hard,Cerundolo F.,Mensik J.,Cerundolo F.,,1833.2,1866.0,1844.8,1850.6,0.4046,,
-2026-10-03,ATP Japan Open,,,Hard,Humbert U.,Lehecka J.,Lehecka J.,,1783.2,1873.1,1775.8,1881.7,0.4047,,
-2026-10-04,tennis_atp_china_open,,,Hard,Hurkacz H.,Khachanov K.,Hurkacz H.,,1841.3,1781.5,1849.1,1774.8,0.5599,,
-2026-10-04,tennis_atp_china_open,,,Hard,De Minaur A.,Rublev A.,De Minaur A.,,1892.2,1828.5,1899.2,1822.1,0.6152,,
-2026-10-04,tennis_atp_china_open,,,Hard,Medvedev D.,Cerundolo F.,Medvedev D.,,1923.2,1844.8,1929.2,1836.5,0.665,,
-2026-10-04,tennis_atp_china_open,,,Hard,Zverev A.,Djokovic N.,Djokovic N.,,2060.2,2126.2,2054.4,2130.8,0.3604,,
-2026-10-04,tennis_atp_japan_open,,,Hard,Alcaraz C.,Shapovalov D.,Alcaraz C.,,2218.5,1765.1,2219.8,1763.9,0.9051,,
-2026-10-04,tennis_atp_japan_open,,,Hard,Vacherot V.,Fils A.,Vacherot V.,,1750.5,2013.4,1783.8,1992.1,0.2005,,
-2026-10-04,tennis_atp_japan_open,,,Hard,Lehecka J.,Vallejo D.,Lehecka J.,,1881.7,1572.1,1885.1,1564.4,0.8495,,
-2026-10-05,tennis_atp_china_open,,,Hard,De Minaur A.,Hurkacz H.,De Minaur A.,,1899.2,1849.1,1906.6,1841.1,0.6049,,
-2026-10-05,tennis_atp_japan_open,,,Hard,Alcaraz C.,Munar J.,Alcaraz C.,,2219.8,1733.3,2220.9,1732.1,0.9246,,
-2026-10-05,tennis_atp_japan_open,,,Hard,Lehecka J.,Vacherot V.,Lehecka J.,,1885.1,1783.8,1893.4,1769.3,0.6399,,
-2026-10-06,tennis_atp_china_open,,,Hard,Djokovic N.,De Minaur A.,Djokovic N.,,2130.8,1906.6,2133.3,1902.9,0.7954,,
-2026-10-06,tennis_atp_japan_open,,,Hard,Alcaraz C.,Lehecka J.,Alcaraz C.,,2220.9,1893.4,2223.5,1890.3,0.8529,,
+2026-09-30,China Open,ATP500,1st Round,Hard,Djokovic N.,Borges N.,Djokovic N.,6-3 7-6,2126.2,1775.8,2127.6,1772.9,0.9009,1.33,3.4
+2026-09-30,China Open,ATP500,1st Round,Hard,Khachanov K.,Auger-Aliassime F.,Khachanov K.,6-3 6-3,1781.5,1919.0,1792.5,1907.0,0.2958,2.3,1.62
+2026-09-30,China Open,ATP500,1st Round,Hard,Tirante T.A.,Struff J.L.,Struff J.L.,1-6 4-6,1834.5,1720.5,1809.5,1731.6,0.682,1.53,2.5
+2026-09-30,Japan Open Tennis Championships,ATP500,1st Round,Hard,Fils A.,Van Assche L.,Fils A.,6-3 6-2,2013.4,1656.7,2016.4,1652.7,0.8983,1.13,6.0
+2026-09-30,Japan Open Tennis Championships,ATP500,1st Round,Hard,Paul T.,Tabilo A.,Tabilo A.,1-6 2-6,1918.1,1740.5,1904.4,1759.1,0.7188,1.33,3.4
+2026-09-30,Japan Open Tennis Championships,ATP500,1st Round,Hard,Vacherot V.,Blockx A.,Vacherot V.,7-6 7-6,1750.5,1840.1,1775.9,1812.3,0.5028,2.2,1.67
+2026-10-01,China Open,ATP500,1st Round,Hard,Cobolli F.,Safiullin R.,Safiullin R.,3-6 2-6,1860.7,1689.7,1842.4,1709.9,0.6642,1.91,1.91
+2026-10-01,China Open,ATP500,1st Round,Hard,Mensik J.,Bublik A.,Mensik J.,6-4 7-6,1866.0,1854.7,1879.6,1845.6,0.5569,1.57,2.38
+2026-10-01,China Open,ATP500,1st Round,Hard,Navone M.,De Minaur A.,De Minaur A.,6-7 2-6,1756.7,1892.2,1747.7,1897.6,0.2179,4.5,1.2
+2026-10-01,China Open,ATP500,1st Round,Hard,Norrie C.,Zverev A.,Zverev A.,6-7 4-6,1785.3,2058.8,1782.3,2061.3,0.1794,7.0,1.1
+2026-10-01,China Open,ATP500,1st Round,Hard,Rublev A.,Griekspoor T.,Rublev A.,6-4 5-7 7-6,1828.5,1707.8,1833.7,1700.3,0.6094,1.5,2.63
+2026-10-01,China Open,ATP500,1st Round,Hard,Tien L.,Hurkacz H.,Hurkacz H.,7-5 3-6 4-6,1889.4,1841.3,1872.0,1852.0,0.6029,1.53,2.5
+2026-10-01,China Open,ATP500,1st Round,Hard,Van De Zandschulp B.,Cerundolo F.,Cerundolo F.,7-5 4-6 3-6,1756.1,1833.2,1747.4,1841.5,0.4366,2.2,1.67
+2026-10-01,Japan Open Tennis Championships,ATP500,1st Round,Hard,Alcaraz C.,Michelsen A.,Alcaraz C.,7-6 4-6 6-1,2218.5,1816.2,2220.2,1813.9,0.8853,1.14,5.5
+2026-10-01,Japan Open Tennis Championships,ATP500,1st Round,Hard,Bergs Z.,Lehecka J.,Lehecka J.,3-6 7-6 3-6,1727.6,1873.1,1719.0,1880.1,0.3042,3.4,1.33
+2026-10-01,Japan Open Tennis Championships,ATP500,1st Round,Hard,Berrettini M.,Davidovich Fokina A.,Berrettini M.,1-6 7-6 6-4,1809.2,1865.4,1820.7,1854.0,0.4079,2.3,1.62
+2026-10-01,Japan Open Tennis Championships,ATP500,1st Round,Hard,Jodar R.,Vallejo D.,Vallejo D.,1-6 3-6,1938.3,1572.1,1902.4,1619.8,0.8584,1.22,4.33
+2026-10-01,Japan Open Tennis Championships,ATP500,1st Round,Hard,Munar J.,Fritz T.,Munar J.,6-7 6-4 6-3,1726.7,1945.2,1742.8,1932.7,0.2543,3.5,1.3
+2026-10-01,Japan Open Tennis Championships,ATP500,1st Round,Hard,Nakashima B.,Humbert U.,Humbert U.,3-6 2-6,1859.5,1783.2,1846.7,1795.1,0.591,1.44,2.75
+2026-10-01,Japan Open Tennis Championships,ATP500,1st Round,Hard,Rune H.,Jacquet K.,Jacquet K.,3-6 1-6,1911.2,1593.9,1892.5,1643.0,0.8545,1.53,2.5
+2026-10-01,Japan Open Tennis Championships,ATP500,1st Round,Hard,Ruud C.,Darderi L.,Darderi L.,6-7 3-6,1901.6,1781.6,1890.2,1799.0,0.6899,1.44,2.75
+2026-10-01,Japan Open Tennis Championships,ATP500,1st Round,Hard,Tiafoe F.,Nishikori K.,Tiafoe F.,6-4 6-4,1910.3,1827.3,1916.8,1821.4,0.6117,1.17,5.0
+2026-10-01,Japan Open Tennis Championships,ATP500,1st Round,Hard,Tsitsipas S.,Etcheverry T.,Tsitsipas S.,4-6 6-3 6-4,1824.5,1701.9,1829.8,1694.3,0.673,1.3,3.5
+2026-10-02,China Open,ATP500,1st Round,Hard,Carreno Busta P.,Medvedev D.,Medvedev D.,4-6 2-6,1705.1,1919.5,1700.9,1922.9,0.2098,5.0,1.17
+2026-10-02,China Open,ATP500,2nd Round,Hard,Djokovic N.,Bu Y.,Djokovic N.,4-6 7-6 6-2,2127.6,1653.1,2128.2,1650.8,0.9421,1.25,4.0
+2026-10-02,China Open,ATP500,2nd Round,Hard,Gea A.,Hurkacz H.,Hurkacz H.,6-7 7-6 2-6,1765.2,1852.0,1742.8,1859.1,0.4221,2.0,1.8
+2026-10-02,China Open,ATP500,2nd Round,Hard,Khachanov K.,Molcan A.,Khachanov K.,7-5 6-3,1792.5,1757.6,1799.8,1743.8,0.6061,1.22,4.33
+2026-10-02,Japan Open Tennis Championships,ATP500,2nd Round,Hard,Tiafoe F.,Fils A.,Fils A.,3-6 5-7,1916.8,2016.4,1910.7,2025.7,0.3988,3.0,1.4
+2026-10-02,Japan Open Tennis Championships,ATP500,2nd Round,Hard,Tsitsipas S.,Vacherot V.,Vacherot V.,6-4 6-7 4-6,1829.8,1775.9,1820.5,1799.2,0.5873,1.57,2.38
+2026-10-03,China Open,ATP500,2nd Round,Hard,Halys Q.,De Minaur A.,De Minaur A.,6-3 6-7 5-7,1738.2,1897.6,1731.0,1902.5,0.231,3.5,1.3
+2026-10-03,China Open,ATP500,2nd Round,Hard,Mensik J.,Cerundolo F.,Cerundolo F.,3-6 3-6,1879.6,1841.5,1864.0,1853.2,0.5981,1.44,2.75
+2026-10-03,China Open,ATP500,2nd Round,Hard,Rublev A.,Safiullin R.,Rublev A.,6-2 3-6 6-4,1833.7,1709.9,1838.8,1700.8,0.6535,1.67,2.2
+2026-10-03,China Open,ATP500,2nd Round,Hard,Struff J.L.,Medvedev D.,Medvedev D.,4-6 3-6,1731.6,1922.9,1727.4,1926.8,0.1803,5.5,1.14
+2026-10-03,China Open,ATP500,2nd Round,Hard,Zverev A.,Shang J.,Zverev A.,6-0 6-3,2061.3,1684.4,2062.7,1680.9,0.8967,1.07,9.0
+2026-10-03,Japan Open Tennis Championships,ATP500,2nd Round,Hard,Arnaldi M.,Alcaraz C.,Alcaraz C.,6-7 1-6,1666.2,2220.2,1665.1,2221.0,0.0421,11.0,1.05
+2026-10-03,Japan Open Tennis Championships,ATP500,2nd Round,Hard,Humbert U.,Lehecka J.,Lehecka J.,7-5 4-6 4-6,1795.1,1880.1,1787.7,1888.9,0.4116,2.38,1.57
+2026-10-03,Japan Open Tennis Championships,ATP500,2nd Round,Hard,Vallejo D.,Berrettini M.,Vallejo D.,7-6 6-1,1619.8,1820.7,1659.9,1805.6,0.262,2.38,1.57
+2026-10-04,China Open,ATP500,Quarterfinals,Hard,Hurkacz H.,Khachanov K.,Hurkacz H.,7-6 6-2,1859.1,1799.8,1866.9,1793.1,0.5624,2.3,1.62
+2026-10-04,China Open,ATP500,Quarterfinals,Hard,Medvedev D.,Cerundolo F.,Medvedev D.,7-6 6-3,1926.8,1853.2,1932.9,1844.8,0.6546,1.4,3.0
+2026-10-04,China Open,ATP500,Quarterfinals,Hard,Rublev A.,De Minaur A.,De Minaur A.,6-1 2-6 3-6,1838.8,1902.5,1832.4,1909.5,0.3905,2.0,1.8
+2026-10-04,China Open,ATP500,Quarterfinals,Hard,Zverev A.,Djokovic N.,Djokovic N.,6-4 4-6 4-6,2062.7,2128.2,2056.9,2132.9,0.3617,1.36,3.2
+2026-10-04,Japan Open Tennis Championships,ATP500,Quarterfinals,Hard,Fils A.,Vacherot V.,Vacherot V.,5-7 6-4 4-6,2025.7,1799.2,2005.4,1830.6,0.7679,1.25,4.0
+2026-10-04,Japan Open Tennis Championships,ATP500,Quarterfinals,Hard,Lehecka J.,Vallejo D.,Lehecka J.,6-1 6-1,1888.9,1659.9,1893.8,1649.0,0.7705,1.33,3.4
+2026-10-05,Japan Open Tennis Championships,ATP500,Semifinals,Hard,Lehecka J.,Vacherot V.,Lehecka J.,6-4 6-2,1893.8,1830.6,1903.2,1814.3,0.5921,1.5,2.63
+2026-10-05,Japan Open Tennis Championships,ATP500,Semifinals,Hard,Munar J.,Alcaraz C.,Alcaraz C.,7-5 3-6 1-6,1761.4,2221.0,1760.1,2222.3,0.0885,7.0,1.1
+2026-10-06,Japan Open Tennis Championships,ATP500,The Final,Hard,Lehecka J.,Alcaraz C.,Alcaraz C.,6-7 4-6,1903.2,2222.3,1900.1,2224.9,0.1541,3.75,1.29
+2026-10-07,ATP Shanghai Masters,,,Hard,Kovacevic A.,Berrettini M.,Berrettini M.,,1588.7,1805.6,1582.3,1810.0,0.2484,,
+2026-10-07,ATP Shanghai Masters,,,Hard,Rune H.,Altmaier D.,Altmaier D.,,1892.5,1673.6,1875.6,1691.9,0.8127,,

@@ -4,7 +4,7 @@ date,player,elo,surface,surface_elo
 2025-01-01,Dimitrov G.,1970.3,Hard,1929.9
 2025-01-01,Fils A.,1867.4,Hard,1804.7
 2025-01-01,Nishikori K.,1868.1,Hard,1854.1
-2025-01-01,Norrie C.,1783.8,Hard,1769.6
+2025-01-01,Khachanov K.,1862.5,Hard,1823.4
 2025-01-02,Djokovic N.,2203.2,Hard,2208.4
 2025-01-02,Mensik J.,1880.5,Hard,1878.1
 2025-01-02,Tiafoe F.,1795.6,Hard,1751.6
@@ -16,10 +16,8 @@ date,player,elo,surface,surface_elo
 2025-01-03,Fils A.,1843.2,Hard,1774.6
 2025-01-03,Musetti L.,1817.8,Hard,1690.4
 2025-01-03,Nishikori K.,1874.0,Hard,1861.0
-2025-01-03,Norrie C.,1776.3,Hard,1760.5
 2025-01-05,Nishikori K.,1863.1,Hard,1847.1
 2025-01-06,Michelsen A.,1780.9,Hard,1757.9
-2025-01-06,Norrie C.,1762.6,Hard,1739.6
 2025-01-06,Davidovich Fokina A.,1716.9,Hard,1700.7
 2025-01-07,Mensik J.,1873.2,Hard,1864.6
 2025-01-07,Bublik A.,1722.7,Hard,1672.3
@@ -45,7 +43,6 @@ date,player,elo,surface,surface_elo
 2025-01-12,Fils A.,1848.4,Hard,1781.8
 2025-01-12,Lehecka J.,1895.0,Hard,1825.9
 2025-01-12,Nishikori K.,1866.3,Hard,1849.2
-2025-01-12,Machac T.,1928.2,Hard,1896.0
 2025-01-12,Zverev A.,2045.4,Hard,1997.4
 2025-01-12,Ruud C.,1878.6,Hard,1775.3
 2025-01-13,Auger-Aliassime F.,1826.7,Hard,1780.0
@@ -63,11 +60,11 @@ date,player,elo,surface,surface_elo
 2025-01-14,Bublik A.,1712.5,Hard,1658.3
 2025-01-14,Cobolli F.,1825.2,Hard,1789.0
 2025-01-14,Hurkacz H.,1946.8,Hard,1875.3
+2025-01-14,Khachanov K.,1866.8,Hard,1829.1
 2025-01-14,Medvedev D.,2042.5,Hard,2028.0
 2025-01-14,Musetti L.,1826.6,Hard,1706.4
 2025-01-14,Nakashima B.,1705.1,Hard,1661.7
 2025-01-14,Shelton B.,1846.6,Hard,1831.4
-2025-01-14,Norrie C.,1756.3,Hard,1727.2
 2025-01-14,Berrettini M.,1898.7,Hard,1738.8
 2025-01-14,Rublev A.,1852.7,Hard,1829.3
 2025-01-14,Fonseca J.,1618.8,Hard,1592.5
@@ -80,7 +77,6 @@ date,player,elo,surface,surface_elo
 2025-01-15,Djokovic N.,2193.0,Hard,2196.2
 2025-01-15,Fils A.,1857.2,Hard,1789.8
 2025-01-15,Korda S.,1874.3,Hard,1820.4
-2025-01-15,Machac T.,1938.8,Hard,1909.8
 2025-01-15,Zverev A.,2046.6,Hard,1998.5
 2025-01-15,Alcaraz C.,2116.8,Hard,2019.4
 2025-01-15,Paul T.,1918.0,Hard,1864.4
@@ -93,6 +89,7 @@ date,player,elo,surface,surface_elo
 2025-01-16,De Minaur A.,1973.8,Hard,1907.3
 2025-01-16,Fritz T.,1961.6,Hard,1913.9
 2025-01-16,Hurkacz H.,1931.3,Hard,1857.5
+2025-01-16,Khachanov K.,1871.0,Hard,1834.1
 2025-01-16,Medvedev D.,2027.0,Hard,2010.3
 2025-01-16,Tien L.,1671.3,Hard,1648.5
 2025-01-16,Michelsen A.,1797.2,Hard,1774.2
@@ -103,7 +100,6 @@ date,player,elo,surface,surface_elo
 2025-01-17,Lehecka J.,1902.4,Hard,1836.7
 2025-01-17,Alcaraz C.,2119.7,Hard,2023.5
 2025-01-17,Djokovic N.,2195.2,Hard,2198.5
-2025-01-17,Machac T.,1932.2,Hard,1903.4
 2025-01-17,Draper J.,2012.7,Hard,1972.9
 2025-01-17,Mensik J.,1862.6,Hard,1840.3
 2025-01-17,Davidovich Fokina A.,1742.5,Hard,1729.9
@@ -112,6 +108,7 @@ date,player,elo,surface,surface_elo
 2025-01-18,Cerundolo F.,1743.1,Hard,1648.1
 2025-01-18,De Minaur A.,1977.9,Hard,1911.5
 2025-01-18,Sinner J.,2251.8,Hard,2238.5
+2025-01-18,Khachanov K.,1860.5,Hard,1822.1
 2025-01-18,Michelsen A.,1817.9,Hard,1797.2
 2025-01-18,Fritz T.,1950.9,Hard,1902.9
 2025-01-18,Tien L.,1703.2,Hard,1676.2
@@ -161,7 +158,6 @@ date,player,elo,surface,surface_elo
 2025-02-04,Rublev A.,1847.9,Hard,1821.3
 2025-02-04,Rune H.,1945.7,Hard,1887.0
 2025-02-04,Michelsen A.,1788.8,Hard,1761.3
-2025-02-04,Norrie C.,1767.5,Hard,1741.0
 2025-02-04,Paul T.,1927.1,Hard,1877.0
 2025-02-04,Tiafoe F.,1794.5,Hard,1752.8
 2025-02-05,Berrettini M.,1875.1,Hard,1715.9
@@ -170,7 +166,6 @@ date,player,elo,surface,surface_elo
 2025-02-05,Ruud C.,1872.2,Hard,1770.1
 2025-02-05,Nakashima B.,1693.7,Hard,1649.2
 2025-02-05,Nishikori K.,1853.4,Hard,1832.7
-2025-02-05,Machac T.,1946.0,Hard,1919.5
 2025-02-05,Shelton B.,1888.3,Hard,1870.7
 2025-02-06,Fils A.,1834.1,Hard,1763.9
 2025-02-06,Rublev A.,1854.6,Hard,1829.6
@@ -181,9 +176,7 @@ date,player,elo,surface,surface_elo
 2025-02-06,Alcaraz C.,2113.8,Hard,2020.4
 2025-02-06,Fritz T.,1953.5,Hard,1906.1
 2025-02-06,Davidovich Fokina A.,1728.5,Hard,1710.8
-2025-02-06,Machac T.,1951.7,Hard,1926.4
 2025-02-06,Ruud C.,1878.1,Hard,1780.8
-2025-02-06,Norrie C.,1758.1,Hard,1730.6
 2025-02-06,Shelton B.,1865.2,Hard,1842.1
 2025-02-06,Tiafoe F.,1784.0,Hard,1741.2
 2025-02-07,De Minaur A.,1991.8,Hard,1931.3
@@ -196,14 +189,12 @@ date,player,elo,surface,surface_elo
 2025-02-08,Alcaraz C.,2121.2,Hard,2030.8
 2025-02-08,Hurkacz H.,1939.8,Hard,1869.0
 2025-02-08,De Minaur A.,1995.1,Hard,1936.1
-2025-02-08,Machac T.,1927.6,Hard,1898.6
 2025-02-08,Paul T.,1935.0,Hard,1887.5
 2025-02-08,Paul T.,1921.4,Hard,1872.3
 2025-02-08,Ruud C.,1882.4,Hard,1786.7
 2025-02-09,De Minaur A.,1988.9,Hard,1928.0
 2025-02-09,Alcaraz C.,2128.4,Hard,2041.1
 2025-02-09,Ruud C.,1871.8,Hard,1773.8
-2025-02-10,Norrie C.,1761.9,Hard,1735.3
 2025-02-10,Korda S.,1853.5,Hard,1796.0
 2025-02-11,Cerundolo F.,1750.3,Clay,1836.3
 2025-02-11,Davidovich Fokina A.,1734.1,Hard,1717.8
@@ -214,8 +205,8 @@ date,player,elo,surface,surface_elo
 2025-02-12,Cerundolo F.,1758.0,Clay,1840.5
 2025-02-12,Zverev A.,2055.1,Clay,2008.4
 2025-02-12,Tien L.,1683.0,Hard,1654.1
-2025-02-12,Norrie C.,1768.6,Hard,1743.2
 2025-02-12,Bublik A.,1702.9,Hard,1655.4
+2025-02-12,Khachanov K.,1848.2,Hard,1807.8
 2025-02-13,Fonseca J.,1660.4,Clay,1640.8
 2025-02-13,Musetti L.,1832.2,Clay,1810.4
 2025-02-13,Rune H.,1905.4,Clay,1843.8
@@ -229,7 +220,6 @@ date,player,elo,surface,surface_elo
 2025-02-14,Fonseca J.,1688.5,Clay,1684.2
 2025-02-14,Fritz T.,1944.1,Hard,1895.2
 2025-02-14,Nakashima B.,1704.2,Hard,1664.6
-2025-02-14,Norrie C.,1759.5,Hard,1732.0
 2025-02-14,Michelsen A.,1804.6,Hard,1779.6
 2025-02-14,Medvedev D.,2019.1,Hard,1999.6
 2025-02-15,Cerundolo F.,1788.1,Clay,1873.1
@@ -252,6 +242,7 @@ date,player,elo,surface,surface_elo
 2025-02-18,Rublev A.,1853.2,Hard,1826.3
 2025-02-18,Auger-Aliassime F.,1841.0,Hard,1797.9
 2025-02-18,Medvedev D.,2010.2,Hard,1989.1
+2025-02-18,Khachanov K.,1843.2,Hard,1802.4
 2025-02-18,De Minaur A.,1991.4,Hard,1931.5
 2025-02-18,Tsitsipas S.,1881.3,Hard,1802.9
 2025-02-18,Zverev A.,2043.7,Clay,1992.4
@@ -280,10 +271,9 @@ date,player,elo,surface,surface_elo
 2025-02-22,Rublev A.,1891.2,Hard,1867.2
 2025-02-22,Draper J.,2022.2,Hard,1980.2
 2025-02-22,Cerundolo F.,1772.0,Clay,1842.4
+2025-02-24,Khachanov K.,1847.0,Hard,1807.8
 2025-02-24,Tsitsipas S.,1886.4,Hard,1810.3
-2025-02-25,Machac T.,1941.5,Hard,1914.2
 2025-02-25,Mensik J.,1843.9,Hard,1815.2
-2025-02-25,Norrie C.,1747.0,Hard,1716.7
 2025-02-25,Tien L.,1695.2,Hard,1666.0
 2025-02-25,Paul T.,1925.0,Hard,1876.7
 2025-02-25,Ruud C.,1875.7,Hard,1781.0
@@ -306,9 +296,9 @@ date,player,elo,surface,surface_elo
 2025-02-26,Cerundolo F.,1781.4,Clay,1851.4
 2025-02-26,Auger-Aliassime F.,1846.6,Hard,1804.0
 2025-02-26,Berrettini M.,1909.7,Hard,1780.2
+2025-02-26,Khachanov K.,1839.4,Hard,1797.8
 2025-02-26,Tsitsipas S.,1893.9,Hard,1820.5
 2025-02-26,Medvedev D.,2020.7,Hard,1998.0
-2025-02-27,Machac T.,1946.4,Hard,1919.6
 2025-02-27,Shelton B.,1855.6,Hard,1829.3
 2025-02-27,Michelsen A.,1782.1,Hard,1750.9
 2025-02-27,Tiafoe F.,1782.6,Hard,1739.2
@@ -320,33 +310,28 @@ date,player,elo,surface,surface_elo
 2025-02-27,Tsitsipas S.,1902.8,Hard,1829.6
 2025-02-27,Medvedev D.,2008.2,Hard,1983.3
 2025-02-28,Nakashima B.,1728.8,Hard,1693.1
-2025-02-28,Machac T.,1954.6,Hard,1928.7
 2025-02-28,Tien L.,1733.7,Hard,1704.9
 2025-02-28,Davidovich Fokina A.,1783.7,Hard,1773.4
 2025-02-28,Cerundolo F.,1791.8,Clay,1862.2
 2025-02-28,Auger-Aliassime F.,1861.5,Hard,1819.2
 2025-02-28,Tsitsipas S.,1909.9,Hard,1839.1
-2025-03-01,Machac T.,1961.9,Hard,1936.4
 2025-03-01,Nakashima B.,1723.4,Hard,1687.2
 2025-03-01,Davidovich Fokina A.,1797.5,Hard,1789.2
 2025-03-01,Cerundolo F.,1777.1,Clay,1840.9
 2025-03-01,Tsitsipas S.,1917.2,Hard,1848.7
 2025-03-01,Auger-Aliassime F.,1853.1,Hard,1808.5
-2025-03-02,Machac T.,1971.3,Hard,1947.7
 2025-03-02,Davidovich Fokina A.,1791.2,Hard,1781.0
 2025-03-05,Cobolli F.,1742.9,Hard,1686.6
 2025-03-05,Nishikori K.,1843.8,Hard,1820.2
 2025-03-06,Davidovich Fokina A.,1773.6,Hard,1759.8
 2025-03-06,Fonseca J.,1741.1,Hard,1604.9
 2025-03-06,Mensik J.,1856.7,Hard,1827.8
-2025-03-06,Norrie C.,1751.5,Hard,1722.9
 2025-03-06,Bublik A.,1678.6,Hard,1626.8
 2025-03-07,Tien L.,1695.8,Hard,1658.3
 2025-03-07,Paul T.,1927.2,Hard,1879.5
 2025-03-07,Ruud C.,1863.9,Hard,1765.8
 2025-03-07,Zverev A.,2008.8,Hard,1980.8
 2025-03-07,Lehecka J.,1906.0,Hard,1850.9
-2025-03-07,Norrie C.,1765.7,Hard,1739.4
 2025-03-07,Musetti L.,1838.6,Hard,1725.3
 2025-03-07,Nishikori K.,1837.0,Hard,1813.3
 2025-03-07,Berrettini M.,1903.1,Hard,1776.9
@@ -368,11 +353,11 @@ date,player,elo,surface,surface_elo
 2025-03-08,Tiafoe F.,1787.2,Hard,1743.4
 2025-03-09,Dimitrov G.,1965.6,Hard,1923.4
 2025-03-09,De Minaur A.,1970.8,Hard,1909.4
+2025-03-09,Khachanov K.,1848.4,Hard,1808.8
 2025-03-09,Mensik J.,1835.8,Hard,1803.6
 2025-03-09,Korda S.,1842.9,Hard,1785.4
 2025-03-09,Shelton B.,1862.3,Hard,1833.6
 2025-03-09,Rune H.,1924.9,Hard,1887.9
-2025-03-09,Norrie C.,1760.2,Hard,1732.2
 2025-03-09,Paul T.,1933.0,Hard,1886.6
 2025-03-09,Tsitsipas S.,1928.6,Hard,1861.0
 2025-03-09,Berrettini M.,1893.0,Hard,1765.9
@@ -382,6 +367,7 @@ date,player,elo,surface,surface_elo
 2025-03-10,Hurkacz H.,1918.0,Hard,1843.7
 2025-03-10,Fils A.,1841.3,Hard,1771.9
 2025-03-10,Musetti L.,1826.7,Hard,1711.6
+2025-03-10,Khachanov K.,1840.1,Hard,1799.4
 2025-03-10,Shelton B.,1875.8,Hard,1848.4
 2025-03-10,Nakashima B.,1746.9,Hard,1715.0
 2025-03-10,Fritz T.,1936.2,Hard,1886.8
@@ -422,7 +408,6 @@ date,player,elo,surface,surface_elo
 2025-03-20,Tirante T.A.,1646.7,Hard,1575.9
 2025-03-20,Fonseca J.,1756.1,Hard,1644.8
 2025-03-20,Tien L.,1670.3,Hard,1624.7
-2025-03-20,Norrie C.,1748.0,Hard,1716.9
 2025-03-20,Davidovich Fokina A.,1785.0,Hard,1767.9
 2025-03-21,Auger-Aliassime F.,1843.5,Hard,1799.3
 2025-03-21,Bublik A.,1685.7,Hard,1629.7
@@ -431,6 +416,7 @@ date,player,elo,surface,surface_elo
 2025-03-21,Dimitrov G.,1968.5,Hard,1926.9
 2025-03-21,Musetti L.,1834.8,Hard,1722.7
 2025-03-21,Djokovic N.,2180.9,Hard,2177.6
+2025-03-21,Khachanov K.,1852.0,Hard,1813.3
 2025-03-21,Kyrgios N.,1965.3,Hard,1919.9
 2025-03-21,Korda S.,1846.5,Hard,1790.5
 2025-03-21,Michelsen A.,1767.1,Hard,1729.5
@@ -446,7 +432,6 @@ date,player,elo,surface,surface_elo
 2025-03-22,Draper J.,2056.4,Hard,2017.7
 2025-03-22,Mensik J.,1879.6,Hard,1850.2
 2025-03-22,Fonseca J.,1791.8,Hard,1709.3
-2025-03-22,Machac T.,1979.1,Hard,1956.4
 2025-03-22,Rublev A.,1854.8,Hard,1823.5
 2025-03-22,Rune H.,1935.2,Hard,1900.1
 2025-03-22,Tirante T.A.,1633.2,Hard,1558.9
@@ -454,6 +439,7 @@ date,player,elo,surface,surface_elo
 2025-03-22,Fritz T.,1933.8,Hard,1884.6
 2025-03-22,Zverev A.,2010.3,Hard,1982.7
 2025-03-23,De Minaur A.,1968.2,Hard,1905.6
+2025-03-23,Khachanov K.,1846.2,Hard,1806.4
 2025-03-23,Dimitrov G.,1973.3,Hard,1932.6
 2025-03-23,Musetti L.,1846.6,Hard,1740.8
 2025-03-23,Auger-Aliassime F.,1833.6,Hard,1785.6
@@ -469,7 +455,6 @@ date,player,elo,surface,surface_elo
 2025-03-24,Fils A.,1859.2,Hard,1797.3
 2025-03-24,Tiafoe F.,1777.2,Hard,1731.7
 2025-03-24,Fritz T.,1940.6,Hard,1892.7
-2025-03-24,Machac T.,1987.4,Hard,1966.2
 2025-03-24,Mensik J.,1889.8,Hard,1861.6
 2025-03-24,Ruud C.,1875.0,Hard,1784.6
 2025-03-24,Zverev A.,2014.5,Hard,1987.9
@@ -499,6 +484,7 @@ date,player,elo,surface,surface_elo
 2025-03-28,Mensik J.,1930.3,Hard,1903.3
 2025-03-31,Mensik J.,1961.6,Hard,1938.5
 2025-03-31,Djokovic N.,2178.0,Hard,2171.8
+2025-04-01,Vacherot V.,1387.5,Clay,1377.2
 2025-04-01,Michelsen A.,1779.0,Clay,1522.4
 2025-04-01,Tien L.,1649.9,Clay,1445.4
 2025-04-02,Cobolli F.,1732.8,Clay,1704.0
@@ -514,6 +500,7 @@ date,player,elo,surface,surface_elo
 2025-04-05,Tiafoe F.,1790.0,Clay,1676.8
 2025-04-05,Michelsen A.,1773.2,Clay,1522.5
 2025-04-05,Paul T.,1910.3,Clay,1698.8
+2025-04-06,Vacherot V.,1459.3,Clay,1451.2
 2025-04-06,Cobolli F.,1772.4,Clay,1774.7
 2025-04-06,Tiafoe F.,1798.7,Clay,1692.4
 2025-04-06,Nakashima B.,1759.3,Clay,1615.3
@@ -525,9 +512,9 @@ date,player,elo,surface,surface_elo
 2025-04-07,Lehecka J.,1904.8,Clay,1723.4
 2025-04-07,Korda S.,1859.9,Clay,1657.5
 2025-04-07,Medvedev D.,2001.7,Clay,1872.7
+2025-04-07,Khachanov K.,1841.1,Clay,1819.1
 2025-04-07,Shelton B.,1834.0,Clay,1586.3
 2025-04-07,Davidovich Fokina A.,1787.1,Clay,1688.3
-2025-04-08,Machac T.,1993.2,Clay,1768.5
 2025-04-08,Nakashima B.,1744.7,Clay,1593.6
 2025-04-08,Fils A.,1881.6,Clay,1751.5
 2025-04-08,Dimitrov G.,1980.0,Clay,1820.5
@@ -543,8 +530,8 @@ date,player,elo,surface,surface_elo
 2025-04-09,Cobolli F.,1773.2,Clay,1766.8
 2025-04-09,Fils A.,1892.8,Clay,1778.5
 2025-04-09,De Minaur A.,1972.2,Clay,1823.3
-2025-04-09,Machac T.,1975.2,Clay,1742.6
 2025-04-09,Dimitrov G.,1980.6,Clay,1823.2
+2025-04-09,Vacherot V.,1455.6,Clay,1443.0
 2025-04-09,Davidovich Fokina A.,1795.0,Clay,1706.5
 2025-04-09,Medvedev D.,2004.3,Clay,1882.3
 2025-04-09,Musetti L.,1862.8,Clay,1827.0
@@ -593,7 +580,7 @@ date,player,elo,surface,surface_elo
 2025-04-15,Fils A.,1909.3,Clay,1822.4
 2025-04-15,Davidovich Fokina A.,1827.4,Clay,1747.0
 2025-04-15,De Minaur A.,1982.5,Clay,1856.5
-2025-04-15,Norrie C.,1740.9,Clay,1758.1
+2025-04-15,Khachanov K.,1847.5,Clay,1831.9
 2025-04-15,Tsitsipas S.,1918.6,Clay,1999.4
 2025-04-15,Ruud C.,1860.7,Clay,1943.2
 2025-04-15,Tiafoe F.,1775.3,Clay,1650.6
@@ -609,10 +596,12 @@ date,player,elo,surface,surface_elo
 2025-04-17,Rublev A.,1850.8,Clay,1833.7
 2025-04-17,De Minaur A.,1985.0,Clay,1862.7
 2025-04-17,Alcaraz C.,2119.8,Clay,2126.4
+2025-04-17,Khachanov K.,1852.3,Clay,1838.6
 2025-04-18,Cerundolo F.,1864.3,Clay,1872.3
 2025-04-18,Shelton B.,1853.8,Clay,1668.4
 2025-04-18,Zverev A.,2003.1,Clay,1971.5
 2025-04-18,Davidovich Fokina A.,1828.8,Clay,1755.3
+2025-04-18,Khachanov K.,1860.5,Clay,1850.3
 2025-04-18,De Minaur A.,1979.1,Clay,1856.0
 2025-04-18,Alcaraz C.,2126.5,Clay,2132.1
 2025-04-18,Rune H.,1953.0,Clay,1890.2
@@ -623,6 +612,7 @@ date,player,elo,surface,surface_elo
 2025-04-19,Fils A.,1907.8,Clay,1830.1
 2025-04-19,Alcaraz C.,2131.4,Clay,2137.0
 2025-04-19,Rune H.,1961.4,Clay,1905.6
+2025-04-19,Khachanov K.,1854.2,Clay,1837.4
 2025-04-20,Zverev A.,2011.1,Clay,1979.0
 2025-04-20,Shelton B.,1859.4,Clay,1699.1
 2025-04-20,Rune H.,1978.0,Clay,1933.0
@@ -631,7 +621,6 @@ date,player,elo,surface,surface_elo
 2025-04-23,Michelsen A.,1752.6,Clay,1494.3
 2025-04-23,Bublik A.,1690.1,Clay,1583.3
 2025-04-24,Tien L.,1620.2,Clay,1392.4
-2025-04-24,Norrie C.,1743.2,Clay,1761.2
 2025-04-24,Fonseca J.,1786.6,Clay,1730.2
 2025-04-24,Nishikori K.,1842.9,Clay,1897.5
 2025-04-25,Hurkacz H.,1901.8,Clay,1793.9
@@ -653,10 +642,9 @@ date,player,elo,surface,surface_elo
 2025-04-26,Fonseca J.,1769.9,Clay,1699.1
 2025-04-26,Paul T.,1917.0,Clay,1721.1
 2025-04-26,Draper J.,2045.9,Clay,1638.2
-2025-04-26,Machac T.,1947.4,Clay,1702.4
+2025-04-26,Khachanov K.,1860.9,Clay,1845.1
 2025-04-26,Musetti L.,1903.5,Clay,1892.6
 2025-04-26,Nishikori K.,1835.0,Clay,1876.3
-2025-04-26,Norrie C.,1756.6,Clay,1774.6
 2025-04-26,Lehecka J.,1868.9,Clay,1684.1
 2025-04-26,De Minaur A.,1982.3,Clay,1863.5
 2025-04-26,Tsitsipas S.,1930.2,Clay,2009.0
@@ -674,8 +662,8 @@ date,player,elo,surface,surface_elo
 2025-04-27,Davidovich Fokina A.,1832.0,Clay,1765.2
 2025-04-29,De Minaur A.,1988.1,Clay,1874.0
 2025-04-29,Dimitrov G.,1980.9,Clay,1832.6
+2025-04-29,Khachanov K.,1853.8,Clay,1825.6
 2025-04-29,Paul T.,1925.5,Clay,1748.3
-2025-04-29,Norrie C.,1745.8,Clay,1751.0
 2025-04-29,Tiafoe F.,1783.2,Clay,1669.3
 2025-04-29,Tsitsipas S.,1921.2,Clay,1991.2
 2025-04-29,Musetti L.,1915.7,Clay,1914.2
@@ -706,18 +694,17 @@ date,player,elo,surface,surface_elo
 2025-05-03,Ruud C.,1918.7,Clay,1971.4
 2025-05-03,Draper J.,2049.4,Clay,1737.0
 2025-05-07,Lehecka J.,1849.1,Clay,1658.1
-2025-05-07,Norrie C.,1753.2,Clay,1758.5
 2025-05-08,Bublik A.,1722.5,Clay,1637.2
 2025-05-08,Cobolli F.,1723.2,Clay,1680.4
 2025-05-08,Fonseca J.,1743.7,Clay,1665.7
 2025-05-08,Tien L.,1657.9,Clay,1463.2
 2025-05-09,Alcaraz C.,2117.5,Clay,2114.4
+2025-05-09,Khachanov K.,1855.7,Clay,1829.5
 2025-05-09,Rune H.,1981.7,Clay,1940.5
 2025-05-09,Michelsen A.,1736.7,Clay,1483.9
 2025-05-09,Draper J.,2052.8,Clay,1764.9
 2025-05-09,Fils A.,1897.5,Clay,1813.3
 2025-05-09,Medvedev D.,1992.5,Clay,1871.8
-2025-05-09,Norrie C.,1749.3,Clay,1747.2
 2025-05-09,Tsitsipas S.,1925.5,Clay,1995.1
 2025-05-09,Dimitrov G.,1956.2,Clay,1792.5
 2025-05-09,Zverev A.,2008.3,Clay,1974.9
@@ -729,7 +716,6 @@ date,player,elo,surface,surface_elo
 2025-05-10,Fritz T.,1920.6,Clay,1798.1
 2025-05-10,Hurkacz H.,1905.4,Clay,1806.2
 2025-05-10,Cerundolo F.,1886.7,Clay,1885.5
-2025-05-10,Machac T.,1952.6,Clay,1713.7
 2025-05-10,Tien L.,1649.5,Clay,1446.4
 2025-05-10,Rublev A.,1829.2,Clay,1790.7
 2025-05-10,Mensik J.,1938.3,Clay,1742.5
@@ -740,6 +726,7 @@ date,player,elo,surface,surface_elo
 2025-05-10,Tiafoe F.,1761.3,Clay,1634.3
 2025-05-10,Korda S.,1855.7,Clay,1688.0
 2025-05-11,Alcaraz C.,2120.0,Clay,2118.4
+2025-05-11,Khachanov K.,1858.5,Clay,1835.4
 2025-05-11,Draper J.,2054.7,Clay,1779.6
 2025-05-11,Medvedev D.,1996.1,Clay,1879.2
 2025-05-11,Rune H.,1961.6,Clay,1910.3
@@ -755,12 +742,12 @@ date,player,elo,surface,surface_elo
 2025-05-12,Mensik J.,1949.3,Clay,1770.1
 2025-05-12,Korda S.,1838.7,Clay,1664.1
 2025-05-12,Paul T.,1934.3,Clay,1758.0
-2025-05-12,Machac T.,1934.9,Clay,1688.2
 2025-05-13,Cerundolo F.,1889.3,Clay,1879.1
 2025-05-13,Sinner J.,2268.2,Clay,1988.8
 2025-05-13,De Minaur A.,1969.1,Clay,1843.0
 2025-05-13,Paul T.,1945.7,Clay,1783.7
 2025-05-13,Draper J.,2057.2,Clay,1794.5
+2025-05-13,Khachanov K.,1855.4,Clay,1830.7
 2025-05-13,Alcaraz C.,2123.9,Clay,2123.5
 2025-05-13,Mensik J.,1929.1,Clay,1743.3
 2025-05-13,Hurkacz H.,1923.3,Clay,1831.4
@@ -787,7 +774,6 @@ date,player,elo,surface,surface_elo
 2025-05-18,Alcaraz C.,2152.7,Clay,2146.0
 2025-05-19,Nishikori K.,1838.9,Clay,1878.4
 2025-05-19,Tien L.,1636.2,Clay,1440.3
-2025-05-19,Norrie C.,1757.1,Clay,1754.1
 2025-05-19,Zverev A.,2007.6,Clay,1972.7
 2025-05-19,Lehecka J.,1853.0,Clay,1667.2
 2025-05-19,Rublev A.,1832.6,Clay,1798.3
@@ -812,13 +798,12 @@ date,player,elo,surface,surface_elo
 2025-05-22,Djokovic N.,2158.5,Clay,2052.3
 2025-05-22,Fritz T.,1915.4,Clay,1791.1
 2025-05-22,Hurkacz H.,1930.6,Clay,1839.8
-2025-05-22,Norrie C.,1767.4,Clay,1766.2
+2025-05-22,Khachanov K.,1843.0,Clay,1809.3
 2025-05-22,Cobolli F.,1763.5,Clay,1735.8
 2025-05-22,Lehecka J.,1848.3,Clay,1680.8
 2025-05-22,Auger-Aliassime F.,1809.3,Clay,1732.3
 2025-05-22,Rublev A.,1841.4,Clay,1816.4
 2025-05-23,Hurkacz H.,1934.8,Clay,1849.7
-2025-05-23,Norrie C.,1765.5,Clay,1761.2
 2025-05-23,Djokovic N.,2159.6,Clay,2055.5
 2025-05-23,Auger-Aliassime F.,1800.6,Clay,1719.6
 2025-05-23,Rublev A.,1848.9,Clay,1827.3
@@ -844,6 +829,7 @@ date,player,elo,surface,surface_elo
 2025-05-26,Sinner J.,2260.4,Clay,2005.6
 2025-05-26,Lehecka J.,1861.2,Clay,1692.3
 2025-05-26,Tsitsipas S.,1920.2,Clay,1980.1
+2025-05-26,Khachanov K.,1847.1,Clay,1812.5
 2025-05-26,Alcaraz C.,2153.2,Clay,2146.8
 2025-05-27,Auger-Aliassime F.,1790.6,Clay,1703.0
 2025-05-27,Cobolli F.,1813.4,Clay,1801.4
@@ -855,7 +841,6 @@ date,player,elo,surface,surface_elo
 2025-05-27,Rublev A.,1842.8,Clay,1814.6
 2025-05-27,Djokovic N.,2162.6,Clay,2060.9
 2025-05-27,Medvedev D.,1973.6,Clay,1840.9
-2025-05-27,Norrie C.,1780.4,Clay,1781.1
 2025-05-27,Mensik J.,1938.5,Clay,1769.7
 2025-05-27,Zverev A.,1996.8,Clay,1954.4
 2025-05-27,Tien L.,1630.5,Clay,1436.5
@@ -864,6 +849,7 @@ date,player,elo,surface,surface_elo
 2025-05-28,Tiafoe F.,1771.6,Clay,1658.6
 2025-05-28,Korda S.,1857.5,Clay,1710.6
 2025-05-28,Musetti L.,1962.9,Clay,1949.7
+2025-05-28,Khachanov K.,1852.6,Clay,1821.8
 2025-05-28,Paul T.,1958.0,Clay,1817.1
 2025-05-28,Rune H.,1967.4,Clay,1920.1
 2025-05-28,Tsitsipas S.,1906.1,Clay,1956.2
@@ -873,7 +859,6 @@ date,player,elo,surface,surface_elo
 2025-05-29,Bublik A.,1729.5,Clay,1645.0
 2025-05-29,Fonseca J.,1794.2,Clay,1723.2
 2025-05-29,Sinner J.,2260.9,Clay,2008.8
-2025-05-29,Norrie C.,1784.6,Clay,1787.2
 2025-05-29,Lehecka J.,1873.3,Clay,1718.7
 2025-05-29,Davidovich Fokina A.,1810.5,Clay,1722.6
 2025-05-29,Draper J.,2056.0,Clay,1810.4
@@ -884,13 +869,13 @@ date,player,elo,surface,surface_elo
 2025-05-30,Alcaraz C.,2156.2,Clay,2150.2
 2025-05-30,Shelton B.,1850.7,Clay,1708.8
 2025-05-30,Rune H.,1971.4,Clay,1925.5
+2025-05-30,Khachanov K.,1846.6,Clay,1807.4
 2025-05-30,Paul T.,1965.1,Clay,1836.4
 2025-05-30,Musetti L.,1967.2,Clay,1956.7
 2025-05-30,Tiafoe F.,1782.9,Clay,1677.6
 2025-05-30,Korda S.,1843.0,Clay,1687.7
 2025-05-31,Bublik A.,1736.6,Clay,1661.8
 2025-05-31,Djokovic N.,2163.9,Clay,2064.4
-2025-05-31,Norrie C.,1793.3,Clay,1798.9
 2025-05-31,Fonseca J.,1785.5,Clay,1703.0
 2025-05-31,Draper J.,2061.0,Clay,1828.6
 2025-05-31,Lehecka J.,1870.7,Clay,1711.4
@@ -905,7 +890,6 @@ date,player,elo,surface,surface_elo
 2025-06-01,Paul T.,1970.5,Clay,1848.4
 2025-06-02,Bublik A.,1754.4,Clay,1689.4
 2025-06-02,Draper J.,2037.3,Clay,1794.1
-2025-06-02,Norrie C.,1791.3,Clay,1793.4
 2025-06-02,Djokovic N.,2165.2,Clay,2067.9
 2025-06-02,Rublev A.,1843.8,Clay,1812.4
 2025-06-02,Sinner J.,2264.5,Clay,2022.3
@@ -926,6 +910,7 @@ date,player,elo,surface,surface_elo
 2025-06-10,Blockx A.,1409.4,Grass,1432.5
 2025-06-10,Michelsen A.,1722.7,Grass,1641.8
 2025-06-11,Hurkacz H.,1920.7,Grass,1818.0
+2025-06-11,Khachanov K.,1850.6,Grass,1661.2
 2025-06-11,Fritz T.,1904.9,Grass,1768.0
 2025-06-11,Shelton B.,1851.9,Grass,1556.0
 2025-06-11,Lehecka J.,1885.3,Grass,1701.7
@@ -935,6 +920,7 @@ date,player,elo,surface,surface_elo
 2025-06-12,Tien L.,1611.9,Grass,1460.3
 2025-06-12,Nakashima B.,1734.5,Grass,1605.8
 2025-06-12,Zverev A.,2000.8,Grass,1769.7
+2025-06-13,Khachanov K.,1840.8,Grass,1633.5
 2025-06-13,Medvedev D.,1963.3,Grass,1792.5
 2025-06-13,Auger-Aliassime F.,1803.5,Grass,1696.7
 2025-06-13,Fritz T.,1909.8,Grass,1783.7
@@ -953,7 +939,6 @@ date,player,elo,surface,surface_elo
 2025-06-16,Tsitsipas S.,1909.8,Grass,1656.4
 2025-06-16,Tiafoe F.,1771.3,Grass,1657.7
 2025-06-16,Mensik J.,1918.0,Grass,1514.6
-2025-06-16,Norrie C.,1784.8,Grass,1647.1
 2025-06-16,Rune H.,1962.9,Grass,1698.7
 2025-06-17,Auger-Aliassime F.,1804.9,Grass,1687.6
 2025-06-17,Cerundolo F.,1847.4,Grass,1525.9
@@ -961,7 +946,6 @@ date,player,elo,surface,surface_elo
 2025-06-17,Cobolli F.,1834.4,Grass,1556.7
 2025-06-17,Fonseca J.,1764.0,Grass,1415.5
 2025-06-17,Sinner J.,2260.5,Grass,1877.0
-2025-06-17,Machac T.,1940.5,Grass,1507.7
 2025-06-17,Rublev A.,1849.0,Grass,1735.2
 2025-06-17,De Minaur A.,1946.8,Grass,1755.6
 2025-06-17,Lehecka J.,1887.3,Grass,1699.1
@@ -971,6 +955,7 @@ date,player,elo,surface,surface_elo
 2025-06-17,Shelton B.,1837.0,Grass,1546.1
 2025-06-17,Alcaraz C.,2178.7,Grass,2017.7
 2025-06-18,Zverev A.,2001.9,Grass,1785.2
+2025-06-18,Khachanov K.,1846.8,Grass,1650.9
 2025-06-18,Medvedev D.,1968.7,Grass,1806.5
 2025-06-18,Tsitsipas S.,1897.3,Grass,1633.0
 2025-06-18,Michelsen A.,1747.3,Grass,1660.2
@@ -979,8 +964,8 @@ date,player,elo,surface,surface_elo
 2025-06-18,Nakashima B.,1749.6,Grass,1634.6
 2025-06-18,Draper J.,2048.0,Grass,1769.4
 2025-06-19,Rublev A.,1837.2,Grass,1693.2
+2025-06-19,Khachanov K.,1854.2,Grass,1675.0
 2025-06-19,Auger-Aliassime F.,1796.5,Grass,1662.8
-2025-06-19,Machac T.,1949.9,Grass,1544.5
 2025-06-19,Cobolli F.,1849.1,Grass,1597.9
 2025-06-19,Sinner J.,2242.1,Grass,1844.6
 2025-06-19,Bublik A.,1782.5,Grass,1779.8
@@ -988,9 +973,9 @@ date,player,elo,surface,surface_elo
 2025-06-19,Alcaraz C.,2179.9,Grass,2019.1
 2025-06-19,Lehecka J.,1900.1,Grass,1732.4
 2025-06-20,Bublik A.,1797.3,Grass,1788.0
-2025-06-20,Machac T.,1926.6,Grass,1528.8
 2025-06-20,Cobolli F.,1839.9,Grass,1581.0
 2025-06-20,Zverev A.,2008.3,Grass,1804.2
+2025-06-20,Khachanov K.,1859.4,Grass,1684.8
 2025-06-20,Medvedev D.,1972.3,Grass,1817.2
 2025-06-20,Michelsen A.,1740.5,Grass,1643.6
 2025-06-20,Alcaraz C.,2180.9,Grass,2022.3
@@ -998,6 +983,7 @@ date,player,elo,surface,surface_elo
 2025-06-20,Nakashima B.,1745.9,Grass,1619.2
 2025-06-20,Draper J.,2052.1,Grass,1785.8
 2025-06-20,Rune H.,1948.8,Grass,1691.3
+2025-06-21,Khachanov K.,1849.5,Grass,1669.6
 2025-06-21,Bublik A.,1809.3,Grass,1802.1
 2025-06-21,Medvedev D.,1981.3,Grass,1834.2
 2025-06-21,Zverev A.,2000.0,Grass,1786.6
@@ -1012,7 +998,6 @@ date,player,elo,surface,surface_elo
 2025-06-23,Davidovich Fokina A.,1813.4,Grass,1519.7
 2025-06-23,Tien L.,1637.7,Grass,1525.4
 2025-06-24,Cobolli F.,1819.5,Grass,1542.5
-2025-06-24,Norrie C.,1769.1,Grass,1618.0
 2025-06-24,Auger-Aliassime F.,1802.8,Grass,1680.3
 2025-06-25,Davidovich Fokina A.,1817.6,Grass,1551.9
 2025-06-25,Mensik J.,1902.5,Grass,1543.8
@@ -1035,13 +1020,13 @@ date,player,elo,surface,surface_elo
 2025-06-28,Fritz T.,1936.6,Grass,1822.4
 2025-06-30,Auger-Aliassime F.,1807.2,Grass,1687.2
 2025-06-30,Tien L.,1667.7,Grass,1555.0
-2025-06-30,Norrie C.,1778.0,Grass,1646.9
 2025-06-30,Medvedev D.,1954.9,Grass,1784.4
 2025-06-30,Cerundolo F.,1831.5,Grass,1485.9
 2025-06-30,Fonseca J.,1790.8,Grass,1515.2
 2025-06-30,Alcaraz C.,2187.2,Grass,2043.0
 2025-06-30,Davidovich Fokina A.,1825.2,Grass,1592.5
 2025-06-30,Rune H.,1930.0,Grass,1652.6
+2025-06-30,Khachanov K.,1853.9,Grass,1683.4
 2025-06-30,Lehecka J.,1923.9,Grass,1776.4
 2025-06-30,Berrettini M.,1905.5,Grass,1851.0
 2025-06-30,Rublev A.,1843.1,Grass,1701.8
@@ -1049,7 +1034,6 @@ date,player,elo,surface,surface_elo
 2025-07-01,De Minaur A.,1949.7,Grass,1760.7
 2025-07-01,Dimitrov G.,1959.7,Grass,1727.3
 2025-07-01,Djokovic N.,2165.0,Grass,2142.6
-2025-07-01,Machac T.,1931.0,Grass,1573.4
 2025-07-01,Michelsen A.,1725.5,Grass,1628.9
 2025-07-01,Mensik J.,1885.7,Grass,1545.4
 2025-07-01,Fritz T.,1939.7,Grass,1828.4
@@ -1064,8 +1048,8 @@ date,player,elo,surface,surface_elo
 2025-07-02,Fonseca J.,1818.0,Grass,1573.0
 2025-07-02,Fritz T.,1946.4,Grass,1839.5
 2025-07-02,Rublev A.,1847.0,Grass,1715.4
+2025-07-02,Khachanov K.,1855.5,Grass,1691.7
 2025-07-02,Lehecka J.,1901.0,Grass,1728.2
-2025-07-02,Norrie C.,1787.3,Grass,1669.4
 2025-07-02,Tiafoe F.,1765.1,Grass,1647.3
 2025-07-02,Alcaraz C.,2187.7,Grass,2045.7
 2025-07-02,Tien L.,1644.9,Grass,1518.3
@@ -1075,7 +1059,6 @@ date,player,elo,surface,surface_elo
 2025-07-03,Draper J.,2012.2,Grass,1739.9
 2025-07-03,Djokovic N.,2165.6,Grass,2143.6
 2025-07-03,Mensik J.,1898.2,Grass,1590.1
-2025-07-03,Machac T.,1902.4,Grass,1536.5
 2025-07-03,Paul T.,1933.5,Grass,1737.2
 2025-07-03,Nakashima B.,1764.4,Grass,1651.7
 2025-07-03,Cobolli F.,1829.3,Grass,1595.2
@@ -1085,8 +1068,8 @@ date,player,elo,surface,surface_elo
 2025-07-04,Fonseca J.,1787.7,Grass,1538.4
 2025-07-04,Fritz T.,1952.2,Grass,1847.5
 2025-07-04,Davidovich Fokina A.,1823.7,Grass,1606.1
+2025-07-04,Khachanov K.,1861.4,Grass,1701.5
 2025-07-04,Rublev A.,1851.4,Grass,1735.0
-2025-07-04,Norrie C.,1793.3,Grass,1683.4
 2025-07-04,Alcaraz C.,2189.2,Grass,2050.3
 2025-07-05,Cobolli F.,1847.7,Grass,1626.2
 2025-07-05,Mensik J.,1877.4,Grass,1558.4
@@ -1098,13 +1081,13 @@ date,player,elo,surface,surface_elo
 2025-07-05,Shelton B.,1838.7,Grass,1596.8
 2025-07-06,Alcaraz C.,2191.8,Grass,2056.7
 2025-07-06,Rublev A.,1849.3,Grass,1728.5
-2025-07-06,Norrie C.,1800.5,Grass,1701.0
+2025-07-06,Khachanov K.,1866.3,Grass,1715.9
 2025-07-07,Cobolli F.,1862.0,Grass,1676.3
 2025-07-07,Djokovic N.,2169.0,Grass,2147.6
 2025-07-07,De Minaur A.,1950.8,Grass,1775.7
 2025-07-07,Shelton B.,1847.2,Grass,1628.3
 2025-07-08,Fritz T.,1958.7,Grass,1859.0
-2025-07-08,Norrie C.,1798.7,Grass,1696.3
+2025-07-08,Khachanov K.,1859.9,Grass,1702.8
 2025-07-08,Alcaraz C.,2193.7,Grass,2061.9
 2025-07-09,Cobolli F.,1857.6,Grass,1672.5
 2025-07-09,Djokovic N.,2170.7,Grass,2149.3
@@ -1129,12 +1112,10 @@ date,player,elo,surface,surface_elo
 2025-07-19,Cerundolo F.,1828.8,Clay,1838.9
 2025-07-19,Bublik A.,1827.5,Clay,1727.3
 2025-07-20,Bublik A.,1834.4,Clay,1741.7
-2025-07-21,Norrie C.,1803.1,Hard,1720.4
 2025-07-21,Tien L.,1662.0,Hard,1645.1
 2025-07-22,Michelsen A.,1707.7,Hard,1706.1
 2025-07-22,Shelton B.,1852.0,Hard,1827.4
 2025-07-22,Musetti L.,1948.2,Hard,1723.1
-2025-07-22,Norrie C.,1816.6,Hard,1732.7
 2025-07-22,Nakashima B.,1757.3,Hard,1727.6
 2025-07-22,Tirante T.A.,1621.9,Clay,1608.8
 2025-07-23,De Minaur A.,1952.7,Hard,1900.6
@@ -1155,7 +1136,6 @@ date,player,elo,surface,surface_elo
 2025-07-24,Lehecka J.,1892.5,Hard,1827.9
 2025-07-24,De Minaur A.,1960.6,Hard,1909.5
 2025-07-24,Medvedev D.,1962.2,Hard,1976.4
-2025-07-24,Norrie C.,1805.6,Hard,1720.9
 2025-07-24,Nakashima B.,1771.2,Hard,1741.7
 2025-07-24,Tiafoe F.,1782.2,Hard,1748.8
 2025-07-24,Cobolli F.,1849.5,Hard,1664.9
@@ -1178,6 +1158,7 @@ date,player,elo,surface,surface_elo
 2025-07-27,Davidovich Fokina A.,1841.2,Hard,1778.7
 2025-07-28,Blockx A.,1376.6,Hard,1364.3
 2025-07-28,Fonseca J.,1752.9,Hard,1642.2
+2025-07-29,Khachanov K.,1863.1,Hard,1811.3
 2025-07-29,Medvedev D.,1950.7,Hard,1961.4
 2025-07-29,Michelsen A.,1714.1,Hard,1714.8
 2025-07-29,Rune H.,1933.8,Hard,1906.4
@@ -1189,8 +1170,6 @@ date,player,elo,surface,surface_elo
 2025-07-30,Lehecka J.,1898.9,Hard,1835.8
 2025-07-30,Mensik J.,1881.0,Hard,1943.0
 2025-07-30,Davidovich Fokina A.,1849.7,Hard,1787.9
-2025-07-30,Norrie C.,1791.6,Hard,1705.2
-2025-07-30,Machac T.,1880.4,Hard,1938.8
 2025-07-30,Nakashima B.,1772.4,Hard,1739.6
 2025-07-30,Tien L.,1724.9,Hard,1712.6
 2025-07-30,Shelton B.,1867.4,Hard,1837.0
@@ -1204,6 +1183,7 @@ date,player,elo,surface,surface_elo
 2025-07-31,Cerundolo F.,1824.9,Hard,1779.9
 2025-07-31,Michelsen A.,1738.4,Hard,1734.1
 2025-07-31,Musetti L.,1933.3,Hard,1715.8
+2025-07-31,Khachanov K.,1865.9,Hard,1815.3
 2025-07-31,Tien L.,1750.6,Hard,1745.0
 2025-07-31,Ruud C.,1911.4,Hard,1789.5
 2025-08-01,Fils A.,1907.8,Hard,1806.4
@@ -1222,6 +1202,7 @@ date,player,elo,surface,surface_elo
 2025-08-02,Michelsen A.,1754.1,Hard,1752.9
 2025-08-02,Tien L.,1727.6,Hard,1718.6
 2025-08-02,Ruud C.,1901.2,Hard,1777.6
+2025-08-02,Khachanov K.,1875.4,Hard,1824.6
 2025-08-03,Rune H.,1922.2,Hard,1890.4
 2025-08-03,Tiafoe F.,1783.8,Hard,1750.1
 2025-08-03,De Minaur A.,1982.7,Hard,1933.7
@@ -1230,6 +1211,7 @@ date,player,elo,surface,surface_elo
 2025-08-04,Shelton B.,1889.4,Hard,1857.3
 2025-08-04,Cobolli F.,1850.9,Hard,1689.7
 2025-08-05,Michelsen A.,1744.1,Hard,1738.5
+2025-08-05,Khachanov K.,1881.0,Hard,1832.6
 2025-08-05,Zverev A.,1995.2,Hard,1983.3
 2025-08-06,De Minaur A.,1971.2,Hard,1920.7
 2025-08-06,Shelton B.,1905.8,Hard,1875.8
@@ -1237,16 +1219,17 @@ date,player,elo,surface,surface_elo
 2025-08-06,Rublev A.,1830.5,Hard,1803.6
 2025-08-07,Fritz T.,1961.1,Hard,1898.9
 2025-08-07,Shelton B.,1921.1,Hard,1892.4
+2025-08-07,Khachanov K.,1892.1,Hard,1846.7
 2025-08-07,Zverev A.,1985.3,Hard,1970.1
 2025-08-07,Fonseca J.,1764.7,Hard,1677.2
 2025-08-08,Shelton B.,1932.9,Hard,1905.5
+2025-08-08,Khachanov K.,1884.4,Hard,1838.0
 2025-08-08,Blockx A.,1447.9,Hard,1436.5
 2025-08-08,Tirante T.A.,1577.6,Hard,1514.7
 2025-08-08,Nishikori K.,1827.4,Hard,1798.2
 2025-08-09,Tien L.,1736.1,Hard,1731.2
 2025-08-09,Cobolli F.,1825.0,Hard,1659.2
 2025-08-09,Auger-Aliassime F.,1791.6,Hard,1780.2
-2025-08-09,Machac T.,1856.0,Hard,1907.9
 2025-08-09,Tsitsipas S.,1888.8,Hard,1832.7
 2025-08-09,Michelsen A.,1760.3,Hard,1753.1
 2025-08-09,Musetti L.,1914.7,Hard,1696.7
@@ -1258,8 +1241,8 @@ date,player,elo,surface,surface_elo
 2025-08-10,Lehecka J.,1904.3,Hard,1843.2
 2025-08-10,Mensik J.,1869.6,Hard,1917.6
 2025-08-10,Fritz T.,1963.1,Hard,1901.8
-2025-08-10,Norrie C.,1780.7,Hard,1691.4
 2025-08-10,De Minaur A.,1957.3,Hard,1906.1
+2025-08-10,Khachanov K.,1885.8,Hard,1840.8
 2025-08-10,Rublev A.,1836.5,Hard,1811.2
 2025-08-10,Tien L.,1720.1,Hard,1711.4
 2025-08-10,Tiafoe F.,1789.4,Hard,1756.4
@@ -1274,6 +1257,7 @@ date,player,elo,surface,surface_elo
 2025-08-11,Fritz T.,1966.2,Hard,1906.1
 2025-08-12,Fonseca J.,1731.9,Hard,1630.3
 2025-08-12,Sinner J.,2262.9,Hard,2252.5
+2025-08-12,Khachanov K.,1892.7,Hard,1847.7
 2025-08-12,Paul T.,1920.2,Hard,1851.5
 2025-08-12,Alcaraz C.,2191.8,Hard,2016.8
 2025-08-12,Rublev A.,1843.3,Hard,1818.8
@@ -1306,8 +1290,8 @@ date,player,elo,surface,surface_elo
 2025-08-24,Davidovich Fokina A.,1865.9,Hard,1813.1
 2025-08-24,Fritz T.,1953.3,Hard,1892.1
 2025-08-24,Lehecka J.,1901.8,Hard,1843.0
-2025-08-24,Machac T.,1861.9,Hard,1912.9
 2025-08-24,Mensik J.,1877.5,Hard,1923.2
+2025-08-25,Khachanov K.,1894.8,Hard,1851.7
 2025-08-25,Cobolli F.,1830.2,Hard,1667.6
 2025-08-25,Nakashima B.,1772.1,Hard,1736.9
 2025-08-25,Djokovic N.,2166.9,Hard,2172.7
@@ -1315,7 +1299,6 @@ date,player,elo,surface,surface_elo
 2025-08-25,Fonseca J.,1751.1,Hard,1666.8
 2025-08-25,Draper J.,2013.8,Hard,2019.3
 2025-08-25,Korda S.,1845.9,Hard,1819.4
-2025-08-25,Norrie C.,1792.2,Hard,1707.6
 2025-08-25,Medvedev D.,1910.9,Hard,1913.9
 2025-08-25,Michelsen A.,1733.2,Hard,1715.6
 2025-08-25,Rublev A.,1849.3,Hard,1820.9
@@ -1333,10 +1316,8 @@ date,player,elo,surface,surface_elo
 2025-08-27,Paul T.,1921.2,Hard,1854.2
 2025-08-27,Zverev A.,1994.9,Hard,1977.6
 2025-08-27,Ruud C.,1873.9,Hard,1742.3
-2025-08-27,Norrie C.,1798.9,Hard,1715.8
 2025-08-27,Djokovic N.,2167.3,Hard,2173.0
 2025-08-27,Fonseca J.,1736.2,Hard,1653.9
-2025-08-27,Machac T.,1872.7,Hard,1920.0
 2025-08-27,Fritz T.,1955.8,Hard,1895.6
 2025-08-27,Lehecka J.,1907.7,Hard,1851.4
 2025-08-27,Mensik J.,1847.3,Hard,1886.1
@@ -1348,6 +1329,7 @@ date,player,elo,surface,surface_elo
 2025-08-28,Cerundolo F.,1813.4,Hard,1765.7
 2025-08-28,Cobolli F.,1844.6,Hard,1691.3
 2025-08-28,Musetti L.,1923.4,Hard,1722.5
+2025-08-28,Khachanov K.,1882.0,Hard,1836.0
 2025-08-28,Sinner J.,2267.0,Hard,2257.0
 2025-08-28,Rublev A.,1851.8,Hard,1825.1
 2025-08-28,Rune H.,1903.3,Hard,1866.5
@@ -1361,8 +1343,6 @@ date,player,elo,surface,surface_elo
 2025-08-29,Alcaraz C.,2204.0,Hard,2045.7
 2025-08-29,Tiafoe F.,1797.7,Hard,1767.0
 2025-08-30,Fritz T.,1958.3,Hard,1898.8
-2025-08-30,Machac T.,1877.8,Hard,1924.6
-2025-08-30,Norrie C.,1796.9,Hard,1714.2
 2025-08-30,Djokovic N.,2168.5,Hard,2174.0
 2025-08-30,Rublev A.,1854.5,Hard,1828.9
 2025-08-30,Sinner J.,2268.2,Hard,2258.6
@@ -1371,7 +1351,6 @@ date,player,elo,surface,surface_elo
 2025-08-31,Zverev A.,1985.7,Hard,1965.3
 2025-08-31,Auger-Aliassime F.,1820.7,Hard,1812.4
 2025-08-31,Alcaraz C.,2205.3,Hard,2048.0
-2025-08-31,Machac T.,1865.7,Hard,1905.4
 2025-08-31,Fritz T.,1964.8,Hard,1909.4
 2025-08-31,Lehecka J.,1916.7,Hard,1864.4
 2025-09-01,Auger-Aliassime F.,1831.0,Hard,1824.1
@@ -1395,7 +1374,6 @@ date,player,elo,surface,surface_elo
 2025-09-06,Auger-Aliassime F.,1842.3,Hard,1836.2
 2025-09-07,Sinner J.,2262.9,Hard,2245.3
 2025-09-07,Alcaraz C.,2229.4,Hard,2092.3
-2025-09-17,Norrie C.,1780.1,Hard,1694.4
 2025-09-17,Tien L.,1735.0,Hard,1719.3
 2025-09-18,Berrettini M.,1886.5,Hard,1769.3
 2025-09-19,Nakashima B.,1766.0,Hard,1729.1
@@ -1418,12 +1396,12 @@ date,player,elo,surface,surface_elo
 2025-09-23,Bublik A.,1899.2,Hard,1723.5
 2025-09-24,Berrettini M.,1892.5,Hard,1778.3
 2025-09-24,Tiafoe F.,1788.1,Hard,1753.8
+2025-09-25,Khachanov K.,1869.2,Hard,1820.2
 2025-09-25,Sinner J.,2264.1,Hard,2246.5
 2025-09-25,Davidovich Fokina A.,1855.4,Hard,1797.6
 2025-09-25,Alcaraz C.,2230.1,Hard,2093.2
 2025-09-25,Fritz T.,1965.8,Hard,1909.6
 2025-09-25,Korda S.,1843.6,Hard,1816.3
-2025-09-25,Machac T.,1838.1,Hard,1872.4
 2025-09-25,Michelsen A.,1712.1,Hard,1687.0
 2025-09-25,Nakashima B.,1776.0,Hard,1739.1
 2025-09-25,Rune H.,1910.0,Hard,1875.8
@@ -1434,7 +1412,6 @@ date,player,elo,surface,surface_elo
 2025-09-26,Mensik J.,1856.7,Hard,1894.1
 2025-09-26,Bublik A.,1884.1,Hard,1709.9
 2025-09-26,Musetti L.,1923.9,Hard,1751.3
-2025-09-26,Norrie C.,1773.9,Hard,1689.1
 2025-09-26,Medvedev D.,1907.0,Hard,1908.4
 2025-09-26,Zverev A.,1987.9,Hard,1967.9
 2025-09-26,Tien L.,1740.0,Hard,1726.5
@@ -1475,13 +1452,14 @@ date,player,elo,surface,surface_elo
 2025-10-01,Sinner J.,2269.5,Hard,2252.2
 2025-10-01,Berrettini M.,1866.4,Hard,1746.5
 2025-10-01,Korda S.,1822.9,Hard,1790.8
+2025-10-01,Vacherot V.,1515.7,Hard,1572.8
 2025-10-03,Tien L.,1780.7,Hard,1762.9
 2025-10-03,Bublik A.,1866.3,Hard,1693.3
+2025-10-03,Vacherot V.,1579.7,Hard,1640.0
 2025-10-03,Djokovic N.,2168.3,Hard,2168.9
 2025-10-03,Fritz T.,1980.6,Hard,1925.8
 2025-10-03,Shelton B.,1927.8,Hard,1896.3
 2025-10-03,Tiafoe F.,1776.5,Hard,1739.4
-2025-10-03,Machac T.,1846.7,Hard,1879.8
 2025-10-03,Cerundolo F.,1807.7,Hard,1759.8
 2025-10-03,Cobolli F.,1820.1,Hard,1675.9
 2025-10-03,Rune H.,1904.2,Hard,1863.5
@@ -1493,10 +1471,10 @@ date,player,elo,surface,surface_elo
 2025-10-04,Tien L.,1799.2,Hard,1779.3
 2025-10-04,Musetti L.,1933.2,Hard,1771.3
 2025-10-04,Nakashima B.,1772.9,Hard,1731.2
-2025-10-04,Norrie C.,1782.4,Hard,1699.5
 2025-10-04,Michelsen A.,1698.3,Hard,1667.4
 2025-10-04,Zverev A.,1984.6,Hard,1963.5
 2025-10-04,Rublev A.,1813.2,Hard,1779.3
+2025-10-04,Khachanov K.,1857.4,Hard,1806.2
 2025-10-04,Sinner J.,2270.0,Hard,2252.8
 2025-10-04,Medvedev D.,1926.1,Hard,1927.7
 2025-10-05,Cerundolo F.,1792.0,Hard,1738.1
@@ -1510,9 +1488,9 @@ date,player,elo,surface,surface_elo
 2025-10-06,Musetti L.,1939.5,Hard,1776.8
 2025-10-06,Lehecka J.,1924.6,Hard,1873.2
 2025-10-06,Tien L.,1818.4,Hard,1796.7
-2025-10-06,Norrie C.,1773.6,Hard,1690.7
 2025-10-06,Zverev A.,1972.8,Hard,1947.8
 2025-10-07,Djokovic N.,2170.0,Hard,2170.3
+2025-10-07,Vacherot V.,1633.5,Hard,1696.9
 2025-10-07,Rune H.,1916.8,Hard,1882.7
 2025-10-08,Auger-Aliassime F.,1867.6,Hard,1857.6
 2025-10-08,Musetti L.,1926.3,Hard,1765.7
@@ -1521,12 +1499,15 @@ date,player,elo,surface,surface_elo
 2025-10-08,Tien L.,1804.7,Hard,1782.8
 2025-10-08,Medvedev D.,1938.0,Hard,1939.4
 2025-10-09,Djokovic N.,2170.8,Hard,2171.2
+2025-10-09,Vacherot V.,1690.1,Hard,1761.7
 2025-10-09,Rune H.,1898.5,Hard,1862.7
 2025-10-10,De Minaur A.,1954.6,Hard,1907.6
 2025-10-10,Medvedev D.,1946.7,Hard,1948.0
 2025-10-10,Auger-Aliassime F.,1856.1,Hard,1842.3
 2025-10-11,Medvedev D.,1935.4,Hard,1933.8
+2025-10-11,Vacherot V.,1752.2,Hard,1837.6
 2025-10-11,Djokovic N.,2160.0,Hard,2158.5
+2025-10-12,Vacherot V.,1790.4,Hard,1868.5
 2025-10-13,Korda S.,1832.8,Hard,1802.5
 2025-10-14,Nakashima B.,1783.7,Hard,1744.7
 2025-10-14,Fonseca J.,1712.1,Hard,1620.8
@@ -1538,6 +1519,7 @@ date,player,elo,surface,surface_elo
 2025-10-15,Davidovich Fokina A.,1851.4,Hard,1797.2
 2025-10-15,Ruud C.,1893.0,Hard,1775.7
 2025-10-15,Korda S.,1841.8,Hard,1812.0
+2025-10-16,Khachanov K.,1846.8,Hard,1792.2
 2025-10-16,Michelsen A.,1716.1,Hard,1689.0
 2025-10-16,Medvedev D.,1937.7,Hard,1935.9
 2025-10-16,Auger-Aliassime F.,1859.7,Hard,1844.7
@@ -1564,6 +1546,7 @@ date,player,elo,surface,surface_elo
 2025-10-19,Ruud C.,1913.1,Hard,1816.0
 2025-10-20,Mensik J.,1848.2,Hard,1872.3
 2025-10-20,Davidovich Fokina A.,1840.7,Hard,1786.5
+2025-10-20,Khachanov K.,1836.3,Hard,1779.4
 2025-10-20,Nakashima B.,1782.1,Hard,1736.1
 2025-10-20,De Minaur A.,1956.5,Hard,1910.5
 2025-10-20,Bublik A.,1873.2,Hard,1705.4
@@ -1572,18 +1555,17 @@ date,player,elo,surface,surface_elo
 2025-10-21,Cerundolo F.,1800.9,Hard,1752.3
 2025-10-21,Michelsen A.,1700.2,Hard,1666.2
 2025-10-21,Musetti L.,1919.9,Hard,1770.6
-2025-10-21,Norrie C.,1783.9,Hard,1704.9
 2025-10-21,Rublev A.,1804.2,Hard,1767.5
 2025-10-21,Zverev A.,1974.9,Hard,1949.6
 2025-10-22,Auger-Aliassime F.,1885.3,Hard,1870.6
 2025-10-22,Ruud C.,1915.5,Hard,1820.0
 2025-10-22,Korda S.,1819.6,Hard,1784.9
 2025-10-22,Lehecka J.,1882.6,Hard,1827.3
+2025-10-22,Vacherot V.,1773.6,Hard,1834.7
 2025-10-22,Fritz T.,1970.7,Hard,1918.2
 2025-10-22,Davidovich Fokina A.,1851.0,Hard,1798.1
 2025-10-22,Sinner J.,2270.5,Hard,2253.2
 2025-10-22,Berrettini M.,1863.1,Hard,1752.7
-2025-10-22,Machac T.,1829.4,Hard,1852.6
 2025-10-22,Cobolli F.,1820.0,Hard,1696.0
 2025-10-22,Medvedev D.,1952.7,Hard,1949.9
 2025-10-22,Nakashima B.,1770.3,Hard,1721.6
@@ -1594,7 +1576,6 @@ date,player,elo,surface,surface_elo
 2025-10-23,Ruud C.,1919.1,Hard,1828.6
 2025-10-23,Zverev A.,1977.3,Hard,1952.5
 2025-10-23,Berrettini M.,1871.2,Hard,1764.4
-2025-10-23,Norrie C.,1776.7,Hard,1695.1
 2025-10-23,Bublik A.,1881.1,Hard,1719.0
 2025-10-23,Cerundolo F.,1791.8,Hard,1733.2
 2025-10-23,Musetti L.,1925.0,Hard,1782.1
@@ -1615,24 +1596,23 @@ date,player,elo,surface,surface_elo
 2025-10-26,Fonseca J.,1784.5,Hard,1734.9
 2025-10-26,Zverev A.,1981.4,Hard,1955.0
 2025-10-26,Sinner J.,2279.3,Hard,2261.2
-2025-10-27,Norrie C.,1782.3,Hard,1700.7
 2025-10-27,Bublik A.,1885.8,Hard,1730.0
 2025-10-27,Cerundolo F.,1797.4,Hard,1739.3
 2025-10-27,Cobolli F.,1833.0,Hard,1721.7
-2025-10-27,Machac T.,1813.5,Hard,1827.6
 2025-10-27,Dimitrov G.,1966.4,Hard,1939.1
 2025-10-27,Rublev A.,1809.0,Hard,1771.8
 2025-10-27,Michelsen A.,1685.3,Hard,1649.4
 2025-10-27,Nakashima B.,1754.9,Hard,1703.0
+2025-10-27,Khachanov K.,1839.6,Hard,1782.6
 2025-10-27,Korda S.,1803.7,Hard,1766.3
 2025-10-27,Tien L.,1820.2,Hard,1798.7
 2025-10-28,Auger-Aliassime F.,1896.5,Hard,1881.3
 2025-10-28,Medvedev D.,1945.2,Hard,1939.1
 2025-10-28,Davidovich Fokina A.,1844.2,Hard,1790.8
 2025-10-28,Fonseca J.,1805.8,Hard,1769.6
+2025-10-28,Vacherot V.,1813.7,Hard,1870.9
 2025-10-28,Lehecka J.,1866.0,Hard,1812.8
 2025-10-28,Alcaraz C.,2219.7,Hard,2084.7
-2025-10-28,Norrie C.,1799.6,Hard,1721.4
 2025-10-28,Rublev A.,1817.3,Hard,1781.9
 2025-10-28,Tien L.,1799.8,Hard,1775.2
 2025-10-28,Shelton B.,1925.4,Hard,1888.8
@@ -1643,9 +1623,11 @@ date,player,elo,surface,surface_elo
 2025-10-29,Davidovich Fokina A.,1850.9,Hard,1797.7
 2025-10-29,Cerundolo F.,1804.7,Hard,1750.9
 2025-10-29,De Minaur A.,1967.6,Hard,1919.5
+2025-10-29,Khachanov K.,1847.1,Hard,1792.1
 2025-10-29,Fonseca J.,1787.2,Hard,1741.7
 2025-10-29,Auger-Aliassime F.,1900.4,Hard,1884.9
 2025-10-29,Musetti L.,1905.7,Hard,1767.6
+2025-10-29,Vacherot V.,1843.9,Hard,1895.8
 2025-10-29,Sinner J.,2280.0,Hard,2262.0
 2025-10-29,Zverev A.,1983.0,Hard,1956.3
 2025-10-30,Auger-Aliassime F.,1904.3,Hard,1889.0
@@ -1653,9 +1635,10 @@ date,player,elo,surface,surface_elo
 2025-10-30,Fritz T.,1950.9,Hard,1895.0
 2025-10-30,Cerundolo F.,1803.3,Hard,1749.2
 2025-10-30,Sinner J.,2281.1,Hard,2263.1
+2025-10-30,Khachanov K.,1841.6,Hard,1785.7
 2025-10-30,De Minaur A.,1973.6,Hard,1926.2
 2025-10-30,Medvedev D.,1948.4,Hard,1942.4
-2025-10-30,Norrie C.,1791.5,Hard,1715.4
+2025-10-30,Vacherot V.,1869.8,Hard,1914.5
 2025-10-30,Rublev A.,1811.7,Hard,1775.3
 2025-10-30,Shelton B.,1934.2,Hard,1899.0
 2025-10-30,Zverev A.,1987.7,Hard,1961.6
@@ -1664,6 +1647,7 @@ date,player,elo,surface,surface_elo
 2025-10-31,De Minaur A.,1962.8,Hard,1911.2
 2025-10-31,Shelton B.,1931.2,Hard,1895.8
 2025-10-31,Sinner J.,2283.4,Hard,2265.5
+2025-10-31,Vacherot V.,1843.6,Hard,1878.2
 2025-10-31,Auger-Aliassime F.,1912.6,Hard,1900.6
 2025-10-31,Zverev A.,1994.3,Hard,1970.3
 2025-10-31,Medvedev D.,1941.3,Hard,1933.8
@@ -1676,12 +1660,10 @@ date,player,elo,surface,surface_elo
 2025-11-02,Korda S.,1813.3,Hard,1777.2
 2025-11-03,Berrettini M.,1866.9,Hard,1761.9
 2025-11-03,Tien L.,1806.2,Hard,1782.5
-2025-11-03,Norrie C.,1797.9,Hard,1725.0
 2025-11-04,Korda S.,1818.5,Hard,1781.4
 2025-11-04,Djokovic N.,2161.0,Hard,2159.4
 2025-11-04,Blockx A.,1485.4,Hard,1461.0
 2025-11-04,Cobolli F.,1802.7,Hard,1690.0
-2025-11-04,Norrie C.,1805.1,Hard,1733.3
 2025-11-05,Musetti L.,1910.3,Hard,1779.1
 2025-11-05,Nakashima B.,1741.5,Hard,1687.0
 2025-11-05,Tien L.,1811.9,Hard,1789.6
@@ -1691,18 +1673,15 @@ date,player,elo,surface,surface_elo
 2025-11-06,Djokovic N.,2161.9,Hard,2160.3
 2025-11-06,Korda S.,1825.6,Hard,1789.6
 2025-11-06,Musetti L.,1915.1,Hard,1787.5
-2025-11-06,Norrie C.,1808.9,Hard,1740.2
 2025-11-06,Tien L.,1834.5,Hard,1809.6
 2025-11-06,Berrettini M.,1859.3,Hard,1757.3
 2025-11-07,Djokovic N.,2162.8,Hard,2161.2
 2025-11-07,Korda S.,1817.2,Hard,1776.3
 2025-11-07,Musetti L.,1923.0,Hard,1801.2
-2025-11-07,Norrie C.,1815.9,Hard,1750.1
 2025-11-07,Tien L.,1841.0,Hard,1819.6
 2025-11-08,Djokovic N.,2165.1,Hard,2162.7
 2025-11-08,Musetti L.,1918.8,Hard,1798.2
 2025-11-08,Tien L.,1858.7,Hard,1836.4
-2025-11-08,Norrie C.,1807.4,Hard,1741.0
 2025-11-09,De Minaur A.,1959.5,Hard,1905.7
 2025-11-09,Alcaraz C.,2223.4,Hard,2091.7
 2025-11-09,Zverev A.,1998.0,Hard,1974.7
@@ -1737,11 +1716,10 @@ date,player,elo,surface,surface_elo
 2026-01-04,Tien L.,1865.9,Hard,1841.8
 2026-01-05,Michelsen A.,1697.2,Hard,1663.2
 2026-01-05,Korda S.,1829.3,Hard,1793.2
+2026-01-05,Vacherot V.,1812.9,Hard,1835.8
 2026-01-05,Lehecka J.,1876.8,Hard,1828.2
-2026-01-05,Machac T.,1800.5,Hard,1809.5
 2026-01-05,Medvedev D.,1945.6,Hard,1937.0
 2026-01-06,Dimitrov G.,1969.4,Hard,1943.0
-2026-01-06,Norrie C.,1817.2,Hard,1756.0
 2026-01-06,Kyrgios N.,1945.7,Hard,1897.5
 2026-01-06,Nakashima B.,1756.2,Hard,1704.0
 2026-01-06,Davidovich Fokina A.,1830.8,Hard,1773.9
@@ -1754,7 +1732,7 @@ date,player,elo,surface,surface_elo
 2026-01-07,Rublev A.,1819.3,Hard,1785.2
 2026-01-08,Dimitrov G.,1957.3,Hard,1929.2
 2026-01-08,Nakashima B.,1762.9,Hard,1711.4
-2026-01-08,Norrie C.,1801.6,Hard,1738.0
+2026-01-08,Khachanov K.,1830.8,Hard,1774.1
 2026-01-08,Bublik A.,1893.5,Hard,1758.0
 2026-01-09,Korda S.,1814.6,Hard,1776.2
 2026-01-09,Michelsen A.,1737.2,Hard,1710.1
@@ -1773,37 +1751,31 @@ date,player,elo,surface,surface_elo
 2026-01-11,Medvedev D.,1961.6,Hard,1952.8
 2026-01-11,Musetti L.,1922.3,Hard,1814.6
 2026-01-11,Bublik A.,1915.2,Hard,1789.9
-2026-01-12,Norrie C.,1804.8,Hard,1742.7
 2026-01-12,Michelsen A.,1740.3,Hard,1709.6
 2026-01-12,Korda S.,1802.4,Hard,1762.0
+2026-01-12,Vacherot V.,1829.8,Hard,1850.4
 2026-01-13,Shelton B.,1910.9,Hard,1873.0
 2026-01-13,Michelsen A.,1725.2,Hard,1690.5
-2026-01-13,Machac T.,1808.2,Hard,1816.5
 2026-01-13,Tsitsipas S.,1839.4,Hard,1775.2
 2026-01-14,Ruud C.,1892.2,Hard,1794.1
 2026-01-14,Mensik J.,1859.4,Hard,1883.0
-2026-01-14,Norrie C.,1793.3,Hard,1729.8
 2026-01-14,Davidovich Fokina A.,1835.4,Hard,1781.4
-2026-01-14,Machac T.,1815.5,Hard,1822.5
 2026-01-14,Cerundolo F.,1790.7,Hard,1730.6
 2026-01-14,Paul T.,1903.7,Hard,1832.8
 2026-01-15,Mensik J.,1870.3,Hard,1893.6
 2026-01-15,Shelton B.,1890.6,Hard,1848.1
 2026-01-15,Davidovich Fokina A.,1845.6,Hard,1796.5
-2026-01-15,Machac T.,1829.0,Hard,1834.8
+2026-01-15,Vacherot V.,1802.6,Hard,1812.8
 2026-01-15,Paul T.,1907.7,Hard,1838.3
 2026-01-16,Mensik J.,1883.3,Hard,1906.1
 2026-01-16,Davidovich Fokina A.,1835.1,Hard,1786.2
 2026-01-16,Paul T.,1895.6,Hard,1826.8
-2026-01-16,Machac T.,1847.5,Hard,1852.1
 2026-01-17,Mensik J.,1891.3,Hard,1911.7
-2026-01-17,Machac T.,1862.7,Hard,1870.1
 2026-01-18,Alcaraz C.,2225.4,Hard,2103.1
 2026-01-18,Bublik A.,1921.9,Hard,1799.1
 2026-01-18,Blockx A.,1420.1,Hard,1405.8
 2026-01-18,Cobolli F.,1778.0,Hard,1660.7
 2026-01-18,Korda S.,1783.4,Hard,1740.6
-2026-01-18,Norrie C.,1800.6,Hard,1739.8
 2026-01-18,Tiafoe F.,1781.1,Hard,1744.4
 2026-01-18,Cerundolo F.,1797.2,Hard,1738.4
 2026-01-18,Zverev A.,1989.6,Hard,1963.4
@@ -1817,12 +1789,13 @@ date,player,elo,surface,surface_elo
 2026-01-19,Ruud C.,1895.5,Hard,1800.3
 2026-01-19,Tien L.,1851.6,Hard,1823.7
 2026-01-19,Tirante T.A.,1610.0,Hard,1564.7
+2026-01-19,Vacherot V.,1809.2,Hard,1820.1
 2026-01-19,Nakashima B.,1758.4,Hard,1710.8
 2026-01-20,Fritz T.,1949.1,Hard,1890.2
 2026-01-20,Shelton B.,1901.3,Hard,1862.9
 2026-01-20,Hurkacz H.,1925.1,Hard,1850.4
+2026-01-20,Khachanov K.,1836.7,Hard,1781.6
 2026-01-20,Michelsen A.,1715.1,Hard,1677.9
-2026-01-20,Machac T.,1881.7,Hard,1889.8
 2026-01-20,Dimitrov G.,1948.3,Hard,1919.4
 2026-01-20,Mensik J.,1900.8,Hard,1921.5
 2026-01-20,Tsitsipas S.,1841.8,Hard,1778.5
@@ -1835,7 +1808,6 @@ date,player,elo,surface,surface_elo
 2026-01-21,Alcaraz C.,2226.5,Hard,2105.4
 2026-01-21,De Minaur A.,1961.7,Hard,1906.9
 2026-01-21,Medvedev D.,1966.2,Hard,1956.4
-2026-01-21,Norrie C.,1804.9,Hard,1745.9
 2026-01-21,Paul T.,1901.2,Hard,1834.6
 2026-01-21,Tirante T.A.,1601.7,Hard,1551.5
 2026-01-21,Tien L.,1861.8,Hard,1834.6
@@ -1844,8 +1816,9 @@ date,player,elo,surface,surface_elo
 2026-01-22,Djokovic N.,2165.8,Hard,2163.3
 2026-01-22,Sinner J.,2305.5,Hard,2287.5
 2026-01-22,Fritz T.,1951.0,Hard,1892.3
+2026-01-22,Vacherot V.,1822.9,Hard,1835.2
 2026-01-22,Hurkacz H.,1908.3,Hard,1830.5
-2026-01-22,Machac T.,1894.9,Hard,1901.4
+2026-01-22,Khachanov K.,1840.4,Hard,1788.1
 2026-01-22,Tsitsipas S.,1834.5,Hard,1771.5
 2026-01-22,Mensik J.,1904.4,Hard,1925.3
 2026-01-22,Jodar R.,1532.3,Hard,1531.4
@@ -1856,18 +1829,18 @@ date,player,elo,surface,surface_elo
 2026-01-23,Cerundolo F.,1814.7,Hard,1763.0
 2026-01-23,Rublev A.,1818.8,Hard,1783.1
 2026-01-23,Bublik A.,1932.0,Hard,1814.6
+2026-01-23,Khachanov K.,1829.5,Hard,1772.2
 2026-01-23,Medvedev D.,1970.8,Hard,1961.3
 2026-01-23,Alcaraz C.,2228.0,Hard,2107.8
 2026-01-23,Musetti L.,1936.7,Hard,1839.4
-2026-01-23,Machac T.,1881.4,Hard,1881.0
 2026-01-23,Tiafoe F.,1782.5,Hard,1744.9
 2026-01-23,De Minaur A.,1966.5,Hard,1912.8
 2026-01-23,Zverev A.,1995.5,Hard,1969.7
-2026-01-23,Norrie C.,1800.2,Hard,1741.0
 2026-01-24,Ruud C.,1907.9,Hard,1820.1
 2026-01-24,Fritz T.,1954.0,Hard,1897.4
 2026-01-24,Mensik J.,1910.3,Hard,1929.4
 2026-01-24,Sinner J.,2306.3,Hard,2288.3
+2026-01-24,Vacherot V.,1802.5,Hard,1808.3
 2026-01-24,Shelton B.,1913.7,Hard,1879.2
 2026-01-24,Djokovic N.,2166.6,Hard,2164.1
 2026-01-25,Alcaraz C.,2230.6,Hard,2112.2
@@ -1904,7 +1877,6 @@ date,player,elo,surface,surface_elo
 2026-02-06,Auger-Aliassime F.,1947.5,Hard,1932.7
 2026-02-07,Auger-Aliassime F.,1950.6,Hard,1935.8
 2026-02-08,Auger-Aliassime F.,1954.2,Hard,1939.7
-2026-02-09,Norrie C.,1806.7,Hard,1747.9
 2026-02-09,Medvedev D.,1949.8,Hard,1937.6
 2026-02-09,Nakashima B.,1765.7,Hard,1719.5
 2026-02-09,Davidovich Fokina A.,1850.1,Hard,1803.9
@@ -1921,8 +1893,8 @@ date,player,elo,surface,surface_elo
 2026-02-11,Auger-Aliassime F.,1957.7,Hard,1943.0
 2026-02-11,Hurkacz H.,1881.4,Hard,1798.6
 2026-02-11,Bublik A.,1932.0,Hard,1817.9
+2026-02-11,Khachanov K.,1834.3,Hard,1776.9
 2026-02-11,Tsitsipas S.,1841.3,Hard,1780.0
-2026-02-11,Norrie C.,1793.5,Hard,1732.9
 2026-02-11,Fonseca J.,1738.6,Clay,1673.3
 2026-02-11,Berrettini M.,1845.4,Clay,1965.6
 2026-02-11,Fritz T.,1948.9,Hard,1890.2
@@ -1933,6 +1905,7 @@ date,player,elo,surface,surface_elo
 2026-02-12,Bublik A.,1936.7,Hard,1823.7
 2026-02-12,De Minaur A.,1981.2,Hard,1927.1
 2026-02-12,Auger-Aliassime F.,1960.8,Hard,1946.3
+2026-02-12,Khachanov K.,1824.6,Hard,1765.4
 2026-02-12,Tsitsipas S.,1830.2,Hard,1767.0
 2026-02-12,Cerundolo F.,1812.1,Clay,1818.5
 2026-02-12,Korda S.,1799.9,Hard,1761.3
@@ -1961,11 +1934,11 @@ date,player,elo,surface,surface_elo
 2026-02-15,Shelton B.,1958.8,Hard,1927.0
 2026-02-15,Fritz T.,1954.4,Hard,1898.1
 2026-02-16,Michelsen A.,1745.1,Hard,1714.1
+2026-02-16,Vacherot V.,1771.0,Hard,1769.9
 2026-02-16,Fils A.,1898.5,Hard,1806.7
 2026-02-16,Mensik J.,1912.4,Hard,1931.0
 2026-02-16,Medvedev D.,1953.4,Hard,1941.0
 2026-02-16,Sinner J.,2297.5,Hard,2278.1
-2026-02-16,Machac T.,1878.9,Hard,1877.9
 2026-02-16,Tirante T.A.,1632.5,Clay,1624.8
 2026-02-17,Nakashima B.,1772.9,Hard,1727.1
 2026-02-17,Jodar R.,1571.5,Hard,1561.2
@@ -1974,6 +1947,7 @@ date,player,elo,surface,surface_elo
 2026-02-17,Alcaraz C.,2247.7,Hard,2142.6
 2026-02-17,Lehecka J.,1863.5,Hard,1811.7
 2026-02-17,Rublev A.,1823.5,Hard,1787.0
+2026-02-17,Khachanov K.,1827.1,Hard,1768.5
 2026-02-17,Tsitsipas S.,1832.2,Hard,1770.3
 2026-02-17,Berrettini M.,1847.4,Clay,1967.0
 2026-02-17,Cerundolo F.,1840.7,Clay,1858.5
@@ -1984,6 +1958,7 @@ date,player,elo,surface,surface_elo
 2026-02-18,Michelsen A.,1733.1,Hard,1699.8
 2026-02-18,Nakashima B.,1757.4,Hard,1710.4
 2026-02-18,Fils A.,1903.6,Hard,1814.4
+2026-02-18,Khachanov K.,1833.3,Hard,1775.0
 2026-02-18,Lehecka J.,1871.5,Hard,1822.3
 2026-02-18,Medvedev D.,1942.8,Hard,1927.9
 2026-02-18,Tsitsipas S.,1843.3,Hard,1784.9
@@ -1996,6 +1971,7 @@ date,player,elo,surface,surface_elo
 2026-02-19,Tiafoe F.,1786.8,Hard,1751.2
 2026-02-19,Tien L.,1871.6,Hard,1843.5
 2026-02-19,Alcaraz C.,2249.8,Hard,2146.2
+2026-02-19,Khachanov K.,1832.0,Hard,1772.9
 2026-02-19,Lehecka J.,1860.1,Hard,1807.4
 2026-02-19,Fils A.,1916.6,Hard,1832.4
 2026-02-19,Rublev A.,1839.7,Hard,1805.5
@@ -2031,8 +2007,8 @@ date,player,elo,surface,surface_elo
 2026-02-23,Draper J.,2016.5,Hard,2021.7
 2026-02-24,Davidovich Fokina A.,1849.0,Hard,1804.8
 2026-02-24,De Minaur A.,1981.5,Hard,1930.7
-2026-02-24,Norrie C.,1779.1,Hard,1716.5
 2026-02-24,Jodar R.,1626.1,Hard,1609.8
+2026-02-24,Vacherot V.,1788.3,Hard,1787.4
 2026-02-24,Nakashima B.,1762.4,Hard,1718.1
 2026-02-24,Tirante T.A.,1643.7,Clay,1634.2
 2026-02-24,Berrettini M.,1819.6,Clay,1913.0
@@ -2042,6 +2018,7 @@ date,player,elo,surface,surface_elo
 2026-02-24,Hurkacz H.,1873.0,Hard,1791.6
 2026-02-24,Lehecka J.,1864.7,Hard,1813.6
 2026-02-24,Rublev A.,1841.4,Hard,1806.9
+2026-02-24,Khachanov K.,1836.7,Hard,1779.1
 2026-02-24,Bublik A.,1937.8,Hard,1830.0
 2026-02-25,Dimitrov G.,1924.3,Hard,1891.1
 2026-02-25,Tiafoe F.,1787.6,Hard,1752.2
@@ -2053,6 +2030,7 @@ date,player,elo,surface,surface_elo
 2026-02-25,Draper J.,1995.1,Hard,1994.1
 2026-02-25,Bublik A.,1923.6,Hard,1814.1
 2026-02-25,Rublev A.,1849.5,Hard,1817.2
+2026-02-25,Khachanov K.,1827.2,Hard,1767.1
 2026-02-25,Medvedev D.,1949.4,Hard,1935.4
 2026-02-25,Mensik J.,1949.5,Hard,1958.6
 2026-02-26,Jodar R.,1586.4,Hard,1568.1
@@ -2060,6 +2038,7 @@ date,player,elo,surface,surface_elo
 2026-02-26,Nakashima B.,1765.6,Hard,1723.3
 2026-02-26,Cobolli F.,1756.3,Hard,1658.8
 2026-02-26,Tiafoe F.,1791.2,Hard,1756.9
+2026-02-26,Vacherot V.,1815.4,Hard,1818.5
 2026-02-26,Zverev A.,1991.8,Hard,1962.0
 2026-02-26,Cerundolo F.,1843.0,Clay,1861.2
 2026-02-26,Lehecka J.,1863.4,Hard,1814.6
@@ -2069,6 +2048,7 @@ date,player,elo,surface,surface_elo
 2026-02-26,Rublev A.,1856.2,Hard,1824.6
 2026-02-27,Tiafoe F.,1796.7,Hard,1763.4
 2026-02-27,Nakashima B.,1778.4,Hard,1739.5
+2026-02-27,Vacherot V.,1786.8,Hard,1783.5
 2026-02-27,Cobolli F.,1771.9,Hard,1682.9
 2026-02-27,Tirante T.A.,1626.2,Clay,1612.3
 2026-02-27,Cerundolo F.,1847.5,Clay,1865.3
@@ -2104,6 +2084,7 @@ date,player,elo,surface,surface_elo
 2026-03-07,Davidovich Fokina A.,1836.8,Hard,1790.7
 2026-03-07,Rublev A.,1835.6,Hard,1798.7
 2026-03-07,Draper J.,1999.3,Hard,1997.3
+2026-03-07,Khachanov K.,1816.9,Hard,1756.4
 2026-03-07,Fonseca J.,1765.5,Hard,1762.9
 2026-03-07,Korda S.,1841.9,Hard,1803.7
 2026-03-07,De Minaur A.,1987.1,Hard,1937.5
@@ -2111,12 +2092,12 @@ date,player,elo,surface,surface_elo
 2026-03-07,Mensik J.,1934.0,Hard,1935.7
 2026-03-07,Ruud C.,1884.8,Hard,1796.5
 2026-03-07,Sinner J.,2281.9,Hard,2260.2
+2026-03-07,Vacherot V.,1807.2,Hard,1803.1
 2026-03-08,Alcaraz C.,2256.8,Hard,2157.7
 2026-03-08,Dimitrov G.,1924.5,Hard,1890.5
 2026-03-08,Lehecka J.,1845.4,Hard,1792.5
 2026-03-08,Fritz T.,1948.4,Hard,1890.9
 2026-03-08,Bublik A.,1927.4,Hard,1818.4
-2026-03-08,Norrie C.,1783.7,Hard,1721.5
 2026-03-08,Michelsen A.,1756.6,Hard,1729.4
 2026-03-08,Medvedev D.,1966.2,Hard,1951.4
 2026-03-08,Davidovich Fokina A.,1849.8,Hard,1808.1
@@ -2133,13 +2114,13 @@ date,player,elo,surface,surface_elo
 2026-03-09,Cobolli F.,1793.6,Hard,1719.7
 2026-03-09,Tiafoe F.,1813.6,Hard,1778.9
 2026-03-09,De Minaur A.,1973.6,Hard,1921.8
-2026-03-09,Norrie C.,1797.5,Hard,1738.6
 2026-03-09,Djokovic N.,2171.1,Hard,2166.8
 2026-03-09,Bublik A.,1911.0,Hard,1800.9
 2026-03-09,Michelsen A.,1777.6,Hard,1752.5
 2026-03-09,Fritz T.,1936.1,Hard,1877.2
 2026-03-09,Paul T.,1898.9,Hard,1836.3
 2026-03-09,Fonseca J.,1792.9,Hard,1796.8
+2026-03-09,Vacherot V.,1788.1,Hard,1775.8
 2026-03-09,Ruud C.,1891.6,Hard,1808.9
 2026-03-10,Alcaraz C.,2258.0,Hard,2159.7
 2026-03-10,Medvedev D.,1969.1,Hard,1953.8
@@ -2155,7 +2136,6 @@ date,player,elo,surface,surface_elo
 2026-03-11,Sinner J.,2284.0,Hard,2262.8
 2026-03-11,Michelsen A.,1770.6,Hard,1744.8
 2026-03-11,Medvedev D.,1973.1,Hard,1958.1
-2026-03-11,Norrie C.,1803.1,Hard,1746.7
 2026-03-12,Djokovic N.,2162.8,Hard,2156.9
 2026-03-12,Draper J.,2026.0,Hard,2027.1
 2026-03-12,Tien L.,1908.3,Hard,1879.7
@@ -2164,7 +2144,6 @@ date,player,elo,surface,surface_elo
 2026-03-12,Fils A.,1939.6,Hard,1869.1
 2026-03-13,Medvedev D.,1982.2,Hard,1968.8
 2026-03-13,Draper J.,2010.8,Hard,2008.0
-2026-03-13,Norrie C.,1801.8,Hard,1744.9
 2026-03-13,Alcaraz C.,2261.5,Hard,2164.7
 2026-03-14,Alcaraz C.,2245.2,Hard,2146.0
 2026-03-14,Medvedev D.,1995.3,Hard,1982.2
@@ -2176,11 +2155,11 @@ date,player,elo,surface,surface_elo
 2026-03-19,Dimitrov G.,1912.9,Hard,1877.4
 2026-03-19,Jodar R.,1618.5,Hard,1588.2
 2026-03-19,Fonseca J.,1808.9,Hard,1815.2
-2026-03-19,Machac T.,1883.4,Hard,1882.0
 2026-03-19,Hurkacz H.,1840.2,Hard,1754.7
 2026-03-19,Tsitsipas S.,1819.5,Hard,1760.8
 2026-03-20,Michelsen A.,1778.9,Hard,1753.8
 2026-03-20,Tirante T.A.,1646.4,Hard,1585.6
+2026-03-20,Khachanov K.,1822.6,Hard,1762.4
 2026-03-20,Bublik A.,1899.1,Hard,1788.3
 2026-03-20,Berrettini M.,1839.7,Hard,1783.3
 2026-03-20,Fils A.,1942.3,Hard,1873.3
@@ -2198,10 +2177,9 @@ date,player,elo,surface,surface_elo
 2026-03-21,Sinner J.,2292.2,Hard,2272.1
 2026-03-21,Davidovich Fokina A.,1824.9,Hard,1778.2
 2026-03-21,Lehecka J.,1848.7,Hard,1797.3
-2026-03-21,Machac T.,1863.2,Hard,1856.6
 2026-03-21,Tien L.,1882.8,Hard,1851.3
 2026-03-21,Medvedev D.,1993.6,Hard,1980.1
-2026-03-21,Norrie C.,1792.2,Hard,1734.2
+2026-03-21,Vacherot V.,1799.3,Hard,1783.0
 2026-03-21,Michelsen A.,1793.7,Hard,1769.3
 2026-03-21,Shelton B.,1928.8,Hard,1893.1
 2026-03-21,Rublev A.,1825.7,Hard,1785.8
@@ -2215,6 +2193,7 @@ date,player,elo,surface,surface_elo
 2026-03-22,Alcaraz C.,2228.9,Hard,2127.6
 2026-03-22,Korda S.,1866.2,Hard,1830.3
 2026-03-22,Jodar R.,1633.0,Hard,1596.9
+2026-03-22,Khachanov K.,1808.7,Hard,1748.3
 2026-03-22,Lehecka J.,1854.9,Hard,1804.1
 2026-03-22,Fritz T.,1944.0,Hard,1887.7
 2026-03-22,Paul T.,1909.1,Hard,1850.3
@@ -2228,10 +2207,12 @@ date,player,elo,surface,surface_elo
 2026-03-23,Sinner J.,2293.0,Hard,2272.9
 2026-03-23,Tsitsipas S.,1825.5,Hard,1767.9
 2026-03-23,Fils A.,1952.0,Hard,1885.6
+2026-03-23,Vacherot V.,1825.9,Hard,1809.0
 2026-03-23,Berrettini M.,1828.4,Hard,1770.1
 2026-03-24,Tiafoe F.,1832.6,Hard,1800.7
 2026-03-24,Paul T.,1915.4,Hard,1856.9
 2026-03-24,Fils A.,1961.1,Hard,1898.9
+2026-03-24,Vacherot V.,1810.5,Hard,1789.0
 2026-03-24,Fritz T.,1933.8,Hard,1876.0
 2026-03-24,Lehecka J.,1870.4,Hard,1821.6
 2026-03-24,Korda S.,1847.9,Hard,1811.5
@@ -2259,7 +2240,6 @@ date,player,elo,surface,surface_elo
 2026-03-31,Tirante T.A.,1649.6,Clay,1635.5
 2026-04-01,Michelsen A.,1812.4,Clay,1474.8
 2026-04-01,Tirante T.A.,1670.6,Clay,1657.4
-2026-04-02,Machac T.,1840.9,Clay,1652.2
 2026-04-02,Jodar R.,1715.0,Clay,1635.6
 2026-04-02,Nakashima B.,1746.2,Clay,1574.3
 2026-04-02,Paul T.,1908.9,Clay,1847.5
@@ -2279,14 +2259,14 @@ date,player,elo,surface,surface_elo
 2026-04-04,Tiafoe F.,1834.9,Clay,1698.2
 2026-04-04,Tirante T.A.,1682.0,Clay,1657.3
 2026-04-05,Jodar R.,1761.7,Clay,1730.2
-2026-04-05,Norrie C.,1798.3,Clay,1802.1
 2026-04-05,Merida Aguilar D.,1628.0,Clay,1611.4
 2026-04-05,Paul T.,1926.8,Clay,1880.4
 2026-04-06,Rublev A.,1830.6,Clay,1821.0
+2026-04-06,Vacherot V.,1823.9,Clay,1496.5
 2026-04-06,Cobolli F.,1783.6,Clay,1815.2
 2026-04-06,Fonseca J.,1819.7,Clay,1685.1
-2026-04-06,Machac T.,1847.3,Clay,1674.4
 2026-04-06,Lehecka J.,1892.3,Clay,1723.7
+2026-04-06,Khachanov K.,1799.5,Clay,1786.5
 2026-04-06,Blockx A.,1480.2,Clay,1575.9
 2026-04-06,Tsitsipas S.,1818.1,Clay,1938.8
 2026-04-06,Cerundolo F.,1869.5,Clay,1863.1
@@ -2295,14 +2275,12 @@ date,player,elo,surface,surface_elo
 2026-04-07,Ruud C.,1880.0,Clay,1937.0
 2026-04-07,Alcaraz C.,2229.8,Clay,2169.4
 2026-04-07,Bublik A.,1906.3,Clay,1802.2
-2026-04-07,Norrie C.,1793.2,Clay,1788.1
 2026-04-07,De Minaur A.,1966.1,Clay,1845.4
 2026-04-07,Sinner J.,2301.0,Clay,2035.7
 2026-04-08,Auger-Aliassime F.,1960.0,Clay,1721.4
 2026-04-08,Berrettini M.,1827.1,Clay,1900.1
 2026-04-08,Medvedev D.,1971.0,Clay,1825.6
 2026-04-08,Cerundolo F.,1857.7,Clay,1842.1
-2026-04-08,Machac T.,1862.8,Clay,1713.9
 2026-04-08,Cobolli F.,1760.2,Clay,1782.3
 2026-04-08,Blockx A.,1536.4,Clay,1653.9
 2026-04-08,Fonseca J.,1836.5,Clay,1707.9
@@ -2311,6 +2289,7 @@ date,player,elo,surface,surface_elo
 2026-04-08,Hurkacz H.,1854.1,Clay,1844.9
 2026-04-08,Ruud C.,1885.8,Clay,1940.5
 2026-04-08,Rublev A.,1820.5,Clay,1797.2
+2026-04-08,Vacherot V.,1854.0,Clay,1563.9
 2026-04-08,Musetti L.,1918.2,Clay,1947.0
 2026-04-09,Alcaraz C.,2231.3,Clay,2172.2
 2026-04-09,Zverev A.,2019.0,Clay,1962.2
@@ -2321,7 +2300,7 @@ date,player,elo,surface,surface_elo
 2026-04-09,Lehecka J.,1888.4,Clay,1727.3
 2026-04-09,Bublik A.,1915.8,Clay,1817.3
 2026-04-09,Sinner J.,2302.4,Clay,2040.1
-2026-04-09,Machac T.,1860.7,Clay,1706.8
+2026-04-09,Vacherot V.,1876.9,Clay,1622.0
 2026-04-09,Hurkacz H.,1844.5,Clay,1815.8
 2026-04-10,Bublik A.,1913.1,Clay,1813.2
 2026-04-10,Alcaraz C.,2234.0,Clay,2175.7
@@ -2329,8 +2308,10 @@ date,player,elo,surface,surface_elo
 2026-04-10,Zverev A.,2023.0,Clay,1967.3
 2026-04-10,Sinner J.,2304.6,Clay,2044.6
 2026-04-10,Auger-Aliassime F.,1957.8,Clay,1716.9
+2026-04-10,Vacherot V.,1905.3,Clay,1675.6
 2026-04-10,De Minaur A.,1956.4,Clay,1826.4
 2026-04-11,Alcaraz C.,2236.6,Clay,2177.3
+2026-04-11,Vacherot V.,1899.4,Clay,1672.1
 2026-04-11,Zverev A.,2020.6,Clay,1958.4
 2026-04-11,Sinner J.,2307.6,Clay,2057.3
 2026-04-12,Alcaraz C.,2228.8,Clay,2157.5
@@ -2340,14 +2321,13 @@ date,player,elo,surface,surface_elo
 2026-04-13,Cerundolo F.,1859.6,Clay,1846.3
 2026-04-13,Shelton B.,1915.7,Clay,1714.4
 2026-04-13,Jodar R.,1793.1,Clay,1760.4
-2026-04-13,Norrie C.,1799.5,Clay,1798.3
 2026-04-14,Cobolli F.,1764.7,Clay,1788.4
 2026-04-14,Fonseca J.,1858.5,Clay,1756.1
 2026-04-14,Bublik A.,1898.4,Clay,1791.6
 2026-04-14,Zverev A.,2022.3,Clay,1961.3
 2026-04-14,De Minaur A.,1958.2,Clay,1835.1
 2026-04-14,Fils A.,1960.5,Clay,1858.0
-2026-04-14,Machac T.,1868.9,Clay,1733.0
+2026-04-14,Khachanov K.,1787.5,Clay,1768.0
 2026-04-14,Musetti L.,1921.3,Clay,1948.0
 2026-04-14,Nakashima B.,1754.0,Clay,1597.3
 2026-04-14,Rublev A.,1825.0,Clay,1809.1
@@ -2358,7 +2338,6 @@ date,player,elo,surface,surface_elo
 2026-04-15,Shelton B.,1918.7,Clay,1735.5
 2026-04-15,Blockx A.,1572.7,Clay,1648.4
 2026-04-15,De Minaur A.,1943.6,Clay,1806.6
-2026-04-15,Norrie C.,1805.1,Clay,1804.1
 2026-04-15,Jodar R.,1811.6,Clay,1793.5
 2026-04-16,Zverev A.,2024.3,Clay,1964.1
 2026-04-16,Cerundolo F.,1866.8,Clay,1854.1
@@ -2373,9 +2352,7 @@ date,player,elo,surface,surface_elo
 2026-04-17,Cerundolo F.,1860.5,Clay,1844.4
 2026-04-17,Fils A.,1979.1,Clay,1892.1
 2026-04-17,Musetti L.,1918.0,Clay,1933.8
-2026-04-17,Machac T.,1852.9,Clay,1713.5
 2026-04-17,Rublev A.,1839.5,Clay,1826.0
-2026-04-17,Norrie C.,1796.2,Clay,1788.6
 2026-04-17,Jodar R.,1840.1,Clay,1833.0
 2026-04-18,Shelton B.,1935.7,Clay,1784.7
 2026-04-18,Zverev A.,2016.9,Clay,1955.8
@@ -2389,7 +2366,6 @@ date,player,elo,surface,surface_elo
 2026-04-19,Rublev A.,1840.0,Clay,1822.3
 2026-04-22,Tirante T.A.,1705.5,Clay,1681.7
 2026-04-22,Berrettini M.,1801.2,Clay,1849.4
-2026-04-22,Machac T.,1857.8,Clay,1729.5
 2026-04-22,Hurkacz H.,1847.5,Clay,1821.9
 2026-04-22,Jodar R.,1836.6,Clay,1825.8
 2026-04-23,Blockx A.,1610.8,Clay,1689.2
@@ -2402,8 +2378,7 @@ date,player,elo,surface,surface_elo
 2026-04-24,Fils A.,1999.0,Clay,1931.9
 2026-04-24,Hurkacz H.,1839.8,Clay,1810.1
 2026-04-24,Musetti L.,1926.3,Clay,1944.3
-2026-04-24,Norrie C.,1806.8,Clay,1801.1
-2026-04-24,Machac T.,1841.0,Clay,1709.0
+2026-04-24,Vacherot V.,1861.5,Clay,1628.8
 2026-04-24,Shelton B.,1923.0,Clay,1777.5
 2026-04-24,Rublev A.,1829.2,Clay,1804.2
 2026-04-24,Michelsen A.,1790.5,Clay,1493.9
@@ -2423,6 +2398,7 @@ date,player,elo,surface,surface_elo
 2026-04-25,Bublik A.,1886.4,Clay,1780.2
 2026-04-25,Cobolli F.,1810.2,Clay,1831.2
 2026-04-25,Tien L.,1831.9,Clay,1431.6
+2026-04-25,Khachanov K.,1791.7,Clay,1773.1
 2026-04-25,Zverev A.,2018.7,Clay,1961.0
 2026-04-26,Fonseca J.,1839.6,Clay,1730.6
 2026-04-26,Jodar R.,1898.4,Clay,1882.0
@@ -2430,7 +2406,6 @@ date,player,elo,surface,surface_elo
 2026-04-26,Lehecka J.,1904.7,Clay,1755.4
 2026-04-26,Musetti L.,1932.3,Clay,1949.2
 2026-04-26,Fils A.,2001.9,Clay,1937.0
-2026-04-26,Norrie C.,1814.1,Clay,1812.6
 2026-04-26,Tirante T.A.,1722.6,Clay,1700.8
 2026-04-26,Sinner J.,2315.6,Clay,2081.7
 2026-04-27,Zverev A.,2021.0,Clay,1963.0
@@ -2439,6 +2414,7 @@ date,player,elo,surface,surface_elo
 2026-04-27,Medvedev D.,1975.7,Clay,1844.6
 2026-04-27,Cerundolo F.,1874.5,Clay,1865.5
 2026-04-27,Cobolli F.,1818.2,Clay,1839.3
+2026-04-27,Khachanov K.,1786.1,Clay,1757.5
 2026-04-27,Mensik J.,1912.9,Clay,1766.0
 2026-04-27,Merida Aguilar D.,1686.5,Clay,1676.7
 2026-04-27,Tsitsipas S.,1825.9,Clay,1932.6
@@ -2454,7 +2430,6 @@ date,player,elo,surface,surface_elo
 2026-04-28,Musetti L.,1921.2,Clay,1926.5
 2026-04-28,Mensik J.,1902.2,Clay,1752.4
 2026-04-28,Zverev A.,2026.1,Clay,1968.5
-2026-04-28,Norrie C.,1813.2,Clay,1807.4
 2026-04-28,Sinner J.,2316.5,Clay,2087.3
 2026-04-28,Tsitsipas S.,1819.4,Clay,1920.1
 2026-04-28,Ruud C.,1906.1,Clay,1959.9
@@ -2476,7 +2451,6 @@ date,player,elo,surface,surface_elo
 2026-05-07,Berrettini M.,1787.6,Clay,1825.5
 2026-05-07,Tirante T.A.,1732.3,Clay,1712.6
 2026-05-07,Blockx A.,1779.9,Clay,1835.6
-2026-05-07,Machac T.,1854.4,Clay,1746.6
 2026-05-07,Tsitsipas S.,1811.7,Clay,1900.0
 2026-05-07,Merida Aguilar D.,1639.4,Clay,1625.9
 2026-05-07,Michelsen A.,1760.4,Clay,1466.9
@@ -2491,6 +2465,7 @@ date,player,elo,surface,surface_elo
 2026-05-08,Musetti L.,1924.8,Clay,1929.8
 2026-05-08,Djokovic N.,2152.1,Clay,2046.2
 2026-05-08,Ruud C.,1895.6,Clay,1945.5
+2026-05-08,Khachanov K.,1791.9,Clay,1765.6
 2026-05-08,Paul T.,1914.7,Clay,1855.8
 2026-05-09,Cobolli F.,1840.7,Clay,1852.6
 2026-05-09,Auger-Aliassime F.,1930.7,Clay,1699.0
@@ -2499,7 +2474,6 @@ date,player,elo,surface,surface_elo
 2026-05-09,Davidovich Fokina A.,1829.8,Clay,1744.0
 2026-05-09,Fonseca J.,1815.4,Clay,1701.6
 2026-05-09,Nakashima B.,1743.2,Clay,1598.9
-2026-05-09,Norrie C.,1802.1,Clay,1788.6
 2026-05-09,Tirante T.A.,1759.3,Clay,1743.5
 2026-05-09,Mensik J.,1878.7,Clay,1718.8
 2026-05-09,Rublev A.,1833.6,Clay,1810.8
@@ -2507,6 +2481,7 @@ date,player,elo,surface,surface_elo
 2026-05-10,Cerundolo F.,1857.4,Clay,1844.8
 2026-05-10,Musetti L.,1933.4,Clay,1941.7
 2026-05-10,Jodar R.,1929.8,Clay,1915.9
+2026-05-10,Khachanov K.,1799.0,Clay,1776.7
 2026-05-10,Lehecka J.,1901.9,Clay,1781.1
 2026-05-10,Ruud C.,1904.8,Clay,1952.1
 2026-05-10,Paul T.,1900.5,Clay,1835.2
@@ -2523,6 +2498,7 @@ date,player,elo,surface,surface_elo
 2026-05-11,Tirante T.A.,1786.2,Clay,1775.0
 2026-05-11,Cobolli F.,1824.3,Clay,1827.8
 2026-05-12,Zverev A.,2022.5,Clay,1969.9
+2026-05-12,Khachanov K.,1806.3,Clay,1789.3
 2026-05-12,Medvedev D.,1971.6,Clay,1850.5
 2026-05-12,Tirante T.A.,1774.9,Clay,1755.3
 2026-05-12,Musetti L.,1922.3,Clay,1927.2
@@ -2532,6 +2508,7 @@ date,player,elo,surface,surface_elo
 2026-05-12,Tien L.,1845.0,Clay,1533.2
 2026-05-12,Jodar R.,1950.0,Clay,1922.1
 2026-05-13,Jodar R.,1913.3,Clay,1886.5
+2026-05-13,Khachanov K.,1800.6,Clay,1781.9
 2026-05-13,Ruud C.,1920.3,Clay,1969.0
 2026-05-14,Medvedev D.,1974.1,Clay,1854.5
 2026-05-14,Rublev A.,1844.0,Clay,1823.8
@@ -2554,16 +2531,17 @@ date,player,elo,surface,surface_elo
 2026-05-19,Ruud C.,1928.4,Clay,1972.7
 2026-05-19,Auger-Aliassime F.,1934.9,Clay,1715.5
 2026-05-19,Cobolli F.,1804.7,Clay,1798.6
+2026-05-19,Khachanov K.,1803.2,Clay,1787.1
 2026-05-19,Shelton B.,1888.0,Clay,1723.8
 2026-05-20,Bublik A.,1883.0,Clay,1771.8
 2026-05-20,Michelsen A.,1781.3,Clay,1546.1
-2026-05-20,Norrie C.,1790.8,Clay,1772.3
 2026-05-20,Fritz T.,1921.0,Clay,1745.5
 2026-05-20,Ruud C.,1933.0,Clay,1974.2
 2026-05-20,Tien L.,1860.5,Clay,1589.5
 2026-05-20,Tsitsipas S.,1808.8,Clay,1880.0
 2026-05-20,De Minaur A.,1931.0,Clay,1804.0
 2026-05-20,Davidovich Fokina A.,1819.8,Clay,1728.2
+2026-05-20,Khachanov K.,1795.2,Clay,1764.7
 2026-05-20,Auger-Aliassime F.,1918.9,Clay,1687.3
 2026-05-20,Mensik J.,1863.7,Clay,1712.0
 2026-05-20,Paul T.,1910.0,Clay,1853.0
@@ -2582,11 +2560,11 @@ date,player,elo,surface,surface_elo
 2026-05-23,Tien L.,1901.9,Clay,1702.0
 2026-05-23,Paul T.,1910.3,Clay,1851.4
 2026-05-24,Fritz T.,1906.7,Clay,1717.3
-2026-05-24,Machac T.,1863.0,Clay,1757.1
 2026-05-24,Blockx A.,1808.3,Clay,1836.6
 2026-05-24,Djokovic N.,2152.7,Clay,2047.2
 2026-05-24,Mensik J.,1872.0,Clay,1731.4
 2026-05-24,Davidovich Fokina A.,1824.1,Clay,1738.8
+2026-05-24,Khachanov K.,1797.2,Clay,1768.1
 2026-05-24,Fonseca J.,1819.9,Clay,1712.5
 2026-05-24,Tirante T.A.,1771.7,Clay,1742.5
 2026-05-24,Zverev A.,2024.7,Clay,1971.9
@@ -2610,6 +2588,7 @@ date,player,elo,surface,surface_elo
 2026-05-26,Medvedev D.,1958.2,Clay,1818.9
 2026-05-26,Sinner J.,2329.8,Clay,2141.7
 2026-05-26,Tien L.,1908.4,Clay,1726.2
+2026-05-26,Vacherot V.,1866.4,Clay,1649.1
 2026-05-27,Michelsen A.,1788.8,Clay,1575.1
 2026-05-27,Djokovic N.,2153.0,Clay,2047.8
 2026-05-27,Jodar R.,1926.0,Clay,1894.0
@@ -2619,9 +2598,9 @@ date,player,elo,surface,surface_elo
 2026-05-27,Paul T.,1917.4,Clay,1858.7
 2026-05-27,Tirante T.A.,1795.9,Clay,1765.4
 2026-05-27,Davidovich Fokina A.,1812.5,Clay,1723.3
+2026-05-27,Khachanov K.,1800.6,Clay,1774.6
 2026-05-27,Rublev A.,1855.4,Clay,1842.7
 2026-05-27,Zverev A.,2028.8,Clay,1976.9
-2026-05-27,Machac T.,1855.0,Clay,1746.3
 2026-05-28,Berrettini M.,1805.8,Clay,1843.5
 2026-05-28,Auger-Aliassime F.,1924.8,Clay,1710.9
 2026-05-28,Shelton B.,1876.3,Clay,1707.3
@@ -2637,6 +2616,7 @@ date,player,elo,surface,surface_elo
 2026-05-29,Tirante T.A.,1771.1,Clay,1739.4
 2026-05-29,Fonseca J.,1865.3,Clay,1774.7
 2026-05-29,Djokovic N.,2143.1,Clay,2031.2
+2026-05-29,Khachanov K.,1789.0,Clay,1757.1
 2026-05-29,Mensik J.,1899.7,Clay,1791.5
 2026-05-29,De Minaur A.,1919.0,Clay,1794.9
 2026-05-29,Michelsen A.,1780.5,Clay,1568.2
@@ -2710,12 +2690,12 @@ date,player,elo,surface,surface_elo
 2026-06-16,Hurkacz H.,1823.1,Grass,1805.9
 2026-06-16,Rublev A.,1844.4,Grass,1709.5
 2026-06-16,Zverev A.,2048.2,Grass,1763.9
+2026-06-16,Khachanov K.,1776.6,Grass,1672.3
 2026-06-16,Cerundolo F.,1845.1,Grass,1510.5
 2026-06-16,De Minaur A.,1919.6,Grass,1792.8
 2026-06-16,Nakashima B.,1749.1,Grass,1654.0
 2026-06-16,Lehecka J.,1893.6,Grass,1756.8
 2026-06-16,Mensik J.,1892.5,Grass,1537.3
-2026-06-16,Norrie C.,1782.0,Grass,1668.9
 2026-06-16,Davidovich Fokina A.,1806.8,Grass,1608.5
 2026-06-17,Fritz T.,1915.6,Grass,1854.2
 2026-06-17,Shelton B.,1914.8,Grass,1752.6
@@ -2781,7 +2761,6 @@ date,player,elo,surface,surface_elo
 2026-06-29,Hurkacz H.,1821.8,Grass,1774.0
 2026-06-29,Tien L.,1886.2,Grass,1562.6
 2026-06-29,Djokovic N.,2143.9,Grass,2126.8
-2026-06-29,Norrie C.,1767.2,Grass,1639.5
 2026-06-30,Berrettini M.,1823.5,Grass,1858.8
 2026-06-30,Blockx A.,1797.8,Grass,1420.1
 2026-06-30,Zverev A.,2046.2,Grass,1771.8
@@ -2789,6 +2768,7 @@ date,player,elo,surface,surface_elo
 2026-06-30,De Minaur A.,1913.9,Grass,1780.1
 2026-06-30,Fils A.,2019.4,Grass,1607.1
 2026-06-30,Fritz T.,1931.0,Grass,1860.2
+2026-06-30,Khachanov K.,1780.0,Grass,1684.9
 2026-06-30,Bublik A.,1861.2,Grass,1775.0
 2026-06-30,Lehecka J.,1880.4,Grass,1721.4
 2026-06-30,Michelsen A.,1759.6,Grass,1594.5
@@ -2815,6 +2795,7 @@ date,player,elo,surface,surface_elo
 2026-07-02,Jodar R.,1947.9,Grass,1587.7
 2026-07-02,De Minaur A.,1917.2,Grass,1792.2
 2026-07-02,Cobolli F.,1854.9,Grass,1672.9
+2026-07-02,Khachanov K.,1787.0,Grass,1697.1
 2026-07-02,Fritz T.,1931.9,Grass,1865.2
 2026-07-02,Mensik J.,1880.9,Grass,1549.4
 2026-07-02,Dimitrov G.,1892.9,Grass,1753.6
@@ -2832,6 +2813,7 @@ date,player,elo,surface,surface_elo
 2026-07-03,Djokovic N.,2146.4,Grass,2129.4
 2026-07-03,Medvedev D.,1939.4,Grass,1770.9
 2026-07-04,Cobolli F.,1865.3,Grass,1702.9
+2026-07-04,Khachanov K.,1780.4,Grass,1675.7
 2026-07-04,Dimitrov G.,1898.9,Grass,1775.9
 2026-07-04,Berrettini M.,1830.2,Grass,1840.7
 2026-07-04,Fritz T.,1935.2,Grass,1872.2
@@ -2871,6 +2853,7 @@ date,player,elo,surface,surface_elo
 2026-07-15,Merida Aguilar D.,1679.7,Clay,1667.9
 2026-07-15,Davidovich Fokina A.,1853.2,Clay,1732.4
 2026-07-15,Dimitrov G.,1880.3,Clay,1745.5
+2026-07-15,Vacherot V.,1880.0,Clay,1685.1
 2026-07-16,Merida Aguilar D.,1714.0,Clay,1702.2
 2026-07-16,Davidovich Fokina A.,1840.3,Clay,1718.6
 2026-07-16,Tirante T.A.,1773.5,Clay,1768.4
@@ -2882,6 +2865,7 @@ date,player,elo,surface,surface_elo
 2026-07-17,Bublik A.,1851.1,Clay,1718.6
 2026-07-17,Ruud C.,1907.5,Clay,1942.0
 2026-07-17,Tsitsipas S.,1809.9,Clay,1881.0
+2026-07-17,Vacherot V.,1852.0,Clay,1650.6
 2026-07-18,Merida Aguilar D.,1761.4,Clay,1757.2
 2026-07-18,Rublev A.,1846.1,Clay,1857.2
 2026-07-18,Tsitsipas S.,1815.6,Clay,1886.0
@@ -2890,6 +2874,7 @@ date,player,elo,surface,surface_elo
 2026-07-21,Merida Aguilar D.,1712.4,Clay,1702.7
 2026-07-22,Blockx A.,1773.1,Clay,1796.7
 2026-07-22,Bublik A.,1854.8,Clay,1729.9
+2026-07-22,Vacherot V.,1820.7,Clay,1622.7
 2026-07-23,Rublev A.,1854.6,Clay,1874.1
 2026-07-23,Bublik A.,1861.9,Clay,1749.4
 2026-07-24,Blockx A.,1793.2,Clay,1817.6
@@ -2909,7 +2894,6 @@ date,player,elo,surface,surface_elo
 2026-07-28,Shelton B.,1889.3,Hard,1895.9
 2026-07-28,Mensik J.,1882.8,Hard,1892.7
 2026-07-28,Tien L.,1838.3,Hard,1823.2
-2026-07-28,Norrie C.,1771.4,Hard,1740.1
 2026-07-29,De Minaur A.,1917.1,Hard,1913.5
 2026-07-29,Tsitsipas S.,1817.7,Hard,1761.7
 2026-07-29,Fritz T.,1944.9,Hard,1885.9
@@ -2921,7 +2905,7 @@ date,player,elo,surface,surface_elo
 2026-07-30,Mensik J.,1863.7,Hard,1867.5
 2026-07-30,Nakashima B.,1785.9,Hard,1745.7
 2026-07-30,Shelton B.,1898.5,Hard,1906.6
-2026-07-30,Norrie C.,1776.0,Hard,1745.4
+2026-07-30,Khachanov K.,1769.0,Hard,1735.7
 2026-07-30,Lehecka J.,1868.8,Hard,1824.5
 2026-07-31,De Minaur A.,1907.5,Hard,1901.4
 2026-07-31,Nakashima B.,1800.6,Hard,1764.0
@@ -2930,11 +2914,9 @@ date,player,elo,surface,surface_elo
 2026-07-31,Musetti L.,1915.6,Hard,1821.8
 2026-07-31,Jodar R.,1972.0,Hard,1741.8
 2026-07-31,Cerundolo F.,1842.7,Hard,1778.8
-2026-07-31,Norrie C.,1781.7,Hard,1753.6
 2026-08-01,Shelton B.,1881.6,Hard,1885.8
 2026-08-01,Nakashima B.,1794.2,Hard,1755.9
 2026-08-01,Fritz T.,1954.2,Hard,1899.0
-2026-08-01,Norrie C.,1771.8,Hard,1743.6
 2026-08-02,Jodar R.,1981.3,Hard,1771.6
 2026-08-03,Berrettini M.,1817.1,Hard,1747.3
 2026-08-03,Jodar R.,1957.8,Hard,1752.0
@@ -2945,11 +2927,9 @@ date,player,elo,surface,surface_elo
 2026-08-04,Merida Aguilar D.,1720.5,Hard,1513.1
 2026-08-04,Michelsen A.,1780.2,Hard,1791.0
 2026-08-04,Tirante T.A.,1780.4,Hard,1594.5
-2026-08-04,Norrie C.,1777.9,Hard,1748.3
 2026-08-04,Nakashima B.,1801.9,Hard,1762.8
 2026-08-04,Lehecka J.,1874.5,Hard,1829.7
 2026-08-04,Rublev A.,1831.9,Hard,1773.6
-2026-08-05,Norrie C.,1785.8,Hard,1751.4
 2026-08-05,Ruud C.,1911.6,Hard,1793.7
 2026-08-05,De Minaur A.,1910.0,Hard,1903.7
 2026-08-05,Fils A.,1985.4,Hard,1868.5
@@ -2960,6 +2940,7 @@ date,player,elo,surface,surface_elo
 2026-08-05,Cobolli F.,1825.1,Hard,1683.8
 2026-08-05,Hurkacz H.,1850.4,Hard,1771.5
 2026-08-05,Jodar R.,1965.0,Hard,1776.8
+2026-08-05,Khachanov K.,1759.5,Hard,1725.2
 2026-08-05,Musetti L.,1917.1,Hard,1824.6
 2026-08-05,Mensik J.,1869.0,Hard,1871.8
 2026-08-05,Merida Aguilar D.,1756.2,Hard,1590.8
@@ -2967,6 +2948,7 @@ date,player,elo,surface,surface_elo
 2026-08-05,Cerundolo F.,1830.1,Hard,1763.6
 2026-08-05,Shelton B.,1888.1,Hard,1893.0
 2026-08-05,Tiafoe F.,1855.6,Hard,1794.6
+2026-08-05,Vacherot V.,1794.5,Hard,1746.0
 2026-08-05,Zverev A.,2044.8,Hard,1973.0
 2026-08-06,Medvedev D.,1926.9,Hard,1951.8
 2026-08-06,Paul T.,1901.1,Hard,1834.9
@@ -2974,7 +2956,6 @@ date,player,elo,surface,surface_elo
 2026-08-06,Blockx A.,1766.6,Hard,1400.2
 2026-08-06,Lehecka J.,1883.3,Hard,1832.0
 2026-08-06,De Minaur A.,1898.4,Hard,1889.6
-2026-08-06,Norrie C.,1797.8,Hard,1766.7
 2026-08-06,Fils A.,1991.1,Hard,1872.6
 2026-08-07,Shelton B.,1895.0,Hard,1899.5
 2026-08-07,Nakashima B.,1810.2,Hard,1771.8
@@ -2993,7 +2974,6 @@ date,player,elo,surface,surface_elo
 2026-08-09,Jodar R.,1998.8,Hard,1840.1
 2026-08-09,Lehecka J.,1874.9,Hard,1817.2
 2026-08-09,Merida Aguilar D.,1810.8,Hard,1713.7
-2026-08-09,Norrie C.,1793.4,Hard,1759.1
 2026-08-09,Fils A.,1997.6,Hard,1884.2
 2026-08-09,Shelton B.,1905.8,Hard,1911.2
 2026-08-09,Fonseca J.,1858.2,Hard,1831.9
@@ -3012,17 +2992,16 @@ date,player,elo,surface,surface_elo
 2026-08-13,Tien L.,1881.7,Hard,1864.0
 2026-08-13,Shelton B.,1927.4,Hard,1935.8
 2026-08-13,Draper J.,1934.2,Hard,1925.6
-2026-08-13,Norrie C.,1801.4,Hard,1763.5
 2026-08-13,Tirante T.A.,1812.7,Hard,1677.2
 2026-08-14,Shelton B.,1936.2,Hard,1944.4
 2026-08-14,Nakashima B.,1837.3,Hard,1796.2
-2026-08-14,Machac T.,1835.0,Hard,1832.7
 2026-08-14,Merida Aguilar D.,1814.9,Hard,1734.6
 2026-08-14,Dimitrov G.,1869.7,Hard,1863.6
 2026-08-14,Berrettini M.,1823.9,Hard,1756.5
 2026-08-14,Hurkacz H.,1839.9,Hard,1761.5
 2026-08-14,Michelsen A.,1789.2,Hard,1788.3
 2026-08-14,Tsitsipas S.,1815.7,Hard,1761.2
+2026-08-15,Khachanov K.,1746.9,Hard,1710.8
 2026-08-15,Mensik J.,1879.2,Hard,1881.3
 2026-08-15,Cobolli F.,1832.3,Hard,1698.9
 2026-08-15,De Minaur A.,1903.7,Hard,1893.1
@@ -3033,6 +3012,7 @@ date,player,elo,surface,surface_elo
 2026-08-15,Hurkacz H.,1831.8,Hard,1752.3
 2026-08-15,Tirante T.A.,1846.9,Hard,1733.9
 2026-08-15,Djokovic N.,2136.6,Hard,2143.9
+2026-08-15,Vacherot V.,1761.5,Hard,1706.8
 2026-08-16,Musetti L.,1912.9,Hard,1815.7
 2026-08-16,Auger-Aliassime F.,1935.1,Hard,1934.7
 2026-08-16,Tsitsipas S.,1810.1,Hard,1755.8
@@ -3043,7 +3023,6 @@ date,player,elo,surface,surface_elo
 2026-08-16,Fritz T.,1955.5,Hard,1895.7
 2026-08-16,Michelsen A.,1781.8,Hard,1777.3
 2026-08-16,Nakashima B.,1841.1,Hard,1801.3
-2026-08-16,Norrie C.,1797.8,Hard,1758.5
 2026-08-16,Zverev A.,2047.6,Hard,1977.1
 2026-08-16,Jodar R.,1996.7,Hard,1860.7
 2026-08-16,Tien L.,1890.2,Hard,1871.5
@@ -3099,17 +3078,15 @@ date,player,elo,surface,surface_elo
 2026-08-23,Tiafoe F.,1892.2,Hard,1839.6
 2026-08-24,Tsitsipas S.,1815.9,Hard,1763.7
 2026-08-25,Medvedev D.,1905.2,Hard,1924.1
-2026-08-25,Machac T.,1809.8,Hard,1803.5
 2026-08-26,Tsitsipas S.,1803.2,Hard,1749.2
 2026-08-30,Lehecka J.,1883.1,Hard,1825.8
 2026-08-30,Medvedev D.,1907.0,Hard,1925.5
-2026-08-30,Machac T.,1786.4,Hard,1775.7
 2026-08-30,Merida Aguilar D.,1835.6,Hard,1769.3
-2026-08-30,Norrie C.,1785.3,Hard,1740.6
 2026-08-30,Paul T.,1907.3,Hard,1843.4
 2026-08-31,Nakashima B.,1872.7,Hard,1836.7
 2026-08-31,Blockx A.,1775.4,Hard,1469.8
 2026-08-31,Tien L.,1884.9,Hard,1861.7
+2026-08-31,Khachanov K.,1752.7,Hard,1714.0
 2026-08-31,Michelsen A.,1785.0,Hard,1782.1
 2026-08-31,Hurkacz H.,1836.0,Hard,1756.0
 2026-08-31,Djokovic N.,2126.2,Hard,2130.4
@@ -3117,6 +3094,7 @@ date,player,elo,surface,surface_elo
 2026-08-31,Tirante T.A.,1834.5,Hard,1738.3
 2026-08-31,Tsitsipas S.,1816.0,Hard,1763.9
 2026-08-31,Fils A.,2013.4,Hard,1914.2
+2026-08-31,Vacherot V.,1773.9,Hard,1723.6
 2026-08-31,Rublev A.,1831.2,Hard,1773.2
 2026-08-31,Berrettini M.,1821.0,Hard,1757.5
 2026-08-31,Bublik A.,1858.2,Hard,1792.7
@@ -3145,6 +3123,7 @@ date,player,elo,surface,surface_elo
 2026-09-03,Fritz T.,1956.1,Hard,1897.4
 2026-09-03,Blockx A.,1787.5,Hard,1505.7
 2026-09-03,Alcaraz C.,2231.1,Hard,2130.7
+2026-09-03,Khachanov K.,1764.6,Hard,1729.0
 2026-09-03,Auger-Aliassime F.,1919.0,Hard,1912.0
 2026-09-03,Bublik A.,1862.7,Hard,1799.7
 2026-09-03,Mensik J.,1879.5,Hard,1874.5
@@ -3153,6 +3132,7 @@ date,player,elo,surface,surface_elo
 2026-09-03,Tiafoe F.,1896.4,Hard,1845.2
 2026-09-03,Cobolli F.,1876.5,Hard,1759.1
 2026-09-03,Cerundolo F.,1830.4,Hard,1759.4
+2026-09-03,Vacherot V.,1792.4,Hard,1743.6
 2026-09-03,De Minaur A.,1892.2,Hard,1873.0
 2026-09-04,Zverev A.,2043.4,Hard,1973.1
 2026-09-04,Tien L.,1895.8,Hard,1876.4
@@ -3168,8 +3148,10 @@ date,player,elo,surface,surface_elo
 2026-09-05,Fritz T.,1945.2,Hard,1884.5
 2026-09-05,Cobolli F.,1860.7,Hard,1732.0
 2026-09-05,Blockx A.,1815.8,Hard,1555.6
+2026-09-05,Khachanov K.,1773.2,Hard,1738.6
 2026-09-05,Shelton B.,1937.7,Hard,1943.0
 2026-09-05,Tiafoe F.,1902.4,Hard,1852.4
+2026-09-05,Vacherot V.,1777.8,Hard,1726.3
 2026-09-06,Zverev A.,2045.7,Hard,1976.7
 2026-09-06,Tien L.,1910.5,Hard,1893.9
 2026-09-06,Mensik J.,1866.0,Hard,1857.9
@@ -3180,6 +3162,7 @@ date,player,elo,surface,surface_elo
 2026-09-06,Medvedev D.,1905.0,Hard,1920.4
 2026-09-07,Blockx A.,1840.1,Hard,1603.0
 2026-09-07,Cerundolo F.,1833.2,Hard,1756.5
+2026-09-07,Khachanov K.,1784.3,Hard,1752.2
 2026-09-07,Tien L.,1889.4,Hard,1869.0
 2026-09-07,Tsitsipas S.,1824.5,Hard,1776.2
 2026-09-07,Shelton B.,1945.6,Hard,1950.5
@@ -3189,6 +3172,7 @@ date,player,elo,surface,surface_elo
 2026-09-09,Alcaraz C.,2218.5,Hard,2118.8
 2026-09-09,Shelton B.,1964.6,Hard,1970.2
 2026-09-10,Zverev A.,2050.8,Hard,1983.0
+2026-09-11,Khachanov K.,1781.5,Hard,1748.2
 2026-09-11,Zverev A.,2053.3,Hard,1986.7
 2026-09-12,Shelton B.,1974.4,Hard,1979.8
 2026-09-12,Tiafoe F.,1910.3,Hard,1866.2
@@ -3198,6 +3182,7 @@ date,player,elo,surface,surface_elo
 2026-09-25,Rublev A.,1828.2,Hard,1770.5
 2026-09-26,Davidovich Fokina A.,1846.5,Hard,1785.7
 2026-09-26,Hurkacz H.,1837.8,Hard,1762.7
+2026-09-26,Vacherot V.,1750.5,Hard,1696.5
 2026-09-26,Medvedev D.,1906.7,Hard,1922.1
 2026-09-27,Hurkacz H.,1843.1,Hard,1770.5
 2026-09-27,Davidovich Fokina A.,1851.3,Hard,1793.0
@@ -3211,26 +3196,68 @@ date,player,elo,surface,surface_elo
 2026-09-29,Hurkacz H.,1841.3,Hard,1772.0
 2026-09-29,Rublev A.,1828.5,Hard,1773.7
 2026-09-29,Medvedev D.,1919.5,Hard,1933.9
-2026-10-03,Medvedev D.,1923.2,Hard,1936.0
-2026-10-03,Zverev A.,2060.2,Hard,1997.1
-2026-10-03,Cerundolo F.,1844.8,Hard,1776.2
-2026-10-03,Mensik J.,1850.6,Hard,1836.6
-2026-10-03,Lehecka J.,1881.7,Hard,1827.3
-2026-10-04,Hurkacz H.,1849.1,Hard,1782.3
-2026-10-04,De Minaur A.,1899.2,Hard,1880.2
-2026-10-04,Rublev A.,1822.1,Hard,1767.1
-2026-10-04,Medvedev D.,1929.2,Hard,1941.0
-2026-10-04,Cerundolo F.,1836.5,Hard,1767.5
-2026-10-04,Zverev A.,2054.4,Hard,1991.5
-2026-10-04,Djokovic N.,2130.8,Hard,2134.8
-2026-10-04,Alcaraz C.,2219.8,Hard,2122.0
-2026-10-04,Fils A.,1992.1,Hard,1889.5
-2026-10-04,Lehecka J.,1885.1,Hard,1831.6
-2026-10-05,De Minaur A.,1906.6,Hard,1887.4
-2026-10-05,Hurkacz H.,1841.1,Hard,1774.3
-2026-10-05,Alcaraz C.,2220.9,Hard,2124.4
-2026-10-05,Lehecka J.,1893.4,Hard,1841.4
-2026-10-06,Djokovic N.,2133.3,Hard,2137.5
-2026-10-06,De Minaur A.,1902.9,Hard,1883.6
-2026-10-06,Alcaraz C.,2223.5,Hard,2128.3
-2026-10-06,Lehecka J.,1890.3,Hard,1837.0
+2026-09-30,Djokovic N.,2127.6,Hard,2131.6
+2026-09-30,Khachanov K.,1792.5,Hard,1762.0
+2026-09-30,Auger-Aliassime F.,1907.0,Hard,1897.1
+2026-09-30,Tirante T.A.,1809.5,Hard,1699.4
+2026-09-30,Fils A.,2016.4,Hard,1917.1
+2026-09-30,Paul T.,1904.4,Hard,1837.4
+2026-09-30,Vacherot V.,1775.9,Hard,1713.9
+2026-09-30,Blockx A.,1812.3,Hard,1581.2
+2026-10-01,Cobolli F.,1842.4,Hard,1712.3
+2026-10-01,Mensik J.,1879.6,Hard,1871.3
+2026-10-01,Bublik A.,1845.6,Hard,1780.6
+2026-10-01,De Minaur A.,1897.6,Hard,1875.9
+2026-10-01,Zverev A.,2061.3,Hard,1998.7
+2026-10-01,Rublev A.,1833.7,Hard,1781.9
+2026-10-01,Tien L.,1872.0,Hard,1846.9
+2026-10-01,Hurkacz H.,1852.0,Hard,1786.1
+2026-10-01,Cerundolo F.,1841.5,Hard,1771.3
+2026-10-01,Alcaraz C.,2220.2,Hard,2122.4
+2026-10-01,Michelsen A.,1813.9,Hard,1806.9
+2026-10-01,Lehecka J.,1880.1,Hard,1823.7
+2026-10-01,Berrettini M.,1820.7,Hard,1753.1
+2026-10-01,Davidovich Fokina A.,1854.0,Hard,1795.7
+2026-10-01,Jodar R.,1902.4,Hard,1753.6
+2026-10-01,Fritz T.,1932.7,Hard,1871.2
+2026-10-01,Nakashima B.,1846.7,Hard,1808.6
+2026-10-01,Rune H.,1892.5,Hard,1854.6
+2026-10-01,Ruud C.,1890.2,Hard,1765.8
+2026-10-01,Tiafoe F.,1916.8,Hard,1874.0
+2026-10-01,Nishikori K.,1821.4,Hard,1784.3
+2026-10-01,Tsitsipas S.,1829.8,Hard,1782.6
+2026-10-02,Medvedev D.,1922.9,Hard,1937.3
+2026-10-02,Djokovic N.,2128.2,Hard,2132.3
+2026-10-02,Hurkacz H.,1859.1,Hard,1796.4
+2026-10-02,Khachanov K.,1799.8,Hard,1768.6
+2026-10-02,Tiafoe F.,1910.7,Hard,1865.3
+2026-10-02,Fils A.,2025.7,Hard,1930.9
+2026-10-02,Tsitsipas S.,1820.5,Hard,1770.8
+2026-10-02,Vacherot V.,1799.2,Hard,1741.8
+2026-10-03,De Minaur A.,1902.5,Hard,1879.6
+2026-10-03,Mensik J.,1864.0,Hard,1850.2
+2026-10-03,Cerundolo F.,1853.2,Hard,1790.9
+2026-10-03,Rublev A.,1838.8,Hard,1788.6
+2026-10-03,Medvedev D.,1926.8,Hard,1939.5
+2026-10-03,Zverev A.,2062.7,Hard,2000.6
+2026-10-03,Alcaraz C.,2221.0,Hard,2123.4
+2026-10-03,Lehecka J.,1888.9,Hard,1835.8
+2026-10-03,Berrettini M.,1805.6,Hard,1734.5
+2026-10-04,Hurkacz H.,1866.9,Hard,1806.6
+2026-10-04,Khachanov K.,1793.1,Hard,1759.8
+2026-10-04,Medvedev D.,1932.9,Hard,1944.7
+2026-10-04,Cerundolo F.,1844.8,Hard,1781.8
+2026-10-04,Rublev A.,1832.4,Hard,1781.8
+2026-10-04,De Minaur A.,1909.5,Hard,1886.9
+2026-10-04,Zverev A.,2056.9,Hard,1994.9
+2026-10-04,Djokovic N.,2132.9,Hard,2136.7
+2026-10-04,Fils A.,2005.4,Hard,1907.4
+2026-10-04,Vacherot V.,1830.6,Hard,1776.3
+2026-10-04,Lehecka J.,1893.8,Hard,1842.6
+2026-10-05,Lehecka J.,1903.2,Hard,1853.6
+2026-10-05,Vacherot V.,1814.3,Hard,1757.8
+2026-10-05,Alcaraz C.,2222.3,Hard,2126.3
+2026-10-06,Lehecka J.,1900.1,Hard,1848.9
+2026-10-06,Alcaraz C.,2224.9,Hard,2130.4
+2026-10-07,Berrettini M.,1810.0,Hard,1741.7
+2026-10-07,Rune H.,1875.6,Hard,1832.2
