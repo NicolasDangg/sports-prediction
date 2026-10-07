@@ -160,7 +160,7 @@ STRATEGIES = {
 | Thing | Where |
 |---|---|
 | Routine | claude.ai/code/routines/trig_01J7sKStghiTiFzGNCzMXmuX (Sonnet 5.5, no connectors, pushes `state/` to main) |
-| Snapshot routine | Runs `uv run python snapshots.py` at 06:00 and 12:00 UTC and pushes `state/odds_snapshots.csv`. 1 credit per ATP tournament with a match in the next 8h; never spends the credits reserved for the rest of the month's daily runs (12/day) |
+| Snapshot routine | claude.ai/code/routines/trig_01BdgHUsso3mociBChjxYimR: runs `uv run python snapshots.py` at 06:00 and 12:00 UTC (13:00, 19:00 Saigon) and pushes `state/odds_snapshots.csv`. 1 credit per ATP tournament with a match in the next 8h; never spends the credits reserved for the rest of the month's daily runs (12/day) |
 | Cloud secrets | `ODDS_API_KEY`, `KAGGLE_API_TOKEN`, `OPENROUTER_API_KEY` in the Default environment |
 | Local run | `uv run --env-file .env python daily.py` (writes real state; don't run it when the routine is about to) |
 | Smoke test | `uv run python -W ignore tests/smoke_daily.py`: run after any change to `daily.py`, `names.py`, `records.py`, `accounts.py`, `wallet.py`, `news.py`, `snapshots.py`, `strategies.py` |
