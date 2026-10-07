@@ -1,0 +1,209 @@
+{
+  "variants_tried": 16,
+  "grid": [
+    {
+      "max_depth": 2,
+      "learning_rate": 0.03,
+      "min_child_weight": 50,
+      "trees": 714,
+      "tune_log_loss": 0.6209401488304138
+    },
+    {
+      "max_depth": 2,
+      "learning_rate": 0.03,
+      "min_child_weight": 200,
+      "trees": 152,
+      "tune_log_loss": 0.6224639415740967
+    },
+    {
+      "max_depth": 2,
+      "learning_rate": 0.1,
+      "min_child_weight": 50,
+      "trees": 261,
+      "tune_log_loss": 0.621456503868103
+    },
+    {
+      "max_depth": 2,
+      "learning_rate": 0.1,
+      "min_child_weight": 200,
+      "trees": 301,
+      "tune_log_loss": 0.6212427020072937
+    },
+    {
+      "max_depth": 3,
+      "learning_rate": 0.03,
+      "min_child_weight": 50,
+      "trees": 104,
+      "tune_log_loss": 0.6212023496627808
+    },
+    {
+      "max_depth": 3,
+      "learning_rate": 0.03,
+      "min_child_weight": 200,
+      "trees": 102,
+      "tune_log_loss": 0.6217231750488281
+    },
+    {
+      "max_depth": 3,
+      "learning_rate": 0.1,
+      "min_child_weight": 50,
+      "trees": 127,
+      "tune_log_loss": 0.6209903955459595
+    },
+    {
+      "max_depth": 3,
+      "learning_rate": 0.1,
+      "min_child_weight": 200,
+      "trees": 220,
+      "tune_log_loss": 0.6209362149238586
+    },
+    {
+      "max_depth": 4,
+      "learning_rate": 0.03,
+      "min_child_weight": 50,
+      "trees": 94,
+      "tune_log_loss": 0.6203223466873169
+    },
+    {
+      "max_depth": 4,
+      "learning_rate": 0.03,
+      "min_child_weight": 200,
+      "trees": 90,
+      "tune_log_loss": 0.6210298538208008
+    },
+    {
+      "max_depth": 4,
+      "learning_rate": 0.1,
+      "min_child_weight": 50,
+      "trees": 22,
+      "tune_log_loss": 0.6202526688575745
+    },
+    {
+      "max_depth": 4,
+      "learning_rate": 0.1,
+      "min_child_weight": 200,
+      "trees": 126,
+      "tune_log_loss": 0.6212664842605591
+    },
+    {
+      "max_depth": 6,
+      "learning_rate": 0.03,
+      "min_child_weight": 50,
+      "trees": 74,
+      "tune_log_loss": 0.6194977164268494
+    },
+    {
+      "max_depth": 6,
+      "learning_rate": 0.03,
+      "min_child_weight": 200,
+      "trees": 88,
+      "tune_log_loss": 0.6207996010780334
+    },
+    {
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "min_child_weight": 50,
+      "trees": 21,
+      "tune_log_loss": 0.6195863485336304
+    },
+    {
+      "max_depth": 6,
+      "learning_rate": 0.1,
+      "min_child_weight": 200,
+      "trees": 22,
+      "tune_log_loss": 0.6213782429695129
+    }
+  ],
+  "chosen": {
+    "max_depth": 6,
+    "learning_rate": 0.03,
+    "min_child_weight": 50,
+    "trees": 74
+  },
+  "calibration_slopes": [
+    0.8088879439299149,
+    1.124006291249615
+  ],
+  "validation": {
+    "raw Elo (elo_v0)": {
+      "log_loss": 0.6231861790939032,
+      "log_loss_with_odds": 0.623878844336685,
+      "accuracy": 0.6393654904499838,
+      "gap_bo3": 5.326463253314772,
+      "gap_bo5": -0.7279110539555878
+    },
+    "calibrated Elo": {
+      "log_loss": 0.6185231493957093,
+      "log_loss_with_odds": 0.6192054452467013,
+      "accuracy": 0.6393654904499838,
+      "gap_bo3": 2.626007051105672,
+      "gap_bo5": 1.0164691808971171
+    },
+    "XGBoost": {
+      "log_loss": 0.6146007776260376,
+      "log_loss_with_odds": 0.6152257323265076,
+      "accuracy": 0.6458400776950469,
+      "gap_bo3": 1.131502473823276,
+      "gap_bo5": -2.235595957107994
+    },
+    "bookmaker": {
+      "log_loss": 0.5841421120750298,
+      "log_loss_with_odds": 0.5841421120750298,
+      "accuracy": 0.6831522620398898,
+      "gap_bo3": 0.020610392001263467,
+      "gap_bo5": -1.9209103996684074
+    }
+  },
+  "improvement_vs_calibrated": 0.003922365200666683,
+  "ci": [
+    0.0010992882835322239,
+    0.006784872996517739
+  ],
+  "by_year": {
+    "2020": 0.0048997770293598905,
+    "2021": 0.006332877436774201,
+    "2022": 0.001174528520017724
+  },
+  "wallets": {
+    "raw Elo (elo_v0)": {
+      "bets": 3847,
+      "win_rate": 0.38549519105796726,
+      "roi": -0.0799858892191703,
+      "final_bankroll": 0.09,
+      "max_drawdown": 0.999917231485143
+    },
+    "calibrated Elo": {
+      "bets": 3921,
+      "win_rate": 0.35807192042846214,
+      "roi": -0.08094993259300248,
+      "final_bankroll": 0.1,
+      "max_drawdown": 0.9999155112834681
+    },
+    "XGBoost": {
+      "bets": 4069,
+      "win_rate": 0.32022609977881544,
+      "roi": -0.1131218820810318,
+      "final_bankroll": 0.09000000357627869,
+      "max_drawdown": 0.9999118447303772
+    }
+  },
+  "importance": {
+    "elo_diff": 0.2789,
+    "surface_elo_diff": 0.0967,
+    "rank_ratio": 0.0629,
+    "points_ratio": 0.0292,
+    "form10_diff": 0.012,
+    "experience_diff": 0.0133,
+    "rust_diff": 0.0213,
+    "best_of_5": 0.0183,
+    "surface_clay": 0.0123,
+    "surface_grass": 0.0132,
+    "elo_logit": 0.4417
+  },
+  "rules": {
+    "ci": true,
+    "years": true,
+    "roi": 0.0
+  },
+  "passed": 0.0
+}

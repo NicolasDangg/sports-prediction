@@ -39,6 +39,7 @@ The LLM agent only orchestrates; all maths is in Python, so every number is repr
 | `accounts.py` | Wallet money: opening balances, deposits, refills (`list` / `deposit` / `refill`) |
 | `ratings_history.py` | Elo after every match + recent form → `state/*_elo_history.csv`, `*_form.csv`, `*_matches.csv` (per-match ratings before/after + model probabilities), `name_map.csv` (bookmaker → history names). Feeds the dashboard Ratings page and the per-team/player pages `/ratings/epl/<slug>`, `/ratings/atp/<slug>` |
 | `strategies.py` | Pure probability rules shared by experiments and `daily.py` (e.g. `format_calibrated`, E004) |
+| `experiments/e004_format_calibration.py`, `e005_xgboost.py` | Per-format calibration (E004) and XGBoost (E005) experiments. XGBoost is in the optional `experiments` dependency group: `uv run --group experiments ...` (macOS: `brew install libomp` once) |
 | `experiments/e003_decision_tree.py` | Decision tree exploration (see experiments/LOG.md E003) → `results/e003_decision_tree.json` |
 | `fpl.py` | Daily squads, player stats (goals, assists, xG, xA, xGI, minutes, FPL points/price/ownership/expected points), injuries + news, next fixtures with difficulty (Fantasy Premier League API), and head coaches (Wikidata) → `state/fpl_players.csv`, `fpl_fixtures.csv`, `coaches.csv`. Failures keep yesterday's files and never stop the betting run. Shown in the Squad section of each team page |
 | `tests/smoke_daily.py` | End-to-end test of the daily job against a fake API on a temp copy (no credits, real state untouched) |
@@ -131,6 +132,7 @@ STRATEGIES = {
 | ATP (2023 to Sep 2026, 9,844 matches) | 0.6931 | 0.6298 | **0.5888** | −28% ROI, went bust |
 
 - Blending Elo into the market probabilities made log loss *worse* at every weight. Everything Elo knows is already in the odds.
+- ATP probability quality on 2020–22 (E005): raw Elo 0.6232 → calibrated per format 0.6185 → XGBoost on pre-match features 0.6146, bookmaker 0.5841. Better probabilities did **not** improve the wallet (XGBoost ROI −11.3% vs −8.0%): without new information, our disagreements with the market are mostly our errors.
 - v0's claimed edges are concentrated on underdogs, which shows overconfidence rather than real value.
 - **So the edge has to come from information the market doesn't have yet, or from timing**, not from a better-tuned Elo.
 

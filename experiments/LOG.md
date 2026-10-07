@@ -6,9 +6,30 @@ If the counter climbs fast, results on the test years stop being trustworthy (se
 
 **Test-set looks used: 4** (2 experiments + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
 **Live strategies:** `elo_v0` (control, since 2026-10-06)
-**Next up:** E005, gradient boosting (XGBoost) on pre-match ATP features incl. serve/return stats; then recency-weighted calibration (E004 follow-up)
+**Next up:** E006, XGBoost + Sackmann serve/return stats (new information); recency-weighted calibration (E004 follow-up)
 
 ---
+
+## E005 · 2026-10-07 · XGBoost on pre-match ATP features · FAILED pre-registered rule 3 (wallet), not shipped
+- **Report:** owner request (Green Code "I Trained AI to Predict Sports (again)": XGBoost vs IBM at Wimbledon 2025; their final 66.3% vs IBM 63.8% vs bookmakers 72% accuracy).
+- **Script:** `experiments/e005_xgboost.py` → `results/e005_xgboost.json`. Run with `uv run --group experiments ...` (xgboost lives in an optional dependency group so the morning routine never installs it).
+- **Hypothesis:** gradient-boosted trees on E003's pre-match features (plus Elo log-odds and format) give better probabilities than Elo calibrated per format.
+- **Protocol:** fit 2010–2017, hyperparameters chosen on 2018–2019 (**16 variants**: depth {2,3,4,6} × learning rate {0.03, 0.1} × min child weight {50, 200}, early stopping), refit 2010–2019, scored 2020–2022 once. Rows mirrored; predictions averaged over both player orders. Chosen: depth 6, lr 0.03, min child 50, 74 trees.
+- **Pass rules (pre-registered):** (1) 95% tournament-bootstrap CI of improvement vs calibrated Elo excludes 0; (2) better in ≥ 2 of 3 years; (3) wallet ROI not worse than `elo_v0`.
+- **Validation 2020–2022 (6,178 matches):**
+
+  | | Log loss | Accuracy | Gap Bo3 | Gap Bo5 | Wallet (live rules, $1,000) |
+  |---|---:|---:|---:|---:|---|
+  | Raw Elo (`elo_v0`) | 0.6232 | 63.9% | +5.3 | −0.7 | 3,847 bets, ROI −8.0%, bust |
+  | Calibrated Elo (E004 rule) | 0.6185 | 63.9% | +2.6 | +1.0 | 3,921 bets, ROI −8.1%, bust |
+  | **XGBoost** | **0.6146** | **64.6%** | +1.1 | −2.2 | 4,069 bets, ROI **−11.3%**, bust |
+  | Bookmaker | 0.5841 | 68.3% | 0.0 | −1.9 | |
+
+  Improvement vs calibrated Elo +0.0039/match, 95% CI [+0.0011, +0.0068] ✅ · 3/3 years (2020 +0.0049, 2021 +0.0063, 2022 +0.0012) ✅ · ROI −11.3% vs −8.0% ❌.
+- **Feature importance (gain):** Elo log-odds 44%, Elo gap 28%, surface Elo 10%, ranking 6%, points 3%, rust 2%, format 2%, rest ≈ 1% each. Same picture as E003: Elo carries almost everything.
+- **Why better probabilities still lose money:** the model is still ~0.03 log loss behind the bookmaker. Bets only happen where we disagree with the market, and with no new information those disagreements are mostly our errors. A sharper model disagrees in more places (4,069 vs 3,847 bets) and loses more.
+- **Test-set look:** no. Counter unchanged at 4.
+- **Decision:** not shipped. The best probability model so far, but no betting edge. Next: E006 adds information the market may price imperfectly (Sackmann serve/return stats); a model only becomes bettable if it closes most of the 0.03 gap to the bookmaker.
 
 ## E004 · 2026-10-07 · Format-aware calibration of tennis Elo (experiment A) · FAILED pre-registered rule 3, not shipped
 - **Report:** reports/2026-10-06-experiment-a-format-calibration.md
