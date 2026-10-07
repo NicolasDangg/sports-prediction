@@ -38,6 +38,7 @@ The LLM agent only orchestrates; all maths is in Python, so every number is repr
 | `records.py` | Append-only research records: forecasts, outcomes, closing prices, CLV; history-file lookups |
 | `accounts.py` | Wallet money: opening balances, deposits, refills (`list` / `deposit` / `refill`) |
 | `ratings_history.py` | Elo after every match + recent form → `state/*_elo_history.csv`, `*_form.csv`, `*_matches.csv` (per-match ratings before/after + model probabilities), `name_map.csv` (bookmaker → history names). Feeds the dashboard Ratings page and the per-team/player pages `/ratings/epl/<slug>`, `/ratings/atp/<slug>` |
+| `strategies.py` | Pure probability rules shared by experiments and `daily.py` (e.g. `format_calibrated`, E004) |
 | `experiments/e003_decision_tree.py` | Decision tree exploration (see experiments/LOG.md E003) → `results/e003_decision_tree.json` |
 | `fpl.py` | Daily squads, player stats (goals, assists, xG, xA, xGI, minutes, FPL points/price/ownership/expected points), injuries + news, next fixtures with difficulty (Fantasy Premier League API), and head coaches (Wikidata) → `state/fpl_players.csv`, `fpl_fixtures.csv`, `coaches.csv`. Failures keep yesterday's files and never stop the betting run. Shown in the Squad section of each team page |
 | `tests/smoke_daily.py` | End-to-end test of the daily job against a fake API on a temp copy (no credits, real state untouched) |
@@ -149,7 +150,7 @@ STRATEGIES = {
 ## 11. Known gaps and idea backlog
 
 - **Closing line value (CLV):** closing prices are now recorded (`closing.csv`) and the daily output prints CLV per wallet. Still to do: show it on the dashboard. ATP closing comes from Kaggle odds of unclear timing, so treat ATP CLV as approximate.
-- `best_of` is now recorded per forecast but **not used by the model yet** (see experiment A in the review: Elo is overconfident in best-of-3).
+- `best_of` is recorded per forecast but **not used by the model yet**. E004 showed a per-format calibration improves log loss (0.6243 → 0.6192 on 2017–22) but missed its pre-registered best-of-3 calibration bar and didn't help the wallet; Elo's best-of-3 overconfidence grows each year, so a recency-weighted calibration is the next variant to try.
 - Daily exposure cap per wallet.
 - The dashboard colours wallets by sport, so two strategies in the same sport share a colour. Give each strategy its own line style or shade when a second one ships.
 - News and injury signals extracted by an LLM (v3 roadmap). Fine-tuning a small open model (v4).

@@ -6,9 +6,30 @@ If the counter climbs fast, results on the test years stop being trustworthy (se
 
 **Test-set looks used: 4** (2 experiments + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
 **Live strategies:** `elo_v0` (control, since 2026-10-06)
-**Next up:** experiment A (format-aware tennis calibration), ready to run: `/refine-strategy reports/2026-10-06-experiment-a-format-calibration.md`
+**Next up:** E005, gradient boosting (XGBoost) on pre-match ATP features incl. serve/return stats; then recency-weighted calibration (E004 follow-up)
 
 ---
+
+## E004 · 2026-10-07 · Format-aware calibration of tennis Elo (experiment A) · FAILED pre-registered rule 3, not shipped
+- **Report:** reports/2026-10-06-experiment-a-format-calibration.md
+- **Script:** `experiments/e004_format_calibration.py` → `results/e004_format_calibration.json`. Rule in `strategies.format_calibrated`.
+- **Hypothesis:** Elo is overconfident in best-of-3 only; a calibration curve with its own slope for best-of-5 fixes it.
+- **Change:** `p' = sigmoid(slope_format × logit(p))` on top of raw `elo_v0` probabilities, one slope for best-of-3 and one for best-of-5. No intercept, so swapping the players gives exactly `1 − p'`. Compared against raw Elo and a single curve. **Variants tried: 1.**
+- **Pass rules (pre-registered before running), ALL must hold:** (1) 95% CI of the per-match log-loss improvement vs raw Elo excludes zero (tournament bootstrap); (2) better in ≥ 4 of 6 walk-forward years; (3) calibration gap best-of-3 under 2 pts and best-of-5 no worse than raw.
+- **Walk-forward 2017–2022 (fit 2010…Y−1, score Y; 13,771 matches, 2,798 best-of-5):**
+
+  | | Log loss | Gap Bo3 | Gap Bo5 |
+  |---|---:|---:|---:|
+  | Raw Elo (`elo_v0`) | 0.6243 | +5.1 | −1.6 |
+  | Single curve | 0.6211 | +3.5 | −3.3 |
+  | **Per-format** | **0.6192** | +2.6 | +0.4 |
+
+  Improvement vs raw +0.0051/match, 95% CI [+0.0037, +0.0064] ✅ · better in 6/6 years ✅ · Bo3 gap 2.6 pts ❌ (Bo5 fine). Format adds +0.0019 [+0.0009, +0.0028] beyond a single curve, so the format effect is real.
+- **Wallet (walk-forward years, live rules, $1,000):** raw Elo 8,098 bets, ROI −7.7%, bust · per-format 8,123 bets, ROI −8.3%, bust. Better probabilities did not make the bets profitable; the bookmaker is still far ahead (≈0.58).
+- **Why the gap stays:** the fitted best-of-3 slope falls every year (0.87 in 2017 → 0.79 in 2022), so Elo is getting more overconfident over time and a curve fitted on all past years lags. Final 2010–2022 fit: Bo3 0.793, Bo5 1.116 (best-of-5 is slightly *under*-confident).
+- **Test-set look:** no (failed before it). Counter unchanged at 4.
+- **Live evidence used:** 2 settled ATP bets (both won). Anecdote.
+- **Decision:** not shipped. Follow-ups: (a) recency-weighted or rolling-window calibration (new experiment, as the drift suggests); (b) use `logit(p)` and best-of-5 as inputs to the gradient-boosting experiment (E005), where the model can learn the format effect itself.
 
 ## E003 · 2026-10-06 · Decision tree on ATP pre-match features (exploration, not shipped)
 - **Report:** owner request ("find the variable that best splits the data… split, split, split").
