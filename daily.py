@@ -44,6 +44,7 @@ import news
 import records
 import snapshots
 import strategies
+import tml
 from names import epl_team, load_aliases, player_profiles, stale_ratings, tennis_player
 from odds_api import OddsAPI, price_summary, quotes, winner_from_scores
 from wallet import Wallet
@@ -270,6 +271,11 @@ def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[lis
         df = bt.load_atp(ATP_RECENT)
         profiles = player_profiles(df)
     _, elo = bt.tennis_probs(df, **ATP_PARAMS)
+    try:  # E009 forecaster: shown on the dashboard, not used for betting. Never stops the run.
+        forecaster = tml.LiveForecaster(df)
+    except Exception as exc:
+        print(f"  E009 forecaster unavailable ({type(exc).__name__}: {exc}); forecast_p left empty")
+        forecaster = None
     stale = stale_ratings(df)
     active = recent[recent.date >= df.date.max() - pd.Timedelta(days=365)]
     players = sorted(set(active.Player_1) | set(active.Player_2))
@@ -297,8 +303,14 @@ def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[lis
             note = "; ".join(f"{n}: {stale[n]}" for n in (a.name, b.name) if n in stale) if ok else ""
             ctx = {"resolved_as": f"{a.name} | {b.name}", "identity": "matched" if ok else f"{a.status}/{b.status}",
                    "rating_note": note, "surface": surface, "best_of": best_of}
-            rows += event_rows("atp", s["key"], f"{s['title']} ({surface})", e,
-                               {e["home_team"]: p, e["away_team"]: 1 - p} if ok else None, ctx)
+            new = event_rows("atp", s["key"], f"{s['title']} ({surface})", e,
+                             {e["home_team"]: p, e["away_team"]: 1 - p} if ok else None, ctx)
+            fc = forecaster.predict(a.name, b.name, surface, best_of, now) if ok and forecaster else None
+            for r in new:  # forecaster + TML Elo, from the listed player's side
+                home = r["outcome"] == e["home_team"]
+                r["forecast_p"] = round(fc[0] if home else 1 - fc[0], 4) if fc else np.nan
+                r["tml_elo_p"] = round(fc[1] if home else 1 - fc[1], 4) if fc else np.nan
+            rows += new
     # Every book's price, not just the summary: the dashboard's match pages show the full board.
     pd.DataFrame(book_rows, columns=QUOTE_COLS).to_csv(STATE / "atp_quotes.csv", index=False)
     if skipped:

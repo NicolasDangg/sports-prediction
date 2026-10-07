@@ -4,17 +4,19 @@ import Link from "next/link";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
 import { motion } from "motion/react";
-import { Flask, House, MagnifyingGlass, Ranking, Receipt, SignOut, Target, X } from "@phosphor-icons/react";
+import { Flask, House, MagnifyingGlass, Ranking, Receipt, Scales, SignOut, Target, TestTube, X } from "@phosphor-icons/react";
 import type { SearchItem } from "@/lib/match";
 import AgentStatus from "./AgentStatus";
 import SearchBox from "./SearchBox";
 
 const ITEMS = [
-  { href: "/", label: "Overview", icon: House },
-  { href: "/bets", label: "Bets", icon: Receipt },
-  { href: "/markets", label: "Markets", icon: Target },
-  { href: "/model", label: "Model", icon: Flask },
-  { href: "/ratings", label: "Ratings", icon: Ranking },
+  { href: "/", label: "Overview", short: "Home", icon: House },
+  { href: "/strategies", label: "Strategies", short: "Versions", icon: Scales },
+  { href: "/bets", label: "Bets", short: "Bets", icon: Receipt },
+  { href: "/markets", label: "Markets", short: "Markets", icon: Target },
+  { href: "/model", label: "Model", short: "Model", icon: Flask },
+  { href: "/experiments", label: "Experiments", short: "Tests", icon: TestTube },
+  { href: "/ratings", label: "Ratings", short: "Ratings", icon: Ranking },
 ] as const;
 
 const isActive = (path: string, href: string) => (href === "/" ? path === "/" : path.startsWith(href));
@@ -111,19 +113,19 @@ export default function Nav({ updated, searchIndex }: { updated: string; searchI
       {/* Mobile bottom tab bar */}
       <nav
         aria-label="Main"
-        className="fixed inset-x-0 bottom-0 z-20 grid grid-cols-5 border-t border-line/80 bg-surface/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl lg:hidden"
+        className="fixed inset-x-0 bottom-0 z-20 grid grid-cols-7 border-t border-line/80 bg-surface/90 pb-[env(safe-area-inset-bottom)] backdrop-blur-xl lg:hidden"
       >
-        {ITEMS.map(({ href, label, icon: Icon }) => {
+        {ITEMS.map(({ href, short, icon: Icon }) => {
           const active = isActive(path, href);
           return (
             <Link
               key={href}
               href={href}
               aria-current={active ? "page" : undefined}
-              className={`flex min-h-14 flex-col items-center justify-center gap-0.5 text-[11px] font-medium transition-colors ${active ? "text-ink" : "text-ink-3"}`}
+              className={`flex min-h-14 min-w-0 flex-col items-center justify-center gap-0.5 text-[10px] font-medium transition-colors ${active ? "text-ink" : "text-ink-3"}`}
             >
-              <Icon size={21} weight={active ? "fill" : "regular"} aria-hidden />
-              {label}
+              <Icon size={20} weight={active ? "fill" : "regular"} aria-hidden />
+              <span className="max-w-full truncate px-0.5">{short}</span>
             </Link>
           );
         })}

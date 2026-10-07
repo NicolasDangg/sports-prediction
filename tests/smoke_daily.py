@@ -120,6 +120,10 @@ check(set(t1.resolved_as) == {"Bu Y. | Van Assche L."}, "Bu Yunchaokete resolves
 check(set(f[f.event_id == "t3"].resolved_as) == {"Zhang Zh. | Machac T."}, "Zhizhen Zhang resolves to 'Zhang Zh.'")
 check(((f.odds <= f.median_odds + 1e-9) | f.median_odds.isna()).all(), "execution price is never above the median")
 check(f.exec_book.notna().all(), "execution bookmaker recorded")
+atp1 = f[(f.sport == "atp") & (f.eligible.astype(str) == "True") & f.run_at.astype(str).str.startswith("2026-10-07T01")]
+check(atp1.forecast_p.notna().any() and ((atp1.forecast_p > 0) & (atp1.forecast_p < 1)).all(), "E009 forecaster fills forecast_p for known players")
+pair = atp1.groupby("event_id").forecast_p.sum()
+check(((pair - 1).abs() < 1e-3).all(), "forecast_p of the two players sums to 1")
 check(((dep.wallet == "atp:test_v1") & (dep.kind == "open") & (dep.amount == 5000)).any(), "new strategy opens its own $5,000 wallet")
 new_bets = led[~led.bet_id.isin(real_open) & (led.status == "open") & led.placed_at.str.startswith("2026-10-07")]
 check("epl:news_v1" not in dep.wallet.values and "atp:news_v1" in dep.wallet.values, "'sports' key: news_v1 gets an ATP wallet only")

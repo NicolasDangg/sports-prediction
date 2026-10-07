@@ -9,7 +9,8 @@ const REPO_ROOT = path.join(process.cwd(), "..");
 const NUMERIC = new Set([
   "cash", "open_stakes", "bankroll", "bets_settled", "bets_open", "profit", "roi", "model_p", "market_p",
   "odds", "n_books", "stake", "pnl", "elo_p", "edge", "elo", "elo_hard", "elo_clay", "elo_grass",
-  "deposits", "net", "median_odds", "pinnacle_odds", "amount",
+  "deposits", "net", "median_odds", "pinnacle_odds", "amount", "closing_odds", "minutes_before", "news_confidence",
+  "best_odds", "forecast_p", "tml_elo_p",
 ]);
 
 function readCsv<T>(rel: string): T[] {
@@ -21,6 +22,15 @@ function readCsv<T>(rel: string): T[] {
     skipEmptyLines: true,
   });
   return data;
+}
+
+/** A CSV in ../state (empty list if the file doesn't exist yet). */
+export const readState = <T>(file: string): T[] => readCsv<T>(`state/${file}`);
+
+/** A JSON file relative to the repo root (null if missing). */
+export function readJson<T>(rel: string): T | null {
+  const file = path.join(REPO_ROOT, rel);
+  return fs.existsSync(file) ? (JSON.parse(fs.readFileSync(file, "utf8")) as T) : null;
 }
 
 export type WalletDay = {
@@ -38,6 +48,7 @@ export type Prediction = {
   sport: string; competition: string; event_id: string; commence_time: string; match: string;
   outcome: string; elo_p: number | null; market_p: number; odds: number; n_books: number; edge: number | null;
   exec_book?: string; median_odds?: number; eligible?: string | boolean; identity?: string; rating_note?: string;
+  forecast_p?: number | null; // E009 forecaster (ATP): shown, not bet on
 };
 export type BacktestBet = { date: string; bankroll: number };
 export type BacktestSummary = Record<"epl" | "atp", {

@@ -1,0 +1,451 @@
+{
+  "_about": "Structured index of every experiment, read by the dashboard (/experiments). experiments/LOG.md is the written record; keep both in step. status: planned | running | collecting | live | shipped | not_shipped | done. Metrics are on validation years unless a key says test.",
+  "test_looks_used": 4,
+  "test_looks_note": "2 experiments (E001, E002) + 2 diagnostic calibration checks during the 2026-10-06 review",
+  "benchmark": {
+    "label": "ATP validation 2020–2022, log loss (lower is better)",
+    "bookmaker": 0.5841,
+    "raw_elo": 0.6232
+  },
+  "experiments": [
+    {
+      "id": "E010",
+      "date": "",
+      "title": "Favourite–longshot bias in qualifying and challenger markets",
+      "status": "planned",
+      "kind": "strategy",
+      "sport": "atp",
+      "hypothesis": "Below the main tour, favourites win more often than their odds imply (I002: +1.1 pts in ATP qualifying, +1.7 in challenger qualifying). With ratings that cover those players (E009), betting selected favourites may beat the higher margin.",
+      "change": "Not designed yet: E009's ratings now cover qualifying and challenger players; backtest on the tennisdata.app challenger/qualifying odds (2021–2026).",
+      "depends_on": [
+        "E009",
+        "I002"
+      ],
+      "followups": []
+    },
+    {
+      "id": "E009",
+      "date": "2026-10-07",
+      "title": "Tennis on TennisMyLife data: better Elo + daily forecaster",
+      "status": "shipped",
+      "kind": "model",
+      "sport": "atp",
+      "hypothesis": "Ratings fed by challengers and qualifying, shrunk after long absences, fix the errors I002 found; E006's forecaster rebuilt on data that is current every day can run live.",
+      "change": "(a) TennisElo on TML player IDs fed by main tour + challengers + qualifying (chosen of 18 variants: no shrink after absences, k_scale 200). (b) Gradient boosting (scikit-learn HistGradientBoosting, depth 2, 258 trees, chosen of 16) on (a)'s Elo + ranking, form, rest, format and decayed serve/return rates.",
+      "protocol": "Scored against elo_v0 on the same ATP main-tour rows of our odds data. 18 Elo variants + 16 forecaster variants on train years.",
+      "rules": [
+        {
+          "text": "(a) log loss beats elo_v0 on 2020–22, 95% tournament-bootstrap CI excludes 0",
+          "passed": true
+        },
+        {
+          "text": "(a) better than elo_v0 in ≥ 2 of 3 validation years",
+          "passed": true
+        },
+        {
+          "text": "(a) wallet ROI (live rules) not worse than elo_v0",
+          "passed": false
+        },
+        {
+          "text": "(b) shown on the dashboard if it beats (a) with the CI excluding 0",
+          "passed": true
+        },
+        {
+          "text": "(b) bets only if it also beats elo_v0's wallet ROI",
+          "passed": false
+        }
+      ],
+      "script": "experiments/e009_tml.py",
+      "results_file": "results/e009_tml.json",
+      "test_look": false,
+      "depends_on": [
+        "E006",
+        "I002"
+      ],
+      "followups": [
+        "E010"
+      ],
+      "metrics": [
+        {
+          "model": "Raw Elo (elo_v0)",
+          "log_loss": 0.6237,
+          "accuracy": 0.639,
+          "roi": -0.081
+        },
+        {
+          "model": "(a) TML Elo",
+          "log_loss": 0.6083,
+          "accuracy": 0.658,
+          "roi": -0.14
+        },
+        {
+          "model": "E009 forecaster",
+          "log_loss": 0.6019,
+          "accuracy": 0.661,
+          "roi": -0.153,
+          "highlight": true
+        },
+        {
+          "model": "Bookmaker",
+          "log_loss": 0.5847,
+          "accuracy": 0.682
+        }
+      ],
+      "verdict": "Best forecaster yet (0.6019 log loss, 66.1% accuracy; +0.022/match over elo_v0, better every year), now live on the dashboard as forecast_p. Not a betting strategy: both models lost more in the backtest wallet (−14.0% / −15.3% vs −8.1%). Challenger and qualifying results helped most; shrinking ratings after absences hurt in every variant. Note: a first run scored the wallet on rows out of date order and wrongly showed a pass; fixed before any decision."
+    },
+    {
+      "id": "E008",
+      "date": "2026-10-07",
+      "title": "Timing and closing line value from our own odds snapshots",
+      "status": "collecting",
+      "kind": "live test",
+      "sport": "atp",
+      "hypothesis": "If an edge exists it is in timing: early prices may be softer than closing ones, and prices may drift toward Elo before the start.",
+      "change": "Every odds response is saved (state/odds_snapshots.csv); extra ATP snapshots at 06:00 and 12:00 UTC with a credit guard. Closing = last snapshot ≤ 180 min before the start.",
+      "protocol": "experiments/e008_timing.py: open vs close log loss, share of price moves toward Elo, CLV per wallet.",
+      "rules": [
+        {
+          "text": "Judge only after 150 usable events and 150 ATP bets",
+          "passed": null
+        },
+        {
+          "text": "Prices move toward Elo in > 55% of moves (binomial p < 0.05)",
+          "passed": null
+        },
+        {
+          "text": "elo_v0's mean CLV 95% CI above 0",
+          "passed": null
+        }
+      ],
+      "progress": {
+        "metric": "usable_events",
+        "target": 150,
+        "source": "snapshots"
+      },
+      "script": "experiments/e008_timing.py",
+      "test_look": false,
+      "followups": []
+    },
+    {
+      "id": "E007",
+      "date": "2026-10-07",
+      "title": "News veto: never back a player with injury news",
+      "status": "live",
+      "kind": "live test",
+      "sport": "atp",
+      "strategy": "news_v1",
+      "hypothesis": "Elo knows nothing about fitness. Skipping bets on players with fresh injury, illness or withdrawal news avoids losers the market may not have fully priced.",
+      "change": "news_v1 = elo_v0, except it never backs an ATP player whose news label (Google News, last 7 days, labelled by an LLM via OpenRouter) is injured / ill / withdrawn / doubt with confidence ≥ 0.6.",
+      "protocol": "Live only (no history of news). Compare vetoed picks' results with what elo_v0 expected; log loss of elo_p vs market on flagged vs unflagged forecasts.",
+      "rules": [
+        {
+          "text": "Judge after ≥ 50 vetoed elo_v0 bets",
+          "passed": null
+        },
+        {
+          "text": "Vetoed picks' P&L negative with a 90% CI below 0 → keep, then fit a probability adjustment per label",
+          "passed": null
+        }
+      ],
+      "progress": {
+        "metric": "vetoed_bets",
+        "target": 50,
+        "source": "news"
+      },
+      "script": "news.py",
+      "test_look": false,
+      "followups": []
+    },
+    {
+      "id": "E006",
+      "date": "2026-10-07",
+      "title": "XGBoost + serve/return stats (Sackmann)",
+      "status": "not_shipped",
+      "kind": "model",
+      "sport": "atp",
+      "hypothesis": "How a player wins points (serve and return quality) carries information Elo-based features miss.",
+      "change": "E005's XGBoost plus decayed serve/return rates per player (Sackmann 2008–2024, all levels).",
+      "protocol": "Fit 2010–17, choose on 2018–19 (16 variants), refit 2010–19, score 2020–22 once.",
+      "rules": [
+        {
+          "text": "Beats E005 with the 95% CI excluding 0",
+          "passed": true
+        },
+        {
+          "text": "Better in ≥ 2 of 3 validation years",
+          "passed": true
+        },
+        {
+          "text": "Wallet ROI not worse than elo_v0",
+          "passed": false
+        }
+      ],
+      "metrics": [
+        {
+          "model": "Raw Elo (elo_v0)",
+          "log_loss": 0.6232,
+          "accuracy": 0.639,
+          "roi": -0.08
+        },
+        {
+          "model": "E005 XGBoost",
+          "log_loss": 0.6146,
+          "accuracy": 0.646,
+          "roi": -0.113
+        },
+        {
+          "model": "E006 + serve stats",
+          "log_loss": 0.6048,
+          "accuracy": 0.659,
+          "roi": -0.093,
+          "highlight": true
+        },
+        {
+          "model": "Bookmaker",
+          "log_loss": 0.5841,
+          "accuracy": 0.683
+        }
+      ],
+      "verdict": "Best forecaster so far, but a blend with the bookmaker gives it ~zero weight (0.5840 vs 0.5841): public stats are already priced in. Data ended in 2024, so it could not run live.",
+      "script": "experiments/e006_serve_stats.py",
+      "results_file": "results/e006_serve_stats.json",
+      "test_look": false,
+      "followups": [
+        "E009"
+      ]
+    },
+    {
+      "id": "E005",
+      "date": "2026-10-07",
+      "title": "XGBoost on pre-match ATP features",
+      "status": "not_shipped",
+      "kind": "model",
+      "sport": "atp",
+      "hypothesis": "Gradient-boosted trees on Elo, ranking, form and rest beat Elo calibrated per format.",
+      "change": "XGBoost on E003's features + Elo log-odds + format, mirrored rows, symmetric predictions.",
+      "protocol": "Fit 2010–17, choose on 2018–19 (16 variants), refit 2010–19, score 2020–22 once.",
+      "rules": [
+        {
+          "text": "Beats calibrated Elo with the 95% CI excluding 0",
+          "passed": true
+        },
+        {
+          "text": "Better in ≥ 2 of 3 validation years",
+          "passed": true
+        },
+        {
+          "text": "Wallet ROI not worse than elo_v0",
+          "passed": false
+        }
+      ],
+      "metrics": [
+        {
+          "model": "Raw Elo (elo_v0)",
+          "log_loss": 0.6232,
+          "accuracy": 0.639,
+          "roi": -0.08
+        },
+        {
+          "model": "Calibrated Elo (E004)",
+          "log_loss": 0.6185,
+          "accuracy": 0.639,
+          "roi": -0.081
+        },
+        {
+          "model": "E005 XGBoost",
+          "log_loss": 0.6146,
+          "accuracy": 0.646,
+          "roi": -0.113,
+          "highlight": true
+        },
+        {
+          "model": "Bookmaker",
+          "log_loss": 0.5841,
+          "accuracy": 0.683
+        }
+      ],
+      "verdict": "Better probabilities, bigger losses: with no new information our disagreements with the market are mostly our errors.",
+      "script": "experiments/e005_xgboost.py",
+      "results_file": "results/e005_xgboost.json",
+      "test_look": false,
+      "followups": [
+        "E006"
+      ]
+    },
+    {
+      "id": "E004",
+      "date": "2026-10-07",
+      "title": "Format-aware calibration of tennis Elo",
+      "status": "not_shipped",
+      "kind": "model",
+      "sport": "atp",
+      "report": "reports/2026-10-06-experiment-a-format-calibration.md",
+      "hypothesis": "Elo is overconfident in best-of-3 only; a calibration curve with its own slope for best-of-5 fixes it.",
+      "change": "p' = sigmoid(slope_format × logit(p)) on top of elo_v0, one slope for best-of-3 and one for best-of-5.",
+      "protocol": "Walk-forward 2017–2022 (fit on 2010…Y−1, score Y), tournament bootstrap.",
+      "rules": [
+        {
+          "text": "95% CI of improvement vs raw Elo excludes 0",
+          "passed": true
+        },
+        {
+          "text": "Better in ≥ 4 of 6 walk-forward years",
+          "passed": true
+        },
+        {
+          "text": "Best-of-3 calibration gap under 2 pts, best-of-5 no worse",
+          "passed": false
+        }
+      ],
+      "metrics": [
+        {
+          "model": "Raw Elo (elo_v0)",
+          "log_loss": 0.6243,
+          "roi": -0.077
+        },
+        {
+          "model": "Single curve",
+          "log_loss": 0.6211
+        },
+        {
+          "model": "Per-format curve",
+          "log_loss": 0.6192,
+          "roi": -0.083,
+          "highlight": true
+        }
+      ],
+      "metrics_note": "Walk-forward 2017–2022 pooled (13,771 matches), not the 2020–22 benchmark.",
+      "verdict": "The format effect is real (+0.0051/match, 6/6 years) but the best-of-3 gap stayed at 2.6 pts: Elo grows more overconfident every year, so a curve fitted on all past years lags.",
+      "script": "experiments/e004_format_calibration.py",
+      "results_file": "results/e004_format_calibration.json",
+      "test_look": false,
+      "followups": [
+        "Recency-weighted calibration"
+      ]
+    },
+    {
+      "id": "E003",
+      "date": "2026-10-06",
+      "title": "Decision tree on ATP pre-match features",
+      "status": "done",
+      "kind": "model",
+      "sport": "atp",
+      "hypothesis": "Find the variable that best splits winners from losers, then split, split, split.",
+      "change": "Decision tree on Elo gap, surface Elo, ranking, points, form, experience, rest, format, surface.",
+      "protocol": "Train 2010–19, choose depth on 2020–22 (10 depths).",
+      "rules": [],
+      "metrics": [
+        {
+          "model": "Raw Elo",
+          "log_loss": 0.6239
+        },
+        {
+          "model": "Calibrated Elo",
+          "log_loss": 0.6211
+        },
+        {
+          "model": "Decision tree (depth 6)",
+          "log_loss": 0.6209,
+          "highlight": true
+        },
+        {
+          "model": "Bookmaker",
+          "log_loss": 0.5841
+        }
+      ],
+      "verdict": "Exploration. Elo gap carries 86% of the tree's importance; the tree only matches calibrated Elo.",
+      "script": "experiments/e003_decision_tree.py",
+      "results_file": "results/e003_decision_tree.json",
+      "test_look": false,
+      "followups": [
+        "E004",
+        "E005"
+      ]
+    },
+    {
+      "id": "I002",
+      "date": "2026-10-07",
+      "title": "Hand-downloaded tennisdata.app odds + tennisabstract Elo",
+      "status": "done",
+      "kind": "data check",
+      "sport": "atp",
+      "hypothesis": "Do these sources give timing information, softer markets, or a better view of our ratings?",
+      "change": "Data check only.",
+      "protocol": "Market-only and rating-vs-rating comparisons; no model, no test years.",
+      "rules": [],
+      "verdict": "tennisdata.app odds = Kaggle's price (no timing info) but add 55k challenger/qualifying odds. Our Elo overrates long-absent players and misrates challenger-level players.",
+      "script": "experiments/i002_external_sources.py",
+      "test_look": false,
+      "followups": [
+        "E009",
+        "E010"
+      ]
+    },
+    {
+      "id": "I001",
+      "date": "2026-10-06",
+      "title": "Data and execution integrity",
+      "status": "done",
+      "kind": "infrastructure",
+      "sport": "both",
+      "hypothesis": "Misresolved identities, synthetic prices and silent voids invalidate experiments.",
+      "change": "Identity gate, append-only forecasts/outcomes/closing, real execution quotes, unresolved instead of void, deposits tracking, smoke test.",
+      "rules": [],
+      "verdict": "Infrastructure; elo_v0's probabilities unchanged.",
+      "test_look": false,
+      "followups": []
+    },
+    {
+      "id": "E002",
+      "date": "2026-10-06",
+      "title": "Blend Elo into the market probability",
+      "status": "not_shipped",
+      "kind": "strategy",
+      "sport": "both",
+      "hypothesis": "Starting from the market and nudging toward Elo keeps the market's accuracy while finding value.",
+      "change": "p = market + w × (elo − market), w ∈ {0, 0.1, 0.2, 0.3, 0.5} × min edge {3%, 5%}.",
+      "rules": [],
+      "verdict": "Log loss worse at every w > 0; every wallet lost (ROI −7% to −74%). Elo has no information the odds lack.",
+      "test_look": true,
+      "followups": []
+    },
+    {
+      "id": "E001",
+      "date": "2026-10-06",
+      "title": "Elo v0 baseline",
+      "status": "live",
+      "kind": "strategy",
+      "sport": "both",
+      "strategy": "elo_v0",
+      "hypothesis": "Tuned Elo plus quarter-Kelly finds value against the bookmaker.",
+      "change": "EPL k=15, home advantage 40, carryover 0.9 · ATP k_scale 200, surface weight 0.5; +5% min edge live.",
+      "rules": [],
+      "metrics": [
+        {
+          "model": "ATP Elo (test 2023+)",
+          "log_loss": 0.6298,
+          "roi": -0.28
+        },
+        {
+          "model": "ATP bookmaker (test 2023+)",
+          "log_loss": 0.5888
+        },
+        {
+          "model": "EPL Elo (test 2022/23+)",
+          "log_loss": 0.9846,
+          "roi": -0.12
+        },
+        {
+          "model": "EPL bookmaker (test 2022/23+)",
+          "log_loss": 0.9635
+        }
+      ],
+      "metrics_note": "Test-year numbers (the one look).",
+      "verdict": "Loses to the market; claimed edges are mostly overconfidence on underdogs. Live as the control group every later version must beat.",
+      "script": "backtest.py",
+      "results_file": "results/summary.json",
+      "test_look": true,
+      "followups": []
+    }
+  ]
+}

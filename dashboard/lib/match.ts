@@ -109,6 +109,10 @@ export function loadAtpMatch(id: string) {
     modelSource = "ratings";
   }
 
+  // E009 forecaster (ATP only): shown next to Elo, never bet on.
+  const fc = prediction?.outcomes.find((o) => o.outcome === home)?.forecast_p;
+  const forecastHome = typeof fc === "number" && !Number.isNaN(fc) ? fc : null;
+
   // The board: one row per book, both prices side by side.
   const books = new Map<string, { book: string; label: string; home?: number; away?: number; at: string }>();
   for (const q of qs) {
@@ -155,6 +159,7 @@ export function loadAtpMatch(id: string) {
   return {
     id, home: a, away: b, competition, surface, commence_time, sport_key,
     model: modelHome === null ? null : { home: modelHome, away: 1 - modelHome, source: modelSource },
+    forecast: forecastHome,
     ratingNote: prediction?.rating_note || null, // a player's rating is too old to bet on
     market: { home: marketHome, away: 1 - marketHome, medianHome: medHome, medianAway: medAway },
     best: { home: bestHome, away: bestAway },

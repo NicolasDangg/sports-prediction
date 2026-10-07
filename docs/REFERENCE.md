@@ -43,6 +43,8 @@ feeds decisions, the news label, is made by a fixed prompt in `news.py` and logg
 | `accounts.py` | Wallet money: opening balances, deposits, refills (`list` / `deposit` / `refill`) |
 | `ratings_history.py` | Elo after every match + recent form → `state/*_elo_history.csv`, `*_form.csv`, `*_matches.csv` (per-match ratings before/after + model probabilities), `name_map.csv` (bookmaker → history names). Feeds the dashboard Ratings page and the per-team/player pages `/ratings/epl/<slug>`, `/ratings/atp/<slug>` |
 | `strategies.py` | Pure probability rules shared by experiments and `daily.py` (e.g. `format_calibrated`, E004) |
+| `tml.py` | TennisMyLife ratings and features (E009): Elo on every level, pre-match serve/return rates, the daily forecaster (`LiveForecaster`) and the link from odds-data names to TML player IDs |
+| `experiments/registry.json` | Structured index of every experiment (status, rules, metrics, verdict) read by the dashboard's Experiments pages. Keep it in step with `LOG.md` |
 | `snapshots.py` | Odds snapshots over time → `state/odds_snapshots.csv`; opening / closing price per outcome; standalone run with a credit guard |
 | `news.py` | News signal: Google News headlines per ATP player → LLM label (OpenRouter) → `state/news.csv` and `news_*` columns on forecasts |
 | `experiments/e008_timing.py` | Timing / CLV study on our own snapshots (E008); says when there's enough data |
@@ -65,7 +67,7 @@ feeds decisions, the news label, is made by a fixed prompt in `news.py` and logg
 | Kaggle `dissfya/atp-tennis-2000-2023daily-pull` | ATP results + one set of odds, 2000 onward, updated daily | Needs `KAGGLE_API_TOKEN`. Fallback mirror ends April 2026. Some names have trailing spaces (stripped) |
 | The Odds API (`regions=eu`, `markets=h2h`) | Live odds and scores | Free plan, 500 credits/month, about 10 per run. One sport key per ATP tournament |
 | `state/atp_recent.csv` | ATP results collected live | Only rows newer than the Kaggle data are used |
-| TennisMyLife `stats.tennismylife.org/data/` | Same match format as Sackmann with serve/return stats, 1968–today incl. tournaments in progress; main tour, challengers, qualifying | Official CSV downloads (robots.txt allows `/data/`). Opt-in for now: `uv run python fetch_data.py tml` → `data/tml/`. Matches Sackmann on 94% of joined 2019 matches. The way to run an E006-style model live |
+| TennisMyLife `stats.tennismylife.org/data/` | Same match format as Sackmann with serve/return stats, 1968–today incl. tournaments in progress; main tour, challengers, qualifying | Official CSV downloads (robots.txt allows `/data/`). Downloaded by every daily run (`fetch_data.main`, failure only blanks the forecast) and on demand with `uv run python fetch_data.py tml` → `data/tml/`. Feeds the E009 forecaster |
 | Google News RSS | Recent headlines per player (`news.py`) | Free, no key. Untrusted text: only ever labelled by the LLM into a fixed set |
 | OpenRouter | LLM that labels the headlines | `OPENROUTER_API_KEY`; default model `anthropic/claude-haiku-4.5` (`OPENROUTER_MODEL`) |
 | tennisdata.app (owner download) | ATP Tour + Challenger + qualifying 2021–2026: results, one match-winner price per side (same as Kaggle's), first-set odds, % serve stats | Hand-downloaded into `data/retrieved_tennis_data/`, not committed; not fetched automatically (bot challenge). Its value: **challenger/qualifying odds** for backtests (I002) |
@@ -134,7 +136,7 @@ STRATEGIES = {
 | `deposits.csv` | Every money movement: `at`, `wallet`, `amount`, `kind` (open/deposit/refill), `reason` |
 | `bankroll_history.csv` | One row per wallet per day: `cash`, `open_stakes`, `bankroll`, `deposits`, `net` (bankroll − deposits), `bets_settled`, `bets_open`, `profit` (settled P&L), `roi` |
 | `predictions.csv` | Latest run's forecasts (dashboard snapshot, overwritten each run) |
-| `forecasts.csv` | **Append-only**: every forecast on every run, passes included. `run_at`, `elo_p`, `market_p`, `odds` (execution quote), `exec_book`, `quote_at`, `median_odds`, `pinnacle_odds`, `n_books`, `edge`, `eligible`, `identity`, `resolved_as`, `surface`, `best_of`, `news_status`, `news_confidence`, `news_summary` (ATP rows in the betting window, from 2026-10-08) |
+| `forecasts.csv` | **Append-only**: every forecast on every run, passes included. `run_at`, `elo_p`, `market_p`, `odds` (execution quote), `exec_book`, `quote_at`, `median_odds`, `pinnacle_odds`, `n_books`, `edge`, `eligible`, `identity`, `resolved_as`, `surface`, `best_of`, `news_status`, `news_confidence`, `news_summary` (ATP rows in the betting window, from 2026-10-08), `forecast_p` (E009 forecaster) and `tml_elo_p` (E009 Elo), ATP only, from 2026-10-08: **shown, never bet on** |
 | `odds_snapshots.csv` | **Append-only**: every odds response, one row per outcome: `at`, `source` (daily/snapshot), `sport`, `sport_key`, `event_id`, `commence_time`, `outcome`, `median_odds`, `pinnacle_odds`, `best_odds`, `n_books` |
 | `news.csv` | **Append-only**: every news verdict: `run_at`, `player`, `event_id`, `match`, `commence_time`, `n_headlines`, `status`, `confidence`, `summary`, `evidence` (cited headlines), `model` |
 | `outcomes.csv` | Final result per event: `winner`, `source` |
@@ -152,6 +154,7 @@ STRATEGIES = {
 
 - Blending Elo into the market probabilities made log loss *worse* at every weight. Everything Elo knows is already in the odds.
 - ATP probability quality on 2020–22 (E005): raw Elo 0.6232 → calibrated per format 0.6185 → XGBoost on pre-match features 0.6146, bookmaker 0.5841. Better probabilities did **not** improve the wallet (XGBoost ROI −11.3% vs −8.0%): without new information, our disagreements with the market are mostly our errors.
+- **E009 (live forecast):** Elo fed by challengers + qualifying on TennisMyLife data scores 0.6083, and the forecaster on top 0.6019 (66.1% accuracy) on 2020–22, the best so far (bookmaker 0.5847 on the same rows). Both lost more than `elo_v0` in the backtest wallet, so they are shown on the dashboard (`forecast_p`) but not bet on.
 - Adding Sackmann serve/return stats (E006) improved log loss to **0.6048** (65.9% accuracy), but a blend with the bookmaker gives the model ~zero weight (0.5840 vs 0.5841): **public historical stats are already priced in.** Edges must come from information or timing the market lacks.
 - v0's claimed edges are concentrated on underdogs, which shows overconfidence rather than real value.
 - **So the edge has to come from information the market doesn't have yet, or from timing**, not from a better-tuned Elo.
@@ -168,6 +171,7 @@ STRATEGIES = {
 | Timing study | `uv run python -W ignore experiments/e008_timing.py` (any time; reports when there's enough data) |
 | Wallets | `uv run python accounts.py list` |
 | Backtest | `uv run python -W ignore backtest.py` (~40s) |
+| Dashboard pages | Overview, **Strategies** (every wallet side by side: profit lines, win %, ROI, CLV, drawdown, where versions disagreed), Bets, Markets (Elo · forecaster · market), Model, **Experiments** (index with test-set budget, best forecasters, live progress; one page per experiment from `experiments/registry.json`), Ratings |
 | Dashboard | `dashboard/`, password in `DASHBOARD_PASSWORD` on Vercel (production and preview); local copy in `dashboard/.env.local` |
 | Sheet | "Sports Prediction - Paper Trading" in Google Drive. Apps Script `sync` runs daily at 09:00 |
 

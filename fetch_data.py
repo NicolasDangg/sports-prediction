@@ -60,6 +60,10 @@ def main() -> None:
     if not download_kaggle_atp(DATA / "tennis" / "atp_tennis.csv"):
         print("  (no Kaggle token: using the GitHub copy, which ends April 2026)")
         download(ATP_URL, DATA / "tennis" / "atp_tennis.csv")
+    try:  # E009 forecaster input; a failure only leaves the forecast column empty
+        fetch_tml()
+    except Exception as exc:
+        print(f"  TennisMyLife download failed ({type(exc).__name__}: {exc}); forecaster will be skipped")
 
 
 def download_kaggle_atp(dest: Path) -> bool:

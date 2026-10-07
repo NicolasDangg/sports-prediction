@@ -6,9 +6,30 @@ If the counter climbs fast, results on the test years stop being trustworthy (se
 
 **Test-set looks used: 4** (2 experiments + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
 **Live strategies:** `elo_v0` (control, since 2026-10-06) · `news_v1` (ATP only, from the 2026-10-08 run, E007)
-**Next up:** collect data for E007 (news veto) and E008 (timing/CLV); judge at the pre-registered sample sizes
+**Next up:** E010 favourite–longshot bias in qualifying/challenger markets (E009 ratings now cover those players); E007/E008 collecting live data
 
 ---
+
+## E009 · 2026-10-07 · Tennis on TennisMyLife data: better Elo (a) + daily forecaster (b) · (a) FAILED wallet rule; (b) SHIPPED as a dashboard forecast (no betting)
+- **Report:** owner request; leads from I002 and E006.
+- **Script:** `experiments/e009_tml.py` → `results/e009_tml.json`; shared code in `tml.py` (also used live).
+- **Data:** TennisMyLife 2008–today: 156k matches (54k main, 89k challenger, 12k qualifying). 45,689 odds-data rows linked (95–99.7% per year from 2010).
+- **(a) Elo, 18 variants on 2010–2019:** levels feeding the ratings × shrink after > 45-day absence (none / 180 d / 365 d half-life) × k_scale. Every level helps (main only 0.5905 → +challengers 0.5823 → +qualifying 0.5820, elo_v0 0.5927 on the same rows); **shrinking after absences hurt in every variant** (my I002-based hypothesis was wrong). Chosen: all levels, no shrink, k 200.
+- **(b) Forecaster, 16 variants on 2018–19:** scikit-learn HistGradientBoosting (same family as E005/E006's XGBoost, no extra runtime dependency) on (a)'s Elo, surface Elo, ranking, points, form, experience, rest, format, surface, decayed serve/return rates. Chosen: depth 2, lr 0.1, min leaf 50, 258 trees.
+- **Pass rules:** pre-registered (see the PRE-REGISTERED entry this replaces): (a) bets only if CI vs elo_v0 excludes 0, ≥ 2/3 years and wallet ROI not worse; (b) shown on the dashboard if it beats (a) with CI excluding 0, and bets only under (a)'s rules.
+- **Validation 2020–2022 (6,157 linked matches):**
+
+  | | Log loss | Accuracy | Gap Bo3 | Gap Bo5 | Wallet (live rules, $1,000) |
+  |---|---:|---:|---:|---:|---|
+  | `elo_v0` | 0.6237 | 63.9% | +5.4 | -0.7 | 3,833 bets, ROI -8.1% |
+  | (a) TML Elo | 0.6083 | 65.8% | +2.7 | -2.8 | 3,389 bets, ROI -14.0% |
+  | **(b) forecaster** | **0.6019** | **66.1%** | +1.5 | -1.2 | 3,190 bets, ROI -15.3% |
+  | Bookmaker | 0.5847 | 68.2% | +0.1 | -1.9 | |
+
+  (a) vs elo_v0 +0.0154/match, 95% CI [+0.0107, +0.0201], 3/3 years ✅✅ · ROI ❌. (b) vs (a) +0.0064, CI [+0.0036, +0.0094], 3/3 years ✅ → dashboard. (b) vs elo_v0 +0.0218, ROI ❌ → no betting.
+- **Bug caught before deciding:** the first run scored the wallet on linked rows that were not in date order (the wallet compounds bet by bet); it showed ROI −11.3% / −13.1% vs −16.9% and a false PASS. Fixed by sorting chronologically; log-loss numbers were identical, the wallet verdict flipped to FAIL. Refactoring the feature code into `tml.py` was re-run and reproduced every number exactly.
+- **Test-set look:** no. Counter unchanged at 4.
+- **Decision:** (b) live from the 2026-10-08 run as `forecast_p` (and (a) as `tml_elo_p`) on ATP forecasts; refitted each morning on all completed main-tour matches since 2010 with the chosen settings. Shown on Markets and match pages. **No betting strategy changes.** Same pattern as E005/E006: better probabilities, worse betting, so the edge still has to come from information, timing or softer markets (E007, E008, E010).
 
 ## I002 · 2026-10-07 · Hand-downloaded tennisdata.app CSVs + tennisabstract Elo page (data check, not a strategy)
 - **Files:** `data/retrieved_tennis_data/` (owner download, not committed): tennisdata.app ATP seasons 2021–2026 (79k finished matches: 24k ATP Tour incl. qualifying, 55k Challenger; one match-winner price per side, first-set odds, % serve stats) and tennisabstract's ATP Elo report (as of 2026-09-28). Script: `experiments/i002_external_sources.py`.

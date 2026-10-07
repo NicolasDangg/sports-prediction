@@ -81,7 +81,8 @@ export default function Overview() {
         {/* Live chart */}
         <Reveal i={3} className="lg:col-span-8">
           <Card className="h-full">
-            <CardHeader title="Live profit" hint="Bankroll minus money deposited, one point per morning run. Bets use real quotes from before each match, so this line cannot be tuned after the fact." />
+            <CardHeader title="Live profit" hint="Bankroll minus money deposited, one point per morning run. Bets use real quotes from before each match, so this line cannot be tuned after the fact."
+                        action={<Link href="/strategies" className="inline-flex min-h-9 shrink-0 items-center gap-1 rounded-full px-3 text-[13px] font-medium text-ink-2 ring-1 ring-line transition-colors hover:bg-sunken active:scale-[0.98]">Compare <ArrowRight size={14} aria-hidden /></Link>} />
             <BankrollChart series={series} height={260} start={0} startLabel="Break-even" signed />
           </Card>
         </Reveal>

@@ -45,6 +45,7 @@ export default function MarketsView({ matches, pages = [] }: { matches: Match[];
 
       <div className="mb-5 flex flex-wrap items-center gap-x-5 gap-y-2 text-[12px] text-ink-3">
         <span className="inline-flex items-center gap-2"><i className="h-1.5 w-5 rounded-full bg-ink" />Elo probability</span>
+        <span className="inline-flex items-center gap-2"><i className="h-1.5 w-5 rounded-full bg-atp" />Forecaster (E009, ATP, not bet on)</span>
         <span className="inline-flex items-center gap-2"><i className="h-1.5 w-5 rounded-full bg-[#b9bfc9]" />Market (vig removed)</span>
         <span>Edge = Elo probability × odds − 1. Bets need +{MIN_EDGE * 100}% or more.</span>
       </div>
@@ -111,6 +112,7 @@ export default function MarketsView({ matches, pages = [] }: { matches: Match[];
                         </span>
                         <div className="grid gap-1">
                           {hasElo && <Bar value={o.elo_p as number} label="Elo" strong />}
+                          {typeof o.forecast_p === "number" && !Number.isNaN(o.forecast_p) && <Bar value={o.forecast_p} label="Fcst" tone="forecast" />}
                           <Bar value={o.market_p} label="Mkt" />
                         </div>
                       </li>
@@ -126,12 +128,12 @@ export default function MarketsView({ matches, pages = [] }: { matches: Match[];
   );
 }
 
-function Bar({ value, label, strong = false }: { value: number; label: string; strong?: boolean }) {
+function Bar({ value, label, strong = false, tone }: { value: number; label: string; strong?: boolean; tone?: "forecast" }) {
   return (
     <div className="grid grid-cols-[30px_minmax(0,1fr)_36px] items-center gap-2" title={`${label}: ${(value * 100).toFixed(1)}%`}>
       <span className="text-[11px] text-ink-3">{label}</span>
       <span className="h-1.5 overflow-hidden rounded-full bg-sunken">
-        <span className={`block h-full rounded-full ${strong ? "bg-ink" : "bg-[#b9bfc9]"}`} style={{ width: `${value * 100}%` }} />
+        <span className={`block h-full rounded-full ${tone === "forecast" ? "bg-atp" : strong ? "bg-ink" : "bg-[#b9bfc9]"}`} style={{ width: `${value * 100}%` }} />
       </span>
       <span className="text-right text-[11px] text-ink-2 tabular">{Math.round(value * 100)}%</span>
     </div>

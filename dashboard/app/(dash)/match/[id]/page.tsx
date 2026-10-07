@@ -121,6 +121,9 @@ export default async function MatchPage({ params }: { params: Promise<{ id: stri
               ) : (
                 <p className="rounded-xl bg-sunken px-4 py-3 text-[13px] text-ink-3">No model price: one of the players isn&apos;t in our match history.</p>
               )}
+              {m.forecast !== null && (
+                <SplitBar label="Forecaster" hint="E009: Elo incl. challengers + serve stats. Not bet on" home={m.forecast} />
+              )}
               <SplitBar label="Market" hint={`${m.board.length} books`} home={m.market.home} />
             </div>
             {m.ratingNote && (
