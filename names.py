@@ -131,3 +131,27 @@ def tennis_player(full_name: str, profiles: dict[str, Profile], active_since: pd
     if len(top) == 1:
         return Resolved(full_name, top[0], "matched", names)
     return Resolved(full_name, None, "ambiguous", tuple(top))
+
+
+STALE_DAYS = 180  # a gap this long (injury, suspension) freezes a rating: we don't know how the player has changed
+RETURN_MATCHES = 5  # matches back before the rating is trusted again
+
+
+def stale_ratings(df: pd.DataFrame, gap_days: int = STALE_DAYS, min_back: int = RETURN_MATCHES) -> dict[str, str]:
+    """Players whose Elo is too old to bet on, with the reason. Separate from identity: an alias
+    can say who someone is, but not that their rating still describes them. Stale = no match in
+    the last gap_days, or back from such a gap with fewer than min_back matches since."""
+    today = df.date.max()
+    both = pd.concat([df[["Player_1", "date"]].set_axis(["p", "date"], axis=1),
+                      df[["Player_2", "date"]].set_axis(["p", "date"], axis=1)])
+    out = {}
+    for p, dates in both.groupby("p").date:
+        d = dates.sort_values().reset_index(drop=True)
+        if (today - d.iloc[-1]).days > gap_days:
+            out[p] = f"last match {d.iloc[-1].date()}"
+            continue
+        gaps = d.diff().dt.days
+        returns = gaps[gaps > gap_days].index
+        if len(returns) and len(d) - returns[-1] < min_back:
+            out[p] = f"back from a {int(gaps[returns[-1]])}-day break, {len(d) - returns[-1]} match(es) since"
+    return out

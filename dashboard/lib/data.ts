@@ -37,7 +37,7 @@ export type Bet = {
 export type Prediction = {
   sport: string; competition: string; event_id: string; commence_time: string; match: string;
   outcome: string; elo_p: number | null; market_p: number; odds: number; n_books: number; edge: number | null;
-  exec_book?: string; median_odds?: number; eligible?: string | boolean; identity?: string;
+  exec_book?: string; median_odds?: number; eligible?: string | boolean; identity?: string; rating_note?: string;
 };
 export type BacktestBet = { date: string; bankroll: number };
 export type BacktestSummary = Record<"epl" | "atp", {

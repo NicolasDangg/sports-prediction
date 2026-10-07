@@ -155,6 +155,7 @@ export function loadAtpMatch(id: string) {
   return {
     id, home: a, away: b, competition, surface, commence_time, sport_key,
     model: modelHome === null ? null : { home: modelHome, away: 1 - modelHome, source: modelSource },
+    ratingNote: prediction?.rating_note || null, // a player's rating is too old to bet on
     market: { home: marketHome, away: 1 - marketHome, medianHome: medHome, medianAway: medAway },
     best: { home: bestHome, away: bestAway },
     pinnacle, onexbet, board, pricedAt,

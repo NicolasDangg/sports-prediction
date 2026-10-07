@@ -123,6 +123,11 @@ export default async function MatchPage({ params }: { params: Promise<{ id: stri
               )}
               <SplitBar label="Market" hint={`${m.board.length} books`} home={m.market.home} />
             </div>
+            {m.ratingNote && (
+              <p className="mt-4 rounded-xl bg-sunken px-4 py-3 text-[13px] text-ink-2">
+                Not bettable: rating out of date ({m.ratingNote}). Treat the model number with caution.
+              </p>
+            )}
             <dl className="mt-6 grid grid-cols-2 gap-x-6 gap-y-3 border-t border-line-soft pt-5 text-[13px]">
               {(["home", "away"] as const).map((k) => {
                 const value = k === "home" ? valueHome : valueAway;

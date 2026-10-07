@@ -41,7 +41,7 @@ import backtest as bt
 import fetch_data
 import ratings_history
 import records
-from names import epl_team, load_aliases, player_profiles, tennis_player
+from names import epl_team, load_aliases, player_profiles, stale_ratings, tennis_player
 from odds_api import OddsAPI, price_summary, quotes, winner_from_scores
 from wallet import Wallet
 
@@ -259,6 +259,7 @@ def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[lis
         df = bt.load_atp(ATP_RECENT)
         profiles = player_profiles(df)
     _, elo = bt.tennis_probs(df, **ATP_PARAMS)
+    stale = stale_ratings(df)
     active = recent[recent.date >= df.date.max() - pd.Timedelta(days=365)]
     players = sorted(set(active.Player_1) | set(active.Player_2))
     (pd.DataFrame({"player": players, "elo": [elo.overall[x] for x in players],
@@ -279,8 +280,10 @@ def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[lis
                 unresolved += [f"{r.api_name} ({r.status}{': ' + ', '.join(r.candidates) if r.candidates else ''})"
                                for r in (a, b) if not r.ok]
             p = elo.prob(a.name, b.name, surface) if ok else None
+            # Known player, old rating: forecast it, but don't bet on it.
+            note = "; ".join(f"{n}: {stale[n]}" for n in (a.name, b.name) if n in stale) if ok else ""
             ctx = {"resolved_as": f"{a.name} | {b.name}", "identity": "matched" if ok else f"{a.status}/{b.status}",
-                   "surface": surface, "best_of": best_of}
+                   "rating_note": note, "surface": surface, "best_of": best_of}
             rows += event_rows("atp", s["key"], f"{s['title']} ({surface})", e,
                                {e["home_team"]: p, e["away_team"]: 1 - p} if ok else None, ctx)
     # Every book's price, not just the summary: the dashboard's match pages show the full board.
@@ -303,7 +306,8 @@ def quote_rows(sport: dict, e: dict, surface: str) -> list[dict]:
 
 def event_rows(sport: str, sport_key: str, competition: str, e: dict, elo_p: dict | None, ctx: dict) -> list[dict]:
     """One row per outcome: what Elo thinks vs what the market thinks, plus the quote we'd bet at.
-    elo_p=None means we don't trust the identities: the row is logged but not bettable."""
+    elo_p=None means we don't trust the identities, a ctx rating_note means we don't trust a
+    rating: either way the row is logged but not bettable."""
     prices, n_books = price_summary(e)
     names = [e["home_team"], "Draw", e["away_team"]] if sport == "epl" else [e["home_team"], e["away_team"]]
     if not prices or set(prices) != set(names):
@@ -318,7 +322,7 @@ def event_rows(sport: str, sport_key: str, competition: str, e: dict, elo_p: dic
                      "outcome": name, "elo_p": round(p, 4), "market_p": round(implied[name] / total, 4),
                      "odds": q["exec"], "exec_book": q["exec_book"], "quote_at": q["exec_at"],
                      "median_odds": q["median"], "pinnacle_odds": q["pinnacle"], "n_books": n_books,
-                     "edge": round(p * q["exec"] - 1, 4), "eligible": elo_p is not None, **ctx})
+                     "edge": round(p * q["exec"] - 1, 4), "eligible": elo_p is not None and not ctx.get("rating_note"), **ctx})
     return rows
 
 
@@ -395,10 +399,13 @@ def main(api: OddsAPI | None = None, now: pd.Timestamp | None = None, download: 
     preds = pd.DataFrame(preds + atp_preds)
     n_events = preds.event_id.nunique() if len(preds) else 0
     n_blocked = preds.loc[~preds.eligible, "event_id"].nunique() if len(preds) else 0
-    print(f"  {n_events} upcoming matches priced ({n_blocked} not bettable: identity not trusted); "
+    print(f"  {n_events} upcoming matches priced ({n_blocked} not bettable: identity not trusted or rating stale); "
           f"{added} new ATP results recorded")
     for u in dict.fromkeys(unresolved):
         print(f"  IDENTITY {u}  -> fix with a line in aliases.csv if this is a real player")
+    notes = preds.rating_note.dropna() if "rating_note" in preds.columns else pd.Series(dtype=str)
+    for n in dict.fromkeys(x for x in notes if x):
+        print(f"  STALE {n}  -> forecast only, no bet until the rating catches up (nothing to fix)")
 
     print("\n== Betting")
     ledger, placed = place_bets(preds, ledger, wallets, now)

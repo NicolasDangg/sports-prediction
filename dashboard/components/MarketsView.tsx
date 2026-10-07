@@ -87,11 +87,15 @@ export default function MarketsView({ matches, pages = [] }: { matches: Match[];
                     </span>
                   )}
                 </header>
-                {m.outcomes.some((o) => typeof o.elo_p !== "number" || Number.isNaN(o.elo_p)) && (
+                {m.outcomes.some((o) => typeof o.elo_p !== "number" || Number.isNaN(o.elo_p)) ? (
                   <p className="mb-2 rounded-lg bg-sunken px-3 py-2 text-[12px] text-ink-2">
                     Not bettable: a player could not be matched to their history ({m.identity ?? "unresolved"}). Market prices only.
                   </p>
-                )}
+                ) : m.rating_note ? (
+                  <p className="mb-2 rounded-lg bg-sunken px-3 py-2 text-[12px] text-ink-2">
+                    Not bettable: rating out of date ({m.rating_note}). Forecast shown for reference.
+                  </p>
+                ) : null}
                 <ul className="divide-y divide-line-soft">
                   {m.outcomes.map((o) => {
                     const hasElo = typeof o.elo_p === "number" && !Number.isNaN(o.elo_p);

@@ -149,5 +149,19 @@ deps = accounts.record(deps, w, "atp:elo_v0", target - accounts.bankroll(w, led,
 check(abs(accounts.bankroll(w, led, "atp:elo_v0") - target) < 0.01, "refill tops the bankroll up to the target")
 check(deps.iloc[-1].kind == "refill" and abs(deps.iloc[-1].amount - 750) < 0.01, "refill recorded in deposits.csv")
 
+print("\nSTALE rating checks")
+from names import stale_ratings  # noqa: E402
+
+day = pd.Timestamp("2026-10-01")
+games = ([("Active A.", day - pd.Timedelta(days=d)) for d in (1, 30, 60)]
+         + [("Gone G.", day - pd.Timedelta(days=400))]
+         + [("Back B.", day - pd.Timedelta(days=d)) for d in (500, 10, 5)]
+         + [("Back C.", day - pd.Timedelta(days=d)) for d in (500, 50, 40, 30, 20, 10)])
+st = stale_ratings(pd.DataFrame({"Player_1": [p for p, _ in games], "Player_2": "Opp O.", "date": [d for _, d in games]}))
+check("Active A." not in st and "Opp O." not in st, "regular players are fresh")
+check(st.get("Gone G.", "").startswith("last match"), "no match for over 180 days -> stale")
+check("2 match(es) since" in st.get("Back B.", ""), "back from a long break with < 5 matches -> stale")
+check("Back C." not in st, "back with 5 matches -> trusted again")
+
 shutil.rmtree(TMP)
 print("\nall smoke checks passed")
