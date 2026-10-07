@@ -6,9 +6,32 @@ If the counter climbs fast, results on the test years stop being trustworthy (se
 
 **Test-set looks used: 4** (2 experiments + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
 **Live strategies:** `elo_v0` (control, since 2026-10-06)
-**Next up:** E006, XGBoost + Sackmann serve/return stats (new information); recency-weighted calibration (E004 follow-up)
+**Next up:** information or timing the market lacks (opening-price timing/CLV, news & injuries, softer markets); model-side ideas (E004 recency calibration) can't beat the market on their own (see E006 diagnostic)
 
 ---
+
+## E006 · 2026-10-07 · XGBoost + serve/return stats (Sackmann) · FAILED pre-registered rule 3 (wallet), not shipped
+- **Report:** owner request (follow-up to E005; the video's model used Sackmann's serve stats).
+- **Data:** Jeff Sackmann `tennis_atp` 2008–2024, main tour + qualifying/challenger (original repo taken down in 2026; public mirror pinned to commit `8e5415c`, cross-checked against a second mirror: 2,796/2,796 shared 2019 matches identical). `uv run python fetch_data.py sackmann`.
+- **Script:** `experiments/e006_serve_stats.py` → `results/e006_serve_stats.json`; market-blend diagnostic `experiments/e006_market_blend.py` (`uv run --group experiments ...`).
+- **Hypothesis:** how a player wins points (serve and return quality, aces, double faults, break points) carries information the Elo-based features in E005 miss.
+- **Features added (fixed in advance, not tuned):** per player, exponentially decayed totals over all prior matches with stats (×0.95 per match, ≈ 14-match half-life; all levels incl. challengers), ≥ 3 prior stat matches else missing: serve / return / total points won %, ace rate, double-fault rate, first-serve-in %, break points saved %, break points converted %, as P1 − P2 differences, plus a serve-vs-return matchup term and log count of stat matches. Joined to the odds data by name keys + tournament week: 96–99.8% of matches linked per year (spot-checked).
+- **Protocol:** identical to E005; baseline = E005's features retrained in the same script (reproduced E005 exactly). **16 variants per feature set.** Chosen for E006: depth 2, lr 0.1, min child 50, 325 trees.
+- **Pass rules (pre-registered):** (1) CI of improvement vs E005 excludes 0; (2) ≥ 2/3 years; (3) wallet ROI not worse than `elo_v0`.
+- **Validation 2020–2022 (6,178 matches):**
+
+  | | Log loss | Accuracy | Gap Bo3 | Gap Bo5 | Wallet (live rules, $1,000) |
+  |---|---:|---:|---:|---:|---|
+  | Raw Elo (`elo_v0`) | 0.6232 | 63.9% | +5.3 | −0.7 | 3,847 bets, ROI −8.0%, bust |
+  | E005 XGBoost | 0.6146 | 64.6% | +1.1 | −2.2 | 4,069 bets, ROI −11.3%, bust |
+  | **E006 + serve stats** | **0.6048** | **65.9%** | +2.2 | +0.7 | 3,397 bets, ROI **−9.3%**, bust |
+  | Bookmaker | 0.5841 | 68.3% | 0.0 | −1.9 | |
+
+  Improvement vs E005 +0.0098/match, 95% CI [+0.0060, +0.0136] ✅ · 3/3 years (+0.0079, +0.0083, +0.0121) ✅ · ROI −9.3% vs −8.0% ❌. Closes about a third of the gap to the bookmaker (0.031 → 0.021).
+- **Feature importance (gain):** Elo log-odds 32%, Elo gap 16%, ranking 12%, surface Elo 12%, serve-vs-return 6%, points 6%, total points won 5%, serve won 2%.
+- **Diagnostic (post-hoc, not a pass rule):** does the model add anything *on top of* the market? Logistic blend of logit(bookmaker) and logit(model), each 2020–22 year scored by a blend fitted on the other two: model weight +0.10 / −0.01 / +0.03; log loss bookmaker 0.5841 vs blend 0.5840, improvement +0.0002, 95% CI [−0.0008, +0.0011]. **The market already prices serve/return form.** This is the clearest evidence yet that public historical stats can't beat closing-ish odds.
+- **Test-set look:** no. Counter unchanged at 4.
+- **Decision:** not shipped (also not deployable: the stats source ended in 2024). Best probability model to date (useful for the dashboard / forecasts, not for betting). Next ideas must be information or timing the market lacks: early-line timing / CLV on opening prices, news and injuries (v3 roadmap), or markets where the bookmaker is softer (e.g. lower-tier events, other books vs Pinnacle).
 
 ## E005 · 2026-10-07 · XGBoost on pre-match ATP features · FAILED pre-registered rule 3 (wallet), not shipped
 - **Report:** owner request (Green Code "I Trained AI to Predict Sports (again)": XGBoost vs IBM at Wimbledon 2025; their final 66.3% vs IBM 63.8% vs bookmakers 72% accuracy).

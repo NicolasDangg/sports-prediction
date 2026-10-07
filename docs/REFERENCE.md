@@ -39,7 +39,7 @@ The LLM agent only orchestrates; all maths is in Python, so every number is repr
 | `accounts.py` | Wallet money: opening balances, deposits, refills (`list` / `deposit` / `refill`) |
 | `ratings_history.py` | Elo after every match + recent form → `state/*_elo_history.csv`, `*_form.csv`, `*_matches.csv` (per-match ratings before/after + model probabilities), `name_map.csv` (bookmaker → history names). Feeds the dashboard Ratings page and the per-team/player pages `/ratings/epl/<slug>`, `/ratings/atp/<slug>` |
 | `strategies.py` | Pure probability rules shared by experiments and `daily.py` (e.g. `format_calibrated`, E004) |
-| `experiments/e004_format_calibration.py`, `e005_xgboost.py` | Per-format calibration (E004) and XGBoost (E005) experiments. XGBoost is in the optional `experiments` dependency group: `uv run --group experiments ...` (macOS: `brew install libomp` once) |
+| `experiments/e004_format_calibration.py`, `e005_xgboost.py`, `e006_serve_stats.py` | Per-format calibration (E004), XGBoost (E005), XGBoost + Sackmann serve/return stats (E006) experiments. XGBoost is in the optional `experiments` dependency group: `uv run --group experiments ...` (macOS: `brew install libomp` once) |
 | `experiments/e003_decision_tree.py` | Decision tree exploration (see experiments/LOG.md E003) → `results/e003_decision_tree.json` |
 | `fpl.py` | Daily squads, player stats (goals, assists, xG, xA, xGI, minutes, FPL points/price/ownership/expected points), injuries + news, next fixtures with difficulty (Fantasy Premier League API), and head coaches (Wikidata) → `state/fpl_players.csv`, `fpl_fixtures.csv`, `coaches.csv`. Failures keep yesterday's files and never stop the betting run. Shown in the Squad section of each team page |
 | `tests/smoke_daily.py` | End-to-end test of the daily job against a fake API on a temp copy (no credits, real state untouched) |
@@ -58,6 +58,7 @@ The LLM agent only orchestrates; all maths is in Python, so every number is repr
 | Kaggle `dissfya/atp-tennis-2000-2023daily-pull` | ATP results + one set of odds, 2000 onward, updated daily | Needs `KAGGLE_API_TOKEN`. Fallback mirror ends April 2026. Some names have trailing spaces (stripped) |
 | The Odds API (`regions=eu`, `markets=h2h`) | Live odds and scores | Free plan, 500 credits/month, about 10 per run. One sport key per ATP tournament |
 | `state/atp_recent.csv` | ATP results collected live | Only rows newer than the Kaggle data are used |
+| Jeff Sackmann `tennis_atp` (public mirror, pinned commit) | Point-level serve/return stats, 2008–2024, main tour + qualifying/challenger | Experiments only, opt-in: `uv run python fetch_data.py sackmann` → `data/sackmann/`. Original repo taken down in 2026; ends 2024, so not usable live |
 
 ## 4. The models
 
@@ -133,6 +134,7 @@ STRATEGIES = {
 
 - Blending Elo into the market probabilities made log loss *worse* at every weight. Everything Elo knows is already in the odds.
 - ATP probability quality on 2020–22 (E005): raw Elo 0.6232 → calibrated per format 0.6185 → XGBoost on pre-match features 0.6146, bookmaker 0.5841. Better probabilities did **not** improve the wallet (XGBoost ROI −11.3% vs −8.0%): without new information, our disagreements with the market are mostly our errors.
+- Adding Sackmann serve/return stats (E006) improved log loss to **0.6048** (65.9% accuracy), but a blend with the bookmaker gives the model ~zero weight (0.5840 vs 0.5841): **public historical stats are already priced in.** Edges must come from information or timing the market lacks.
 - v0's claimed edges are concentrated on underdogs, which shows overconfidence rather than real value.
 - **So the edge has to come from information the market doesn't have yet, or from timing**, not from a better-tuned Elo.
 

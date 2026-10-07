@@ -1,0 +1,367 @@
+{
+  "coverage": {
+    "linked": {
+      "2010": 0.9812646370023419,
+      "2011": 0.9692007797270955,
+      "2012": 0.9736842105263158,
+      "2013": 0.975177304964539,
+      "2014": 0.9714052287581699,
+      "2015": 0.9634630659253376,
+      "2016": 0.9738095238095238,
+      "2017": 0.9723101265822784,
+      "2018": 0.9902647975077882,
+      "2019": 0.9979975971165399,
+      "2020": 0.9959382615759546,
+      "2021": 0.9975020815986678,
+      "2022": 0.9956777996070727
+    },
+    "has_stats": {
+      "2010": 0.9715066354410616,
+      "2011": 0.9656920077972709,
+      "2012": 0.9720893141945773,
+      "2013": 0.9700551615445232,
+      "2014": 0.9693627450980392,
+      "2015": 0.9618745035742653,
+      "2016": 0.973015873015873,
+      "2017": 0.9715189873417721,
+      "2018": 0.9890965732087228,
+      "2019": 0.9971966359631558,
+      "2020": 0.9959382615759546,
+      "2021": 0.9966694421315571,
+      "2022": 0.9941060903732809
+    }
+  },
+  "baseline": {
+    "grid": [
+      {
+        "max_depth": 2,
+        "learning_rate": 0.03,
+        "min_child_weight": 50,
+        "trees": 714,
+        "tune_log_loss": 0.6209401488304138
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.03,
+        "min_child_weight": 200,
+        "trees": 152,
+        "tune_log_loss": 0.6224639415740967
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.1,
+        "min_child_weight": 50,
+        "trees": 261,
+        "tune_log_loss": 0.621456503868103
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.1,
+        "min_child_weight": 200,
+        "trees": 301,
+        "tune_log_loss": 0.6212427020072937
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "min_child_weight": 50,
+        "trees": 104,
+        "tune_log_loss": 0.6212023496627808
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "min_child_weight": 200,
+        "trees": 102,
+        "tune_log_loss": 0.6217231750488281
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "min_child_weight": 50,
+        "trees": 127,
+        "tune_log_loss": 0.6209903955459595
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "min_child_weight": 200,
+        "trees": 220,
+        "tune_log_loss": 0.6209362149238586
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "min_child_weight": 50,
+        "trees": 94,
+        "tune_log_loss": 0.6203223466873169
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "min_child_weight": 200,
+        "trees": 90,
+        "tune_log_loss": 0.6210298538208008
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "min_child_weight": 50,
+        "trees": 22,
+        "tune_log_loss": 0.6202526688575745
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "min_child_weight": 200,
+        "trees": 126,
+        "tune_log_loss": 0.6212664842605591
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "min_child_weight": 50,
+        "trees": 74,
+        "tune_log_loss": 0.6194977164268494
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "min_child_weight": 200,
+        "trees": 88,
+        "tune_log_loss": 0.6207996010780334
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "min_child_weight": 50,
+        "trees": 21,
+        "tune_log_loss": 0.6195863485336304
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "min_child_weight": 200,
+        "trees": 22,
+        "tune_log_loss": 0.6213782429695129
+      }
+    ],
+    "chosen": {
+      "max_depth": 6,
+      "learning_rate": 0.03,
+      "min_child_weight": 50,
+      "trees": 74
+    }
+  },
+  "new": {
+    "grid": [
+      {
+        "max_depth": 2,
+        "learning_rate": 0.03,
+        "min_child_weight": 50,
+        "trees": 731,
+        "tune_log_loss": 0.6139327883720398
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.03,
+        "min_child_weight": 200,
+        "trees": 755,
+        "tune_log_loss": 0.6144852042198181
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.1,
+        "min_child_weight": 50,
+        "trees": 325,
+        "tune_log_loss": 0.6136096119880676
+      },
+      {
+        "max_depth": 2,
+        "learning_rate": 0.1,
+        "min_child_weight": 200,
+        "trees": 414,
+        "tune_log_loss": 0.614225447177887
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "min_child_weight": 50,
+        "trees": 604,
+        "tune_log_loss": 0.6137576103210449
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.03,
+        "min_child_weight": 200,
+        "trees": 766,
+        "tune_log_loss": 0.613910436630249
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "min_child_weight": 50,
+        "trees": 129,
+        "tune_log_loss": 0.6141109466552734
+      },
+      {
+        "max_depth": 3,
+        "learning_rate": 0.1,
+        "min_child_weight": 200,
+        "trees": 257,
+        "tune_log_loss": 0.6144806146621704
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "min_child_weight": 50,
+        "trees": 388,
+        "tune_log_loss": 0.6137441396713257
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.03,
+        "min_child_weight": 200,
+        "trees": 605,
+        "tune_log_loss": 0.6140018701553345
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "min_child_weight": 50,
+        "trees": 104,
+        "tune_log_loss": 0.614126980304718
+      },
+      {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "min_child_weight": 200,
+        "trees": 186,
+        "tune_log_loss": 0.6141358017921448
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "min_child_weight": 50,
+        "trees": 101,
+        "tune_log_loss": 0.6145200729370117
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.03,
+        "min_child_weight": 200,
+        "trees": 306,
+        "tune_log_loss": 0.6144537329673767
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "min_child_weight": 50,
+        "trees": 27,
+        "tune_log_loss": 0.6149712800979614
+      },
+      {
+        "max_depth": 6,
+        "learning_rate": 0.1,
+        "min_child_weight": 200,
+        "trees": 124,
+        "tune_log_loss": 0.615039050579071
+      }
+    ],
+    "chosen": {
+      "max_depth": 2,
+      "learning_rate": 0.1,
+      "min_child_weight": 50,
+      "trees": 325
+    }
+  },
+  "validation": {
+    "raw Elo (elo_v0)": {
+      "log_loss": 0.6231861790939032,
+      "accuracy": 0.6393654904499838,
+      "gap_bo3": 5.326463253314772,
+      "gap_bo5": -0.7279110539555878
+    },
+    "E005 XGBoost": {
+      "log_loss": 0.6146007776260376,
+      "accuracy": 0.6458400776950469,
+      "gap_bo3": 1.131502473823276,
+      "gap_bo5": -2.235595957107994
+    },
+    "E006 + serve stats": {
+      "log_loss": 0.6048119068145752,
+      "accuracy": 0.6586273875040466,
+      "gap_bo3": 2.1892706331012146,
+      "gap_bo5": 0.7149710499568251
+    },
+    "bookmaker": {
+      "log_loss": 0.5841421120750298,
+      "accuracy": 0.6831522620398898,
+      "gap_bo3": 0.020610392001263467,
+      "gap_bo5": -1.9209103996684074
+    }
+  },
+  "improvement_vs_e005": 0.00978886615484953,
+  "ci": [
+    0.006002177143359936,
+    0.013639547239649526
+  ],
+  "by_year": {
+    "2020": 0.007869425229728222,
+    "2021": 0.008287383243441582,
+    "2022": 0.012134403921663761
+  },
+  "improvement_with_stats": 0.009775723330676556,
+  "wallets": {
+    "raw Elo (elo_v0)": {
+      "bets": 3847,
+      "win_rate": 0.38549519105796726,
+      "roi": -0.0799858892191703,
+      "final_bankroll": 0.09,
+      "max_drawdown": 0.999917231485143
+    },
+    "E005 XGBoost": {
+      "bets": 4069,
+      "win_rate": 0.32022609977881544,
+      "roi": -0.1131218820810318,
+      "final_bankroll": 0.09000000357627869,
+      "max_drawdown": 0.9999118447303772
+    },
+    "E006 + serve stats": {
+      "bets": 3397,
+      "win_rate": 0.3944657050338534,
+      "roi": -0.0931728333234787,
+      "final_bankroll": 0.10000000149011612,
+      "max_drawdown": 0.9999240040779114
+    }
+  },
+  "importance": {
+    "elo_diff": 0.1602,
+    "surface_elo_diff": 0.1168,
+    "rank_ratio": 0.1206,
+    "points_ratio": 0.0545,
+    "form10_diff": 0.0074,
+    "experience_diff": 0.0066,
+    "rust_diff": 0.0124,
+    "best_of_5": 0.0122,
+    "surface_clay": 0.0081,
+    "surface_grass": 0.0075,
+    "elo_logit": 0.3237,
+    "serve_won_diff": 0.0207,
+    "return_won_diff": 0.0053,
+    "total_won_diff": 0.0473,
+    "ace_rate_diff": 0.006,
+    "df_rate_diff": 0.0058,
+    "first_in_diff": 0.0063,
+    "bp_saved_diff": 0.0068,
+    "bp_conv_diff": 0.0054,
+    "serve_vs_return": 0.0588,
+    "stat_matches_diff": 0.0076
+  },
+  "rules": {
+    "ci": true,
+    "years": true,
+    "roi": 0.0
+  },
+  "passed": 0.0
+}
