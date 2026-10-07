@@ -5,6 +5,7 @@ wallet that runs it compute exactly the same number.
 """
 
 import numpy as np
+import pandas as pd
 
 
 def logit(p):
@@ -56,3 +57,32 @@ def best_price(row) -> tuple[float, str, str]:
     if not np.isfinite(odds):
         return float(row["odds"]), row.get("exec_book", ""), row.get("quote_at", "")
     return odds, row.get("best_book", ""), row.get("best_at", "")
+
+
+# E013: the casual "safe bets" bettor. Not a strategy we expect to win: a realistic comparison.
+CASUAL_MIN_P = 0.80  # only outcomes at least this likely to win (Pinnacle fair p, else market p)
+CASUAL_POT = 0.25  # share of the wallet put in play per session
+CASUAL_WEEKDAY = 5  # Saturday (Saigon): the morning run that day is the weekly session
+CASUAL_TZ = "Asia/Ho_Chi_Minh"
+
+
+def win_chance(row) -> float:
+    """Best available estimate of how likely an outcome is: Pinnacle with the margin removed,
+    else the market median with the margin removed."""
+    p = sharp_prob(row)
+    return p if p > 0 else float(row.get("market_p") or 0)
+
+
+def casual_session(window: pd.DataFrame, cash: float, now: pd.Timestamp, max_picks: int) -> list[tuple[int, float, float]]:
+    """E013: once a week, put CASUAL_POT of the wallet on the likeliest winners (>= CASUAL_MIN_P),
+    split equally over up to max_picks matches (1 = one big bet). Returns [(row index, p, stake)].
+    Example: $5,000 wallet, many-version, 10 qualifying favourites -> $125 on each."""
+    if now.tz_convert(CASUAL_TZ).dayofweek != CASUAL_WEEKDAY or window.empty:
+        return []
+    p = window.apply(win_chance, axis=1)
+    cand = window.assign(p=p)[p >= CASUAL_MIN_P]
+    if cand.empty:
+        return []
+    best = cand.sort_values("p", ascending=False).drop_duplicates("event_id").head(max_picks)
+    stake = round(cash * CASUAL_POT / len(best), 2)
+    return [(i, float(r.p), stake) for i, r in best.iterrows()] if stake >= 1 else []

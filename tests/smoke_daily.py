@@ -238,5 +238,25 @@ t3c = cl[cl.event_id == "t3"]
 check(len(t3c) == 2 and (t3c.source == "snapshot_median").all() and (t3c.minutes_before == 540).all(),
       "ATP closing comes from our snapshots, with minutes before the start")
 
+# ---- E013 casual weekly session (pure place_bets, in memory)
+def prow(eid, outcome, p, odds, sport="atp"):
+    return {"sport": sport, "event_id": eid, "outcome": outcome, "commence_time": "2026-10-10T08:00:00Z",
+            "sport_key": "k", "competition": "c", "match": f"{eid} match", "elo_p": float("nan"), "market_p": p,
+            "pin_fair_p": p, "odds": odds, "exec_book": "bet365", "quote_at": "", "median_odds": odds, "n_books": 5,
+            "best_odds": odds, "best_book": "bet365", "best_at": "", "eligible": False}
+cp = pd.DataFrame([prow("c1", "A", 0.92, 1.06), prow("c1", "B", 0.08, 9.0), prow("c2", "C", 0.85, 1.12),
+                   prow("c2", "D", 0.15, 5.5), prow("c3", "E", 0.60, 1.6), prow("c3", "F", 0.40, 2.4)])
+cw = {f"atp:{n}": {"cash": 1000.0} for n in daily.STRATEGIES} | {f"epl:{n}": {"cash": 1000.0} for n in daily.STRATEGIES}
+empty = led.iloc[0:0].copy()
+sat, wed = pd.Timestamp("2026-10-09T23:00:00Z"), pd.Timestamp("2026-10-06T23:00:00Z")  # Sat / Wed 06:00 Saigon
+cl, _ = daily.place_bets(cp, empty, {k: dict(v) for k, v in cw.items()}, wed)
+check(not cl.strategy.str.startswith("casual").any(), "casual wallets don't bet outside the weekly session")
+cl, _ = daily.place_bets(cp, empty, cw, sat)
+big, many = cl[cl.strategy == "casual_big_v1"], cl[cl.strategy == "casual_many_v1"]
+check(list(big.pick) == ["A"] and big.stake.iloc[0] == 250, "casual_big_v1: 25% of the wallet on the single likeliest winner")
+check(sorted(many.pick) == ["A", "C"] and (many.stake == 125).all(), "casual_many_v1: 25% split over every 80%+ favourite")
+cl2, _ = daily.place_bets(cp, cl, cw, sat + pd.Timedelta(hours=1))
+check(len(cl2[cl2.strategy.str.startswith("casual")]) == len(cl[cl.strategy.str.startswith("casual")]), "one session per day, even if re-run")
+
 shutil.rmtree(TMP)
 print("\nall smoke checks passed")

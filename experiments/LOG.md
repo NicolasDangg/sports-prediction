@@ -5,10 +5,27 @@ The test years are a limited budget: each experiment that looks at them adds to 
 If the counter climbs fast, results on the test years stop being trustworthy (see docs/REFERENCE.md §7).
 
 **Test-set looks used: 5** (3 experiments: E001, E002, E011 + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
-**Live strategies:** `elo_v0` (control, since 2026-10-06) · `news_v1` (ATP only, from the 2026-10-08 run, E007) · `sharp_v1` (EPL + ATP, from the 2026-10-08 run, E012)
+**Live strategies:** `elo_v0` (control, since 2026-10-06) · `news_v1` (ATP only, from the 2026-10-08 run, E007) · `sharp_v1` (EPL + ATP, from the 2026-10-08 run, E012) · `casual_big_v1` / `casual_many_v1` (comparison wallets, Saturday sessions, E013)
 **Next up:** E010 favourite–longshot bias in qualifying/challenger markets (E009 ratings now cover those players); E007/E008 collecting live data
 
 ---
+
+## E013 · 2026-10-07 · The casual "safe bets" bettor (`casual_big_v1`, `casual_many_v1`) · comparison wallets, live
+- **Report:** owner question: a wallet for someone who bets only now and then, on very likely winners, one big bet or many small ones, "to get money".
+- **Rule:** new optional `session` key (`strategies.casual_session`): on the Saturday-morning run (Saigon), 25% of the wallet on outcomes with ≥ 80% chance (Pinnacle no-vig p, else market p), typical price (a casual bettor has one account). `casual_big_v1` = the single likeliest; `casual_many_v1` = equal stakes over up to 20 matches. One session per Saigon day even if the job re-runs (smoke-tested; the first version compared UTC dates and would have bet twice on a re-run straddling midnight UTC). Fresh $5,000 wallets per sport.
+- **What history says** (`experiments/e013_casual.py`, ATP 2010–now, Kaggle prices, no tuning, no test-year look):
+
+  | Favourite's chance | Bets | Won | Avg odds | Flat ROI |
+  |---|---:|---:|---:|---:|
+  | 50%-60% | 10,962 | 54.9% | 1.70 | -7.0% |
+  | 60%-70% | 12,407 | 64.8% | 1.46 | -5.7% |
+  | 70%-80% | 10,099 | 76.5% | 1.27 | -3.2% |
+  | 80%-85% | 3,144 | 84.4% | 1.14 | -3.5% |
+  | 85%-90% | 2,361 | 90.1% | 1.09 | -1.9% |
+  | 90%-100% | 2,233 | 95.3% | 1.03 | -1.7% |
+
+  Weekly replay: `casual_big_v1` 696 sessions, won 90.7% of bets, $5,000 → peak $6,170 → **$11**; `casual_many_v1` 1,682 bets, won 89.1%, → **$8**. Favourites lose less per bet than longshots (favourite–longshot bias), but still lose the margin, and staking 25% at odds ~1.05 means one loss erases ~20 wins.
+- **Decision:** none to make: it is a reference wallet that shows the owner what this common approach does live, next to `elo_v0` and `sharp_v1`. Follow-up idea: the same weekly session restricted to favourites where `sharp_v1`'s rule finds a price above Pinnacle's fair price.
 
 ## E012 · 2026-10-07 · `sharp_v1`: best bookmaker price vs Pinnacle's fair price, live · PRE-REGISTERED, shipped as a live experiment
 - **Report:** owner go-ahead after E011 (positive CLV, too few bets to judge profit).

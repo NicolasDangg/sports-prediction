@@ -9,6 +9,72 @@
   },
   "experiments": [
     {
+      "id": "E013",
+      "date": "2026-10-07",
+      "title": "The casual “safe bets” bettor: weekly sessions on 80%+ favourites",
+      "status": "live",
+      "kind": "strategy",
+      "sport": "both",
+      "strategy": "casual_big_v1",
+      "hypothesis": "Owner question: someone who only bets now and then, on outcomes very likely to win (one big bet or many small ones), to make some money. Expected to lose: favourites still carry the bookmaker's margin, and one loss on a big stake erases many small wins. Run as a realistic comparison wallet, not as an edge.",
+      "change": "Two session strategies (new optional `session` key): every Saturday-morning run, 25% of the wallet on outcomes with an 80%+ chance (Pinnacle fair p, else market p) at the typical price. casual_big_v1: the single likeliest; casual_many_v1: split equally over up to 20 matches. Fresh $5,000 wallets per sport.",
+      "protocol": "No tuning, no test-year look. Historical replay on ATP 2010–now (Kaggle odds) for expectations; live wallets are the record.",
+      "script": "experiments/e013_casual.py",
+      "results_file": "results/e013_casual.json",
+      "test_look": false,
+      "metrics_note": "ATP 2010–now replay, flat-stake ROI by favourite strength",
+      "metrics": [
+        {
+          "model": "favourite 50%-60% (10,962 bets, won 55%)",
+          "roi": -0.0704,
+          "highlight": false
+        },
+        {
+          "model": "favourite 60%-70% (12,407 bets, won 65%)",
+          "roi": -0.0566,
+          "highlight": false
+        },
+        {
+          "model": "favourite 70%-80% (10,099 bets, won 76%)",
+          "roi": -0.0323,
+          "highlight": false
+        },
+        {
+          "model": "favourite 80%-85% (3,144 bets, won 84%)",
+          "roi": -0.0353,
+          "highlight": false
+        },
+        {
+          "model": "favourite 85%-90% (2,361 bets, won 90%)",
+          "roi": -0.0195,
+          "highlight": false
+        },
+        {
+          "model": "favourite 90%-100% (2,233 bets, won 95%)",
+          "roi": -0.0171,
+          "highlight": true
+        }
+      ],
+      "rules": [
+        {
+          "text": "Expectation from history: casual_big_v1 $5,000 → $11 over 696 weeks (peak $6,170), won 91% of bets",
+          "passed": null
+        },
+        {
+          "text": "casual_many_v1 $5,000 → $8 (1,682 bets, won 89%)",
+          "passed": null
+        },
+        {
+          "text": "Live wallets compared with elo_v0 and sharp_v1 on the Strategies page; no ship/stop decision (it is a reference)",
+          "passed": null
+        }
+      ],
+      "depends_on": [],
+      "followups": [
+        "“Smart casual”: same weekly session but only favourites where the best price beats Pinnacle's fair price (sharp_v1's rule)"
+      ]
+    },
+    {
       "id": "E012",
       "date": "2026-10-07",
       "title": "sharp_v1 live: best bookmaker price vs Pinnacle's fair price",
