@@ -60,5 +60,28 @@
     "final": 8.02,
     "worst_drop": 0.9986523161476363,
     "peak": 5816.73
+  },
+  "epl": {
+    "casual_big_v1": {
+      "sessions": 183,
+      "bets": 183,
+      "won_pct": 0.8469945355191257,
+      "final": 455.11,
+      "peak": 6778.2
+    },
+    "casual_many_v1": {
+      "sessions": 183,
+      "bets": 235,
+      "won_pct": 0.851063829787234,
+      "final": 435.45,
+      "peak": 6580.78
+    },
+    "smart_casual_v1": {
+      "sessions": 17,
+      "bets": 20,
+      "won_pct": 1.0,
+      "final": 12155.64,
+      "peak": 12155.64
+    }
   }
 }

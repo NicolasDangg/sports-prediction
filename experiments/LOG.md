@@ -5,10 +5,17 @@ The test years are a limited budget: each experiment that looks at them adds to 
 If the counter climbs fast, results on the test years stop being trustworthy (see docs/REFERENCE.md §7).
 
 **Test-set looks used: 5** (3 experiments: E001, E002, E011 + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
-**Live strategies:** `elo_v0` (control, since 2026-10-06) · `news_v1` (ATP only, from the 2026-10-08 run, E007) · `sharp_v1` (EPL + ATP, from the 2026-10-08 run, E012) · `casual_big_v1` / `casual_many_v1` (comparison wallets, Saturday sessions, E013)
+**Live strategies:** `elo_v0` (control, since 2026-10-06) · `news_v1` (ATP only, from the 2026-10-08 run, E007) · `sharp_v1` (EPL + ATP, from the 2026-10-08 run, E012) · `casual_big_v1` / `casual_many_v1` (comparison wallets, Saturday sessions, E013) · `smart_casual_v1` (E014)
 **Next up:** E010 favourite–longshot bias in qualifying/challenger markets (E009 ratings now cover those players); E007/E008 collecting live data
 
 ---
+
+## E014 · 2026-10-07 · Smart casual (`smart_casual_v1`): weekly 80%+ favourites, only above Pinnacle's fair price · live
+- **Report:** owner follow-up to E013.
+- **Rule:** `strategies.casual_session(..., smart=True)`: Saturday session; outcomes with Pinnacle no-vig p ≥ 80% (no Pinnacle price → skipped) **and** best bookmaker price × p > 1; 25% of the wallet split equally over up to 20, bet at the best price (`price` key, exchanges excluded). Fresh $5,000 wallets per sport. Session strategies now honour the optional `price` key.
+- **EPL replay 2012/13–now** (`uv run python -W ignore experiments/e013_casual.py --epl`): casual_big_v1 183 bets, won 84.7%, $5,000 → $455 (peak $6,778); casual_many_v1 235 bets, won 85.1% → $435; **smart_casual_v1 20 bets in 17 sessions, won 100% → $12,156**.
+- **Reading it:** the direction matches E011 (prices above Pinnacle's fair line are worth taking), but 20 bets is anecdote: winning 20/20 at ~85% each has ~4% probability, so most of that gain is luck. It also bets rarely (~2 EPL sessions a season); tennis should give more chances. Today's quotes: 1 ATP favourite ≥ 80%, best price below fair → no bet.
+- **Decision:** live comparison wallet next to E013's. Look again after 100 settled bets, judged on "Beat Pinnacle's close" as well as P&L vs `casual_many_v1`.
 
 ## E013 · 2026-10-07 · The casual "safe bets" bettor (`casual_big_v1`, `casual_many_v1`) · comparison wallets, live
 - **Report:** owner question: a wallet for someone who bets only now and then, on very likely winners, one big bet or many small ones, "to get money".

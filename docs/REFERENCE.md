@@ -114,11 +114,13 @@ STRATEGIES = {
                  "needs_model": False},
     "casual_big_v1": {"session": lambda w, cash, now: strategies.casual_session(w, cash, now, max_picks=1)},
     "casual_many_v1": {"session": lambda w, cash, now: strategies.casual_session(w, cash, now, max_picks=20)},
+    "smart_casual_v1": {"session": lambda w, cash, now: strategies.casual_session(w, cash, now, max_picks=20, smart=True),
+                        "price": strategies.best_price},
 }
 ```
 - Optional `"sports"`: only those sports get a wallet and bets (default both). `news_v1` is ATP only.
 - Optional `"price"`: `row -> (odds, book, quote time)` to bet at (default: the typical quote `odds`/`exec_book`/`quote_at`). Optional `"needs_model"` (default True): when False the strategy may bet rows with `eligible=False` (unknown or stale players), e.g. `sharp_v1`, which doesn't use our ratings.
-- Optional `"session"`: `(window, cash, now) -> [(row index, p, stake)]` picks the day's bets across all matches in the window instead of the per-match edge rule (no `prob`/`min_edge`); at most one session per wallet per Saigon day. Used by the E013 casual wallets (Saturday only, 25% of the wallet on 80%+ favourites).
+- Optional `"session"`: `(window, cash, now) -> [(row index, p, stake)]` picks the day's bets across all matches in the window instead of the per-match edge rule (no `prob`/`min_edge`); at most one session per wallet per Saigon day. Used by the E013 casual wallets (Saturday only, 25% of the wallet on 80%+ favourites) and E014 `smart_casual_v1` (same, but only favourites whose best price beats Pinnacle's fair price; honours `price`).
 - Each strategy gets one wallet per sport (`epl:<name>`, `atp:<name>`), opened with **$5,000** (or the strategy's `start_bankroll`) and created automatically on the next run. The opening amount is recorded in `deposits.csv`.
 - **Money in is tracked separately from betting.** Profit = bankroll − total deposited, so a refill never looks like a win. Stakes are a percentage of the bankroll, so a bigger wallet doesn't change percentage results; it just stays above the $1 minimum stake longer.
 - **Refills:** `uv run python accounts.py refill <wallet> [--to 5000] --reason "..."` tops the bankroll (cash + open bets) back up. `deposit` adds a fixed amount. When a new version ships, the owner chooses whether to refill the older wallets (see the `refine-strategy` skill).

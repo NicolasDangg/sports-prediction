@@ -73,14 +73,20 @@ def win_chance(row) -> float:
     return p if p > 0 else float(row.get("market_p") or 0)
 
 
-def casual_session(window: pd.DataFrame, cash: float, now: pd.Timestamp, max_picks: int) -> list[tuple[int, float, float]]:
+def casual_session(window: pd.DataFrame, cash: float, now: pd.Timestamp, max_picks: int,
+                   smart: bool = False) -> list[tuple[int, float, float]]:
     """E013: once a week, put CASUAL_POT of the wallet on the likeliest winners (>= CASUAL_MIN_P),
     split equally over up to max_picks matches (1 = one big bet). Returns [(row index, p, stake)].
-    Example: $5,000 wallet, many-version, 10 qualifying favourites -> $125 on each."""
+    Example: $5,000 wallet, many-version, 10 qualifying favourites -> $125 on each.
+    smart=True (E014, smart_casual_v1): only favourites Pinnacle priced, and only where the best bookmaker
+    price pays more than Pinnacle's fair price (sharp_v1's idea), e.g. fair 1.12, best 1.15 -> +2.7%."""
     if now.tz_convert(CASUAL_TZ).dayofweek != CASUAL_WEEKDAY or window.empty:
         return []
-    p = window.apply(win_chance, axis=1)
-    cand = window.assign(p=p)[p >= CASUAL_MIN_P]
+    p = window.apply(sharp_prob if smart else win_chance, axis=1)
+    keep = p >= CASUAL_MIN_P
+    if smart:
+        keep &= window.apply(lambda r: best_price(r)[0], axis=1) * p > 1
+    cand = window.assign(p=p)[keep]
     if cand.empty:
         return []
     best = cand.sort_values("p", ascending=False).drop_duplicates("event_id").head(max_picks)

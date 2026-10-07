@@ -85,6 +85,10 @@ STRATEGIES = {
     # at the typical price: one big bet, or split over up to 20. A realistic comparison, not an edge.
     "casual_big_v1": {"session": lambda w, cash, now: strategies.casual_session(w, cash, now, max_picks=1)},
     "casual_many_v1": {"session": lambda w, cash, now: strategies.casual_session(w, cash, now, max_picks=20)},
+    # E014: the same weekly session, but only favourites where some bookmaker pays more than Pinnacle's
+    # fair price, bet at that best price (E013 + sharp_v1).
+    "smart_casual_v1": {"session": lambda w, cash, now: strategies.casual_session(w, cash, now, max_picks=20, smart=True),
+                        "price": strategies.best_price},
 }
 SPORTS = ("epl", "atp")
 
@@ -425,18 +429,20 @@ def place_bets(preds: pd.DataFrame, ledger: pd.DataFrame, wallets: dict, now: pd
             if (placed.dt.tz_convert(strategies.CASUAL_TZ).dt.date == today).any() or any(b["wallet"] == wallet_name for b in new):
                 continue  # one session per day, even if the job is re-run
             rows = window[(window.sport == sport) & ~(window.event_id + f":{name}").isin(existing)]
+            price = strat.get("price", default_price)
             for i, p, stake in strat["session"](rows, wallets[wallet_name]["cash"], now):
                 r = window.loc[i]
+                odds, book, quote_at = price(r)
                 wallets[wallet_name]["cash"] -= stake
                 new.append({"bet_id": f"{r.event_id}:{name}", "wallet": wallet_name, "sport": sport, "strategy": name,
                             "placed_at": now.isoformat(), "commence_time": r.commence_time,
                             "sport_key": r.sport_key, "event_id": r.event_id, "competition": r.competition,
                             "match": r.match, "pick": r.outcome, "model_p": round(p, 4), "market_p": r.market_p,
-                            "odds": float(r.odds), "n_books": r.n_books, "stake": stake, "status": "open",
+                            "odds": float(odds), "n_books": r.n_books, "stake": stake, "status": "open",
                             "result": "", "pnl": 0.0, "settled_at": "",
-                            "exec_book": r.get("exec_book", ""), "quote_at": r.get("quote_at", ""),
+                            "exec_book": book, "quote_at": quote_at,
                             "median_odds": r.get("median_odds", np.nan), "result_source": ""})
-                log.append(f"BET  {wallet_name} {r.match}: {r.outcome} @ {r.odds} ({r.get('exec_book', '?')}) "
+                log.append(f"BET  {wallet_name} {r.match}: {r.outcome} @ {odds} ({book or '?'}) "
                            f"stake ${stake:.2f} (weekly session, {p:.0%} to win)")
     if new:
         ledger = pd.concat([ledger, pd.DataFrame(new)], ignore_index=True)

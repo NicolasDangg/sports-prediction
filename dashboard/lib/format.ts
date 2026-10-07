@@ -28,7 +28,7 @@ export const strategyOf = (wallet: string) => wallet.split(":")[1] ?? wallet;
 
 /** Line pattern per strategy (wallets in one sport share a colour): the control is solid. */
 const DASHES: Record<string, string | undefined> = {
-  elo_v0: undefined, news_v1: "7 5", sharp_v1: "1 5", casual_big_v1: "14 5", casual_many_v1: "10 4 1 4",
+  elo_v0: undefined, news_v1: "7 5", sharp_v1: "1 5", casual_big_v1: "14 5", casual_many_v1: "10 4 1 4", smart_casual_v1: "3 3",
 };
 export const strategyDash = (strategy: string) =>
   strategy in DASHES ? DASHES[strategy] : "12 4 2 4";
@@ -40,6 +40,7 @@ export const STRATEGY_BLURB: Record<string, string> = {
   sharp_v1: "No model: Pinnacle's fair price vs the best bookmaker price.",
   casual_big_v1: "Once a week, 25% of the wallet on the single likeliest winner.",
   casual_many_v1: "Once a week, 25% of the wallet split over every 80%+ favourite.",
+  smart_casual_v1: "casual_many_v1, but only favourites priced above Pinnacle's fair odds.",
 };
 
 /** URL slug for a team/player page: "Man United" -> "man-united", "Sinner J." -> "sinner-j" */

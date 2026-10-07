@@ -66,3 +66,47 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+# ---- E014: smart casual vs casual on EPL (football-data has Pinnacle AND the other books' prices)
+def epl_replay() -> dict:
+    """Same weekly session on EPL 2012/13-now: casual = typical price (market average), any 80%+
+    outcome; smart = only outcomes whose best mainstream price beats Pinnacle's fair price."""
+    import sys
+    sys.path.insert(0, str(ROOT / "experiments"))
+    sys.path.insert(0, str(ROOT))
+    from e011_sharp_vs_soft import OUT, prepare  # noqa: E402
+
+    df = prepare()
+    avg = {"H": ("AvgH", "BbAvH"), "D": ("AvgD", "BbAvD"), "A": ("AvgA", "BbAvA")}
+    rows = []
+    for o in OUT:
+        typ = df[avg[o][0]].astype(float) if avg[o][0] in df else np.nan
+        if avg[o][1] in df:
+            typ = typ.fillna(df[avg[o][1]].astype(float)) if isinstance(typ, pd.Series) else df[avg[o][1]].astype(float)
+        rows.append(pd.DataFrame({"date": df.date, "event": df.index, "p": df[f"fair_{o}"], "typical": typ,
+                                  "best": df[f"soft_{o}"], "won": df.result == o}))
+    x = pd.concat(rows)
+    x = x[x.p >= MIN_P]
+    x["week"] = x.date.dt.to_period("W")
+    out = {}
+    for name, pick, price in (("casual_big_v1", 1, "typical"), ("casual_many_v1", 20, "typical"),
+                              ("smart_casual_v1", 20, "best")):
+        y = x[x.best * x.p > 1] if name.startswith("smart") else x
+        bank, n, won, peak = START, 0, 0, START
+        for _, g in y.groupby("week"):
+            g = g.nlargest(pick, "p")
+            stake = bank * POT / len(g)
+            bank += float(np.where(g.won, stake * (g[price] - 1), -stake).sum())
+            n, won, peak = n + len(g), won + int(g.won.sum()), max(peak, bank)
+        out[name] = {"sessions": int(y.week.nunique()), "bets": n, "won_pct": won / n if n else None,
+                     "final": round(bank, 2), "peak": round(peak, 2)}
+        print(f"EPL {name}: {out[name]['sessions']} sessions, {n} bets, won {won / max(n, 1):.1%}, "
+              f"${START:,.0f} -> ${bank:,.0f} (peak ${peak:,.0f})")
+    return out
+
+
+if __name__ == "__main__" and "--epl" in __import__("sys").argv:
+    r = json.loads((ROOT / "results/e013_casual.json").read_text())
+    r["epl"] = epl_replay()
+    (ROOT / "results/e013_casual.json").write_text(json.dumps(r, indent=2))

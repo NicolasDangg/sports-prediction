@@ -9,6 +9,45 @@
   },
   "experiments": [
     {
+      "id": "E014",
+      "date": "2026-10-07",
+      "title": "Smart casual: weekly favourites, only when a bookmaker beats Pinnacle's fair price",
+      "status": "live",
+      "kind": "strategy",
+      "sport": "both",
+      "strategy": "smart_casual_v1",
+      "hypothesis": "E013's casual bettor loses the bookmaker's margin on every bet. Keeping the same weekly 80%+ favourites but only taking ones where some bookmaker pays more than Pinnacle's fair price (sharp_v1's idea) should turn a slow loss into a small positive expectation, at the cost of skipping many weeks.",
+      "change": "smart_casual_v1: Saturday session, outcomes with Pinnacle fair p ≥ 80% AND best bookmaker price × p > 1, 25% of the wallet split over up to 20, bet at the best price (exchanges excluded). Fresh $5,000 wallets per sport.",
+      "protocol": "No tuning, no test-year look. EPL replay 2012/13–now (football-data: Pinnacle + mainstream books); tennis history has only one price, so live only there.",
+      "script": "experiments/e013_casual.py",
+      "results_file": "results/e013_casual.json",
+      "test_look": false,
+      "progress": {
+        "metric": "settled bets",
+        "target": 100,
+        "source": "bets"
+      },
+      "rules": [
+        {
+          "text": "EPL replay: smart_casual_v1 20 bets in 17 weekly sessions, won 100%, $5,000 → $12,156. Luck-heavy: 20/20 at ~85% each happens ~4% of the time",
+          "passed": null
+        },
+        {
+          "text": "Same years, casual_many_v1: 235 bets, won 85%, $5,000 → $435; casual_big_v1 → $455",
+          "passed": null
+        },
+        {
+          "text": "Live: compare with casual_many_v1 after 100 settled bets; judged like sharp_v1 on 'Beat Pinnacle's close'",
+          "passed": null
+        }
+      ],
+      "depends_on": [
+        "E013",
+        "E012"
+      ],
+      "followups": []
+    },
+    {
       "id": "E013",
       "date": "2026-10-07",
       "title": "The casual “safe bets” bettor: weekly sessions on 80%+ favourites",
@@ -71,7 +110,7 @@
       ],
       "depends_on": [],
       "followups": [
-        "“Smart casual”: same weekly session but only favourites where the best price beats Pinnacle's fair price (sharp_v1's rule)"
+        "E014 smart casual (live)"
       ]
     },
     {
