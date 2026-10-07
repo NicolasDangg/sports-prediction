@@ -11,5 +11,6 @@ dependencies = [
 
 [dependency-groups]
 experiments = [
+    "lxml>=6.1.3",
     "xgboost>=3.4.1",
 ]

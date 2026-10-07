@@ -10,6 +10,13 @@ If the counter climbs fast, results on the test years stop being trustworthy (se
 
 ---
 
+## I002 · 2026-10-07 · Hand-downloaded tennisdata.app CSVs + tennisabstract Elo page (data check, not a strategy)
+- **Files:** `data/retrieved_tennis_data/` (owner download, not committed): tennisdata.app ATP seasons 2021–2026 (79k finished matches: 24k ATP Tour incl. qualifying, 55k Challenger; one match-winner price per side, first-set odds, % serve stats) and tennisabstract's ATP Elo report (as of 2026-09-28). Script: `experiments/i002_external_sources.py`.
+- **1. Odds timing:** on 13,854 ATP matches joined to Kaggle, tennisdata.app's price is the same as Kaggle's (corr 0.9985, mean |Δp| 0.001, margin 5.26% both, log loss 0.5872 vs 0.5874). **No timing information**; E008 still relies on our own snapshots.
+- **2. Lower-tier markets (market-only, no model, no test-set look):** bookmaker log loss / margin / favourites' actual − implied win rate: ATP main 0.589 / 5.3% / +0.2 pts · ATP qualifying 0.597 / 6.5% / +1.1 · Challenger main 0.618 / 7.2% / +0.6 · Challenger qualifying 0.548 / 7.3% / +1.7. Higher margins below the main tour, prices still calibrated; a small favourite–longshot bias that grows in qualifying, smaller than the margin.
+- **3. Our Elo vs tennisabstract:** rank correlation 0.81 on their top 100. Our top players sit higher than theirs (Alcaraz +183, Sinner +162 after rescaling), and low-level players are rated too high too (Mmoh, Torres, Bailly: we start everyone at 1500 and only see main-tour matches). We overrate long-absent players (Draper +201, Djokovic, Dimitrov, Nishikori) and underrate challenger risers (Toby Samuel −171).
+- **Leads (each would be its own experiment):** (a) Elo rebuilt on TennisMyLife incl. challengers + qualifying, with an inactivity adjustment; (b) favourite–longshot bias in qualifying/challenger markets, with a model that can price those matches; (c) tennisdata.app gives 2021–2026 challenger odds for backtesting (b).
+
 ## E008 · 2026-10-07 · Timing and closing line value from our own odds snapshots · PRE-REGISTERED, collecting data
 - **Why:** E004–E006 showed better models from public data don't beat the odds. If an edge exists it's in timing: early prices may be softer than closing ones.
 - **Setup:** every odds response is saved (`snapshots.py` → `state/odds_snapshots.csv`); extra ATP snapshots at 06:00 and 12:00 UTC on the free plan with a credit guard. Closing = last snapshot ≤ 180 min before the start.

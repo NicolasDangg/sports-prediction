@@ -68,7 +68,8 @@ feeds decisions, the news label, is made by a fixed prompt in `news.py` and logg
 | TennisMyLife `stats.tennismylife.org/data/` | Same match format as Sackmann with serve/return stats, 1968–today incl. tournaments in progress; main tour, challengers, qualifying | Official CSV downloads (robots.txt allows `/data/`). Opt-in for now: `uv run python fetch_data.py tml` → `data/tml/`. Matches Sackmann on 94% of joined 2019 matches. The way to run an E006-style model live |
 | Google News RSS | Recent headlines per player (`news.py`) | Free, no key. Untrusted text: only ever labelled by the LLM into a fixed set |
 | OpenRouter | LLM that labels the headlines | `OPENROUTER_API_KEY`; default model `anthropic/claude-haiku-4.5` (`OPENROUTER_MODEL`) |
-| tennisabstract.com, tennisdata.app | — | Not used: tennisabstract's robots.txt disallows its match-data paths; tennisdata.app is behind a bot challenge |
+| tennisdata.app (owner download) | ATP Tour + Challenger + qualifying 2021–2026: results, one match-winner price per side (same as Kaggle's), first-set odds, % serve stats | Hand-downloaded into `data/retrieved_tennis_data/`, not committed; not fetched automatically (bot challenge). Its value: **challenger/qualifying odds** for backtests (I002) |
+| tennisabstract.com Elo report (owner download) | Weekly ATP Elo (overall + per surface) | Saved page in `data/retrieved_tennis_data/`; benchmark for our ratings (I002). Match-data paths are disallowed by its robots.txt, so nothing else is taken |
 | Jeff Sackmann `tennis_atp` (public mirror, pinned commit) | Point-level serve/return stats, 2008–2024, main tour + qualifying/challenger | Experiments only, opt-in: `uv run python fetch_data.py sackmann` → `data/sackmann/`. Original repo taken down in 2026; ends 2024, so not usable live |
 
 ## 4. The models
