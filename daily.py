@@ -270,6 +270,23 @@ def predict_epl(api: OddsAPI, now: pd.Timestamp) -> list[dict]:
     return rows
 
 
+def lower_level_players(tml_matches: pd.DataFrame) -> dict[str, int]:
+    """TML full names with challenger/qualifying matches but none on the main tour, with their match count.
+    Our Elo history is main-tour only, so these players resolve as "unknown" although the name is right."""
+    both = pd.concat([tml_matches[["winner_name", "level"]].set_axis(["p", "level"], axis=1),
+                      tml_matches[["loser_name", "level"]].set_axis(["p", "level"], axis=1)])
+    main = set(both.p[both.level == "main"])
+    counts = both.p[~both.p.isin(main)].value_counts()
+    return {str(k): int(v) for k, v in counts.items()}
+
+
+def unresolved_line(r, lower_only: dict[str, int]) -> str:
+    """One warning per unresolved player. NO RATING = right name, no main-tour history: an alias can't help."""
+    if r.status == "unknown" and r.api_name in lower_only:
+        return f"NO RATING {r.api_name} ({lower_only[r.api_name]} challenger/qualifying matches, no main-tour history)"
+    return f"IDENTITY {r.api_name} ({r.status}{': ' + ', '.join(r.candidates) if r.candidates else ''})"
+
+
 def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[list[dict], int, list[str]]:
     df = bt.load_atp(ATP_RECENT)
     profiles = player_profiles(df)
@@ -300,6 +317,7 @@ def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[lis
                       for srf in ["Hard", "Clay", "Grass"]}})
      .sort_values("elo", ascending=False).head(200).round(1).to_csv(STATE / "atp_ratings.csv", index=False))
 
+    lower_only = lower_level_players(forecaster.s) if forecaster else {}
     rows, unresolved, book_rows = [], [], []
     for s in sports:
         best_of = 5 if any(g in s["title"] for g in GRAND_SLAMS) else 3
@@ -312,8 +330,7 @@ def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[lis
             a, b = (tennis_player(x, profiles, since, aliases) for x in (e["home_team"], e["away_team"]))
             ok = a.ok and b.ok
             if not ok:
-                unresolved += [f"{r.api_name} ({r.status}{': ' + ', '.join(r.candidates) if r.candidates else ''})"
-                               for r in (a, b) if not r.ok]
+                unresolved += [unresolved_line(r, lower_only) for r in (a, b) if not r.ok]
             p = elo.prob(a.name, b.name, surface) if ok else None
             # Known player, old rating: forecast it, but don't bet on it.
             note = "; ".join(f"{n}: {stale[n]}" for n in (a.name, b.name) if n in stale) if ok else ""
@@ -330,7 +347,7 @@ def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[lis
     # Every book's price, not just the summary: the dashboard's match pages show the full board.
     pd.DataFrame(book_rows, columns=QUOTE_COLS).to_csv(STATE / "atp_quotes.csv", index=False)
     if skipped:
-        unresolved += [f"result not stored: {x}" for x in skipped]
+        unresolved += [f"IDENTITY result not stored: {x}" for x in skipped]
     return rows, added, unresolved
 
 
@@ -485,7 +502,10 @@ def main(api: OddsAPI | None = None, now: pd.Timestamp | None = None, download: 
     print(f"  {n_events} upcoming matches priced ({n_blocked} not bettable: identity not trusted or rating stale); "
           f"{added} new ATP results recorded")
     for u in dict.fromkeys(unresolved):
-        print(f"  IDENTITY {u}  -> fix with a line in aliases.csv if this is a real player")
+        if u.startswith("NO RATING"):
+            print(f"  {u}  -> not bettable until they play the main tour (nothing to fix; an alias would not help)")
+        else:
+            print(f"  {u}  -> fix with a line in aliases.csv if this is a real player")
     notes = preds.rating_note.dropna() if "rating_note" in preds.columns else pd.Series(dtype=str)
     for n in dict.fromkeys(x for x in notes if x):
         print(f"  STALE {n}  -> forecast only, no bet until the rating catches up (nothing to fix)")
