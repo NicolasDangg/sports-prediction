@@ -311,3 +311,59 @@ at,source,sport,sport_key,event_id,commence_time,outcome,median_odds,pinnacle_od
 2026-10-07T23:29:54+00:00,daily,atp,tennis_atp_shanghai_masters,6f099b10621643e85800f00fb324d82c,2026-10-09T04:00:00Z,Miomir Kecmanovic,3.4,3.47,3.75,15
 2026-10-07T23:29:54+00:00,daily,atp,tennis_atp_shanghai_masters,28d2881b2a6fd12a3dd67402513f1793,2026-10-09T04:00:00Z,Lorenzo Musetti,1.17,1.19,1.2,13
 2026-10-07T23:29:54+00:00,daily,atp,tennis_atp_shanghai_masters,28d2881b2a6fd12a3dd67402513f1793,2026-10-09T04:00:00Z,Yi Zhou,5.12,5.21,5.4,13
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,56cdd8c0fca7ffb399f13d3e090c9dc1,2026-10-08T04:08:00Z,Camilo Ugo Carabelli,2.5,1.19,3.0,13
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,56cdd8c0fca7ffb399f13d3e090c9dc1,2026-10-08T04:08:00Z,Ilia Simakin,1.46,5.63,5.63,13
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,2ba2d49f6e9fb8fc7d0417ca0b590f77,2026-10-08T05:44:00Z,Hubert Hurkacz,1.12,1.12,1.14,15
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,2ba2d49f6e9fb8fc7d0417ca0b590f77,2026-10-08T05:44:00Z,James Duckworth,5.6,8.1,8.6,15
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,178d12455d95a9b449d926abe4656de0,2026-10-08T05:58:59Z,Bernard Tomic,2.75,3.15,3.4,13
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,178d12455d95a9b449d926abe4656de0,2026-10-08T05:58:59Z,Matteo Arnaldi,1.4,1.4,1.45,13
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,fd28d05a1e60816704c0dc6a7eb12b72,2026-10-08T06:02:00Z,Hamad Medjedovic,1.93,2.21,2.4,16
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,fd28d05a1e60816704c0dc6a7eb12b72,2026-10-08T06:02:00Z,Thiago Agustin Tirante,1.79,1.71,1.9,16
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,7aa5316e991e75b643af8f08eef61311,2026-10-08T06:24:00Z,Mariano Navone,1.65,1.68,1.69,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,7aa5316e991e75b643af8f08eef61311,2026-10-08T06:24:00Z,Pablo Carreno Busta,2.2,2.31,2.42,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,791964bea0ff62114832d025fcec6b9d,2026-10-08T06:30:00Z,Adolfo Daniel Vallejo,1.755,1.78,1.82,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,791964bea0ff62114832d025fcec6b9d,2026-10-08T06:30:00Z,Valentin Royer,2.08,2.15,2.2,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,469d64661302be8270a740c26c2307d4,2026-10-08T07:00:00Z,Marcos Giron,2.1,2.12,2.14,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,469d64661302be8270a740c26c2307d4,2026-10-08T07:00:00Z,Sebastian Baez,1.75,1.79,1.86,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,6330b92e3c299cc0b3db77e4e0a4b83c,2026-10-08T07:10:00Z,Fabian Marozsan,1.74,1.73,1.81,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,6330b92e3c299cc0b3db77e4e0a4b83c,2026-10-08T07:10:00Z,Zachary Svajda,2.1,2.22,2.28,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,4ed151cdcdb29939aae76add155bbc56,2026-10-08T07:20:00Z,Jan-Lennard Struff,1.91,1.94,1.99,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,4ed151cdcdb29939aae76add155bbc56,2026-10-08T07:20:00Z,Martin Landaluce,1.9,1.94,2.02,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,42be07567c4f51b78a693eb640738bc5,2026-10-08T07:40:00Z,Juan Manuel Cerundolo,1.46,1.46,1.49,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,42be07567c4f51b78a693eb640738bc5,2026-10-08T07:40:00Z,Nicolas Mejia,2.75,2.9,3.0,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,790f5e853b0ee965cff9ae0f2521a4a4,2026-10-08T08:10:00Z,Botic van de Zandschulp,1.92,1.93,2.0,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,790f5e853b0ee965cff9ae0f2521a4a4,2026-10-08T08:10:00Z,Daniel Merida Aguilar,1.9,1.96,1.98,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,df1352ed67512cd95822357e152abc7c,2026-10-08T08:30:00Z,Vit Kopriva,3.19,3.3,3.5,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,df1352ed67512cd95822357e152abc7c,2026-10-08T08:30:00Z,Zizou Bergs,1.36,1.38,1.39,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,e239b6153731e9f0b84f346eb587f9f7,2026-10-08T10:00:00Z,Bu Yunchaokete,1.65,1.69,1.71,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,e239b6153731e9f0b84f346eb587f9f7,2026-10-08T10:00:00Z,Luca Van Assche,2.27,2.28,2.38,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,e4ee78c7ad5031e88f5b5c2cc49f68cb,2026-10-08T11:10:00Z,Cameron Norrie,1.525,1.52,1.56,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,e4ee78c7ad5031e88f5b5c2cc49f68cb,2026-10-08T11:10:00Z,Dalibor Svrcina,2.55,2.71,2.78,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,f9f1baac19e915d28a83329e53af0ac8,2026-10-09T04:00:00Z,Adrian Mannarino,2.7,2.78,2.81,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,f9f1baac19e915d28a83329e53af0ac8,2026-10-09T04:00:00Z,Flavio Cobolli,1.47,1.48,1.54,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,7fa3afd6824f6f399b190a8b95e17b57,2026-10-09T04:00:00Z,Alex de Minaur,1.29,1.3,1.31,18
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,7fa3afd6824f6f399b190a8b95e17b57,2026-10-09T04:00:00Z,Alex Molcan,3.695,3.8,3.86,18
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,4e2c5a5395b42d51415ecd6dcbb351fa,2026-10-09T04:00:00Z,Alexander Blockx,1.7,1.74,1.74,17
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,4e2c5a5395b42d51415ecd6dcbb351fa,2026-10-09T04:00:00Z,Quentin Halys,2.2,2.21,2.25,17
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,7a32c48cac88a3d55ff9303c25cb94f2,2026-10-09T04:00:00Z,Alexander Bublik,1.56,1.56,1.58,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,7a32c48cac88a3d55ff9303c25cb94f2,2026-10-09T04:00:00Z,Tomas Machac,2.465,2.58,2.6,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,9e9da1a2604439de365a38815946c567,2026-10-09T04:00:00Z,Alexander Zverev,1.09,1.09,1.12,18
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,9e9da1a2604439de365a38815946c567,2026-10-09T04:00:00Z,Wu Yibing,7.5,8.18,8.18,18
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,09f619967e342f686cf7f54e12a2c3b8,2026-10-09T04:00:00Z,Andrey Rublev,1.36,1.38,1.38,17
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,09f619967e342f686cf7f54e12a2c3b8,2026-10-09T04:00:00Z,Rei Sakamoto,3.2,3.21,3.4,17
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,bd351fd9f9a56cd0cc2878d9ec9cda89,2026-10-09T04:00:00Z,Arthur Fery,3.1,,3.19,14
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,bd351fd9f9a56cd0cc2878d9ec9cda89,2026-10-09T04:00:00Z,Karen Khachanov,1.36,,1.38,14
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,eb1e0b228ed44a2ea7cd0398f92f30f5,2026-10-09T04:00:00Z,Arthur Gea,1.755,1.83,1.83,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,eb1e0b228ed44a2ea7cd0398f92f30f5,2026-10-09T04:00:00Z,Ugo Humbert,2.08,2.08,2.12,20
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,1c50f0f54375e316e823480ca6ccf537,2026-10-09T04:00:00Z,Ben Shelton,1.08,,1.13,15
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,1c50f0f54375e316e823480ca6ccf537,2026-10-09T04:00:00Z,Daniel Altmaier,6.75,,7.5,15
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,42f0f2c2a0b4f7cf927b8b00a6089279,2026-10-09T04:00:00Z,Brandon Nakashima,1.63,1.68,1.7,19
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,42f0f2c2a0b4f7cf927b8b00a6089279,2026-10-09T04:00:00Z,Matteo Berrettini,2.3,2.3,2.36,19
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,39b35a80c6dcdf3022287f85ce86188f,2026-10-09T04:00:00Z,Frances Tiafoe,1.4,1.42,1.42,17
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,39b35a80c6dcdf3022287f85ce86188f,2026-10-09T04:00:00Z,Yannick Hanfmann,3.01,3.08,3.2,17
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,9195be0514275073aba14213083da83a,2026-10-09T04:00:00Z,Francisco Cerundolo,1.95,1.98,2.0,17
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,9195be0514275073aba14213083da83a,2026-10-09T04:00:00Z,Roman Safiullin,1.85,1.91,1.93,17
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,6f099b10621643e85800f00fb324d82c,2026-10-09T04:00:00Z,Jakub Mensik,1.34,1.36,1.36,19
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,6f099b10621643e85800f00fb324d82c,2026-10-09T04:00:00Z,Miomir Kecmanovic,3.3,3.42,3.55,19
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,28d2881b2a6fd12a3dd67402513f1793,2026-10-09T04:00:00Z,Lorenzo Musetti,1.19,1.21,1.23,16
+2026-10-08T06:19:00+00:00,snapshot,atp,tennis_atp_shanghai_masters,28d2881b2a6fd12a3dd67402513f1793,2026-10-09T04:00:00Z,Yi Zhou,4.895,4.89,5.3,16
