@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { ArrowRight, CheckCircle, Clock, Lightning, XCircle } from "@phosphor-icons/react/ssr";
+import type { ReactNode } from "react";
+import { ArrowRight, CaretDown, CheckCircle, Clock, Lightning, XCircle } from "@phosphor-icons/react/ssr";
 import BankrollChart from "@/components/BankrollChart";
 import Reveal from "@/components/Reveal";
 import ProfitTrend from "@/components/ProfitTrend";
@@ -53,42 +54,53 @@ export default function Overview() {
           </Card>
         </Reveal>
 
-        {/* Wallets */}
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:col-span-5 lg:grid-cols-1 lg:gap-5">
-          {wallets.map((w, i) => {
-            const sport = sportOf(w.wallet);
-            return (
-              <Reveal key={w.wallet} i={i + 1}>
-                <Card as="article" className="h-full">
-                  <div className="flex items-center justify-between">
-                    <SportTag sport={sport} />
-                    <span className="font-mono text-[11px] text-ink-3">{strategyOf(w.wallet)}</span>
-                  </div>
-                  <p className="mt-4 text-[28px] font-semibold leading-none tracking-tight text-ink tabular">{money(w.bankroll)}</p>
-                  <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-[12px] text-ink-3">
-                    <Delta value={w.net ?? w.bankroll - 1000}>{money(w.net ?? w.bankroll - 1000, { sign: true })}</Delta>
-                    <span>{w.bets_settled} settled</span>
-                    <span>{w.bets_open} open</span>
-                    {w.bets_settled > 0 && <span>ROI {pct(w.roi, true)}</span>}
-                  </div>
-                  <ExposureBar cash={w.cash} open={w.open_stakes} sport={sport} />
-                </Card>
-              </Reveal>
-            );
-          })}
-        </div>
+        {/* Wallets: one row each, details on click. On desktop the hero sets the row height and this list scrolls inside it. */}
+        <Reveal i={1} className="lg:relative lg:col-span-5">
+          <Card className="flex flex-col lg:absolute lg:inset-0 lg:overflow-hidden">
+            <CardHeader title="Wallets" hint={`${wallets.length} strategies · click one for details`} />
+            <ul className="-mx-3 -mb-3 min-h-0 flex-1 space-y-1 overflow-y-auto px-3 pb-3">
+              {wallets.map((w) => {
+                const sport = sportOf(w.wallet);
+                const net = w.net ?? w.bankroll - 1000;
+                return (
+                  <li key={w.wallet}>
+                    <details name="wallet" className="group rounded-2xl ring-1 ring-transparent transition-[background-color,box-shadow] duration-150 ease-[cubic-bezier(0.2,0,0,1)] open:bg-sunken/60 open:ring-line/70">
+                      <summary className="flex min-h-12 cursor-pointer list-none items-center gap-3 rounded-2xl px-3 py-2.5 transition-[background-color] duration-150 ease-[cubic-bezier(0.2,0,0,1)] hover:bg-sunken/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ink [&::-webkit-details-marker]:hidden">
+                        <SportTag sport={sport} />
+                        <span className="min-w-0 flex-1 truncate font-mono text-[12px] text-ink-2">{strategyOf(w.wallet)}</span>
+                        <span className="text-right">
+                          <span className="block text-[14px] font-semibold leading-tight text-ink tabular">{money(w.bankroll)}</span>
+                          <Delta value={net} className="text-[11px]">{money(net, { sign: true })}</Delta>
+                        </span>
+                        <CaretDown size={14} className="shrink-0 text-ink-3 transition-[rotate] duration-150 ease-[cubic-bezier(0.2,0,0,1)] group-open:rotate-180" aria-hidden />
+                      </summary>
+                      <div className="px-3 pb-3.5">
+                        <div className="grid grid-cols-3 gap-3 border-t border-line-soft pt-3">
+                          <MiniStat label="Settled" value={w.bets_settled} />
+                          <MiniStat label="Open" value={w.bets_open} />
+                          <MiniStat label="ROI" value={w.bets_settled > 0 ? pct(w.roi, true) : "—"} />
+                        </div>
+                        <ExposureBar cash={w.cash} open={w.open_stakes} sport={sport} />
+                      </div>
+                    </details>
+                  </li>
+                );
+              })}
+            </ul>
+          </Card>
+        </Reveal>
 
         {/* Live chart */}
-        <Reveal i={3} className="lg:col-span-8">
+        <Reveal i={2} className="lg:col-span-8">
           <Card className="h-full">
             <CardHeader title="Live profit" hint="Bankroll minus money deposited, one point per morning run. Bets use real quotes from before each match, so this line cannot be tuned after the fact."
-                        action={<Link href="/strategies" className="inline-flex min-h-9 shrink-0 items-center gap-1 rounded-full px-3 text-[13px] font-medium text-ink-2 ring-1 ring-line transition-colors hover:bg-sunken active:scale-[0.98]">Compare <ArrowRight size={14} aria-hidden /></Link>} />
+                        action={<PillLink href="/strategies">Compare</PillLink>} />
             <BankrollChart series={series} height={260} start={0} startLabel="Break-even" signed />
           </Card>
         </Reveal>
 
         {/* Today's slate */}
-        <Reveal i={4} className="lg:col-span-4">
+        <Reveal i={3} className="lg:col-span-4">
           <Card className="flex h-full flex-col">
             <CardHeader title="Today's slate" />
             <div className="grid grid-cols-2 gap-4">
@@ -118,11 +130,11 @@ export default function Overview() {
         </Reveal>
 
         {/* Recent activity */}
-        <Reveal i={5} className="lg:col-span-7">
+        <Reveal i={4} className="lg:col-span-7">
           <Card className="h-full">
             <CardHeader
               title="Recent activity"
-              action={<Link href="/bets" className="inline-flex min-h-9 items-center gap-1 rounded-full px-3 text-[13px] font-medium text-ink-2 ring-1 ring-line transition-colors hover:bg-sunken active:scale-[0.98]">All bets <ArrowRight size={14} aria-hidden /></Link>}
+              action={<PillLink href="/bets">All bets</PillLink>}
             />
             {d.bets.length ? (
               <ul className="divide-y divide-line-soft">
@@ -135,7 +147,7 @@ export default function Overview() {
         </Reveal>
 
         {/* Model check */}
-        <Reveal i={6} className="lg:col-span-5">
+        <Reveal i={5} className="lg:col-span-5">
           <Card className="h-full">
             <CardHeader title="Model check" hint="How the current strategy did in the backtest, against the bookmaker." />
             {d.backtest && (["epl", "atp"] as const).map((k) => {
@@ -159,7 +171,7 @@ export default function Overview() {
           </Card>
         </Reveal>
         {/* Money in */}
-        <Reveal i={7} className="lg:col-span-12">
+        <Reveal i={6} className="lg:col-span-12">
           <Card>
             <CardHeader
               title="Deposits and refills"
@@ -192,11 +204,29 @@ export default function Overview() {
 function ExposureBar({ cash, open, sport }: { cash: number; open: number; sport: "epl" | "atp" }) {
   const share = open / (cash + open || 1);
   return (
-    <div className="mt-5">
+    <div className="mt-3.5">
       <div className="flex h-1.5 overflow-hidden rounded-full bg-sunken">
         <span className="h-full rounded-full" style={{ width: `${share * 100}%`, background: SPORT_COLOR[sport] }} />
       </div>
       <p className="mt-1.5 text-[11px] text-ink-3 tabular">{pct(share, false, 0)} of bankroll in open bets</p>
+    </div>
+  );
+}
+
+/** Pill link with a trailing arrow; the right padding is a touch tighter so the label and icon look centred. */
+function PillLink({ href, children }: { href: string; children: ReactNode }) {
+  return (
+    <Link href={href} className="inline-flex min-h-9 shrink-0 items-center gap-1 rounded-full pl-3.5 pr-3 text-[13px] font-medium text-ink-2 ring-1 ring-line transition-[color,background-color,scale] duration-150 ease-[cubic-bezier(0.2,0,0,1)] hover:bg-sunken active:scale-96">
+      {children} <ArrowRight size={14} aria-hidden />
+    </Link>
+  );
+}
+
+function MiniStat({ label, value }: { label: string; value: ReactNode }) {
+  return (
+    <div className="min-w-0">
+      <p className="text-[11px] text-ink-3">{label}</p>
+      <p className="mt-0.5 truncate text-[13px] font-semibold text-ink tabular">{value}</p>
     </div>
   );
 }
