@@ -1,8 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
-import { CheckCircle, Clock, Receipt, WarningCircle, XCircle } from "@phosphor-icons/react";
+import { CaretRight, CheckCircle, Clock, Receipt, WarningCircle, XCircle } from "@phosphor-icons/react";
 import Segmented from "./Segmented";
 import type { Bet } from "@/lib/data";
 import { SPORT_COLOR, SPORT_SHORT, money, pct, sportOf, when } from "@/lib/format";
@@ -91,13 +92,16 @@ export default function BetsView({ bets }: { bets: Bet[] }) {
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
                       transition={{ duration: 0.18 }}
-                      className="border-b border-line-soft transition-colors last:border-0 hover:bg-sunken/50"
+                      className="relative cursor-pointer border-b border-line-soft transition-colors last:border-0 hover:bg-sunken/50"
                     >
                       <td className="py-3.5 pl-6 pr-3">
                         <div className="flex items-center gap-2.5">
                           <span className="size-2 shrink-0 rounded-full" style={{ background: SPORT_COLOR[sportOf(b.wallet)] }} aria-label={SPORT_SHORT[sportOf(b.wallet)]} />
                           <div className="min-w-0">
-                            <p className="font-medium text-ink">{b.match} <FlagBadge bet={b} /></p>
+                            <p className="font-medium text-ink">
+                              {/* Stretched link: the whole row opens the match review. */}
+                              <Link href={`/bets/${b.event_id}`} className="after:absolute after:inset-0 focus-visible:outline-none focus-visible:after:rounded-lg focus-visible:after:ring-2 focus-visible:after:ring-ink/30">{b.match}</Link> <FlagBadge bet={b} />
+                            </p>
                             <p className="text-[12px] text-ink-3">{b.competition} · {when(b.commence_time)}</p>
                           </div>
                         </div>
@@ -109,7 +113,9 @@ export default function BetsView({ bets }: { bets: Bet[] }) {
                       </td>
                       <td className="px-3 py-3.5 text-right text-ink-2 tabular">{pct(b.model_p, false, 0)} / {pct(b.market_p, false, 0)}</td>
                       <td className="px-3 py-3.5 text-right text-ink tabular">{money(b.stake)}</td>
-                      <td className="py-3.5 pl-3 pr-6 text-right"><Result bet={b} /></td>
+                      <td className="py-3.5 pl-3 pr-6 text-right">
+                        <span className="inline-flex items-center gap-2"><Result bet={b} /><CaretRight size={12} className="text-ink-3" aria-hidden /></span>
+                      </td>
                     </motion.tr>
                   ))}
                 </AnimatePresence>
@@ -120,10 +126,12 @@ export default function BetsView({ bets }: { bets: Bet[] }) {
           {/* Mobile cards */}
           <ul className="flex flex-col gap-3 md:hidden">
             {shown.map((b) => (
-              <li key={b.bet_id} className="rounded-2xl border border-line/80 bg-surface p-4 shadow-diffuse">
+              <li key={b.bet_id} className="relative rounded-2xl border border-line/80 bg-surface p-4 shadow-diffuse transition-colors active:bg-sunken/50">
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
-                    <p className="text-[14px] font-semibold text-ink">{b.pick}</p>
+                    <p className="text-[14px] font-semibold text-ink">
+                      <Link href={`/bets/${b.event_id}`} className="after:absolute after:inset-0 after:rounded-2xl">{b.pick}</Link>
+                    </p>
                     <p className="text-[12px] text-ink-3">{b.match}</p>
                     <FlagBadge bet={b} />
                   </div>
@@ -158,7 +166,7 @@ function FlagBadge({ bet }: { bet: Bet }) {
   return (
     <span
       title={bet.flag.note}
-      className="ml-1 inline-flex items-center gap-1 rounded-full bg-down-soft px-2 py-0.5 align-middle text-[11px] font-semibold text-down"
+      className="relative z-10 ml-1 inline-flex items-center gap-1 rounded-full bg-down-soft px-2 py-0.5 align-middle text-[11px] font-semibold text-down"
     >
       <WarningCircle size={12} weight="fill" aria-hidden />
       {bet.flag.flag === "identity_error" ? "Identity error" : bet.flag.flag}
