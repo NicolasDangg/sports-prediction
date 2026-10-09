@@ -1,12 +1,12 @@
 {
   "epl:elo_v0": {
-    "cash": 5000.0
+    "cash": 4469.99
   },
   "atp:elo_v0": {
-    "cash": 2875.60635
+    "cash": 2971.2903499999998
   },
   "epl:sharp_v1": {
-    "cash": 5000.0
+    "cash": 4948.5599999999995
   },
   "epl:casual_big_v1": {
     "cash": 5000.0
@@ -18,18 +18,18 @@
     "cash": 5000.0
   },
   "atp:news_v1": {
-    "cash": 3532.4715
+    "cash": 3640.4043000000006
   },
   "atp:sharp_v1": {
-    "cash": 4869.779999999999
+    "cash": 4740.36
   },
   "atp:casual_big_v1": {
-    "cash": 5000.0
+    "cash": 3750.0
   },
   "atp:casual_many_v1": {
-    "cash": 5000.0
+    "cash": 3750.0200000000004
   },
   "atp:smart_casual_v1": {
-    "cash": 5000.0
+    "cash": 3750.0
   }
 }

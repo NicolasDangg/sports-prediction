@@ -551,3 +551,111 @@ at,source,sport,sport_key,event_id,commence_time,outcome,median_odds,pinnacle_od
 2026-10-09T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,065609858b049e7674a0b4ed0a6be527,2026-10-10T04:00:00Z,Thiago Agustin Tirante,3.0,3.15,3.25,19
 2026-10-09T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,e6e26f542ae70879e6846cf1721d2f08,2026-10-10T04:00:00Z,Sebastian Baez,3.29,3.39,3.5,17
 2026-10-09T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,e6e26f542ae70879e6846cf1721d2f08,2026-10-10T04:00:00Z,Valentin Vacherot,1.34,1.35,1.37,17
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,b870dcfba5e5920d3f1551a3aa1ea435,2026-10-10T11:30:00Z,Arsenal,1.41,1.41,1.49,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,b870dcfba5e5920d3f1551a3aa1ea435,2026-10-10T11:30:00Z,Leeds United,7.65,7.88,9.0,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,b870dcfba5e5920d3f1551a3aa1ea435,2026-10-10T11:30:00Z,Draw,4.9,4.93,5.1,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,02e6c0ccb11bb7ce78989ce49d67110b,2026-10-10T14:00:00Z,Aston Villa,2.7,2.78,2.83,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,02e6c0ccb11bb7ce78989ce49d67110b,2026-10-10T14:00:00Z,Brentford,2.5,2.52,2.64,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,02e6c0ccb11bb7ce78989ce49d67110b,2026-10-10T14:00:00Z,Draw,3.55,3.61,3.75,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,45d4a466e32cd2b4ea535207923ceaf5,2026-10-10T14:00:00Z,Bournemouth,4.6,4.66,4.9,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,45d4a466e32cd2b4ea535207923ceaf5,2026-10-10T14:00:00Z,Chelsea,1.69,1.72,1.75,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,45d4a466e32cd2b4ea535207923ceaf5,2026-10-10T14:00:00Z,Draw,4.18,4.14,4.4,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,380b8f24ec5430fb545a7490c1017285,2026-10-10T14:00:00Z,Brighton and Hove Albion,2.32,2.37,2.44,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,380b8f24ec5430fb545a7490c1017285,2026-10-10T14:00:00Z,Sunderland,3.04,3.07,3.16,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,380b8f24ec5430fb545a7490c1017285,2026-10-10T14:00:00Z,Draw,3.47,3.5,3.7,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,288b4ff00c79daa712c911c564fe1be7,2026-10-10T14:00:00Z,Fulham,2.51,2.52,2.63,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,288b4ff00c79daa712c911c564fe1be7,2026-10-10T14:00:00Z,Ipswich Town,2.73,2.78,2.9,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,288b4ff00c79daa712c911c564fe1be7,2026-10-10T14:00:00Z,Draw,3.5,3.61,3.65,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,22c9b2c43cbe1334381269550dab78e6,2026-10-10T16:30:00Z,Manchester United,1.71,1.75,1.76,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,22c9b2c43cbe1334381269550dab78e6,2026-10-10T16:30:00Z,Tottenham Hotspur,4.4,4.34,4.8,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,22c9b2c43cbe1334381269550dab78e6,2026-10-10T16:30:00Z,Draw,4.2,4.3,4.4,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,86effab5c6e7bfd58c8e88b1fb7c6ba9,2026-10-11T13:00:00Z,Crystal Palace,2.74,2.8,2.9,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,86effab5c6e7bfd58c8e88b1fb7c6ba9,2026-10-11T13:00:00Z,Nottingham Forest,2.6,2.6,2.72,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,86effab5c6e7bfd58c8e88b1fb7c6ba9,2026-10-11T13:00:00Z,Draw,3.35,3.44,3.5,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,0bdae4d304810578e47386606bff7106,2026-10-11T13:00:00Z,Everton,2.06,2.16,2.18,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,0bdae4d304810578e47386606bff7106,2026-10-11T13:00:00Z,Hull City,3.62,3.62,3.95,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,0bdae4d304810578e47386606bff7106,2026-10-11T13:00:00Z,Draw,3.4,3.41,3.55,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,6dbab232dd8d2aed0cb1d6f7978fb7b1,2026-10-11T15:30:00Z,Liverpool,2.95,2.96,3.05,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,6dbab232dd8d2aed0cb1d6f7978fb7b1,2026-10-11T15:30:00Z,Manchester City,2.27,2.3,2.38,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,6dbab232dd8d2aed0cb1d6f7978fb7b1,2026-10-11T15:30:00Z,Draw,3.7,3.83,3.9,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Coventry City,3.34,3.41,3.6,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Newcastle United,2.12,2.15,2.22,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,acd5bd945dd953ad1e300df5bfe696f9,2026-10-12T19:00:00Z,Draw,3.61,3.63,3.8,23
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,764e6513cb3f348881503df70ccb90e0,2026-10-17T11:30:00Z,Chelsea,2.28,2.33,2.45,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,764e6513cb3f348881503df70ccb90e0,2026-10-17T11:30:00Z,Everton,2.85,2.8,2.95,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,764e6513cb3f348881503df70ccb90e0,2026-10-17T11:30:00Z,Draw,3.655,3.79,3.86,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Brentford,2.71,2.77,2.88,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Liverpool,2.39,2.43,2.5,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,8f1945e7272bc7e89016439f5ab321c7,2026-10-17T14:00:00Z,Draw,3.64,3.59,3.8,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,7895f97f2f9577f3b13287a3d086859d,2026-10-17T14:00:00Z,Fulham,1.665,1.67,1.74,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,7895f97f2f9577f3b13287a3d086859d,2026-10-17T14:00:00Z,Hull City,4.8,4.85,5.18,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,7895f97f2f9577f3b13287a3d086859d,2026-10-17T14:00:00Z,Draw,3.95,4.0,4.11,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,bf2142d1ca76ba2fc9e61afce80f86c0,2026-10-17T14:00:00Z,Ipswich Town,10.15,9.8,12.5,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,bf2142d1ca76ba2fc9e61afce80f86c0,2026-10-17T14:00:00Z,Manchester City,1.24,1.23,1.29,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,bf2142d1ca76ba2fc9e61afce80f86c0,2026-10-17T14:00:00Z,Draw,6.375,6.78,7.0,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,d1bbbdcd3d430e70091b518369b559cf,2026-10-17T16:30:00Z,Aston Villa,3.225,3.22,3.35,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,d1bbbdcd3d430e70091b518369b559cf,2026-10-17T16:30:00Z,Newcastle United,2.08,2.1,2.17,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,d1bbbdcd3d430e70091b518369b559cf,2026-10-17T16:30:00Z,Draw,3.725,3.8,3.95,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,dfd5d6648be46426e418801584d46a68,2026-10-18T13:00:00Z,Bournemouth,1.98,2.01,2.04,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,dfd5d6648be46426e418801584d46a68,2026-10-18T13:00:00Z,Sunderland,3.6,3.64,3.85,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,dfd5d6648be46426e418801584d46a68,2026-10-18T13:00:00Z,Draw,3.535,3.58,3.75,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,9fc08b390a49c4434f7cf631a0bb88fb,2026-10-18T13:00:00Z,Brighton and Hove Albion,1.615,1.63,1.67,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,9fc08b390a49c4434f7cf631a0bb88fb,2026-10-18T13:00:00Z,Crystal Palace,4.85,4.75,5.2,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,9fc08b390a49c4434f7cf631a0bb88fb,2026-10-18T13:00:00Z,Draw,4.175,4.3,4.45,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,676b3b0b609e9cf565da450786618d26,2026-10-18T13:00:00Z,Leeds United,2.87,2.84,2.94,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,676b3b0b609e9cf565da450786618d26,2026-10-18T13:00:00Z,Manchester United,2.33,2.36,2.44,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,676b3b0b609e9cf565da450786618d26,2026-10-18T13:00:00Z,Draw,3.61,3.65,3.8,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Arsenal,1.59,1.61,1.66,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Nottingham Forest,5.625,6.0,6.2,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,f696a248965373d9071dc0662e5c58a8,2026-10-18T15:30:00Z,Draw,3.84,3.74,4.1,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Coventry City,5.93,5.86,6.47,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Tottenham Hotspur,1.5,1.5,1.54,16
+2026-10-09T23:04:43+00:00,daily,epl,soccer_epl,9baaf4e48b041cfef04e70e42532502e,2026-10-19T19:00:00Z,Draw,4.54,4.58,4.8,16
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,ab66ba3701bc01f34a870505b2ed3664,2026-10-10T04:00:00Z,Camilo Ugo Carabelli,11.0,10.83,11.72,19
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,ab66ba3701bc01f34a870505b2ed3664,2026-10-10T04:00:00Z,Felix Auger-Aliassime,1.04,1.06,1.1,19
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,53f263949a01c4a81c3836741dc47fcb,2026-10-10T04:00:00Z,Daniil Medvedev,1.15,1.16,1.17,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,53f263949a01c4a81c3836741dc47fcb,2026-10-10T04:00:00Z,Jan-Lennard Struff,5.525,5.97,6.6,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,0a4906a9969f8d393827e3f7139c07b3,2026-10-10T04:00:00Z,Jiri Lehecka,1.36,1.39,1.4,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,0a4906a9969f8d393827e3f7139c07b3,2026-10-10T04:00:00Z,Nuno Borges,3.2,3.22,3.45,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,065609858b049e7674a0b4ed0a6be527,2026-10-10T04:00:00Z,Rafael Jodar,1.4,1.42,1.47,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,065609858b049e7674a0b4ed0a6be527,2026-10-10T04:00:00Z,Thiago Agustin Tirante,3.0,3.06,3.1,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,0ba9530b1d1041cc4c380ad01c4274f7,2026-10-10T05:10:00Z,Alejandro Tabilo,1.58,1.64,1.65,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,0ba9530b1d1041cc4c380ad01c4274f7,2026-10-10T05:10:00Z,Pablo Carreno Busta,2.395,2.39,2.5,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,16b8670ad9de7b11f2d10124fe4f2917,2026-10-10T05:10:00Z,Bu Yunchaokete,2.1,2.13,2.16,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,16b8670ad9de7b11f2d10124fe4f2917,2026-10-10T05:10:00Z,Casper Ruud,1.74,1.79,1.89,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,450360a425a5b30032be061533efc51a,2026-10-10T05:10:00Z,Dalibor Svrcina,2.19,2.26,2.32,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,450360a425a5b30032be061533efc51a,2026-10-10T05:10:00Z,Tomas Martin Etcheverry,1.69,1.7,1.74,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,26d5d67b3a435622bd6308bcdbe7b10e,2026-10-10T05:10:00Z,Matteo Arnaldi,4.04,4.19,4.2,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,26d5d67b3a435622bd6308bcdbe7b10e,2026-10-10T05:10:00Z,Taylor Fritz,1.245,1.27,1.3,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,055b1621c396157741db4c035bdfbf97,2026-10-10T06:20:00Z,Arthur Fils,1.09,1.1,1.12,19
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,055b1621c396157741db4c035bdfbf97,2026-10-10T06:20:00Z,Pavel Kotov,7.45,7.91,8.8,19
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,4d08f2ba5bba7246b62dd126b7d80b12,2026-10-10T06:20:00Z,Learner Tien,1.31,1.32,1.34,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,4d08f2ba5bba7246b62dd126b7d80b12,2026-10-10T06:20:00Z,Zachary Svajda,3.5,3.67,3.85,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,2432e144409714e5088f29c941e9a174,2026-10-10T07:30:00Z,Adolfo Daniel Vallejo,2.695,2.69,2.78,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,2432e144409714e5088f29c941e9a174,2026-10-10T07:30:00Z,Tommy Paul,1.48,1.52,1.56,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,df311e3a27f098a8d7a759065ff2fb00,2026-10-10T07:30:00Z,Ignacio Buse,2.46,2.5,2.56,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,df311e3a27f098a8d7a759065ff2fb00,2026-10-10T07:30:00Z,Zizou Bergs,1.56,1.59,1.63,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,83a3dfc3ecec15d3a3b663da0aefae6c,2026-10-10T07:30:00Z,Luciano Darderi,2.95,2.94,3.15,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,83a3dfc3ecec15d3a3b663da0aefae6c,2026-10-10T07:30:00Z,Stefanos Tsitsipas,1.41,1.45,1.46,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,e0c5ded7e6d646cff787232a176cf72a,2026-10-10T09:00:00Z,Alex Michelsen,1.5,1.52,1.56,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,e0c5ded7e6d646cff787232a176cf72a,2026-10-10T09:00:00Z,Botic van de Zandschulp,2.6,2.68,2.74,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,14d23eb588c1738ee5f06755abbca7d6,2026-10-10T10:00:00Z,Carlos Alcaraz,1.03,1.03,1.05,18
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,14d23eb588c1738ee5f06755abbca7d6,2026-10-10T10:00:00Z,Juan Manuel Cerundolo,13.91,16.26,19.5,18
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,e6e26f542ae70879e6846cf1721d2f08,2026-10-10T11:10:00Z,Sebastian Baez,3.435,3.57,3.8,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,e6e26f542ae70879e6846cf1721d2f08,2026-10-10T11:10:00Z,Valentin Vacherot,1.32,1.33,1.35,20
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,52d52225f4c13f3a96b8bff7a3a53de9,2026-10-11T04:00:00Z,Adrian Mannarino,3.7,3.7,3.8,13
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,52d52225f4c13f3a96b8bff7a3a53de9,2026-10-11T04:00:00Z,Karen Khachanov,1.28,1.32,1.34,13
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,bd69690bbcda67d0a8bcaa6f591baa47,2026-10-11T04:00:00Z,Alejandro Davidovich Fokina,1.94,1.94,2.06,17
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,bd69690bbcda67d0a8bcaa6f591baa47,2026-10-11T04:00:00Z,Frances Tiafoe,1.84,1.94,1.96,17
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,ed0f82f195d0edeb15e0672bf51496a0,2026-10-11T04:00:00Z,Alex de Minaur,1.37,1.42,1.43,16
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,ed0f82f195d0edeb15e0672bf51496a0,2026-10-11T04:00:00Z,Rei Sakamoto,3.1,3.09,3.3,16
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,97b9d913872cac78c1809329d557d089,2026-10-11T04:00:00Z,Alexander Bublik,2.12,2.28,2.3,13
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,97b9d913872cac78c1809329d557d089,2026-10-11T04:00:00Z,Brandon Nakashima,1.67,1.69,1.72,13
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,e6003c91bfcfdd647a80a0852a7460c8,2026-10-11T04:00:00Z,Alexander Zverev,1.15,1.16,1.16,16
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,e6003c91bfcfdd647a80a0852a7460c8,2026-10-11T04:00:00Z,Quentin Halys,5.54,5.84,7.5,16
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,e9d3e24e28821a6cf2331d48f2a9ccaf,2026-10-11T04:00:00Z,Arthur Gea,3.2,3.35,3.65,17
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,e9d3e24e28821a6cf2331d48f2a9ccaf,2026-10-11T04:00:00Z,Ben Shelton,1.35,1.37,1.37,17
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,83fc3ac10a670054d814b0753ad75430,2026-10-11T04:00:00Z,Francisco Cerundolo,2.28,2.3,2.35,13
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,83fc3ac10a670054d814b0753ad75430,2026-10-11T04:00:00Z,Jakub Mensik,1.63,1.68,1.71,13
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,7af1a6a9a980efbcc4cfa5a9ffed7fda,2026-10-11T04:00:00Z,Hubert Hurkacz,1.13,1.15,1.15,10
+2026-10-09T23:04:43+00:00,daily,atp,tennis_atp_shanghai_masters,7af1a6a9a980efbcc4cfa5a9ffed7fda,2026-10-11T04:00:00Z,Yi Zhou,6.0,6.29,6.8,10
