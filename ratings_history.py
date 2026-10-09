@@ -7,7 +7,8 @@ Replays the same Elo models the live job uses and records every rating after eve
     state/epl_form.csv          team, pos, played, pts, last5, last10, pts10
     state/atp_form.csv          player, last10, wins10, matches_365
     state/epl_matches.csv       every EPL match since 2024/25: ratings before/after, model H/D/A probabilities
-    state/atp_matches.csv       every 2025+ match of a top player: ratings before/after, model win probability, odds
+    state/atp_matches.csv       every 2025+ match of a top player or one we bet on/priced: ratings before/after,
+                                model win probability, odds
 
 Ratings are stored at match granularity (one row per team/player per match), so the chart
 shows every jump. Called from daily.py; can also be run on its own.
@@ -145,8 +146,11 @@ def write_all(epl_df: pd.DataFrame, epl_params: dict, atp_df: pd.DataFrame, atp_
         STATE / "atp_elo_history.csv", index=False)
     af.to_csv(STATE / "atp_form.csv", index=False)
     epl_matches(epl_df, epl_params).to_csv(STATE / "epl_matches.csv", index=False)
-    atp_matches(atp_df, atp_params, set(af.player)).to_csv(STATE / "atp_matches.csv", index=False)
-    name_map(epl_df, atp_df).to_csv(STATE / "name_map.csv", index=False)
+    names = name_map(epl_df, atp_df)
+    # Top players plus everyone we bet on or priced, so every settled bet shows its rating moves.
+    players = set(af.player) | set(names.loc[names.sport == "atp", "name"])
+    atp_matches(atp_df, atp_params, players).to_csv(STATE / "atp_matches.csv", index=False)
+    names.to_csv(STATE / "name_map.csv", index=False)
 
 
 def name_map(epl_df: pd.DataFrame, atp_df: pd.DataFrame) -> pd.DataFrame:

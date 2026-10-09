@@ -26,28 +26,22 @@ const near = (date: string, iso: string) => Math.abs(new Date(date).getTime() - 
 
 export const reviewIds = () => [...new Set(loadDashboard().bets.map((b) => b.event_id))].map((id) => ({ id }));
 
-export function loadBetReview(id: string) {
-  const bets = loadDashboard().bets.filter((b) => b.event_id === id);
-  if (!bets.length) return null;
-  const first = bets[0];
-  const sport = sportOf(first.wallet);
-  const [home, away] = first.match.split(" v ");
-  const names = new Map(
-    read<{ sport: string; api_name: string; name: string }>("name_map.csv", []).filter((m) => m.sport === sport).map((m) => [m.api_name, m.name]),
-  );
-  const homeName = names.get(home) ?? null;
-  const awayName = names.get(away) ?? null;
+type Played = {
+  score: string | null; detail: string | null;
+  homeBefore: number; awayBefore: number; homeAfter: number; awayAfter: number; homeProb: number | null;
+};
 
-  const outcome = read<Outcome>("outcomes.csv", []).find((o) => o.event_id === id) ?? null;
-
-  // Score and rating moves from our own match files, written from the bettor's (home/away) side.
-  let played: {
-    score: string | null; detail: string | null;
-    homeBefore: number; awayBefore: number; homeAfter: number; awayAfter: number; homeProb: number | null;
-  } | null = null;
+/** Score and rating moves from our own match files, written from the bettor's (home/away) side.
+ *  `home`/`away` are the API names from the bet's match string. */
+function findPlayed(sport: string, home: string, away: string, commence: string, files: {
+  names: Map<string, string>; atp: () => AtpMatch[]; epl: () => EplMatch[];
+}) {
+  const homeName = files.names.get(home) ?? null;
+  const awayName = files.names.get(away) ?? null;
+  let played: Played | null = null;
   if (sport === "atp" && homeName && awayName) {
-    const m = read<AtpMatch>("atp_matches.csv", ["p1_before", "p2_before", "p1_after", "p2_after", "p1_prob"])
-      .filter((r) => ((r.p1 === homeName && r.p2 === awayName) || (r.p1 === awayName && r.p2 === homeName)) && near(r.date, first.commence_time))
+    const m = files.atp()
+      .filter((r) => ((r.p1 === homeName && r.p2 === awayName) || (r.p1 === awayName && r.p2 === homeName)) && near(r.date, commence))
       .at(-1);
     if (m) {
       const flip = m.p1 !== homeName;
@@ -60,8 +54,7 @@ export function loadBetReview(id: string) {
       };
     }
   } else if (sport === "epl" && homeName && awayName) {
-    const m = read<EplMatch>("epl_matches.csv", ["hg", "ag", "home_before", "away_before", "home_after", "away_after", "p_home"])
-      .find((r) => r.home === homeName && r.away === awayName && near(r.date, first.commence_time));
+    const m = files.epl().find((r) => r.home === homeName && r.away === awayName && near(r.date, commence));
     if (m) {
       played = {
         score: `${m.hg}–${m.ag}`, detail: "Premier League",
@@ -69,6 +62,43 @@ export function loadBetReview(id: string) {
       };
     }
   }
+  return { homeName, awayName, played };
+}
+
+const nameMap = (sport: string) => new Map(
+  read<{ sport: string; api_name: string; name: string }>("name_map.csv", []).filter((m) => m.sport === sport).map((m) => [m.api_name, m.name]),
+);
+const atpFile = () => read<AtpMatch>("atp_matches.csv", ["p1_before", "p2_before", "p1_after", "p2_after", "p1_prob"]);
+const eplFile = () => read<EplMatch>("epl_matches.csv", ["hg", "ag", "home_before", "away_before", "home_after", "away_after", "p_home"]);
+const once = <T,>(f: () => T) => { let v: T | undefined; return () => (v ??= f()); };
+
+export type EloMove = { home: string; away: string; homeBefore: number; homeAfter: number; awayBefore: number; awayAfter: number };
+
+/** Elo before → after for every settled event in the ledger, keyed by event id (for the Bets list). */
+export function eloMovesByEvent(): Record<string, EloMove> {
+  const files = { atp: once(atpFile), epl: once(eplFile) };
+  const names = { atp: once(() => nameMap("atp")), epl: once(() => nameMap("epl")) };
+  const out: Record<string, EloMove> = {};
+  for (const b of loadDashboard().bets) {
+    if (b.status === "open" || out[b.event_id]) continue;
+    const sport = sportOf(b.wallet);
+    if (sport !== "atp" && sport !== "epl") continue;
+    const [home, away] = b.match.split(" v ");
+    const { played: p } = findPlayed(sport, home, away, b.commence_time, { names: names[sport](), ...files });
+    if (p) out[b.event_id] = { home, away, homeBefore: p.homeBefore, homeAfter: p.homeAfter, awayBefore: p.awayBefore, awayAfter: p.awayAfter };
+  }
+  return out;
+}
+
+export function loadBetReview(id: string) {
+  const bets = loadDashboard().bets.filter((b) => b.event_id === id);
+  if (!bets.length) return null;
+  const first = bets[0];
+  const sport = sportOf(first.wallet);
+  const [home, away] = first.match.split(" v ");
+  const { homeName, awayName, played } = findPlayed(sport, home, away, first.commence_time, { names: nameMap(sport), atp: atpFile, epl: eplFile });
+
+  const outcome = read<Outcome>("outcomes.csv", []).find((o) => o.event_id === id) ?? null;
 
   // Closing line: what the market said just before the start, per outcome.
   const closing = new Map(read<Closing>("closing.csv", ["closing_odds", "minutes_before"]).filter((c) => c.event_id === id).map((c) => [c.outcome, c]));

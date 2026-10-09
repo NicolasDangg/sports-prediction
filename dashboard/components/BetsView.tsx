@@ -6,12 +6,13 @@ import { AnimatePresence, motion } from "motion/react";
 import { CaretRight, CheckCircle, Clock, Receipt, WarningCircle, XCircle } from "@phosphor-icons/react";
 import Segmented from "./Segmented";
 import type { Bet } from "@/lib/data";
+import type { EloMove } from "@/lib/review";
 import { SPORT_COLOR, SPORT_SHORT, money, pct, sportOf, when } from "@/lib/format";
 
 type Status = "open" | "settled" | "all";
 type SportFilter = "all" | "epl" | "atp";
 
-export default function BetsView({ bets }: { bets: Bet[] }) {
+export default function BetsView({ bets, eloMoves = {} }: { bets: Bet[]; eloMoves?: Record<string, EloMove> }) {
   const [status, setStatus] = useState<Status>("open");
   const [sport, setSport] = useState<SportFilter>("all");
 
@@ -79,6 +80,7 @@ export default function BetsView({ bets }: { bets: Bet[] }) {
                   <th className="px-3 py-3 text-right font-medium">Odds</th>
                   <th className="px-3 py-3 text-right font-medium">Elo / market</th>
                   <th className="px-3 py-3 text-right font-medium">Stake</th>
+                  <th className="px-3 py-3 text-right font-medium">Elo moves</th>
                   <th className="py-3 pl-3 pr-6 text-right font-medium">Result</th>
                 </tr>
               </thead>
@@ -113,6 +115,7 @@ export default function BetsView({ bets }: { bets: Bet[] }) {
                       </td>
                       <td className="px-3 py-3.5 text-right text-ink-2 tabular">{pct(b.model_p, false, 0)} / {pct(b.market_p, false, 0)}</td>
                       <td className="px-3 py-3.5 text-right text-ink tabular">{money(b.stake)}</td>
+                      <td className="px-3 py-3.5 text-right"><EloMoves bet={b} move={eloMoves[b.event_id]} /></td>
                       <td className="py-3.5 pl-3 pr-6 text-right">
                         <span className="inline-flex items-center gap-2"><Result bet={b} /><CaretRight size={12} className="text-ink-3" aria-hidden /></span>
                       </td>
@@ -144,11 +147,37 @@ export default function BetsView({ bets }: { bets: Bet[] }) {
                   <span>Elo {pct(b.model_p, false, 0)} / mkt {pct(b.market_p, false, 0)}</span>
                   <span>{when(b.commence_time)}</span>
                 </div>
+                {eloMoves[b.event_id] && <div className="mt-2 border-t border-line-soft pt-2"><EloMoves bet={b} move={eloMoves[b.event_id]} /></div>}
               </li>
             ))}
           </ul>
         </>
       )}
+    </div>
+  );
+}
+
+/** Both sides' Elo before → after the match, the side we backed first. */
+function EloMoves({ bet, move }: { bet: Bet; move?: EloMove }) {
+  if (!move) return <span className="text-ink-3">—</span>;
+  const sides = [
+    { name: move.home, before: move.homeBefore, after: move.homeAfter },
+    { name: move.away, before: move.awayBefore, after: move.awayAfter },
+  ];
+  if (bet.pick === move.away) sides.reverse();
+  const short = (n: string) => (sportOf(bet.wallet) === "atp" ? n.split(" ").at(-1) : n);
+  return (
+    <div className="inline-flex flex-col gap-0.5 text-[12px] tabular">
+      {sides.map((s) => {
+        const d = s.after - s.before;
+        return (
+          <span key={s.name} className="whitespace-nowrap">
+            <span className={s.name === bet.pick ? "font-medium text-ink" : "text-ink-3"}>{short(s.name)}</span>{" "}
+            <span className="font-mono text-ink-2">{Math.round(s.before)} → {Math.round(s.after)}</span>{" "}
+            <span className={`font-mono ${d > 0 ? "text-up" : d < 0 ? "text-down" : "text-ink-3"}`}>{d >= 0 ? "+" : "−"}{Math.abs(d).toFixed(1)}</span>
+          </span>
+        );
+      })}
     </div>
   );
 }
