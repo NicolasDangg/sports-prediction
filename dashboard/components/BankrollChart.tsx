@@ -58,11 +58,33 @@ export default function BankrollChart({ series, start = 1000, startLabel = "$1,0
   const hover = hoverT === null ? null : parsed.filter((s) => s.pts.length).map((s) => ({ s, p: nearest(s.pts, hoverT) }));
   const hoverX = hover?.length ? x(hover[0].p.t) : 0;
 
-  // End labels: stack them apart when two lines finish close together.
+  // End labels: lines finishing on the same value share one label ("$0 ×8"); the rest are spread
+  // apart around their true positions (overlapping runs merge and re-centre) instead of only pushed down.
   const ends = parsed.filter((s) => s.pts.length).map((s) => ({ s, last: s.pts[s.pts.length - 1] }))
     .sort((a, b) => y(a.last.y) - y(b.last.y));
-  const labelY: number[] = [];
-  ends.forEach((e, i) => { labelY.push(Math.max(y(e.last.y), i ? labelY[i - 1] + 15 : -Infinity)); });
+  const groups: { text: string; target: number; n: number }[] = [];
+  for (const { last } of ends) {
+    const text = money(last.y, signed);
+    const g = groups.find((g) => g.text === text);
+    if (g) g.n++; else groups.push({ text, target: y(last.y), n: 1 });
+  }
+  groups.sort((a, b) => a.target - b.target);
+  const GAP = 15;
+  let runs = groups.map((g) => ({ items: [g], top: g.target }));
+  for (let merged = true; merged;) {
+    merged = false;
+    for (let i = 1; i < runs.length; i++) {
+      const prev = runs[i - 1], cur = runs[i];
+      if (prev.top + prev.items.length * GAP > cur.top) {
+        const items = [...prev.items, ...cur.items];
+        const mean = items.reduce((s, g) => s + g.target, 0) / items.length;
+        runs.splice(i - 1, 2, { items, top: mean - ((items.length - 1) * GAP) / 2 });
+        merged = true;
+        break;
+      }
+    }
+  }
+  const labels = runs.flatMap((r) => r.items.map((g, j) => ({ ...g, y: r.top + j * GAP })));
 
   return (
     <div>
@@ -105,11 +127,13 @@ export default function BankrollChart({ series, start = 1000, startLabel = "$1,0
                       strokeDasharray={s.dash}
                       points={s.pts.map((p) => `${x(p.t)},${y(p.y)}`).join(" ")} />
           ))}
-          {ends.map(({ s, last }, i) => (
-            <g key={s.name}>
-              <circle cx={x(last.t)} cy={y(last.y)} r={4} fill={s.color} stroke="var(--color-surface)" strokeWidth={2} />
-              <text x={x(last.t) + 9} y={labelY[i]} dominantBaseline="middle" className="fill-ink text-[12px] font-semibold tabular">{money(last.y, signed)}</text>
-            </g>
+          {ends.map(({ s, last }) => (
+            <circle key={s.name} cx={x(last.t)} cy={y(last.y)} r={4} fill={s.color} stroke="var(--color-surface)" strokeWidth={2} />
+          ))}
+          {labels.map((l) => (
+            <text key={l.text} x={W - PAD.right + 9} y={l.y} dominantBaseline="middle" className="fill-ink text-[12px] font-semibold tabular">
+              {l.text}{l.n > 1 && <tspan className="fill-ink-3 font-normal"> ×{l.n}</tspan>}
+            </text>
           ))}
 
           {hover && (
