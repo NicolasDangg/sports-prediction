@@ -152,18 +152,37 @@ TENNIS_TEST_START = "2023-01-01"
 
 
 def load_atp(recent: Path | None = None) -> pd.DataFrame:
-    """ATP history. `recent` = extra results collected live by daily.py; only rows newer
-    than the main dataset are added, so nothing is counted twice."""
+    """ATP history. `recent` = extra results collected live by daily.py; a live result is added
+    unless the main dataset already has that match, so nothing is counted twice."""
     df = pd.read_csv(DATA / "tennis" / "atp_tennis.csv", low_memory=False)
     if recent is not None and recent.exists():
         extra = pd.read_csv(recent)
-        df = pd.concat([df, extra[extra.Date > df.Date.max()].drop(columns="event_id")], ignore_index=True)
+        extra = extra[~already_listed(df, extra)].drop(columns="event_id")
+        df = pd.concat([df, extra], ignore_index=True)
     df[["Odd_1", "Odd_2"]] = df[["Odd_1", "Odd_2"]].apply(pd.to_numeric, errors="coerce")
     for col in ["Player_1", "Player_2", "Winner"]:
         df[col] = df[col].str.strip()  # some names have stray trailing spaces
     df["date"] = pd.to_datetime(df.Date)
     df["p1_won"] = df.Winner == df.Player_1
     return df.sort_values("date", kind="stable").reset_index(drop=True)
+
+
+MATCH_SLACK_DAYS = 3  # the main dataset dates matches by local day, the live feed by UTC start
+
+
+def already_listed(main: pd.DataFrame, extra: pd.DataFrame) -> pd.Series:
+    """For each live result, whether `main` has the same two players within a few days.
+    Matching by match, not by date: the main dataset often has only part of its latest days
+    (e.g. one tournament's final but not another's), so a date cut-off would drop real results."""
+    pair = lambda d: [frozenset(x) for x in zip(d.Player_1.str.strip(), d.Player_2.str.strip())]
+    lo = pd.to_datetime(extra.Date).min() - pd.Timedelta(days=MATCH_SLACK_DAYS) if len(extra) else None
+    m = main[pd.to_datetime(main.Date) >= lo] if lo is not None else main.iloc[:0]
+    seen: dict[frozenset, list[pd.Timestamp]] = {}
+    for k, d in zip(pair(m), pd.to_datetime(m.Date)):
+        seen.setdefault(k, []).append(d)
+    slack = pd.Timedelta(days=MATCH_SLACK_DAYS)
+    return pd.Series([any(abs(d - t) <= slack for t in seen.get(k, [])) for k, d in zip(pair(extra), pd.to_datetime(extra.Date))],
+                     index=extra.index, dtype=bool)
 
 
 def tennis_probs(df: pd.DataFrame, **params) -> tuple[np.ndarray, TennisElo]:

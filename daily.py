@@ -202,7 +202,7 @@ def get_scores(api: OddsAPI, sport_key: str, cache: dict) -> list[dict]:
 
 
 def record_atp_results(score_cache: dict, titles: dict[str, str], profiles: dict, since: pd.Timestamp,
-                       surfaces: dict[str, str], aliases: dict[str, str]) -> tuple[int, list[str]]:
+                       surfaces: dict[str, str], aliases: dict[str, str]) -> tuple[int, list[tuple[str, list]]]:
     """Store finished ATP matches in history format so Elo keeps learning even if Kaggle lags.
     Only matches where BOTH players resolve to a trusted history identity are stored:
     a guessed identity would create a phantom player that real results then keep updating."""
@@ -216,7 +216,7 @@ def record_atp_results(score_cache: dict, titles: dict[str, str], profiles: dict
                 continue
             a, b = (tennis_player(x, profiles, since, aliases) for x in (e["home_team"], e["away_team"]))
             if not (a.ok and b.ok):
-                skipped.append(f"{e['home_team']} v {e['away_team']} ({a.status}/{b.status})")
+                skipped.append((f"{e['home_team']} v {e['away_team']} ({a.status}/{b.status})", [r for r in (a, b) if not r.ok]))
                 continue
             when = pd.Timestamp(e["commence_time"])
             title = titles.get(key, key)
@@ -347,7 +347,10 @@ def predict_atp(api: OddsAPI, now: pd.Timestamp, score_cache: dict) -> tuple[lis
     # Every book's price, not just the summary: the dashboard's match pages show the full board.
     pd.DataFrame(book_rows, columns=QUOTE_COLS).to_csv(STATE / "atp_quotes.csv", index=False)
     if skipped:
-        unresolved += [f"IDENTITY result not stored: {x}" for x in skipped]
+        for label, bad in skipped:  # a challenger-only player is the right name with no history: an alias can't help
+            no_rating = all(r.status == "unknown" and r.api_name in lower_only for r in bad)
+            unresolved.append(f"NO RATING {', '.join(r.api_name for r in bad)} (result not stored: {label}; "
+                              f"challenger/qualifying matches only)" if no_rating else f"IDENTITY result not stored: {label}")
     return rows, added, unresolved
 
 

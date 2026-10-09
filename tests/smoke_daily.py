@@ -106,7 +106,13 @@ def check(cond, msg):
 
 
 print(f"temp repo: {TMP}")
-real_open = set(pd.read_csv(TMP / "state/ledger.csv").query("status == 'open'").bet_id)
+real_led = pd.read_csv(TMP / "state/ledger.csv")
+real_open = set(real_led.query("status == 'open'").bet_id)
+# Day 3 must be past the give-up cutoff for every real open bet copied in from state/, however recent.
+latest = pd.to_datetime(real_led.query("status == 'open'").commence_time, utc=True).max()
+DAY3 = max(pd.Timestamp("2026-10-23", tz="UTC"),
+           (latest + pd.Timedelta(days=daily.UNRESOLVED_AFTER_DAYS + 2)).normalize() if pd.notna(latest) else pd.Timestamp(0, tz="UTC"))
+DAY3_DATE = DAY3.date().isoformat()
 
 # ---- day 1: forecast + bet
 daily.main(FakeAPI(1), pd.Timestamp("2026-10-07T01:00:00Z"), download=False)
@@ -144,7 +150,8 @@ new_bets = led[~led.bet_id.isin(real_open) & (led.status == "open") & led.placed
 check("epl:news_v1" not in dep.wallet.values and "atp:news_v1" in dep.wallet.values, "'sports' key: news_v1 gets an ATP wallet only")
 nw = pd.read_csv(TMP / "state/news.csv")
 check({"Zhizhen Zhang", "Tomas Machac"} <= set(nw.player), "news verdicts logged for players in the betting window")
-check(set(f.loc[f.outcome == INJURED, "news_status"].dropna()) == {"injured"}, "news status attached to the forecast rows")
+test_run = f.run_at.astype(str).str.startswith("2026-10-07T01")  # state/ is copied in: skip real runs' rows
+check(set(f.loc[test_run & (f.outcome == INJURED), "news_status"].dropna()) == {"injured"}, "news status attached to the forecast rows")
 check(((new_bets.strategy == "back_probe") & (new_bets.pick == INJURED)).any(), "probe without the veto backs the injured player")
 check(not ((new_bets.strategy == "veto_probe") & (new_bets.pick == INJURED)).any(), "veto: never back a player with injury news")
 check(not new_bets.strategy.str.startswith("news_v1").any() or not (new_bets[new_bets.strategy == "news_v1"].pick == INJURED).any(),
@@ -165,15 +172,15 @@ check({"e1", "t1", "t2", "t3"} <= set(out.event_id), "outcomes recorded for ever
 check(not rec.event_id.isin(["t2"]).any(), "unknown-player result NOT stored (no phantom players)")
 check(rec[rec.event_id == "t1"][["Player_1", "Player_2"]].values.tolist() == [["Bu Y.", "Van Assche L."]], "t1 result stored under real identities")
 
-# ---- day 3 (16 days later): old real bets with no result anywhere -> unresolved, refunded
+# ---- day 3 (16+ days later): old real bets with no result anywhere -> unresolved, refunded
 cash_before = {w: v["cash"] for w, v in __import__("json").loads((TMP / "state/wallets.json").read_text()).items()}
-daily.main(FakeAPI(3), pd.Timestamp("2026-10-23T01:00:00Z"), download=False)
+daily.main(FakeAPI(3), DAY3 + pd.Timedelta(hours=1), download=False)
 led = pd.read_csv(TMP / "state/ledger.csv")
 hist = pd.read_csv(TMP / "state/bankroll_history.csv")
 print("\nDAY 3 checks")
 check((led[led.bet_id.isin(real_open)].status == "unresolved").all(), "missing results become 'unresolved', not 'void'")
 check({"deposits", "net"} <= set(hist.columns), "bankroll history tracks deposits and net profit")
-last = hist[hist.date == "2026-10-23"].set_index("wallet")
+last = hist[hist.date == DAY3_DATE].set_index("wallet")
 check((abs(last.bankroll - last.deposits - last.net) < 0.01).all(), "net = bankroll - deposits")
 
 # ---- history fallback lookup (a real Kaggle match: Sinner v Zverev)
@@ -189,7 +196,7 @@ check(h.atp_event("Jannik Sinner", "Wang Imaginaryplayer", start) is None, "hist
 # ---- refill: top a wallet up to a target above its current bankroll
 w, deps = __import__("json").loads((TMP / "state/wallets.json").read_text()), accounts.load_deposits()
 target = accounts.bankroll(w, led, "atp:elo_v0") + 750
-deps = accounts.record(deps, w, "atp:elo_v0", target - accounts.bankroll(w, led, "atp:elo_v0"), "refill", "smoke test", "2026-10-23T02:00:00Z")
+deps = accounts.record(deps, w, "atp:elo_v0", target - accounts.bankroll(w, led, "atp:elo_v0"), "refill", "smoke test", (DAY3 + pd.Timedelta(hours=2)).isoformat())
 check(abs(accounts.bankroll(w, led, "atp:elo_v0") - target) < 0.01, "refill tops the bankroll up to the target")
 check(deps.iloc[-1].kind == "refill" and abs(deps.iloc[-1].amount - 750) < 0.01, "refill recorded in deposits.csv")
 
