@@ -1,20 +1,20 @@
 date,team,elo,kind
-2024-08-15,Liverpool,1669.8,reset
+2024-08-15,Tottenham,1545.4,reset
+2024-08-15,Crystal Palace,1504.2,reset
+2024-08-15,Bournemouth,1441.2,reset
+2024-08-15,Man United,1546.4,reset
+2024-08-15,Brentford,1463.3,reset
+2024-08-15,Nott'm Forest,1404.6,reset
+2024-08-15,Chelsea,1552.5,reset
+2024-08-15,Brighton,1481.1,reset
+2024-08-15,Aston Villa,1551.9,reset
+2024-08-15,Newcastle,1556.9,reset
+2024-08-15,Everton,1458.5,reset
 2024-08-15,Arsenal,1693.1,reset
 2024-08-15,Fulham,1463.9,reset
-2024-08-15,Bournemouth,1441.2,reset
-2024-08-15,Everton,1458.5,reset
-2024-08-15,Crystal Palace,1504.2,reset
-2024-08-15,Newcastle,1556.9,reset
-2024-08-15,Chelsea,1552.5,reset
+2024-08-15,Liverpool,1669.8,reset
 2024-08-15,Man City,1760.6,reset
-2024-08-15,Man United,1546.4,reset
-2024-08-15,Nott'm Forest,1404.6,reset
-2024-08-15,Aston Villa,1551.9,reset
 2024-08-15,Ipswich,1334.8,reset
-2024-08-15,Brighton,1481.1,reset
-2024-08-15,Brentford,1463.3,reset
-2024-08-15,Tottenham,1545.4,reset
 2024-08-16,Man United,1551.3,match
 2024-08-16,Fulham,1459.0,match
 2024-08-17,Ipswich,1331.4,match
@@ -623,23 +623,23 @@ date,team,elo,kind
 2025-05-25,Tottenham,1456.3,match
 2025-05-25,Brighton,1532.7,match
 2025-05-25,Brentford,1506.8,match
-2025-08-14,Liverpool,1686.6,reset
-2025-08-14,Arsenal,1671.9,reset
-2025-08-14,Bournemouth,1505.2,reset
-2025-08-14,Fulham,1485.2,reset
 2025-08-14,Sunderland,1295.4,reset
-2025-08-14,Everton,1490.6,reset
-2025-08-14,Crystal Palace,1531.1,reset
-2025-08-14,Newcastle,1567.1,reset
-2025-08-14,Chelsea,1576.6,reset
-2025-08-14,Man City,1680.5,reset
-2025-08-14,Man United,1467.7,reset
-2025-08-14,Nott'm Forest,1501.2,reset
-2025-08-14,Aston Villa,1562.2,reset
-2025-08-14,Leeds,1295.4,reset
-2025-08-14,Brentford,1506.1,reset
-2025-08-14,Brighton,1529.5,reset
 2025-08-14,Tottenham,1460.7,reset
+2025-08-14,Leeds,1295.4,reset
+2025-08-14,Crystal Palace,1531.1,reset
+2025-08-14,Bournemouth,1505.2,reset
+2025-08-14,Man United,1467.7,reset
+2025-08-14,Brentford,1506.1,reset
+2025-08-14,Nott'm Forest,1501.2,reset
+2025-08-14,Chelsea,1576.6,reset
+2025-08-14,Brighton,1529.5,reset
+2025-08-14,Aston Villa,1562.2,reset
+2025-08-14,Newcastle,1567.1,reset
+2025-08-14,Everton,1490.6,reset
+2025-08-14,Arsenal,1671.9,reset
+2025-08-14,Fulham,1485.2,reset
+2025-08-14,Liverpool,1686.6,reset
+2025-08-14,Man City,1680.5,reset
 2025-08-15,Liverpool,1691.5,match
 2025-08-15,Bournemouth,1500.3,match
 2025-08-16,Aston Villa,1561.5,match
@@ -1286,26 +1286,26 @@ date,team,elo,kind
 2026-05-24,Tottenham,1434.2,match
 2026-05-24,Everton,1477.0,match
 2026-05-24,Leeds,1410.6,match
+2026-08-20,Sunderland,1418.4,reset
+2026-08-20,Tottenham,1440.8,reset
+2026-08-20,Leeds,1419.5,reset
+2026-08-20,Crystal Palace,1477.7,reset
+2026-08-20,Bournemouth,1539.9,reset
+2026-08-20,Coventry,1366.2,reset
+2026-08-20,Man United,1570.6,reset
+2026-08-20,Brentford,1508.5,reset
+2026-08-20,Nott'm Forest,1493.3,reset
+2026-08-20,Chelsea,1519.0,reset
+2026-08-20,Brighton,1518.4,reset
+2026-08-20,Aston Villa,1554.0,reset
+2026-08-20,Newcastle,1511.7,reset
+2026-08-20,Everton,1479.3,reset
 2026-08-20,Hull,1366.2,reset
-2026-08-20,Liverpool,1597.0,reset
 2026-08-20,Arsenal,1689.6,reset
 2026-08-20,Fulham,1488.6,reset
-2026-08-20,Bournemouth,1539.9,reset
-2026-08-20,Sunderland,1418.4,reset
-2026-08-20,Everton,1479.3,reset
-2026-08-20,Crystal Palace,1477.7,reset
-2026-08-20,Newcastle,1511.7,reset
-2026-08-20,Chelsea,1519.0,reset
+2026-08-20,Liverpool,1597.0,reset
 2026-08-20,Man City,1675.3,reset
-2026-08-20,Man United,1570.6,reset
-2026-08-20,Nott'm Forest,1493.3,reset
-2026-08-20,Aston Villa,1554.0,reset
-2026-08-20,Coventry,1366.2,reset
-2026-08-20,Leeds,1419.5,reset
 2026-08-20,Ipswich,1366.2,reset
-2026-08-20,Brentford,1508.5,reset
-2026-08-20,Brighton,1518.4,reset
-2026-08-20,Tottenham,1440.8,reset
 2026-08-21,Arsenal,1692.5,match
 2026-08-21,Coventry,1363.3,match
 2026-08-22,Hull,1382.4,match
@@ -1406,3 +1406,23 @@ date,team,elo,kind
 2026-09-20,Sunderland,1414.0,match
 2026-09-20,Fulham,1468.6,match
 2026-09-20,Man United,1552.9,match
+2026-10-10,Arsenal,1690.2,match
+2026-10-10,Leeds,1445.0,match
+2026-10-10,Aston Villa,1528.8,match
+2026-10-10,Brentford,1528.1,match
+2026-10-10,Chelsea,1527.3,match
+2026-10-10,Bournemouth,1513.4,match
+2026-10-10,Ipswich,1377.4,match
+2026-10-10,Fulham,1459.8,match
+2026-10-10,Sunderland,1405.8,match
+2026-10-10,Brighton,1558.5,match
+2026-10-10,Man United,1549.4,match
+2026-10-10,Tottenham,1421.7,match
+2026-10-11,Crystal Palace,1470.2,match
+2026-10-11,Nott'm Forest,1471.8,match
+2026-10-11,Hull,1393.0,match
+2026-10-11,Everton,1494.0,match
+2026-10-11,Liverpool,1591.2,match
+2026-10-11,Man City,1707.9,match
+2026-10-12,Coventry,1372.7,match
+2026-10-12,Newcastle,1494.1,match
