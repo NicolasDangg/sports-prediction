@@ -1,0 +1,3300 @@
+{
+  "experiment": "E015",
+  "status": "complete",
+  "inputs": {
+    "data/tennis/atp_tennis.csv": "e1c07d0f5e5afa708b7b0ac77192615651243f4ff1b8670c1303cc26d49ca1a4",
+    "backtest.py": "1ac4d2b79925d055992709c0415962b341118e9203c2cd8fc40a078abe1c717b",
+    "elo.py": "115c0a8fdda59a5cb221a7666aa9e182ba3f6ac1acc1591dcb918c25778b1b2d",
+    "wallet.py": "39cd0f8f3736a145f725a2a850aefe4a881da8960168a5d7f4462626a9b932a8",
+    "strategies.py": "156e8389ec4bfbebf9152519ac9bac7f0ccb81940bdd92aa3ab269090088319d",
+    "experiments/e015_data_coverage.py": "f114588bc95ca76d00995ceba3e83f8b5d1efe168e40531da76e975779e47f78",
+    "docs/superpowers/plans/2026-10-08-e015-data-coverage.md": "e8ea2fc022bcb68931c03242995ff07ddb9830b01216776dec2d4f46a8f34ff6",
+    "protocol": "b07cb52b2ca45d460177ebd4658d931c9cb764975f6ee7a078272b33b2e674f4"
+  },
+  "protocol": {
+    "version": 1,
+    "thresholds": [
+      [
+        10,
+        5
+      ],
+      [
+        10,
+        10
+      ],
+      [
+        20,
+        5
+      ],
+      [
+        20,
+        10
+      ],
+      [
+        40,
+        5
+      ],
+      [
+        40,
+        10
+      ]
+    ],
+    "ranges": {
+      "diagnostics": [
+        "2010-01-01",
+        "2016-12-31"
+      ],
+      "selection": [
+        "2017-01-01",
+        "2019-12-31"
+      ],
+      "validation": [
+        "2020-01-01",
+        "2022-12-31"
+      ],
+      "test": [
+        "2023-01-01",
+        "2026-10-05"
+      ]
+    },
+    "elo": {
+      "k_scale": 200,
+      "surface_weight": 0.5
+    },
+    "min_edge": 0.05,
+    "start_bankroll": 1000,
+    "min_accepted": 500,
+    "min_retention": 0.5,
+    "bootstrap_reps": 2000,
+    "bootstrap_seed": 15,
+    "tie_tolerance": 1e-12
+  },
+  "ranges": {
+    "diagnostics": [
+      "2010-01-01",
+      "2016-12-31"
+    ],
+    "selection": [
+      "2017-01-01",
+      "2019-12-31"
+    ],
+    "validation": [
+      "2020-01-01",
+      "2022-12-31"
+    ],
+    "test": [
+      "2023-01-01",
+      "2026-10-05"
+    ]
+  },
+  "caveats": [
+    "Stable loader ordering within dates is retrospective; start times are not available.",
+    "Counts cover only matches updating v0; they do not establish source completeness or recency.",
+    "Historical row odds are execution prices; their timestamp quality is not established.",
+    "Wallets settle immediately, so do not reproduce overlapping live cash commitments.",
+    "Wallet.consider may return rounded zero stakes; these are retained and counted separately.",
+    "Flat opportunities use an undepleted selector; wallet depletion never changes that sample.",
+    "Bootstrap is for paired unit profits, not compounded bankrolls.",
+    "Historical test years were used by earlier experiments and are not unseen data.",
+    "No live identity/staleness feed exists here; rows use the unchanged historical v0 identity rules.",
+    "All-match probabilities are unchanged; subset scores do not imply a better model."
+  ],
+  "test_looks_used": 1,
+  "test": {
+    "threshold": [
+      40,
+      10
+    ],
+    "matches": 9859,
+    "baseline_opportunities": 6048,
+    "accepted": 3487,
+    "rejected": 2561,
+    "retention": 0.5765542328042328,
+    "baseline_flat_roi": -0.1302910052910053,
+    "accepted_flat_roi": -0.11081445368511614,
+    "rejected_flat_roi": -0.1568098399062866,
+    "paired_improvement": 0.06640046296296297,
+    "baseline_unit_profit": -788.0,
+    "gated_unit_profit": -386.41,
+    "paired_unit_profit": 401.59000000000003,
+    "actual_date_range": [
+      "2023-01-01",
+      "2026-09-29"
+    ],
+    "scores": {
+      "all": {
+        "v0": {
+          "n": 9859,
+          "log_loss": 0.629137472011613,
+          "brier": 0.21954240738788272
+        },
+        "gated": {
+          "n": 9859,
+          "log_loss": 0.629137472011613,
+          "brier": 0.21954240738788272
+        },
+        "market": {
+          "n": 9844,
+          "log_loss": 0.5888325615983883,
+          "brier": 0.20259756353572742
+        },
+        "v0_with_market_odds": {
+          "n": 9844,
+          "log_loss": 0.6297574347249039,
+          "brier": 0.21977957615237542
+        }
+      },
+      "accepted": {
+        "v0": {
+          "n": 5978,
+          "log_loss": 0.6216332567917502,
+          "brier": 0.21653711069303203
+        },
+        "gated": {
+          "n": 5978,
+          "log_loss": 0.6216332567917502,
+          "brier": 0.21653711069303203
+        },
+        "market": {
+          "n": 5973,
+          "log_loss": 0.5914587601126399,
+          "brier": 0.20365507656616105
+        },
+        "v0_with_market_odds": {
+          "n": 5973,
+          "log_loss": 0.6219123729962189,
+          "brier": 0.21663423613414262
+        }
+      },
+      "rejected": {
+        "v0": {
+          "n": 3881,
+          "log_loss": 0.6406963997581575,
+          "brier": 0.22417153999334977
+        },
+        "gated": {
+          "n": 3881,
+          "log_loss": 0.6406963997581575,
+          "brier": 0.22417153999334977
+        },
+        "market": {
+          "n": 3871,
+          "log_loss": 0.584780305404737,
+          "brier": 0.2009658080899046
+        },
+        "v0_with_market_odds": {
+          "n": 3871,
+          "log_loss": 0.6418624602235956,
+          "brier": 0.2246328739898605
+        }
+      }
+    },
+    "wallets": {
+      "v0": {
+        "bets": 6048,
+        "win_rate": 0.3835978835978836,
+        "staked": 3474.31,
+        "profit": -999.94,
+        "roi": -0.2878096658041453,
+        "final_bankroll": 0.1,
+        "max_drawdown": 0.9999042007951334,
+        "zero_stake_bets": 4815
+      },
+      "gated": {
+        "bets": 3487,
+        "win_rate": 0.3808431316317752,
+        "staked": 2774.94,
+        "profit": -999.79,
+        "roi": -0.36029247479224774,
+        "final_bankroll": 0.09,
+        "max_drawdown": 0.99991,
+        "zero_stake_bets": 2069
+      }
+    },
+    "per_year": {
+      "2023": {
+        "matches": 2607,
+        "baseline_opportunities": 1596,
+        "accepted": 882,
+        "rejected": 714,
+        "retention": 0.5526315789473685,
+        "baseline_flat_roi": -0.1651503759398496,
+        "accepted_flat_roi": -0.187891156462585,
+        "rejected_flat_roi": -0.13705882352941176,
+        "paired_improvement": 0.06131578947368421,
+        "baseline_unit_profit": -263.58,
+        "gated_unit_profit": -165.72,
+        "paired_unit_profit": 97.86
+      },
+      "2024": {
+        "matches": 2631,
+        "baseline_opportunities": 1609,
+        "accepted": 943,
+        "rejected": 666,
+        "retention": 0.5860783095090119,
+        "baseline_flat_roi": -0.1673772529521442,
+        "accepted_flat_roi": -0.09583244962884412,
+        "rejected_flat_roi": -0.2686786786786787,
+        "paired_improvement": 0.1112119328775637,
+        "baseline_unit_profit": -269.31,
+        "gated_unit_profit": -90.36999999999999,
+        "paired_unit_profit": 178.94
+      },
+      "2025": {
+        "matches": 2487,
+        "baseline_opportunities": 1537,
+        "accepted": 931,
+        "rejected": 606,
+        "retention": 0.6057254391672089,
+        "baseline_flat_roi": -0.09503578399479505,
+        "accepted_flat_roi": -0.07748657357679915,
+        "rejected_flat_roi": -0.12199669966996696,
+        "paired_improvement": 0.04810019518542615,
+        "baseline_unit_profit": -146.07,
+        "gated_unit_profit": -72.13999999999999,
+        "paired_unit_profit": 73.92999999999999
+      },
+      "2026": {
+        "matches": 2134,
+        "baseline_opportunities": 1306,
+        "accepted": 731,
+        "rejected": 575,
+        "retention": 0.5597243491577335,
+        "baseline_flat_roi": -0.08349157733537517,
+        "accepted_flat_roi": -0.07958960328317374,
+        "rejected_flat_roi": -0.08845217391304348,
+        "paired_improvement": 0.03894333843797856,
+        "baseline_unit_profit": -109.03999999999998,
+        "gated_unit_profit": -58.17999999999999,
+        "paired_unit_profit": 50.86
+      }
+    },
+    "by_surface": {
+      "Clay": {
+        "matches": 3159,
+        "baseline_opportunities": 1993,
+        "accepted": 1108,
+        "rejected": 885,
+        "retention": 0.5559458103361766,
+        "baseline_flat_roi": -0.14379327646763673,
+        "accepted_flat_roi": -0.15260830324909747,
+        "rejected_flat_roi": -0.13275706214689265,
+        "paired_improvement": 0.058951329653788256,
+        "baseline_unit_profit": -286.58,
+        "gated_unit_profit": -169.08999999999997,
+        "paired_unit_profit": 117.49
+      },
+      "Grass": {
+        "matches": 1206,
+        "baseline_opportunities": 783,
+        "accepted": 362,
+        "rejected": 421,
+        "retention": 0.4623243933588761,
+        "baseline_flat_roi": -0.12095785440613026,
+        "accepted_flat_roi": -0.021519337016574564,
+        "rejected_flat_roi": -0.2064608076009501,
+        "paired_improvement": 0.11100893997445722,
+        "baseline_unit_profit": -94.71,
+        "gated_unit_profit": -7.789999999999994,
+        "paired_unit_profit": 86.92
+      },
+      "Hard": {
+        "matches": 5494,
+        "baseline_opportunities": 3272,
+        "accepted": 2017,
+        "rejected": 1255,
+        "retention": 0.616442542787286,
+        "baseline_flat_roi": -0.12430012224938874,
+        "accepted_flat_roi": -0.10388200297471491,
+        "rejected_flat_roi": -0.15711553784860557,
+        "paired_improvement": 0.060262836185819076,
+        "baseline_unit_profit": -406.71,
+        "gated_unit_profit": -209.52999999999997,
+        "paired_unit_profit": 197.18
+      }
+    },
+    "checks": {
+      "sample": true,
+      "wallet_final": false,
+      "wallet_drawdown": false,
+      "paired_improvement": true,
+      "flat_roi": true
+    },
+    "passed": false,
+    "both_wallets_lose": true
+  },
+  "replay": {
+    "warmup_from": "2000-01-03",
+    "through": "2026-10-05",
+    "rows": 68814,
+    "probability_max_abs_difference": 0.0
+  },
+  "diagnostics": [
+    {
+      "threshold": [
+        10,
+        5
+      ],
+      "matches": 17659,
+      "baseline_opportunities": 9411,
+      "accepted": 7586,
+      "rejected": 1825,
+      "retention": 0.8060779938369993,
+      "baseline_flat_roi": -0.12579357489462684,
+      "accepted_flat_roi": -0.10700676685121713,
+      "rejected_flat_roi": -0.20388493150684933,
+      "paired_improvement": 0.03953777494421421,
+      "baseline_unit_profit": -1183.8433333333332,
+      "gated_unit_profit": -811.7533333333332,
+      "paired_unit_profit": 372.09,
+      "actual_date_range": [
+        "2010-01-04",
+        "2016-11-20"
+      ],
+      "scores": {
+        "all": {
+          "v0": {
+            "n": 17659,
+            "log_loss": 0.579372506510572,
+            "brier": 0.19815666699794093
+          },
+          "gated": {
+            "n": 17659,
+            "log_loss": 0.579372506510572,
+            "brier": 0.19815666699794093
+          },
+          "market": {
+            "n": 17607,
+            "log_loss": 0.551742702755955,
+            "brier": 0.18666916316791332
+          },
+          "v0_with_market_odds": {
+            "n": 17607,
+            "log_loss": 0.5802239781343063,
+            "brier": 0.1984654616378188
+          }
+        },
+        "accepted": {
+          "v0": {
+            "n": 14917,
+            "log_loss": 0.5798091682441199,
+            "brier": 0.1983641647541109
+          },
+          "gated": {
+            "n": 14917,
+            "log_loss": 0.5798091682441199,
+            "brier": 0.1983641647541109
+          },
+          "market": {
+            "n": 14881,
+            "log_loss": 0.5580560742544541,
+            "brier": 0.18938602093042514
+          },
+          "v0_with_market_odds": {
+            "n": 14881,
+            "log_loss": 0.580535135671695,
+            "brier": 0.19862682705417123
+          }
+        },
+        "rejected": {
+          "v0": {
+            "n": 2742,
+            "log_loss": 0.5769969838704069,
+            "brier": 0.19702783985396327
+          },
+          "gated": {
+            "n": 2742,
+            "log_loss": 0.5769969838704069,
+            "brier": 0.19702783985396327
+          },
+          "market": {
+            "n": 2726,
+            "log_loss": 0.5172785496858282,
+            "brier": 0.17183806985759087
+          },
+          "v0_with_market_odds": {
+            "n": 2726,
+            "log_loss": 0.5785253958474822,
+            "brier": 0.1975845816815676
+          }
+        }
+      },
+      "wallets": {
+        "v0": {
+          "bets": 9411,
+          "win_rate": 0.3573477845074912,
+          "staked": 4485.28,
+          "profit": -999.87,
+          "roi": -0.22292253772339743,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.99991,
+          "zero_stake_bets": 7910
+        },
+        "gated": {
+          "bets": 7586,
+          "win_rate": 0.37542842077511207,
+          "staked": 5295.14,
+          "profit": -999.86,
+          "roi": -0.18882598004963042,
+          "final_bankroll": 0.1,
+          "max_drawdown": 0.9999,
+          "zero_stake_bets": 5725
+        }
+      },
+      "per_year": {
+        "2010": {
+          "matches": 2562,
+          "baseline_opportunities": 1318,
+          "accepted": 1042,
+          "rejected": 276,
+          "retention": 0.7905918057663126,
+          "baseline_flat_roi": -0.1675493171471927,
+          "accepted_flat_roi": -0.16809980806142033,
+          "rejected_flat_roi": -0.16547101449275362,
+          "paired_improvement": 0.034650986342943856,
+          "baseline_unit_profit": -220.82999999999998,
+          "gated_unit_profit": -175.16,
+          "paired_unit_profit": 45.67
+        },
+        "2011": {
+          "matches": 2565,
+          "baseline_opportunities": 1399,
+          "accepted": 1128,
+          "rejected": 271,
+          "retention": 0.806290207290922,
+          "baseline_flat_roi": -0.18265427686442698,
+          "accepted_flat_roi": -0.12810579196217495,
+          "rejected_flat_roi": -0.40970479704797047,
+          "paired_improvement": 0.0793638313080772,
+          "baseline_unit_profit": -255.53333333333333,
+          "gated_unit_profit": -144.50333333333333,
+          "paired_unit_profit": 111.03
+        },
+        "2012": {
+          "matches": 2508,
+          "baseline_opportunities": 1447,
+          "accepted": 1171,
+          "rejected": 276,
+          "retention": 0.8092605390463027,
+          "baseline_flat_roi": -0.0736973047684865,
+          "accepted_flat_roi": -0.11873612297181896,
+          "rejected_flat_roi": 0.11739130434782608,
+          "paired_improvement": -0.022391154111955774,
+          "baseline_unit_profit": -106.63999999999997,
+          "gated_unit_profit": -139.04,
+          "paired_unit_profit": -32.400000000000006
+        },
+        "2013": {
+          "matches": 2538,
+          "baseline_opportunities": 1381,
+          "accepted": 1118,
+          "rejected": 263,
+          "retention": 0.8095582910934106,
+          "baseline_flat_roi": -0.06689355539464154,
+          "accepted_flat_roi": -0.008828264758497307,
+          "rejected_flat_roi": -0.3137262357414448,
+          "paired_improvement": 0.05974656046343229,
+          "baseline_unit_profit": -92.37999999999997,
+          "gated_unit_profit": -9.869999999999983,
+          "paired_unit_profit": 82.50999999999999
+        },
+        "2014": {
+          "matches": 2448,
+          "baseline_opportunities": 1228,
+          "accepted": 987,
+          "rejected": 241,
+          "retention": 0.8037459283387622,
+          "baseline_flat_roi": -0.07788273615635179,
+          "accepted_flat_roi": -0.03331306990881458,
+          "rejected_flat_roi": -0.2604149377593361,
+          "paired_improvement": 0.051107491856677525,
+          "baseline_unit_profit": -95.63999999999999,
+          "gated_unit_profit": -32.879999999999995,
+          "paired_unit_profit": 62.76
+        },
+        "2015": {
+          "matches": 2518,
+          "baseline_opportunities": 1296,
+          "accepted": 1062,
+          "rejected": 234,
+          "retention": 0.8194444444444444,
+          "baseline_flat_roi": -0.15631944444444443,
+          "accepted_flat_roi": -0.1363935969868173,
+          "rejected_flat_roi": -0.24675213675213675,
+          "paired_improvement": 0.044552469135802464,
+          "baseline_unit_profit": -202.58999999999997,
+          "gated_unit_profit": -144.85,
+          "paired_unit_profit": 57.739999999999995
+        },
+        "2016": {
+          "matches": 2520,
+          "baseline_opportunities": 1342,
+          "accepted": 1078,
+          "rejected": 264,
+          "retention": 0.8032786885245902,
+          "baseline_flat_roi": -0.1566542473919523,
+          "accepted_flat_roi": -0.1534786641929499,
+          "rejected_flat_roi": -0.16962121212121212,
+          "paired_improvement": 0.033368107302533534,
+          "baseline_unit_profit": -210.23,
+          "gated_unit_profit": -165.45,
+          "paired_unit_profit": 44.78
+        }
+      },
+      "by_surface": {
+        "Clay": {
+          "matches": 5609,
+          "baseline_opportunities": 3154,
+          "accepted": 2461,
+          "rejected": 693,
+          "retention": 0.780279010779962,
+          "baseline_flat_roi": -0.12770238850137391,
+          "accepted_flat_roi": -0.11986726263036707,
+          "rejected_flat_roi": -0.15552669552669554,
+          "paired_improvement": 0.034172479391249205,
+          "baseline_unit_profit": -402.7733333333333,
+          "gated_unit_profit": -294.9933333333333,
+          "paired_unit_profit": 107.78
+        },
+        "Grass": {
+          "matches": 2049,
+          "baseline_opportunities": 1284,
+          "accepted": 864,
+          "rejected": 420,
+          "retention": 0.6728971962616822,
+          "baseline_flat_roi": -0.11274143302180685,
+          "accepted_flat_roi": -0.08980324074074071,
+          "rejected_flat_roi": -0.1599285714285714,
+          "paired_improvement": 0.05231308411214952,
+          "baseline_unit_profit": -144.76,
+          "gated_unit_profit": -77.58999999999999,
+          "paired_unit_profit": 67.16999999999999
+        },
+        "Hard": {
+          "matches": 10001,
+          "baseline_opportunities": 4973,
+          "accepted": 4261,
+          "rejected": 712,
+          "retention": 0.8568268650713855,
+          "baseline_flat_roi": -0.12795294590790265,
+          "accepted_flat_roi": -0.1030673550809669,
+          "rejected_flat_roi": -0.27688202247191007,
+          "paired_improvement": 0.039642067162678464,
+          "baseline_unit_profit": -636.31,
+          "gated_unit_profit": -439.16999999999996,
+          "paired_unit_profit": 197.14
+        }
+      }
+    },
+    {
+      "threshold": [
+        10,
+        10
+      ],
+      "matches": 17659,
+      "baseline_opportunities": 9411,
+      "accepted": 6876,
+      "rejected": 2535,
+      "retention": 0.7306343640420784,
+      "baseline_flat_roi": -0.12579357489462684,
+      "accepted_flat_roi": -0.10691875121194494,
+      "rejected_flat_roi": -0.17699013806706113,
+      "paired_improvement": 0.047675061098714264,
+      "baseline_unit_profit": -1183.8433333333332,
+      "gated_unit_profit": -735.1733333333332,
+      "paired_unit_profit": 448.66999999999996,
+      "actual_date_range": [
+        "2010-01-04",
+        "2016-11-20"
+      ],
+      "scores": {
+        "all": {
+          "v0": {
+            "n": 17659,
+            "log_loss": 0.579372506510572,
+            "brier": 0.19815666699794093
+          },
+          "gated": {
+            "n": 17659,
+            "log_loss": 0.579372506510572,
+            "brier": 0.19815666699794093
+          },
+          "market": {
+            "n": 17607,
+            "log_loss": 0.551742702755955,
+            "brier": 0.18666916316791332
+          },
+          "v0_with_market_odds": {
+            "n": 17607,
+            "log_loss": 0.5802239781343063,
+            "brier": 0.1984654616378188
+          }
+        },
+        "accepted": {
+          "v0": {
+            "n": 13688,
+            "log_loss": 0.5806380053180616,
+            "brier": 0.19884860348216252
+          },
+          "gated": {
+            "n": 13688,
+            "log_loss": 0.5806380053180616,
+            "brier": 0.19884860348216252
+          },
+          "market": {
+            "n": 13662,
+            "log_loss": 0.5593677883117212,
+            "brier": 0.18998189930686665
+          },
+          "v0_with_market_odds": {
+            "n": 13662,
+            "log_loss": 0.581309069461657,
+            "brier": 0.19909647368775857
+          }
+        },
+        "rejected": {
+          "v0": {
+            "n": 3971,
+            "log_loss": 0.5750103439125072,
+            "brier": 0.19577156838398357
+          },
+          "gated": {
+            "n": 3971,
+            "log_loss": 0.5750103439125072,
+            "brier": 0.19577156838398357
+          },
+          "market": {
+            "n": 3945,
+            "log_loss": 0.525336132701994,
+            "brier": 0.17519676744411602
+          },
+          "v0_with_market_odds": {
+            "n": 3945,
+            "log_loss": 0.5764661789671919,
+            "brier": 0.19628019253103116
+          }
+        }
+      },
+      "wallets": {
+        "v0": {
+          "bets": 9411,
+          "win_rate": 0.3573477845074912,
+          "staked": 4485.28,
+          "profit": -999.87,
+          "roi": -0.22292253772339743,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.99991,
+          "zero_stake_bets": 7910
+        },
+        "gated": {
+          "bets": 6876,
+          "win_rate": 0.3739092495636998,
+          "staked": 4812.66,
+          "profit": -999.9,
+          "roi": -0.20776452107566293,
+          "final_bankroll": 0.1,
+          "max_drawdown": 0.9999,
+          "zero_stake_bets": 5168
+        }
+      },
+      "per_year": {
+        "2010": {
+          "matches": 2562,
+          "baseline_opportunities": 1318,
+          "accepted": 938,
+          "rejected": 380,
+          "retention": 0.7116843702579666,
+          "baseline_flat_roi": -0.1675493171471927,
+          "accepted_flat_roi": -0.17347547974413643,
+          "rejected_flat_roi": -0.15292105263157896,
+          "paired_improvement": 0.044089529590288314,
+          "baseline_unit_profit": -220.82999999999998,
+          "gated_unit_profit": -162.72,
+          "paired_unit_profit": 58.11
+        },
+        "2011": {
+          "matches": 2565,
+          "baseline_opportunities": 1399,
+          "accepted": 1011,
+          "rejected": 388,
+          "retention": 0.7226590421729807,
+          "baseline_flat_roi": -0.18265427686442698,
+          "accepted_flat_roi": -0.15252555225848993,
+          "rejected_flat_roi": -0.261159793814433,
+          "paired_improvement": 0.07243030736240172,
+          "baseline_unit_profit": -255.53333333333333,
+          "gated_unit_profit": -154.20333333333332,
+          "paired_unit_profit": 101.33
+        },
+        "2012": {
+          "matches": 2508,
+          "baseline_opportunities": 1447,
+          "accepted": 1069,
+          "rejected": 378,
+          "retention": 0.7387698686938493,
+          "baseline_flat_roi": -0.0736973047684865,
+          "accepted_flat_roi": -0.11928905519176798,
+          "rejected_flat_roi": 0.055238095238095225,
+          "paired_improvement": -0.014429854872149275,
+          "baseline_unit_profit": -106.63999999999997,
+          "gated_unit_profit": -127.52,
+          "paired_unit_profit": -20.880000000000003
+        },
+        "2013": {
+          "matches": 2538,
+          "baseline_opportunities": 1381,
+          "accepted": 1023,
+          "rejected": 358,
+          "retention": 0.7407675597393193,
+          "baseline_flat_roi": -0.06689355539464154,
+          "accepted_flat_roi": -0.002336265884652968,
+          "rejected_flat_roi": -0.2513687150837989,
+          "paired_improvement": 0.06516292541636495,
+          "baseline_unit_profit": -92.37999999999997,
+          "gated_unit_profit": -2.3899999999999793,
+          "paired_unit_profit": 89.99
+        },
+        "2014": {
+          "matches": 2448,
+          "baseline_opportunities": 1228,
+          "accepted": 891,
+          "rejected": 337,
+          "retention": 0.7255700325732899,
+          "baseline_flat_roi": -0.07788273615635179,
+          "accepted_flat_roi": 0.0030639730639730766,
+          "rejected_flat_roi": -0.2918991097922849,
+          "paired_improvement": 0.08010586319218241,
+          "baseline_unit_profit": -95.63999999999999,
+          "gated_unit_profit": 2.7300000000000004,
+          "paired_unit_profit": 98.36999999999999
+        },
+        "2015": {
+          "matches": 2518,
+          "baseline_opportunities": 1296,
+          "accepted": 972,
+          "rejected": 324,
+          "retention": 0.75,
+          "baseline_flat_roi": -0.15631944444444443,
+          "accepted_flat_roi": -0.12540123456790123,
+          "rejected_flat_roi": -0.24907407407407403,
+          "paired_improvement": 0.06226851851851852,
+          "baseline_unit_profit": -202.58999999999997,
+          "gated_unit_profit": -121.88999999999999,
+          "paired_unit_profit": 80.7
+        },
+        "2016": {
+          "matches": 2520,
+          "baseline_opportunities": 1342,
+          "accepted": 972,
+          "rejected": 370,
+          "retention": 0.7242921013412816,
+          "baseline_flat_roi": -0.1566542473919523,
+          "accepted_flat_roi": -0.17405349794238684,
+          "rejected_flat_roi": -0.11094594594594594,
+          "paired_improvement": 0.030588673621460505,
+          "baseline_unit_profit": -210.23,
+          "gated_unit_profit": -169.18,
+          "paired_unit_profit": 41.05
+        }
+      },
+      "by_surface": {
+        "Clay": {
+          "matches": 5609,
+          "baseline_opportunities": 3154,
+          "accepted": 2216,
+          "rejected": 938,
+          "retention": 0.7025998731769182,
+          "baseline_flat_roi": -0.12770238850137391,
+          "accepted_flat_roi": -0.11429302045728038,
+          "rejected_flat_roi": -0.1593816631130064,
+          "paired_improvement": 0.0474001268230818,
+          "baseline_unit_profit": -402.7733333333333,
+          "gated_unit_profit": -253.2733333333333,
+          "paired_unit_profit": 149.5
+        },
+        "Grass": {
+          "matches": 2049,
+          "baseline_opportunities": 1284,
+          "accepted": 636,
+          "rejected": 648,
+          "retention": 0.4953271028037383,
+          "baseline_flat_roi": -0.11274143302180685,
+          "accepted_flat_roi": -0.06630503144654087,
+          "rejected_flat_roi": -0.1583179012345679,
+          "paired_improvement": 0.07989875389408099,
+          "baseline_unit_profit": -144.76,
+          "gated_unit_profit": -42.17,
+          "paired_unit_profit": 102.59
+        },
+        "Hard": {
+          "matches": 10001,
+          "baseline_opportunities": 4973,
+          "accepted": 4024,
+          "rejected": 949,
+          "retention": 0.8091695153830686,
+          "baseline_flat_roi": -0.12795294590790265,
+          "accepted_flat_roi": -0.10927683896620276,
+          "rejected_flat_roi": -0.20714436248682822,
+          "paired_improvement": 0.03952945907902674,
+          "baseline_unit_profit": -636.31,
+          "gated_unit_profit": -439.73,
+          "paired_unit_profit": 196.57999999999998
+        }
+      }
+    },
+    {
+      "threshold": [
+        20,
+        5
+      ],
+      "matches": 17659,
+      "baseline_opportunities": 9411,
+      "accepted": 7104,
+      "rejected": 2307,
+      "retention": 0.7548613324832643,
+      "baseline_flat_roi": -0.12579357489462684,
+      "accepted_flat_roi": -0.11126689189189187,
+      "rejected_flat_roi": -0.1705259355584453,
+      "paired_improvement": 0.041802500619842024,
+      "baseline_unit_profit": -1183.8433333333332,
+      "gated_unit_profit": -790.4399999999999,
+      "paired_unit_profit": 393.4033333333333,
+      "actual_date_range": [
+        "2010-01-04",
+        "2016-11-20"
+      ],
+      "scores": {
+        "all": {
+          "v0": {
+            "n": 17659,
+            "log_loss": 0.579372506510572,
+            "brier": 0.19815666699794093
+          },
+          "gated": {
+            "n": 17659,
+            "log_loss": 0.579372506510572,
+            "brier": 0.19815666699794093
+          },
+          "market": {
+            "n": 17607,
+            "log_loss": 0.551742702755955,
+            "brier": 0.18666916316791332
+          },
+          "v0_with_market_odds": {
+            "n": 17607,
+            "log_loss": 0.5802239781343063,
+            "brier": 0.1984654616378188
+          }
+        },
+        "accepted": {
+          "v0": {
+            "n": 14020,
+            "log_loss": 0.580133633161099,
+            "brier": 0.19852880579847212
+          },
+          "gated": {
+            "n": 14020,
+            "log_loss": 0.580133633161099,
+            "brier": 0.19852880579847212
+          },
+          "market": {
+            "n": 13990,
+            "log_loss": 0.5587177407806961,
+            "brier": 0.18967905931436785
+          },
+          "v0_with_market_odds": {
+            "n": 13990,
+            "log_loss": 0.5808853322269081,
+            "brier": 0.1988075905040087
+          }
+        },
+        "rejected": {
+          "v0": {
+            "n": 3639,
+            "log_loss": 0.5764401086978795,
+            "brier": 0.196722925315213
+          },
+          "gated": {
+            "n": 3639,
+            "log_loss": 0.5764401086978795,
+            "brier": 0.196722925315213
+          },
+          "market": {
+            "n": 3617,
+            "log_loss": 0.5247643278689971,
+            "brier": 0.17502734755030244
+          },
+          "v0_with_market_odds": {
+            "n": 3617,
+            "log_loss": 0.577665962166515,
+            "brier": 0.19714215977494978
+          }
+        }
+      },
+      "wallets": {
+        "v0": {
+          "bets": 9411,
+          "win_rate": 0.3573477845074912,
+          "staked": 4485.28,
+          "profit": -999.87,
+          "roi": -0.22292253772339743,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.99991,
+          "zero_stake_bets": 7910
+        },
+        "gated": {
+          "bets": 7104,
+          "win_rate": 0.3685247747747748,
+          "staked": 5390.37,
+          "profit": -999.87,
+          "roi": -0.18549190500837606,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.99991,
+          "zero_stake_bets": 5281
+        }
+      },
+      "per_year": {
+        "2010": {
+          "matches": 2562,
+          "baseline_opportunities": 1318,
+          "accepted": 981,
+          "rejected": 337,
+          "retention": 0.7443095599393019,
+          "baseline_flat_roi": -0.1675493171471927,
+          "accepted_flat_roi": -0.16928644240570845,
+          "rejected_flat_roi": -0.16249258160237387,
+          "paired_improvement": 0.04154779969650985,
+          "baseline_unit_profit": -220.82999999999998,
+          "gated_unit_profit": -166.07,
+          "paired_unit_profit": 54.75999999999999
+        },
+        "2011": {
+          "matches": 2565,
+          "baseline_opportunities": 1399,
+          "accepted": 1051,
+          "rejected": 348,
+          "retention": 0.7512508934953538,
+          "baseline_flat_roi": -0.18265427686442698,
+          "accepted_flat_roi": -0.14067554709800187,
+          "rejected_flat_roi": -0.30943486590038316,
+          "paired_improvement": 0.07697164641410531,
+          "baseline_unit_profit": -255.53333333333333,
+          "gated_unit_profit": -147.84999999999997,
+          "paired_unit_profit": 107.68333333333334
+        },
+        "2012": {
+          "matches": 2508,
+          "baseline_opportunities": 1447,
+          "accepted": 1104,
+          "rejected": 343,
+          "retention": 0.7629578438147893,
+          "baseline_flat_roi": -0.0736973047684865,
+          "accepted_flat_roi": -0.1396195652173913,
+          "rejected_flat_roi": 0.13848396501457727,
+          "paired_improvement": -0.032826537664132696,
+          "baseline_unit_profit": -106.63999999999997,
+          "gated_unit_profit": -154.14,
+          "paired_unit_profit": -47.500000000000014
+        },
+        "2013": {
+          "matches": 2538,
+          "baseline_opportunities": 1381,
+          "accepted": 1055,
+          "rejected": 326,
+          "retention": 0.7639391745112237,
+          "baseline_flat_roi": -0.06689355539464154,
+          "accepted_flat_roi": 0.0017156398104265424,
+          "rejected_flat_roi": -0.28892638036809815,
+          "paired_improvement": 0.06820419985517741,
+          "baseline_unit_profit": -92.37999999999997,
+          "gated_unit_profit": 1.8100000000000236,
+          "paired_unit_profit": 94.19
+        },
+        "2014": {
+          "matches": 2448,
+          "baseline_opportunities": 1228,
+          "accepted": 923,
+          "rejected": 305,
+          "retention": 0.751628664495114,
+          "baseline_flat_roi": -0.07788273615635179,
+          "accepted_flat_roi": -0.015395449620801716,
+          "rejected_flat_roi": -0.2669836065573771,
+          "paired_improvement": 0.06631107491856678,
+          "baseline_unit_profit": -95.63999999999999,
+          "gated_unit_profit": -14.20999999999999,
+          "paired_unit_profit": 81.43
+        },
+        "2015": {
+          "matches": 2518,
+          "baseline_opportunities": 1296,
+          "accepted": 1006,
+          "rejected": 290,
+          "retention": 0.7762345679012346,
+          "baseline_flat_roi": -0.15631944444444443,
+          "accepted_flat_roi": -0.13764413518886676,
+          "rejected_flat_roi": -0.2211034482758621,
+          "paired_improvement": 0.04947530864197531,
+          "baseline_unit_profit": -202.58999999999997,
+          "gated_unit_profit": -138.46999999999997,
+          "paired_unit_profit": 64.12
+        },
+        "2016": {
+          "matches": 2520,
+          "baseline_opportunities": 1342,
+          "accepted": 984,
+          "rejected": 358,
+          "retention": 0.7332339791356185,
+          "baseline_flat_roi": -0.1566542473919523,
+          "accepted_flat_roi": -0.17429878048780487,
+          "rejected_flat_roi": -0.10815642458100558,
+          "paired_improvement": 0.028852459016393443,
+          "baseline_unit_profit": -210.23,
+          "gated_unit_profit": -171.51,
+          "paired_unit_profit": 38.72
+        }
+      },
+      "by_surface": {
+        "Clay": {
+          "matches": 5609,
+          "baseline_opportunities": 3154,
+          "accepted": 2299,
+          "rejected": 855,
+          "retention": 0.7289156626506024,
+          "baseline_flat_roi": -0.12770238850137391,
+          "accepted_flat_roi": -0.1280208786428882,
+          "rejected_flat_roi": -0.12684600389863546,
+          "paired_improvement": 0.0343859649122807,
+          "baseline_unit_profit": -402.7733333333333,
+          "gated_unit_profit": -294.31999999999994,
+          "paired_unit_profit": 108.45333333333332
+        },
+        "Grass": {
+          "matches": 2049,
+          "baseline_opportunities": 1284,
+          "accepted": 843,
+          "rejected": 441,
+          "retention": 0.6565420560747663,
+          "baseline_flat_roi": -0.11274143302180685,
+          "accepted_flat_roi": -0.0842230130486358,
+          "rejected_flat_roi": -0.1672562358276644,
+          "paired_improvement": 0.057445482866043604,
+          "baseline_unit_profit": -144.76,
+          "gated_unit_profit": -71.0,
+          "paired_unit_profit": 73.75999999999999
+        },
+        "Hard": {
+          "matches": 10001,
+          "baseline_opportunities": 4973,
+          "accepted": 3962,
+          "rejected": 1011,
+          "retention": 0.796702191835914,
+          "baseline_flat_roi": -0.12795294590790265,
+          "accepted_flat_roi": -0.10729934376577485,
+          "rejected_flat_roi": -0.2088921859545005,
+          "paired_improvement": 0.042467323547154635,
+          "baseline_unit_profit": -636.31,
+          "gated_unit_profit": -425.11999999999995,
+          "paired_unit_profit": 211.19
+        }
+      }
+    },
+    {
+      "threshold": [
+        20,
+        10
+      ],
+      "matches": 17659,
+      "baseline_opportunities": 9411,
+      "accepted": 6646,
+      "rejected": 2765,
+      "retention": 0.7061948783338646,
+      "baseline_flat_roi": -0.12579357489462684,
+      "accepted_flat_roi": -0.10818838399037013,
+      "rejected_flat_roi": -0.16810970464135022,
+      "paired_improvement": 0.049391492225409984,
+      "baseline_unit_profit": -1183.8433333333332,
+      "gated_unit_profit": -719.02,
+      "paired_unit_profit": 464.8233333333334,
+      "actual_date_range": [
+        "2010-01-04",
+        "2016-11-20"
+      ],
+      "scores": {
+        "all": {
+          "v0": {
+            "n": 17659,
+            "log_loss": 0.579372506510572,
+            "brier": 0.19815666699794093
+          },
+          "gated": {
+            "n": 17659,
+            "log_loss": 0.579372506510572,
+            "brier": 0.19815666699794093
+          },
+          "market": {
+            "n": 17607,
+            "log_loss": 0.551742702755955,
+            "brier": 0.18666916316791332
+          },
+          "v0_with_market_odds": {
+            "n": 17607,
+            "log_loss": 0.5802239781343063,
+            "brier": 0.1984654616378188
+          }
+        },
+        "accepted": {
+          "v0": {
+            "n": 13273,
+            "log_loss": 0.5804435538277085,
+            "brier": 0.19874669046123383
+          },
+          "gated": {
+            "n": 13273,
+            "log_loss": 0.5804435538277085,
+            "brier": 0.19874669046123383
+          },
+          "market": {
+            "n": 13248,
+            "log_loss": 0.5595907653217803,
+            "brier": 0.1900822415379481
+          },
+          "v0_with_market_odds": {
+            "n": 13248,
+            "log_loss": 0.5810942632926553,
+            "brier": 0.19898720963979474
+          }
+        },
+        "rejected": {
+          "v0": {
+            "n": 4386,
+            "log_loss": 0.5761312819231685,
+            "brier": 0.19637112631661705
+          },
+          "gated": {
+            "n": 4386,
+            "log_loss": 0.5761312819231685,
+            "brier": 0.19637112631661705
+          },
+          "market": {
+            "n": 4359,
+            "log_loss": 0.5278906419915474,
+            "brier": 0.17629603578864733
+          },
+          "v0_with_market_odds": {
+            "n": 4359,
+            "log_loss": 0.577578982085256,
+            "brier": 0.19687974988508247
+          }
+        }
+      },
+      "wallets": {
+        "v0": {
+          "bets": 9411,
+          "win_rate": 0.3573477845074912,
+          "staked": 4485.28,
+          "profit": -999.87,
+          "roi": -0.22292253772339743,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.99991,
+          "zero_stake_bets": 7910
+        },
+        "gated": {
+          "bets": 6646,
+          "win_rate": 0.3710502557929582,
+          "staked": 5210.26,
+          "profit": -999.75,
+          "roi": -0.19188101937331342,
+          "final_bankroll": 0.1,
+          "max_drawdown": 0.9999,
+          "zero_stake_bets": 4854
+        }
+      },
+      "per_year": {
+        "2010": {
+          "matches": 2562,
+          "baseline_opportunities": 1318,
+          "accepted": 905,
+          "rejected": 413,
+          "retention": 0.6866464339908953,
+          "baseline_flat_roi": -0.1675493171471927,
+          "accepted_flat_roi": -0.16889502762430939,
+          "rejected_flat_roi": -0.16460048426150117,
+          "paired_improvement": 0.05157814871016691,
+          "baseline_unit_profit": -220.82999999999998,
+          "gated_unit_profit": -152.85,
+          "paired_unit_profit": 67.97999999999999
+        },
+        "2011": {
+          "matches": 2565,
+          "baseline_opportunities": 1399,
+          "accepted": 974,
+          "rejected": 425,
+          "retention": 0.6962115796997855,
+          "baseline_flat_roi": -0.18265427686442698,
+          "accepted_flat_roi": -0.15256673511293634,
+          "rejected_flat_roi": -0.2516078431372549,
+          "paired_improvement": 0.07643554920181082,
+          "baseline_unit_profit": -255.53333333333333,
+          "gated_unit_profit": -148.6,
+          "paired_unit_profit": 106.93333333333334
+        },
+        "2012": {
+          "matches": 2508,
+          "baseline_opportunities": 1447,
+          "accepted": 1042,
+          "rejected": 405,
+          "retention": 0.7201105736005529,
+          "baseline_flat_roi": -0.0736973047684865,
+          "accepted_flat_roi": -0.14096928982725526,
+          "rejected_flat_roi": 0.09938271604938273,
+          "paired_improvement": -0.027816171389080862,
+          "baseline_unit_profit": -106.63999999999997,
+          "gated_unit_profit": -146.89,
+          "paired_unit_profit": -40.25000000000001
+        },
+        "2013": {
+          "matches": 2538,
+          "baseline_opportunities": 1381,
+          "accepted": 993,
+          "rejected": 388,
+          "retention": 0.719044170890659,
+          "baseline_flat_roi": -0.06689355539464154,
+          "accepted_flat_roi": 0.009214501510574038,
+          "rejected_flat_roi": -0.26167525773195877,
+          "paired_improvement": 0.07351918899348298,
+          "baseline_unit_profit": -92.37999999999997,
+          "gated_unit_profit": 9.15000000000002,
+          "paired_unit_profit": 101.52999999999999
+        },
+        "2014": {
+          "matches": 2448,
+          "baseline_opportunities": 1228,
+          "accepted": 864,
+          "rejected": 364,
+          "retention": 0.7035830618892508,
+          "baseline_flat_roi": -0.07788273615635179,
+          "accepted_flat_roi": 0.008240740740740759,
+          "rejected_flat_roi": -0.28230769230769226,
+          "paired_improvement": 0.08368078175895764,
+          "baseline_unit_profit": -95.63999999999999,
+          "gated_unit_profit": 7.119999999999997,
+          "paired_unit_profit": 102.75999999999999
+        },
+        "2015": {
+          "matches": 2518,
+          "baseline_opportunities": 1296,
+          "accepted": 947,
+          "rejected": 349,
+          "retention": 0.7307098765432098,
+          "baseline_flat_roi": -0.15631944444444443,
+          "accepted_flat_roi": -0.12615628299894402,
+          "rejected_flat_roi": -0.23816618911174786,
+          "paired_improvement": 0.0641358024691358,
+          "baseline_unit_profit": -202.58999999999997,
+          "gated_unit_profit": -119.47,
+          "paired_unit_profit": 83.12
+        },
+        "2016": {
+          "matches": 2520,
+          "baseline_opportunities": 1342,
+          "accepted": 921,
+          "rejected": 421,
+          "retention": 0.6862891207153502,
+          "baseline_flat_roi": -0.1566542473919523,
+          "accepted_flat_roi": -0.1818458197611292,
+          "rejected_flat_roi": -0.10154394299287407,
+          "paired_improvement": 0.03185543964232489,
+          "baseline_unit_profit": -210.23,
+          "gated_unit_profit": -167.48000000000002,
+          "paired_unit_profit": 42.75
+        }
+      },
+      "by_surface": {
+        "Clay": {
+          "matches": 5609,
+          "baseline_opportunities": 3154,
+          "accepted": 2132,
+          "rejected": 1022,
+          "retention": 0.6759670259987318,
+          "baseline_flat_roi": -0.12770238850137391,
+          "accepted_flat_roi": -0.1197889305816135,
+          "rejected_flat_roi": -0.14421069797782127,
+          "paired_improvement": 0.0467290213485521,
+          "baseline_unit_profit": -402.7733333333333,
+          "gated_unit_profit": -255.39,
+          "paired_unit_profit": 147.38333333333333
+        },
+        "Grass": {
+          "matches": 2049,
+          "baseline_opportunities": 1284,
+          "accepted": 633,
+          "rejected": 651,
+          "retention": 0.4929906542056075,
+          "baseline_flat_roi": -0.11274143302180685,
+          "accepted_flat_roi": -0.06187993680884675,
+          "rejected_flat_roi": -0.16219662058371734,
+          "paired_improvement": 0.08223520249221183,
+          "baseline_unit_profit": -144.76,
+          "gated_unit_profit": -39.17,
+          "paired_unit_profit": 105.59
+        },
+        "Hard": {
+          "matches": 10001,
+          "baseline_opportunities": 4973,
+          "accepted": 3881,
+          "rejected": 1092,
+          "retention": 0.7804142368791473,
+          "baseline_flat_roi": -0.12795294590790265,
+          "accepted_flat_roi": -0.10936871940221592,
+          "rejected_flat_roi": -0.19400183150183148,
+          "paired_improvement": 0.04260004021717272,
+          "baseline_unit_profit": -636.31,
+          "gated_unit_profit": -424.4599999999999,
+          "paired_unit_profit": 211.84999999999997
+        }
+      }
+    },
+    {
+      "threshold": [
+        40,
+        5
+      ],
+      "matches": 17659,
+      "baseline_opportunities": 9411,
+      "accepted": 6193,
+      "rejected": 3218,
+      "retention": 0.6580597173520348,
+      "baseline_flat_roi": -0.12579357489462684,
+      "accepted_flat_roi": -0.1174535766187631,
+      "rejected_flat_roi": -0.1418437953180029,
+      "paired_improvement": 0.04850210746289802,
+      "baseline_unit_profit": -1183.8433333333332,
+      "gated_unit_profit": -727.39,
+      "paired_unit_profit": 456.45333333333326,
+      "actual_date_range": [
+        "2010-01-04",
+        "2016-11-20"
+      ],
+      "scores": {
+        "all": {
+          "v0": {
+            "n": 17659,
+            "log_loss": 0.579372506510572,
+            "brier": 0.19815666699794093
+          },
+          "gated": {
+            "n": 17659,
+            "log_loss": 0.579372506510572,
+            "brier": 0.19815666699794093
+          },
+          "market": {
+            "n": 17607,
+            "log_loss": 0.551742702755955,
+            "brier": 0.18666916316791332
+          },
+          "v0_with_market_odds": {
+            "n": 17607,
+            "log_loss": 0.5802239781343063,
+            "brier": 0.1984654616378188
+          }
+        },
+        "accepted": {
+          "v0": {
+            "n": 12392,
+            "log_loss": 0.5763591695040413,
+            "brier": 0.19696601127268007
+          },
+          "gated": {
+            "n": 12392,
+            "log_loss": 0.5763591695040413,
+            "brier": 0.19696601127268007
+          },
+          "market": {
+            "n": 12368,
+            "log_loss": 0.5562514229229437,
+            "brier": 0.1886556816582908
+          },
+          "v0_with_market_odds": {
+            "n": 12368,
+            "log_loss": 0.5770861061188224,
+            "brier": 0.19723877571776946
+          }
+        },
+        "rejected": {
+          "v0": {
+            "n": 5267,
+            "log_loss": 0.5864621727693398,
+            "brier": 0.20095799711896478
+          },
+          "gated": {
+            "n": 5267,
+            "log_loss": 0.5864621727693398,
+            "brier": 0.20095799711896478
+          },
+          "market": {
+            "n": 5239,
+            "log_loss": 0.5410987151580708,
+            "brier": 0.1819794779820021
+          },
+          "v0_with_market_odds": {
+            "n": 5239,
+            "log_loss": 0.5876317279124135,
+            "brier": 0.20136136762353557
+          }
+        }
+      },
+      "wallets": {
+        "v0": {
+          "bets": 9411,
+          "win_rate": 0.3573477845074912,
+          "staked": 4485.28,
+          "profit": -999.87,
+          "roi": -0.22292253772339743,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.99991,
+          "zero_stake_bets": 7910
+        },
+        "gated": {
+          "bets": 6193,
+          "win_rate": 0.36105280155013725,
+          "staked": 4992.26,
+          "profit": -999.82,
+          "roi": -0.20027402418944526,
+          "final_bankroll": 0.1,
+          "max_drawdown": 0.9999,
+          "zero_stake_bets": 4236
+        }
+      },
+      "per_year": {
+        "2010": {
+          "matches": 2562,
+          "baseline_opportunities": 1318,
+          "accepted": 850,
+          "rejected": 468,
+          "retention": 0.644916540212443,
+          "baseline_flat_roi": -0.1675493171471927,
+          "accepted_flat_roi": -0.1769647058823529,
+          "rejected_flat_roi": -0.15044871794871795,
+          "paired_improvement": 0.05342185128983308,
+          "baseline_unit_profit": -220.82999999999998,
+          "gated_unit_profit": -150.42,
+          "paired_unit_profit": 70.41
+        },
+        "2011": {
+          "matches": 2565,
+          "baseline_opportunities": 1399,
+          "accepted": 924,
+          "rejected": 475,
+          "retention": 0.6604717655468192,
+          "baseline_flat_roi": -0.18265427686442698,
+          "accepted_flat_roi": -0.1345021645021645,
+          "rejected_flat_roi": -0.27632280701754386,
+          "paired_improvement": 0.0938193948058137,
+          "baseline_unit_profit": -255.53333333333333,
+          "gated_unit_profit": -124.28,
+          "paired_unit_profit": 131.25333333333336
+        },
+        "2012": {
+          "matches": 2508,
+          "baseline_opportunities": 1447,
+          "accepted": 960,
+          "rejected": 487,
+          "retention": 0.663441603317208,
+          "baseline_flat_roi": -0.0736973047684865,
+          "accepted_flat_roi": -0.14634374999999997,
+          "rejected_flat_roi": 0.06950718685831622,
+          "paired_improvement": -0.023393227366966144,
+          "baseline_unit_profit": -106.63999999999997,
+          "gated_unit_profit": -140.48999999999998,
+          "paired_unit_profit": -33.85000000000001
+        },
+        "2013": {
+          "matches": 2538,
+          "baseline_opportunities": 1381,
+          "accepted": 914,
+          "rejected": 467,
+          "retention": 0.6618392469225199,
+          "baseline_flat_roi": -0.06689355539464154,
+          "accepted_flat_roi": -0.009398249452954045,
+          "rejected_flat_roi": -0.1794218415417559,
+          "paired_improvement": 0.060673425054308464,
+          "baseline_unit_profit": -92.37999999999997,
+          "gated_unit_profit": -8.58999999999999,
+          "paired_unit_profit": 83.78999999999999
+        },
+        "2014": {
+          "matches": 2448,
+          "baseline_opportunities": 1228,
+          "accepted": 820,
+          "rejected": 408,
+          "retention": 0.6677524429967426,
+          "baseline_flat_roi": -0.07788273615635179,
+          "accepted_flat_roi": -0.0036341463414633936,
+          "rejected_flat_roi": -0.2271078431372549,
+          "paired_improvement": 0.07545602605863191,
+          "baseline_unit_profit": -95.63999999999999,
+          "gated_unit_profit": -2.979999999999997,
+          "paired_unit_profit": 92.66
+        },
+        "2015": {
+          "matches": 2518,
+          "baseline_opportunities": 1296,
+          "accepted": 889,
+          "rejected": 407,
+          "retention": 0.6859567901234568,
+          "baseline_flat_roi": -0.15631944444444443,
+          "accepted_flat_roi": -0.16129358830146232,
+          "rejected_flat_roi": -0.14545454545454548,
+          "paired_improvement": 0.04567901234567901,
+          "baseline_unit_profit": -202.58999999999997,
+          "gated_unit_profit": -143.39,
+          "paired_unit_profit": 59.199999999999996
+        },
+        "2016": {
+          "matches": 2520,
+          "baseline_opportunities": 1342,
+          "accepted": 836,
+          "rejected": 506,
+          "retention": 0.6229508196721312,
+          "baseline_flat_roi": -0.1566542473919523,
+          "accepted_flat_roi": -0.18808612440191388,
+          "rejected_flat_roi": -0.10472332015810276,
+          "paired_improvement": 0.03948584202682563,
+          "baseline_unit_profit": -210.23,
+          "gated_unit_profit": -157.23999999999998,
+          "paired_unit_profit": 52.989999999999995
+        }
+      },
+      "by_surface": {
+        "Clay": {
+          "matches": 5609,
+          "baseline_opportunities": 3154,
+          "accepted": 1989,
+          "rejected": 1165,
+          "retention": 0.6306277742549143,
+          "baseline_flat_roi": -0.12770238850137391,
+          "accepted_flat_roi": -0.12959778783308193,
+          "rejected_flat_roi": -0.12446638054363376,
+          "paired_improvement": 0.04597442401183682,
+          "baseline_unit_profit": -402.7733333333333,
+          "gated_unit_profit": -257.77,
+          "paired_unit_profit": 145.00333333333333
+        },
+        "Grass": {
+          "matches": 2049,
+          "baseline_opportunities": 1284,
+          "accepted": 778,
+          "rejected": 506,
+          "retention": 0.6059190031152648,
+          "baseline_flat_roi": -0.11274143302180685,
+          "accepted_flat_roi": -0.06519280205655525,
+          "rejected_flat_roi": -0.18584980237154147,
+          "paired_improvement": 0.0732398753894081,
+          "baseline_unit_profit": -144.76,
+          "gated_unit_profit": -50.72,
+          "paired_unit_profit": 94.03999999999999
+        },
+        "Hard": {
+          "matches": 10001,
+          "baseline_opportunities": 4973,
+          "accepted": 3426,
+          "rejected": 1547,
+          "retention": 0.6889201689121255,
+          "baseline_flat_roi": -0.12795294590790265,
+          "accepted_flat_roi": -0.12227086981903093,
+          "rejected_flat_roi": -0.14053652230122815,
+          "paired_improvement": 0.04371807761914337,
+          "baseline_unit_profit": -636.31,
+          "gated_unit_profit": -418.9,
+          "paired_unit_profit": 217.40999999999997
+        }
+      }
+    },
+    {
+      "threshold": [
+        40,
+        10
+      ],
+      "matches": 17659,
+      "baseline_opportunities": 9411,
+      "accepted": 5935,
+      "rejected": 3476,
+      "retention": 0.6306449899054298,
+      "baseline_flat_roi": -0.12579357489462684,
+      "accepted_flat_roi": -0.1149536647009267,
+      "rejected_flat_roi": -0.14430187955504412,
+      "paired_improvement": 0.05329862217971877,
+      "baseline_unit_profit": -1183.8433333333332,
+      "gated_unit_profit": -682.2499999999999,
+      "paired_unit_profit": 501.59333333333336,
+      "actual_date_range": [
+        "2010-01-04",
+        "2016-11-20"
+      ],
+      "scores": {
+        "all": {
+          "v0": {
+            "n": 17659,
+            "log_loss": 0.579372506510572,
+            "brier": 0.19815666699794093
+          },
+          "gated": {
+            "n": 17659,
+            "log_loss": 0.579372506510572,
+            "brier": 0.19815666699794093
+          },
+          "market": {
+            "n": 17607,
+            "log_loss": 0.551742702755955,
+            "brier": 0.18666916316791332
+          },
+          "v0_with_market_odds": {
+            "n": 17607,
+            "log_loss": 0.5802239781343063,
+            "brier": 0.1984654616378188
+          }
+        },
+        "accepted": {
+          "v0": {
+            "n": 11992,
+            "log_loss": 0.5776236081638809,
+            "brier": 0.19754163816427067
+          },
+          "gated": {
+            "n": 11992,
+            "log_loss": 0.5776236081638809,
+            "brier": 0.19754163816427067
+          },
+          "market": {
+            "n": 11971,
+            "log_loss": 0.5574829311671119,
+            "brier": 0.18916758993990979
+          },
+          "v0_with_market_odds": {
+            "n": 11971,
+            "log_loss": 0.578308623684797,
+            "brier": 0.1977975878579319
+          }
+        },
+        "rejected": {
+          "v0": {
+            "n": 5667,
+            "log_loss": 0.5830733692198575,
+            "brier": 0.19945813616564415
+          },
+          "gated": {
+            "n": 5667,
+            "log_loss": 0.5830733692198575,
+            "brier": 0.19945813616564415
+          },
+          "market": {
+            "n": 5636,
+            "log_loss": 0.5395503190955648,
+            "brier": 0.1813624444156831
+          },
+          "v0_with_market_odds": {
+            "n": 5636,
+            "log_loss": 0.5842922372036948,
+            "brier": 0.19988404166248633
+          }
+        }
+      },
+      "wallets": {
+        "v0": {
+          "bets": 9411,
+          "win_rate": 0.3573477845074912,
+          "staked": 4485.28,
+          "profit": -999.87,
+          "roi": -0.22292253772339743,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.99991,
+          "zero_stake_bets": 7910
+        },
+        "gated": {
+          "bets": 5935,
+          "win_rate": 0.36360572872788544,
+          "staked": 5068.72,
+          "profit": -999.9,
+          "roi": -0.19726873845862464,
+          "final_bankroll": 0.1,
+          "max_drawdown": 0.9999,
+          "zero_stake_bets": 4049
+        }
+      },
+      "per_year": {
+        "2010": {
+          "matches": 2562,
+          "baseline_opportunities": 1318,
+          "accepted": 808,
+          "rejected": 510,
+          "retention": 0.6130500758725341,
+          "baseline_flat_roi": -0.1675493171471927,
+          "accepted_flat_roi": -0.17836633663366336,
+          "rejected_flat_roi": -0.1504117647058823,
+          "paired_improvement": 0.05820182094081941,
+          "baseline_unit_profit": -220.82999999999998,
+          "gated_unit_profit": -144.12,
+          "paired_unit_profit": 76.70999999999998
+        },
+        "2011": {
+          "matches": 2565,
+          "baseline_opportunities": 1399,
+          "accepted": 879,
+          "rejected": 520,
+          "retention": 0.6283059328091494,
+          "baseline_flat_roi": -0.18265427686442698,
+          "accepted_flat_roi": -0.14794084186575654,
+          "rejected_flat_roi": -0.24133333333333334,
+          "paired_improvement": 0.08970216821539195,
+          "baseline_unit_profit": -255.53333333333333,
+          "gated_unit_profit": -130.04,
+          "paired_unit_profit": 125.49333333333334
+        },
+        "2012": {
+          "matches": 2508,
+          "baseline_opportunities": 1447,
+          "accepted": 922,
+          "rejected": 525,
+          "retention": 0.6371803731859018,
+          "baseline_flat_roi": -0.0736973047684865,
+          "accepted_flat_roi": -0.14096529284164855,
+          "rejected_flat_roi": 0.044438095238095235,
+          "paired_improvement": -0.01612301313061507,
+          "baseline_unit_profit": -106.63999999999997,
+          "gated_unit_profit": -129.96999999999997,
+          "paired_unit_profit": -23.330000000000005
+        },
+        "2013": {
+          "matches": 2538,
+          "baseline_opportunities": 1381,
+          "accepted": 885,
+          "rejected": 496,
+          "retention": 0.6408399710354815,
+          "baseline_flat_roi": -0.06689355539464154,
+          "accepted_flat_roi": -0.0031977401129943323,
+          "rejected_flat_roi": -0.1805443548387097,
+          "paired_improvement": 0.06484431571325126,
+          "baseline_unit_profit": -92.37999999999997,
+          "gated_unit_profit": -2.829999999999984,
+          "paired_unit_profit": 89.55
+        },
+        "2014": {
+          "matches": 2448,
+          "baseline_opportunities": 1228,
+          "accepted": 792,
+          "rejected": 436,
+          "retention": 0.6449511400651465,
+          "baseline_flat_roi": -0.07788273615635179,
+          "accepted_flat_roi": 0.012752525252525246,
+          "rejected_flat_roi": -0.24252293577981654,
+          "paired_improvement": 0.08610749185667751,
+          "baseline_unit_profit": -95.63999999999999,
+          "gated_unit_profit": 10.100000000000009,
+          "paired_unit_profit": 105.74
+        },
+        "2015": {
+          "matches": 2518,
+          "baseline_opportunities": 1296,
+          "accepted": 853,
+          "rejected": 443,
+          "retention": 0.658179012345679,
+          "baseline_flat_roi": -0.15631944444444443,
+          "accepted_flat_roi": -0.16125439624853458,
+          "rejected_flat_roi": -0.14681715575620766,
+          "paired_improvement": 0.05018518518518519,
+          "baseline_unit_profit": -202.58999999999997,
+          "gated_unit_profit": -137.54999999999998,
+          "paired_unit_profit": 65.04
+        },
+        "2016": {
+          "matches": 2520,
+          "baseline_opportunities": 1342,
+          "accepted": 796,
+          "rejected": 546,
+          "retention": 0.5931445603576752,
+          "baseline_flat_roi": -0.1566542473919523,
+          "accepted_flat_roi": -0.18572864321608037,
+          "rejected_flat_roi": -0.11426739926739927,
+          "paired_improvement": 0.0464903129657228,
+          "baseline_unit_profit": -210.23,
+          "gated_unit_profit": -147.84,
+          "paired_unit_profit": 62.39
+        }
+      },
+      "by_surface": {
+        "Clay": {
+          "matches": 5609,
+          "baseline_opportunities": 3154,
+          "accepted": 1904,
+          "rejected": 1250,
+          "retention": 0.6036778693722258,
+          "baseline_flat_roi": -0.12770238850137391,
+          "accepted_flat_roi": -0.12439600840336133,
+          "rejected_flat_roi": -0.13273866666666664,
+          "paired_improvement": 0.052607271190023244,
+          "baseline_unit_profit": -402.7733333333333,
+          "gated_unit_profit": -236.84999999999997,
+          "paired_unit_profit": 165.92333333333332
+        },
+        "Grass": {
+          "matches": 2049,
+          "baseline_opportunities": 1284,
+          "accepted": 618,
+          "rejected": 666,
+          "retention": 0.48130841121495327,
+          "baseline_flat_roi": -0.11274143302180685,
+          "accepted_flat_roi": -0.059061488673139144,
+          "rejected_flat_roi": -0.16255255255255255,
+          "paired_improvement": 0.08431464174454828,
+          "baseline_unit_profit": -144.76,
+          "gated_unit_profit": -36.5,
+          "paired_unit_profit": 108.25999999999999
+        },
+        "Hard": {
+          "matches": 10001,
+          "baseline_opportunities": 4973,
+          "accepted": 3413,
+          "rejected": 1560,
+          "retention": 0.6863060526844963,
+          "baseline_flat_roi": -0.12795294590790265,
+          "accepted_flat_roi": -0.11980662174040432,
+          "rejected_flat_roi": -0.14577564102564103,
+          "paired_improvement": 0.04572893625578121,
+          "baseline_unit_profit": -636.31,
+          "gated_unit_profit": -408.9,
+          "paired_unit_profit": 227.40999999999997
+        }
+      }
+    }
+  ],
+  "selection": [
+    {
+      "threshold": [
+        10,
+        5
+      ],
+      "matches": 7593,
+      "baseline_opportunities": 4251,
+      "accepted": 3484,
+      "rejected": 767,
+      "retention": 0.8195718654434251,
+      "baseline_flat_roi": -0.11159021406727827,
+      "accepted_flat_roi": -0.10246555683122847,
+      "rejected_flat_roi": -0.15303780964797914,
+      "paired_improvement": 0.027612326511409078,
+      "baseline_unit_profit": -474.36999999999995,
+      "gated_unit_profit": -356.98999999999995,
+      "paired_unit_profit": 117.38,
+      "actual_date_range": [
+        "2017-01-01",
+        "2019-11-17"
+      ],
+      "scores": {
+        "all": {
+          "v0": {
+            "n": 7593,
+            "log_loss": 0.6251736111302088,
+            "brier": 0.21708125409965603
+          },
+          "gated": {
+            "n": 7593,
+            "log_loss": 0.6251736111302088,
+            "brier": 0.21708125409965603
+          },
+          "market": {
+            "n": 7588,
+            "log_loss": 0.590273481588292,
+            "brier": 0.20314865041348681
+          },
+          "v0_with_market_odds": {
+            "n": 7588,
+            "log_loss": 0.6251096734743368,
+            "brier": 0.21704904546745452
+          }
+        },
+        "accepted": {
+          "v0": {
+            "n": 6400,
+            "log_loss": 0.629706034305836,
+            "brier": 0.2190696753018016
+          },
+          "gated": {
+            "n": 6400,
+            "log_loss": 0.629706034305836,
+            "brier": 0.2190696753018016
+          },
+          "market": {
+            "n": 6396,
+            "log_loss": 0.5980001958783351,
+            "brier": 0.20652805982843336
+          },
+          "v0_with_market_odds": {
+            "n": 6396,
+            "log_loss": 0.6295827130711362,
+            "brier": 0.21900947733786147
+          }
+        },
+        "rejected": {
+          "v0": {
+            "n": 1193,
+            "log_loss": 0.6008588514286035,
+            "brier": 0.2064141160495874
+          },
+          "gated": {
+            "n": 1193,
+            "log_loss": 0.6008588514286035,
+            "brier": 0.2064141160495874
+          },
+          "market": {
+            "n": 1192,
+            "log_loss": 0.5488136958507787,
+            "brier": 0.18501551063328722
+          },
+          "v0_with_market_odds": {
+            "n": 1192,
+            "log_loss": 0.6011083636915098,
+            "brier": 0.20652981539772083
+          }
+        }
+      },
+      "wallets": {
+        "v0": {
+          "bets": 4251,
+          "win_rate": 0.41590214067278286,
+          "staked": 12913.75,
+          "profit": -999.93,
+          "roi": -0.07743141999806408,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.9999109457560705,
+          "zero_stake_bets": 2168
+        },
+        "gated": {
+          "bets": 3484,
+          "win_rate": 0.4262342135476464,
+          "staked": 11973.76,
+          "profit": -999.85,
+          "roi": -0.08350342749478859,
+          "final_bankroll": 0.1,
+          "max_drawdown": 0.9999,
+          "zero_stake_bets": 1446
+        }
+      },
+      "per_year": {
+        "2017": {
+          "matches": 2528,
+          "baseline_opportunities": 1370,
+          "accepted": 1114,
+          "rejected": 256,
+          "retention": 0.8131386861313868,
+          "baseline_flat_roi": -0.07502919708029196,
+          "accepted_flat_roi": -0.06924596050269298,
+          "rejected_flat_roi": -0.10019531249999998,
+          "paired_improvement": 0.018722627737226275,
+          "baseline_unit_profit": -102.78999999999998,
+          "gated_unit_profit": -77.13999999999997,
+          "paired_unit_profit": 25.65
+        },
+        "2018": {
+          "matches": 2568,
+          "baseline_opportunities": 1478,
+          "accepted": 1207,
+          "rejected": 271,
+          "retention": 0.8166441136671178,
+          "baseline_flat_roi": -0.17069012178619755,
+          "accepted_flat_roi": -0.16376967688483846,
+          "rejected_flat_roi": -0.20151291512915126,
+          "paired_improvement": 0.036948579161028415,
+          "baseline_unit_profit": -252.27999999999997,
+          "gated_unit_profit": -197.67000000000002,
+          "paired_unit_profit": 54.61
+        },
+        "2019": {
+          "matches": 2497,
+          "baseline_opportunities": 1403,
+          "accepted": 1163,
+          "rejected": 240,
+          "retention": 0.8289379900213828,
+          "baseline_flat_roi": -0.08503207412687099,
+          "accepted_flat_roi": -0.0706620808254514,
+          "rejected_flat_roi": -0.15466666666666665,
+          "paired_improvement": 0.026457590876692798,
+          "baseline_unit_profit": -119.29999999999998,
+          "gated_unit_profit": -82.17999999999998,
+          "paired_unit_profit": 37.12
+        }
+      },
+      "by_surface": {
+        "Clay": {
+          "matches": 2330,
+          "baseline_opportunities": 1380,
+          "accepted": 1114,
+          "rejected": 266,
+          "retention": 0.8072463768115942,
+          "baseline_flat_roi": -0.16699999999999998,
+          "accepted_flat_roi": -0.19531418312387794,
+          "rejected_flat_roi": -0.048421052631578955,
+          "paired_improvement": 0.00933333333333333,
+          "baseline_unit_profit": -230.45999999999998,
+          "gated_unit_profit": -217.57999999999998,
+          "paired_unit_profit": 12.879999999999997
+        },
+        "Grass": {
+          "matches": 941,
+          "baseline_opportunities": 558,
+          "accepted": 382,
+          "rejected": 176,
+          "retention": 0.6845878136200717,
+          "baseline_flat_roi": -0.058422939068100345,
+          "accepted_flat_roi": -0.00816753926701569,
+          "rejected_flat_roi": -0.16749999999999998,
+          "paired_improvement": 0.052831541218637985,
+          "baseline_unit_profit": -32.599999999999994,
+          "gated_unit_profit": -3.119999999999994,
+          "paired_unit_profit": 29.479999999999997
+        },
+        "Hard": {
+          "matches": 4322,
+          "baseline_opportunities": 2313,
+          "accepted": 1988,
+          "rejected": 325,
+          "retention": 0.8594898400345872,
+          "baseline_flat_roi": -0.09135754431474273,
+          "accepted_flat_roi": -0.06855633802816899,
+          "rejected_flat_roi": -0.23083076923076917,
+          "paired_improvement": 0.0324340683095547,
+          "baseline_unit_profit": -211.30999999999995,
+          "gated_unit_profit": -136.28999999999996,
+          "paired_unit_profit": 75.02000000000001
+        }
+      }
+    },
+    {
+      "threshold": [
+        10,
+        10
+      ],
+      "matches": 7593,
+      "baseline_opportunities": 4251,
+      "accepted": 3152,
+      "rejected": 1099,
+      "retention": 0.7414725946836038,
+      "baseline_flat_roi": -0.11159021406727827,
+      "accepted_flat_roi": -0.09743654822335024,
+      "rejected_flat_roi": -0.1521838034576888,
+      "paired_improvement": 0.03934368383909668,
+      "baseline_unit_profit": -474.36999999999995,
+      "gated_unit_profit": -307.12,
+      "paired_unit_profit": 167.24999999999997,
+      "actual_date_range": [
+        "2017-01-01",
+        "2019-11-17"
+      ],
+      "scores": {
+        "all": {
+          "v0": {
+            "n": 7593,
+            "log_loss": 0.6251736111302088,
+            "brier": 0.21708125409965603
+          },
+          "gated": {
+            "n": 7593,
+            "log_loss": 0.6251736111302088,
+            "brier": 0.21708125409965603
+          },
+          "market": {
+            "n": 7588,
+            "log_loss": 0.590273481588292,
+            "brier": 0.20314865041348681
+          },
+          "v0_with_market_odds": {
+            "n": 7588,
+            "log_loss": 0.6251096734743368,
+            "brier": 0.21704904546745452
+          }
+        },
+        "accepted": {
+          "v0": {
+            "n": 5866,
+            "log_loss": 0.6279039221950639,
+            "brier": 0.21834863069281887
+          },
+          "gated": {
+            "n": 5866,
+            "log_loss": 0.6279039221950639,
+            "brier": 0.21834863069281887
+          },
+          "market": {
+            "n": 5862,
+            "log_loss": 0.5985074300326635,
+            "brier": 0.2067726096113458
+          },
+          "v0_with_market_odds": {
+            "n": 5862,
+            "log_loss": 0.6277681372981714,
+            "brier": 0.21828245697125673
+          }
+        },
+        "rejected": {
+          "v0": {
+            "n": 1727,
+            "log_loss": 0.6158997230546787,
+            "brier": 0.21277643007215558
+          },
+          "gated": {
+            "n": 1727,
+            "log_loss": 0.6158997230546787,
+            "brier": 0.21277643007215558
+          },
+          "market": {
+            "n": 1726,
+            "log_loss": 0.5623085883200962,
+            "brier": 0.19084062676467511
+          },
+          "v0_with_market_odds": {
+            "n": 1726,
+            "log_loss": 0.6160807540448354,
+            "brier": 0.21286001983866637
+          }
+        }
+      },
+      "wallets": {
+        "v0": {
+          "bets": 4251,
+          "win_rate": 0.41590214067278286,
+          "staked": 12913.75,
+          "profit": -999.93,
+          "roi": -0.07743141999806408,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.9999109457560705,
+          "zero_stake_bets": 2168
+        },
+        "gated": {
+          "bets": 3152,
+          "win_rate": 0.4302030456852792,
+          "staked": 14280.07,
+          "profit": -999.94,
+          "roi": -0.07002346627152388,
+          "final_bankroll": 0.1,
+          "max_drawdown": 0.9999213613915888,
+          "zero_stake_bets": 832
+        }
+      },
+      "per_year": {
+        "2017": {
+          "matches": 2528,
+          "baseline_opportunities": 1370,
+          "accepted": 1031,
+          "rejected": 339,
+          "retention": 0.7525547445255475,
+          "baseline_flat_roi": -0.07502919708029196,
+          "accepted_flat_roi": -0.059515033947623655,
+          "rejected_flat_roi": -0.12221238938053096,
+          "paired_improvement": 0.030240875912408753,
+          "baseline_unit_profit": -102.78999999999998,
+          "gated_unit_profit": -61.359999999999985,
+          "paired_unit_profit": 41.42999999999999
+        },
+        "2018": {
+          "matches": 2568,
+          "baseline_opportunities": 1478,
+          "accepted": 1069,
+          "rejected": 409,
+          "retention": 0.7232746955345061,
+          "baseline_flat_roi": -0.17069012178619755,
+          "accepted_flat_roi": -0.1667820392890552,
+          "rejected_flat_roi": -0.1809046454767726,
+          "paired_improvement": 0.050060893098782124,
+          "baseline_unit_profit": -252.27999999999997,
+          "gated_unit_profit": -178.28999999999996,
+          "paired_unit_profit": 73.98999999999998
+        },
+        "2019": {
+          "matches": 2497,
+          "baseline_opportunities": 1403,
+          "accepted": 1052,
+          "rejected": 351,
+          "retention": 0.7498218104062723,
+          "baseline_flat_roi": -0.08503207412687099,
+          "accepted_flat_roi": -0.06413498098859313,
+          "rejected_flat_roi": -0.14766381766381767,
+          "paired_improvement": 0.03694226657163221,
+          "baseline_unit_profit": -119.29999999999998,
+          "gated_unit_profit": -67.47,
+          "paired_unit_profit": 51.82999999999999
+        }
+      },
+      "by_surface": {
+        "Clay": {
+          "matches": 2330,
+          "baseline_opportunities": 1380,
+          "accepted": 1006,
+          "rejected": 374,
+          "retention": 0.7289855072463768,
+          "baseline_flat_roi": -0.16699999999999998,
+          "accepted_flat_roi": -0.18353876739562622,
+          "rejected_flat_roi": -0.1225133689839572,
+          "paired_improvement": 0.03320289855072464,
+          "baseline_unit_profit": -230.45999999999998,
+          "gated_unit_profit": -184.64,
+          "paired_unit_profit": 45.82000000000001
+        },
+        "Grass": {
+          "matches": 941,
+          "baseline_opportunities": 558,
+          "accepted": 281,
+          "rejected": 277,
+          "retention": 0.503584229390681,
+          "baseline_flat_roi": -0.058422939068100345,
+          "accepted_flat_roi": 0.009857651245551607,
+          "rejected_flat_roi": -0.12768953068592057,
+          "paired_improvement": 0.06338709677419353,
+          "baseline_unit_profit": -32.599999999999994,
+          "gated_unit_profit": 2.770000000000003,
+          "paired_unit_profit": 35.36999999999999
+        },
+        "Hard": {
+          "matches": 4322,
+          "baseline_opportunities": 2313,
+          "accepted": 1865,
+          "rejected": 448,
+          "retention": 0.8063121487246001,
+          "baseline_flat_roi": -0.09135754431474273,
+          "accepted_flat_roi": -0.06715817694369972,
+          "rejected_flat_roi": -0.1920982142857143,
+          "paired_improvement": 0.03720709035884133,
+          "baseline_unit_profit": -211.30999999999995,
+          "gated_unit_profit": -125.24999999999997,
+          "paired_unit_profit": 86.06
+        }
+      }
+    },
+    {
+      "threshold": [
+        20,
+        5
+      ],
+      "matches": 7593,
+      "baseline_opportunities": 4251,
+      "accepted": 3222,
+      "rejected": 1029,
+      "retention": 0.757939308398024,
+      "baseline_flat_roi": -0.11159021406727827,
+      "accepted_flat_roi": -0.10107386716325263,
+      "rejected_flat_roi": -0.14451895043731777,
+      "paired_improvement": 0.03498235709244883,
+      "baseline_unit_profit": -474.36999999999995,
+      "gated_unit_profit": -325.65999999999997,
+      "paired_unit_profit": 148.70999999999998,
+      "actual_date_range": [
+        "2017-01-01",
+        "2019-11-17"
+      ],
+      "scores": {
+        "all": {
+          "v0": {
+            "n": 7593,
+            "log_loss": 0.6251736111302088,
+            "brier": 0.21708125409965603
+          },
+          "gated": {
+            "n": 7593,
+            "log_loss": 0.6251736111302088,
+            "brier": 0.21708125409965603
+          },
+          "market": {
+            "n": 7588,
+            "log_loss": 0.590273481588292,
+            "brier": 0.20314865041348681
+          },
+          "v0_with_market_odds": {
+            "n": 7588,
+            "log_loss": 0.6251096734743368,
+            "brier": 0.21704904546745452
+          }
+        },
+        "accepted": {
+          "v0": {
+            "n": 5971,
+            "log_loss": 0.62496947200768,
+            "brier": 0.21720000724068347
+          },
+          "gated": {
+            "n": 5971,
+            "log_loss": 0.62496947200768,
+            "brier": 0.21720000724068347
+          },
+          "market": {
+            "n": 5969,
+            "log_loss": 0.595782550280073,
+            "brier": 0.20556385286624734
+          },
+          "v0_with_market_odds": {
+            "n": 5969,
+            "log_loss": 0.6248842336907159,
+            "brier": 0.21715872580408088
+          }
+        },
+        "rejected": {
+          "v0": {
+            "n": 1622,
+            "log_loss": 0.6259250998482228,
+            "brier": 0.2166440931840735
+          },
+          "gated": {
+            "n": 1622,
+            "log_loss": 0.6259250998482228,
+            "brier": 0.2166440931840735
+          },
+          "market": {
+            "n": 1619,
+            "log_loss": 0.5699624062200153,
+            "brier": 0.19424417639216046
+          },
+          "v0_with_market_odds": {
+            "n": 1619,
+            "log_loss": 0.6259408347272291,
+            "brier": 0.2166446712059829
+          }
+        }
+      },
+      "wallets": {
+        "v0": {
+          "bets": 4251,
+          "win_rate": 0.41590214067278286,
+          "staked": 12913.75,
+          "profit": -999.93,
+          "roi": -0.07743141999806408,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.9999109457560705,
+          "zero_stake_bets": 2168
+        },
+        "gated": {
+          "bets": 3222,
+          "win_rate": 0.4233395406579764,
+          "staked": 13679.35,
+          "profit": -1000.01,
+          "roi": -0.07310361968953204,
+          "final_bankroll": 0.1,
+          "max_drawdown": 0.9999216687685547,
+          "zero_stake_bets": 1064
+        }
+      },
+      "per_year": {
+        "2017": {
+          "matches": 2528,
+          "baseline_opportunities": 1370,
+          "accepted": 1040,
+          "rejected": 330,
+          "retention": 0.7591240875912408,
+          "baseline_flat_roi": -0.07502919708029196,
+          "accepted_flat_roi": -0.06667307692307693,
+          "rejected_flat_roi": -0.10136363636363635,
+          "paired_improvement": 0.02441605839416058,
+          "baseline_unit_profit": -102.78999999999998,
+          "gated_unit_profit": -69.33999999999999,
+          "paired_unit_profit": 33.449999999999996
+        },
+        "2018": {
+          "matches": 2568,
+          "baseline_opportunities": 1478,
+          "accepted": 1118,
+          "rejected": 360,
+          "retention": 0.7564276048714479,
+          "baseline_flat_roi": -0.17069012178619755,
+          "accepted_flat_roi": -0.17135957066189622,
+          "rejected_flat_roi": -0.16861111111111107,
+          "paired_improvement": 0.04106901217861975,
+          "baseline_unit_profit": -252.27999999999997,
+          "gated_unit_profit": -191.57999999999998,
+          "paired_unit_profit": 60.699999999999996
+        },
+        "2019": {
+          "matches": 2497,
+          "baseline_opportunities": 1403,
+          "accepted": 1064,
+          "rejected": 339,
+          "retention": 0.7583749109052031,
+          "baseline_flat_roi": -0.08503207412687099,
+          "accepted_flat_roi": -0.06084586466165412,
+          "rejected_flat_roi": -0.16094395280235985,
+          "paired_improvement": 0.038888096935138984,
+          "baseline_unit_profit": -119.29999999999998,
+          "gated_unit_profit": -64.73999999999998,
+          "paired_unit_profit": 54.559999999999995
+        }
+      },
+      "by_surface": {
+        "Clay": {
+          "matches": 2330,
+          "baseline_opportunities": 1380,
+          "accepted": 1027,
+          "rejected": 353,
+          "retention": 0.7442028985507246,
+          "baseline_flat_roi": -0.16699999999999998,
+          "accepted_flat_roi": -0.2030185004868549,
+          "rejected_flat_roi": -0.06220963172804532,
+          "paired_improvement": 0.015913043478260867,
+          "baseline_unit_profit": -230.45999999999998,
+          "gated_unit_profit": -208.5,
+          "paired_unit_profit": 21.959999999999997
+        },
+        "Grass": {
+          "matches": 941,
+          "baseline_opportunities": 558,
+          "accepted": 374,
+          "rejected": 184,
+          "retention": 0.6702508960573477,
+          "baseline_flat_roi": -0.058422939068100345,
+          "accepted_flat_roi": 0.006711229946524068,
+          "rejected_flat_roi": -0.19081521739130433,
+          "paired_improvement": 0.06292114695340502,
+          "baseline_unit_profit": -32.599999999999994,
+          "gated_unit_profit": 2.510000000000005,
+          "paired_unit_profit": 35.11
+        },
+        "Hard": {
+          "matches": 4322,
+          "baseline_opportunities": 2313,
+          "accepted": 1821,
+          "rejected": 492,
+          "retention": 0.7872892347600519,
+          "baseline_flat_roi": -0.09135754431474273,
+          "accepted_flat_roi": -0.06571663920922569,
+          "rejected_flat_roi": -0.18626016260162598,
+          "paired_improvement": 0.03961954172070903,
+          "baseline_unit_profit": -211.30999999999995,
+          "gated_unit_profit": -119.66999999999996,
+          "paired_unit_profit": 91.63999999999999
+        }
+      }
+    },
+    {
+      "threshold": [
+        20,
+        10
+      ],
+      "matches": 7593,
+      "baseline_opportunities": 4251,
+      "accepted": 3010,
+      "rejected": 1241,
+      "retention": 0.7080686897200659,
+      "baseline_flat_roi": -0.11159021406727827,
+      "accepted_flat_roi": -0.09773421926910297,
+      "rejected_flat_roi": -0.14519742143432712,
+      "paired_improvement": 0.04238767348859092,
+      "baseline_unit_profit": -474.36999999999995,
+      "gated_unit_profit": -294.17999999999995,
+      "paired_unit_profit": 180.19,
+      "actual_date_range": [
+        "2017-01-01",
+        "2019-11-17"
+      ],
+      "scores": {
+        "all": {
+          "v0": {
+            "n": 7593,
+            "log_loss": 0.6251736111302088,
+            "brier": 0.21708125409965603
+          },
+          "gated": {
+            "n": 7593,
+            "log_loss": 0.6251736111302088,
+            "brier": 0.21708125409965603
+          },
+          "market": {
+            "n": 7588,
+            "log_loss": 0.590273481588292,
+            "brier": 0.20314865041348681
+          },
+          "v0_with_market_odds": {
+            "n": 7588,
+            "log_loss": 0.6251096734743368,
+            "brier": 0.21704904546745452
+          }
+        },
+        "accepted": {
+          "v0": {
+            "n": 5630,
+            "log_loss": 0.6252810097815195,
+            "brier": 0.2172762101712613
+          },
+          "gated": {
+            "n": 5630,
+            "log_loss": 0.6252810097815195,
+            "brier": 0.2172762101712613
+          },
+          "market": {
+            "n": 5628,
+            "log_loss": 0.5967901668043653,
+            "brier": 0.2060009821699102
+          },
+          "v0_with_market_odds": {
+            "n": 5628,
+            "log_loss": 0.625190717592747,
+            "brier": 0.21723245457616186
+          }
+        },
+        "rejected": {
+          "v0": {
+            "n": 1963,
+            "log_loss": 0.6248655854517168,
+            "brier": 0.2165221085657091
+          },
+          "gated": {
+            "n": 1963,
+            "log_loss": 0.6248655854517168,
+            "brier": 0.2165221085657091
+          },
+          "market": {
+            "n": 1960,
+            "log_loss": 0.5715612854678528,
+            "brier": 0.19495838351289985
+          },
+          "v0_with_market_odds": {
+            "n": 1960,
+            "log_loss": 0.6248769610771872,
+            "brier": 0.21652239931245212
+          }
+        }
+      },
+      "wallets": {
+        "v0": {
+          "bets": 4251,
+          "win_rate": 0.41590214067278286,
+          "staked": 12913.75,
+          "profit": -999.93,
+          "roi": -0.07743141999806408,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.9999109457560705,
+          "zero_stake_bets": 2168
+        },
+        "gated": {
+          "bets": 3010,
+          "win_rate": 0.4275747508305648,
+          "staked": 14036.43,
+          "profit": -999.83,
+          "roi": -0.07123107513805149,
+          "final_bankroll": 0.1,
+          "max_drawdown": 0.999924175215911,
+          "zero_stake_bets": 785
+        }
+      },
+      "per_year": {
+        "2017": {
+          "matches": 2528,
+          "baseline_opportunities": 1370,
+          "accepted": 989,
+          "rejected": 381,
+          "retention": 0.7218978102189781,
+          "baseline_flat_roi": -0.07502919708029196,
+          "accepted_flat_roi": -0.05641051567239634,
+          "rejected_flat_roi": -0.12335958005249344,
+          "paired_improvement": 0.03430656934306568,
+          "baseline_unit_profit": -102.78999999999998,
+          "gated_unit_profit": -55.78999999999998,
+          "paired_unit_profit": 46.999999999999986
+        },
+        "2018": {
+          "matches": 2568,
+          "baseline_opportunities": 1478,
+          "accepted": 1021,
+          "rejected": 457,
+          "retention": 0.6907983761840325,
+          "baseline_flat_roi": -0.17069012178619755,
+          "accepted_flat_roi": -0.17895200783545542,
+          "rejected_flat_roi": -0.15223194748358862,
+          "paired_improvement": 0.047070365358592686,
+          "baseline_unit_profit": -252.27999999999997,
+          "gated_unit_profit": -182.70999999999998,
+          "paired_unit_profit": 69.57
+        },
+        "2019": {
+          "matches": 2497,
+          "baseline_opportunities": 1403,
+          "accepted": 1000,
+          "rejected": 403,
+          "retention": 0.7127583749109052,
+          "baseline_flat_roi": -0.08503207412687099,
+          "accepted_flat_roi": -0.05567999999999999,
+          "rejected_flat_roi": -0.15786600496277914,
+          "paired_improvement": 0.045345687811831785,
+          "baseline_unit_profit": -119.29999999999998,
+          "gated_unit_profit": -55.679999999999986,
+          "paired_unit_profit": 63.62
+        }
+      },
+      "by_surface": {
+        "Clay": {
+          "matches": 2330,
+          "baseline_opportunities": 1380,
+          "accepted": 955,
+          "rejected": 425,
+          "retention": 0.6920289855072463,
+          "baseline_flat_roi": -0.16699999999999998,
+          "accepted_flat_roi": -0.18606282722513084,
+          "rejected_flat_roi": -0.12416470588235293,
+          "paired_improvement": 0.038239130434782595,
+          "baseline_unit_profit": -230.45999999999998,
+          "gated_unit_profit": -177.68999999999997,
+          "paired_unit_profit": 52.76999999999998
+        },
+        "Grass": {
+          "matches": 941,
+          "baseline_opportunities": 558,
+          "accepted": 281,
+          "rejected": 277,
+          "retention": 0.503584229390681,
+          "baseline_flat_roi": -0.058422939068100345,
+          "accepted_flat_roi": 0.009857651245551607,
+          "rejected_flat_roi": -0.12768953068592057,
+          "paired_improvement": 0.06338709677419353,
+          "baseline_unit_profit": -32.599999999999994,
+          "gated_unit_profit": 2.770000000000003,
+          "paired_unit_profit": 35.36999999999999
+        },
+        "Hard": {
+          "matches": 4322,
+          "baseline_opportunities": 2313,
+          "accepted": 1774,
+          "rejected": 539,
+          "retention": 0.7669693039342845,
+          "baseline_flat_roi": -0.09135754431474273,
+          "accepted_flat_roi": -0.06722660653889515,
+          "rejected_flat_roi": -0.17077922077922078,
+          "paired_improvement": 0.03979680069174232,
+          "baseline_unit_profit": -211.30999999999995,
+          "gated_unit_profit": -119.25999999999998,
+          "paired_unit_profit": 92.05
+        }
+      }
+    },
+    {
+      "threshold": [
+        40,
+        5
+      ],
+      "matches": 7593,
+      "baseline_opportunities": 4251,
+      "accepted": 2717,
+      "rejected": 1534,
+      "retention": 0.6391437308868502,
+      "baseline_flat_roi": -0.11159021406727827,
+      "accepted_flat_roi": -0.10146853146853145,
+      "rejected_flat_roi": -0.12951760104302473,
+      "paired_improvement": 0.04673723829687132,
+      "baseline_unit_profit": -474.36999999999995,
+      "gated_unit_profit": -275.68999999999994,
+      "paired_unit_profit": 198.67999999999998,
+      "actual_date_range": [
+        "2017-01-01",
+        "2019-11-17"
+      ],
+      "scores": {
+        "all": {
+          "v0": {
+            "n": 7593,
+            "log_loss": 0.6251736111302088,
+            "brier": 0.21708125409965603
+          },
+          "gated": {
+            "n": 7593,
+            "log_loss": 0.6251736111302088,
+            "brier": 0.21708125409965603
+          },
+          "market": {
+            "n": 7588,
+            "log_loss": 0.590273481588292,
+            "brier": 0.20314865041348681
+          },
+          "v0_with_market_odds": {
+            "n": 7588,
+            "log_loss": 0.6251096734743368,
+            "brier": 0.21704904546745452
+          }
+        },
+        "accepted": {
+          "v0": {
+            "n": 5154,
+            "log_loss": 0.6162105397066285,
+            "brier": 0.21347561016003536
+          },
+          "gated": {
+            "n": 5154,
+            "log_loss": 0.6162105397066285,
+            "brier": 0.21347561016003536
+          },
+          "market": {
+            "n": 5152,
+            "log_loss": 0.5912366616493733,
+            "brier": 0.20350023227499875
+          },
+          "v0_with_market_odds": {
+            "n": 5152,
+            "log_loss": 0.6161083841595475,
+            "brier": 0.21342633654022905
+          }
+        },
+        "rejected": {
+          "v0": {
+            "n": 2439,
+            "log_loss": 0.6441140252823747,
+            "brier": 0.2247005607272923
+          },
+          "gated": {
+            "n": 2439,
+            "log_loss": 0.6441140252823747,
+            "brier": 0.2247005607272923
+          },
+          "market": {
+            "n": 2436,
+            "log_loss": 0.5882364111142812,
+            "brier": 0.20240507498224333
+          },
+          "v0_with_market_odds": {
+            "n": 2436,
+            "log_loss": 0.6441468830596381,
+            "brier": 0.224710866646874
+          }
+        }
+      },
+      "wallets": {
+        "v0": {
+          "bets": 4251,
+          "win_rate": 0.41590214067278286,
+          "staked": 12913.75,
+          "profit": -999.93,
+          "roi": -0.07743141999806408,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.9999109457560705,
+          "zero_stake_bets": 2168
+        },
+        "gated": {
+          "bets": 2717,
+          "win_rate": 0.416635995583364,
+          "staked": 12420.02,
+          "profit": -999.92,
+          "roi": -0.08050872703908689,
+          "final_bankroll": 0.15,
+          "max_drawdown": 0.999905538587487,
+          "zero_stake_bets": 169
+        }
+      },
+      "per_year": {
+        "2017": {
+          "matches": 2528,
+          "baseline_opportunities": 1370,
+          "accepted": 892,
+          "rejected": 478,
+          "retention": 0.6510948905109489,
+          "baseline_flat_roi": -0.07502919708029196,
+          "accepted_flat_roi": -0.0652130044843049,
+          "rejected_flat_roi": -0.09334728033472803,
+          "paired_improvement": 0.03256934306569342,
+          "baseline_unit_profit": -102.78999999999998,
+          "gated_unit_profit": -58.16999999999999,
+          "paired_unit_profit": 44.61999999999998
+        },
+        "2018": {
+          "matches": 2568,
+          "baseline_opportunities": 1478,
+          "accepted": 920,
+          "rejected": 558,
+          "retention": 0.6224627875507442,
+          "baseline_flat_roi": -0.17069012178619755,
+          "accepted_flat_roi": -0.16645652173913042,
+          "rejected_flat_roi": -0.1776702508960573,
+          "paired_improvement": 0.06707713125845736,
+          "baseline_unit_profit": -252.27999999999997,
+          "gated_unit_profit": -153.14,
+          "paired_unit_profit": 99.13999999999999
+        },
+        "2019": {
+          "matches": 2497,
+          "baseline_opportunities": 1403,
+          "accepted": 905,
+          "rejected": 498,
+          "retention": 0.6450463292943692,
+          "baseline_flat_roi": -0.08503207412687099,
+          "accepted_flat_roi": -0.07113812154696132,
+          "rejected_flat_roi": -0.11028112449799196,
+          "paired_improvement": 0.03914468995010691,
+          "baseline_unit_profit": -119.29999999999998,
+          "gated_unit_profit": -64.38,
+          "paired_unit_profit": 54.919999999999995
+        }
+      },
+      "by_surface": {
+        "Clay": {
+          "matches": 2330,
+          "baseline_opportunities": 1380,
+          "accepted": 838,
+          "rejected": 542,
+          "retention": 0.6072463768115942,
+          "baseline_flat_roi": -0.16699999999999998,
+          "accepted_flat_roi": -0.19784009546539383,
+          "rejected_flat_roi": -0.1193173431734317,
+          "paired_improvement": 0.0468623188405797,
+          "baseline_unit_profit": -230.45999999999998,
+          "gated_unit_profit": -165.78999999999996,
+          "paired_unit_profit": 64.66999999999999
+        },
+        "Grass": {
+          "matches": 941,
+          "baseline_opportunities": 558,
+          "accepted": 352,
+          "rejected": 206,
+          "retention": 0.6308243727598566,
+          "baseline_flat_roi": -0.058422939068100345,
+          "accepted_flat_roi": 0.011761363636363648,
+          "rejected_flat_roi": -0.17834951456310677,
+          "paired_improvement": 0.06584229390681003,
+          "baseline_unit_profit": -32.599999999999994,
+          "gated_unit_profit": 4.140000000000008,
+          "paired_unit_profit": 36.739999999999995
+        },
+        "Hard": {
+          "matches": 4322,
+          "baseline_opportunities": 2313,
+          "accepted": 1527,
+          "rejected": 786,
+          "retention": 0.6601815823605707,
+          "baseline_flat_roi": -0.09135754431474273,
+          "accepted_flat_roi": -0.07468238375900457,
+          "rejected_flat_roi": -0.1237531806615776,
+          "paired_improvement": 0.04205361003026373,
+          "baseline_unit_profit": -211.30999999999995,
+          "gated_unit_profit": -114.03999999999996,
+          "paired_unit_profit": 97.27
+        }
+      }
+    },
+    {
+      "threshold": [
+        40,
+        10
+      ],
+      "matches": 7593,
+      "baseline_opportunities": 4251,
+      "accepted": 2596,
+      "rejected": 1655,
+      "retention": 0.6106798400376382,
+      "baseline_flat_roi": -0.11159021406727827,
+      "accepted_flat_roi": -0.10098613251155623,
+      "rejected_flat_roi": -0.12822356495468276,
+      "paired_improvement": 0.04992001881910138,
+      "baseline_unit_profit": -474.36999999999995,
+      "gated_unit_profit": -262.15999999999997,
+      "paired_unit_profit": 212.20999999999998,
+      "actual_date_range": [
+        "2017-01-01",
+        "2019-11-17"
+      ],
+      "scores": {
+        "all": {
+          "v0": {
+            "n": 7593,
+            "log_loss": 0.6251736111302088,
+            "brier": 0.21708125409965603
+          },
+          "gated": {
+            "n": 7593,
+            "log_loss": 0.6251736111302088,
+            "brier": 0.21708125409965603
+          },
+          "market": {
+            "n": 7588,
+            "log_loss": 0.590273481588292,
+            "brier": 0.20314865041348681
+          },
+          "v0_with_market_odds": {
+            "n": 7588,
+            "log_loss": 0.6251096734743368,
+            "brier": 0.21704904546745452
+          }
+        },
+        "accepted": {
+          "v0": {
+            "n": 4956,
+            "log_loss": 0.6174145940180797,
+            "brier": 0.21397562183246938
+          },
+          "gated": {
+            "n": 4956,
+            "log_loss": 0.6174145940180797,
+            "brier": 0.21397562183246938
+          },
+          "market": {
+            "n": 4954,
+            "log_loss": 0.5921421453038657,
+            "brier": 0.20390803608167715
+          },
+          "v0_with_market_odds": {
+            "n": 4954,
+            "log_loss": 0.6173088416422343,
+            "brier": 0.21392458072106504
+          }
+        },
+        "rejected": {
+          "v0": {
+            "n": 2637,
+            "log_loss": 0.6397559732112522,
+            "brier": 0.2229180055278611
+          },
+          "gated": {
+            "n": 2637,
+            "log_loss": 0.6397559732112522,
+            "brier": 0.2229180055278611
+          },
+          "market": {
+            "n": 2634,
+            "log_loss": 0.5867589181687961,
+            "brier": 0.20172040569055041
+          },
+          "v0_with_market_odds": {
+            "n": 2634,
+            "log_loss": 0.639781397428868,
+            "brier": 0.2229255064976799
+          }
+        }
+      },
+      "wallets": {
+        "v0": {
+          "bets": 4251,
+          "win_rate": 0.41590214067278286,
+          "staked": 12913.75,
+          "profit": -999.93,
+          "roi": -0.07743141999806408,
+          "final_bankroll": 0.09,
+          "max_drawdown": 0.9999109457560705,
+          "zero_stake_bets": 2168
+        },
+        "gated": {
+          "bets": 2596,
+          "win_rate": 0.4194915254237288,
+          "staked": 12047.55,
+          "profit": -999.57,
+          "roi": -0.08296873638208599,
+          "final_bankroll": 0.29,
+          "max_drawdown": 0.9997953336062219,
+          "zero_stake_bets": 52
+        }
+      },
+      "per_year": {
+        "2017": {
+          "matches": 2528,
+          "baseline_opportunities": 1370,
+          "accepted": 862,
+          "rejected": 508,
+          "retention": 0.6291970802919709,
+          "baseline_flat_roi": -0.07502919708029196,
+          "accepted_flat_roi": -0.06226218097447795,
+          "rejected_flat_roi": -0.09669291338582675,
+          "paired_improvement": 0.03585401459854013,
+          "baseline_unit_profit": -102.78999999999998,
+          "gated_unit_profit": -53.66999999999998,
+          "paired_unit_profit": 49.11999999999998
+        },
+        "2018": {
+          "matches": 2568,
+          "baseline_opportunities": 1478,
+          "accepted": 866,
+          "rejected": 612,
+          "retention": 0.5859269282814614,
+          "baseline_flat_roi": -0.17069012178619755,
+          "accepted_flat_roi": -0.17336027713625865,
+          "rejected_flat_roi": -0.16691176470588232,
+          "paired_improvement": 0.06911366711772665,
+          "baseline_unit_profit": -252.27999999999997,
+          "gated_unit_profit": -150.13,
+          "paired_unit_profit": 102.14999999999999
+        },
+        "2019": {
+          "matches": 2497,
+          "baseline_opportunities": 1403,
+          "accepted": 868,
+          "rejected": 535,
+          "retention": 0.6186742694226657,
+          "baseline_flat_roi": -0.08503207412687099,
+          "accepted_flat_roi": -0.06723502304147463,
+          "rejected_flat_roi": -0.11390654205607476,
+          "paired_improvement": 0.04343549536707056,
+          "baseline_unit_profit": -119.29999999999998,
+          "gated_unit_profit": -58.359999999999985,
+          "paired_unit_profit": 60.93999999999999
+        }
+      },
+      "by_surface": {
+        "Clay": {
+          "matches": 2330,
+          "baseline_opportunities": 1380,
+          "accepted": 805,
+          "rejected": 575,
+          "retention": 0.5833333333333334,
+          "baseline_flat_roi": -0.16699999999999998,
+          "accepted_flat_roi": -0.18786335403726706,
+          "rejected_flat_roi": -0.13779130434782608,
+          "paired_improvement": 0.057413043478260865,
+          "baseline_unit_profit": -230.45999999999998,
+          "gated_unit_profit": -151.23,
+          "paired_unit_profit": 79.22999999999999
+        },
+        "Grass": {
+          "matches": 941,
+          "baseline_opportunities": 558,
+          "accepted": 279,
+          "rejected": 279,
+          "retention": 0.5,
+          "baseline_flat_roi": -0.058422939068100345,
+          "accepted_flat_roi": 0.006344086021505372,
+          "rejected_flat_roi": -0.12318996415770606,
+          "paired_improvement": 0.06159498207885303,
+          "baseline_unit_profit": -32.599999999999994,
+          "gated_unit_profit": 1.7700000000000031,
+          "paired_unit_profit": 34.36999999999999
+        },
+        "Hard": {
+          "matches": 4322,
+          "baseline_opportunities": 2313,
+          "accepted": 1512,
+          "rejected": 801,
+          "retention": 0.6536964980544747,
+          "baseline_flat_roi": -0.09135754431474273,
+          "accepted_flat_roi": -0.07453703703703703,
+          "rejected_flat_roi": -0.12310861423220974,
+          "paired_improvement": 0.04263294422827497,
+          "baseline_unit_profit": -211.30999999999995,
+          "gated_unit_profit": -112.69999999999999,
+          "paired_unit_profit": 98.61
+        }
+      }
+    }
+  ],
+  "variants_evaluated": 6,
+  "selected": [
+    40,
+    10
+  ],
+  "validation": {
+    "threshold": [
+      40,
+      10
+    ],
+    "matches": 6178,
+    "baseline_opportunities": 3847,
+    "accepted": 2256,
+    "rejected": 1591,
+    "retention": 0.5864309851832596,
+    "baseline_flat_roi": -0.0984403431245126,
+    "accepted_flat_roi": -0.09670656028368793,
+    "rejected_flat_roi": -0.10089880578252669,
+    "paired_improvement": 0.04172861970366518,
+    "baseline_unit_profit": -378.69999999999993,
+    "gated_unit_profit": -218.17,
+    "paired_unit_profit": 160.52999999999997,
+    "actual_date_range": [
+      "2020-01-06",
+      "2022-11-20"
+    ],
+    "scores": {
+      "all": {
+        "v0": {
+          "n": 6178,
+          "log_loss": 0.6231861790939032,
+          "brier": 0.21759957055366128
+        },
+        "gated": {
+          "n": 6178,
+          "log_loss": 0.6231861790939032,
+          "brier": 0.21759957055366128
+        },
+        "market": {
+          "n": 6167,
+          "log_loss": 0.5841421120750298,
+          "brier": 0.2005507440437403
+        },
+        "v0_with_market_odds": {
+          "n": 6167,
+          "log_loss": 0.623878844336685,
+          "brier": 0.21785502688044248
+        }
+      },
+      "accepted": {
+        "v0": {
+          "n": 3725,
+          "log_loss": 0.6157725115588607,
+          "brier": 0.21420930770403102
+        },
+        "gated": {
+          "n": 3725,
+          "log_loss": 0.6157725115588607,
+          "brier": 0.21420930770403102
+        },
+        "market": {
+          "n": 3718,
+          "log_loss": 0.588231699487739,
+          "brier": 0.20200863409215467
+        },
+        "v0_with_market_odds": {
+          "n": 3718,
+          "log_loss": 0.6167472623958221,
+          "brier": 0.214569705328902
+        }
+      },
+      "rejected": {
+        "v0": {
+          "n": 2453,
+          "log_loss": 0.6344441944090412,
+          "brier": 0.22274784985038892
+        },
+        "gated": {
+          "n": 2453,
+          "log_loss": 0.6344441944090412,
+          "brier": 0.22274784985038892
+        },
+        "market": {
+          "n": 2449,
+          "log_loss": 0.5779334203639425,
+          "brier": 0.19833741811478775
+        },
+        "v0_with_market_odds": {
+          "n": 2449,
+          "log_loss": 0.6347058029549488,
+          "brier": 0.22284270574064155
+        }
+      }
+    },
+    "wallets": {
+      "v0": {
+        "bets": 3847,
+        "win_rate": 0.38549519105796726,
+        "staked": 12501.08,
+        "profit": -999.92,
+        "roi": -0.07998668915005744,
+        "final_bankroll": 0.09,
+        "max_drawdown": 0.999917231485143,
+        "zero_stake_bets": 2135
+      },
+      "gated": {
+        "bets": 2256,
+        "win_rate": 0.3776595744680851,
+        "staked": 13645.45,
+        "profit": -999.72,
+        "roi": -0.07326398176681603,
+        "final_bankroll": 0.2,
+        "max_drawdown": 0.9998759356519582,
+        "zero_stake_bets": 82
+      }
+    },
+    "per_year": {
+      "2020": {
+        "matches": 1231,
+        "baseline_opportunities": 793,
+        "accepted": 442,
+        "rejected": 351,
+        "retention": 0.5573770491803278,
+        "baseline_flat_roi": -0.13969735182849938,
+        "accepted_flat_roi": -0.10918552036199093,
+        "rejected_flat_roi": -0.1781196581196581,
+        "paired_improvement": 0.07883984867591425,
+        "baseline_unit_profit": -110.78,
+        "gated_unit_profit": -48.26,
+        "paired_unit_profit": 62.519999999999996
+      },
+      "2021": {
+        "matches": 2402,
+        "baseline_opportunities": 1515,
+        "accepted": 896,
+        "rejected": 619,
+        "retention": 0.5914191419141914,
+        "baseline_flat_roi": -0.07432343234323432,
+        "accepted_flat_roi": -0.07638392857142857,
+        "rejected_flat_roi": -0.07134087237479805,
+        "paired_improvement": 0.029148514851485147,
+        "baseline_unit_profit": -112.6,
+        "gated_unit_profit": -68.44,
+        "paired_unit_profit": 44.16
+      },
+      "2022": {
+        "matches": 2545,
+        "baseline_opportunities": 1539,
+        "accepted": 918,
+        "rejected": 621,
+        "retention": 0.5964912280701754,
+        "baseline_flat_roi": -0.10092267706302793,
+        "accepted_flat_roi": -0.11053376906318083,
+        "rejected_flat_roi": -0.08671497584541064,
+        "paired_improvement": 0.034990253411306044,
+        "baseline_unit_profit": -155.32,
+        "gated_unit_profit": -101.47,
+        "paired_unit_profit": 53.85
+      }
+    },
+    "by_surface": {
+      "Clay": {
+        "matches": 1841,
+        "baseline_opportunities": 1217,
+        "accepted": 659,
+        "rejected": 558,
+        "retention": 0.5414954806902219,
+        "baseline_flat_roi": -0.07751027115858668,
+        "accepted_flat_roi": -0.04602427921092564,
+        "rejected_flat_roi": -0.1146953405017921,
+        "paired_improvement": 0.05258833196384552,
+        "baseline_unit_profit": -94.32999999999998,
+        "gated_unit_profit": -30.32999999999999,
+        "paired_unit_profit": 63.99999999999999
+      },
+      "Grass": {
+        "matches": 596,
+        "baseline_opportunities": 408,
+        "accepted": 154,
+        "rejected": 254,
+        "retention": 0.37745098039215685,
+        "baseline_flat_roi": -0.13676470588235293,
+        "accepted_flat_roi": -0.19006493506493508,
+        "rejected_flat_roi": -0.10444881889763777,
+        "paired_improvement": 0.06502450980392158,
+        "baseline_unit_profit": -55.79999999999999,
+        "gated_unit_profit": -29.270000000000003,
+        "paired_unit_profit": 26.53
+      },
+      "Hard": {
+        "matches": 3741,
+        "baseline_opportunities": 2222,
+        "accepted": 1443,
+        "rejected": 779,
+        "retention": 0.6494149414941495,
+        "baseline_flat_roi": -0.10286678667866786,
+        "accepted_flat_roi": -0.10988911988911988,
+        "rejected_flat_roi": -0.08985879332477534,
+        "paired_improvement": 0.0315031503150315,
+        "baseline_unit_profit": -228.57,
+        "gated_unit_profit": -158.57,
+        "paired_unit_profit": 70.0
+      }
+    },
+    "paired_ci95": [
+      0.010215200886550847,
+      0.07047405496282876
+    ],
+    "bootstrap_clusters": 159,
+    "checks": {
+      "sample": true,
+      "wallet_final": true,
+      "wallet_drawdown": true,
+      "positive_ci": true,
+      "flat_roi": true,
+      "positive_years": true
+    },
+    "passed": true
+  },
+  "verdict": "not_shipped",
+  "selection_passed": true,
+  "csv_reference_threshold": [
+    40,
+    10
+  ],
+  "csv_reference_is_selected": true,
+  "frozen_sha256": "e7a21904799163c071346b878da9cb0145b10b44656da032413d99ca38066331",
+  "test_started": "2026-10-12T11:21:33.735467+00:00"
+}

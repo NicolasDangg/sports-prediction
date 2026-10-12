@@ -1,13 +1,82 @@
 {
   "_about": "Structured index of every experiment, read by the dashboard (/experiments). experiments/LOG.md is the written record; keep both in step. status: planned | running | collecting | live | shipped | not_shipped | done. Metrics are on validation years unless a key says test.",
-  "test_looks_used": 5,
-  "test_looks_note": "E001, E002, E011 + 2 diagnostic calibration checks during the 2026-10-06 review",
+  "test_looks_used": 6,
+  "test_looks_note": "E001, E002, E011 + 2 diagnostic calibration checks during the 2026-10-06 review + E015 frozen test look",
   "benchmark": {
     "label": "ATP validation 2020–2022, log loss (lower is better)",
     "bookmaker": 0.5841,
     "raw_elo": 0.6232
   },
   "experiments": [
+    {
+      "id": "E015",
+      "date": "2026-10-08",
+      "title": "Minimum match coverage before trusting tennis Elo bets",
+      "status": "not_shipped",
+      "kind": "strategy",
+      "sport": "atp",
+      "report": "reports/2026-10-12-e015-data-coverage.md",
+      "hypothesis": "Some large v0 edges come from ratings supported by very few matches. Requiring minimum overall and surface histories for both players may improve betting results while leaving the probabilities unchanged. This would reject Sakamoto's eight-match history, but would not reject Hijikata–Safiullin or solve missing recent results.",
+      "change": "Frozen comparison: min overall/surface v0 match counts 40/10 for both players. Forecast probabilities, historical prices, +5% edge and staking unchanged. No live strategy activated.",
+      "protocol": "58,955 chronological replay rows from 2000 through 2022; pre-update count/p; same +5% edge, real historical row odds, quarter-Kelly and 5% cap. Selection: ATP 2017–2019, six predefined pairs, paired equal-stake differences over all baseline bets, ≥500 / ≥50%. Validation: freeze selected pair on 2020–2022, tournament-year bootstrap 2,000 reps seed 15 plus ROI, year and wallet checks. Test window 2023-01-01–2026-10-05 only after validation passes; global test counter was five before E015 reserved its test look; it is now six.",
+      "test_look": true,
+      "rules": [
+        {
+          "text": "2017–2019 selection: at least 500 accepted bets, 50% retention, positive paired improvement, and accepted flat ROI no lower than v0; 40/10 selected from six predeclared pairs",
+          "passed": true
+        },
+        {
+          "text": "2020–2022 validation: ≥500 accepted, ≥50% retained, paired clustered-bootstrap 95% interval above zero, improved aggregate flat ROI, positive ≥2/3 years, wallet finish no lower, drawdown no worse; both wallets nearly bust",
+          "passed": true
+        },
+        {
+          "text": "Frozen one-look test 2023-01-01 through 2026-10-05: ≥500 accepted, ≥50% retained, paired nonnegative and flat ROI/wallet no worse than v0; actual data through 2026-09-29. Failed both wallet finish and max-drawdown checks.",
+          "passed": false
+        }
+      ],
+      "verdict": "Not shipped. Selection and validation passed, but the frozen test failed both wallet safeguards: gated wallet finished at $0.09 vs v0 $0.10 and had slightly worse maximum drawdown (99.991% vs 99.990%). Equal-stake ROI improved but remained negative. One test look consumed; no tuning or rerun. Not active.",
+      "depends_on": [
+        "E001"
+      ],
+      "followups": [
+        "Point-in-time source completeness and missing recent results",
+        "Separate probability-formula research: coverage-aware calibration and uncertainty",
+        "Separate stake and total-exposure experiment"
+      ],
+      "script": "experiments/e015_data_coverage.py",
+      "results_file": "results/e015_data_coverage.json",
+      "metrics_note": "Selection 2017–2019; validation 2020–2022; one consumed, previously examined test window 2023-01-01 through 2026-09-29 actual data.",
+      "metrics": [
+        {
+          "model": "elo_v0 (4,251 selection bets)",
+          "roi": -0.11159
+        },
+        {
+          "model": "40/10 gate (2,596 selection bets)",
+          "roi": -0.10099,
+          "highlight": true
+        },
+        {
+          "model": "elo_v0 (3,847 validation bets)",
+          "roi": -0.09844
+        },
+        {
+          "model": "40/10 gate (2,256 validation bets)",
+          "roi": -0.09671
+        },
+        {
+          "model": "elo_v0 (6,048 test opportunities)",
+          "roi": -0.1302910052910053
+        },
+        {
+          "model": "40/10 gate (3,487 test bets)",
+          "roi": -0.11081445368511614,
+          "highlight": true
+        }
+      ],
+      "test_started": "2026-10-12T11:21:33.735467+00:00",
+      "test_looks_used": 1
+    },
     {
       "id": "E014",
       "date": "2026-10-07",

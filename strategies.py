@@ -8,6 +8,20 @@ import numpy as np
 import pandas as pd
 
 
+def coverage_ok(row, min_total: int, min_surface: int) -> bool:
+    """E015: both players need sufficient pre-match v0 overall and surface history."""
+    counts = []
+    for key in ("min_total_matches", "min_surface_matches"):
+        try:
+            n = float(row.get(key))
+        except (TypeError, ValueError):
+            return False
+        if not np.isfinite(n) or n < 0 or not n.is_integer():
+            return False
+        counts.append(n)
+    return counts[0] >= min_total and counts[1] >= min_surface
+
+
 def logit(p):
     p = np.clip(p, 1e-6, 1 - 1e-6)
     return np.log(p / (1 - p))

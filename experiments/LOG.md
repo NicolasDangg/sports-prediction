@@ -4,11 +4,21 @@ Every strategy experiment goes here, **including the ones that failed**. Newest 
 The test years are a limited budget: each experiment that looks at them adds to the counter.
 If the counter climbs fast, results on the test years stop being trustworthy (see docs/REFERENCE.md §7).
 
-**Test-set looks used: 5** (3 experiments: E001, E002, E011 + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
+**Test-set looks used: 6** (4 experiments: E001, E002, E011, E015 + 2 diagnostic calibration checks on 2023+ during the 2026-10-06 review)
 **Live strategies:** `elo_v0` (control, since 2026-10-06) · `news_v1` (ATP only, from the 2026-10-08 run, E007) · `sharp_v1` (EPL + ATP, from the 2026-10-08 run, E012) · `casual_big_v1` / `casual_many_v1` (comparison wallets, Saturday sessions, E013) · `smart_casual_v1` (E014)
 **Next up:** E010 favourite–longshot bias in qualifying/challenger markets (E009 ratings now cover those players); E007/E008 collecting live data
 
 ---
+
+## E015 · 2026-10-08 · Minimum ATP rating coverage · not shipped (test wallet rules failed)
+- **Implementation and results:** [full E015 report](../reports/2026-10-12-e015-data-coverage.md), [frozen metrics and source hashes](../results/e015_data_coverage.json), [match-level diagnostic CSV](../results/e015_data_coverage_bets.csv); runner `experiments/e015_data_coverage.py`.
+- **Frozen rule:** min overall/surface v0 match counts 40/10 for both players; unchanged probabilities, execution-price history, +5% edge, quarter-Kelly and 5% per-bet cap. No live strategy activated.
+- **Selection 2017–2019 (6 threshold pairs):** all six retained ≥50% and accepted ≥500 bets. 40/10 led: 2,596/4,251 (61.1%), flat ROI −10.10% vs v0 −11.16%; +4.99¢ paired improvement per original opportunity. Both $1,000 wallets effectively busted ($0.29 gate / $0.10 v0).
+- **Validation 2020–2022:** 2,256/3,847 accepted (58.6%); flat ROI −9.67% vs v0 −9.84%; +4.17¢ paired improvement, 95% tournament-cluster interval [+1.02¢, +7.05¢], 159 clusters and 2,000 replicates (seed 15). Paired improvement was positive in all three years. Validation wallet check passed only in the near-zero sense ($0.20 gate / $0.09 v0); both effectively busted. All-match log loss unchanged at 0.6232 vs market 0.5841.
+- **One frozen test look, 2023-01-01–2026-10-05:** started 2026-10-12 11:21 UTC; counter incremented before outcomes loaded. Actual rows ran through 2026-09-29: 9,859 matches, 6,048 v0 opportunities; gate accepted 3,487 (57.7%). Equal-stake ROI −11.08% vs v0 −13.03%; +6.64¢ paired improvement. Paired gains were positive in 4/4 years, but accepted flat ROI was worse in 2023 (−18.79% vs −16.52%).
+- **Test wallet failure:** $1,000 v0 ended at $0.10; gate at $0.09. Maximum drawdown was 99.991% gated vs 99.990% v0. Both registered safeguards failed, so E015 is **not shipped**. The test look is final; no tuning or rerun. The global counter is **6** (prior 5 + E015).
+- **Reading:** coverage filtering reduces historical flat-stake losses in aggregate but does not make bets profitable, does not improve the probability forecast, and fails both test bankroll checks. The test years have been examined by earlier project work. Do not activate this gate or add a wallet from this result.
+- **Caveats:** match dates have no start times for exact same-day ordering; thresholds measure recorded v0 coverage, not missing results, recency or injuries. Follow-ups should investigate point-in-time source completeness, a separately registered calibration/uncertainty idea, and stake/exposure separately.
 
 ## E014 · 2026-10-07 · Smart casual (`smart_casual_v1`): weekly 80%+ favourites, only above Pinnacle's fair price · live
 - **Report:** owner follow-up to E013.
