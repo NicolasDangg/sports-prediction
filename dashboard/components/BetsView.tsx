@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { CaretRight, CheckCircle, Clock, Receipt, WarningCircle, XCircle } from "@phosphor-icons/react";
 import Segmented from "./Segmented";
@@ -15,6 +15,28 @@ type SportFilter = "all" | "epl" | "atp";
 export default function BetsView({ bets, eloMoves = {} }: { bets: Bet[]; eloMoves?: Record<string, EloMove> }) {
   const [status, setStatus] = useState<Status>("open");
   const [sport, setSport] = useState<SportFilter>("all");
+  const [restored, setRestored] = useState(false);
+
+  useEffect(() => {
+    try {
+      const saved = JSON.parse(sessionStorage.getItem("bets-filters") ?? "null");
+      if (saved?.status === "open" || saved?.status === "settled" || saved?.status === "all") setStatus(saved.status);
+      if (saved?.sport === "all" || saved?.sport === "epl" || saved?.sport === "atp") setSport(saved.sport);
+    } catch {
+      // Invalid or unavailable storage should leave the filters usable.
+    }
+    setRestored(true);
+  }, []);
+
+  useEffect(() => {
+    // Restore first so the initial defaults cannot overwrite the previous view.
+    if (!restored) return;
+    try {
+      sessionStorage.setItem("bets-filters", JSON.stringify({ status, sport }));
+    } catch {
+      // Browsers can disable storage; filtering still works for this visit.
+    }
+  }, [restored, status, sport]);
 
   const bySport = useMemo(() => bets.filter((b) => sport === "all" || sportOf(b.wallet) === sport), [bets, sport]);
   const shown = bySport.filter((b) => status === "all" || (status === "open" ? b.status === "open" : b.status !== "open"));
