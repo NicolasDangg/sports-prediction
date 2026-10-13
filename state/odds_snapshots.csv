@@ -1026,3 +1026,17 @@ at,source,sport,sport_key,event_id,commence_time,outcome,median_odds,pinnacle_od
 2026-10-12T23:04:55+00:00,daily,atp,tennis_atp_shanghai_masters,5107fa5e4b7c51b40fec9cd4f990a632,2026-10-14T04:00:00Z,Stefanos Tsitsipas,2.75,2.86,3.0,20
 2026-10-12T23:04:55+00:00,daily,atp,tennis_atp_shanghai_masters,21bd71c108821f51f2f5c0d4494cba2c,2026-10-14T04:00:00Z,Tommy Paul,1.47,1.48,1.51,20
 2026-10-12T23:04:55+00:00,daily,atp,tennis_atp_shanghai_masters,21bd71c108821f51f2f5c0d4494cba2c,2026-10-14T04:00:00Z,Zizou Bergs,2.7,2.82,2.86,20
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,f40a4027ec6234e8e3a47359c9444700,2026-10-13T05:53:33Z,Arthur Gea,2.33,2.37,2.58,17
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,f40a4027ec6234e8e3a47359c9444700,2026-10-13T05:53:33Z,Jakub Mensik,1.57,1.62,1.72,17
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,ac951eec8a949a45f8e37eb5cd117ac1,2026-10-13T10:00:00Z,Alexander Bublik,3.15,3.26,3.45,21
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,ac951eec8a949a45f8e37eb5cd117ac1,2026-10-13T10:00:00Z,Alexander Zverev,1.37,1.39,1.4,21
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,9115ec9d559da806d8a0829db60d9a51,2026-10-13T11:10:00Z,Alejandro Davidovich Fokina,1.97,2.01,2.06,21
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,9115ec9d559da806d8a0829db60d9a51,2026-10-13T11:10:00Z,Hubert Hurkacz,1.85,1.9,1.93,21
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,77cd15bc0cd98c5294c57d566ed289c9,2026-10-14T04:00:00Z,Botic van de Zandschulp,2.6,2.58,2.73,21
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,77cd15bc0cd98c5294c57d566ed289c9,2026-10-14T04:00:00Z,Rafael Jodar,1.5,1.56,1.58,21
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,a0fe8d4e228f3926bcb57dc37b2b23ac,2026-10-14T05:10:00Z,Casper Ruud,2.2,2.34,2.4,21
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,a0fe8d4e228f3926bcb57dc37b2b23ac,2026-10-14T05:10:00Z,Felix Auger-Aliassime,1.67,1.66,1.7,21
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,5107fa5e4b7c51b40fec9cd4f990a632,2026-10-14T10:00:00Z,Daniil Medvedev,1.44,1.44,1.48,21
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,5107fa5e4b7c51b40fec9cd4f990a632,2026-10-14T10:00:00Z,Stefanos Tsitsipas,2.8,2.98,3.1,21
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,21bd71c108821f51f2f5c0d4494cba2c,2026-10-14T11:10:00Z,Tommy Paul,1.46,1.47,1.51,21
+2026-10-13T06:18:16+00:00,snapshot,atp,tennis_atp_shanghai_masters,21bd71c108821f51f2f5c0d4494cba2c,2026-10-14T11:10:00Z,Zizou Bergs,2.75,2.88,2.9,21
