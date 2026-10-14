@@ -1112,3 +1112,15 @@ at,source,sport,sport_key,event_id,commence_time,outcome,median_odds,pinnacle_od
 2026-10-13T23:04:32+00:00,daily,atp,tennis_atp_shanghai_masters,7c66ab6e5bb9bc88359d8284d1aaa1ff,2026-10-15T04:00:00Z,Arthur Gea,2.03,,2.08,17
 2026-10-13T23:04:32+00:00,daily,atp,tennis_atp_shanghai_masters,9f79a8611b72f362103f75adae40aa9f,2026-10-15T04:00:00Z,Alexander Zverev,1.45,1.47,1.49,20
 2026-10-13T23:04:32+00:00,daily,atp,tennis_atp_shanghai_masters,9f79a8611b72f362103f75adae40aa9f,2026-10-15T04:00:00Z,Alex de Minaur,2.745,2.87,2.87,20
+2026-10-14T06:18:11+00:00,snapshot,atp,tennis_atp_shanghai_masters,77cd15bc0cd98c5294c57d566ed289c9,2026-10-14T04:07:00Z,Botic van de Zandschulp,6.15,2.59,6.75,16
+2026-10-14T06:18:11+00:00,snapshot,atp,tennis_atp_shanghai_masters,77cd15bc0cd98c5294c57d566ed289c9,2026-10-14T04:07:00Z,Rafael Jodar,1.12,1.54,1.54,16
+2026-10-14T06:18:11+00:00,snapshot,atp,tennis_atp_shanghai_masters,a0fe8d4e228f3926bcb57dc37b2b23ac,2026-10-14T06:30:00Z,Casper Ruud,2.2,2.27,2.3,21
+2026-10-14T06:18:11+00:00,snapshot,atp,tennis_atp_shanghai_masters,a0fe8d4e228f3926bcb57dc37b2b23ac,2026-10-14T06:30:00Z,Felix Auger-Aliassime,1.67,1.71,1.75,21
+2026-10-14T06:18:11+00:00,snapshot,atp,tennis_atp_shanghai_masters,5107fa5e4b7c51b40fec9cd4f990a632,2026-10-14T10:00:00Z,Daniil Medvedev,1.43,1.45,1.48,21
+2026-10-14T06:18:11+00:00,snapshot,atp,tennis_atp_shanghai_masters,5107fa5e4b7c51b40fec9cd4f990a632,2026-10-14T10:00:00Z,Stefanos Tsitsipas,2.9,2.97,3.0,21
+2026-10-14T06:18:11+00:00,snapshot,atp,tennis_atp_shanghai_masters,21bd71c108821f51f2f5c0d4494cba2c,2026-10-14T11:10:00Z,Tommy Paul,1.45,1.47,1.51,21
+2026-10-14T06:18:11+00:00,snapshot,atp,tennis_atp_shanghai_masters,21bd71c108821f51f2f5c0d4494cba2c,2026-10-14T11:10:00Z,Zizou Bergs,2.76,2.9,2.94,21
+2026-10-14T06:18:11+00:00,snapshot,atp,tennis_atp_shanghai_masters,7c66ab6e5bb9bc88359d8284d1aaa1ff,2026-10-15T04:00:00Z,Alejandro Davidovich Fokina,1.79,1.84,1.87,20
+2026-10-14T06:18:11+00:00,snapshot,atp,tennis_atp_shanghai_masters,7c66ab6e5bb9bc88359d8284d1aaa1ff,2026-10-15T04:00:00Z,Arthur Gea,2.04,2.06,2.08,20
+2026-10-14T06:18:11+00:00,snapshot,atp,tennis_atp_shanghai_masters,9f79a8611b72f362103f75adae40aa9f,2026-10-15T04:00:00Z,Alexander Zverev,1.45,1.47,1.49,21
+2026-10-14T06:18:11+00:00,snapshot,atp,tennis_atp_shanghai_masters,9f79a8611b72f362103f75adae40aa9f,2026-10-15T04:00:00Z,Alex de Minaur,2.78,2.87,2.87,21
