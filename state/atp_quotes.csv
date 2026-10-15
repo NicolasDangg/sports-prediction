@@ -1,169 +1,125 @@
 event_id,sport_key,competition,surface,commence_time,home,away,outcome,book,price,at
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,betfair_ex_eu,1.96,2026-10-14T23:06:14Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,betsson,1.83,2026-10-14T23:05:43Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,gtbets,1.79,2026-10-14T23:05:58Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,unibet_fr,1.85,2026-10-14T23:05:58Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,marathonbet,1.83,2026-10-14T23:05:54Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,onexbet,1.86,2026-10-14T23:05:41Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,matchbook,1.95,2026-10-14T23:05:57Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,nordicbet,1.83,2026-10-14T23:05:57Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,tipico_de,1.8,2026-10-14T23:05:25Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,winamax_fr,1.8,2026-10-14T23:05:42Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,winamax_de,1.86,2026-10-14T23:05:42Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,williamhill,1.85,2026-10-14T23:06:14Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,sport888,1.85,2026-10-14T23:05:41Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,unibet_nl,1.81,2026-10-14T23:06:14Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,unibet_se,1.81,2026-10-14T23:05:41Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,leovegas_se,1.81,2026-10-14T23:05:58Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,pmu_fr,1.74,2026-10-14T23:05:25Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,pinnacle,1.9,2026-10-14T23:06:13Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,betonlineag,1.86,2026-10-14T23:06:15Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,coolbet,1.85,2026-10-14T23:06:10Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,betanysports,1.8,2026-10-14T23:05:48Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,betfair_ex_eu,2.02,2026-10-14T23:06:14Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,betsson,1.98,2026-10-14T23:05:43Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,gtbets,2.03,2026-10-14T23:05:58Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,unibet_fr,1.95,2026-10-14T23:05:58Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,marathonbet,1.96,2026-10-14T23:05:54Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,onexbet,1.99,2026-10-14T23:05:41Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,matchbook,2.04,2026-10-14T23:05:57Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,nordicbet,1.98,2026-10-14T23:05:57Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,tipico_de,1.97,2026-10-14T23:05:25Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,winamax_fr,1.96,2026-10-14T23:05:42Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,winamax_de,2.0,2026-10-14T23:05:42Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,williamhill,1.95,2026-10-14T23:06:14Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,sport888,1.95,2026-10-14T23:05:41Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,unibet_nl,2.0,2026-10-14T23:06:14Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,unibet_se,2.0,2026-10-14T23:05:41Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,leovegas_se,2.0,2026-10-14T23:05:58Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,pmu_fr,1.92,2026-10-14T23:05:25Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,pinnacle,2.01,2026-10-14T23:06:13Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,betonlineag,1.96,2026-10-14T23:06:15Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,coolbet,1.96,2026-10-14T23:06:10Z
-7c66ab6e5bb9bc88359d8284d1aaa1ff,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T06:30:00Z,Arthur Gea,Alejandro Davidovich Fokina,Arthur Gea,betanysports,1.95,2026-10-14T23:05:48Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,onexbet,1.49,2026-10-14T23:05:41Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,betfair_ex_eu,1.55,2026-10-14T23:06:14Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,gtbets,1.46,2026-10-14T23:05:58Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,unibet_fr,1.47,2026-10-14T23:05:58Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,betsson,1.5,2026-10-14T23:05:43Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,nordicbet,1.5,2026-10-14T23:05:57Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,marathonbet,1.47,2026-10-14T23:05:54Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,pmu_fr,1.4,2026-10-14T23:05:25Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,leovegas_se,1.44,2026-10-14T23:05:58Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,unibet_se,1.44,2026-10-14T23:05:41Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,unibet_nl,1.44,2026-10-14T23:06:14Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,pinnacle,1.55,2026-10-14T23:06:13Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,matchbook,1.56,2026-10-14T23:05:57Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,winamax_fr,1.49,2026-10-14T23:05:42Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,winamax_de,1.52,2026-10-14T23:05:42Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,tipico_de,1.47,2026-10-14T23:05:25Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,betonlineag,1.53,2026-10-14T23:06:15Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,williamhill,1.53,2026-10-14T23:06:14Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,sport888,1.53,2026-10-14T23:05:41Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,betanysports,1.54,2026-10-14T23:05:48Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,coolbet,1.5,2026-10-14T23:06:10Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,onexbet,2.7,2026-10-14T23:05:41Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,betfair_ex_eu,2.78,2026-10-14T23:06:14Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,gtbets,2.74,2026-10-14T23:05:58Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,unibet_fr,2.65,2026-10-14T23:05:58Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,betsson,2.6,2026-10-14T23:05:43Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,nordicbet,2.6,2026-10-14T23:05:57Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,marathonbet,2.66,2026-10-14T23:05:54Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,pmu_fr,2.63,2026-10-14T23:05:25Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,leovegas_se,2.75,2026-10-14T23:05:58Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,unibet_se,2.75,2026-10-14T23:05:41Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,unibet_nl,2.75,2026-10-14T23:06:14Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,pinnacle,2.65,2026-10-14T23:06:13Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,matchbook,2.78,2026-10-14T23:05:57Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,winamax_fr,2.55,2026-10-14T23:05:42Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,winamax_de,2.65,2026-10-14T23:05:42Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,tipico_de,2.6,2026-10-14T23:05:25Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,betonlineag,2.64,2026-10-14T23:06:15Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,williamhill,2.5,2026-10-14T23:06:14Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,sport888,2.5,2026-10-14T23:05:41Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,betanysports,2.55,2026-10-14T23:05:48Z
-9f79a8611b72f362103f75adae40aa9f,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-15T10:00:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,coolbet,2.6,2026-10-14T23:06:10Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,coolbet,2.12,2026-10-14T23:06:11Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,onexbet,2.14,2026-10-14T23:05:41Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,betfair_ex_eu,2.24,2026-10-14T23:06:14Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,nordicbet,2.15,2026-10-14T23:05:57Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,betsson,2.15,2026-10-14T23:05:43Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,marathonbet,2.11,2026-10-14T23:05:54Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,matchbook,2.2,2026-10-14T23:05:57Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,unibet_fr,1.99,2026-10-14T23:05:58Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,tipico_de,2.1,2026-10-14T23:05:25Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,gtbets,2.22,2026-10-14T23:05:58Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,leovegas_se,2.07,2026-10-14T23:05:58Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,unibet_nl,2.07,2026-10-14T23:06:14Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,pmu_fr,1.97,2026-10-14T23:05:25Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,unibet_se,2.07,2026-10-14T23:05:41Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,winamax_fr,2.05,2026-10-14T23:05:42Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,winamax_de,2.15,2026-10-14T23:05:42Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,sport888,2.1,2026-10-14T23:05:41Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,williamhill,2.1,2026-10-14T23:06:14Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,pinnacle,2.17,2026-10-14T23:06:13Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,betonlineag,2.12,2026-10-14T23:06:15Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,betanysports,2.05,2026-10-14T23:05:48Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,coolbet,1.73,2026-10-14T23:06:11Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,onexbet,1.74,2026-10-14T23:05:41Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,betfair_ex_eu,1.79,2026-10-14T23:06:14Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,nordicbet,1.71,2026-10-14T23:05:57Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,betsson,1.71,2026-10-14T23:05:43Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,marathonbet,1.72,2026-10-14T23:05:54Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,matchbook,1.76,2026-10-14T23:05:57Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,unibet_fr,1.62,2026-10-14T23:05:58Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,tipico_de,1.7,2026-10-14T23:05:25Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,gtbets,1.67,2026-10-14T23:05:58Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,leovegas_se,1.76,2026-10-14T23:05:58Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,unibet_nl,1.76,2026-10-14T23:06:14Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,pmu_fr,1.68,2026-10-14T23:05:25Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,unibet_se,1.76,2026-10-14T23:05:41Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,winamax_fr,1.72,2026-10-14T23:05:42Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,winamax_de,1.76,2026-10-14T23:05:42Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,sport888,1.73,2026-10-14T23:05:41Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,williamhill,1.73,2026-10-14T23:06:14Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,pinnacle,1.76,2026-10-14T23:06:13Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,betonlineag,1.76,2026-10-14T23:06:15Z
-ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,betanysports,1.74,2026-10-14T23:05:48Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,unibet_fr,1.43,2026-10-14T23:05:58Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,marathonbet,1.49,2026-10-14T23:05:54Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,nordicbet,1.5,2026-10-14T23:05:57Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,betsson,1.5,2026-10-14T23:05:43Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,onexbet,1.51,2026-10-14T23:05:41Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,coolbet,1.5,2026-10-14T23:06:11Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,gtbets,1.51,2026-10-14T23:05:58Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,betfair_ex_eu,1.52,2026-10-14T23:06:14Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,unibet_se,1.53,2026-10-14T23:05:41Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,leovegas_se,1.53,2026-10-14T23:05:58Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,pmu_fr,1.47,2026-10-14T23:05:25Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,unibet_nl,1.53,2026-10-14T23:06:14Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,tipico_de,1.5,2026-10-14T23:05:25Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,matchbook,1.45,2026-10-14T23:05:57Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,sport888,1.5,2026-10-14T23:05:41Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,williamhill,1.5,2026-10-14T23:06:14Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,winamax_de,1.5,2026-10-14T23:05:42Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,winamax_fr,1.48,2026-10-14T23:05:42Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,pinnacle,1.49,2026-10-14T23:06:13Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,betonlineag,1.45,2026-10-14T23:06:15Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,betanysports,1.48,2026-10-14T23:05:48Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,unibet_fr,2.4,2026-10-14T23:05:58Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,marathonbet,2.6,2026-10-14T23:05:54Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,nordicbet,2.6,2026-10-14T23:05:57Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,betsson,2.6,2026-10-14T23:05:43Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,onexbet,2.63,2026-10-14T23:05:41Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,coolbet,2.6,2026-10-14T23:06:11Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,gtbets,2.59,2026-10-14T23:05:58Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,betfair_ex_eu,2.88,2026-10-14T23:06:14Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,unibet_se,2.5,2026-10-14T23:05:41Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,leovegas_se,2.5,2026-10-14T23:05:58Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,pmu_fr,2.4,2026-10-14T23:05:25Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,unibet_nl,2.5,2026-10-14T23:06:14Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,tipico_de,2.55,2026-10-14T23:05:25Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,matchbook,1.87,2026-10-14T23:05:57Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,sport888,2.6,2026-10-14T23:05:41Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,williamhill,2.6,2026-10-14T23:06:14Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,winamax_de,2.65,2026-10-14T23:05:42Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,winamax_fr,2.55,2026-10-14T23:05:42Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,pinnacle,2.81,2026-10-14T23:06:13Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,betonlineag,2.84,2026-10-14T23:06:15Z
-9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T04:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,betanysports,2.7,2026-10-14T23:05:48Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,coolbet,2.08,2026-10-15T23:05:57Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,onexbet,2.09,2026-10-15T23:05:58Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,betfair_ex_eu,2.14,2026-10-15T23:06:09Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,nordicbet,2.04,2026-10-15T23:05:56Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,betsson,2.04,2026-10-15T23:05:42Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,marathonbet,2.06,2026-10-15T23:06:14Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,matchbook,2.14,2026-10-15T23:05:56Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,unibet_fr,1.95,2026-10-15T23:05:58Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,tipico_de,2.0,2026-10-15T23:06:09Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,gtbets,2.1,2026-10-15T23:05:57Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,leovegas_se,2.08,2026-10-15T23:05:12Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,unibet_nl,2.08,2026-10-15T23:05:58Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,pmu_fr,1.97,2026-10-15T23:05:57Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,unibet_se,2.08,2026-10-15T23:05:56Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,winamax_fr,2.0,2026-10-15T23:05:44Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,winamax_de,2.05,2026-10-15T23:05:27Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,sport888,2.1,2026-10-15T23:05:26Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,williamhill,2.1,2026-10-15T23:05:57Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,pinnacle,2.13,2026-10-15T23:06:09Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,betonlineag,2.12,2026-10-15T23:05:12Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Casper Ruud,betanysports,2.0,2026-10-15T23:05:43Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,coolbet,1.76,2026-10-15T23:05:57Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,onexbet,1.77,2026-10-15T23:05:58Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,betfair_ex_eu,1.86,2026-10-15T23:06:09Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,nordicbet,1.78,2026-10-15T23:05:56Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,betsson,1.78,2026-10-15T23:05:42Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,marathonbet,1.75,2026-10-15T23:06:14Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,matchbook,1.86,2026-10-15T23:05:56Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,unibet_fr,1.83,2026-10-15T23:05:58Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,tipico_de,1.77,2026-10-15T23:06:09Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,gtbets,1.76,2026-10-15T23:05:57Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,leovegas_se,1.75,2026-10-15T23:05:12Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,unibet_nl,1.75,2026-10-15T23:05:58Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,pmu_fr,1.68,2026-10-15T23:05:57Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,unibet_se,1.75,2026-10-15T23:05:56Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,winamax_fr,1.78,2026-10-15T23:05:44Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,winamax_de,1.8,2026-10-15T23:05:27Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,sport888,1.73,2026-10-15T23:05:26Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,williamhill,1.73,2026-10-15T23:05:57Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,pinnacle,1.8,2026-10-15T23:06:09Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,betonlineag,1.76,2026-10-15T23:05:12Z
+ef2bb3c52f4e2850db169deeec5c619b,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T06:30:00Z,Rafael Jodar,Casper Ruud,Rafael Jodar,betanysports,1.77,2026-10-15T23:05:43Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,unibet_fr,1.4,2026-10-15T23:05:58Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,marathonbet,1.44,2026-10-15T23:06:14Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,nordicbet,1.46,2026-10-15T23:05:57Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,betsson,1.46,2026-10-15T23:05:42Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,onexbet,1.46,2026-10-15T23:05:58Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,coolbet,1.45,2026-10-15T23:05:57Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,gtbets,1.51,2026-10-15T23:05:57Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,betfair_ex_eu,1.51,2026-10-15T23:06:09Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,unibet_se,1.45,2026-10-15T23:05:56Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,leovegas_se,1.45,2026-10-15T23:05:12Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,pmu_fr,1.4,2026-10-15T23:05:57Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,unibet_nl,1.45,2026-10-15T23:05:58Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,tipico_de,1.42,2026-10-15T23:06:09Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,matchbook,1.51,2026-10-15T23:05:56Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,sport888,1.44,2026-10-15T23:05:26Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,williamhill,1.44,2026-10-15T23:05:57Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,winamax_de,1.46,2026-10-15T23:05:27Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,winamax_fr,1.43,2026-10-15T23:05:44Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,pinnacle,1.46,2026-10-15T23:06:09Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,betonlineag,1.44,2026-10-15T23:05:12Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Daniil Medvedev,betanysports,1.44,2026-10-15T23:05:43Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,unibet_fr,2.9,2026-10-15T23:05:58Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,marathonbet,2.76,2026-10-15T23:06:14Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,nordicbet,2.75,2026-10-15T23:05:57Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,betsson,2.75,2026-10-15T23:05:42Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,onexbet,2.8,2026-10-15T23:05:58Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,coolbet,2.78,2026-10-15T23:05:57Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,gtbets,2.81,2026-10-15T23:05:57Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,betfair_ex_eu,2.94,2026-10-15T23:06:09Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,unibet_se,2.75,2026-10-15T23:05:56Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,leovegas_se,2.75,2026-10-15T23:05:12Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,pmu_fr,2.6,2026-10-15T23:05:57Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,unibet_nl,2.75,2026-10-15T23:05:58Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,tipico_de,2.8,2026-10-15T23:06:09Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,matchbook,2.94,2026-10-15T23:05:56Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,sport888,2.75,2026-10-15T23:05:26Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,williamhill,2.75,2026-10-15T23:05:57Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,winamax_de,2.85,2026-10-15T23:05:27Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,winamax_fr,2.8,2026-10-15T23:05:44Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,pinnacle,2.94,2026-10-15T23:06:09Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,betonlineag,2.89,2026-10-15T23:05:12Z
+9dda9be8037459139ce1f25119c621ea,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-16T10:00:00Z,Daniil Medvedev,Tommy Paul,Tommy Paul,betanysports,2.85,2026-10-15T23:05:43Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,onexbet,3.77,2026-10-15T23:05:58Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,unibet_se,3.85,2026-10-15T23:05:56Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,marathonbet,3.72,2026-10-15T23:06:14Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,coolbet,3.65,2026-10-15T23:05:57Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,pmu_fr,3.65,2026-10-15T23:05:57Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,unibet_nl,3.85,2026-10-15T23:05:58Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,leovegas_se,3.85,2026-10-15T23:05:12Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,gtbets,3.62,2026-10-15T23:05:57Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,unibet_fr,3.15,2026-10-15T23:05:58Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,betsson,3.6,2026-10-15T23:05:42Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,nordicbet,3.6,2026-10-15T23:05:57Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,winamax_fr,3.2,2026-10-15T23:05:44Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,winamax_de,3.6,2026-10-15T23:05:27Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,betfair_ex_eu,3.9,2026-10-15T23:06:09Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,sport888,3.5,2026-10-15T23:05:26Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,williamhill,3.5,2026-10-15T23:05:57Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,pinnacle,3.74,2026-10-15T23:06:09Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,betonlineag,3.68,2026-10-15T23:05:12Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,tipico_de,3.8,2026-10-15T23:06:09Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alejandro Davidovich Fokina,betanysports,3.63,2026-10-15T23:05:43Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,onexbet,1.29,2026-10-15T23:05:58Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,unibet_se,1.26,2026-10-15T23:05:56Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,marathonbet,1.27,2026-10-15T23:06:14Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,coolbet,1.29,2026-10-15T23:05:57Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,pmu_fr,1.2,2026-10-15T23:05:57Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,unibet_nl,1.26,2026-10-15T23:05:58Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,leovegas_se,1.26,2026-10-15T23:05:12Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,gtbets,1.28,2026-10-15T23:05:57Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,unibet_fr,1.24,2026-10-15T23:05:58Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,betsson,1.29,2026-10-15T23:05:42Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,nordicbet,1.29,2026-10-15T23:05:57Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,winamax_fr,1.25,2026-10-15T23:05:44Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,winamax_de,1.29,2026-10-15T23:05:27Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,betfair_ex_eu,1.34,2026-10-15T23:06:09Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,sport888,1.3,2026-10-15T23:05:26Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,williamhill,1.3,2026-10-15T23:05:57Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,pinnacle,1.31,2026-10-15T23:06:09Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,betonlineag,1.3,2026-10-15T23:05:12Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,tipico_de,1.25,2026-10-15T23:06:09Z
+85243da216a4bb91389e3da1f356f52c,tennis_atp_shanghai_masters,ATP Shanghai Masters,Hard,2026-10-17T04:00:00Z,Alexander Zverev,Alejandro Davidovich Fokina,Alexander Zverev,betanysports,1.3,2026-10-15T23:05:43Z
