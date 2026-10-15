@@ -1192,3 +1192,11 @@ at,source,sport,sport_key,event_id,commence_time,outcome,median_odds,pinnacle_od
 2026-10-14T23:04:19+00:00,daily,atp,tennis_atp_shanghai_masters,ef2bb3c52f4e2850db169deeec5c619b,2026-10-16T04:00:00Z,Rafael Jodar,1.73,1.76,1.79,21
 2026-10-14T23:04:19+00:00,daily,atp,tennis_atp_shanghai_masters,9dda9be8037459139ce1f25119c621ea,2026-10-16T04:00:00Z,Daniil Medvedev,1.5,1.49,1.53,21
 2026-10-14T23:04:19+00:00,daily,atp,tennis_atp_shanghai_masters,9dda9be8037459139ce1f25119c621ea,2026-10-16T04:00:00Z,Tommy Paul,2.6,2.81,2.88,21
+2026-10-15T06:17:45+00:00,snapshot,atp,tennis_atp_shanghai_masters,7c66ab6e5bb9bc88359d8284d1aaa1ff,2026-10-15T06:30:00Z,Alejandro Davidovich Fokina,1.93,2.03,2.06,21
+2026-10-15T06:17:45+00:00,snapshot,atp,tennis_atp_shanghai_masters,7c66ab6e5bb9bc88359d8284d1aaa1ff,2026-10-15T06:30:00Z,Arthur Gea,1.87,1.88,1.93,21
+2026-10-15T06:17:45+00:00,snapshot,atp,tennis_atp_shanghai_masters,9f79a8611b72f362103f75adae40aa9f,2026-10-15T10:00:00Z,Alexander Zverev,1.49,1.52,1.53,21
+2026-10-15T06:17:45+00:00,snapshot,atp,tennis_atp_shanghai_masters,9f79a8611b72f362103f75adae40aa9f,2026-10-15T10:00:00Z,Alex de Minaur,2.7,2.74,2.86,21
+2026-10-15T06:17:45+00:00,snapshot,atp,tennis_atp_shanghai_masters,ef2bb3c52f4e2850db169deeec5c619b,2026-10-16T04:00:00Z,Casper Ruud,2.11,2.19,2.24,21
+2026-10-15T06:17:45+00:00,snapshot,atp,tennis_atp_shanghai_masters,ef2bb3c52f4e2850db169deeec5c619b,2026-10-16T04:00:00Z,Rafael Jodar,1.73,1.76,1.79,21
+2026-10-15T06:17:45+00:00,snapshot,atp,tennis_atp_shanghai_masters,9dda9be8037459139ce1f25119c621ea,2026-10-16T04:00:00Z,Daniil Medvedev,1.46,1.47,1.51,21
+2026-10-15T06:17:45+00:00,snapshot,atp,tennis_atp_shanghai_masters,9dda9be8037459139ce1f25119c621ea,2026-10-16T04:00:00Z,Tommy Paul,2.75,2.88,2.92,21
