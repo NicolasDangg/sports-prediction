@@ -1417,3 +1417,5 @@ at,source,sport,sport_key,event_id,commence_time,outcome,median_odds,pinnacle_od
 2026-10-17T23:04:28+00:00,daily,epl,soccer_epl,0f552d9c6990c69474f50ff2fb54e9a3,2026-11-02T20:00:00Z,Draw,3.49,,3.8,10
 2026-10-17T23:04:28+00:00,daily,atp,tennis_atp_shanghai_masters,558c4df94e8e9d970b74c5213c82675c,2026-10-18T08:30:00Z,Alejandro Davidovich Fokina,2.15,2.16,2.24,20
 2026-10-17T23:04:28+00:00,daily,atp,tennis_atp_shanghai_masters,558c4df94e8e9d970b74c5213c82675c,2026-10-18T08:30:00Z,Rafael Jodar,1.73,1.77,1.79,20
+2026-10-18T06:13:25+00:00,snapshot,atp,tennis_atp_shanghai_masters,558c4df94e8e9d970b74c5213c82675c,2026-10-18T08:30:00Z,Alejandro Davidovich Fokina,2.15,2.22,2.28,20
+2026-10-18T06:13:25+00:00,snapshot,atp,tennis_atp_shanghai_masters,558c4df94e8e9d970b74c5213c82675c,2026-10-18T08:30:00Z,Rafael Jodar,1.725,1.74,1.76,20
