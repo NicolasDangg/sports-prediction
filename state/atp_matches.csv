@@ -3992,91 +3992,93 @@ date,tournament,series,round,surface,p1,p2,winner,score,p1_before,p2_before,p1_a
 2026-10-05,tennis_atp_china_open,,,Hard,De Minaur A.,Hurkacz H.,De Minaur A.,,1909.5,1866.9,1917.0,1858.7,0.5876,,
 2026-10-06,Japan Open Tennis Championships,ATP500,The Final,Hard,Lehecka J.,Alcaraz C.,Alcaraz C.,6-7 4-6,1903.2,2223.6,1900.1,2226.3,0.1524,3.75,1.29
 2026-10-06,tennis_atp_china_open,,,Hard,Djokovic N.,De Minaur A.,Djokovic N.,,2132.9,1917.0,2135.4,1913.2,0.7889,,
-2026-10-07,ATP Shanghai Masters,,,Hard,Shimabukuro S.,Kecmanovic M.,Kecmanovic M.,,1455.4,1634.4,1442.2,1639.4,0.2397,,
-2026-10-07,ATP Shanghai Masters,,,Hard,Gea A.,Faria J.,Gea A.,,1742.8,1724.0,1770.3,1703.8,0.5676,,
-2026-10-07,ATP Shanghai Masters,,,Hard,Kovacevic A.,Berrettini M.,Berrettini M.,,1588.7,1805.6,1582.3,1810.0,0.2484,,
+2026-10-07,Shanghai Masters,Masters 1000,1st Round,Hard,Altmaier D.,Rune H.,Altmaier D.,1-6 7-6 6-4,1673.6,1892.5,1691.9,1875.6,0.1873,2.75,1.44
+2026-10-07,Shanghai Masters,Masters 1000,1st Round,Hard,Bellucci M.,Zhou Y.,Zhou Y.,4-6 6-3 6-7,1640.1,1440.8,1613.3,1493.6,0.7331,1.29,3.75
+2026-10-07,Shanghai Masters,Masters 1000,1st Round,Hard,Cilic M.,Fery A.,Fery A.,6-7 1-6,1769.0,1735.2,1761.7,1762.6,0.6388,2.38,1.57
+2026-10-07,Shanghai Masters,Masters 1000,1st Round,Hard,Gea A.,Faria J.,Gea A.,6-7 6-1 6-2,1742.8,1724.0,1770.3,1703.8,0.5676,1.53,2.5
+2026-10-07,Shanghai Masters,Masters 1000,1st Round,Hard,Halys Q.,Wong C.,Halys Q.,6-4 7-6,1731.0,1666.2,1741.3,1647.6,0.5162,1.73,2.1
+2026-10-07,Shanghai Masters,Masters 1000,1st Round,Hard,Hanfmann Y.,Majchrzak K.,Hanfmann Y.,6-7 7-6 7-6,1737.5,1714.7,1748.5,1700.5,0.5382,2.38,1.57
+2026-10-07,Shanghai Masters,Masters 1000,1st Round,Hard,Hijikata R.,Safiullin R.,Safiullin R.,5-7 3-6,1672.1,1700.8,1658.7,1713.5,0.4627,3.2,1.36
+2026-10-07,Shanghai Masters,Masters 1000,1st Round,Hard,Kecmanovic M.,Shimabukuro S.,Kecmanovic M.,6-2 6-4,1634.4,1455.4,1639.4,1442.2,0.7603,1.4,3.0
+2026-10-07,Shanghai Masters,Masters 1000,1st Round,Hard,Kovacevic A.,Berrettini M.,Berrettini M.,7-6 1-6 4-6,1588.7,1805.6,1582.3,1810.0,0.2484,2.63,1.5
+2026-10-07,Shanghai Masters,Masters 1000,1st Round,Hard,Sakamoto R.,Trungelliti M.,Sakamoto R.,6-3 7-5,1484.5,1587.8,1529.4,1563.5,0.4138,1.44,2.75
+2026-10-07,Shanghai Masters,Masters 1000,1st Round,Hard,Wu Y.,Zheng M.,Wu Y.,6-3 7-6,1700.4,1643.8,1715.7,1619.4,0.6194,1.73,2.1
+2026-10-07,Shanghai Masters,Masters 1000,1st Round,Hard,Zhang Zh.,Machac T.,Machac T.,6-1 6-7 2-6,1584.2,1770.5,1577.0,1777.7,0.222,2.75,1.44
 2026-10-07,ATP Shanghai Masters,,,Hard,Mannarino A.,Basilashvili N.,Mannarino A.,,1668.1,1627.8,1674.6,1619.0,0.581,,
-2026-10-07,ATP Shanghai Masters,,,Hard,Hanfmann Y.,Majchrzak K.,Hanfmann Y.,,1737.5,1714.7,1748.5,1700.5,0.5382,,
-2026-10-07,ATP Shanghai Masters,,,Hard,Zhang Zh.,Machac T.,Machac T.,,1584.2,1770.5,1577.0,1777.7,0.222,,
-2026-10-07,ATP Shanghai Masters,,,Hard,Trungelliti M.,Sakamoto R.,Sakamoto R.,,1587.8,1484.5,1563.5,1529.4,0.5862,,
-2026-10-07,ATP Shanghai Masters,,,Hard,Hijikata R.,Safiullin R.,Safiullin R.,,1672.1,1700.8,1658.7,1713.5,0.4627,,
-2026-10-07,ATP Shanghai Masters,,,Hard,Halys Q.,Wong C.,Halys Q.,,1731.0,1666.2,1741.3,1647.6,0.5162,,
-2026-10-07,ATP Shanghai Masters,,,Hard,Wu Y.,Zheng M.,Wu Y.,,1700.4,1643.8,1715.7,1619.4,0.6194,,
-2026-10-07,ATP Shanghai Masters,,,Hard,Bellucci M.,Zhou Y.,Zhou Y.,,1640.1,1440.8,1613.3,1493.6,0.7331,,
-2026-10-07,ATP Shanghai Masters,,,Hard,Fery A.,Cilic M.,Fery A.,,1735.2,1769.0,1762.6,1761.7,0.3612,,
-2026-10-07,ATP Shanghai Masters,,,Hard,Rune H.,Altmaier D.,Altmaier D.,,1892.5,1673.6,1875.6,1691.9,0.8127,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Kotov P.,Griekspoor T.,Kotov P.,,1590.5,1700.3,1612.6,1685.8,0.2703,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Borges N.,Diaz Acosta F.,Borges N.,,1772.9,1587.9,1779.2,1577.9,0.7402,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Coppejans K.,Tsitsipas S.,Tsitsipas S.,,1374.2,1820.5,1369.7,1821.7,0.0959,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Hurkacz H.,Duckworth J.,Hurkacz H.,,1858.7,1643.4,1862.9,1638.2,0.7679,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Tomic B.,Arnaldi M.,Arnaldi M.,,1638.1,1665.1,1629.2,1677.6,0.5229,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Tirante T.A.,Medjedovic H.,Tirante T.A.,,1809.5,1667.4,1821.1,1657.2,0.6917,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Navone M.,Carreno Busta P.,Carreno Busta P.,,1747.7,1700.9,1731.4,1711.3,0.444,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Vallejo D.,Royer V.,Vallejo D.,,1649.0,1537.9,1666.7,1523.5,0.6454,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Giron M.,Baez S.,Baez S.,,1642.2,1679.3,1633.1,1689.2,0.4651,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Marozsan F.,Svajda Z.,Svajda Z.,,1700.0,1622.1,1684.0,1646.6,0.6663,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Cerundolo J.M.,Mejia N.,Cerundolo J.M.,,1673.6,1443.4,1680.3,1428.3,0.7655,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Van De Zandschulp B.,Merida Aguilar D.,Van De Zandschulp B.,,1747.4,1831.4,1761.1,1800.8,0.4132,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Landaluce M.,Struff J.L.,Struff J.L.,,1569.4,1727.4,1556.6,1732.2,0.3646,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Van Assche L.,Bu Y.,Bu Y.,,1652.7,1650.8,1634.8,1669.6,0.4124,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Kopriva V.,Bergs Z.,Bergs Z.,,1633.9,1719.0,1620.6,1729.8,0.3479,,
-2026-10-08,ATP Shanghai Masters,,,Hard,Norrie C.,Svrcina D.,Svrcina D.,,1782.3,1578.6,1768.8,1617.7,0.7436,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Gea A.,Humbert U.,Gea A.,,1770.3,1787.7,1800.3,1777.4,0.4764,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Mannarino A.,Cobolli F.,Mannarino A.,,1674.6,1842.4,1685.2,1824.2,0.3493,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Sakamoto R.,Rublev A.,Sakamoto R.,,1529.4,1832.4,1587.0,1819.2,0.1571,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Shelton B.,Altmaier D.,Shelton B.,,1965.6,1691.9,1969.5,1687.9,0.8665,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Berrettini M.,Nakashima B.,Nakashima B.,,1810.0,1846.7,1801.2,1856.1,0.426,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Halys Q.,Blockx A.,Halys Q.,,1741.3,1812.3,1756.5,1785.8,0.4832,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Zverev A.,Wu Y.,Zverev A.,,2056.9,1715.7,2058.7,1711.2,0.8495,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Hanfmann Y.,Tiafoe F.,Tiafoe F.,,1748.5,1910.7,1741.9,1915.5,0.2721,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Davidovich Fokina A.,Brooksby J.,Davidovich Fokina A.,,1854.0,1709.4,1859.9,1701.3,0.6745,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Khachanov K.,Fery A.,Khachanov K.,,1793.1,1762.6,1800.4,1740.1,0.6231,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Cerundolo F.,Safiullin R.,Cerundolo F.,,1844.8,1713.5,1851.6,1704.7,0.6563,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Kecmanovic M.,Mensik J.,Mensik J.,,1639.4,1864.0,1635.3,1870.1,0.2081,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Djokovic N.,Hurkacz H.,Hurkacz H.,,2135.4,1862.9,2126.0,1878.3,0.8522,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Zhou Y.,Musetti L.,Zhou Y.,,1493.6,1898.6,1555.3,1880.2,0.1027,,
-2026-10-09,ATP Shanghai Masters,,,Hard,Bublik A.,Machac T.,Bublik A.,,1845.6,1777.7,1853.2,1766.4,0.5644,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Tirante T.A.,Jodar R.,Jodar R.,,1821.1,1902.4,1806.7,1917.8,0.4155,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Ugo Carabelli C.,Auger-Aliassime F.,Auger-Aliassime F.,,1595.2,1907.0,1590.5,1909.5,0.0997,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Lehecka J.,Borges N.,Lehecka J.,,1900.1,1779.2,1907.7,1771.1,0.6728,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Medvedev D.,Struff J.L.,Medvedev D.,,1932.9,1732.2,1936.6,1728.2,0.8239,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Svrcina D.,Etcheverry T.,Svrcina D.,,1617.7,1694.3,1648.6,1680.5,0.4252,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Arnaldi M.,Fritz T.,Fritz T.,,1677.6,1932.7,1672.5,1935.7,0.1838,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Tabilo A.,Carreno Busta P.,Carreno Busta P.,,1746.8,1711.3,1732.9,1721.5,0.5424,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Bu Y.,Ruud C.,Ruud C.,,1669.6,1890.2,1661.5,1893.9,0.2739,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Fils A.,Kotov P.,Fils A.,,2005.4,1612.6,2007.8,1609.4,0.9028,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Tien L.,Svajda Z.,Tien L.,,1872.0,1646.6,1878.5,1638.1,0.8259,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Darderi L.,Tsitsipas S.,Tsitsipas S.,,1780.4,1821.7,1769.0,1828.8,0.3721,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Cerundolo J.M.,Alcaraz C.,Alcaraz C.,,1680.3,2226.3,1679.0,2227.0,0.0435,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Paul T.,Vallejo D.,Paul T.,,1904.4,1666.7,1908.2,1656.4,0.7722,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Van De Zandschulp B.,Michelsen A.,Van De Zandschulp B.,,1761.1,1813.9,1773.8,1799.1,0.4195,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Buse I.,Bergs Z.,Bergs Z.,,1760.8,1729.8,1738.6,1745.2,0.4817,,
-2026-10-10,ATP Shanghai Masters,,,Hard,Baez S.,Vacherot V.,Vacherot V.,,1689.2,1814.3,1682.0,1827.2,0.3143,,
-2026-10-11,ATP Shanghai Masters,,,Hard,Shelton B.,Gea A.,Gea A.,,1969.5,1800.3,1953.2,1841.0,0.7321,,
-2026-10-11,ATP Shanghai Masters,,,Hard,Khachanov K.,Mannarino A.,Khachanov K.,,1800.4,1685.2,1805.9,1680.2,0.6448,,
-2026-10-11,ATP Shanghai Masters,,,Hard,De Minaur A.,Sakamoto R.,De Minaur A.,,1913.2,1587.0,1915.4,1578.2,0.8696,,
-2026-10-11,ATP Shanghai Masters,,,Hard,Hurkacz H.,Zhou Y.,Hurkacz H.,,1878.3,1555.3,1880.8,1546.4,0.8611,,
-2026-10-11,ATP Shanghai Masters,,,Hard,Cerundolo F.,Mensik J.,Mensik J.,,1851.6,1870.1,1841.6,1883.3,0.4411,,
-2026-10-11,ATP Shanghai Masters,,,Hard,Zverev A.,Halys Q.,Zverev A.,,2058.7,1756.5,2060.8,1752.7,0.8694,,
-2026-10-11,ATP Shanghai Masters,,,Hard,Bublik A.,Nakashima B.,Bublik A.,,1853.2,1856.1,1862.6,1845.5,0.4784,,
-2026-10-11,ATP Shanghai Masters,,,Hard,Davidovich Fokina A.,Tiafoe F.,Davidovich Fokina A.,,1859.9,1915.5,1871.4,1905.7,0.4133,,
-2026-10-12,ATP Shanghai Masters,,,Hard,Tien L.,Ruud C.,Ruud C.,,1878.5,1893.9,1864.0,1902.1,0.5448,,
-2026-10-12,ATP Shanghai Masters,,,Hard,Carreno Busta P.,Auger-Aliassime F.,Auger-Aliassime F.,,1721.5,1909.5,1716.8,1913.9,0.2488,,
-2026-10-12,ATP Shanghai Masters,,,Hard,Lehecka J.,Jodar R.,Jodar R.,,1907.7,1917.8,1896.6,1937.1,0.5513,,
-2026-10-12,ATP Shanghai Masters,,,Hard,Tsitsipas S.,Fritz T.,Tsitsipas S.,,1828.8,1935.7,1839.2,1925.3,0.3585,,
-2026-10-12,ATP Shanghai Masters,,,Hard,Medvedev D.,Svrcina D.,Medvedev D.,,1936.6,1648.6,1939.0,1640.6,0.8477,,
-2026-10-12,ATP Shanghai Masters,,,Hard,Bergs Z.,Alcaraz C.,Bergs Z.,,1745.2,2227.0,1771.7,2209.1,0.0646,,
-2026-10-12,ATP Shanghai Masters,,,Hard,Fils A.,Van De Zandschulp B.,Van De Zandschulp B.,,2007.8,1773.8,1987.3,1791.3,0.7503,,
-2026-10-12,ATP Shanghai Masters,,,Hard,Paul T.,Vacherot V.,Paul T.,,1908.2,1827.2,1915.3,1812.1,0.608,,
-2026-10-13,ATP Shanghai Masters,,,Hard,De Minaur A.,Khachanov K.,De Minaur A.,,1915.4,1805.9,1921.3,1800.3,0.6597,,
-2026-10-13,ATP Shanghai Masters,,,Hard,Gea A.,Mensik J.,Gea A.,,1841.0,1883.3,1871.9,1867.7,0.4426,,
-2026-10-13,ATP Shanghai Masters,,,Hard,Zverev A.,Bublik A.,Zverev A.,,2060.8,1862.6,2064.2,1858.1,0.757,,
-2026-10-13,ATP Shanghai Masters,,,Hard,Hurkacz H.,Davidovich Fokina A.,Davidovich Fokina A.,,1880.8,1871.4,1871.3,1881.5,0.5118,,
-2026-10-14,ATP Shanghai Masters,,,Hard,Van De Zandschulp B.,Jodar R.,Jodar R.,,1791.3,1937.1,1784.6,1949.0,0.3786,,
-2026-10-14,ATP Shanghai Masters,,,Hard,Medvedev D.,Tsitsipas S.,Medvedev D.,,1939.0,1839.2,1944.6,1833.4,0.6773,,
-2026-10-14,ATP Shanghai Masters,,,Hard,Paul T.,Bergs Z.,Paul T.,,1915.3,1771.7,1921.0,1763.2,0.6888,,
-2026-10-15,ATP Shanghai Masters,,,Hard,Zverev A.,De Minaur A.,Zverev A.,,2064.2,1921.3,2068.6,1916.1,0.671,,
-2026-10-16,ATP Shanghai Masters,,,Hard,Jodar R.,Ruud C.,Jodar R.,,1949.0,1902.1,1965.9,1894.7,0.563,,
-2026-10-16,ATP Shanghai Masters,,,Hard,Medvedev D.,Paul T.,Medvedev D.,,1944.6,1921.0,1951.8,1912.3,0.5853,,
-2026-10-17,ATP Shanghai Masters,,,Hard,Zverev A.,Davidovich Fokina A.,Davidovich Fokina A.,,2068.6,1881.5,2058.0,1896.2,0.7418,,
-2026-10-17,ATP Shanghai Masters,,,Hard,Jodar R.,Medvedev D.,Jodar R.,,1965.9,1951.8,1984.6,1944.4,0.4317,,
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Bu Y.,Van Assche L.,Bu Y.,7-6 6-3,1650.8,1652.7,1669.6,1634.8,0.5876,1.62,2.3
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Diaz Acosta F.,Borges N.,Borges N.,6-7 2-6,1587.9,1772.9,1577.9,1779.2,0.2598,3.75,1.29
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Giron M.,Baez S.,Baez S.,6-1 3-6 4-6,1642.2,1679.3,1633.1,1689.2,0.4651,2.1,1.73
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Griekspoor T.,Kotov P.,Kotov P.,4-6 6-7,1700.3,1590.5,1685.8,1612.6,0.7297,1.44,2.75
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Hurkacz H.,Duckworth J.,Hurkacz H.,6-3 7-6,1858.7,1643.4,1862.9,1638.2,0.7679,1.36,3.2
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Kopriva V.,Bergs Z.,Bergs Z.,3-6 1-6,1633.9,1719.0,1620.6,1729.8,0.3479,3.2,1.36
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Landaluce M.,Struff J.L.,Struff J.L.,4-6 4-6,1569.4,1727.4,1556.6,1732.2,0.3646,2.0,1.8
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Mejia N.,Cerundolo J.M.,Cerundolo J.M.,4-6 4-6,1443.4,1673.6,1428.3,1680.3,0.2345,3.0,1.4
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Navone M.,Carreno Busta P.,Carreno Busta P.,6-4 5-7 3-6,1747.7,1700.9,1731.4,1711.3,0.444,1.67,2.2
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Simakin I.,Ugo Carabelli C.,Ugo Carabelli C.,6-2 2-6 5-7,1500.0,1595.2,1461.5,1607.2,0.4715,1.4,3.0
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Svajda Z.,Marozsan F.,Svajda Z.,6-3 7-6,1622.1,1700.0,1646.6,1684.0,0.3337,2.1,1.73
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Svrcina D.,Norrie C.,Svrcina D.,6-3 3-6 6-4,1578.6,1782.3,1617.7,1768.8,0.2564,2.75,1.44
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Tirante T.A.,Medjedovic H.,Tirante T.A.,6-4 6-2,1809.5,1667.4,1821.1,1657.2,0.6917,1.67,2.2
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Tomic B.,Arnaldi M.,Arnaldi M.,3-6 1-6,1638.1,1665.1,1629.2,1677.6,0.5229,2.75,1.44
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Tsitsipas S.,Coppejans K.,Tsitsipas S.,6-3 7-5,1820.5,1374.2,1821.7,1369.7,0.9041,1.08,8.0
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Vallejo D.,Royer V.,Vallejo D.,6-3 6-1,1649.0,1537.9,1666.7,1523.5,0.6454,1.73,2.1
+2026-10-08,Shanghai Masters,Masters 1000,1st Round,Hard,Van De Zandschulp B.,Merida Aguilar D.,Van De Zandschulp B.,1-6 6-3 6-4,1747.4,1831.4,1761.1,1800.8,0.4132,1.91,1.91
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Berrettini M.,Nakashima B.,Nakashima B.,6-7 5-7,1810.0,1846.7,1801.2,1856.1,0.426,2.38,1.57
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Brooksby J.,Davidovich Fokina A.,Davidovich Fokina A.,1-6 3-6,1709.4,1854.0,1701.3,1859.9,0.3255,3.0,1.4
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Djokovic N.,Hurkacz H.,Hurkacz H.,4-6 3-6,2135.4,1862.9,2126.0,1878.3,0.8522,1.57,2.38
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Halys Q.,Blockx A.,Halys Q.,4-6 7-6 6-4,1741.3,1812.3,1756.5,1785.8,0.4832,2.0,1.8
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Humbert U.,Gea A.,Gea A.,4-6 6-3 1-6,1787.7,1770.3,1777.4,1800.3,0.5236,2.0,1.8
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Khachanov K.,Fery A.,Khachanov K.,7-6 6-7 7-6,1793.1,1762.6,1800.4,1740.1,0.6231,1.4,3.0
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Machac T.,Bublik A.,Bublik A.,4-6 6-7,1777.7,1845.6,1766.4,1853.2,0.4356,2.63,1.5
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Mannarino A.,Cobolli F.,Mannarino A.,6-1 4-6 6-3,1674.6,1842.4,1685.2,1824.2,0.3493,2.63,1.5
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Mensik J.,Kecmanovic M.,Mensik J.,6-3 6-3,1864.0,1639.4,1870.1,1635.3,0.7919,1.33,3.4
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Rublev A.,Sakamoto R.,Sakamoto R.,4-6 4-6,1832.4,1529.4,1819.2,1587.0,0.8429,1.33,3.4
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Safiullin R.,Cerundolo F.,Cerundolo F.,6-7 3-6,1713.5,1844.8,1704.7,1851.6,0.3437,1.91,1.91
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Shelton B.,Altmaier D.,Shelton B.,6-3 7-6,1965.6,1691.9,1969.5,1687.9,0.8665,1.11,6.5
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Tiafoe F.,Hanfmann Y.,Tiafoe F.,6-4 6-4,1910.7,1748.5,1915.5,1741.9,0.7279,1.36,3.2
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Wu Y.,Zverev A.,Zverev A.,4-6 6-7,1715.7,2056.9,1711.2,2058.7,0.1505,7.0,1.1
+2026-10-09,Shanghai Masters,Masters 1000,2nd Round,Hard,Zhou Y.,Musetti L.,Zhou Y.,7-6 3-6 7-6,1493.6,1898.6,1555.3,1880.2,0.1027,4.5,1.2
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Arnaldi M.,Fritz T.,Fritz T.,5-7 4-6,1677.6,1932.7,1672.5,1935.7,0.1838,4.0,1.25
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Baez S.,Vacherot V.,Vacherot V.,4-6 6-7,1689.2,1814.3,1682.0,1827.2,0.3143,3.5,1.3
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Bergs Z.,Buse I.,Bergs Z.,6-0 6-3,1729.8,1760.8,1745.2,1738.6,0.5183,1.53,2.5
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Bu Y.,Ruud C.,Ruud C.,1-6 6-7,1669.6,1890.2,1661.5,1893.9,0.2739,1.8,2.0
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Carreno Busta P.,Tabilo A.,Carreno Busta P.,4-6 7-6 6-4,1711.3,1746.8,1721.5,1732.9,0.4576,2.63,1.5
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Cerundolo J.M.,Alcaraz C.,Alcaraz C.,3-6 3-6,1680.3,2226.3,1679.0,2227.0,0.0435,11.0,1.05
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Fils A.,Kotov P.,Fils A.,6-3 6-4,2005.4,1612.6,2007.8,1609.4,0.9028,1.08,8.0
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Jodar R.,Tirante T.A.,Jodar R.,4-6 6-2 6-3,1902.4,1821.1,1917.8,1806.7,0.5845,1.4,3.0
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Lehecka J.,Borges N.,Lehecka J.,6-3 3-6 6-3,1900.1,1779.2,1907.7,1771.1,0.6728,1.33,3.4
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Michelsen A.,Van De Zandschulp B.,Van De Zandschulp B.,4-6 4-6,1813.9,1761.1,1799.1,1773.8,0.5805,1.5,2.63
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Paul T.,Vallejo D.,Paul T.,6-2 6-2,1904.4,1666.7,1908.2,1656.4,0.7722,1.44,2.75
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Struff J.L.,Medvedev D.,Medvedev D.,6-4 4-6 3-6,1732.2,1932.9,1728.2,1936.6,0.1761,5.5,1.14
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Svajda Z.,Tien L.,Tien L.,5-7 5-7,1646.6,1872.0,1638.1,1878.5,0.1741,3.5,1.3
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Svrcina D.,Etcheverry T.,Svrcina D.,6-3 3-6 7-5,1617.7,1694.3,1648.6,1680.5,0.4252,2.3,1.62
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Tsitsipas S.,Darderi L.,Tsitsipas S.,6-3 6-4,1821.7,1780.4,1828.8,1769.0,0.6279,1.4,3.0
+2026-10-10,Shanghai Masters,Masters 1000,2nd Round,Hard,Ugo Carabelli C.,Auger-Aliassime F.,Auger-Aliassime F.,6-4 6-7 5-7,1607.2,1907.0,1602.3,1909.6,0.1111,10.0,1.06
+2026-10-11,Shanghai Masters,Masters 1000,3rd Round,Hard,De Minaur A.,Sakamoto R.,De Minaur A.,7-6 6-4,1913.2,1587.0,1915.4,1578.2,0.8696,1.4,3.0
+2026-10-11,Shanghai Masters,Masters 1000,3rd Round,Hard,Khachanov K.,Mannarino A.,Khachanov K.,6-2 6-4,1800.4,1685.2,1805.9,1680.2,0.6448,1.3,3.5
+2026-10-11,Shanghai Masters,Masters 1000,3rd Round,Hard,Mensik J.,Cerundolo F.,Mensik J.,6-3 3-6 6-2,1870.1,1851.6,1883.3,1841.6,0.5589,1.62,2.3
+2026-10-11,Shanghai Masters,Masters 1000,3rd Round,Hard,Nakashima B.,Bublik A.,Bublik A.,7-6 3-6 6-7,1856.1,1853.2,1845.5,1862.6,0.5216,1.67,2.2
+2026-10-11,Shanghai Masters,Masters 1000,3rd Round,Hard,Shelton B.,Gea A.,Gea A.,6-7 6-7,1969.5,1800.3,1953.2,1841.0,0.7321,1.36,3.2
+2026-10-11,Shanghai Masters,Masters 1000,3rd Round,Hard,Tiafoe F.,Davidovich Fokina A.,Davidovich Fokina A.,6-7 6-4 6-7,1915.5,1859.9,1905.7,1871.4,0.5867,1.91,1.91
+2026-10-11,Shanghai Masters,Masters 1000,3rd Round,Hard,Zhou Y.,Hurkacz H.,Hurkacz H.,2-6 6-3 3-6,1555.3,1878.3,1546.4,1880.8,0.1389,6.0,1.13
+2026-10-11,Shanghai Masters,Masters 1000,3rd Round,Hard,Zverev A.,Halys Q.,Zverev A.,6-4 6-7 6-3,2058.7,1756.5,2060.8,1752.7,0.8694,1.13,6.0
+2026-10-12,Shanghai Masters,Masters 1000,3rd Round,Hard,Alcaraz C.,Bergs Z.,Bergs Z.,5-7 6-7,2227.0,1745.2,2209.1,1771.7,0.9354,10.0,1.06
+2026-10-12,Shanghai Masters,Masters 1000,3rd Round,Hard,Auger-Aliassime F.,Carreno Busta P.,Auger-Aliassime F.,6-3 4-6 6-1,1909.6,1721.5,1914.0,1716.8,0.7514,1.29,3.75
+2026-10-12,Shanghai Masters,Masters 1000,3rd Round,Hard,Fritz T.,Tsitsipas S.,Tsitsipas S.,6-3 5-7 3-6,1935.7,1828.8,1925.3,1839.2,0.6415,1.62,2.3
+2026-10-12,Shanghai Masters,Masters 1000,3rd Round,Hard,Jodar R.,Lehecka J.,Jodar R.,4-6 7-6 6-4,1917.8,1907.7,1937.1,1896.6,0.4487,2.3,1.62
+2026-10-12,Shanghai Masters,Masters 1000,3rd Round,Hard,Medvedev D.,Svrcina D.,Medvedev D.,6-2 6-3,1936.6,1648.6,1939.0,1640.6,0.8477,1.08,8.0
+2026-10-12,Shanghai Masters,Masters 1000,3rd Round,Hard,Tien L.,Ruud C.,Ruud C.,4-6 6-7,1878.5,1893.9,1864.0,1902.1,0.5448,1.57,2.38
+2026-10-12,Shanghai Masters,Masters 1000,3rd Round,Hard,Vacherot V.,Paul T.,Paul T.,4-6 2-6,1827.2,1908.2,1812.1,1915.3,0.392,2.3,1.62
+2026-10-12,Shanghai Masters,Masters 1000,3rd Round,Hard,Van De Zandschulp B.,Fils A.,Van De Zandschulp B.,7-5 6-4,1773.8,2007.8,1791.3,1987.3,0.2497,4.5,1.2
+2026-10-13,Shanghai Masters,Masters 1000,4th Round,Hard,De Minaur A.,Khachanov K.,De Minaur A.,6-3 6-4,1915.4,1805.9,1921.3,1800.3,0.6597,1.73,2.1
+2026-10-13,Shanghai Masters,Masters 1000,4th Round,Hard,Hurkacz H.,Davidovich Fokina A.,Davidovich Fokina A.,6-1 3-6 6-7,1880.8,1871.4,1871.3,1881.5,0.5118,1.91,1.91
+2026-10-13,Shanghai Masters,Masters 1000,4th Round,Hard,Mensik J.,Gea A.,Gea A.,6-7 4-6,1883.3,1841.0,1867.7,1871.9,0.5574,1.57,2.38
+2026-10-13,Shanghai Masters,Masters 1000,4th Round,Hard,Zverev A.,Bublik A.,Zverev A.,7-6 4-6 7-6,2060.8,1862.6,2064.2,1858.1,0.757,1.33,3.4
+2026-10-14,Shanghai Masters,Masters 1000,4th Round,Hard,Jodar R.,Van De Zandschulp B.,Jodar R.,6-7 6-4 6-2,1937.1,1791.3,1949.0,1784.6,0.6214,1.44,2.75
+2026-10-14,Shanghai Masters,Masters 1000,4th Round,Hard,Paul T.,Bergs Z.,Paul T.,7-6 6-4,1915.3,1771.7,1921.0,1763.2,0.6888,1.44,2.75
+2026-10-14,Shanghai Masters,Masters 1000,4th Round,Hard,Tsitsipas S.,Medvedev D.,Medvedev D.,4-6 5-7,1839.2,1939.0,1833.4,1944.6,0.3227,2.75,1.44
+2026-10-15,Shanghai Masters,Masters 1000,Quarterfinals,Hard,De Minaur A.,Zverev A.,Zverev A.,4-6 4-6,1921.3,2064.2,1916.1,2068.6,0.329,2.63,1.5
+2026-10-16,Shanghai Masters,Masters 1000,Quarterfinals,Hard,Jodar R.,Ruud C.,Jodar R.,4-6 6-4 6-3,1949.0,1902.1,1965.9,1894.7,0.563,1.73,2.1
+2026-10-16,Shanghai Masters,Masters 1000,Quarterfinals,Hard,Paul T.,Medvedev D.,Medvedev D.,3-6 6-1 3-6,1921.0,1944.6,1912.3,1951.8,0.4147,3.0,1.4
+2026-10-17,Shanghai Masters,Masters 1000,Semifinals,Hard,Davidovich Fokina A.,Zverev A.,Davidovich Fokina A.,5-7 6-4 6-3,1881.5,2068.6,1896.2,2058.0,0.2582,4.33,1.22
+2026-10-17,Shanghai Masters,Masters 1000,Semifinals,Hard,Medvedev D.,Jodar R.,Jodar R.,3-6 4-6,1951.8,1965.9,1944.4,1984.6,0.5683,1.5,2.63
+2026-10-18,Shanghai Masters,Masters 1000,The Final,Hard,Davidovich Fokina A.,Jodar R.,Davidovich Fokina A.,1-6 7-6 6-4,1896.2,1984.6,1908.5,1960.4,0.413,2.1,1.73
