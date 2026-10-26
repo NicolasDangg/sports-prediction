@@ -136,3 +136,14 @@ f66e4f29c1b7bcfc5ab58c0b88c8850b,soccer_epl,Arsenal,Everton,2026-10-24T14:00:00Z
 290ba8cd3f3a2e9252effca673bf5549,soccer_epl,Liverpool,Brighton and Hove Albion,2026-10-25T14:00:00Z,Liverpool,odds_api,2026-10-25T23:04:30+00:00
 fe235b26408c477368c40672a4488694,soccer_epl,Crystal Palace,Newcastle United,2026-10-25T14:00:00Z,Newcastle United,odds_api,2026-10-25T23:04:30+00:00
 e82f6b60fa41b82c8510f5b67ce61849,soccer_epl,Sunderland,Leeds United,2026-10-25T16:30:00Z,Draw,odds_api,2026-10-25T23:04:30+00:00
+4fcca39f1c6a31253c07fe75fbb849c8,tennis_atp_swiss_indoors,Valentin Vacherot,Mariano Navone,2026-10-26T12:38:08Z,Valentin Vacherot,odds_api,2026-10-26T23:04:52+00:00
+ff981b830d19b181bbd9c6a6a092eb5a,tennis_atp_swiss_indoors,Mika Brunold,Nuno Borges,2026-10-26T12:39:20Z,Nuno Borges,odds_api,2026-10-26T23:04:52+00:00
+fc557e2864fbe07964a9d288a81d5009,tennis_atp_swiss_indoors,Daniel Altmaier,Juan Manuel Cerundolo,2026-10-26T14:00:57Z,Daniel Altmaier,odds_api,2026-10-26T23:04:52+00:00
+7484e86bb920b4e17ec18fde7f1487a5,tennis_atp_swiss_indoors,Holger Rune,Quentin Halys,2026-10-26T14:57:41Z,Holger Rune,odds_api,2026-10-26T23:04:52+00:00
+4e0a2e9c11be94414228a1a7579f4f8b,tennis_atp_swiss_indoors,Dominic Stephan Stricker,Casper Ruud,2026-10-26T19:55:00Z,Casper Ruud,odds_api,2026-10-26T23:04:52+00:00
+1ca1cacba4f84c42c3419ef268f6b3b9,tennis_atp_vienna_open,Matteo Berrettini,Tomas Martin Etcheverry,2026-10-26T12:36:36Z,Matteo Berrettini,odds_api,2026-10-26T23:04:52+00:00
+4e8affe5c736072143aed4c30a548c66,tennis_atp_vienna_open,Tomas Machac,Alex de Minaur,2026-10-26T14:23:38Z,Alex de Minaur,odds_api,2026-10-26T23:04:52+00:00
+19df044cd9025a373c245656976c1d6d,tennis_atp_vienna_open,Arthur Fery,Jacob Fearnley,2026-10-26T16:33:43Z,Draw,odds_api,2026-10-26T23:04:52+00:00
+c5969cc3628058ea9d8326cb467f8344,tennis_atp_vienna_open,Jakub Mensik,Lukas Neumayer,2026-10-26T16:46:55Z,Jakub Mensik,odds_api,2026-10-26T23:04:52+00:00
+99827d08921946ed376bd9378a91ce9b,tennis_atp_vienna_open,Luciano Darderi,Matteo Arnaldi,2026-10-26T17:43:53Z,Luciano Darderi,odds_api,2026-10-26T23:04:52+00:00
+d4f7bc6b1f48bf445af411adfb5ba9d6,tennis_atp_vienna_open,Luca Van Assche,Learner Tien,2026-10-26T19:12:01Z,Learner Tien,odds_api,2026-10-26T23:04:52+00:00
