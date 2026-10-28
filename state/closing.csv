@@ -281,3 +281,47 @@ e82f6b60fa41b82c8510f5b67ce61849,Draw,3.12,avg_close,,2026-10-27T23:07:49+00:00
 e82f6b60fa41b82c8510f5b67ce61849,Leeds United,2.77,avg_close,,2026-10-27T23:07:49+00:00
 36ef4cd7da7144b2b8560ee591755aea,Hubert Hurkacz,1.57,snapshot_median,281.0,2026-10-27T23:07:49+00:00
 36ef4cd7da7144b2b8560ee591755aea,Zizou Bergs,2.38,snapshot_median,281.0,2026-10-27T23:07:49+00:00
+7803d8ad15e62ae9b557be677f69e021,Arthur Rinderknech,2.0,snapshot_median,33.0,2026-10-28T23:05:05+00:00
+7803d8ad15e62ae9b557be677f69e021,Jerome Kym,1.8,snapshot_median,33.0,2026-10-28T23:05:05+00:00
+3c6239f48e3a272aa8f7bb0ae354f14a,Alejandro Tabilo,3.42,snapshot_median,38.0,2026-10-28T23:05:05+00:00
+3c6239f48e3a272aa8f7bb0ae354f14a,Rafael Jodar,1.32,snapshot_median,38.0,2026-10-28T23:05:05+00:00
+7e3e5dde6da7e8cb88cd907563786e42,Alex Michelsen,1.46,snapshot_median,103.0,2026-10-28T23:05:05+00:00
+7e3e5dde6da7e8cb88cd907563786e42,Botic van de Zandschulp,2.7,snapshot_median,103.0,2026-10-28T23:05:05+00:00
+0fb51999c3020ac1f14f5cebbed40671,Arthur Fils,1.28,snapshot_median,108.0,2026-10-28T23:05:05+00:00
+0fb51999c3020ac1f14f5cebbed40671,Giovanni Mpetshi Perricard,3.665,snapshot_median,108.0,2026-10-28T23:05:05+00:00
+a22f58e89e8b3130ae03006d1cb2d9ee,Aleksandar Kovacevic,4.55,snapshot_median,278.0,2026-10-28T23:05:05+00:00
+a22f58e89e8b3130ae03006d1cb2d9ee,Ben Shelton,1.2,snapshot_median,278.0,2026-10-28T23:05:05+00:00
+0ccce6d326e553ba75890585346be8db,Jiri Lehecka,1.17,snapshot_median,348.0,2026-10-28T23:05:05+00:00
+0ccce6d326e553ba75890585346be8db,Stan Wawrinka,4.9,snapshot_median,348.0,2026-10-28T23:05:05+00:00
+de8fa64cdc8ed6fe9bd1fc42c6f115c6,Casper Ruud,1.5,snapshot_median,26.0,2026-10-28T23:05:05+00:00
+de8fa64cdc8ed6fe9bd1fc42c6f115c6,Nuno Borges,2.6,snapshot_median,26.0,2026-10-28T23:05:05+00:00
+622faf457a6ffd6d9effd2bc93280bac,Denis Shapovalov,1.32,snapshot_median,16.0,2026-10-28T23:05:05+00:00
+622faf457a6ffd6d9effd2bc93280bac,Rémy Bertola,3.35,snapshot_median,16.0,2026-10-28T23:05:05+00:00
+8f999f650b2a7e10b180a15fc7f863c1,Jan-Lennard Struff,1.77,snapshot_median,292.0,2026-10-28T23:05:05+00:00
+8f999f650b2a7e10b180a15fc7f863c1,Yannick Hanfmann,2.02,snapshot_median,292.0,2026-10-28T23:05:05+00:00
+af913a4b884253b828e9314e74cfb6b3,Novak Djokovic,1.36,snapshot_median,96.0,2026-10-28T23:05:05+00:00
+af913a4b884253b828e9314e74cfb6b3,Ugo Humbert,3.1,snapshot_median,96.0,2026-10-28T23:05:05+00:00
+4131305472a4538a7dd867552b8a5154,Rinky Hijikata,6.1,snapshot_median,266.0,2026-10-28T23:05:05+00:00
+4131305472a4538a7dd867552b8a5154,Taylor Fritz,1.12,snapshot_median,266.0,2026-10-28T23:05:05+00:00
+3a73a96665b992e825c1256066d9abf1,Andrey Rublev,2.08,snapshot_median,8.0,2026-10-28T23:05:05+00:00
+3a73a96665b992e825c1256066d9abf1,Tommy Paul,1.73,snapshot_median,8.0,2026-10-28T23:05:05+00:00
+c79e026be2881d605ce1f181243a44cf,Carlos Alcaraz,1.2,snapshot_median,78.0,2026-10-28T23:05:05+00:00
+c79e026be2881d605ce1f181243a44cf,Karen Khachanov,4.6,snapshot_median,78.0,2026-10-28T23:05:05+00:00
+2121f3ad0a65fd648051aae488ff71ce,Adrian Mannarino,1.54,snapshot_median,98.0,2026-10-28T23:05:05+00:00
+2121f3ad0a65fd648051aae488ff71ce,Ignacio Buse,2.45,snapshot_median,98.0,2026-10-28T23:05:05+00:00
+e9aca20f62c49ea43ad8b9d91f00330b,Cameron Norrie,2.73,snapshot_median,168.0,2026-10-28T23:05:05+00:00
+e9aca20f62c49ea43ad8b9d91f00330b,Francisco Cerundolo,1.46,snapshot_median,168.0,2026-10-28T23:05:05+00:00
+0bf567898c610e332a53d119bf4d2c77,Alexander Zverev,1.08,snapshot_median,248.0,2026-10-28T23:05:05+00:00
+0bf567898c610e332a53d119bf4d2c77,Martin Landaluce,7.8,snapshot_median,248.0,2026-10-28T23:05:05+00:00
+705dce2eaaf74f7b3cb3f919d2f1ea8d,Flavio Cobolli,1.5,snapshot_median,398.0,2026-10-28T23:05:05+00:00
+705dce2eaaf74f7b3cb3f919d2f1ea8d,Grigor Dimitrov,2.6,snapshot_median,398.0,2026-10-28T23:05:05+00:00
+9249512284975eaacf64fcaced7e57b0,Alex de Minaur,1.85,snapshot_median,386.0,2026-10-28T23:05:05+00:00
+9249512284975eaacf64fcaced7e57b0,Learner Tien,1.96,snapshot_median,386.0,2026-10-28T23:05:05+00:00
+01c5f7c5dda8e39a8d33c84b8d9e323d,Brandon Nakashima,1.43,snapshot_median,372.0,2026-10-28T23:05:05+00:00
+01c5f7c5dda8e39a8d33c84b8d9e323d,Tallon Griekspoor,2.8,snapshot_median,372.0,2026-10-28T23:05:05+00:00
+ad2ec395411c7dd956e92178f00c0c8d,Daniel Merida Aguilar,3.42,snapshot_median,372.0,2026-10-28T23:05:05+00:00
+ad2ec395411c7dd956e92178f00c0c8d,Daniil Medvedev,1.31,snapshot_median,372.0,2026-10-28T23:05:05+00:00
+84b3d47944a12f77e8f84c6442665671,Frances Tiafoe,1.78,snapshot_median,66.0,2026-10-28T23:05:05+00:00
+84b3d47944a12f77e8f84c6442665671,Lorenzo Musetti,2.02,snapshot_median,66.0,2026-10-28T23:05:05+00:00
+484a0fff5b3739c2bbc79cafff73007c,Jurij Rodionov,2.18,snapshot_median,236.0,2026-10-28T23:05:05+00:00
+484a0fff5b3739c2bbc79cafff73007c,Nikoloz Basilashvili,1.68,snapshot_median,236.0,2026-10-28T23:05:05+00:00
