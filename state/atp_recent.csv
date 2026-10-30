@@ -122,6 +122,12 @@ ATP Swiss Indoors Basel,2026-10-27,Hard,Mpetshi Perricard G.,Fils A.,Fils A.,0fb
 ATP Swiss Indoors Basel,2026-10-27,Hard,Michelsen A.,Van De Zandschulp B.,Michelsen A.,7e3e5dde6da7e8cb88cd907563786e42,Alex Michelsen,Botic van de Zandschulp
 ATP Swiss Indoors Basel,2026-10-27,Hard,Shelton B.,Kovacevic A.,Shelton B.,a22f58e89e8b3130ae03006d1cb2d9ee,Ben Shelton,Aleksandar Kovacevic
 ATP Swiss Indoors Basel,2026-10-27,Hard,Wawrinka S.,Lehecka J.,Lehecka J.,0ccce6d326e553ba75890585346be8db,Stan Wawrinka,Jiri Lehecka
+ATP Vienna Open,2026-10-27,Hard,Paul T.,Rublev A.,Paul T.,3a73a96665b992e825c1256066d9abf1,Tommy Paul,Andrey Rublev
+ATP Vienna Open,2026-10-27,Hard,Mannarino A.,Buse I.,Mannarino A.,2121f3ad0a65fd648051aae488ff71ce,Adrian Mannarino,Ignacio Buse
+ATP Vienna Open,2026-10-27,Hard,Khachanov K.,Alcaraz C.,Alcaraz C.,c79e026be2881d605ce1f181243a44cf,Karen Khachanov,Carlos Alcaraz
+ATP Vienna Open,2026-10-27,Hard,Zverev A.,Landaluce M.,Zverev A.,0bf567898c610e332a53d119bf4d2c77,Alexander Zverev,Martin Landaluce
+ATP Vienna Open,2026-10-27,Hard,Norrie C.,Cerundolo F.,Norrie C.,e9aca20f62c49ea43ad8b9d91f00330b,Cameron Norrie,Francisco Cerundolo
+ATP Vienna Open,2026-10-27,Hard,Cobolli F.,Dimitrov G.,Cobolli F.,705dce2eaaf74f7b3cb3f919d2f1ea8d,Flavio Cobolli,Grigor Dimitrov
 ATP Swiss Indoors Basel,2026-10-28,Hard,Hanfmann Y.,Struff J.L.,Struff J.L.,8f999f650b2a7e10b180a15fc7f863c1,Yannick Hanfmann,Jan-Lennard Struff
 ATP Swiss Indoors Basel,2026-10-28,Hard,Bertola R.,Shapovalov D.,Shapovalov D.,622faf457a6ffd6d9effd2bc93280bac,Rémy Bertola,Denis Shapovalov
 ATP Swiss Indoors Basel,2026-10-28,Hard,Borges N.,Ruud C.,Borges N.,de8fa64cdc8ed6fe9bd1fc42c6f115c6,Nuno Borges,Casper Ruud
@@ -133,12 +139,11 @@ ATP Swiss Indoors Basel,2026-10-29,Hard,Michelsen A.,Fils A.,Fils A.,17b7cfaa2dc
 ATP Swiss Indoors Basel,2026-10-29,Hard,Altmaier D.,Lehecka J.,Lehecka J.,381536c46bd1e16a9236502df3f748e5,Daniel Altmaier,Jiri Lehecka
 ATP Swiss Indoors Basel,2026-10-29,Hard,Fritz T.,Shapovalov D.,Fritz T.,9da35734a02ec2627cd4034086584157,Taylor Fritz,Denis Shapovalov
 ATP Swiss Indoors Basel,2026-10-29,Hard,Djokovic N.,Struff J.L.,Struff J.L.,e17ec974bac4e8094cbe45dfeb471b1e,Novak Djokovic,Jan-Lennard Struff
-ATP Vienna Open,2026-10-27,Hard,Paul T.,Rublev A.,Paul T.,3a73a96665b992e825c1256066d9abf1,Tommy Paul,Andrey Rublev
-ATP Vienna Open,2026-10-27,Hard,Mannarino A.,Buse I.,Mannarino A.,2121f3ad0a65fd648051aae488ff71ce,Adrian Mannarino,Ignacio Buse
-ATP Vienna Open,2026-10-27,Hard,Khachanov K.,Alcaraz C.,Alcaraz C.,c79e026be2881d605ce1f181243a44cf,Karen Khachanov,Carlos Alcaraz
-ATP Vienna Open,2026-10-27,Hard,Zverev A.,Landaluce M.,Zverev A.,0bf567898c610e332a53d119bf4d2c77,Alexander Zverev,Martin Landaluce
-ATP Vienna Open,2026-10-27,Hard,Norrie C.,Cerundolo F.,Norrie C.,e9aca20f62c49ea43ad8b9d91f00330b,Cameron Norrie,Francisco Cerundolo
-ATP Vienna Open,2026-10-27,Hard,Cobolli F.,Dimitrov G.,Cobolli F.,705dce2eaaf74f7b3cb3f919d2f1ea8d,Flavio Cobolli,Grigor Dimitrov
+ATP Swiss Indoors Basel,2026-10-29,Hard,Shelton B.,Kym J.,Kym J.,53d4ccf860436088aa717efdf2c38d25,Ben Shelton,Jerome Kym
+ATP Swiss Indoors Basel,2026-10-30,Hard,Rune H.,Vacherot V.,Vacherot V.,4eebb3b42f713eff0e760f9abef41572,Holger Rune,Valentin Vacherot
+ATP Swiss Indoors Basel,2026-10-30,Hard,Fritz T.,Fils A.,Fritz T.,f8b84ec001244b604176bf0bc6f21f16,Taylor Fritz,Arthur Fils
+ATP Swiss Indoors Basel,2026-10-30,Hard,Kym J.,Lehecka J.,Lehecka J.,e01a16acf3ce50a010714d85d5ff6374,Jerome Kym,Jiri Lehecka
+ATP Swiss Indoors Basel,2026-10-30,Hard,Struff J.L.,Borges N.,Struff J.L.,e66be09cbf07f4ca7b22ef19c32bcb30,Jan-Lennard Struff,Nuno Borges
 ATP Vienna Open,2026-10-28,Hard,Merida Aguilar D.,Medvedev D.,Medvedev D.,ad2ec395411c7dd956e92178f00c0c8d,Daniel Merida Aguilar,Daniil Medvedev
 ATP Vienna Open,2026-10-28,Hard,Griekspoor T.,Nakashima B.,Griekspoor T.,01c5f7c5dda8e39a8d33c84b8d9e323d,Tallon Griekspoor,Brandon Nakashima
 ATP Vienna Open,2026-10-28,Hard,Musetti L.,Tiafoe F.,Musetti L.,84b3d47944a12f77e8f84c6442665671,Lorenzo Musetti,Frances Tiafoe
@@ -150,3 +155,7 @@ ATP Vienna Open,2026-10-29,Hard,Norrie C.,Medvedev D.,Medvedev D.,9744d2cb822ca0
 ATP Vienna Open,2026-10-29,Hard,Basilashvili N.,Alcaraz C.,Alcaraz C.,dd5bca16b0bbd8de2684f82a2797f042,Nikoloz Basilashvili,Carlos Alcaraz
 ATP Vienna Open,2026-10-29,Hard,Fery A.,Musetti L.,Fery A.,704555fd36bea990169b89857cf51075,Arthur Fery,Lorenzo Musetti
 ATP Vienna Open,2026-10-29,Hard,Zverev A.,Griekspoor T.,Zverev A.,6822571863f93fa4654e76e114874060,Alexander Zverev,Tallon Griekspoor
+ATP Vienna Open,2026-10-30,Hard,Mannarino A.,Medvedev D.,Medvedev D.,7e16ce6f4bf3a1b6f3ecf28768bb8653,Adrian Mannarino,Daniil Medvedev
+ATP Vienna Open,2026-10-30,Hard,Paul T.,Alcaraz C.,Alcaraz C.,cc4564f7b80beae29935d650d1ccb4cb,Tommy Paul,Carlos Alcaraz
+ATP Vienna Open,2026-10-30,Hard,Zverev A.,Fery A.,Zverev A.,69ae427eb9d45bc2bc6b0ad750e25934,Alexander Zverev,Arthur Fery
+ATP Vienna Open,2026-10-30,Hard,Berrettini M.,De Minaur A.,De Minaur A.,94ca068a80e8dbb6686fd96d402bde0e,Matteo Berrettini,Alex de Minaur

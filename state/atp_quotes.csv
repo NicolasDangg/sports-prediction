@@ -1,301 +1,153 @@
 event_id,sport_key,competition,surface,commence_time,home,away,outcome,book,price,at
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,sport888,4.5,2026-10-29T23:06:26Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,betsson,4.5,2026-10-29T23:06:27Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,betclic_fr,4.25,2026-10-29T23:06:38Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,betfair_ex_eu,5.0,2026-10-29T23:06:50Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,williamhill,4.5,2026-10-29T23:06:01Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,unibet_fr,3.55,2026-10-29T23:06:01Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,marathonbet,4.35,2026-10-29T23:06:56Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,nordicbet,4.5,2026-10-29T23:06:27Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,coolbet,4.5,2026-10-29T23:06:51Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,tipico_de,4.7,2026-10-29T23:06:27Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,winamax_de,4.0,2026-10-29T23:06:53Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,winamax_fr,4.5,2026-10-29T23:06:28Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,matchbook,4.5,2026-10-29T23:06:51Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,unibet_se,4.9,2026-10-29T23:06:27Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,unibet_nl,4.9,2026-10-29T23:06:27Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,pmu_fr,4.35,2026-10-29T23:06:27Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Ben Shelton,leovegas_se,4.7,2026-10-29T23:06:28Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,sport888,1.17,2026-10-29T23:06:26Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,betsson,1.18,2026-10-29T23:06:27Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,betclic_fr,1.14,2026-10-29T23:06:38Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,betfair_ex_eu,1.24,2026-10-29T23:06:50Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,williamhill,1.17,2026-10-29T23:06:01Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,unibet_fr,1.12,2026-10-29T23:06:01Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,marathonbet,1.21,2026-10-29T23:06:56Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,nordicbet,1.18,2026-10-29T23:06:27Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,coolbet,1.2,2026-10-29T23:06:51Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,tipico_de,1.15,2026-10-29T23:06:27Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,winamax_de,1.17,2026-10-29T23:06:53Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,winamax_fr,1.12,2026-10-29T23:06:28Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,matchbook,1.22,2026-10-29T23:06:51Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,unibet_se,1.17,2026-10-29T23:06:27Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,unibet_nl,1.17,2026-10-29T23:06:27Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,pmu_fr,1.09,2026-10-29T23:06:27Z
-53d4ccf860436088aa717efdf2c38d25,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-29T21:15:26Z,Ben Shelton,Jerome Kym,Jerome Kym,leovegas_se,1.14,2026-10-29T23:06:28Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,marathonbet,1.75,2026-10-29T23:06:56Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,betfair_ex_eu,1.78,2026-10-29T23:06:50Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,matchbook,1.77,2026-10-29T23:06:51Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,unibet_fr,1.66,2026-10-29T23:06:01Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,coolbet,1.7,2026-10-29T23:06:51Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,onexbet,1.77,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,nordicbet,1.73,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,betsson,1.73,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,tipico_de,1.62,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,betclic_fr,1.71,2026-10-29T23:06:38Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,unibet_se,1.75,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,pmu_fr,1.67,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,leovegas_se,1.75,2026-10-29T23:06:28Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,unibet_nl,1.75,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,sport888,1.67,2026-10-29T23:06:26Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,winamax_de,1.72,2026-10-29T23:06:53Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,winamax_fr,1.66,2026-10-29T23:06:28Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,williamhill,1.67,2026-10-29T23:06:01Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,pinnacle,1.69,2026-10-29T23:06:50Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Holger Rune,betonlineag,1.68,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,marathonbet,2.06,2026-10-29T23:06:56Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,betfair_ex_eu,2.28,2026-10-29T23:06:50Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,matchbook,2.28,2026-10-29T23:06:51Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,unibet_fr,1.97,2026-10-29T23:06:01Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,coolbet,2.17,2026-10-29T23:06:51Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,onexbet,2.09,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,nordicbet,2.08,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,betsson,2.08,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,tipico_de,2.15,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,betclic_fr,2.06,2026-10-29T23:06:38Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,unibet_se,2.07,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,pmu_fr,1.96,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,leovegas_se,2.07,2026-10-29T23:06:28Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,unibet_nl,2.07,2026-10-29T23:06:27Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,sport888,2.2,2026-10-29T23:06:26Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,winamax_de,2.2,2026-10-29T23:06:53Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,winamax_fr,2.1,2026-10-29T23:06:28Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,williamhill,2.2,2026-10-29T23:06:01Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,pinnacle,2.28,2026-10-29T23:06:50Z
-4eebb3b42f713eff0e760f9abef41572,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T13:00:00Z,Holger Rune,Valentin Vacherot,Valentin Vacherot,betonlineag,2.27,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,marathonbet,1.82,2026-10-29T23:06:56Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,nordicbet,1.81,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,sport888,1.8,2026-10-29T23:06:26Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,onexbet,1.85,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,matchbook,1.65,2026-10-29T23:06:51Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,betsson,1.81,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,williamhill,1.8,2026-10-29T23:06:01Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,unibet_fr,1.74,2026-10-29T23:06:01Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,coolbet,1.82,2026-10-29T23:06:51Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,betclic_fr,1.79,2026-10-29T23:06:38Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,tipico_de,1.72,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,winamax_de,1.84,2026-10-29T23:06:53Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,winamax_fr,1.78,2026-10-29T23:06:28Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,betfair_ex_eu,1.1,2026-10-29T23:06:50Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,leovegas_se,1.85,2026-10-29T23:06:28Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,pmu_fr,1.78,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,unibet_se,1.85,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Arthur Fils,unibet_nl,1.85,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,marathonbet,1.97,2026-10-29T23:06:56Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,nordicbet,1.97,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,sport888,2.0,2026-10-29T23:06:26Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,onexbet,2.0,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,matchbook,1.96,2026-10-29T23:06:51Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,betsson,1.97,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,williamhill,2.0,2026-10-29T23:06:01Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,unibet_fr,1.9,2026-10-29T23:06:01Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,coolbet,2.0,2026-10-29T23:06:51Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,betclic_fr,1.95,2026-10-29T23:06:38Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,tipico_de,2.0,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,winamax_de,2.0,2026-10-29T23:06:53Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,winamax_fr,1.94,2026-10-29T23:06:28Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,betfair_ex_eu,1.96,2026-10-29T23:06:50Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,leovegas_se,1.93,2026-10-29T23:06:28Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,pmu_fr,1.85,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,unibet_se,1.93,2026-10-29T23:06:27Z
-f8b84ec001244b604176bf0bc6f21f16,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T14:10:00Z,Taylor Fritz,Arthur Fils,Taylor Fritz,unibet_nl,1.93,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,marathonbet,1.7,2026-10-29T23:06:56Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,betclic_fr,1.65,2026-10-29T23:06:38Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,nordicbet,1.71,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,betsson,1.71,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,betfair_ex_eu,1.66,2026-10-29T23:06:50Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,coolbet,1.7,2026-10-29T23:06:51Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,winamax_de,1.72,2026-10-29T23:06:53Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,unibet_fr,1.64,2026-10-29T23:06:01Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,onexbet,1.72,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,winamax_fr,1.64,2026-10-29T23:06:28Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,matchbook,1.66,2026-10-29T23:06:51Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,tipico_de,1.62,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,sport888,1.73,2026-10-29T23:06:26Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,williamhill,1.73,2026-10-29T23:06:01Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,pmu_fr,1.57,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,unibet_nl,1.66,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,leovegas_se,1.66,2026-10-29T23:06:28Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Jan-Lennard Struff,unibet_se,1.66,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,marathonbet,2.14,2026-10-29T23:06:56Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,betclic_fr,2.02,2026-10-29T23:06:38Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,nordicbet,2.11,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,betsson,2.11,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,betfair_ex_eu,2.02,2026-10-29T23:06:50Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,coolbet,2.17,2026-10-29T23:06:51Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,winamax_de,2.1,2026-10-29T23:06:53Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,unibet_fr,2.0,2026-10-29T23:06:01Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,onexbet,2.17,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,winamax_fr,2.0,2026-10-29T23:06:28Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,matchbook,2.0,2026-10-29T23:06:51Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,tipico_de,2.15,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,sport888,2.1,2026-10-29T23:06:26Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,williamhill,2.1,2026-10-29T23:06:01Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,pmu_fr,2.12,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,unibet_nl,2.23,2026-10-29T23:06:27Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,leovegas_se,2.23,2026-10-29T23:06:28Z
-e66be09cbf07f4ca7b22ef19c32bcb30,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-30T17:00:00Z,Jan-Lennard Struff,Nuno Borges,Nuno Borges,unibet_se,2.23,2026-10-29T23:06:27Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,marathonbet,4.6,2026-10-29T23:06:58Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,matchbook,5.1,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,onexbet,4.67,2026-10-29T23:06:30Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,betsson,4.5,2026-10-29T23:06:27Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,betfair_ex_eu,5.1,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,nordicbet,4.5,2026-10-29T23:06:53Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,unibet_fr,4.35,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,betclic_fr,4.4,2026-10-29T23:06:12Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,coolbet,4.6,2026-10-29T23:06:01Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,tipico_de,4.5,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,sport888,4.2,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,winamax_fr,4.4,2026-10-29T23:06:29Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,winamax_de,4.8,2026-10-29T23:06:29Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,williamhill,4.2,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,unibet_se,4.8,2026-10-29T23:06:27Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,pmu_fr,4.4,2026-10-29T23:06:27Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,leovegas_se,4.8,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,unibet_nl,4.8,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,pinnacle,4.73,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,betonlineag,4.79,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Adrian Mannarino,betanysports,4.55,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,marathonbet,1.19,2026-10-29T23:06:58Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,matchbook,1.23,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,onexbet,1.21,2026-10-29T23:06:30Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,betsson,1.19,2026-10-29T23:06:27Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,betfair_ex_eu,1.23,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,nordicbet,1.19,2026-10-29T23:06:53Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,unibet_fr,1.15,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,betclic_fr,1.19,2026-10-29T23:06:12Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,coolbet,1.2,2026-10-29T23:06:01Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,tipico_de,1.16,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,sport888,1.22,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,winamax_fr,1.18,2026-10-29T23:06:29Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,winamax_de,1.21,2026-10-29T23:06:29Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,williamhill,1.22,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,unibet_se,1.18,2026-10-29T23:06:27Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,pmu_fr,1.14,2026-10-29T23:06:27Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,leovegas_se,1.18,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,unibet_nl,1.18,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,pinnacle,1.22,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,betonlineag,1.19,2026-10-29T23:06:51Z
-7e16ce6f4bf3a1b6f3ecf28768bb8653,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T12:30:00Z,Adrian Mannarino,Daniil Medvedev,Daniil Medvedev,betanysports,1.19,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,unibet_fr,1.22,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,betsson,1.25,2026-10-29T23:06:27Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,marathonbet,1.24,2026-10-29T23:06:58Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,onexbet,1.26,2026-10-29T23:06:30Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,matchbook,1.27,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,nordicbet,1.25,2026-10-29T23:06:53Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,betfair_ex_eu,1.27,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,betclic_fr,1.25,2026-10-29T23:06:12Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,coolbet,1.24,2026-10-29T23:06:01Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,winamax_fr,1.24,2026-10-29T23:06:29Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,winamax_de,1.27,2026-10-29T23:06:29Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,sport888,1.25,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,williamhill,1.25,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,tipico_de,1.22,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,pinnacle,1.26,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,unibet_se,1.23,2026-10-29T23:06:27Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,pmu_fr,1.19,2026-10-29T23:06:27Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,leovegas_se,1.23,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,unibet_nl,1.23,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Carlos Alcaraz,betonlineag,1.23,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,unibet_fr,3.45,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,betsson,3.8,2026-10-29T23:06:27Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,marathonbet,4.0,2026-10-29T23:06:58Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,onexbet,4.05,2026-10-29T23:06:30Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,matchbook,4.4,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,nordicbet,3.8,2026-10-29T23:06:53Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,betfair_ex_eu,4.4,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,betclic_fr,3.75,2026-10-29T23:06:12Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,coolbet,4.1,2026-10-29T23:06:01Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,winamax_fr,3.7,2026-10-29T23:06:29Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,winamax_de,4.0,2026-10-29T23:06:29Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,sport888,4.0,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,williamhill,4.0,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,tipico_de,3.8,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,pinnacle,4.3,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,unibet_se,4.1,2026-10-29T23:06:27Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,pmu_fr,3.9,2026-10-29T23:06:27Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,leovegas_se,4.1,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,unibet_nl,4.1,2026-10-29T23:06:51Z
-cc4564f7b80beae29935d650d1ccb4cb,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T14:00:00Z,Tommy Paul,Carlos Alcaraz,Tommy Paul,betonlineag,4.27,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,betfair_ex_eu,1.11,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,sport888,1.1,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,nordicbet,1.11,2026-10-29T23:06:53Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,betsson,1.11,2026-10-29T23:06:27Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,unibet_fr,1.09,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,williamhill,1.1,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,coolbet,1.12,2026-10-29T23:06:01Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,betclic_fr,1.1,2026-10-29T23:06:12Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,matchbook,1.11,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,tipico_de,1.08,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,onexbet,1.14,2026-10-29T23:06:30Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,marathonbet,1.12,2026-10-29T23:06:58Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,winamax_fr,1.09,2026-10-29T23:06:29Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,winamax_de,1.11,2026-10-29T23:06:29Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,unibet_se,1.11,2026-10-29T23:06:27Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,pmu_fr,1.07,2026-10-29T23:06:27Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,leovegas_se,1.11,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Alexander Zverev,unibet_nl,1.11,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,betfair_ex_eu,3.2,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,sport888,7.0,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,nordicbet,6.2,2026-10-29T23:06:53Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,betsson,6.2,2026-10-29T23:06:27Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,unibet_fr,5.1,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,williamhill,7.0,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,coolbet,6.4,2026-10-29T23:06:01Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,betclic_fr,5.4,2026-10-29T23:06:12Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,matchbook,6.4,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,tipico_de,6.5,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,onexbet,6.18,2026-10-29T23:06:30Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,marathonbet,6.0,2026-10-29T23:06:58Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,winamax_fr,5.3,2026-10-29T23:06:29Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,winamax_de,6.25,2026-10-29T23:06:29Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,unibet_se,6.5,2026-10-29T23:06:27Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,pmu_fr,5.8,2026-10-29T23:06:27Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,leovegas_se,6.5,2026-10-29T23:06:51Z
-69ae427eb9d45bc2bc6b0ad750e25934,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T16:30:00Z,Alexander Zverev,Arthur Fery,Arthur Fery,unibet_nl,6.5,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,betsson,1.44,2026-10-29T23:06:27Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,sport888,1.44,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,nordicbet,1.44,2026-10-29T23:06:53Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,williamhill,1.44,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,betfair_ex_eu,1.33,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,matchbook,1.34,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,unibet_fr,1.39,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,marathonbet,1.44,2026-10-29T23:06:58Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,coolbet,1.45,2026-10-29T23:06:01Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,onexbet,1.46,2026-10-29T23:06:30Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,betclic_fr,1.4,2026-10-29T23:06:12Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,leovegas_se,1.48,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,unibet_nl,1.48,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,pmu_fr,1.42,2026-10-29T23:06:27Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,unibet_se,1.48,2026-10-29T23:06:27Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,winamax_fr,1.4,2026-10-29T23:06:29Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,winamax_de,1.45,2026-10-29T23:06:29Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Alex de Minaur,tipico_de,1.42,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,betsson,2.75,2026-10-29T23:06:27Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,sport888,2.75,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,nordicbet,2.75,2026-10-29T23:06:53Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,williamhill,2.75,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,betfair_ex_eu,2.62,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,matchbook,2.5,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,unibet_fr,2.55,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,marathonbet,2.76,2026-10-29T23:06:58Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,coolbet,2.78,2026-10-29T23:06:01Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,onexbet,2.8,2026-10-29T23:06:30Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,betclic_fr,2.6,2026-10-29T23:06:12Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,leovegas_se,2.65,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,unibet_nl,2.65,2026-10-29T23:06:51Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,pmu_fr,2.5,2026-10-29T23:06:27Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,unibet_se,2.65,2026-10-29T23:06:27Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,winamax_fr,2.55,2026-10-29T23:06:29Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,winamax_de,2.75,2026-10-29T23:06:29Z
-94ca068a80e8dbb6686fd96d402bde0e,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-30T19:00:00Z,Matteo Berrettini,Alex de Minaur,Matteo Berrettini,tipico_de,2.65,2026-10-29T23:06:51Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,betfair_ex_eu,1.35,2026-10-30T23:06:22Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,marathonbet,1.32,2026-10-30T23:06:00Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,williamhill,1.33,2026-10-30T23:05:31Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,onexbet,1.34,2026-10-30T23:06:21Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,sport888,1.33,2026-10-30T23:05:55Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,unibet_fr,1.28,2026-10-30T23:05:56Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,betclic_fr,1.29,2026-10-30T23:05:23Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,coolbet,1.32,2026-10-30T23:05:32Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,nordicbet,1.3,2026-10-30T23:06:20Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,betsson,1.3,2026-10-30T23:05:32Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,winamax_de,1.32,2026-10-30T23:05:33Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,winamax_fr,1.29,2026-10-30T23:06:20Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,tipico_de,1.27,2026-10-30T23:06:19Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,matchbook,1.35,2026-10-30T23:06:19Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,leovegas_se,1.32,2026-10-30T23:06:08Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,unibet_se,1.32,2026-10-30T23:05:56Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,unibet_nl,1.32,2026-10-30T23:06:20Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,pmu_fr,1.26,2026-10-30T23:06:19Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,pinnacle,1.32,2026-10-30T23:06:18Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Taylor Fritz,betonlineag,1.31,2026-10-30T23:05:55Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,betfair_ex_eu,3.75,2026-10-30T23:06:22Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,marathonbet,3.34,2026-10-30T23:06:00Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,williamhill,3.3,2026-10-30T23:05:31Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,onexbet,3.38,2026-10-30T23:06:21Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,sport888,3.3,2026-10-30T23:05:55Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,unibet_fr,3.45,2026-10-30T23:05:56Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,betclic_fr,3.4,2026-10-30T23:05:23Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,coolbet,3.42,2026-10-30T23:05:32Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,nordicbet,3.45,2026-10-30T23:06:20Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,betsson,3.45,2026-10-30T23:05:32Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,winamax_de,3.6,2026-10-30T23:05:33Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,winamax_fr,3.35,2026-10-30T23:06:20Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,tipico_de,3.4,2026-10-30T23:06:19Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,matchbook,3.7,2026-10-30T23:06:19Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,leovegas_se,3.4,2026-10-30T23:06:08Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,unibet_se,3.4,2026-10-30T23:05:56Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,unibet_nl,3.4,2026-10-30T23:06:20Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,pmu_fr,3.25,2026-10-30T23:06:19Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,pinnacle,3.65,2026-10-30T23:06:18Z
+5a856de2f4f6df9ea205100c2c304254,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T14:00:00Z,Valentin Vacherot,Taylor Fritz,Valentin Vacherot,betonlineag,3.6,2026-10-30T23:05:55Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,unibet_se,2.7,2026-10-30T23:05:56Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,betfair_ex_eu,2.76,2026-10-30T23:06:22Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,matchbook,2.74,2026-10-30T23:06:19Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,pmu_fr,2.55,2026-10-30T23:06:19Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,onexbet,2.73,2026-10-30T23:06:21Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,williamhill,2.75,2026-10-30T23:05:31Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,marathonbet,2.69,2026-10-30T23:06:00Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,coolbet,2.7,2026-10-30T23:05:32Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,sport888,2.75,2026-10-30T23:05:55Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,leovegas_se,2.7,2026-10-30T23:06:08Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,unibet_nl,2.7,2026-10-30T23:06:20Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,unibet_fr,2.55,2026-10-30T23:05:56Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,betclic_fr,2.55,2026-10-30T23:05:23Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,nordicbet,2.7,2026-10-30T23:06:20Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,betsson,2.7,2026-10-30T23:05:32Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,winamax_de,2.7,2026-10-30T23:05:33Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,winamax_fr,2.55,2026-10-30T23:06:20Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jan-Lennard Struff,tipico_de,2.7,2026-10-30T23:06:19Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,unibet_se,1.45,2026-10-30T23:05:56Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,betfair_ex_eu,1.56,2026-10-30T23:06:22Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,matchbook,1.56,2026-10-30T23:06:19Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,pmu_fr,1.4,2026-10-30T23:06:19Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,onexbet,1.48,2026-10-30T23:06:21Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,williamhill,1.44,2026-10-30T23:05:31Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,marathonbet,1.46,2026-10-30T23:06:00Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,coolbet,1.47,2026-10-30T23:05:32Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,sport888,1.44,2026-10-30T23:05:55Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,leovegas_se,1.45,2026-10-30T23:06:08Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,unibet_nl,1.45,2026-10-30T23:06:20Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,unibet_fr,1.4,2026-10-30T23:05:56Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,betclic_fr,1.41,2026-10-30T23:05:23Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,nordicbet,1.45,2026-10-30T23:06:20Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,betsson,1.45,2026-10-30T23:05:32Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,winamax_de,1.45,2026-10-30T23:05:33Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,winamax_fr,1.4,2026-10-30T23:06:20Z
+552fda4930d6ed5d9fef41d162da947d,tennis_atp_swiss_indoors,ATP Swiss Indoors Basel,Hard,2026-10-31T16:00:00Z,Jiri Lehecka,Jan-Lennard Struff,Jiri Lehecka,tipico_de,1.4,2026-10-30T23:06:19Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,sport888,1.44,2026-10-30T23:06:20Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,onexbet,1.45,2026-10-30T23:05:56Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,unibet_fr,1.39,2026-10-30T23:05:32Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,nordicbet,1.41,2026-10-30T23:05:32Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,betsson,1.41,2026-10-30T23:06:22Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,betfair_ex_eu,1.48,2026-10-30T23:06:20Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,marathonbet,1.43,2026-10-30T23:06:01Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,williamhill,1.44,2026-10-30T23:05:56Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,betclic_fr,1.4,2026-10-30T23:06:33Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,winamax_de,1.43,2026-10-30T23:06:22Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,winamax_fr,1.39,2026-10-30T23:05:58Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,tipico_de,1.35,2026-10-30T23:06:22Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,pmu_fr,1.38,2026-10-30T23:06:21Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,unibet_nl,1.43,2026-10-30T23:06:19Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,leovegas_se,1.43,2026-10-30T23:06:20Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,unibet_se,1.43,2026-10-30T23:05:56Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,coolbet,1.43,2026-10-30T23:05:32Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,matchbook,1.48,2026-10-30T23:06:21Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,pinnacle,1.45,2026-10-30T23:06:19Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Carlos Alcaraz,betonlineag,1.44,2026-10-30T23:06:22Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,sport888,2.75,2026-10-30T23:06:20Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,onexbet,2.84,2026-10-30T23:05:56Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,unibet_fr,2.85,2026-10-30T23:05:32Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,nordicbet,2.85,2026-10-30T23:05:32Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,betsson,2.85,2026-10-30T23:06:22Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,betfair_ex_eu,3.0,2026-10-30T23:06:20Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,marathonbet,2.8,2026-10-30T23:06:01Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,williamhill,2.75,2026-10-30T23:05:56Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,betclic_fr,2.8,2026-10-30T23:06:33Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,winamax_de,2.95,2026-10-30T23:06:22Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,winamax_fr,2.8,2026-10-30T23:05:58Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,tipico_de,2.95,2026-10-30T23:06:22Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,pmu_fr,2.65,2026-10-30T23:06:21Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,unibet_nl,2.8,2026-10-30T23:06:19Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,leovegas_se,2.8,2026-10-30T23:06:20Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,unibet_se,2.8,2026-10-30T23:05:56Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,coolbet,2.85,2026-10-30T23:05:32Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,matchbook,3.0,2026-10-30T23:06:21Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,pinnacle,2.96,2026-10-30T23:06:19Z
+3f0addea74d69db2f1b7595d4fb2b1af,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T14:00:00Z,Daniil Medvedev,Carlos Alcaraz,Daniil Medvedev,betonlineag,2.89,2026-10-30T23:06:22Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,pmu_fr,1.32,2026-10-30T23:06:21Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,marathonbet,1.35,2026-10-30T23:06:01Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,onexbet,1.37,2026-10-30T23:05:56Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,unibet_se,1.38,2026-10-30T23:05:56Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,coolbet,1.35,2026-10-30T23:05:32Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,betfair_ex_eu,1.42,2026-10-30T23:06:20Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,unibet_nl,1.38,2026-10-30T23:06:19Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,leovegas_se,1.38,2026-10-30T23:06:20Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,betsson,1.32,2026-10-30T23:06:22Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,nordicbet,1.32,2026-10-30T23:05:32Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,betclic_fr,1.29,2026-10-30T23:06:33Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,unibet_fr,1.28,2026-10-30T23:05:32Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,sport888,1.33,2026-10-30T23:06:20Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,tipico_de,1.27,2026-10-30T23:06:22Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,williamhill,1.33,2026-10-30T23:05:56Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,winamax_fr,1.29,2026-10-30T23:05:58Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,winamax_de,1.33,2026-10-30T23:06:22Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alexander Zverev,matchbook,1.41,2026-10-30T23:06:21Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,pmu_fr,2.9,2026-10-30T23:06:21Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,marathonbet,3.18,2026-10-30T23:06:01Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,onexbet,3.22,2026-10-30T23:05:56Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,unibet_se,3.05,2026-10-30T23:05:56Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,coolbet,3.25,2026-10-30T23:05:32Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,betfair_ex_eu,2.8,2026-10-30T23:06:20Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,unibet_nl,3.05,2026-10-30T23:06:19Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,leovegas_se,3.05,2026-10-30T23:06:20Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,betsson,3.3,2026-10-30T23:06:22Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,nordicbet,3.3,2026-10-30T23:05:32Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,betclic_fr,3.05,2026-10-30T23:06:33Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,unibet_fr,3.0,2026-10-30T23:05:32Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,sport888,3.3,2026-10-30T23:06:20Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,tipico_de,3.4,2026-10-30T23:06:22Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,williamhill,3.3,2026-10-30T23:05:56Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,winamax_fr,3.05,2026-10-30T23:05:58Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,winamax_de,3.3,2026-10-30T23:06:22Z
+e29817fd8c010bb31e6c920398185da1,tennis_atp_vienna_open,ATP Vienna Open,Hard,2026-10-31T15:30:00Z,Alexander Zverev,Alex de Minaur,Alex de Minaur,matchbook,2.84,2026-10-30T23:06:21Z
