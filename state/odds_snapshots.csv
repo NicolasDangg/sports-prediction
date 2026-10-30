@@ -2461,3 +2461,19 @@ at,source,sport,sport_key,event_id,commence_time,outcome,median_odds,pinnacle_od
 2026-10-30T06:16:13+00:00,snapshot,atp,tennis_atp_vienna_open,69ae427eb9d45bc2bc6b0ad750e25934,2026-10-30T16:30:00Z,Arthur Fery,6.25,6.88,7.0,21
 2026-10-30T06:16:13+00:00,snapshot,atp,tennis_atp_vienna_open,94ca068a80e8dbb6686fd96d402bde0e,2026-10-30T19:00:00Z,Alex de Minaur,1.44,1.45,1.48,21
 2026-10-30T06:16:13+00:00,snapshot,atp,tennis_atp_vienna_open,94ca068a80e8dbb6686fd96d402bde0e,2026-10-30T19:00:00Z,Matteo Berrettini,2.75,2.95,3.0,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_swiss_indoors,4eebb3b42f713eff0e760f9abef41572,2026-10-30T13:00:00Z,Holger Rune,1.66,1.71,1.73,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_swiss_indoors,4eebb3b42f713eff0e760f9abef41572,2026-10-30T13:00:00Z,Valentin Vacherot,2.21,2.27,2.34,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_swiss_indoors,f8b84ec001244b604176bf0bc6f21f16,2026-10-30T14:10:00Z,Arthur Fils,1.86,1.91,1.96,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_swiss_indoors,f8b84ec001244b604176bf0bc6f21f16,2026-10-30T14:10:00Z,Taylor Fritz,1.93,1.99,2.02,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_swiss_indoors,e01a16acf3ce50a010714d85d5ff6374,2026-10-30T17:00:00Z,Jerome Kym,3.3,3.55,3.65,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_swiss_indoors,e01a16acf3ce50a010714d85d5ff6374,2026-10-30T17:00:00Z,Jiri Lehecka,1.33,1.34,1.37,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_swiss_indoors,e66be09cbf07f4ca7b22ef19c32bcb30,2026-10-30T18:10:00Z,Jan-Lennard Struff,1.77,1.81,1.9,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_swiss_indoors,e66be09cbf07f4ca7b22ef19c32bcb30,2026-10-30T18:10:00Z,Nuno Borges,2.04,2.1,2.1,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_vienna_open,7e16ce6f4bf3a1b6f3ecf28768bb8653,2026-10-30T12:30:00Z,Adrian Mannarino,4.3,4.69,5.2,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_vienna_open,7e16ce6f4bf3a1b6f3ecf28768bb8653,2026-10-30T12:30:00Z,Daniil Medvedev,1.22,1.23,1.25,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_vienna_open,cc4564f7b80beae29935d650d1ccb4cb,2026-10-30T14:00:00Z,Carlos Alcaraz,1.26,1.3,1.3,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_vienna_open,cc4564f7b80beae29935d650d1ccb4cb,2026-10-30T14:00:00Z,Tommy Paul,3.85,3.95,4.2,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_vienna_open,69ae427eb9d45bc2bc6b0ad750e25934,2026-10-30T16:30:00Z,Alexander Zverev,1.12,1.13,1.15,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_vienna_open,69ae427eb9d45bc2bc6b0ad750e25934,2026-10-30T16:30:00Z,Arthur Fery,6.4,6.89,7.2,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_vienna_open,94ca068a80e8dbb6686fd96d402bde0e,2026-10-30T19:00:00Z,Alex de Minaur,1.44,1.45,1.48,21
+2026-10-30T12:13:51+00:00,snapshot,atp,tennis_atp_vienna_open,94ca068a80e8dbb6686fd96d402bde0e,2026-10-30T19:00:00Z,Matteo Berrettini,2.76,2.95,3.05,21
